@@ -467,7 +467,7 @@ SharkGame.Main = {
             `New Frontiers v ${SharkGame.VERSION} - ${SharkGame.VERSION_NAME}<br/>\
 Mod of v ${SharkGame.ORIGINAL_VERSION}`
         );
-        $.getJSON("https://api.github.com/repos/spencers145/SharkGame/commits/main", (data) => {
+        $.getJSON("https://api.github.com/repos/Toby222/SharkGame/commits/main", (data) => {
             SharkGame.COMMIT_SHA = data.sha;
         });
         SharkGame.sidebarHidden = true;
@@ -648,7 +648,7 @@ Mod of v ${SharkGame.ORIGINAL_VERSION}`
     },
 
     checkForUpdate() {
-        $.getJSON("https://api.github.com/repos/spencers145/SharkGame/commits/main", (data) => {
+        $.getJSON("https://api.github.com/repos/Toby222/SharkGame/commits/main", (data) => {
             if (data.sha !== SharkGame.COMMIT_SHA) {
                 $("#updateGameBox")
                     .html("You see a new update swimming towards you. Click to update.")

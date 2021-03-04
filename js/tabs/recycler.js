@@ -339,15 +339,17 @@ SharkGame.Recycler = {
             }
 
             const tarTolerance = -r.getProductAmountFromGeneratorResource("filter", "tar");
+            let produced = SharkGame.ResourceMap.get(y.hoveredResource).value * 0.0000002;
             if (buy > 0) {
-                produced = SharkGame.ResourceMap.get(y.hoveredResource).value * 0.0000002 * buy;
+                produced *= buy;
             } else {
-                produced = SharkGame.ResourceMap.get(y.hoveredResource).value * 0.0000002 * r.getResource(y.hoveredResource) / -buy
+                produced *= r.getResource(y.hoveredResource) / -buy;
             }
             let amountstring = m.beautify(produced);
             amountstring = "<br/><br/>AND " + amountstring.bold() + " " + r.getResourceName("tar");
-            if(tarTolerance > 0) {
-                amountstring += "<br/>(" +
+            if (tarTolerance > 0) {
+                amountstring +=
+                    "<br/>(" +
                     m.beautify(Math.max(produced - tarTolerance, 0)) +
                     " " +
                     r.getResourceName("tar") +

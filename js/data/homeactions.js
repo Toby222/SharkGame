@@ -2751,7 +2751,7 @@ SharkGame.HomeActions = {
             }, */
             unauthorized: true,
         },
-        
+
         prySponge: {
             name: "Pry sponge",
             effect: {
@@ -2884,7 +2884,7 @@ SharkGame.HomeActions = {
             ],
             helpText: "Convert a pearl (and the clam around it) into crystals.",
         }, */
-        
+
         spongeFiltration: {
             name: "Manufacture sponge filter",
             effect: {
@@ -2892,9 +2892,7 @@ SharkGame.HomeActions = {
                     filter: 1,
                 },
             },
-            cost: [
-                { resource: "sponge", costFunction: "linear", priceIncrease: 5 },
-            ],
+            cost: [{ resource: "sponge", costFunction: "linear", priceIncrease: 5 }],
             max: "filter",
             prereq: {
                 resource: {
@@ -2915,7 +2913,7 @@ SharkGame.HomeActions = {
             ],
             helpText: "Create filters from sponge to get rid of tar.",
         },
-        
+
         breakDownAncientPart: {
             name: "Break down ancient parts",
             effect: {
@@ -2923,9 +2921,7 @@ SharkGame.HomeActions = {
                     science: 2500,
                 },
             },
-            cost: [
-                { resource: "ancientPart", costFunction: "constant", priceIncrease: 1 },
-            ],
+            cost: [{ resource: "ancientPart", costFunction: "constant", priceIncrease: 1 }],
             max: "ancientPart",
             prereq: {
                 upgrade: ["reverseEngineering"],
@@ -2941,7 +2937,6 @@ SharkGame.HomeActions = {
             ],
             helpText: "Break down ancient parts to advance science.",
         },
-
 
         // MAKE ADVANCED RESOURCES  ///////////////////////////////////////////////////////////////////////////////
 
@@ -3476,7 +3471,7 @@ SharkGame.HomeActions = {
                 "Crystals? Who needs crystals when you can have sponge?!",
                 "Yes, collecting sponges is much harder than it looks!",
                 "Why do we need these again?",
-                "Each rock will have a crab, as each sponge has a rock."
+                "Each rock will have a crab, as each sponge has a rock.",
             ],
             helpText: "Instruct a crab on the proper way to collect sponges from rocks.",
         },

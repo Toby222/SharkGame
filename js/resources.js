@@ -21,7 +21,7 @@ SharkGame.Resources = {
         // set all the amounts and total amounts of resources to 0
         $.each(SharkGame.ResourceTable, (key, value) => {
             SharkGame.ResourceMap.set(key, _.cloneDeep(value));
-            SharkGame.CalculationMap.set(key, _.cloneDeep(value)); 
+            SharkGame.CalculationMap.set(key, _.cloneDeep(value));
         });
 
         SharkGame.ResourceMap.forEach((v, key) => {
@@ -230,8 +230,7 @@ SharkGame.Resources = {
             r.getNetworkIncomeModifier("resource", product) *
             cad.speed;
         if (generated > 0) {
-            generated *= w.getWorldBoostMultiplier(product) *
-            r.getBoost(product);
+            generated *= w.getWorldBoostMultiplier(product) * r.getBoost(product);
         }
         return generated;
     },
@@ -272,9 +271,11 @@ SharkGame.Resources = {
         return multiplier;
     },
 
+    // arg2 is here because "futureproofing", remove this comment when it is used.
+    // eslint-disable-next-line no-unused-vars
     changeBaseIncome(method, generator, arg1, arg2) {
         const mapEntry = SharkGame.CalculationMap.get(generator);
-        switch(method) {
+        switch (method) {
             case "multiply":
                 $.each(mapEntry.income, (resource, income) => {
                     mapEntry.income[resource] = income * arg1;
@@ -282,18 +283,18 @@ SharkGame.Resources = {
                 break;
             case "boost":
                 $.each(mapEntry.income, (resource, income) => {
-                    if(income > 0 && (resource != "tar")) {
+                    if (income > 0 && resource !== "tar") {
                         mapEntry.income[resource] = income * arg1;
                     }
                 });
-                // break;
+            //     break;
             // case "modify":
-                // if(mapEntry.income[arg1]) {
-                //     mapEntry.income[arg1] = arg2;
-                // }
-                // break;
+            //     if(mapEntry.income[arg1]) {
+            //         mapEntry.income[arg1] = arg2;
+            //     }
+            //     break;
             // case "set":
-                // mapEntry.income[arg1] = arg2;
+            //     mapEntry.income[arg1] = arg2;
             // these two cases will require some special handling
             // modify will need to simply divide by the old base income and multiply by the new one
             // set will need to call a function to apply all multipliers to itself
@@ -331,10 +332,10 @@ SharkGame.Resources = {
     },
 
     getIncomeBoost(resource, boosted) {
-        if(SharkGame.ResourceMap.get(resource).income[boosted] < SharkGame.EPSILON) {
+        if (SharkGame.ResourceMap.get(resource).income[boosted] < SharkGame.EPSILON) {
             return 1;
         }
-        if(boosted === "tar") {
+        if (boosted === "tar") {
             return 1;
         }
         return SharkGame.PlayerResources.get(resource).incomeBoost;

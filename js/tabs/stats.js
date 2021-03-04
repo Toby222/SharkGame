@@ -354,7 +354,13 @@ SharkGame.Stats = {
                 }
 
                 if (generatorBoostRowspan === "inline" || counter === 0) {
-                    addCell([r.UPGRADE_MULTIPLIER_COLOR, "x" + r.getMultiplier(generatorName) * r.getBoost(incomeKey) * r.getIncomeBoost(generatorName, incomeKey)], generatorBoostRowspan);
+                    addCell(
+                        [
+                            r.UPGRADE_MULTIPLIER_COLOR,
+                            "x" + r.getMultiplier(generatorName) * r.getBoost(incomeKey) * r.getIncomeBoost(generatorName, incomeKey),
+                        ],
+                        generatorBoostRowspan
+                    );
 
                     // does this generator get a world multiplier?
                     // world multipliers are per generator, so when its sorted by material being produced you need it for all its income

@@ -128,7 +128,7 @@ SharkGame.WorldModifiers = {
         apply(generator, restrictedResource) {
             w.worldRestrictedCombinations.set(generator, restrictedResource);
         },
-        getEffect(level, amount) {
+        getEffect(_level, _amount) {
             return "";
         },
         getMessage(generator, restriction) {

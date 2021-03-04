@@ -1,0 +1,14 @@
+name: Check Code Quality
+on:
+    - push
+    - pull_request
+    - workflow_dispatch
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - name: Install package
+              run: yarn install
+            - name: Run `test` script
+              run: yarn test

@@ -288,7 +288,7 @@ SharkGame.ResourceTable = {
         },
         value: 4000,
     },
-    
+
     collector: {
         name: "collector crabs",
         singleName: "collector crab",
@@ -787,20 +787,20 @@ SharkGame.ResourceTable = {
         color: "#549572",
         value: 0.4,
     },
-    
+
     ancientPart: {
         name: "ancient parts",
         singleName: "ancient part",
         color: "#8a6853",
         value: 500,
     },
-    
+
     filter: {
         name: "sponge filters",
         singleName: "sponge filter",
         color: "#FFC89C",
         income: {
-            tar: -0.01
+            tar: -0.01,
         },
         value: 1000,
         forceIncome: true,

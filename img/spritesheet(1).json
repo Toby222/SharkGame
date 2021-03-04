@@ -1,897 +1,897 @@
 {
-	"frames": [
-		{
-			"filename": "abandoned-default.png",
-			"frame": {
-				"x": 2,
-				"y": 2,
-				"w": 400,
-				"h": 200
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 400,
-				"h": 200
-			},
-			"sourceSize": {
-				"w": 400,
-				"h": 200
-			}
-		},
-		{
-			"filename": "abandoned-exploration.png",
-			"frame": {
-				"x": 406,
-				"y": 2,
-				"w": 400,
-				"h": 200
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 400,
-				"h": 200
-			},
-			"sourceSize": {
-				"w": 400,
-				"h": 200
-			}
-		},
-		{
-			"filename": "abandoned-gate.png",
-			"frame": {
-				"x": 810,
-				"y": 2,
-				"w": 400,
-				"h": 200
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 400,
-				"h": 200
-			},
-			"sourceSize": {
-				"w": 400,
-				"h": 200
-			}
-		},
-		{
-			"filename": "abandoned-high-energy-fusion.png",
-			"frame": {
-				"x": 1214,
-				"y": 2,
-				"w": 400,
-				"h": 200
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 400,
-				"h": 200
-			},
-			"sourceSize": {
-				"w": 400,
-				"h": 200
-			}
-		},
-		{
-			"filename": "abandoned-octopus-scrutinizes.png",
-			"frame": {
-				"x": 2,
-				"y": 206,
-				"w": 400,
-				"h": 200
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 400,
-				"h": 200
-			},
-			"sourceSize": {
-				"w": 400,
-				"h": 200
-			}
-		},
-		{
-			"filename": "abandoned-production.png",
-			"frame": {
-				"x": 406,
-				"y": 206,
-				"w": 400,
-				"h": 200
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 400,
-				"h": 200
-			},
-			"sourceSize": {
-				"w": 400,
-				"h": 200
-			}
-		},
-		{
-			"filename": "abandoned-spronge.png",
-			"frame": {
-				"x": 810,
-				"y": 206,
-				"w": 400,
-				"h": 200
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 400,
-				"h": 200
-			},
-			"sourceSize": {
-				"w": 400,
-				"h": 200
-			}
-		},
-		{
-			"filename": "abandoned-tar-one.png",
-			"frame": {
-				"x": 1214,
-				"y": 206,
-				"w": 400,
-				"h": 200
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 400,
-				"h": 200
-			},
-			"sourceSize": {
-				"w": 400,
-				"h": 200
-			}
-		},
-		{
-			"filename": "abandoned-tar-two.png",
-			"frame": {
-				"x": 2,
-				"y": 410,
-				"w": 400,
-				"h": 200
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 400,
-				"h": 200
-			},
-			"sourceSize": {
-				"w": 400,
-				"h": 200
-			}
-		},
-		{
-			"filename": "chaotic-default.png",
-			"frame": {
-				"x": 406,
-				"y": 410,
-				"w": 400,
-				"h": 200
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 400,
-				"h": 200
-			},
-			"sourceSize": {
-				"w": 400,
-				"h": 200
-			}
-		},
-		{
-			"filename": "chimaera-one.png",
-			"frame": {
-				"x": 810,
-				"y": 410,
-				"w": 400,
-				"h": 200
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 400,
-				"h": 200
-			},
-			"sourceSize": {
-				"w": 400,
-				"h": 200
-			}
-		},
-		{
-			"filename": "chorus.png",
-			"frame": {
-				"x": 1214,
-				"y": 410,
-				"w": 400,
-				"h": 200
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 400,
-				"h": 200
-			},
-			"sourceSize": {
-				"w": 400,
-				"h": 200
-			}
-		},
-		{
-			"filename": "dolphin-one.png",
-			"frame": {
-				"x": 2,
-				"y": 614,
-				"w": 400,
-				"h": 200
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 400,
-				"h": 200
-			},
-			"sourceSize": {
-				"w": 400,
-				"h": 200
-			}
-		},
-		{
-			"filename": "eel-one.png",
-			"frame": {
-				"x": 406,
-				"y": 614,
-				"w": 400,
-				"h": 200
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 400,
-				"h": 200
-			},
-			"sourceSize": {
-				"w": 400,
-				"h": 200
-			}
-		},
-		{
-			"filename": "essence.png",
-			"frame": {
-				"x": 810,
-				"y": 614,
-				"w": 400,
-				"h": 200
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 400,
-				"h": 200
-			},
-			"sourceSize": {
-				"w": 400,
-				"h": 200
-			}
-		},
-		{
-			"filename": "frigid-default.png",
-			"frame": {
-				"x": 1214,
-				"y": 614,
-				"w": 400,
-				"h": 200
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 400,
-				"h": 200
-			},
-			"sourceSize": {
-				"w": 400,
-				"h": 200
-			}
-		},
-		{
-			"filename": "frigid-ice-one.png",
-			"frame": {
-				"x": 2,
-				"y": 818,
-				"w": 400,
-				"h": 200
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 400,
-				"h": 200
-			},
-			"sourceSize": {
-				"w": 400,
-				"h": 200
-			}
-		},
-		{
-			"filename": "frigid-ice-two.png",
-			"frame": {
-				"x": 406,
-				"y": 818,
-				"w": 400,
-				"h": 200
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 400,
-				"h": 200
-			},
-			"sourceSize": {
-				"w": 400,
-				"h": 200
-			}
-		},
-		{
-			"filename": "haven-default.png",
-			"frame": {
-				"x": 810,
-				"y": 818,
-				"w": 400,
-				"h": 200
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 400,
-				"h": 200
-			},
-			"sourceSize": {
-				"w": 400,
-				"h": 200
-			}
-		},
-		{
-			"filename": "lobster-one.png",
-			"frame": {
-				"x": 1214,
-				"y": 818,
-				"w": 400,
-				"h": 200
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 400,
-				"h": 200
-			},
-			"sourceSize": {
-				"w": 400,
-				"h": 200
-			}
-		},
-		{
-			"filename": "marine-default.png",
-			"frame": {
-				"x": 2,
-				"y": 1022,
-				"w": 400,
-				"h": 200
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 400,
-				"h": 200
-			},
-			"sourceSize": {
-				"w": 400,
-				"h": 200
-			}
-		},
-		{
-			"filename": "missing.png",
-			"frame": {
-				"x": 406,
-				"y": 1022,
-				"w": 400,
-				"h": 200
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 400,
-				"h": 200
-			},
-			"sourceSize": {
-				"w": 400,
-				"h": 200
-			}
-		},
-		{
-			"filename": "shrimp-one.png",
-			"frame": {
-				"x": 810,
-				"y": 1022,
-				"w": 400,
-				"h": 200
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 400,
-				"h": 200
-			},
-			"sourceSize": {
-				"w": 400,
-				"h": 200
-			}
-		},
-		{
-			"filename": "shrouded-default.png",
-			"frame": {
-				"x": 1214,
-				"y": 1022,
-				"w": 400,
-				"h": 200
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 400,
-				"h": 200
-			},
-			"sourceSize": {
-				"w": 400,
-				"h": 200
-			}
-		},
-		{
-			"filename": "start-chasm.png",
-			"frame": {
-				"x": 2,
-				"y": 1226,
-				"w": 400,
-				"h": 200
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 400,
-				"h": 200
-			},
-			"sourceSize": {
-				"w": 400,
-				"h": 200
-			}
-		},
-		{
-			"filename": "start-crab.png",
-			"frame": {
-				"x": 406,
-				"y": 1226,
-				"w": 400,
-				"h": 200
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 400,
-				"h": 200
-			},
-			"sourceSize": {
-				"w": 400,
-				"h": 200
-			}
-		},
-		{
-			"filename": "start-crystals.png",
-			"frame": {
-				"x": 810,
-				"y": 1226,
-				"w": 400,
-				"h": 200
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 400,
-				"h": 200
-			},
-			"sourceSize": {
-				"w": 400,
-				"h": 200
-			}
-		},
-		{
-			"filename": "start-discoveries.png",
-			"frame": {
-				"x": 1214,
-				"y": 1226,
-				"w": 400,
-				"h": 200
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 400,
-				"h": 200
-			},
-			"sourceSize": {
-				"w": 400,
-				"h": 200
-			}
-		},
-		{
-			"filename": "start-exploration.png",
-			"frame": {
-				"x": 2,
-				"y": 1430,
-				"w": 400,
-				"h": 200
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 400,
-				"h": 200
-			},
-			"sourceSize": {
-				"w": 400,
-				"h": 200
-			}
-		},
-		{
-			"filename": "start-gate.png",
-			"frame": {
-				"x": 406,
-				"y": 1430,
-				"w": 400,
-				"h": 200
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 400,
-				"h": 200
-			},
-			"sourceSize": {
-				"w": 400,
-				"h": 200
-			}
-		},
-		{
-			"filename": "start-machines.png",
-			"frame": {
-				"x": 810,
-				"y": 1430,
-				"w": 400,
-				"h": 200
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 400,
-				"h": 200
-			},
-			"sourceSize": {
-				"w": 400,
-				"h": 200
-			}
-		},
-		{
-			"filename": "start-nurse.png",
-			"frame": {
-				"x": 1214,
-				"y": 1430,
-				"w": 400,
-				"h": 200
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 400,
-				"h": 200
-			},
-			"sourceSize": {
-				"w": 400,
-				"h": 200
-			}
-		},
-		{
-			"filename": "start-quite-the-group.png",
-			"frame": {
-				"x": 2,
-				"y": 1634,
-				"w": 400,
-				"h": 200
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 400,
-				"h": 200
-			},
-			"sourceSize": {
-				"w": 400,
-				"h": 200
-			}
-		},
-		{
-			"filename": "start-ray.png",
-			"frame": {
-				"x": 406,
-				"y": 1634,
-				"w": 400,
-				"h": 200
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 400,
-				"h": 200
-			},
-			"sourceSize": {
-				"w": 400,
-				"h": 200
-			}
-		},
-		{
-			"filename": "start-science.png",
-			"frame": {
-				"x": 810,
-				"y": 1634,
-				"w": 400,
-				"h": 200
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 400,
-				"h": 200
-			},
-			"sourceSize": {
-				"w": 400,
-				"h": 200
-			}
-		},
-		{
-			"filename": "start-shark.png",
-			"frame": {
-				"x": 1214,
-				"y": 1634,
-				"w": 400,
-				"h": 200
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 400,
-				"h": 200
-			},
-			"sourceSize": {
-				"w": 400,
-				"h": 200
-			}
-		},
-		{
-			"filename": "start-sharks.png",
-			"frame": {
-				"x": 1618,
-				"y": 2,
-				"w": 400,
-				"h": 200
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 400,
-				"h": 200
-			},
-			"sourceSize": {
-				"w": 400,
-				"h": 200
-			}
-		},
-		{
-			"filename": "start-tribe.png",
-			"frame": {
-				"x": 1618,
-				"y": 206,
-				"w": 400,
-				"h": 200
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 400,
-				"h": 200
-			},
-			"sourceSize": {
-				"w": 400,
-				"h": 200
-			}
-		},
-		{
-			"filename": "start-you-are-a-shark.png",
-			"frame": {
-				"x": 1618,
-				"y": 410,
-				"w": 400,
-				"h": 200
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 400,
-				"h": 200
-			},
-			"sourceSize": {
-				"w": 400,
-				"h": 200
-			}
-		},
-		{
-			"filename": "tempestuous-default.png",
-			"frame": {
-				"x": 1618,
-				"y": 614,
-				"w": 400,
-				"h": 200
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 400,
-				"h": 200
-			},
-			"sourceSize": {
-				"w": 400,
-				"h": 200
-			}
-		},
-		{
-			"filename": "violent-default.png",
-			"frame": {
-				"x": 1618,
-				"y": 818,
-				"w": 400,
-				"h": 200
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 400,
-				"h": 200
-			},
-			"sourceSize": {
-				"w": 400,
-				"h": 200
-			}
-		},
-		{
-			"filename": "whale-one.png",
-			"frame": {
-				"x": 1618,
-				"y": 1022,
-				"w": 400,
-				"h": 200
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 400,
-				"h": 200
-			},
-			"sourceSize": {
-				"w": 400,
-				"h": 200
-			}
-		}
-	],
-	"meta": {
-		"app": "http://www.codeandweb.com/texturepacker",
-		"version": "1.0",
-		"image": "spritesheet.png",
-		"format": "RGBA8888",
-		"size": {
-			"w": 2020,
-			"h": 1836
-		},
-		"scale": "1"
-	}
+    "frames": [
+        {
+            "filename": "abandoned-default.png",
+            "frame": {
+                "x": 2,
+                "y": 2,
+                "w": 400,
+                "h": 200
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 400,
+                "h": 200
+            },
+            "sourceSize": {
+                "w": 400,
+                "h": 200
+            }
+        },
+        {
+            "filename": "abandoned-exploration.png",
+            "frame": {
+                "x": 406,
+                "y": 2,
+                "w": 400,
+                "h": 200
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 400,
+                "h": 200
+            },
+            "sourceSize": {
+                "w": 400,
+                "h": 200
+            }
+        },
+        {
+            "filename": "abandoned-gate.png",
+            "frame": {
+                "x": 810,
+                "y": 2,
+                "w": 400,
+                "h": 200
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 400,
+                "h": 200
+            },
+            "sourceSize": {
+                "w": 400,
+                "h": 200
+            }
+        },
+        {
+            "filename": "abandoned-high-energy-fusion.png",
+            "frame": {
+                "x": 1214,
+                "y": 2,
+                "w": 400,
+                "h": 200
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 400,
+                "h": 200
+            },
+            "sourceSize": {
+                "w": 400,
+                "h": 200
+            }
+        },
+        {
+            "filename": "abandoned-octopus-scrutinizes.png",
+            "frame": {
+                "x": 2,
+                "y": 206,
+                "w": 400,
+                "h": 200
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 400,
+                "h": 200
+            },
+            "sourceSize": {
+                "w": 400,
+                "h": 200
+            }
+        },
+        {
+            "filename": "abandoned-production.png",
+            "frame": {
+                "x": 406,
+                "y": 206,
+                "w": 400,
+                "h": 200
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 400,
+                "h": 200
+            },
+            "sourceSize": {
+                "w": 400,
+                "h": 200
+            }
+        },
+        {
+            "filename": "abandoned-spronge.png",
+            "frame": {
+                "x": 810,
+                "y": 206,
+                "w": 400,
+                "h": 200
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 400,
+                "h": 200
+            },
+            "sourceSize": {
+                "w": 400,
+                "h": 200
+            }
+        },
+        {
+            "filename": "abandoned-tar-one.png",
+            "frame": {
+                "x": 1214,
+                "y": 206,
+                "w": 400,
+                "h": 200
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 400,
+                "h": 200
+            },
+            "sourceSize": {
+                "w": 400,
+                "h": 200
+            }
+        },
+        {
+            "filename": "abandoned-tar-two.png",
+            "frame": {
+                "x": 2,
+                "y": 410,
+                "w": 400,
+                "h": 200
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 400,
+                "h": 200
+            },
+            "sourceSize": {
+                "w": 400,
+                "h": 200
+            }
+        },
+        {
+            "filename": "chaotic-default.png",
+            "frame": {
+                "x": 406,
+                "y": 410,
+                "w": 400,
+                "h": 200
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 400,
+                "h": 200
+            },
+            "sourceSize": {
+                "w": 400,
+                "h": 200
+            }
+        },
+        {
+            "filename": "chimaera-one.png",
+            "frame": {
+                "x": 810,
+                "y": 410,
+                "w": 400,
+                "h": 200
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 400,
+                "h": 200
+            },
+            "sourceSize": {
+                "w": 400,
+                "h": 200
+            }
+        },
+        {
+            "filename": "chorus.png",
+            "frame": {
+                "x": 1214,
+                "y": 410,
+                "w": 400,
+                "h": 200
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 400,
+                "h": 200
+            },
+            "sourceSize": {
+                "w": 400,
+                "h": 200
+            }
+        },
+        {
+            "filename": "dolphin-one.png",
+            "frame": {
+                "x": 2,
+                "y": 614,
+                "w": 400,
+                "h": 200
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 400,
+                "h": 200
+            },
+            "sourceSize": {
+                "w": 400,
+                "h": 200
+            }
+        },
+        {
+            "filename": "eel-one.png",
+            "frame": {
+                "x": 406,
+                "y": 614,
+                "w": 400,
+                "h": 200
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 400,
+                "h": 200
+            },
+            "sourceSize": {
+                "w": 400,
+                "h": 200
+            }
+        },
+        {
+            "filename": "essence.png",
+            "frame": {
+                "x": 810,
+                "y": 614,
+                "w": 400,
+                "h": 200
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 400,
+                "h": 200
+            },
+            "sourceSize": {
+                "w": 400,
+                "h": 200
+            }
+        },
+        {
+            "filename": "frigid-default.png",
+            "frame": {
+                "x": 1214,
+                "y": 614,
+                "w": 400,
+                "h": 200
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 400,
+                "h": 200
+            },
+            "sourceSize": {
+                "w": 400,
+                "h": 200
+            }
+        },
+        {
+            "filename": "frigid-ice-one.png",
+            "frame": {
+                "x": 2,
+                "y": 818,
+                "w": 400,
+                "h": 200
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 400,
+                "h": 200
+            },
+            "sourceSize": {
+                "w": 400,
+                "h": 200
+            }
+        },
+        {
+            "filename": "frigid-ice-two.png",
+            "frame": {
+                "x": 406,
+                "y": 818,
+                "w": 400,
+                "h": 200
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 400,
+                "h": 200
+            },
+            "sourceSize": {
+                "w": 400,
+                "h": 200
+            }
+        },
+        {
+            "filename": "haven-default.png",
+            "frame": {
+                "x": 810,
+                "y": 818,
+                "w": 400,
+                "h": 200
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 400,
+                "h": 200
+            },
+            "sourceSize": {
+                "w": 400,
+                "h": 200
+            }
+        },
+        {
+            "filename": "lobster-one.png",
+            "frame": {
+                "x": 1214,
+                "y": 818,
+                "w": 400,
+                "h": 200
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 400,
+                "h": 200
+            },
+            "sourceSize": {
+                "w": 400,
+                "h": 200
+            }
+        },
+        {
+            "filename": "marine-default.png",
+            "frame": {
+                "x": 2,
+                "y": 1022,
+                "w": 400,
+                "h": 200
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 400,
+                "h": 200
+            },
+            "sourceSize": {
+                "w": 400,
+                "h": 200
+            }
+        },
+        {
+            "filename": "missing.png",
+            "frame": {
+                "x": 406,
+                "y": 1022,
+                "w": 400,
+                "h": 200
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 400,
+                "h": 200
+            },
+            "sourceSize": {
+                "w": 400,
+                "h": 200
+            }
+        },
+        {
+            "filename": "shrimp-one.png",
+            "frame": {
+                "x": 810,
+                "y": 1022,
+                "w": 400,
+                "h": 200
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 400,
+                "h": 200
+            },
+            "sourceSize": {
+                "w": 400,
+                "h": 200
+            }
+        },
+        {
+            "filename": "shrouded-default.png",
+            "frame": {
+                "x": 1214,
+                "y": 1022,
+                "w": 400,
+                "h": 200
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 400,
+                "h": 200
+            },
+            "sourceSize": {
+                "w": 400,
+                "h": 200
+            }
+        },
+        {
+            "filename": "start-chasm.png",
+            "frame": {
+                "x": 2,
+                "y": 1226,
+                "w": 400,
+                "h": 200
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 400,
+                "h": 200
+            },
+            "sourceSize": {
+                "w": 400,
+                "h": 200
+            }
+        },
+        {
+            "filename": "start-crab.png",
+            "frame": {
+                "x": 406,
+                "y": 1226,
+                "w": 400,
+                "h": 200
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 400,
+                "h": 200
+            },
+            "sourceSize": {
+                "w": 400,
+                "h": 200
+            }
+        },
+        {
+            "filename": "start-crystals.png",
+            "frame": {
+                "x": 810,
+                "y": 1226,
+                "w": 400,
+                "h": 200
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 400,
+                "h": 200
+            },
+            "sourceSize": {
+                "w": 400,
+                "h": 200
+            }
+        },
+        {
+            "filename": "start-discoveries.png",
+            "frame": {
+                "x": 1214,
+                "y": 1226,
+                "w": 400,
+                "h": 200
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 400,
+                "h": 200
+            },
+            "sourceSize": {
+                "w": 400,
+                "h": 200
+            }
+        },
+        {
+            "filename": "start-exploration.png",
+            "frame": {
+                "x": 2,
+                "y": 1430,
+                "w": 400,
+                "h": 200
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 400,
+                "h": 200
+            },
+            "sourceSize": {
+                "w": 400,
+                "h": 200
+            }
+        },
+        {
+            "filename": "start-gate.png",
+            "frame": {
+                "x": 406,
+                "y": 1430,
+                "w": 400,
+                "h": 200
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 400,
+                "h": 200
+            },
+            "sourceSize": {
+                "w": 400,
+                "h": 200
+            }
+        },
+        {
+            "filename": "start-machines.png",
+            "frame": {
+                "x": 810,
+                "y": 1430,
+                "w": 400,
+                "h": 200
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 400,
+                "h": 200
+            },
+            "sourceSize": {
+                "w": 400,
+                "h": 200
+            }
+        },
+        {
+            "filename": "start-nurse.png",
+            "frame": {
+                "x": 1214,
+                "y": 1430,
+                "w": 400,
+                "h": 200
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 400,
+                "h": 200
+            },
+            "sourceSize": {
+                "w": 400,
+                "h": 200
+            }
+        },
+        {
+            "filename": "start-quite-the-group.png",
+            "frame": {
+                "x": 2,
+                "y": 1634,
+                "w": 400,
+                "h": 200
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 400,
+                "h": 200
+            },
+            "sourceSize": {
+                "w": 400,
+                "h": 200
+            }
+        },
+        {
+            "filename": "start-ray.png",
+            "frame": {
+                "x": 406,
+                "y": 1634,
+                "w": 400,
+                "h": 200
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 400,
+                "h": 200
+            },
+            "sourceSize": {
+                "w": 400,
+                "h": 200
+            }
+        },
+        {
+            "filename": "start-science.png",
+            "frame": {
+                "x": 810,
+                "y": 1634,
+                "w": 400,
+                "h": 200
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 400,
+                "h": 200
+            },
+            "sourceSize": {
+                "w": 400,
+                "h": 200
+            }
+        },
+        {
+            "filename": "start-shark.png",
+            "frame": {
+                "x": 1214,
+                "y": 1634,
+                "w": 400,
+                "h": 200
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 400,
+                "h": 200
+            },
+            "sourceSize": {
+                "w": 400,
+                "h": 200
+            }
+        },
+        {
+            "filename": "start-sharks.png",
+            "frame": {
+                "x": 1618,
+                "y": 2,
+                "w": 400,
+                "h": 200
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 400,
+                "h": 200
+            },
+            "sourceSize": {
+                "w": 400,
+                "h": 200
+            }
+        },
+        {
+            "filename": "start-tribe.png",
+            "frame": {
+                "x": 1618,
+                "y": 206,
+                "w": 400,
+                "h": 200
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 400,
+                "h": 200
+            },
+            "sourceSize": {
+                "w": 400,
+                "h": 200
+            }
+        },
+        {
+            "filename": "start-you-are-a-shark.png",
+            "frame": {
+                "x": 1618,
+                "y": 410,
+                "w": 400,
+                "h": 200
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 400,
+                "h": 200
+            },
+            "sourceSize": {
+                "w": 400,
+                "h": 200
+            }
+        },
+        {
+            "filename": "tempestuous-default.png",
+            "frame": {
+                "x": 1618,
+                "y": 614,
+                "w": 400,
+                "h": 200
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 400,
+                "h": 200
+            },
+            "sourceSize": {
+                "w": 400,
+                "h": 200
+            }
+        },
+        {
+            "filename": "violent-default.png",
+            "frame": {
+                "x": 1618,
+                "y": 818,
+                "w": 400,
+                "h": 200
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 400,
+                "h": 200
+            },
+            "sourceSize": {
+                "w": 400,
+                "h": 200
+            }
+        },
+        {
+            "filename": "whale-one.png",
+            "frame": {
+                "x": 1618,
+                "y": 1022,
+                "w": 400,
+                "h": 200
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 400,
+                "h": 200
+            },
+            "sourceSize": {
+                "w": 400,
+                "h": 200
+            }
+        }
+    ],
+    "meta": {
+        "app": "http://www.codeandweb.com/texturepacker",
+        "version": "1.0",
+        "image": "spritesheet.png",
+        "format": "RGBA8888",
+        "size": {
+            "w": 2020,
+            "h": 1836
+        },
+        "scale": "1"
+    }
 }

@@ -5,11 +5,15 @@
     "author": "spencers145 <smartypantsspencer@gmail.com>",
     "license": "MIT",
     "scripts": {
-        "lint": "eslint . --format visualstudio && prettier . --check",
         "fix": "eslint . --fix && prettier . --write",
-        "less:w:big": "less-watch -c ./less/style.less ./css/style.css",
+        "lint": "yarn lint:eslint && yarn lint:prettier",
+        "test": "yarn lint:eslint:strict && yarn lint:prettier",
+        "less": "lessc ./less/style.less ./css/style.css && lessc -clean-css ./less/style.less ./css/style.min.css",
         "less:w": "less-watch -cm ./less/style.less ./css/style.min.css",
-        "less": "lessc ./less/style.less ./css/style.css && lessc -clean-css ./less/style.less ./css/style.min.css"
+        "less:w:big": "less-watch -c ./less/style.less ./css/style.css",
+        "lint:prettier": "prettier . --check",
+        "lint:eslint": "eslint . --format visualstudio",
+        "lint:eslint:strict": "yarn lint:eslint --max-warnings=0"
     },
     "devDependencies": {
         "@types/jquery": "^3.5.5",

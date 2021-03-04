@@ -536,13 +536,15 @@ SharkGame.Gateway = {
                 switch (modifier.type) {
                     case "multiplier":
                         modifierList.append(
-                            $("<li>").html(SharkGame.WorldModifiers[modifier.modifier].getMessage(planetLevel, target, modifier.amount)).addClass("medDesc")
-                            );
+                            $("<li>")
+                                .html(SharkGame.WorldModifiers[modifier.modifier].getMessage(planetLevel, target, modifier.amount))
+                                .addClass("medDesc")
+                        );
                         break;
                     case "restriction":
                         modifierList.append(
                             $("<li>").html(SharkGame.WorldModifiers[modifier.modifier].getMessage(target, modifier.restriction)).addClass("medDesc")
-                            );
+                        );
                 }
             }
             contentDiv.append(modifierList);
@@ -658,10 +660,7 @@ SharkGame.Gateway.Messages = {
     ],
     lastPlanetBased: {
         // working on changing this section
-        start: [
-            "No other world you find will be as forgiving.",
-            "You have left the best of all possible worlds.",
-        ],
+        start: ["No other world you find will be as forgiving.", "You have left the best of all possible worlds."],
         marine: [
             "Did your last ocean feel all too familiar?",
             "Like your origins, but too different still.",
@@ -687,19 +686,9 @@ SharkGame.Gateway.Messages = {
             "This is not the harshest world you will endure, surely.",
             "You are forged from the geothermal vents.",
         ],
-        abandoned: [
-            "Do you wonder who abandoned the machines?",
-            "Do the octopuses know who came before them? Do you know?",
-            "",
-        ],
-        shrouded: [
-            "Did the chimaeras recognise who you were?",
-            "What did you learn from the dark world?",
-        ],
-        frigid: [
-            "Did you prefer arctic waters?",
-            "Few worlds are so harsh. Fewer survive.",
-        ],
+        abandoned: ["Do you wonder who abandoned the machines?", "Do the octopuses know who came before them? Do you know?", ""],
+        shrouded: ["Did the chimaeras recognise who you were?", "What did you learn from the dark world?"],
+        frigid: ["Did you prefer arctic waters?", "Few worlds are so harsh. Fewer survive."],
     },
     loss: [
         "No matter. You will succeed in future, no doubt.",

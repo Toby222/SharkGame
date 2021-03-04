@@ -1524,7 +1524,7 @@ SharkGame.Upgrades = {
                 upgrades: ["thermalVents", "underwaterChemistry"],
             },
         },
-        
+
         spongeCollection: {
             name: "Sponge Collection",
             desc: "We can see these things littering the reefs and beds, but only the octopuses know how to collect them without breaking them.",
@@ -1610,7 +1610,8 @@ SharkGame.Upgrades = {
             desc: "Devise a system of pulverising unwanted resources into a component paste, and reusing them as something else.",
             researchedMessage:
                 "Well this thing is frankly terrifying. I wouldn't swim anywhere near the input holes if I were you. Maybe it'll help though!",
-            effectDesc: "Allows recycling of materials by virtue of a horrifying mechanical maw that consumes all that ventures near it. Future? Also, skimmers are now possible to create.",
+            effectDesc:
+                "Allows recycling of materials by virtue of a horrifying mechanical maw that consumes all that ventures near it. Future? Also, skimmers are now possible to create.",
             cost: {
                 science: 4000,
                 sharkonium: 2000,
@@ -1666,7 +1667,8 @@ SharkGame.Upgrades = {
         agriculture: {
             name: "Agriculture",
             desc: "The hunter-gatherer lifestyle will only work so well for us. Maybe we should gather these animals in one place and let them grow.",
-            researchedMessage: "While the tar makes it difficult to pull off, it is so much easier to get things when they're all in one place. It's like the ocean is our grotto now!",
+            researchedMessage:
+                "While the tar makes it difficult to pull off, it is so much easier to get things when they're all in one place. It's like the ocean is our grotto now!",
             effectDesc: "Crabs can now specialize in collecting sponge.",
             cost: {
                 science: 1500,
@@ -1696,7 +1698,7 @@ SharkGame.Upgrades = {
                 },
             },
         },
-        
+
         rayBiology: {
             name: "Ray Biology",
             desc: "Though kindred to the sharks, we know so little about the rays. If only we could fix this. We need to bait a sand trap.",
@@ -1811,7 +1813,7 @@ SharkGame.Upgrades = {
                 },
             },
         },
-        
+
         exploration: {
             name: "Exploration",
             desc: "Venture into open waters to see what can be found!",
@@ -1837,8 +1839,10 @@ SharkGame.Upgrades = {
         farAbandonedExploration: {
             name: "Far Exploration",
             desc: "In the distance lies a bunch of weird structures that sharks have dared not enter...so what happens if we do?",
-            researchedMessage: "As it turns out, discoveries happen! There are no signs of life, but we found lots of weird machines and a strange gate.",
-            effectDesc: "Explored the city in the distance and discovered a gate and some weird machines. Octopuses can now specialize in scavenging around the city.",
+            researchedMessage:
+                "As it turns out, discoveries happen! There are no signs of life, but we found lots of weird machines and a strange gate.",
+            effectDesc:
+                "Explored the city in the distance and discovered a gate and some weird machines. Octopuses can now specialize in scavenging around the city.",
             cost: {
                 science: 50000,
                 fish: 75000,
@@ -1851,8 +1855,10 @@ SharkGame.Upgrades = {
         superiorSearchAlgorithms: {
             name: "Superior Search Algorithms",
             desc: "Why is finding stuff so hard?!?!",
-            researchedMessage: "As our octopus bretheren explain, it was hard because we kept telling them to go in circles. They used the word 'inept'.",
-            effectDesc: "The octopuses have taken control of both scavenging operations and are refusing to listen to our directions. Still, scavengers are 8 times faster and collectors are 4 times faster.",
+            researchedMessage:
+                "As our octopus bretheren explain, it was hard because we kept telling them to go in circles. They used the word 'inept'.",
+            effectDesc:
+                "The octopuses have taken control of both scavenging operations and are refusing to listen to our directions. Still, scavengers are 8 times faster and collectors are 4 times faster.",
             cost: {
                 science: 88888,
                 ancientPart: 88,
@@ -1873,7 +1879,8 @@ SharkGame.Upgrades = {
             name: "Reverse Engineering",
             desc: "What is up with these parts? Why are they shaped like that?!",
             researchedMessage: "Results inconclusive. Further analysis pending.",
-            effectDesc: "Ancient parts can be sacrificed for science. Scientists and scavengers are twice as effective, and investigators are 4 times as effective.",
+            effectDesc:
+                "Ancient parts can be sacrificed for science. Scientists and scavengers are twice as effective, and investigators are 4 times as effective.",
             cost: {
                 science: 125000,
                 ancientPart: 250,
@@ -1894,7 +1901,8 @@ SharkGame.Upgrades = {
             name: "High-Energy Fusion",
             desc: "These old parts must have some kind of use! Question is, can we figure it out???",
             researchedMessage: "The secret of high-energy fusion has been unlocked. Scavenge no more. We will do it ourselves.",
-            effectDesc: "Laser rays can fuse sand to crystal at an absurd rate. We have figured out how to create more ancient parts by fusing clams and crystals.",
+            effectDesc:
+                "Laser rays can fuse sand to crystal at an absurd rate. We have figured out how to create more ancient parts by fusing clams and crystals.",
             cost: {
                 science: 2500000,
                 ancientPart: 1750,

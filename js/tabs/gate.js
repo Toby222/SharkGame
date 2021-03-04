@@ -22,7 +22,6 @@ SharkGame.Gate = {
     sceneOpenImage: "img/events/misc/scene-gate-open.png",
     sceneClosedButFilledImage: "img/events/misc/scene-gate-closed-but-filled.png",
 
-
     requirements: {},
     completedRequirements: {},
 
@@ -129,7 +128,6 @@ SharkGame.Gate = {
             // in this situation simply assume slotsLeft === 0 and continue with execution
         }
 
-        
         // if there are no slots then see if there are any upgrades needed
         if (upgradesLeft !== false) {
             return gt.messagePaidNotOpen;
@@ -140,7 +138,7 @@ SharkGame.Gate = {
         SharkGame.Log.addError("No gate requirements found.");
         return "This is a failsafe message. Something has gone wrong internally.";
     },
-    
+
     getSlotsLeft() {
         const gt = SharkGame.Gate;
         let slots = 0;
@@ -153,7 +151,7 @@ SharkGame.Gate = {
         // if there are not any slots, return false to identify this fact
         return _.size(gt.requirements.slots) !== 0 ? slots : false;
     },
-    
+
     getUpgradesLeft() {
         const gt = SharkGame.Gate;
         let upgrades = 0;
@@ -249,7 +247,7 @@ SharkGame.Gate = {
         });
         return won;
     },
-    
+
     checkUpgradeRequirements(upgradeName) {
         const gt = SharkGame.Gate;
         if (gt.completedRequirements.upgrades) {

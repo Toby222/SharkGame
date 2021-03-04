@@ -249,7 +249,7 @@ SharkGame.Save = {
             // load artifacts (need to have the terraformer and cost reducer loaded before world init)
             if (saveData.artifacts) {
                 $.each(saveData.artifacts, (k, v) => {
-                    if(SharkGame.Artifacts[k]) {
+                    if (SharkGame.Artifacts[k]) {
                         SharkGame.Artifacts[k].level = v;
                     }
                 });
@@ -824,28 +824,12 @@ SharkGame.Save = {
         },
 
         function update(save) {
-            _.each(
-                [
-                    "investigator",
-                    "filter",
-                    "ancientPart",
-                ],
-                (v) => {
-                    save.resources[v] = { amount: 0, totalAmount: 0 };
-                }
-            );
-            _.each(
-                [
-                    "farAbandonedExploration",
-                    "reverseEngineering",
-                    "highEnergyFusion",
-                    "artifactAssembly",
-                    "superiorSearchAlgorithms",
-                ],
-                (v) => {
-                    save.upgrades[v] = false;
-                }
-            );
+            _.each(["investigator", "filter", "ancientPart"], (v) => {
+                save.resources[v] = { amount: 0, totalAmount: 0 };
+            });
+            _.each(["farAbandonedExploration", "reverseEngineering", "highEnergyFusion", "artifactAssembly", "superiorSearchAlgorithms"], (v) => {
+                save.upgrades[v] = false;
+            });
             return save;
         },
     ],

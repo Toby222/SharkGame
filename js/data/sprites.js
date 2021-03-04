@@ -16,7 +16,7 @@ SharkGame.Sprites = {
             x: 2,
             y: 2,
             w: 400,
-            h: 200
+            h: 200,
         },
         rotated: false,
         trimmed: false,
@@ -24,19 +24,19 @@ SharkGame.Sprites = {
             x: 0,
             y: 0,
             w: 400,
-            h: 200
+            h: 200,
         },
         sourceSize: {
             w: 400,
-            h: 200
-        }
+            h: 200,
+        },
     },
     "abandoned-exploration": {
         frame: {
             x: 406,
             y: 2,
             w: 400,
-            h: 200
+            h: 200,
         },
         rotated: false,
         trimmed: false,
@@ -44,19 +44,19 @@ SharkGame.Sprites = {
             x: 0,
             y: 0,
             w: 400,
-            h: 200
+            h: 200,
         },
         sourceSize: {
             w: 400,
-            h: 200
-        }
+            h: 200,
+        },
     },
     "abandoned-gate": {
         frame: {
             x: 810,
             y: 2,
             w: 400,
-            h: 200
+            h: 200,
         },
         rotated: false,
         trimmed: false,
@@ -64,19 +64,19 @@ SharkGame.Sprites = {
             x: 0,
             y: 0,
             w: 400,
-            h: 200
+            h: 200,
         },
         sourceSize: {
             w: 400,
-            h: 200
-        }
+            h: 200,
+        },
     },
     "abandoned-high-energy-fusion": {
         frame: {
             x: 1214,
             y: 2,
             w: 400,
-            h: 200
+            h: 200,
         },
         rotated: false,
         trimmed: false,
@@ -84,19 +84,19 @@ SharkGame.Sprites = {
             x: 0,
             y: 0,
             w: 400,
-            h: 200
+            h: 200,
         },
         sourceSize: {
             w: 400,
-            h: 200
-        }
+            h: 200,
+        },
     },
     "abandoned-octopus-scrutinizes": {
         frame: {
             x: 2,
             y: 206,
             w: 400,
-            h: 200
+            h: 200,
         },
         rotated: false,
         trimmed: false,
@@ -104,19 +104,19 @@ SharkGame.Sprites = {
             x: 0,
             y: 0,
             w: 400,
-            h: 200
+            h: 200,
         },
         sourceSize: {
             w: 400,
-            h: 200
-        }
+            h: 200,
+        },
     },
     "abandoned-production": {
         frame: {
             x: 406,
             y: 206,
             w: 400,
-            h: 200
+            h: 200,
         },
         rotated: false,
         trimmed: false,
@@ -124,19 +124,19 @@ SharkGame.Sprites = {
             x: 0,
             y: 0,
             w: 400,
-            h: 200
+            h: 200,
         },
         sourceSize: {
             w: 400,
-            h: 200
-        }
+            h: 200,
+        },
     },
     "abandoned-spronge": {
         frame: {
             x: 810,
             y: 206,
             w: 400,
-            h: 200
+            h: 200,
         },
         rotated: false,
         trimmed: false,
@@ -144,19 +144,19 @@ SharkGame.Sprites = {
             x: 0,
             y: 0,
             w: 400,
-            h: 200
+            h: 200,
         },
         sourceSize: {
             w: 400,
-            h: 200
-        }
+            h: 200,
+        },
     },
     "abandoned-tar-one": {
         frame: {
             x: 1214,
             y: 206,
             w: 400,
-            h: 200
+            h: 200,
         },
         rotated: false,
         trimmed: false,
@@ -164,19 +164,19 @@ SharkGame.Sprites = {
             x: 0,
             y: 0,
             w: 400,
-            h: 200
+            h: 200,
         },
         sourceSize: {
             w: 400,
-            h: 200
-        }
+            h: 200,
+        },
     },
     "abandoned-tar-two": {
         frame: {
             x: 2,
             y: 410,
             w: 400,
-            h: 200
+            h: 200,
         },
         rotated: false,
         trimmed: false,
@@ -184,19 +184,19 @@ SharkGame.Sprites = {
             x: 0,
             y: 0,
             w: 400,
-            h: 200
+            h: 200,
         },
         sourceSize: {
             w: 400,
-            h: 200
-        }
+            h: 200,
+        },
     },
     "chaotic-default": {
         frame: {
             x: 406,
             y: 410,
             w: 400,
-            h: 200
+            h: 200,
         },
         rotated: false,
         trimmed: false,
@@ -204,19 +204,19 @@ SharkGame.Sprites = {
             x: 0,
             y: 0,
             w: 400,
-            h: 200
+            h: 200,
         },
         sourceSize: {
             w: 400,
-            h: 200
-        }
+            h: 200,
+        },
     },
     "chimaera-one": {
         frame: {
             x: 810,
             y: 410,
             w: 400,
-            h: 200
+            h: 200,
         },
         rotated: false,
         trimmed: false,
@@ -224,19 +224,19 @@ SharkGame.Sprites = {
             x: 0,
             y: 0,
             w: 400,
-            h: 200
+            h: 200,
         },
         sourceSize: {
             w: 400,
-            h: 200
-        }
+            h: 200,
+        },
     },
-    "chorus": {
+    chorus: {
         frame: {
             x: 1214,
             y: 410,
             w: 400,
-            h: 200
+            h: 200,
         },
         rotated: false,
         trimmed: false,
@@ -244,19 +244,19 @@ SharkGame.Sprites = {
             x: 0,
             y: 0,
             w: 400,
-            h: 200
+            h: 200,
         },
         sourceSize: {
             w: 400,
-            h: 200
-        }
+            h: 200,
+        },
     },
     "dolphin-one": {
         frame: {
             x: 2,
             y: 614,
             w: 400,
-            h: 200
+            h: 200,
         },
         rotated: false,
         trimmed: false,
@@ -264,19 +264,19 @@ SharkGame.Sprites = {
             x: 0,
             y: 0,
             w: 400,
-            h: 200
+            h: 200,
         },
         sourceSize: {
             w: 400,
-            h: 200
-        }
+            h: 200,
+        },
     },
     "eel-one": {
         frame: {
             x: 406,
             y: 614,
             w: 400,
-            h: 200
+            h: 200,
         },
         rotated: false,
         trimmed: false,
@@ -284,19 +284,19 @@ SharkGame.Sprites = {
             x: 0,
             y: 0,
             w: 400,
-            h: 200
+            h: 200,
         },
         sourceSize: {
             w: 400,
-            h: 200
-        }
+            h: 200,
+        },
     },
-    "essence": {
+    essence: {
         frame: {
             x: 810,
             y: 614,
             w: 400,
-            h: 200
+            h: 200,
         },
         rotated: false,
         trimmed: false,
@@ -304,19 +304,19 @@ SharkGame.Sprites = {
             x: 0,
             y: 0,
             w: 400,
-            h: 200
+            h: 200,
         },
         sourceSize: {
             w: 400,
-            h: 200
-        }
+            h: 200,
+        },
     },
     "frigid-default": {
         frame: {
             x: 1214,
             y: 614,
             w: 400,
-            h: 200
+            h: 200,
         },
         rotated: false,
         trimmed: false,
@@ -324,19 +324,19 @@ SharkGame.Sprites = {
             x: 0,
             y: 0,
             w: 400,
-            h: 200
+            h: 200,
         },
         sourceSize: {
             w: 400,
-            h: 200
-        }
+            h: 200,
+        },
     },
     "frigid-ice-one": {
         frame: {
             x: 2,
             y: 818,
             w: 400,
-            h: 200
+            h: 200,
         },
         rotated: false,
         trimmed: false,
@@ -344,19 +344,19 @@ SharkGame.Sprites = {
             x: 0,
             y: 0,
             w: 400,
-            h: 200
+            h: 200,
         },
         sourceSize: {
             w: 400,
-            h: 200
-        }
+            h: 200,
+        },
     },
     "frigid-ice-two": {
         frame: {
             x: 406,
             y: 818,
             w: 400,
-            h: 200
+            h: 200,
         },
         rotated: false,
         trimmed: false,
@@ -364,19 +364,19 @@ SharkGame.Sprites = {
             x: 0,
             y: 0,
             w: 400,
-            h: 200
+            h: 200,
         },
         sourceSize: {
             w: 400,
-            h: 200
-        }
+            h: 200,
+        },
     },
     "haven-default": {
         frame: {
             x: 810,
             y: 818,
             w: 400,
-            h: 200
+            h: 200,
         },
         rotated: false,
         trimmed: false,
@@ -384,19 +384,19 @@ SharkGame.Sprites = {
             x: 0,
             y: 0,
             w: 400,
-            h: 200
+            h: 200,
         },
         sourceSize: {
             w: 400,
-            h: 200
-        }
+            h: 200,
+        },
     },
     "lobster-one": {
         frame: {
             x: 1214,
             y: 818,
             w: 400,
-            h: 200
+            h: 200,
         },
         rotated: false,
         trimmed: false,
@@ -404,19 +404,19 @@ SharkGame.Sprites = {
             x: 0,
             y: 0,
             w: 400,
-            h: 200
+            h: 200,
         },
         sourceSize: {
             w: 400,
-            h: 200
-        }
+            h: 200,
+        },
     },
     "marine-default": {
         frame: {
             x: 2,
             y: 1022,
             w: 400,
-            h: 200
+            h: 200,
         },
         rotated: false,
         trimmed: false,
@@ -424,19 +424,19 @@ SharkGame.Sprites = {
             x: 0,
             y: 0,
             w: 400,
-            h: 200
+            h: 200,
         },
         sourceSize: {
             w: 400,
-            h: 200
-        }
+            h: 200,
+        },
     },
-    "missing": {
+    missing: {
         frame: {
             x: 406,
             y: 1022,
             w: 400,
-            h: 200
+            h: 200,
         },
         rotated: false,
         trimmed: false,
@@ -444,19 +444,19 @@ SharkGame.Sprites = {
             x: 0,
             y: 0,
             w: 400,
-            h: 200
+            h: 200,
         },
         sourceSize: {
             w: 400,
-            h: 200
-        }
+            h: 200,
+        },
     },
     "shrimp-one": {
         frame: {
             x: 810,
             y: 1022,
             w: 400,
-            h: 200
+            h: 200,
         },
         rotated: false,
         trimmed: false,
@@ -464,19 +464,19 @@ SharkGame.Sprites = {
             x: 0,
             y: 0,
             w: 400,
-            h: 200
+            h: 200,
         },
         sourceSize: {
             w: 400,
-            h: 200
-        }
+            h: 200,
+        },
     },
     "shrouded-default": {
         frame: {
             x: 1214,
             y: 1022,
             w: 400,
-            h: 200
+            h: 200,
         },
         rotated: false,
         trimmed: false,
@@ -484,19 +484,19 @@ SharkGame.Sprites = {
             x: 0,
             y: 0,
             w: 400,
-            h: 200
+            h: 200,
         },
         sourceSize: {
             w: 400,
-            h: 200
-        }
+            h: 200,
+        },
     },
     "start-chasm": {
         frame: {
             x: 2,
             y: 1226,
             w: 400,
-            h: 200
+            h: 200,
         },
         rotated: false,
         trimmed: false,
@@ -504,19 +504,19 @@ SharkGame.Sprites = {
             x: 0,
             y: 0,
             w: 400,
-            h: 200
+            h: 200,
         },
         sourceSize: {
             w: 400,
-            h: 200
-        }
+            h: 200,
+        },
     },
     "start-crab": {
         frame: {
             x: 406,
             y: 1226,
             w: 400,
-            h: 200
+            h: 200,
         },
         rotated: false,
         trimmed: false,
@@ -524,19 +524,19 @@ SharkGame.Sprites = {
             x: 0,
             y: 0,
             w: 400,
-            h: 200
+            h: 200,
         },
         sourceSize: {
             w: 400,
-            h: 200
-        }
+            h: 200,
+        },
     },
     "start-crystals": {
         frame: {
             x: 810,
             y: 1226,
             w: 400,
-            h: 200
+            h: 200,
         },
         rotated: false,
         trimmed: false,
@@ -544,19 +544,19 @@ SharkGame.Sprites = {
             x: 0,
             y: 0,
             w: 400,
-            h: 200
+            h: 200,
         },
         sourceSize: {
             w: 400,
-            h: 200
-        }
+            h: 200,
+        },
     },
     "start-discoveries": {
         frame: {
             x: 1214,
             y: 1226,
             w: 400,
-            h: 200
+            h: 200,
         },
         rotated: false,
         trimmed: false,
@@ -564,19 +564,19 @@ SharkGame.Sprites = {
             x: 0,
             y: 0,
             w: 400,
-            h: 200
+            h: 200,
         },
         sourceSize: {
             w: 400,
-            h: 200
-        }
+            h: 200,
+        },
     },
     "start-exploration": {
         frame: {
             x: 2,
             y: 1430,
             w: 400,
-            h: 200
+            h: 200,
         },
         rotated: false,
         trimmed: false,
@@ -584,19 +584,19 @@ SharkGame.Sprites = {
             x: 0,
             y: 0,
             w: 400,
-            h: 200
+            h: 200,
         },
         sourceSize: {
             w: 400,
-            h: 200
-        }
+            h: 200,
+        },
     },
     "start-gate": {
         frame: {
             x: 406,
             y: 1430,
             w: 400,
-            h: 200
+            h: 200,
         },
         rotated: false,
         trimmed: false,
@@ -604,19 +604,19 @@ SharkGame.Sprites = {
             x: 0,
             y: 0,
             w: 400,
-            h: 200
+            h: 200,
         },
         sourceSize: {
             w: 400,
-            h: 200
-        }
+            h: 200,
+        },
     },
     "start-machines": {
         frame: {
             x: 810,
             y: 1430,
             w: 400,
-            h: 200
+            h: 200,
         },
         rotated: false,
         trimmed: false,
@@ -624,19 +624,19 @@ SharkGame.Sprites = {
             x: 0,
             y: 0,
             w: 400,
-            h: 200
+            h: 200,
         },
         sourceSize: {
             w: 400,
-            h: 200
-        }
+            h: 200,
+        },
     },
     "start-nurse": {
         frame: {
             x: 1214,
             y: 1430,
             w: 400,
-            h: 200
+            h: 200,
         },
         rotated: false,
         trimmed: false,
@@ -644,19 +644,19 @@ SharkGame.Sprites = {
             x: 0,
             y: 0,
             w: 400,
-            h: 200
+            h: 200,
         },
         sourceSize: {
             w: 400,
-            h: 200
-        }
+            h: 200,
+        },
     },
     "start-quite-the-group": {
         frame: {
             x: 2,
             y: 1634,
             w: 400,
-            h: 200
+            h: 200,
         },
         rotated: false,
         trimmed: false,
@@ -664,19 +664,19 @@ SharkGame.Sprites = {
             x: 0,
             y: 0,
             w: 400,
-            h: 200
+            h: 200,
         },
         sourceSize: {
             w: 400,
-            h: 200
-        }
+            h: 200,
+        },
     },
     "start-ray": {
         frame: {
             x: 406,
             y: 1634,
             w: 400,
-            h: 200
+            h: 200,
         },
         rotated: false,
         trimmed: false,
@@ -684,19 +684,19 @@ SharkGame.Sprites = {
             x: 0,
             y: 0,
             w: 400,
-            h: 200
+            h: 200,
         },
         sourceSize: {
             w: 400,
-            h: 200
-        }
+            h: 200,
+        },
     },
     "start-science": {
         frame: {
             x: 810,
             y: 1634,
             w: 400,
-            h: 200
+            h: 200,
         },
         rotated: false,
         trimmed: false,
@@ -704,19 +704,19 @@ SharkGame.Sprites = {
             x: 0,
             y: 0,
             w: 400,
-            h: 200
+            h: 200,
         },
         sourceSize: {
             w: 400,
-            h: 200
-        }
+            h: 200,
+        },
     },
     "start-shark": {
         frame: {
             x: 1214,
             y: 1634,
             w: 400,
-            h: 200
+            h: 200,
         },
         rotated: false,
         trimmed: false,
@@ -724,19 +724,19 @@ SharkGame.Sprites = {
             x: 0,
             y: 0,
             w: 400,
-            h: 200
+            h: 200,
         },
         sourceSize: {
             w: 400,
-            h: 200
-        }
+            h: 200,
+        },
     },
     "start-sharks": {
         frame: {
             x: 1618,
             y: 2,
             w: 400,
-            h: 200
+            h: 200,
         },
         rotated: false,
         trimmed: false,
@@ -744,19 +744,19 @@ SharkGame.Sprites = {
             x: 0,
             y: 0,
             w: 400,
-            h: 200
+            h: 200,
         },
         sourceSize: {
             w: 400,
-            h: 200
-        }
+            h: 200,
+        },
     },
     "start-tribe": {
         frame: {
             x: 1618,
             y: 206,
             w: 400,
-            h: 200
+            h: 200,
         },
         rotated: false,
         trimmed: false,
@@ -764,19 +764,19 @@ SharkGame.Sprites = {
             x: 0,
             y: 0,
             w: 400,
-            h: 200
+            h: 200,
         },
         sourceSize: {
             w: 400,
-            h: 200
-        }
+            h: 200,
+        },
     },
     "start-you-are-a-shark": {
         frame: {
             x: 1618,
             y: 410,
             w: 400,
-            h: 200
+            h: 200,
         },
         rotated: false,
         trimmed: false,
@@ -784,19 +784,19 @@ SharkGame.Sprites = {
             x: 0,
             y: 0,
             w: 400,
-            h: 200
+            h: 200,
         },
         sourceSize: {
             w: 400,
-            h: 200
-        }
+            h: 200,
+        },
     },
     "tempestuous-default": {
         frame: {
             x: 1618,
             y: 614,
             w: 400,
-            h: 200
+            h: 200,
         },
         rotated: false,
         trimmed: false,
@@ -804,19 +804,19 @@ SharkGame.Sprites = {
             x: 0,
             y: 0,
             w: 400,
-            h: 200
+            h: 200,
         },
         sourceSize: {
             w: 400,
-            h: 200
-        }
+            h: 200,
+        },
     },
     "violent-default": {
         frame: {
             x: 1618,
             y: 818,
             w: 400,
-            h: 200
+            h: 200,
         },
         rotated: false,
         trimmed: false,
@@ -824,19 +824,19 @@ SharkGame.Sprites = {
             x: 0,
             y: 0,
             w: 400,
-            h: 200
+            h: 200,
         },
         sourceSize: {
             w: 400,
-            h: 200
-        }
+            h: 200,
+        },
     },
     "whale-one": {
         frame: {
             x: 1618,
             y: 1022,
             w: 400,
-            h: 200
+            h: 200,
         },
         rotated: false,
         trimmed: false,
@@ -844,12 +844,12 @@ SharkGame.Sprites = {
             x: 0,
             y: 0,
             w: 400,
-            h: 200
+            h: 200,
         },
         sourceSize: {
             w: 400,
-            h: 200
-        }
+            h: 200,
+        },
     },
     "actions/catchFish": {
         frame: { x: 2, y: 104, w: 50, h: 50 },

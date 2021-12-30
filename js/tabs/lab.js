@@ -66,6 +66,12 @@ SharkGame.Lab = {
         lab.updateUpgradeList();
         lab.update();
         lab.setHint(upgradeTable);
+
+        /* FIXME Make purchasable upgrades sticky if shorter than than window height
+            Css sticky does not work as #content has overflow: hidden because
+            of the float layout. Solution is either to find a hack, rewrite sticky with js,
+            or rework layout into flex.
+        */
     },
 
     setHint(upgradeTable, isNotStart) {
@@ -233,28 +239,57 @@ SharkGame.Lab = {
         }
     },
 
-    onLabButton() {
+    onLabButton(upgradeId) {
         if ($(this).hasClass("disabled")) return;
 
         const upgradeTable = SharkGame.Upgrades.getUpgradeTable();
+        let upgrade;
 
-        const upgradeId = $(this).attr("id");
-        const upgrade = SharkGame.Upgrades.getUpgradeData(upgradeTable, upgradeId);
-        if (SharkGame.Upgrades.purchased.includes(upgradeId)) {
-            $(this).remove();
-            return; // something went wrong don't even pay attention to this function
-        }
+        if (typeof upgradeId === `object`) {
+            if ($(this).hasClass("disabled")) return;
 
-        if (res.checkResources(upgrade.cost)) {
-            // kill button
-            $(this).remove();
-            // take resources
-            res.changeManyResources(upgrade.cost, true);
-            // purchase upgrade
-            SharkGame.Lab.addUpgrade(upgradeId);
+            upgradeId = $(this).attr("id");
+            upgrade = SharkGame.Upgrades.getUpgradeData(upgradeTable, upgradeId);
+            if (SharkGame.Upgrades.purchased.includes(upgradeId)) {
+                $(this).remove();
+                return; // something went wrong don't even pay attention to this function
+            }
 
-            if (upgrade.researchedMessage) {
-                log.addMessage(upgrade.researchedMessage);
+            if (res.checkResources(upgrade.cost)) {
+                // kill button
+                $(this).remove();
+                // take resources
+                res.changeManyResources(upgrade.cost, true);
+                // purchase upgrade
+                SharkGame.Lab.addUpgrade(upgradeId);
+
+                if (upgrade.researchedMessage) {
+                    log.addMessage(upgrade.researchedMessage);
+                }
+            }
+            SharkGame.Lab.update();
+            SharkGame.Lab.setHint(upgradeTable);
+        } else if (!_.isUndefined(upgradeId)) {
+            upgrade = SharkGame.Upgrades.getUpgradeData(upgradeTable, upgradeId);
+            if (SharkGame.Upgrades.purchased.includes(upgradeId)) {
+                return; // something went wrong don't even pay attention to this function
+            }
+
+            if (res.checkResources(upgrade.cost)) {
+                // take resources
+                res.changeManyResources(upgrade.cost, true);
+                // purchase upgrade
+                SharkGame.Lab.addUpgrade(upgradeId);
+
+                if (upgrade.researchedMessage) {
+                    log.addMessage(upgrade.researchedMessage);
+                }
+            }
+
+            if (SharkGame.Tabs.current === "lab") {
+                $(`#${upgradeId}`).remove();
+                SharkGame.Lab.update();
+                SharkGame.Lab.setHint(upgradeTable);
             }
         }
         SharkGame.Lab.update();

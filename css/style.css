@@ -894,19 +894,19 @@ button:hover {
   -moz-box-shadow: 0px 0px 2px 2px var(--color-lighter);
   box-shadow: 0px 0px 2px 2px var(--color-lighter);
 }
-button:active {
+button:active, button.keep-button-pressed {
   background-color: var(--color-dark);
   color: var(--color-light);
   -webkit-box-shadow: 0px 3px 7px 7px var(--color-darker) inset;
   -moz-box-shadow: 0px 3px 7px 7px var(--color-darker) inset;
   box-shadow: 0px 3px 7px 7px var(--color-darker) inset;
 }
-button:active .medDesc {
+button:active .medDesc, button.keep-button-pressed .medDesc {
   font-size: 80%;
   color: var(--color-lighter);
   filter: brightness(80%);
 }
-button:active div {
+button:active div, button.keep-button-pressed div {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -1391,7 +1391,7 @@ button.planetButton:active {
   padding-bottom: 12px;
   min-width: 200px;
   position: fixed;
-  z-index: 12;
+  z-index: 40;
   opacity: 1;
   transition: opacity 0.3s;
   text-shadow: 0px 0px 3px #000000;
@@ -1686,6 +1686,15 @@ button.planetButton:active {
 
 #visitButtons {
   margin: 1em 0;
+}
+
+#keybindTable td {
+  padding: 0.2rem;
+}
+
+#keybind-overlay-container {
+  float: left;
+  margin-left: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

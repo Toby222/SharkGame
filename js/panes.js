@@ -133,6 +133,63 @@ SharkGame.PaneHandler = {
         }
     },
 
+    isStackClosable() {
+        let canCloseAll;
+        if (this.currentPane) {
+            canCloseAll = !this.currentPane[2];
+        } else {
+            return true;
+        }
+
+        _.each(this.paneStack, (pane) => {
+            canCloseAll = canCloseAll && !pane[2];
+        });
+
+        return canCloseAll;
+    },
+
+    tryClosePane() {
+        if (this.isPaneUp() && this.isCurrentPaneCloseable()) {
+            this.nextPaneInStack();
+            return true;
+        }
+    },
+
+    tryWipeStack() {
+        while (this.currentPane) {
+            if (!this.tryClosePane()) {
+                return false;
+            }
+        }
+        return true;
+    },
+
+    isPaneUp() {
+        return !$(`#pane`).is(`:hidden`) && $(`#pane`).html();
+    },
+
+    isCurrentPaneCloseable() {
+        if (this.currentPane) {
+            return !this.currentPane[2];
+        }
+        return false;
+    },
+
+    isPaneAlreadyUp(title) {
+        let alreadyUp;
+        if (this.currentPane) {
+            alreadyUp = this.currentPane[0] === title;
+        } else {
+            return false;
+        }
+
+        _.each(this.paneStack, (pane) => {
+            alreadyUp = alreadyUp || pane[0] === title;
+        });
+
+        return alreadyUp;
+    },
+
     showPane(title, contents, notCloseable, fadeInTime, customOpacity, preserveElements) {
         let pane;
 
@@ -145,16 +202,9 @@ SharkGame.PaneHandler = {
 
         // begin fading in/displaying overlay if it isn't already visible
         const overlay = $("#overlay");
-        // is it already up?
-        if (overlay.is(":hidden")) {
-            // nope, show overlay
-            const overlayOpacity = customOpacity || 0.5;
-            if (SharkGame.Settings.current.showAnimations) {
-                overlay.show().css("opacity", 0).animate({ opacity: overlayOpacity }, fadeInTime);
-            } else {
-                overlay.show().css("opacity", overlayOpacity);
-            }
-        }
+        const overlayOpacity = $(`#overlay`).hasClass(`gateway`) ? 1.0 : customOpacity || 0.5;
+
+        SharkGame.OverlayHandler.revealOverlay(fadeInTime, overlayOpacity);
 
         // adjust header
         const titleDiv = $("#paneHeaderTitleDiv");
@@ -212,7 +262,7 @@ SharkGame.PaneHandler = {
     hidePane() {
         document.getElementById("overlay").removeEventListener("click", SharkGame.PaneHandler.nextPaneInStack);
         $("#overlay").removeClass("pointy");
-        $("#overlay").hide();
+        SharkGame.OverlayHandler.hideOverlay();
         $("#pane").hide();
     },
 
@@ -223,6 +273,7 @@ SharkGame.PaneHandler = {
 
     setUpOptions() {
         const optionsTable = $("<table>").attr("id", "optionTable");
+
         // add settings specified in settings.js
         const categories = {};
         $.each(SharkGame.Settings, (name, setting) => {
@@ -358,6 +409,22 @@ SharkGame.PaneHandler = {
         );
         optionsTable.append(row);
 
+        row = $("<tr>");
+        row.append($("<td>").html("Keybinds:<br/><span class='smallDesc'>(Change keybinds.)</span>"));
+        row.append(
+            $("<td>").append(
+                $("<button>")
+                    .html("change")
+                    .addClass("option-button")
+                    .on("click", () => {
+                        SharkGame.PaneHandler.showKeybinds();
+                    })
+            )
+        );
+        optionsTable.prepend(row);
+
+        optionsTable.prepend($("<tr>").html("<h3><br><span style='text-decoration: underline'>" + sharktext.boldString(`KEYBINDS`) + "</span></h3>"));
+
         return optionsTable;
     },
 
@@ -383,6 +450,62 @@ SharkGame.PaneHandler = {
 
         // if there is a callback, call it, else call the no op
         (SharkGame.Settings[settingName].onChange || $.noop)();
+    },
+
+    showKeybinds() {
+        if (SharkGame.Keybinds.waitForKey) {
+            SharkGame.Keybinds.waitForKey = false;
+        }
+
+        const keybindTable = $(`<table>`).attr(`id`, `keybindTable`);
+
+        let row = $(`<tr>`);
+        row.append(
+            $(`<td>`).append(
+                $(`<button>`)
+                    .html(`new bind`)
+                    .attr(`id`, `new-bind-button`)
+                    .on(`click`, function () {
+                        $(this).html(`press some keys...`);
+                        SharkGame.Keybinds.waitForKey = true;
+                    })
+            )
+        );
+        keybindTable.append(row);
+
+        $.each(SharkGame.Keybinds.keybinds, (boundKey, boundAction) => {
+            row = $(`<tr>`).attr(`id`, SharkGame.Keybinds.compressKeyID(boundKey));
+            row.append($(`<td>`).html(boundKey));
+
+            if (SharkGame.Keybinds.actions.includes(boundAction)) {
+                const selector = $("<select>").on(`change`, function () {
+                    SharkGame.Keybinds.addKeybind(boundKey, $(this)[0].value);
+                    console.log(`bound ${boundKey} to ${$(this)[0].value}`);
+                    console.log($(this));
+                });
+                _.each(SharkGame.Keybinds.actions, (potentialBoundAction) => {
+                    selector.append(`<option ${boundAction === potentialBoundAction ? `selected` : ``}>` + potentialBoundAction + "</option>");
+                });
+                row.append(selector);
+            } else {
+                row.append($(`<td>`).html(SharkGame.Keybinds.cleanActionID(boundAction)));
+            }
+
+            row.append(
+                $(`<td>`).append(
+                    $("<button>")
+                        .addClass("min close-button")
+                        .html("✕")
+                        .on(`click`, () => {
+                            $(`#${SharkGame.Keybinds.compressKeyID(boundKey)}`).remove();
+                            delete SharkGame.Keybinds.keybinds[boundKey];
+                        })
+                )
+            );
+            keybindTable.append(row);
+        });
+
+        SharkGame.PaneHandler.addPaneToStack("Keybinds", keybindTable);
     },
 
     showChangelog() {

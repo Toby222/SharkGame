@@ -271,8 +271,12 @@ SharkGame.Gate = {
     },
 
     onEnterButton() {
-        $("#tabMessage").html(SharkGame.Gate.messageEnter);
         $(this).remove();
+        SharkGame.Gate.enterGate();
+    },
+
+    enterGate() {
+        $("#tabMessage").html(SharkGame.Gate.messageEnter);
         SharkGame.wonGame = true;
         main.endGame();
     },

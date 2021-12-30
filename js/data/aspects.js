@@ -643,28 +643,6 @@ SharkGame.Aspects = {
             }
         },
     },
-    anythingAndEverything: {
-        posX: 675,
-        posY: 100,
-        width: 40,
-        height: 40,
-
-        max: 1,
-        level: 0,
-        name: "Anything and Everything",
-        description: "Could I interest you in a little bit of everything?",
-        getCost(_level) {
-            return 5;
-        },
-        getEffect(_level) {
-            return "Unlock a button which presses all the buy buttons (pressed in order from left-to-right, top-to-bottom).";
-        },
-        getUnlocked() {},
-        prerequisites: ["extensiveOrganization"],
-        clicked(_event) {
-            tree.handleClickedAspect(this);
-        },
-    },
     theHourHand: {
         posX: 75,
         posY: 400,
@@ -798,5 +776,28 @@ SharkGame.Aspects = {
             return 6 * (level + 1);
         },
         prerequisites: ["theMinuteHand"],
+    },
+    anythingAndEverything: {
+        posX: 675,
+        posY: 100,
+        width: 40,
+        height: 40,
+
+        max: 1,
+        level: 0,
+        deprecated: true,
+        name: "Anything and Everything",
+        description: "Could I interest you in a little bit of everything?",
+        getCost(_level) {
+            return 5;
+        },
+        getEffect(_level) {
+            return "Unlock a button which presses all the buy buttons (pressed in order from left-to-right, top-to-bottom).";
+        },
+        getUnlocked() {},
+        prerequisites: ["extensiveOrganization"],
+        clicked(_event) {
+            tree.handleClickedAspect(this);
+        },
     },
 };

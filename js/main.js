@@ -19,8 +19,18 @@ window.onmousemove = (event) => {
     }
 };
 
-$(document).on("keyup", () => {
+$(document).on("keyup", (event) => {
     SharkGame.lastActivity = _.now();
+    if (SharkGame.Keybinds.handleKeyUp(event.code)) {
+        event.preventDefault();
+    }
+});
+
+$(document).on("keydown", (event) => {
+    SharkGame.lastActivity = _.now();
+    if (SharkGame.Keybinds.handleKeyDown(event.code)) {
+        event.preventDefault();
+    }
 });
 
 // CORE VARIABLES AND HELPER FUNCTIONS
@@ -208,7 +218,6 @@ SharkGame.Main = {
         SharkGame.sidebarHidden = true;
         // remove any errant classes
         $("#pane").removeClass("gateway");
-        $("#overlay").removeClass("gateway");
 
         // clear any html and remove errant classes from tooltip
         $("#tooltipbox")
@@ -265,6 +274,9 @@ Mod of v ${SharkGame.ORIGINAL_VERSION}`
         SharkGame.TitleBarHandler.init();
         SharkGame.TabHandler.init();
         SharkGame.PaneHandler.init();
+        SharkGame.OverlayHandler.init();
+
+        SharkGame.Keybinds.init();
 
         SharkGame.Resources.minuteHand.init();
     },
@@ -344,6 +356,8 @@ Mod of v ${SharkGame.ORIGINAL_VERSION}`
         if (main.autosaveHandler === -1) {
             main.autosaveHandler = setInterval(main.autosave, SharkGame.Settings.current.autosaveFrequency * 60000);
         }
+
+        window.addEventListener("beforeunload", main.autosave);
 
         if (SharkGame.Settings.current.updateCheck) {
             main.checkForUpdateHandler = setInterval(main.checkForUpdate, 300000);
@@ -465,6 +479,8 @@ Mod of v ${SharkGame.ORIGINAL_VERSION}`
             saveData.timestampGameStart = SharkGame.timestampGameStart;
             saveData.timestampRunStart = _.now();
             saveData.timestampRunEnd = SharkGame.timestampRunEnd;
+
+            saveData.keybinds = _.cloneDeep(SharkGame.Keybinds.keybinds);
 
             saveData.saveVersion = SharkGame.Save.saveUpdaters.length - 1;
             saveString = ascii85.encode(pako.deflate(JSON.stringify(saveData), { to: "string" }));
@@ -810,6 +826,12 @@ SharkGame.FunFacts = [
 ];
 
 SharkGame.Changelog = {
+    "<a href='https://github.com/spencers145/SharkGame'>New Frontiers</a> 0.2 patch 202201??a": [
+        "Added keybinds. You can now bind a large array of actions to different key combinations.",
+        "Ixbix - fixed issues with gateway time spent in last world",
+        "Ixbix - stopped minute hand slider from flopping around",
+        "Ixbix - added touchscreen support for the aspect tree",
+    ],
     "<a href='https://github.com/spencers145/SharkGame'>New Frontiers</a> 0.2 patch 20211201a": [
         "Added something special at 1000 total essence.",
         "Changed the aspect tree UI to remove unnecessary buttons from below the tree.",
@@ -1038,20 +1060,4 @@ SharkGame.Changelog = {
 $(() => {
     $("#game").show();
     main.init();
-
-    // ctrl+s saves
-    $(window).on("keydown", (event) => {
-        if (event.ctrlKey || event.metaKey) {
-            switch (String.fromCharCode(event.key).toLowerCase()) {
-                case "s":
-                    event.preventDefault();
-                    SharkGame.Save.saveGame();
-                    break;
-                case "o":
-                    event.preventDefault();
-                    SharkGame.PaneHandler.showOptions();
-                    break;
-            }
-        }
-    });
 });

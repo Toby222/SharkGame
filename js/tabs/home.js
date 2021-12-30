@@ -434,10 +434,6 @@ SharkGame.Home = {
         if (SharkGame.Settings.current.showTabImages) {
             tabMessage.css("background-image", "url('" + home.tabBg + "')");
         }
-
-        if (SharkGame.Aspects.anythingAndEverything.level) {
-            this.everything.addEverythingButton();
-        }
         this.update();
     },
 
@@ -527,11 +523,39 @@ SharkGame.Home = {
         }
         home.currentButtonTab = tabToChangeTo;
         $("#buttonList").empty();
-        if (SharkGame.Aspects.anythingAndEverything.level) {
-            this.everything.addEverythingButton();
-        }
         home.createButtonTabs();
         home.update();
+    },
+
+    getButtonTabs() {
+        const buttonTabsArray = [];
+        $.each(SharkGame.HomeActionCategories, (categoryName) => {
+            if ($(`#buttonTab-${categoryName}`).html() || home.currentButtonTab === categoryName) {
+                buttonTabsArray.push(categoryName);
+            }
+        });
+        console.log(buttonTabsArray);
+        return buttonTabsArray;
+    },
+
+    getNextButtonTab() {
+        const tabs = this.getButtonTabs();
+        const currentTabIndex = tabs.indexOf(home.currentButtonTab);
+
+        if (currentTabIndex === tabs.length - 1) {
+            return tabs[0];
+        }
+        return tabs[currentTabIndex + 1];
+    },
+
+    getPreviousButtonTab() {
+        const tabs = this.getButtonTabs();
+        const currentTabIndex = tabs.indexOf(home.currentButtonTab);
+
+        if (currentTabIndex === 0) {
+            return tabs[tabs.length - 1];
+        }
+        return tabs[currentTabIndex - 1];
     },
 
     updateMessage(suppressAnimation) {
@@ -880,6 +904,13 @@ SharkGame.Home = {
         } else {
             button = $("#" + actionName);
         }
+
+        if (SharkGame.Keybinds.bindMode) {
+            SharkGame.Keybinds.settingAction = actionName;
+            SharkGame.Keybinds.updateBindModeState();
+            return;
+        }
+
         if (button.hasClass("disabled")) return;
         const action = SharkGame.HomeActions.getActionData(SharkGame.HomeActions.getActionTable(), actionName);
         let actionCost = {};
@@ -963,40 +994,6 @@ SharkGame.Home = {
         }
         // disable button until next frame
         button.addClass("disabled");
-    },
-
-    everything: {
-        addEverythingButton() {
-            const buttonListSel = $("#buttonList");
-
-            const buttonSelector = SharkGame.Button.makeHoverscriptButton(
-                "anythingAndEverything",
-                "Anything and Everything",
-                buttonListSel,
-                home.everything.onEverythingButton,
-                home.everything.onEverythingHover,
-                home.onHomeUnhover
-            ); // box-shadow: 0 0 6px 3px #f00, 0 0 3px 1px #ff1a1a inset;
-            buttonSelector.html($("<span id='" + "anythingAndEverything" + "Label' class='click-passthrough'>Press anything and everything</span>"));
-        },
-
-        onEverythingButton() {
-            _.each(home.buttonNamesList, (actionName) => {
-                const actionData = SharkGame.HomeActions.getActionData(SharkGame.HomeActions.getActionTable(), actionName);
-                if (!home.doesButtonGiveNegativeThing(actionData)) {
-                    home.onHomeButton("blah", actionName);
-                }
-            });
-        },
-
-        onEverythingHover() {
-            if (!SharkGame.Settings.current.showTooltips) {
-                return;
-            }
-
-            $("#tooltipbox").removeClass("forIncomeTable").attr("current", "").addClass("forHomeButtonOrGrotto");
-            $("#tooltipbox").html("Clicks every other button in the list without a red border, in order, from left to right and top to bottom.");
-        },
     },
 
     onHomeHover(mouseEnterEvent, actionName) {

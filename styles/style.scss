@@ -1121,7 +1121,8 @@ button {
         @include box-shadow(0px, 0px, 2px, 2px, var(--color-lighter));
     }
 
-    &:active {
+    &:active,
+    &.keep-button-pressed {
         background-color: var(--color-dark);
         color: var(--color-light);
         @include box-shadow-inset(0px, 3px, 7px, 7px, var(--color-darker));
@@ -1606,7 +1607,7 @@ button.planetButton {
     padding-bottom: 12px;
     min-width: 200px;
     position: fixed;
-    z-index: 12;
+    z-index: 40;
     opacity: 1;
     transition: opacity 0.3s;
     text-shadow: 0px 0px 3px #000000;
@@ -1934,4 +1935,15 @@ button.planetButton {
 
 #visitButtons {
     margin: 1em 0;
+}
+
+#keybindTable {
+    td {
+        padding: 0.2rem;
+    }
+}
+
+#keybind-overlay-container {
+    float: left;
+    margin-left: 1rem;
 }

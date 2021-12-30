@@ -6,6 +6,31 @@ SharkGame.Tabs = {
 SharkGame.TabHandler = {
     init() {
         SharkGame.Tabs.current = "home";
+
+        $(window).on("resize", _.debounce(this.validateTabWidth, 300));
+
+        const debounced = _.debounce(
+            (_entries) => {
+                const content = $("#content");
+                content.css("position", "static");
+                const height = content.innerHeight();
+                if (height < $(window).height() || height * 3 < $("#resourceTableContainer").innerHeight()) {
+                    content.css("top", content.offset().top).css("position", "sticky");
+                }
+            },
+            400,
+            { maxWait: 600 }
+        );
+
+        const resizeObserver = new ResizeObserver(debounced);
+
+        resizeObserver.observe(document.getElementById("content"));
+    },
+
+    keybindSwitchTab(tab) {
+        if (SharkGame.Tabs[tab].discovered) {
+            SharkGame.TabHandler.changeTab(tab);
+        }
     },
 
     checkTabUnlocks() {
@@ -60,6 +85,13 @@ SharkGame.TabHandler = {
         return SharkGame.Tabs[tabName].discovered;
     },
 
+    validateTabWidth() {
+        const logLocation = SharkGame.Settings.current.logLocation;
+        if (logLocation !== "left" && logLocation !== "top") {
+            $("#tabList").css("margin-right", $(window).width() - document.getElementById("content").getBoundingClientRect().right + 14 + "px");
+        }
+    },
+
     setUpTab() {
         const tabs = SharkGame.Tabs;
         // empty out content div
@@ -72,6 +104,8 @@ SharkGame.TabHandler = {
                 SharkGame.Settings.current["minimizedTopbar"] ? "" : "notFixed"
             }"></ul></div><div id="tabBorder" class="clear-fix">`
         );
+
+        this.validateTabWidth();
 
         this.createTabNavigation();
 

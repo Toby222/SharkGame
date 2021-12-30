@@ -18,6 +18,7 @@ SharkGame.Log = {
                 $("#sidebar").append(logDiv.append("<h3>Log<h3/>").append($("<ul id='messageList'></ul>").addClass("forLeftSide")));
                 $("#wrapper").removeClass("topLogActive");
                 $("#titlebackground").removeClass("topLogActive");
+                $("#tabList").css("margin-right", 0);
                 break;
             case "top":
                 $("#titlebar").append(logDiv);
@@ -26,14 +27,14 @@ SharkGame.Log = {
                     .append("<ul id='messageList'></ul>");
                 $("#wrapper").addClass("topLogActive");
                 $("#titlebackground").addClass("topLogActive");
+                $("#tabList").css("margin-right", 0);
                 break;
             default:
-                $("#rightLogContainer")
-                    .append(logDiv.append("<h3>Log<h3/>").append($("<ul id='messageList'></ul>").addClass("forRightSide")))
-                    .css("top", $("#rightLogContainer").offset().top)
-                    .css("position", "sticky");
+                $("#rightLogContainer").append(logDiv.append("<h3>Log<h3/>").append($("<ul id='messageList'></ul>").addClass("forRightSide")));
                 $("#wrapper").removeClass("topLogActive");
                 $("#titlebackground").removeClass("topLogActive");
+                $("#rightLogContainer").css("position", "static").css("top", $("#rightLogContainer").offset().top).css("position", "sticky");
+                SharkGame.TabHandler.validateTabWidth();
         }
 
         const prevMessages = _.cloneDeep(log.messages);

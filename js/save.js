@@ -47,6 +47,8 @@ SharkGame.Save = {
         saveData.persistentFlags = _.cloneDeep(SharkGame.persistentFlags);
         saveData.planetPool = _.cloneDeep(gateway.planetPool);
 
+        saveData.keybinds = SharkGame.Keybinds.keybinds;
+
         // add timestamp
         saveData.timestampLastSave = _.now();
         saveData.timestampGameStart = SharkGame.timestampGameStart;
@@ -255,6 +257,10 @@ SharkGame.Save = {
                 } else {
                     SharkGame.flags.needOfflineProgress = secondsElapsed;
                 }
+            }
+
+            if (saveData.keybinds) {
+                SharkGame.Keybinds.keybinds = saveData.keybinds;
             }
         } else {
             throw new Error(
@@ -798,6 +804,12 @@ SharkGame.Save = {
                 }
                 save.aspects.pathOfEnlightenment = 1;
             }
+            return save;
+        },
+
+        // keybinds were added here
+        function update19(save) {
+            save.keybinds = SharkGame.Keybinds.defaultBinds;
             return save;
         },
     ],

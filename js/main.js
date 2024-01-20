@@ -604,13 +604,13 @@ Mod of v ${SharkGame.ORIGINAL_VERSION}`
                 SharkGame.persistentFlags.currentPausedTime = 0;
             }
 
+            if (res.idleMultiplier < 1) {
+                main.continueIdle(now, elapsedTime);
+            }
+
             // tick main game stuff
             if (now - SharkGame.lastActivity > SharkGame.IDLE_THRESHOLD && res.idleMultiplier === 1 && SharkGame.Settings.current.idleEnabled) {
                 main.startIdle(now, elapsedTime);
-            }
-
-            if (res.idleMultiplier < 1) {
-                main.continueIdle(now, elapsedTime);
             }
 
             if (res.minuteHand.active) {

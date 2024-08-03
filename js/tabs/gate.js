@@ -103,7 +103,7 @@ SharkGame.Gate = {
                             resource,
                             false,
                             false,
-                            sharkcolor.getElementColor("tooltipbox", "background-color")
+                            sharkcolor.getElementColor("tooltipbox", "background-color"),
                         );
                         SharkGame.Button.makeHoverscriptButton(
                             "gateCost-" + resource,
@@ -111,7 +111,7 @@ SharkGame.Gate = {
                             buttonList,
                             gate.onGateButton,
                             gate.onHover,
-                            gate.onUnhover
+                            gate.onUnhover,
                         );
                     }
                 });
@@ -216,18 +216,18 @@ SharkGame.Gate = {
         if (amount < required) {
             button.html(
                 `Need <span class='click-passthrough' style='color:#FFDE0A'>${sharktext.beautify(
-                    required - amount
+                    required - amount,
                 )}</span> more ${sharktext.getResourceName(
                     resourceName,
                     false,
                     false,
-                    sharkcolor.getElementColor(button.attr("id"), "background-color")
+                    sharkcolor.getElementColor(button.attr("id"), "background-color"),
                 )} for ${sharktext.getResourceName(
                     resourceName,
                     false,
                     false,
-                    sharkcolor.getElementColor(button.attr("id"), "background-color")
-                )} slot`
+                    sharkcolor.getElementColor(button.attr("id"), "background-color"),
+                )} slot`,
             );
         }
     },
@@ -244,7 +244,7 @@ SharkGame.Gate = {
                 sharktext.getResourceName(resourceName, false, false, sharkcolor.getElementColor(button.attr("id"), "background-color")) +
                 " into " +
                 sharktext.getResourceName(resourceName, false, false, sharkcolor.getElementColor(button.attr("id"), "background-color")) +
-                " slot"
+                " slot",
         );
     },
 

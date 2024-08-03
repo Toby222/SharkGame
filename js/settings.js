@@ -300,7 +300,7 @@ SharkGame.Settings = {
                     SharkGame.Settings.current.autosaveFrequency +
                     " minute" +
                     sharktext.plural(SharkGame.Settings.current.autosaveFrequency) +
-                    "."
+                    ".",
             );
         },
     },

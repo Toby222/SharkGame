@@ -31,7 +31,7 @@ SharkGame.Resources = {
                 Object.defineProperty(
                     resourceObject,
                     `singleName`,
-                    Object.getOwnPropertyDescriptor(SharkGame.ResourceTable[resourceId], `singleName`)
+                    Object.getOwnPropertyDescriptor(SharkGame.ResourceTable[resourceId], `singleName`),
                 );
             if (resourceObject.desc)
                 Object.defineProperty(resourceObject, `desc`, Object.getOwnPropertyDescriptor(SharkGame.ResourceTable[resourceId], `desc`));
@@ -212,7 +212,7 @@ SharkGame.Resources = {
                             2 * stepThreeIncomes.get(resource) +
                             SharkGame.PlayerIncomeTable.get(resource))) /
                         6,
-                    true
+                    true,
                 );
             });
 
@@ -277,7 +277,7 @@ SharkGame.Resources = {
                         changeMap.forEach((amount, generatedResource) => {
                             SharkGame.PlayerIncomeTable.set(
                                 generatedResource,
-                                SharkGame.PlayerIncomeTable.get(generatedResource) + amount * costScaling
+                                SharkGame.PlayerIncomeTable.get(generatedResource) + amount * costScaling,
                             );
                         });
                     }
@@ -553,7 +553,7 @@ SharkGame.Resources = {
                         .on("drop", res.tokens.dropToken)
                         .on("click", res.tokens.tryReturnToken)
                         .on("mouseenter", res.tokens.tooltip)
-                        .on("mouseleave", res.tableTextLeave)
+                        .on("mouseleave", res.tableTextLeave),
                 );
                 if (
                     SharkGame.flags.tokens[token.attr("id")] !== "NA" &&
@@ -589,8 +589,8 @@ SharkGame.Resources = {
                     $("#tooltipbox")
                         .html(
                             sharktext.boldString(
-                                "Drag this token onto stuff to increase production.<br><br>While a token is still in its slot, you can also click where you want it to go."
-                            )
+                                "Drag this token onto stuff to increase production.<br><br>While a token is still in its slot, you can also click where you want it to go.",
+                            ),
                         )
                         .addClass("forHomeButtonOrGrotto");
                 } else {
@@ -765,7 +765,7 @@ SharkGame.Resources = {
                     !$("#" + placedOnWhat).attr("tokenId") &&
                     _.some(
                         SharkGame.ResourceMap.get(resource).income,
-                        (amount, generatedResource) => amount !== 0 && world.doesResourceExist(generatedResource)
+                        (amount, generatedResource) => amount !== 0 && world.doesResourceExist(generatedResource),
                     )
                 );
             } else if (placedOnWhat.includes("income")) {
@@ -876,13 +876,13 @@ SharkGame.Resources = {
                 $("#minute-hand-div"),
                 res.minuteHand.toggleMinuteHand,
                 res.minuteHand.showTooltip,
-                res.tableTextLeave
+                res.tableTextLeave,
             );
             $("#minute-hand-toggle").html("<strong>TOGGLE</strong>");
             $("#minute-hand-div").append($("<div>").attr("id", "minute-row-two"));
             $("#minute-row-two").append($("<span>").attr("id", "minute-multiplier"));
             $("#minute-hand-div").append(
-                $("<div>").attr("id", "minute-time") /* .on("mouseenter", res.minuteHand.showTimeTooltip).on("mouseleave", res.tableTextLeave) */
+                $("<div>").attr("id", "minute-time") /* .on("mouseenter", res.minuteHand.showTimeTooltip).on("mouseleave", res.tableTextLeave) */,
             );
 
             $("#minute-row-two").append($("<span>").html("("));
@@ -906,7 +906,7 @@ SharkGame.Resources = {
                     $("#minute-pause"),
                     res.pause.togglePause,
                     res.pause.showTooltip,
-                    res.tableTextLeave
+                    res.tableTextLeave,
                 );
             }
             $("#pause-toggle").addClass("close-button min");
@@ -1080,11 +1080,11 @@ SharkGame.Resources = {
             if (SharkGame.Settings.current.showTooltips) {
                 if (SharkGame.Settings.current.idleEnabled) {
                     $("#tooltipbox").html(
-                        "This is the <strong>minute hand</strong>.<br>It stores offline and idle progress.<br><br>Use the slider to adjust speed.<br>Press the button to unleash it."
+                        "This is the <strong>minute hand</strong>.<br>It stores offline and idle progress.<br><br>Use the slider to adjust speed.<br>Press the button to unleash it.",
                     );
                 } else {
                     $("#tooltipbox").html(
-                        "This is the <strong>minute hand</strong>.<br>It stores time from various sources.<br><br>Use the slider to adjust speed.<br>Press the button to unleash it."
+                        "This is the <strong>minute hand</strong>.<br>It stores time from various sources.<br><br>Use the slider to adjust speed.<br>Press the button to unleash it.",
                     );
                 }
             }
@@ -1183,8 +1183,8 @@ SharkGame.Resources = {
                             $("<td>")
                                 .attr("colSpan", 3)
                                 .append(
-                                    $("<h3>").html(`<span class="collapser">${icon}</span><span>${categoryName}</span>`).css("text-align", "left")
-                                )
+                                    $("<h3>").html(`<span class="collapser">${icon}</span><span>${categoryName}</span>`).css("text-align", "left"),
+                                ),
                         )
                         .on("click", () => SharkGame.Resources.collapseResourceTableRow(categoryName));
 
@@ -1269,7 +1269,7 @@ SharkGame.Resources = {
                                 $("#tooltipbox").html(
                                     sharktext.getResourceName(resourceKey, false, 69, sharkcolor.getElementColor("tooltipbox", "background-color")) +
                                         " efficiency x" +
-                                        (SharkGame.Aspects.coordinatedCooperation.level + 2) * (SharkGame.Aspects.collectiveCooperation.level + 1)
+                                        (SharkGame.Aspects.coordinatedCooperation.level + 2) * (SharkGame.Aspects.collectiveCooperation.level + 1),
                                 );
                             }
                             event.originalEvent.preventDefault();
@@ -1280,13 +1280,13 @@ SharkGame.Resources = {
                     //     $("#tooltipbox").html("");
                     // })
                     .on("drop", res.tokens.dropToken)
-                    .on("click", res.tokens.tryClickToPlace)
+                    .on("click", res.tokens.tryClickToPlace),
             );
 
             row.append(
                 $("<td>")
                     .attr("id", "amount-" + resourceKey)
-                    .html("&nbsp;" + sharktext.beautify(playerResources.amount))
+                    .html("&nbsp;" + sharktext.beautify(playerResources.amount)),
             );
 
             const incomeId = $("<td>")
@@ -1299,7 +1299,7 @@ SharkGame.Resources = {
                                 "all " +
                                     sharktext.getResourceName(resourceKey, false, 69, sharkcolor.getElementColor("tooltipbox", "background-color")) +
                                     " gains x" +
-                                    (SharkGame.Aspects.coordinatedCooperation.level + 2) * (SharkGame.Aspects.collectiveCooperation.level + 1)
+                                    (SharkGame.Aspects.coordinatedCooperation.level + 2) * (SharkGame.Aspects.collectiveCooperation.level + 1),
                             );
                         }
                         event.originalEvent.preventDefault();
@@ -1322,7 +1322,7 @@ SharkGame.Resources = {
                         "'>" +
                         changeChar +
                         sharktext.beautifyIncome(income) +
-                        "</span>"
+                        "</span>",
                 );
             }
         }
@@ -1347,7 +1347,8 @@ SharkGame.Resources = {
                 ${sharktext
                     .beautifyIncome(
                         amount,
-                        " " + sharktext.getResourceName(generatedResource, false, false, sharkcolor.getElementColor("tooltipbox", "background-color"))
+                        " " +
+                            sharktext.getResourceName(generatedResource, false, false, sharkcolor.getElementColor("tooltipbox", "background-color")),
                     )
                     .bold()}`;
             } else if (amount < 0) {
@@ -1355,7 +1356,8 @@ SharkGame.Resources = {
                 ${sharktext
                     .beautifyIncome(
                         -amount,
-                        " " + sharktext.getResourceName(generatedResource, false, false, sharkcolor.getElementColor("tooltipbox", "background-color"))
+                        " " +
+                            sharktext.getResourceName(generatedResource, false, false, sharkcolor.getElementColor("tooltipbox", "background-color")),
                     )
                     .bold()}`;
             }
@@ -1643,7 +1645,7 @@ SharkGame.Resources = {
             SharkGame.ModifierMap.get(resource)[category][type][name] = modifier.apply(
                 SharkGame.ModifierMap.get(resource)[category][type][name],
                 degree,
-                resource
+                resource,
             );
         });
     },

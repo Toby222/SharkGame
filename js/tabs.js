@@ -21,7 +21,7 @@ SharkGame.TabHandler = {
                     }
                 },
                 400,
-                { maxWait: 600 }
+                { maxWait: 600 },
             );
         }
 
@@ -116,7 +116,7 @@ SharkGame.TabHandler = {
         $("#contentMenu").append(
             `<ul id="tabList" class="${
                 SharkGame.Settings.current.minimizedTopbar ? "" : "notFixed"
-            }"></ul></div><div id="tabBorder" class="clear-fix">`
+            }"></ul></div><div id="tabBorder" class="clear-fix">`,
         );
 
         this.validateTabWidth();
@@ -178,7 +178,7 @@ SharkGame.TabHandler = {
                                 .on("click", function callback() {
                                     const tab = $(this).attr("id").split("-")[1];
                                     SharkGame.TabHandler.changeTab(tab);
-                                })
+                                }),
                         );
                         if (!tabData.seen) {
                             tabListItem.addClass("newTab");

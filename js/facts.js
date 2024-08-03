@@ -38,9 +38,9 @@ SharkGame.FunFacts = {
                                     1,
                                     SharkGame.Log.isNextMessageEven()
                                         ? sharkcolor.getVariableColor("--color-dark")
-                                        : sharkcolor.getVariableColor("--color-med")
-                                )} fact: `
-                            ) + `<i>${fact}</i>`
+                                        : sharkcolor.getVariableColor("--color-med"),
+                                )} fact: `,
+                            ) + `<i>${fact}</i>`,
                         );
                     });
                 }

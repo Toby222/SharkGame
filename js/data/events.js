@@ -278,7 +278,7 @@ SharkGame.Events = {
             if (!SharkGame.flags.prySpongeGained) SharkGame.flags.prySpongeGained = 0;
             SharkGame.flags.prySpongeGained += SharkGame.HomeActions.getActionData(
                 SharkGame.HomeActions.getActionTable(),
-                "prySponge"
+                "prySponge",
             ).effect.resource.sponge;
         },
     },

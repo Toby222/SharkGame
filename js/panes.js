@@ -91,8 +91,8 @@ SharkGame.PaneHandler = {
                         .attr("id", "paneHeaderCloseButton")
                         .addClass("min close-button")
                         .html("✕")
-                        .on("click", SharkGame.PaneHandler.nextPaneInStack)
-                )
+                        .on("click", SharkGame.PaneHandler.nextPaneInStack),
+                ),
         );
         pane.append(titleDiv);
         pane.append($("<div>").attr("id", "paneHeaderEnd").addClass("clear-fix"));
@@ -133,7 +133,7 @@ SharkGame.PaneHandler = {
                 panehandler.currentPane[1],
                 panehandler.currentPane[2],
                 panehandler.currentPane[3],
-                panehandler.currentPane[4]
+                panehandler.currentPane[4],
             );
         } else {
             panehandler.hidePane();
@@ -287,7 +287,7 @@ SharkGame.PaneHandler = {
 
         $.each(categories, (category, settings) => {
             optionsTable.append(
-                $("<tr>").html("<h3><br><span style='text-decoration: underline'>" + sharktext.boldString(category) + "</span></h3>")
+                $("<tr>").html("<h3><br><span style='text-decoration: underline'>" + sharktext.boldString(category) + "</span></h3>"),
             );
             _.each(settings, (settingName) => {
                 const setting = SharkGame.Settings[settingName];
@@ -300,7 +300,7 @@ SharkGame.PaneHandler = {
                 optionRow.append(
                     $("<td>")
                         .addClass("optionLabel")
-                        .html(setting.name + ":" + "<br/><span class='smallDesc'>(" + setting.desc + ")</span>")
+                        .html(setting.name + ":" + "<br/><span class='smallDesc'>(" + setting.desc + ")</span>"),
                 );
 
                 const currentSetting = SharkGame.Settings.current[settingName];
@@ -314,8 +314,8 @@ SharkGame.PaneHandler = {
                                 .attr("id", "optionButton-" + settingName + "-" + index)
                                 .addClass("option-button" + (isSelectedOption ? " disabled" : ""))
                                 .html(typeof optionValue === "boolean" ? (optionValue ? "on" : "off") : optionValue)
-                                .on("click", SharkGame.PaneHandler.onOptionClick)
-                        )
+                                .on("click", SharkGame.PaneHandler.onOptionClick),
+                        ),
                     );
                 });
 
@@ -328,8 +328,8 @@ SharkGame.PaneHandler = {
         let row = $("<tr>");
         row.append(
             $("<td>").html(
-                "Import/Export Save:<br/><span class='smallDesc'>(Turn your save into text for other people to load, or as a backup.)</span>"
-            )
+                "Import/Export Save:<br/><span class='smallDesc'>(Turn your save into text for other people to load, or as a backup.)</span>",
+            ),
         );
         row.append(
             $("<td>").append(
@@ -345,8 +345,8 @@ SharkGame.PaneHandler = {
                         } else if (confirm("Are you absolutely sure? This will override your current save.")) {
                             SharkGame.Save.importData(importText);
                         }
-                    })
-            )
+                    }),
+            ),
         );
         row.append(
             $("<td>").append(
@@ -356,8 +356,8 @@ SharkGame.PaneHandler = {
                     .on("click", function callback() {
                         if ($(this).hasClass("disabled")) return;
                         $("#importExportField").val(SharkGame.Save.exportData());
-                    })
-            )
+                    }),
+            ),
         );
         // add the actual text box
         row.append($("<td>").attr("colSpan", 4).append($("<input>").attr("type", "text").attr("id", "importExportField")));
@@ -383,8 +383,8 @@ SharkGame.PaneHandler = {
                             }
                             SharkGame.Save.createTaggedSave(`Backup${tag}`);
                             $(`#load${tag}`).removeClass(`disabled`);
-                        })
-                )
+                        }),
+                ),
             );
 
             const loadButton = $(`<button>`)
@@ -395,7 +395,7 @@ SharkGame.PaneHandler = {
                     if (!$(`#load${tag}`).hasClass(`disabled`) && SharkGame.Save.savedGameExists(`Backup${tag}`)) {
                         if (
                             confirm(
-                                `Are you absolutely sure you want to load this save${SharkGame.Save.getTaggedSaveCharacteristics(`Backup${tag}`)}?`
+                                `Are you absolutely sure you want to load this save${SharkGame.Save.getTaggedSaveCharacteristics(`Backup${tag}`)}?`,
                             )
                         ) {
                             SharkGame.Save.loadTaggedSave(`Backup${tag}`);
@@ -421,7 +421,7 @@ SharkGame.PaneHandler = {
                     if (!$(`#loadCheats`).hasClass(`disabled`) && SharkGame.Save.savedGameExists(`BackupCheats`)) {
                         if (
                             confirm(
-                                `Are you absolutely sure you want to load this save${SharkGame.Save.getTaggedSaveCharacteristics(`BackupCheats`)}?`
+                                `Are you absolutely sure you want to load this save${SharkGame.Save.getTaggedSaveCharacteristics(`BackupCheats`)}?`,
                             )
                         ) {
                             SharkGame.Save.loadTaggedSave(`BackupCheats`);
@@ -459,8 +459,8 @@ SharkGame.PaneHandler = {
                             SharkGame.PaneHandler.nextPaneInStack();
                             SharkGame.PaneHandler.showOptions();
                         }
-                    })
-            )
+                    }),
+            ),
         );
         optionsTable.append(row);
 
@@ -468,7 +468,7 @@ SharkGame.PaneHandler = {
         // add save wipe
         row = $("<tr>");
         row.append(
-            $("<td>").html("Wipe Save:<br/><span class='smallDesc'>(Completely wipe your main save and reset the game. COMPLETELY. FOREVER.)</span>")
+            $("<td>").html("Wipe Save:<br/><span class='smallDesc'>(Completely wipe your main save and reset the game. COMPLETELY. FOREVER.)</span>"),
         );
         row.append(
             $("<td>").append(
@@ -479,8 +479,8 @@ SharkGame.PaneHandler = {
                         if (confirm("Are you absolutely sure you want to wipe your save?\nIt'll be gone forever!")) {
                             main.resetGame();
                         }
-                    })
-            )
+                    }),
+            ),
         );
         optionsTable.append(row);
 
@@ -494,8 +494,8 @@ SharkGame.PaneHandler = {
                         .addClass("option-button")
                         .on("click", () => {
                             cad.debug();
-                        })
-                )
+                        }),
+                ),
             );
             row.append(
                 $("<td>").append(
@@ -504,13 +504,13 @@ SharkGame.PaneHandler = {
                         .addClass("option-button")
                         .on("click", () => {
                             cad.hideDebug();
-                        })
-                )
+                        }),
+                ),
             );
             optionsTable.prepend(row);
 
             optionsTable.prepend(
-                $("<tr>").html("<h3><br><span style='text-decoration: underline'>" + sharktext.boldString(`CHEATS and DEBUG`) + "</span></h3>")
+                $("<tr>").html("<h3><br><span style='text-decoration: underline'>" + sharktext.boldString(`CHEATS and DEBUG`) + "</span></h3>"),
             );
         }
 
@@ -523,8 +523,8 @@ SharkGame.PaneHandler = {
                     .addClass("option-button")
                     .on("click", () => {
                         SharkGame.PaneHandler.showKeybinds();
-                    })
-            )
+                    }),
+            ),
         );
         optionsTable.prepend(row);
 
@@ -573,8 +573,8 @@ SharkGame.PaneHandler = {
                     .on(`click`, function () {
                         $(this).html(`press some keys...`);
                         SharkGame.Keybinds.waitForKey = true;
-                    })
-            )
+                    }),
+            ),
         );
         keybindTable.append(row);
 
@@ -591,7 +591,7 @@ SharkGame.PaneHandler = {
                     selector.append(
                         `<option${i % 2 === 0 ? ' class="evenMessage"' : ""} ${boundAction === potentialBoundAction ? ` selected` : ``}>` +
                             potentialBoundAction +
-                            "</option>"
+                            "</option>",
                     );
                 });
                 row.append(selector);
@@ -607,8 +607,8 @@ SharkGame.PaneHandler = {
                         .on(`click`, () => {
                             $(`#${SharkGame.Keybinds.compressKeyID(boundKey)}`).remove();
                             delete SharkGame.Keybinds.keybinds[boundKey];
-                        })
-                )
+                        }),
+                ),
             );
             keybindTable.append(row);
         });
@@ -643,9 +643,9 @@ SharkGame.PaneHandler = {
             $("<div>")
                 .attr("id", "aspectInnerWarning")
                 .append(
-                    "Uh oh!<br>Your save has aspects that are no longer in the game!<br>I'm sorry, but there's only one way we can fix this:<br>your <strong>aspects</strong> have been <strong>refunded</strong><br>so that you can <strong>replace them</strong> with <strong>new ones</strong>.<br><br>Remember that you can use the <strong>skip</strong> button<br>in the top-left of the screen to go back to the gateway.<br>"
+                    "Uh oh!<br>Your save has aspects that are no longer in the game!<br>I'm sorry, but there's only one way we can fix this:<br>your <strong>aspects</strong> have been <strong>refunded</strong><br>so that you can <strong>replace them</strong> with <strong>new ones</strong>.<br><br>Remember that you can use the <strong>skip</strong> button<br>in the top-left of the screen to go back to the gateway.<br>",
                 )
-                .addClass("paneContentDiv")
+                .addClass("paneContentDiv"),
         );
         SharkGame.Button.makeButton(
             "confirmUnderstood",
@@ -654,7 +654,7 @@ SharkGame.PaneHandler = {
             () => {
                 SharkGame.PaneHandler.nextPaneInStack();
                 SharkGame.missingAspects = false;
-            }
+            },
         );
         this.addPaneToStack("THAT'S NOT GOOD...", aspectWarnDiv, true);
     },

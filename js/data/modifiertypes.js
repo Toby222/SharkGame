@@ -222,7 +222,7 @@ SharkGame.ModifierTypes = {
                         resource,
                         false,
                         69,
-                        background
+                        background,
                     )}`;
                 },
                 getEffect(_genDegree, _outDegree, _gen, _out) {
@@ -252,7 +252,7 @@ SharkGame.ModifierTypes = {
                         resource,
                         false,
                         69,
-                        background
+                        background,
                     )}`;
                 },
                 getEffect(_genDegree, _outDegree, _gen, _out) {
@@ -282,7 +282,7 @@ SharkGame.ModifierTypes = {
                         resource,
                         false,
                         69,
-                        background
+                        background,
                     )}`;
                 },
                 getEffect(_genDegree, _outDegree, _gen, _out) {
@@ -312,7 +312,7 @@ SharkGame.ModifierTypes = {
                         resource,
                         false,
                         69,
-                        background
+                        background,
                     )}`;
                 },
                 getEffect(_genDegree, _outDegree, _gen, _out) {
@@ -342,7 +342,7 @@ SharkGame.ModifierTypes = {
                         resource,
                         false,
                         69,
-                        background
+                        background,
                     )}`;
                 },
                 getEffect(_genDegree, _outDegree, _gen, _out) {
@@ -372,7 +372,7 @@ SharkGame.ModifierTypes = {
                         resource,
                         false,
                         69,
-                        background
+                        background,
                     )}`;
                 },
                 getEffect(_genDegree, _outDegree, _gen, _out) {

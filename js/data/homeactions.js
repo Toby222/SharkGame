@@ -55,14 +55,14 @@ SharkGame.HomeActions = {
 
                 Object.defineProperties(
                     finalTable[actionName],
-                    Object.getOwnPropertyDescriptors(worldActions[actionName])
+                    Object.getOwnPropertyDescriptors(worldActions[actionName]),
                 );
 
                 const defaultPropertiesToDefine = _.pickBy(
                     Object.getOwnPropertyDescriptors(defaultActions[actionName]),
                     (_propertyDescriptor, propertyName) => {
                         return !_.has(finalTable, [actionName, propertyName]);
-                    }
+                    },
                 );
 
                 Object.defineProperties(finalTable[actionName], defaultPropertiesToDefine);
@@ -3720,20 +3720,20 @@ SharkGame.HomeActions = {
                             `sponge`,
                             false,
                             false,
-                            sharkcolor.getElementColor("tooltipbox", "background-color")
+                            sharkcolor.getElementColor("tooltipbox", "background-color"),
                         )}`;
                     if (maxSandCycles <= maxSpongeCycles)
                         text += `${sharktext.getResourceName(
                             `sand`,
                             false,
                             false,
-                            sharkcolor.getElementColor("tooltipbox", "background-color")
+                            sharkcolor.getElementColor("tooltipbox", "background-color"),
                         )}`;
                     text += ` is limiting ${sharktext.getResourceName(
                         `porite`,
                         false,
                         false,
-                        sharkcolor.getElementColor("tooltipbox", "background-color")
+                        sharkcolor.getElementColor("tooltipbox", "background-color"),
                     )} production</span>`;
                 }
                 return sharktext.boldString(text);

@@ -79,7 +79,7 @@ SharkGame.Save = {
                 saveDataString = ascii85.decode(saveDataString);
             } catch (err) {
                 throw new Error(
-                    "Saved data looked like it was encoded in ascii85, but it couldn't be decoded. Can't load. Your save: " + saveDataString
+                    "Saved data looked like it was encoded in ascii85, but it couldn't be decoded. Can't load. Your save: " + saveDataString,
                 );
             }
         }
@@ -281,7 +281,7 @@ SharkGame.Save = {
             }
         } else {
             throw new Error(
-                "Couldn't load saved game. I don't know how to break this to you, but I think your save is corrupted. Your save: " + saveDataString
+                "Couldn't load saved game. I don't know how to break this to you, but I think your save is corrupted. Your save: " + saveDataString,
             );
         }
     },
@@ -540,7 +540,7 @@ SharkGame.Save = {
                 ],
                 (resourceId) => {
                     save.resources[resourceId] = { amount: 0, totalAmount: 0 };
-                }
+                },
             );
             _.each(
                 [
@@ -574,7 +574,7 @@ SharkGame.Save = {
                 ],
                 (upgradeId) => {
                     save.upgrades[upgradeId] = false;
-                }
+                },
             );
             save.world = { type: "start", level: 1 };
             save.artifacts = {};
@@ -612,7 +612,7 @@ SharkGame.Save = {
                 ],
                 (artifactId) => {
                     save.artifacts[artifactId] = 0;
-                }
+                },
             );
             save.gateway = { betweenRuns: false };
             return save;
@@ -658,7 +658,7 @@ SharkGame.Save = {
                 ],
                 (upgradeId) => {
                     save.upgrades[upgradeId] = false;
-                }
+                },
             );
             return save;
         },
@@ -700,7 +700,7 @@ SharkGame.Save = {
                 ["farAbandonedExploration", "reverseEngineering", "highEnergyFusion", "artifactAssembly", "superiorSearchAlgorithms"],
                 (upgradeId) => {
                     save.upgrades[upgradeId] = false;
-                }
+                },
             );
             return save;
         },
@@ -720,7 +720,7 @@ SharkGame.Save = {
                 ["coralCollection", "whaleCommunication", "delphineHistory", "whaleSong", "farHavenExploration", "crystallineConstruction"],
                 (upgradeName) => {
                     save.upgrades[upgradeName] = false;
-                }
+                },
             );
             return save;
         },
@@ -752,7 +752,7 @@ SharkGame.Save = {
                     if (_.has(save.artifacts, deprecatedTotem)) {
                         delete save.artifacts[deprecatedTotem];
                     }
-                }
+                },
             );
 
             if (_.has(save, "gateCostsMet")) {

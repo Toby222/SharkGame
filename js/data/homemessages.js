@@ -348,7 +348,7 @@ SharkGame.HomeMessages = {
             },
             {
                 name: "abandoned-octopuses",
-                unlock: { totalResource: { octopus: 8 } },
+                unlock: { totalResource: { octopus: 16 } },
                 message: "More octopuses join. They work in perfect unison.",
             },
             {
@@ -387,7 +387,7 @@ SharkGame.HomeMessages = {
             {
                 name: "abandoned-done",
                 unlock: { upgrade: ["artifactAssembly"] },
-                message: "...",
+                message: "The gate buzzes to life, glowing ethereally. If you squint, you can barely make out a blue ocean on the other side.",
             },
             {
                 name: "abandoned-tar-one",
@@ -397,7 +397,7 @@ SharkGame.HomeMessages = {
             },
             {
                 name: "abandoned-tar-two",
-                unlock: { resource: { tar: 200 } },
+                unlock: { resource: { tar: 500 } },
                 message: "Only machines will remain. All is lost. <span class='smallDesc'>All is lost.</span>",
                 transient: true,
             },
@@ -449,7 +449,7 @@ SharkGame.HomeMessages = {
                 name: "shrouded-truth",
                 unlock: { totalResource: { sacrifice: 9000000000000000 } },
                 message:
-                    "A team of eels get your attention. They have something from the caverns: it's a disaster report, alongside mentions of a set of giant arcane batteries.",
+                    "A team of eels get your attention. They have something from the caverns: it's a book. You can't read a thing inside it, but... that looks like arcana... and this looks like a warning.",
             },
         ],
 
@@ -460,7 +460,7 @@ SharkGame.HomeMessages = {
             },
             {
                 name: "frigid-ice-one",
-                unlock: { resource: { ice: 100 } },
+                unlock: { resource: { ice: 20 } },
                 message: "You feel tired.",
             },
             {

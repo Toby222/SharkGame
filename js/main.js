@@ -73,7 +73,7 @@ $.extend(SharkGame, {
         "Revenge of the Crabs",
         "Shark Box",
         "Dolphin Heroes",
-        "Maws",
+        "MAWS",
         "Part 6, Stone Ocean",
         "Sailor Crab",
         "League of Lobsters",
@@ -91,11 +91,10 @@ $.extend(SharkGame, {
         "DUNGEONS",
         "The Adventure Continues",
         "To Be Continued",
-        "what the crab doin",
         "#TeamSeas",
         "Sharks of Rage",
-        "Bedrock Edition",
-        "Javascript Edition",
+        "Bedrock? Edition",
+        "Java(script) Edition",
         "You are a Shark",
         "Mystery of Shark City",
         "Seas of Loathing",
@@ -103,7 +102,7 @@ $.extend(SharkGame, {
     ],
     GAME_NAME: null,
     ACTUAL_GAME_NAME: "Shark Game",
-    VERSION: "20220712a",
+    VERSION: "20240803a",
     ORIGINAL_VERSION: 0.71,
     VERSION_NAME: "The Volcanic Update",
     EPSILON: 1e-6, // floating point comparison is a joy
@@ -265,7 +264,7 @@ SharkGame.Main = {
         $("#gameName").html("- " + SharkGame.GAME_NAME + " -");
         $("#versionNumber").html(
             `New Frontiers v ${SharkGame.VERSION} - ${SharkGame.VERSION_NAME}<br/>\
-Mod of v ${SharkGame.ORIGINAL_VERSION}`
+Mod of v ${SharkGame.ORIGINAL_VERSION}`,
         );
         $.getJSON("https://api.github.com/repos/Toby222/SharkGame/commits/alpha", (data) => {
             SharkGame.COMMIT_SHA = data.sha;
@@ -711,7 +710,7 @@ Mod of v ${SharkGame.ORIGINAL_VERSION}`
                     .html(
                         `You see a new update swimming towards you.<br> On it you can just make out the words <br>"${
                             data.commit.message.split("\n")[0]
-                        }". <br>Click to update.`
+                        }". <br>Click to update.`,
                     )
                     .on("click", () => {
                         try {
@@ -756,8 +755,8 @@ Mod of v ${SharkGame.ORIGINAL_VERSION}`
                 $("<li>").append(
                     $("<button>")
                         .addClass("min" + (disableButton ? " disabled" : ""))
-                        .attr("id", "buy-" + amount)
-                )
+                        .attr("id", "buy-" + amount),
+                ),
             );
             let label = customLabel ? customLabel + " " : "buy ";
             if (amount < 0) {
@@ -801,8 +800,8 @@ Mod of v ${SharkGame.ORIGINAL_VERSION}`
                     .attr("id", "custom-input")
                     .attr("value", 1)
                     .attr("min", "1")
-                    .attr("disabled", SharkGame.Settings.current.buyAmount !== "custom")
-            )
+                    .attr("disabled", SharkGame.Settings.current.buyAmount !== "custom"),
+            ),
         );
         document.getElementById("custom-input").addEventListener("input", main.onCustomChange);
         if (SharkGame.Settings.current.customSetting) {
@@ -906,6 +905,19 @@ SharkGame.Button = {
 };
 
 SharkGame.Changelog = {
+    "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20240803a": [
+        "Added a new upgrade to the starter world: Crystal Scoops, to increase the speed of that world dramatically and make for slightly more interesting crab-to-laser-ray competition.",
+        "Added 4 new home message images, courtesy of stormwalker.",
+        "This happened silently in January, but: fixed the negative world time bug.",
+        "Made a few changes to older ones.",
+        "Fixed the shrimp home message image not appearing.",
+        "Fixed the lobster home message image not appearing.",
+        "Fixed the sponge filter sprite not appearing.",
+        "Fixed the pry sponge sprite disappearing in Volcanic.",
+        "Edited some home message requirements.",
+        "Edited the home message text at the end of Shrouded and Abandoned.",
+        "Edited some of the random game tab names.",
+    ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20230618a": [
         "Added Tempestuous worldtype.",
         "Added home message history. You may now freely scroll back and forth between previously seen home messages while in a world.",

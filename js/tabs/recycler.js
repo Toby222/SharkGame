@@ -157,7 +157,7 @@ SharkGame.Recycler = {
                     resourceName,
                     disableButton,
                     buy,
-                    sharkcolor.getElementColor("input-" + resourceName, "background-color")
+                    sharkcolor.getElementColor("input-" + resourceName, "background-color"),
                 );
                 if (inputButton.html() !== label.replace(/'/g, '"')) {
                     inputButton.html(label);
@@ -184,7 +184,7 @@ SharkGame.Recycler = {
                     resourceName,
                     disableButton,
                     buy,
-                    sharkcolor.getElementColor("output-" + resourceName, "background-color")
+                    sharkcolor.getElementColor("output-" + resourceName, "background-color"),
                 );
                 if (outputButton.html() !== label.replace(/'/g, '"')) {
                     outputButton.html(label);
@@ -208,7 +208,7 @@ SharkGame.Recycler = {
                     inputButtonDiv,
                     rec.onInput,
                     rec.onInputHover,
-                    rec.onInputUnhover
+                    rec.onInputUnhover,
                 );
                 SharkGame.Button.makeHoverscriptButton(
                     "output-" + resourceName,
@@ -216,7 +216,7 @@ SharkGame.Recycler = {
                     outputButtonDiv,
                     rec.onOutput,
                     rec.onOutputHover,
-                    rec.onOutputUnhover
+                    rec.onOutputUnhover,
                 );
             }
         });

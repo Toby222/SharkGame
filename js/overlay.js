@@ -19,7 +19,7 @@ SharkGame.OverlayHandler = {
                 },
                 duration,
                 "swing",
-                callback
+                callback,
             );
         }
     },
@@ -38,7 +38,7 @@ SharkGame.OverlayHandler = {
                 () => {
                     callback();
                     $(`#overlay`).hide();
-                }
+                },
             );
         }
     },

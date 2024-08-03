@@ -169,7 +169,7 @@ SharkGame.Lab = {
                     lab.isUpgradePossible(upgradeId) &&
                     !lab.isUpgradeVisible(upgradeId) &&
                     _.has(upgrade, "required.upgrades") &&
-                    _.every(upgrade.required.upgrades, (requiredUpgradeId) => SharkGame.Upgrades.purchased.includes(requiredUpgradeId))
+                    _.every(upgrade.required.upgrades, (requiredUpgradeId) => SharkGame.Upgrades.purchased.includes(requiredUpgradeId)),
             );
 
             if (hintedUpgrade === undefined) return;
@@ -185,8 +185,8 @@ SharkGame.Lab = {
                     $("<p>").html(
                         "You get the feeling that " +
                             sharktext.getResourceName(hintResource, false, 2, sharkcolor.getElementColor("buttonList")) +
-                            " may be the key."
-                    )
+                            " may be the key.",
+                    ),
                 );
             } else {
                 log.addError(`There is a possible, undiscovered upgrade (${hintedUpgrade.name}), but no valid hint resource.`);
@@ -237,7 +237,7 @@ SharkGame.Lab = {
                         upgradeId,
                         upgrade.name + "<br/>" + upgrade.desc + "<br/>" + effects,
                         buttonList,
-                        lab.onLabButton
+                        lab.onLabButton,
                     );
                     lab.updateLabButton(upgradeId);
                     if (SharkGame.Settings.current.showAnimations) {
@@ -250,7 +250,7 @@ SharkGame.Lab = {
                                 {
                                     duration: 50,
                                     done: (anim) => (anim.elem.style = null),
-                                }
+                                },
                             );
                     }
                 }

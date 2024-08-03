@@ -243,7 +243,7 @@ SharkGame.AspectTree = {
             aspectTableDescriptionRow.append(
                 $(`<td>`)
                     .html(!reqref.max ? aspectData.getCost(aspectData.level) : "N/A")
-                    .attr("rowspan", "3")
+                    .attr("rowspan", "3"),
             );
 
             const aspectTableRowCurrent = $("<tr>");
@@ -593,7 +593,7 @@ SharkGame.AspectTree = {
                 posX,
                 posY,
                 width,
-                height
+                height,
             );
         }
         const textToDisplay = tree.getLittleLevelText(name);

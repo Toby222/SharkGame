@@ -110,7 +110,7 @@ SharkGame.Home = {
                                 if ($(this).hasClass(".disabled")) return;
                                 const tab = $(this).attr("id").split("-")[1];
                                 home.changeButtonTab(tab);
-                            })
+                            }),
                     );
                     if (category.hasNewItem) {
                         tabListItem.addClass("newItemAdded");
@@ -249,7 +249,7 @@ SharkGame.Home = {
         const currentIndex = SharkGame.Memories.messageLookup.get(SharkGame.flags.selectedHomeMessage);
         const messages = SharkGame.HomeMessages.messages[world.worldType].slice(
             currentIndex + 1,
-            SharkGame.HomeMessages.messages[world.worldType].length
+            SharkGame.HomeMessages.messages[world.worldType].length,
         );
         const nextMessage = _.find(messages, (messageData) => {
             return mem.worldMemories[world.worldType].includes(messageData.name);
@@ -377,7 +377,7 @@ SharkGame.Home = {
                     tracker.append(
                         $("<div>")
                             .html("•")
-                            .addClass(messageData.name === SharkGame.flags.selectedHomeMessage ? "" : "inactive")
+                            .addClass(messageData.name === SharkGame.flags.selectedHomeMessage ? "" : "inactive"),
                     );
                 }
             });
@@ -623,7 +623,7 @@ SharkGame.Home = {
             buttonListSel,
             home.onHomeButton,
             home.onHomeHover,
-            home.onHomeUnhover
+            home.onHomeUnhover,
         ); // box-shadow: 0 0 6px 3px #f00, 0 0 3px 1px #ff1a1a inset;
         buttonSelector.html($("<span id='" + actionName + "Label' class='click-passthrough'></span>"));
         home.updateButton(actionName);
@@ -648,7 +648,7 @@ SharkGame.Home = {
                     SharkGame.ResourceMap.get(resourceName).income,
                     (incomeAmount, resource) =>
                         world.doesResourceExist(resource) &&
-                        ((incomeAmount < 0 && !res.isInCategory(resource, "harmful")) || (res.isInCategory(resource, "harmful") && incomeAmount > 0))
+                        ((incomeAmount < 0 && !res.isInCategory(resource, "harmful")) || (res.isInCategory(resource, "harmful") && incomeAmount > 0)),
                 )
             ) {
                 givesBadThing = true;
@@ -846,7 +846,7 @@ SharkGame.Home = {
                         .beautifyIncome(
                             buyingHowMuch * amount,
                             " " +
-                                sharktext.getResourceName(incomeResource, false, false, sharkcolor.getElementColor("tooltipbox", "background-color"))
+                                sharktext.getResourceName(incomeResource, false, false, sharkcolor.getElementColor("tooltipbox", "background-color")),
                         )
                         .bold() + "<br/>";
             }
@@ -867,7 +867,7 @@ SharkGame.Home = {
                         .beautifyIncome(
                             -buyingHowMuch * amount,
                             " " +
-                                sharktext.getResourceName(incomeResource, false, false, sharkcolor.getElementColor("tooltipbox", "background-color"))
+                                sharktext.getResourceName(incomeResource, false, false, sharkcolor.getElementColor("tooltipbox", "background-color")),
                         )
                         .bold() + "<br/>";
             }

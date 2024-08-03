@@ -268,13 +268,13 @@ declare global {
             parentDiv: HTMLDivElement | JQuery<HTMLDivElement>,
             onClick: (event: JQuery.MouseDownEvent) => void,
             onMouseEnter: (event: JQuery.MouseEnterEvent) => void,
-            onMouseLeave: (event: JQuery.MouseLeaveEvent) => void
+            onMouseLeave: (event: JQuery.MouseLeaveEvent) => void,
         ): JQuery<HTMLButtonElement>;
         makeButton(
             id: string,
             content: string,
             parentDiv: HTMLDivElement | JQuery<HTMLDivElement>,
-            onClick: (event: JQuery.MouseDownEvent) => void
+            onClick: (event: JQuery.MouseDownEvent) => void,
         ): JQuery<HTMLButtonElement>;
     };
 
@@ -324,7 +324,7 @@ declare global {
                 speedReward: number,
                 gumptionRatio: number,
                 forceWorldBased: boolean,
-                storedTime: number
+                storedTime: number,
             ): void;
             showRunEndInfo(containerDiv: JQuery<HTMLDivElement>): void;
             showAspects(): void;

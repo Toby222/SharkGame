@@ -92,7 +92,7 @@ SharkGame.Upgrades = {
             effectDesc: "Sharks are twice as effective with their new biting gear. Turns out they work better outside the mouth!",
             cost: {
                 science: 50,
-                fish: 10,
+                fish: 100,
                 crystal: 5,
             },
             effect: {
@@ -114,6 +114,22 @@ SharkGame.Upgrades = {
             effect: {
                 incomeMultiplier: {
                     ray: 2,
+                },
+            },
+        },
+        crystalScoop: {
+            name: "Crystal Scoops",
+            desc: "Design funny looking holdy-things for the crabs!",
+            researchedMessage: "Our crabs used to brush aside the sand to look for crystals - now they can scoop it! Scoopy scoop.",
+            effectDesc:
+                "Crabs are twice as effective at digging for crystals. The crabs are overjoyed to hold these tiny tools with their tiny claws.",
+            cost: {
+                science: 50,
+                crystal: 10,
+            },
+            effect: {
+                incomeMultiplier: {
+                    crab: 2,
                 },
             },
         },
@@ -201,7 +217,7 @@ SharkGame.Upgrades = {
             effectDesc: "Laser rays can now be geared up to burn the very sand to glassy crystal.",
             cost: {
                 science: 100,
-                sand: 10000,
+                sand: 5000,
                 crystal: 100,
             },
             required: {
@@ -214,7 +230,7 @@ SharkGame.Upgrades = {
             researchedMessage: "A new form of material has been discovered! It has been named after its discoverer, Dr. Sharkonium.",
             effectDesc: "Enables transmutation of some random junk we have lying around into sharkonium, material of the future.",
             cost: {
-                science: 3500,
+                science: 4000,
                 crystal: 1500,
                 sand: 15000,
             },
@@ -309,6 +325,24 @@ SharkGame.Upgrades = {
                 upgrades: ["iterativeDesign", "recyclerDiscovery"],
             },
         },
+        biology: {
+            name: "Biology",
+            desc: "What is a shark? What is inside a shark, except for large amounts of fish?",
+            researchedMessage: "With a new understanding of their own biology, sharks can now specialise in the manufacture of new sharks.",
+            effectDesc:
+                "Sharks are twice as effective, and nurse sharks can be bought. Did you know shark eggs don't actually form just because a shark wills them to exist?",
+            cost: {
+                science: 600,
+            },
+            required: {
+                upgrades: ["underwaterChemistry", "agriculture"],
+            },
+            effect: {
+                incomeMultiplier: {
+                    shark: 2,
+                },
+            },
+        },
         agriculture: {
             name: "Agriculture",
             desc: "The hunter-gatherer lifestyle will only work so well for us. Maybe we should gather these animals in one place and let them grow.",
@@ -334,24 +368,6 @@ SharkGame.Upgrades = {
             required: {
                 upgrades: ["agriculture"],
                 resources: ["kelp"],
-            },
-        },
-        biology: {
-            name: "Biology",
-            desc: "What is a shark? What is inside a shark, except for large amounts of fish?",
-            researchedMessage: "With a new understanding of their own biology, sharks can now specialise in the manufacture of new sharks.",
-            effectDesc:
-                "Sharks are twice as effective, and nurse sharks can be bought. Did you know shark eggs don't actually form just because a shark wills them to exist?",
-            cost: {
-                science: 600,
-            },
-            required: {
-                upgrades: ["underwaterChemistry", "agriculture"],
-            },
-            effect: {
-                incomeMultiplier: {
-                    shark: 2,
-                },
             },
         },
         xenobiology: {
@@ -2750,7 +2766,7 @@ SharkGame.Upgrades = {
                     `crystal`,
                     false,
                     2,
-                    background
+                    background,
                 )} conversion effectiveness ×25`;
             },
         },
@@ -3173,7 +3189,7 @@ SharkGame.Upgrades = {
                     `crab`,
                     false,
                     2,
-                    background
+                    background,
                 )}`;
             },
         },
@@ -3196,7 +3212,7 @@ SharkGame.Upgrades = {
                     `algae`,
                     false,
                     2,
-                    background
+                    background,
                 )}`;
             },
         },
@@ -3287,7 +3303,7 @@ SharkGame.Upgrades = {
                     `shoveler`,
                     false,
                     2,
-                    background
+                    background,
                 )} impact ×2, ${sharktext.getResourceName(`researcher`, false, 2, background)} impact ×2`;
             },
         },
@@ -3367,12 +3383,12 @@ SharkGame.Upgrades = {
                     `shoveler`,
                     false,
                     2,
-                    background
+                    background,
                 )} and ${sharktext.getResourceName(`researcher`, false, 2, background)} cost 80% less ${sharktext.getResourceName(
                     `porite`,
                     false,
                     2,
-                    background
+                    background,
                 )}`;
             },
         },
@@ -3515,7 +3531,7 @@ SharkGame.Upgrades = {
                     `coralFarm`,
                     false,
                     2,
-                    background
+                    background,
                 )} cost 80% less ${sharktext.getResourceName(`sand`, false, 2, background)}`;
             },
         },
@@ -4026,7 +4042,7 @@ SharkGame.Upgrades = {
                     `sand`,
                     false,
                     2,
-                    background
+                    background,
                 )}`;
             },
         },
@@ -4117,7 +4133,7 @@ SharkGame.Upgrades = {
                     `crystal`,
                     false,
                     2,
-                    background
+                    background,
                 )}`;
             },
         },
@@ -4300,7 +4316,7 @@ SharkGame.Upgrades = {
                     `seagrass`,
                     false,
                     1,
-                    background
+                    background,
                 )} ×10`;
             },
         },

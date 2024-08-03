@@ -199,7 +199,7 @@ SharkGame.Gateway = {
             return true;
         }
         return _.some(gateway.completedWorlds, (completedWorld) =>
-            _.some(SharkGame.WorldTypes[completedWorld].foresight.present, (seenResource) => seenResource === resource)
+            _.some(SharkGame.WorldTypes[completedWorld].foresight.present, (seenResource) => seenResource === resource),
         );
     },
 
@@ -378,14 +378,14 @@ SharkGame.Gateway = {
             gatewayContent.append($("<p>").html("You are a shark in the space between worlds."));
             if (!SharkGame.wonGame) {
                 gatewayContent.append(
-                    $("<p>").html("It is not clear how you have ended up here, but you remember a bitter defeat.").addClass("medDesc")
+                    $("<p>").html("It is not clear how you have ended up here, but you remember a bitter defeat.").addClass("medDesc"),
                 );
             }
             gatewayContent.append($("<p>").html(sharktext.boldString("Something unseen says,")).addClass("medDesc"));
             gatewayContent.append(
                 $("<em>")
                     .attr("id", "gatewayVoiceMessage")
-                    .html(sharktext.boldString(gateway.getVoiceMessage(SharkGame.wonGame, forceWorldBased)))
+                    .html(sharktext.boldString(gateway.getVoiceMessage(SharkGame.wonGame, forceWorldBased))),
             );
 
             // figure out all our rewards
@@ -394,8 +394,8 @@ SharkGame.Gateway = {
                     $("<p>").html(
                         "Entering this place has changed you, granting you <span class='essenceCount'>" +
                             sharktext.beautify(baseReward) +
-                            "</span> essence."
-                    )
+                            "</span> essence.",
+                    ),
                 );
             }
             if (speedReward > 0) {
@@ -405,12 +405,12 @@ SharkGame.Gateway = {
                             sharktext.beautify(gateway.getMinutesBelowPar()) +
                             ` minute${gateway.getMinutesBelowPar() === 1 ? "" : "s"} faster than par, granting you <span class='essenceCount'>` +
                             sharktext.beautify(speedReward) +
-                            "</span> additional essence."
-                    )
+                            "</span> additional essence.",
+                    ),
                 );
             } else if (SharkGame.wonGame && !gateway.wasOnScoutingMission() && !gateway.getMinutesBelowPar()) {
                 gatewayContent.append(
-                    $("<p>").html("You didn't beat this world fast enough to get below par. If you did, you would get more essence.")
+                    $("<p>").html("You didn't beat this world fast enough to get below par. If you did, you would get more essence."),
                 );
             }
             if (gumptionBonus) {
@@ -418,8 +418,8 @@ SharkGame.Gateway = {
                     $("<p>").html(
                         "Your gumption lets you scrounge up <span class='essenceCount'>" +
                             sharktext.beautify(gumptionBonus, false, 2) +
-                            "</span> extra essence."
-                    )
+                            "</span> extra essence.",
+                    ),
                 );
             }
             if (patienceReward > 0) {
@@ -427,8 +427,8 @@ SharkGame.Gateway = {
                     $("<p>").html(
                         "Your patience pays off, granting you <span class='essenceCount'>" +
                             sharktext.beautify(patienceReward) +
-                            "</span> additional essence."
-                    )
+                            "</span> additional essence.",
+                    ),
                 );
             }
             if (speedReward || gumptionBonus || patienceReward) {
@@ -436,8 +436,8 @@ SharkGame.Gateway = {
                     $("<p>").html(
                         "You gained <span class='essenceCount'>" +
                             sharktext.beautify(speedReward + patienceReward + baseReward + gumptionBonus, false, 2) +
-                            "</span> essence overall."
-                    )
+                            "</span> essence overall.",
+                    ),
                 );
             }
             gatewayContent.append(
@@ -445,15 +445,15 @@ SharkGame.Gateway = {
                     sharktext.boldString(
                         "You have <span id='essenceHeldDisplay' class='essenceCount'>" +
                             sharktext.beautify(essenceHeld, false, 2) +
-                            "</span> essence."
-                    )
-                )
+                            "</span> essence.",
+                    ),
+                ),
             );
             if (storedTime >= 1000) {
                 gatewayContent.append(
                     $("<p>").html(
-                        `(By the way, you took ${sharktext.boldString(res.minuteHand.formatMinuteTime(storedTime))} of unused idle time with you.)`
-                    )
+                        `(By the way, you took ${sharktext.boldString(res.minuteHand.formatMinuteTime(storedTime))} of unused idle time with you.)`,
+                    ),
                 );
             }
             if (numenHeld > 0) {
@@ -464,8 +464,8 @@ SharkGame.Gateway = {
                             sharktext.beautify(numenHeld) +
                             "</span> " +
                             numenName +
-                            ", and you radiate divinity."
-                    )
+                            ", and you radiate divinity.",
+                    ),
                 );
             }
             gatewayContent.append($("<p>").attr("id", "gatewayStatusMessage").addClass("medDesc"));
@@ -497,7 +497,7 @@ SharkGame.Gateway = {
                 },
                 () => {
                     $("#tooltipbox").removeClass("forAspectTreeUnpurchased").html("");
-                }
+                },
             );
             gatewayContent.append(navButtons);
 
@@ -521,8 +521,8 @@ SharkGame.Gateway = {
                             `minute hand: ${SharkGame.flags.minuteHandTimer}    hour hand: ${SharkGame.flags.hourHandLeft}    bonus: ${SharkGame.flags.bonusTime}<br>` +
                             `calculated run time: ${gateway.getTimeInLastWorld(true)}   actual likely time: ${
                                 _.now() - SharkGame.timestampRunStart
-                            }<br>`
-                    )
+                            }<br>`,
+                    ),
                 );
             } else {
                 containerDiv.append($("<p>").html(`<em>Time spent within last ocean:</em><br/>${gateway.getTimeInLastWorld()}`));
@@ -573,7 +573,7 @@ SharkGame.Gateway = {
                             }
                             tree.updateEssenceCounter();
                         }
-                    })
+                    }),
             );
             aspectTreeContent.append($("<strong>").html(" ESSENCE"));
             aspectTreeContent.append($("<p>").html("Your will flows into solid shapes beyond your control.<br>Focus."));
@@ -632,7 +632,7 @@ SharkGame.Gateway = {
             planetSelectionContent.append(planetPool);
 
             planetSelectionContent.append(
-                $("<p>").html("NOTE: When you first visit a world, you are SCOUTING it. If you choose to replay it, you are NOT SCOUTING it.")
+                $("<p>").html("NOTE: When you first visit a world, you are SCOUTING it. If you choose to replay it, you are NOT SCOUTING it."),
             );
 
             if (SharkGame.Aspects.destinyGamble.level > 0) {
@@ -677,7 +677,7 @@ SharkGame.Gateway = {
 
             // construct the gateway content
             const gatewayContent = $("<div>").append(
-                $("<p>").html((seenWorldYet ? "Replay the " + selectedWorldData.name + " W" : "Scout this w") + "orld?")
+                $("<p>").html((seenWorldYet ? "Replay the " + selectedWorldData.name + " W" : "Scout this w") + "orld?"),
             );
 
             gatewayContent.append(
@@ -692,15 +692,15 @@ SharkGame.Gateway = {
                                         SharkGame.Aspects.patience.level *
                                             (SharkGame.persistentFlags.dialSetting > 1
                                                 ? Math.round((2 * Math.log(SharkGame.persistentFlags.dialSetting)) / Math.log(4))
-                                                : 1)
+                                                : 1),
                                 ),
                                 false,
-                                2
+                                2,
                             ) +
                             "</strong> " +
                             sharktext.getResourceName("essence", undefined, undefined, sharkcolor.getElementColor("pane")) +
-                            " overall."
-                    )
+                            " overall.",
+                    ),
             );
 
             // add world image
@@ -719,7 +719,7 @@ SharkGame.Gateway = {
 
             if (seenWorldYet && selectedWorldData.par) {
                 gatewayContent.append(
-                    $("<p>").html("Par: <strong>" + selectedWorldData.par + " minutes</strong><br>Beat the world faster for extra essence.")
+                    $("<p>").html("Par: <strong>" + selectedWorldData.par + " minutes</strong><br>Beat the world faster for extra essence."),
                 );
             }
 
@@ -756,7 +756,7 @@ SharkGame.Gateway = {
                         SharkGame.persistentFlags.dialSetting > 1
                             ? Math.round((2 * Math.log(SharkGame.persistentFlags.dialSetting)) / Math.log(4))
                             : 1
-                    }`)
+                    }`),
                         );
                 } else {
                     dialLabel = $("<p>")
@@ -776,7 +776,7 @@ SharkGame.Gateway = {
                     $.each(SharkGame.Aspects, (_aspectName, aspectData) => {
                         if (aspectData.level && !aspectData.core) {
                             doProceed = confirm(
-                                "Woah, hold on! Only CORE ASPECTS work when scouting, but you have some that aren't! If you continue, these non-core aspects will stop working until you leave. Are you sure that you want to proceed?"
+                                "Woah, hold on! Only CORE ASPECTS work when scouting, but you have some that aren't! If you continue, these non-core aspects will stop working until you leave. Are you sure that you want to proceed?",
                             );
                             return false;
                         }
@@ -816,7 +816,7 @@ SharkGame.Gateway = {
                         },
                         500,
                         "swing",
-                        callback
+                        callback,
                     );
                 } else {
                     callback();
@@ -836,8 +836,8 @@ SharkGame.Gateway = {
                                 $("<li>").html(
                                     "This world has no " +
                                         sharktext.getResourceName(missingResource, false, 2, sharkcolor.getElementColor("pane")) +
-                                        "."
-                                )
+                                        ".",
+                                ),
                             );
                         });
                         contentDiv.prepend(missingList);
@@ -853,10 +853,10 @@ SharkGame.Gateway = {
                                             false,
                                             2,
                                             sharkcolor.getElementColor("pane", "background-color"),
-                                            gateway.playerHasSeenResource(presentResource) ? undefined : gateway.PresenceFeelings[presentResource]
+                                            gateway.playerHasSeenResource(presentResource) ? undefined : gateway.PresenceFeelings[presentResource],
                                         ) +
-                                        "."
-                                )
+                                        ".",
+                                ),
                             );
                         });
                         contentDiv.prepend(presentList);
@@ -870,17 +870,17 @@ SharkGame.Gateway = {
                                         SharkGame.ModifierReference.get(modifier.modifier).effectDescription(
                                             modifier.amount,
                                             modifier.resource,
-                                            "#246c54"
-                                        )
-                                    )
+                                            "#246c54",
+                                        ),
+                                    ),
                                 );
                             } else {
                                 modifierList.append(
                                     $("<li>").html(
                                         SharkGame.ModifierReference.get(modifier.modifier)
                                             .effectDescription(modifier.amount, modifier.resource, sharkcolor.getElementColor("pane"))
-                                            .replace(new RegExp(modifier.resource, "g"), gateway.PresenceFeelings[modifier.resource])
-                                    )
+                                            .replace(new RegExp(modifier.resource, "g"), gateway.PresenceFeelings[modifier.resource]),
+                                    ),
                                 );
                             }
                         });
@@ -1003,14 +1003,14 @@ SharkGame.Gateway = {
 
                 $("#remaining-time").html(
                     `According to your selection, you would leave ${sharktext.boldString(
-                        res.minuteHand.formatMinuteTime(storage - requestedTime, true)
-                    )} in storage.`
+                        res.minuteHand.formatMinuteTime(storage - requestedTime, true),
+                    )} in storage.`,
                 );
                 $("#requested-time").html(`You would take ${sharktext.boldString(res.minuteHand.formatMinuteTime(requestedTime, true))} with you.`);
             }
 
             const menuContent = $("<div>").append(
-                $("<p>").html(`You have some ${SharkGame.Settings.current.idleEnabled ? "idle " : ""}time in storage.`)
+                $("<p>").html(`You have some ${SharkGame.Settings.current.idleEnabled ? "idle " : ""}time in storage.`),
             );
             const timeSelection = $("<div>").attr("id", "minute-storage-selection");
 
@@ -1019,7 +1019,7 @@ SharkGame.Gateway = {
 
             if (!gateway.completedWorlds.includes(worldtype)) {
                 timeSelection.append(
-                    $("<p>").html(sharktext.boldString("Since you're going on a scouting mission, you can take up to 10 minutes with you."))
+                    $("<p>").html(sharktext.boldString("Since you're going on a scouting mission, you can take up to 10 minutes with you.")),
                 );
             }
 
@@ -1038,7 +1038,7 @@ SharkGame.Gateway = {
                                 .attr("type", "number")
                                 .attr("min", 0)
                                 .attr("max", 9999)
-                                .on("input", updateRequestedTime)
+                                .on("input", updateRequestedTime),
                         );
                         timeSelection.append($("<strong>").html("Y "));
                     case 6:
@@ -1048,7 +1048,7 @@ SharkGame.Gateway = {
                                 .attr("type", "number")
                                 .attr("min", 0)
                                 .attr("max", 9999)
-                                .on("input", updateRequestedTime)
+                                .on("input", updateRequestedTime),
                         );
                         timeSelection.append($("<strong>").html("M "));
                     case 5:
@@ -1058,7 +1058,7 @@ SharkGame.Gateway = {
                                 .attr("type", "number")
                                 .attr("min", 0)
                                 .attr("max", 9999)
-                                .on("input", updateRequestedTime)
+                                .on("input", updateRequestedTime),
                         );
                         timeSelection.append($("<strong>").html("W "));
                     case 4:
@@ -1068,7 +1068,7 @@ SharkGame.Gateway = {
                                 .attr("type", "number")
                                 .attr("min", 0)
                                 .attr("max", 9999)
-                                .on("input", updateRequestedTime)
+                                .on("input", updateRequestedTime),
                         );
                         timeSelection.append($("<strong>").html("D "));
                     case 3:
@@ -1078,7 +1078,7 @@ SharkGame.Gateway = {
                                 .attr("type", "number")
                                 .attr("min", 0)
                                 .attr("max", 9999)
-                                .on("input", updateRequestedTime)
+                                .on("input", updateRequestedTime),
                         );
                         timeSelection.append($("<strong>").html("h "));
                     case 2:
@@ -1088,7 +1088,7 @@ SharkGame.Gateway = {
                                 .attr("type", "number")
                                 .attr("min", 0)
                                 .attr("max", 9999)
-                                .on("input", updateRequestedTime)
+                                .on("input", updateRequestedTime),
                         );
                         timeSelection.append($("<strong>").html("m "));
                     case 1:
@@ -1098,7 +1098,7 @@ SharkGame.Gateway = {
                                 .attr("type", "number")
                                 .attr("min", 0)
                                 .attr("max", 9999)
-                                .on("input", updateRequestedTime)
+                                .on("input", updateRequestedTime),
                         );
                         timeSelection.append($("<strong>").html("s"));
                 }
@@ -1110,7 +1110,7 @@ SharkGame.Gateway = {
                             .attr("type", "number")
                             .attr("min", 0)
                             .attr("max", 9999)
-                            .on("input", updateRequestedTime)
+                            .on("input", updateRequestedTime),
                     );
                     timeSelection.append($("<strong>").html("m "));
                 }
@@ -1120,13 +1120,13 @@ SharkGame.Gateway = {
                         .attr("type", "number")
                         .attr("min", 0)
                         .attr("max", 9999)
-                        .on("input", updateRequestedTime)
+                        .on("input", updateRequestedTime),
                 );
                 timeSelection.append($("<strong>").html("s"));
             }
             /* eslint-enable no-fallthrough */
             timeSelection.append(
-                $("<p>").html(sharktext.boldString("ONLY TAKE AS MUCH AS YOU NEED!<br>Anything that you take but don't use will be discarded."))
+                $("<p>").html(sharktext.boldString("ONLY TAKE AS MUCH AS YOU NEED!<br>Anything that you take but don't use will be discarded.")),
             );
             timeSelection.append($("<hr>"));
             timeSelection.append($("<p>").attr("id", "remaining-time"));
@@ -1175,7 +1175,7 @@ SharkGame.Gateway = {
                     sharktext.boldString(`gamespeed is ${SharkGame.persistentFlags.dialSetting}× slower<br>
                 Patience rewards ×${
                     SharkGame.persistentFlags.dialSetting > 1 ? Math.round((2 * Math.log(SharkGame.persistentFlags.dialSetting)) / Math.log(4)) : 1
-                }`)
+                }`),
                 );
             } else {
                 $("#dial-label").html("Adjust The Dial to modify Patience rewards.<br>...or don't. If you don't want to.");
@@ -1191,14 +1191,14 @@ SharkGame.Gateway = {
                                 SharkGame.Aspects.patience.level *
                                     (SharkGame.persistentFlags.dialSetting > 1
                                         ? Math.round((2 * Math.log(SharkGame.persistentFlags.dialSetting)) / Math.log(4))
-                                        : 1)
+                                        : 1),
                         ),
                         false,
-                        2
+                        2,
                     ) +
                     "</strong> " +
                     sharktext.getResourceName("essence", undefined, undefined, sharkcolor.getElementColor("pane")) +
-                    " overall."
+                    " overall.",
             );
         },
     },
@@ -1253,7 +1253,7 @@ SharkGame.Gateway.Messages = {
             messages: [
                 "You are a traveller like any other.",
                 "I see you here more than ever. Can you see me?",
-                "Well met, shark friend.",
+                "What do you remember?",
                 "You remind me of myself, from a long, long time ago.",
                 "Welcome back to irregular irreality.",
             ],
@@ -1284,13 +1284,7 @@ SharkGame.Gateway.Messages = {
         },
     ],
     lastPlanetBased: {
-        start: [
-            "What brings you here, strange one?",
-            "Hello, newcomer.",
-            "Ah. Welcome, new one.",
-            "Your journey has only just begun.",
-            "Welcome to the end of the beginning.",
-        ],
+        start: ["What brings you here, strange one?", "Your journey has only just begun.", "Welcome to the end of the beginning."],
         marine: [
             "Did your last ocean feel all too familiar?",
             "Do you bring life, or do you bring death, worldbuilder?",

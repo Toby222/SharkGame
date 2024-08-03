@@ -575,7 +575,7 @@ SharkGame.MiscUtil = {
 
                                 default:
                                     throw new Error(
-                                        `Cannot clone object of type ${typeof descriptor.value} (This should never happen, why must you do this to me, JavaScript?)`
+                                        `Cannot clone object of type ${typeof descriptor.value} (This should never happen, why must you do this to me, JavaScript?)`,
                                     );
                             }
                         }

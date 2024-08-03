@@ -314,14 +314,14 @@ SharkGame.CheatsAndDebug = {
                     $("#leftButtons").append(
                         $("<tr>")
                             .attr("id", category)
-                            .html("<h3>" + category + "</h3>")
+                            .html("<h3>" + category + "</h3>"),
                     );
                     placeLeft = false;
                 } else {
                     $("#rightButtons").append(
                         $("<tr>")
                             .attr("id", category)
-                            .html("<h3>" + category + "</h3>")
+                            .html("<h3>" + category + "</h3>"),
                     );
                     placeLeft = true;
                 }
@@ -344,10 +344,10 @@ SharkGame.CheatsAndDebug = {
                     container.append("<span class='up-downText'>" + buttonData.name + "</span>");
                     buttonContainer = $("<div>").addClass("up-downButtonContainer");
                     buttonContainer.append(
-                        $("<button id='" + buttonName + "Up' class='min close-button'>⯅</button>").on("click", buttonData.clickUp)
+                        $("<button id='" + buttonName + "Up' class='min close-button'>⯅</button>").on("click", buttonData.clickUp),
                     );
                     buttonContainer.append(
-                        $("<button id='" + buttonName + "Down' class='min close-button'>⯆</button>").on("click", buttonData.clickDown)
+                        $("<button id='" + buttonName + "Down' class='min close-button'>⯆</button>").on("click", buttonData.clickDown),
                     );
                     container.append(buttonContainer);
                     toAppendTo.append(container);
@@ -473,7 +473,7 @@ SharkGame.CheatsAndDebug = {
             resourceId,
             false,
             sharkmath.getBuyAmount(true),
-            log.isNextMessageEven() ? sharkcolor.getVariableColor("--color-dark") : sharkcolor.getVariableColor("--color-med")
+            log.isNextMessageEven() ? sharkcolor.getVariableColor("--color-dark") : sharkcolor.getVariableColor("--color-med"),
         );
         if (amount > 0) {
             returnText = `Gave ${sharktext.beautify(amount)} ${resourceName}.`;

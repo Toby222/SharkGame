@@ -250,7 +250,7 @@ SharkGame.WorldTypes = {
                     `crystal`,
                     false,
                     69,
-                    sharkcolor.getElementColor("pane")
+                    sharkcolor.getElementColor("pane"),
                 )} litter the water and strange figures lurk among the endless shadows.`;
             },
             missing: ["kelp", "crab", "laser"],

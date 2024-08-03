@@ -58,7 +58,7 @@ SharkGame.Stats = {
         incomeDataSel.append(
             $("<p>")
                 .html("(Listed below are resources, the income each resource gives you, and the total income you're getting from each thing.)")
-                .addClass("medDesc")
+                .addClass("medDesc"),
         );
 
         const switchButtonDiv = $("<div>");
@@ -84,11 +84,13 @@ SharkGame.Stats = {
         genStats.append($("<h3>").html("General Stats"));
         const firstTime = main.isFirstTime();
         genStats.append(
-            $("<p>").html("Real time since you began your journey:<br/><span id='gameTime' class='timeDisplay'></span>").addClass("medDesc")
+            $("<p>").html("Real time since you began your journey:<br/><span id='gameTime' class='timeDisplay'></span>").addClass("medDesc"),
         );
         if (!firstTime) {
             genStats.append(
-                $("<p>").html("Relative time since you came through the gate:<br/><span id='runTime' class='timeDisplay'></span>").addClass("medDesc")
+                $("<p>")
+                    .html("Relative time since you came through the gate:<br/><span id='runTime' class='timeDisplay'></span>")
+                    .addClass("medDesc"),
             );
             if (SharkGame.persistentFlags.scouting === false) {
                 genStats.append($("<p>").html(`Par: ${gateway.getPar()} minutes`).addClass("medDesc"));
@@ -97,7 +99,7 @@ SharkGame.Stats = {
         genStats.append($("<h3>").html("Total Ocean Resources Acquired"));
         if (!firstTime) {
             genStats.append(
-                $("<p>").html("Essence given is the total acquired for the entire game and not just for this world.").addClass("medDesc")
+                $("<p>").html("Essence given is the total acquired for the entire game and not just for this world.").addClass("medDesc"),
             );
         }
         genStats.append(stats.createTotalAmountTable());
@@ -130,7 +132,7 @@ SharkGame.Stats = {
                     "Dispose of<br/>" +
                         sharktext.getResourceName(resourceId, false, false, sharkcolor.getElementColor("tooltipbox", "background-color")),
                     buttonDiv,
-                    stats.onDispose
+                    stats.onDispose,
                 );
             }
         });
@@ -156,7 +158,7 @@ SharkGame.Stats = {
                         resourceName,
                         disableButton,
                         amountToDispose,
-                        sharkcolor.getElementColor("dispose-" + resourceName, "background-color")
+                        sharkcolor.getElementColor("dispose-" + resourceName, "background-color"),
                     );
                 if (amountToDispose <= 0) {
                     label =
@@ -165,7 +167,7 @@ SharkGame.Stats = {
                             resourceName,
                             disableButton,
                             amountToDispose,
-                            sharkcolor.getElementColor("dispose-" + resourceName, "background-color")
+                            sharkcolor.getElementColor("dispose-" + resourceName, "background-color"),
                         );
                 }
 
@@ -266,7 +268,7 @@ SharkGame.Stats = {
                                 sharktext.beautify(
                                     res.getNetworkIncomeModifier("generator", resourceId) * res.getNetworkIncomeModifier("resource", incomeKey),
                                     false,
-                                    2
+                                    2,
                                 ) +
                                 "</span>";
                             if (cell.html() !== newValue.replace(/'/g, '"')) {
@@ -285,7 +287,7 @@ SharkGame.Stats = {
                                         res.getNetworkIncomeModifier("resource", incomeKey)) /
                                         SharkGame.persistentFlags.dialSetting,
                                     false,
-                                    2
+                                    2,
                                 ) +
                                 "/s" +
                                 "</span>";
@@ -377,10 +379,10 @@ SharkGame.Stats = {
                         .html(
                             !sharktext.shouldHideNumberOfThis(headingName)
                                 ? "<div style='text-align:right'>" + sharktext.beautify(res.getResource(headingName)).bold() + "</div>"
-                                : ""
+                                : "",
                         )
                         .addClass(rowStyle)
-                        .attr("id", "table-amount-" + headingName)
+                        .attr("id", "table-amount-" + headingName),
                 );
             }
             resourceMapRow.append(
@@ -390,11 +392,11 @@ SharkGame.Stats = {
                             headingName,
                             undefined,
                             undefined,
-                            rowStyle === "evenRow" ? sharkcolor.getVariableColor("--color-dark") : sharkcolor.getVariableColor("--color-darker")
-                        )
+                            rowStyle === "evenRow" ? sharkcolor.getVariableColor("--color-dark") : sharkcolor.getVariableColor("--color-darker"),
+                        ),
                     )
                     .attr("rowspan", subheadings)
-                    .addClass(rowStyle)
+                    .addClass(rowStyle),
             );
 
             function addCell(text, rowspan, id) {
@@ -407,7 +409,7 @@ SharkGame.Stats = {
                                 .html(text ? `<span style='color:${text[0]}'>${text[1]}</span>` : undefined)
                                 .addClass(rowStyle)
                                 .on("mouseenter", stats.networkTextEnter)
-                                .on("mouseleave", stats.networkTextLeave)
+                                .on("mouseleave", stats.networkTextLeave),
                         );
                     } else {
                         resourceMapRow.append(
@@ -415,7 +417,7 @@ SharkGame.Stats = {
                                 .attr("rowspan", rowspan === "inline" ? 1 : subheadings)
                                 .attr("id", id)
                                 .html(text ? `<span style='color:${text[0]}'>${text[1]}</span>` : undefined)
-                                .addClass(rowStyle)
+                                .addClass(rowStyle),
                         );
                     }
                 } else {
@@ -423,7 +425,7 @@ SharkGame.Stats = {
                         $("<td>")
                             .attr("rowspan", rowspan === "inline" ? 1 : subheadings)
                             .html(text ? `<span style='color:${text[0]}'>${text[1]}</span>` : undefined)
-                            .addClass(rowStyle)
+                            .addClass(rowStyle),
                     );
                 }
             }
@@ -470,10 +472,10 @@ SharkGame.Stats = {
                             .html(
                                 !sharktext.shouldHideNumberOfThis(generatorName)
                                     ? "<div style='text-align:right'>" + sharktext.beautify(res.getResource(subheadingKey)).bold() + "</div>"
-                                    : ""
+                                    : "",
                             )
                             .addClass(rowStyle)
-                            .attr("id", "table-amount-" + generatorName + "-" + incomeKey)
+                            .attr("id", "table-amount-" + generatorName + "-" + incomeKey),
                     );
                 }
                 resourceMapRow.append(
@@ -483,10 +485,10 @@ SharkGame.Stats = {
                                 subheadingKey,
                                 undefined,
                                 undefined,
-                                rowStyle === "evenRow" ? sharkcolor.getVariableColor("--color-dark") : sharkcolor.getVariableColor("--color-darker")
-                            )
+                                rowStyle === "evenRow" ? sharkcolor.getVariableColor("--color-dark") : sharkcolor.getVariableColor("--color-darker"),
+                            ),
                         )
-                        .addClass(rowStyle)
+                        .addClass(rowStyle),
                 );
 
                 const baseIncomeChangeChar =
@@ -505,19 +507,19 @@ SharkGame.Stats = {
                                 sharktext.beautify(
                                     SharkGame.ResourceMap.get(generatorName).baseIncome[incomeKey] / SharkGame.persistentFlags.dialSetting,
                                     false,
-                                    2
+                                    2,
                                 ) +
                                 "/s",
                         ],
                         "inline",
-                        "advanced-base-income-" + generatorName + "-" + incomeKey
+                        "advanced-base-income-" + generatorName + "-" + incomeKey,
                     );
                     if (multipliers.upgrade || counter === 0) {
                         const upgradeMutiplier = res.getMultiplierProduct("upgrade", generatorName, incomeKey);
                         if (upgradeMutiplier !== 1) {
                             addCell(
                                 [res.UPGRADE_MULTIPLIER_COLOR, "x" + sharktext.beautify(upgradeMutiplier, false, 1)],
-                                multipliers.upgrade ? "inline" : undefined
+                                multipliers.upgrade ? "inline" : undefined,
                             );
                         } else addCell(undefined, multipliers.upgrade ? "inline" : undefined);
                     }
@@ -527,7 +529,7 @@ SharkGame.Stats = {
                         if (worldMultiplier !== 1) {
                             addCell(
                                 [res.WORLD_MULTIPLIER_COLOR, "x" + sharktext.beautify(worldMultiplier, false, 1)],
-                                multipliers.world ? "inline" : undefined
+                                multipliers.world ? "inline" : undefined,
                             );
                         } else addCell(undefined, multipliers.world ? "inline" : undefined);
                     }
@@ -537,7 +539,7 @@ SharkGame.Stats = {
                         if (aspectMultiplier !== 1) {
                             addCell(
                                 [res.ASPECT_MULTIPLIER_COLOR, "x" + sharktext.beautify(aspectMultiplier, false, 1)],
-                                multipliers.aspect ? "inline" : undefined
+                                multipliers.aspect ? "inline" : undefined,
                             );
                         } else addCell(undefined, multipliers.aspect ? "inline" : undefined);
                     }
@@ -549,7 +551,7 @@ SharkGame.Stats = {
                         addCell(
                             [res.RESOURCE_AFFECT_MULTIPLIER_COLOR, "x" + sharktext.beautify(resourceAffectMultiplier, false, 2)],
                             "inline",
-                            "network-" + generatorName + "-" + incomeKey
+                            "network-" + generatorName + "-" + incomeKey,
                         );
                     } else addCell(undefined, "inline");
                 } else {
@@ -563,12 +565,12 @@ SharkGame.Stats = {
                                         res.getNetworkIncomeModifier("resource", incomeKey, incomeValue)) /
                                         SharkGame.persistentFlags.dialSetting,
                                     false,
-                                    2
+                                    2,
                                 ) +
                                 "/s",
                         ],
                         "inline",
-                        "base-income-" + generatorName + "-" + incomeKey
+                        "base-income-" + generatorName + "-" + incomeKey,
                     );
                 }
 
@@ -581,13 +583,13 @@ SharkGame.Stats = {
                             sharktext.boldString(Math.min((realIncome / SharkGame.PlayerIncomeTable.get(incomeKey)) * 100, 100).toFixed(0) + "%"),
                         ],
                         "inline",
-                        "income-" + generatorName + "-" + incomeKey
+                        "income-" + generatorName + "-" + incomeKey,
                     );
                 } else {
                     addCell(
                         [res.TOTAL_INCOME_COLOR, sharktext.boldString(changeChar + sharktext.beautifyIncome(realIncome))],
                         "inline",
-                        "income-" + generatorName + "-" + incomeKey
+                        "income-" + generatorName + "-" + incomeKey,
                     );
                 }
 
@@ -609,42 +611,42 @@ SharkGame.Stats = {
                 row.append(
                     $("<td>")
                         .html("<span><u>" + "RESOURCE".bold() + "</u></span>")
-                        .addClass("evenRow")
+                        .addClass("evenRow"),
                 );
                 row.append(
                     $("<td>")
                         .html("<span><u>" + "AMOUNT".bold() + "</u></span>")
-                        .addClass("evenRow")
+                        .addClass("evenRow"),
                 );
 
                 row.append(
                     $("<td>")
                         .html("<span><u>" + "GENERATOR".bold() + "</u></span>")
-                        .addClass("evenRow")
+                        .addClass("evenRow"),
                 );
             } else {
                 row.append(
                     $("<td>")
                         .html("<span><u>" + "AMOUNT".bold() + "</u></span>")
-                        .addClass("evenRow")
+                        .addClass("evenRow"),
                 );
                 row.append(
                     $("<td>")
                         .html("<span><u>" + "GENERATOR".bold() + "</u></span>")
-                        .addClass("evenRow")
+                        .addClass("evenRow"),
                 );
 
                 row.append(
                     $("<td>")
                         .html("<span><u>" + "RESOURCE".bold() + "</u></span>")
-                        .addClass("evenRow")
+                        .addClass("evenRow"),
                 );
             }
 
             row.append(
                 $("<td>")
                     .html("<span><u><b>" + (SharkGame.Settings.current.grottoMode === "advanced" ? "BASE INCOME" : "INCOME PER") + "</b></u></span>")
-                    .addClass("evenRow")
+                    .addClass("evenRow"),
             );
 
             columns -= 4;
@@ -659,8 +661,8 @@ SharkGame.Stats = {
                         $("<td>")
                             .html("<div style='text-align:center; color:" + res.UPGRADE_MULTIPLIER_COLOR + "'><strong>U</strong></div>")
                             .addClass("evenRow"),
-                        "<strong>U</strong>pgrade effects"
-                    )
+                        "<strong>U</strong>pgrade effects",
+                    ),
                 );
                 if (main.isFirstTime()) {
                     row.append($("<td>").html(undefined).addClass("evenRow"));
@@ -672,24 +674,24 @@ SharkGame.Stats = {
                             $("<td>")
                                 .html("<div style='text-align:center; color:" + res.WORLD_MULTIPLIER_COLOR + "'><strong>W</strong></div>")
                                 .addClass("evenRow"),
-                            "<strong>W</strong>orld effects"
-                        )
+                            "<strong>W</strong>orld effects",
+                        ),
                     );
                     row.append(
                         tooltip(
                             $("<td>")
                                 .html("<div style='text-align:center; color:" + res.ASPECT_MULTIPLIER_COLOR + "'><strong>A</strong></div>")
                                 .addClass("evenRow"),
-                            "<strong>A</strong>spect effects"
-                        )
+                            "<strong>A</strong>spect effects",
+                        ),
                     );
                     row.append(
                         tooltip(
                             $("<td>")
                                 .html("<div style='text-align:center; color:" + res.RESOURCE_AFFECT_MULTIPLIER_COLOR + "'><strong>R</strong></div>")
                                 .addClass("evenRow"),
-                            "How some <strong>R</strong>esources affect each other"
-                        )
+                            "How some <strong>R</strong>esources affect each other",
+                        ),
                     );
                 }
                 columns -= 4;
@@ -704,7 +706,7 @@ SharkGame.Stats = {
                     $("<td>")
                         .html("x" + res.getSpecialMultiplier())
                         .addClass("evenRow")
-                        .attr("rowspan", incomesTable.find("tr").length + 1)
+                        .attr("rowspan", incomesTable.find("tr").length + 1),
                 );
             }
 
@@ -732,12 +734,12 @@ SharkGame.Stats = {
                 const row = $("<tr>");
 
                 row.append(
-                    $("<td>").html(sharktext.getResourceName(resourceId, undefined, undefined, sharkcolor.getVariableColor("--color-darker")))
+                    $("<td>").html(sharktext.getResourceName(resourceId, undefined, undefined, sharkcolor.getVariableColor("--color-darker"))),
                 );
                 row.append(
                     $("<td>")
                         .html(sharktext.beautify(res.getTotalResource(resourceId)))
-                        .attr("id", "totalAmount-" + resourceId)
+                        .attr("id", "totalAmount-" + resourceId),
                 );
 
                 totalAmountTable.append(row);

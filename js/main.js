@@ -102,9 +102,9 @@ $.extend(SharkGame, {
     ],
     GAME_NAME: null,
     ACTUAL_GAME_NAME: "Shark Game",
-    VERSION: "20240803a",
+    VERSION: "20240805a",
     ORIGINAL_VERSION: 0.71,
-    VERSION_NAME: "The Volcanic Update",
+    VERSION_NAME: "The Tempetuous Update",
     EPSILON: 1e-6, // floating point comparison is a joy
     BIGGEST_SAFE_NUMBER: 1000000000000,
     MAX: 1e300,
@@ -905,9 +905,13 @@ SharkGame.Button = {
 };
 
 SharkGame.Changelog = {
+    "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20240805a": [
+        "Added a new home message image, courtesy of <a href='https://x.com/stormwalker124'>stormwalker</a>.",
+        "Fixed a bug where a home message image in Haven wasn't appearing.",
+    ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20240803a": [
         "Added a new upgrade to the starter world: Crystal Scoops, to increase the speed of that world dramatically and make for slightly more interesting crab-to-laser-ray competition.",
-        "Added 4 new home message images, courtesy of stormwalker.",
+        "Added 4 new home message images, courtesy of <a href='https://x.com/stormwalker124'>stormwalker</a>.",
         "This happened silently in January, but: fixed the negative world time bug.",
         "Made a few changes to older ones.",
         "Fixed the shrimp home message image not appearing.",

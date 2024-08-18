@@ -102,7 +102,7 @@ $.extend(SharkGame, {
     ],
     GAME_NAME: null,
     ACTUAL_GAME_NAME: "Shark Game",
-    VERSION: "20240805a",
+    VERSION: "20240818a",
     ORIGINAL_VERSION: 0.71,
     VERSION_NAME: "The Tempetuous Update",
     EPSILON: 1e-6, // floating point comparison is a joy
@@ -905,6 +905,10 @@ SharkGame.Button = {
 };
 
 SharkGame.Changelog = {
+    "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20240818a": [
+        "Added another new home message image, courtesy of <a href='https://x.com/stormwalker124'>stormwalker</a>.",
+        "Added a sprite for billfish pairs courtesy of <a href='https://github.com/glowkate'>Glowkate</a>.",
+    ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20240805a": [
         "Added a new home message image, courtesy of <a href='https://x.com/stormwalker124'>stormwalker</a>.",
         "Fixed a bug where a home message image in Haven wasn't appearing.",

@@ -2762,8 +2762,8 @@ SharkGame.Upgrades = {
                 upgrades: ["iterativeDesign", "pearlConversion"],
             },
             customEffect(background) {
-                return `${sharktext.getResourceName(`clam`, false, 2, background)} to ${sharktext.getResourceName(
-                    `crystal`,
+                return `${sharktext.getResourceName("clam", false, 2, background)} to ${sharktext.getResourceName(
+                    "crystal",
                     false,
                     2,
                     background,
@@ -3185,8 +3185,8 @@ SharkGame.Upgrades = {
                 upgrades: ["sustainableSolutions"],
             },
             customEffect(background) {
-                return `${sharktext.getResourceName(`brood`, false, 2, background)} cost only 5 ${sharktext.getResourceName(
-                    `crab`,
+                return `${sharktext.getResourceName("brood", false, 2, background)} cost only 5 ${sharktext.getResourceName(
+                    "crab",
                     false,
                     2,
                     background,
@@ -3208,8 +3208,8 @@ SharkGame.Upgrades = {
                 upgrades: ["sustainableSolutions"],
             },
             customEffect(background) {
-                return `${sharktext.getResourceName(`sponge`, false, 2, background)} requires 4× less ${sharktext.getResourceName(
-                    `algae`,
+                return `${sharktext.getResourceName("sponge", false, 2, background)} requires 4× less ${sharktext.getResourceName(
+                    "algae",
                     false,
                     2,
                     background,
@@ -3221,7 +3221,7 @@ SharkGame.Upgrades = {
             desc: "The shrimps in our frenzy have a secret recipe...",
             researchedMessage:
                 "It's called porite, and it's made with sand and sponges. Unfortunately, it's a lot of sand. Fortunately, this is the ocean.",
-            effectDesc: `Learned the secret of porite from the shrimp. Glass has never been so useful, probably.`,
+            effectDesc: "Learned the secret of porite from the shrimp. Glass has never been so useful, probably.",
             cost: {
                 sponge: 40000000,
                 sand: 8000000,
@@ -3252,7 +3252,7 @@ SharkGame.Upgrades = {
             name: "Secret Smithing",
             desc: "With the power of porite, we can finally...uh...wait, what CAN we do with it?",
             researchedMessage: "After consulting our shrimp informants about it, they have suggested that we use the glass to forge tools.",
-            effectDesc: `Farmer shrimp, researcher crabs, and shoveler rays are now available. `,
+            effectDesc: "Farmer shrimp, researcher crabs, and shoveler rays are now available. ",
             cost: {
                 science: 6500000,
                 porite: 1500000,
@@ -3299,12 +3299,12 @@ SharkGame.Upgrades = {
             },
             events: ["volcanicGlassTempering"],
             customEffect(background) {
-                return `${sharktext.getResourceName(`farmer`, false, 2, background)} impact ×2, ${sharktext.getResourceName(
-                    `shoveler`,
+                return `${sharktext.getResourceName("farmer", false, 2, background)} impact ×2, ${sharktext.getResourceName(
+                    "shoveler",
                     false,
                     2,
                     background,
-                )} impact ×2, ${sharktext.getResourceName(`researcher`, false, 2, background)} impact ×2`;
+                )} impact ×2, ${sharktext.getResourceName("researcher", false, 2, background)} impact ×2`;
             },
         },
         superSmelting: {
@@ -3341,14 +3341,14 @@ SharkGame.Upgrades = {
                 },
             },
             customEffect(background) {
-                return `${sharktext.getResourceName(`shoveler`, false, 2, background)} impact ×2`;
+                return `${sharktext.getResourceName("shoveler", false, 2, background)} impact ×2`;
             },
         },
         superShovels: {
             name: "Super Shovels",
             desc: "We're running out of sand. We need more sand. Time to get more sand.",
             researchedMessage: "With enough thinking, we agreed on an amazing solution: we simply make the shovels bigger.",
-            effectDesc: `Rays and their professions are four times as effective and impactful thanks to huge tools. These things are big, so it's good that the sea has basically infinite sand.`,
+            effectDesc: "Rays and their professions are four times as effective and impactful thanks to huge tools. These things are big, so it's good that the sea has basically infinite sand.",
             cost: {
                 science: 1.75e10,
                 porite: 2.5e9,
@@ -3364,7 +3364,7 @@ SharkGame.Upgrades = {
                 },
             },
             customEffect(background) {
-                return `${sharktext.getResourceName(`shoveler`, false, 2, background)} impact ×4`;
+                return `${sharktext.getResourceName("shoveler", false, 2, background)} impact ×4`;
             },
         },
         massProduction: {
@@ -3379,13 +3379,13 @@ SharkGame.Upgrades = {
                 upgrades: ["firstDraft"],
             },
             customEffect(background) {
-                return `${sharktext.getResourceName(`farmer`, false, 2, background)} and ${sharktext.getResourceName(
-                    `shoveler`,
+                return `${sharktext.getResourceName("farmer", false, 2, background)} and ${sharktext.getResourceName(
+                    "shoveler",
                     false,
                     2,
                     background,
-                )} and ${sharktext.getResourceName(`researcher`, false, 2, background)} cost 80% less ${sharktext.getResourceName(
-                    `porite`,
+                )} and ${sharktext.getResourceName("researcher", false, 2, background)} cost 80% less ${sharktext.getResourceName(
+                    "porite",
                     false,
                     2,
                     background,
@@ -3458,7 +3458,7 @@ SharkGame.Upgrades = {
             },
             events: ["volcanicCrabReform"],
             customEffect(background) {
-                return `${sharktext.getResourceName(`researcher`, false, 2, background)} impact ×4`;
+                return `${sharktext.getResourceName("researcher", false, 2, background)} impact ×4`;
             },
         },
         sandReform: {
@@ -3484,7 +3484,7 @@ SharkGame.Upgrades = {
                 },
             },
             customEffect(background) {
-                return `${sharktext.getResourceName(`shoveler`, false, 2, background)} impact ×4`;
+                return `${sharktext.getResourceName("shoveler", false, 2, background)} impact ×4`;
             },
         },
         crabReform: {
@@ -3511,7 +3511,7 @@ SharkGame.Upgrades = {
                 },
             },
             customEffect(background) {
-                return `${sharktext.getResourceName(`researcher`, false, 2, background)} impact ×4`;
+                return `${sharktext.getResourceName("researcher", false, 2, background)} impact ×4`;
             },
         },
         landReform: {
@@ -3527,12 +3527,12 @@ SharkGame.Upgrades = {
                 upgrades: ["secondDraft"],
             },
             customEffect(background) {
-                return `${sharktext.getResourceName(`spongeFarm`, false, 2, background)} and ${sharktext.getResourceName(
-                    `coralFarm`,
+                return `${sharktext.getResourceName("spongeFarm", false, 2, background)} and ${sharktext.getResourceName(
+                    "coralFarm",
                     false,
                     2,
                     background,
-                )} cost 80% less ${sharktext.getResourceName(`sand`, false, 2, background)}`;
+                )} cost 80% less ${sharktext.getResourceName("sand", false, 2, background)}`;
             },
         },
         finalDraft: {
@@ -4038,8 +4038,8 @@ SharkGame.Upgrades = {
                 },
             },
             customEffect(background) {
-                return `${sharktext.getResourceName(`stormgoer`, false, 2, background)} cost 75% less ${sharktext.getResourceName(
-                    `sand`,
+                return `${sharktext.getResourceName("stormgoer", false, 2, background)} cost 75% less ${sharktext.getResourceName(
+                    "sand",
                     false,
                     2,
                     background,
@@ -4129,8 +4129,8 @@ SharkGame.Upgrades = {
                 upgrades: ["powerfulPropulsion"],
             },
             customEffect(background) {
-                return `${sharktext.getResourceName(`laser`, false, 2, background)} cost 80% less ${sharktext.getResourceName(
-                    `crystal`,
+                return `${sharktext.getResourceName("laser", false, 2, background)} cost 80% less ${sharktext.getResourceName(
+                    "crystal",
                     false,
                     2,
                     background,
@@ -4282,7 +4282,7 @@ SharkGame.Upgrades = {
                 seen: ["chart"],
             },
             customEffect(background) {
-                return `1 ${sharktext.getResourceName(`map`, false, 1, background)}`;
+                return `1 ${sharktext.getResourceName("map", false, 1, background)}`;
             },
         },
         theExpedition: {
@@ -4312,8 +4312,8 @@ SharkGame.Upgrades = {
                 upgrades: ["theExpedition"],
             },
             customEffect(background) {
-                return `${sharktext.getResourceName(`science`, false, 1, background)} from ${sharktext.getResourceName(
-                    `seagrass`,
+                return `${sharktext.getResourceName("science", false, 1, background)} from ${sharktext.getResourceName(
+                    "seagrass",
                     false,
                     1,
                     background,
@@ -4428,7 +4428,7 @@ SharkGame.Upgrades = {
             },
             events: ["tempestuousInternalExploration"],
             customEffect(background) {
-                return `${sharktext.getResourceName(`billfishMechanic`, false, 1, background)} impact ×5`;
+                return `${sharktext.getResourceName("billfishMechanic", false, 1, background)} impact ×5`;
             },
         },
         recyclerDiscovery: {

@@ -359,7 +359,7 @@ SharkGame.Gateway = {
     unlockCheats() {
         if (!SharkGame.persistentFlags.debug && !SharkGame.persistentFlags.unlockedDebug) {
             SharkGame.PaneHandler.showUnlockedCheatsMessage();
-            SharkGame.Save.createTaggedSave(`BackupCheats`);
+            SharkGame.Save.createTaggedSave("BackupCheats");
             cad.debug();
         }
         SharkGame.persistentFlags.unlockedDebug = true;
@@ -515,8 +515,8 @@ SharkGame.Gateway = {
             if (gateway.getTimeInLastWorld(true) < 0) {
                 containerDiv.append(
                     $("<p>").html(
-                        `You appear to have experienced a major bug that causes negative world-times.<br> The source of this bug is unknown.<br>` +
-                            `Please take a screenshot and join the discord. Send it in the #bugs-and-issues channel.<br> Enjoy the free essence, I guess?<br>` +
+                        "You appear to have experienced a major bug that causes negative world-times.<br> The source of this bug is unknown.<br>" +
+                            "Please take a screenshot and join the discord. Send it in the #bugs-and-issues channel.<br> Enjoy the free essence, I guess?<br>" +
                             `actual start time: ${SharkGame.timestampRunStart}   true pause time: ${SharkGame.persistentFlags.totalPausedTime}   current paused time: ${SharkGame.persistentFlags.currentPausedTime}<br>` +
                             `minute hand: ${SharkGame.flags.minuteHandTimer}    hour hand: ${SharkGame.flags.hourHandLeft}    bonus: ${SharkGame.flags.bonusTime}<br>` +
                             `calculated run time: ${gateway.getTimeInLastWorld(true)}   actual likely time: ${
@@ -684,7 +684,7 @@ SharkGame.Gateway = {
                 $("<p>")
                     .attr("id", "predicted-gain")
                     .html(
-                        `${seenWorldYet ? `A par time` : `This`} would grant you <strong>` +
+                        `${seenWorldYet ? "A par time" : "This"} would grant you <strong>` +
                             sharktext.beautify(
                                 Math.ceil(
                                     (1 + gateway.getGumptionBonus()) *
@@ -753,10 +753,10 @@ SharkGame.Gateway = {
                         .html(
                             sharktext.boldString(`gamespeed is ${SharkGame.persistentFlags.dialSetting}× slower<br>
                     patience rewards ×${
-                        SharkGame.persistentFlags.dialSetting > 1
-                            ? Math.round((2 * Math.log(SharkGame.persistentFlags.dialSetting)) / Math.log(4))
-                            : 1
-                    }`),
+    SharkGame.persistentFlags.dialSetting > 1
+        ? Math.round((2 * Math.log(SharkGame.persistentFlags.dialSetting)) / Math.log(4))
+        : 1
+}`),
                         );
                 } else {
                     dialLabel = $("<p>")
@@ -825,7 +825,6 @@ SharkGame.Gateway = {
         },
 
         showPlanetAttributes(worldData, seenWorldYet, contentDiv) {
-            /* eslint-disable no-fallthrough */
             switch (SharkGame.Aspects.distantForesight.level) {
                 case 1:
                     contentDiv.prepend($("<p>").html(worldData.foresight.longDesc));
@@ -897,7 +896,6 @@ SharkGame.Gateway = {
                         contentDiv.prepend($("<p>").html(worldData.foresight.vagueLongDesc));
                     }
             }
-            /* eslint-enable no-fallthrough */
         },
 
         showWorldVisitMenu() {
@@ -1028,7 +1026,6 @@ SharkGame.Gateway = {
             const times = timeLeft.split(" ");
             times.reverse();
             const precision = times.length;
-            /* eslint-disable no-fallthrough */
             if (gateway.completedWorlds.includes(worldtype)) {
                 switch (precision) {
                     case 7:
@@ -1041,6 +1038,7 @@ SharkGame.Gateway = {
                                 .on("input", updateRequestedTime),
                         );
                         timeSelection.append($("<strong>").html("Y "));
+                        // fallthrough
                     case 6:
                         timeSelection.append(
                             $("<input>")
@@ -1051,6 +1049,7 @@ SharkGame.Gateway = {
                                 .on("input", updateRequestedTime),
                         );
                         timeSelection.append($("<strong>").html("M "));
+                        // fallthrough
                     case 5:
                         timeSelection.append(
                             $("<input>")
@@ -1061,6 +1060,7 @@ SharkGame.Gateway = {
                                 .on("input", updateRequestedTime),
                         );
                         timeSelection.append($("<strong>").html("W "));
+                        // fallthrough
                     case 4:
                         timeSelection.append(
                             $("<input>")
@@ -1071,6 +1071,7 @@ SharkGame.Gateway = {
                                 .on("input", updateRequestedTime),
                         );
                         timeSelection.append($("<strong>").html("D "));
+                        // fallthrough
                     case 3:
                         timeSelection.append(
                             $("<input>")
@@ -1081,6 +1082,7 @@ SharkGame.Gateway = {
                                 .on("input", updateRequestedTime),
                         );
                         timeSelection.append($("<strong>").html("h "));
+                        // fallthrough
                     case 2:
                         timeSelection.append(
                             $("<input>")
@@ -1091,6 +1093,7 @@ SharkGame.Gateway = {
                                 .on("input", updateRequestedTime),
                         );
                         timeSelection.append($("<strong>").html("m "));
+                        // fallthrough
                     case 1:
                         timeSelection.append(
                             $("<input>")
@@ -1124,7 +1127,6 @@ SharkGame.Gateway = {
                 );
                 timeSelection.append($("<strong>").html("s"));
             }
-            /* eslint-enable no-fallthrough */
             timeSelection.append(
                 $("<p>").html(sharktext.boldString("ONLY TAKE AS MUCH AS YOU NEED!<br>Anything that you take but don't use will be discarded.")),
             );
@@ -1174,8 +1176,8 @@ SharkGame.Gateway = {
                 $("#dial-label").html(
                     sharktext.boldString(`gamespeed is ${SharkGame.persistentFlags.dialSetting}× slower<br>
                 Patience rewards ×${
-                    SharkGame.persistentFlags.dialSetting > 1 ? Math.round((2 * Math.log(SharkGame.persistentFlags.dialSetting)) / Math.log(4)) : 1
-                }`),
+    SharkGame.persistentFlags.dialSetting > 1 ? Math.round((2 * Math.log(SharkGame.persistentFlags.dialSetting)) / Math.log(4)) : 1
+}`),
                 );
             } else {
                 $("#dial-label").html("Adjust The Dial to modify Patience rewards.<br>...or don't. If you don't want to.");
@@ -1184,7 +1186,7 @@ SharkGame.Gateway = {
             const selectedWorldData = SharkGame.WorldTypes[gateway.selectedWorld];
             const seenWorldYet = gateway.completedWorlds.includes(gateway.selectedWorld);
             $("#predicted-gain").html(
-                `${seenWorldYet ? `A par time` : `This`} would grant you <strong>` +
+                `${seenWorldYet ? "A par time" : "This"} would grant you <strong>` +
                     sharktext.beautify(
                         Math.ceil(
                             (1 + gateway.getGumptionBonus()) * ((seenWorldYet ? 2 : 4) + (selectedWorldData.bonus ? selectedWorldData.bonus : 0)) +

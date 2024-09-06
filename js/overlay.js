@@ -1,19 +1,19 @@
 SharkGame.OverlayHandler = {
     init() {
-        $(`#overlay`).removeClass(`gateway`);
+        $("#overlay").removeClass("gateway");
     },
 
     setup() {},
 
     revealOverlay(duration, endOpacity, callback = $.noop) {
         if (duration === 0 || !SharkGame.Settings.current.showAnimations) {
-            $(`#overlay`).css(`opacity`, endOpacity).show();
+            $("#overlay").css("opacity", endOpacity).show();
             callback();
         } else {
-            if ($(`#overlay`).is(`:hidden`)) {
-                $(`#overlay`).css(`opacity`, 0).show();
+            if ($("#overlay").is(":hidden")) {
+                $("#overlay").css("opacity", 0).show();
             }
-            $(`#overlay`).animate(
+            $("#overlay").animate(
                 {
                     opacity: endOpacity,
                 },
@@ -26,10 +26,10 @@ SharkGame.OverlayHandler = {
 
     hideOverlay(duration = 0, callback = $.noop) {
         if (duration === 0 || !SharkGame.Settings.current.showAnimations) {
-            $(`#overlay`).css(`opacity`, 0).hide();
+            $("#overlay").css("opacity", 0).hide();
             callback();
         } else {
-            $(`#overlay`).animate(
+            $("#overlay").animate(
                 {
                     opacity: 0,
                 },
@@ -37,21 +37,21 @@ SharkGame.OverlayHandler = {
                 "swing",
                 () => {
                     callback();
-                    $(`#overlay`).hide();
+                    $("#overlay").hide();
                 },
             );
         }
     },
 
     isOverlayShown() {
-        return !$(`#overlay`).is(`:hidden`) && $(`#overlay`).css(`opacity`) !== 0;
+        return !$("#overlay").is(":hidden") && $("#overlay").css("opacity") !== 0;
     },
 
     enterGateway() {
-        $(`#overlay`).addClass(`gateway`);
+        $("#overlay").addClass("gateway");
     },
 
     exitGateway() {
-        $(`#overlay`).removeClass(`gateway`);
+        $("#overlay").removeClass("gateway");
     },
 };

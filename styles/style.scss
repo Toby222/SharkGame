@@ -558,13 +558,12 @@ pre {
     text-align: center;
     font-weight: bold;
     color: var(--color-lighter);
+    font-size: 1.3em;
 
     ul {
         padding: 0.2em 0;
         margin: 0.4em auto 0.6em auto;
     }
-
-    font-size: 1.3em;
 }
 
 #titlemenu {
@@ -1843,12 +1842,13 @@ button.planetButton {
 }
 
 #minute-hand-toggle {
-    &.disabled {
-        text-shadow: none;
-    }
     color: #fff;
     border-color: $color-discovery-dark3;
     background: $color-discovery-dark4;
+
+    &.disabled {
+        text-shadow: none;
+    }
 
     &.minuteOn {
         box-shadow: 0 0 4px $color-discovery;

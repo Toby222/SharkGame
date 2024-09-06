@@ -116,7 +116,7 @@ SharkGame.Events = {
             return "pass";
         },
         trigger() {
-            res.changeResource(`sponge`, 1); // sponge should never ever go below one once you have access to farms
+            res.changeResource("sponge", 1); // sponge should never ever go below one once you have access to farms
             return true;
         },
     },
@@ -133,21 +133,21 @@ SharkGame.Events = {
             return "pass";
         },
         trigger() {
-            const underfeeding = SharkGame.ResourceMap.get(`specialResourceOne`);
+            const underfeeding = SharkGame.ResourceMap.get("specialResourceOne");
             if (!underfeeding.baseIncome) {
                 underfeeding.baseIncome = { sponge: 0 };
                 underfeeding.income = { sponge: 0 };
             }
 
-            const sponge = res.getResource(`sponge`);
-            const algae = res.getResource(`algae`);
-            const limitRatio = SharkGame.Upgrades.purchased.includes(`feedingTechniques`) ? 4 : 1;
+            const sponge = res.getResource("sponge");
+            const algae = res.getResource("algae");
+            const limitRatio = SharkGame.Upgrades.purchased.includes("feedingTechniques") ? 4 : 1;
             if (sponge / algae > limitRatio) {
                 underfeeding.baseIncome.sponge = -(sponge - algae * limitRatio);
             } else {
                 underfeeding.baseIncome.sponge = 0;
             }
-            res.reapplyModifiers(`specialResourceOne`, `sponge`);
+            res.reapplyModifiers("specialResourceOne", "sponge");
             return true;
         },
     },
@@ -178,9 +178,9 @@ SharkGame.Events = {
             return "pass";
         },
         trigger() {
-            const sponge = res.getResource(`sponge`);
-            const sand = res.getResource(`sand`);
-            const vents = SharkGame.ResourceMap.get(`world`);
+            const sponge = res.getResource("sponge");
+            const sand = res.getResource("sand");
+            const vents = SharkGame.ResourceMap.get("world");
 
             vents.baseIncome.sponge = 0;
             vents.baseIncome.sand = 0;
@@ -198,9 +198,9 @@ SharkGame.Events = {
                     vents.baseIncome.porite = max / 2;
                 }
             }
-            res.reapplyModifiers(`world`, `sponge`);
-            res.reapplyModifiers(`world`, `sand`);
-            res.reapplyModifiers(`world`, `porite`);
+            res.reapplyModifiers("world", "sponge");
+            res.reapplyModifiers("world", "sand");
+            res.reapplyModifiers("world", "porite");
             return true;
         },
     },
@@ -315,7 +315,7 @@ SharkGame.Events = {
         handlingTime: "beforeTick",
         priority: 0,
         getAction() {
-            if (world.worldType === `start` && !SharkGame.persistentFlags.revealedButtonTabs) {
+            if (world.worldType === "start" && !SharkGame.persistentFlags.revealedButtonTabs) {
                 if (res.getTotalResource("scientist") > 0) {
                     return "trigger";
                 }
@@ -516,8 +516,7 @@ SharkGame.Events = {
                 if (
                     SharkGame.flags.tokens[token.attr("id")].includes("chart") ||
                     SharkGame.flags.tokens[token.attr("id")].includes("billfishExplorer")
-                )
-                    res.tokens.tryReturnToken(null, false, token);
+                ) { res.tokens.tryReturnToken(null, false, token); }
             });
             SharkGame.flags.mapSequenceCompleted = true;
 

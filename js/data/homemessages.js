@@ -276,7 +276,7 @@ SharkGame.HomeMessages = {
             {
                 name: "volcanic-shrimp-contact",
                 unlock: { totalResource: { sponge: 1 } },
-                message: `You are approached by a single shrimp. They relay a message to you: stop harvesting sponges, or face the wrath of the king of shrimps.`,
+                message: "You are approached by a single shrimp. They relay a message to you: stop harvesting sponges, or face the wrath of the king of shrimps.",
             },
             {
                 name: "volcanic-shrimp-threat",
@@ -285,7 +285,7 @@ SharkGame.HomeMessages = {
                         return SharkGame.flags.prySpongeGained > 200 && !SharkGame.flags.gotFarmsBeforeShrimpThreat;
                     },
                 },
-                message: `You are approached by an army of shrimp. They relay a very clear message to you: cooperate, or be destroyed. You decide to stop harvesting sponges.`,
+                message: "You are approached by an army of shrimp. They relay a very clear message to you: cooperate, or be destroyed. You decide to stop harvesting sponges.",
             },
             {
                 name: "volcanic-shrimp-communication",
@@ -448,8 +448,7 @@ SharkGame.HomeMessages = {
             {
                 name: "shrouded-truth",
                 unlock: { totalResource: { sacrifice: 9000000000000000 } },
-                message:
-                    "A team of eels get your attention. They have something from the caverns: it's a book. You can't read a thing inside it, but... that looks like arcana... and this looks like a warning.",
+                message: "A team of eels get your attention. They have something from the caverns: it's a book, filled with images of pink crystals.",
             },
         ],
 

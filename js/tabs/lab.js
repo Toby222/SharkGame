@@ -55,7 +55,7 @@ SharkGame.Lab = {
     },
     get messageDone() {
         switch (world.worldType) {
-            case `volcanic`:
+            case "volcanic":
                 return (
                     "Sort of just off to the side, the researchers are compiling their work and filing it away.<br/>" +
                     "Looks like that's it! No more things to figure out."
@@ -136,7 +136,7 @@ SharkGame.Lab = {
         if (lab.allResearchDone()) {
             let message;
             switch (world.worldType) {
-                case `volcanic`:
+                case "volcanic":
                     message = "We rest content, sure that our work is done.";
                     break;
                 default:
@@ -155,7 +155,7 @@ SharkGame.Lab = {
                         message = "The scientists are out of ideas, but there are always more discoveries to be made.";
                     }
                     break;
-                case `volcanic`:
+                case "volcanic":
                     message = "The crabs are out of ideas, but there are always more discoveries to be made.";
                     break;
                 default:
@@ -339,7 +339,7 @@ SharkGame.Lab = {
         const upgradeTable = SharkGame.Upgrades.getUpgradeTable();
         let upgrade;
 
-        if (typeof upgradeId === `object`) {
+        if (typeof upgradeId === "object") {
             if ($(this).hasClass("disabled")) return;
 
             upgradeId = $(this).attr("id");

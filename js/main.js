@@ -102,7 +102,7 @@ $.extend(SharkGame, {
     ],
     GAME_NAME: null,
     ACTUAL_GAME_NAME: "Shark Game",
-    VERSION: "20240819a",
+    VERSION: "20240906a",
     ORIGINAL_VERSION: 0.71,
     VERSION_NAME: "The Tempetuous Update",
     EPSILON: 1e-6, // floating point comparison is a joy
@@ -787,10 +787,10 @@ Mod of v ${SharkGame.ORIGINAL_VERSION}`,
                     thisButton.addClass("disabled");
                 })
                 .on("mouseenter", () => {
-                    $(`#tooltipbox`).html(`${label} amount of things`);
+                    $("#tooltipbox").html(`${label} amount of things`);
                 })
                 .on("mouseleave", () => {
-                    $(`#tooltipbox`).html(``);
+                    $("#tooltipbox").html("");
                 });
         });
         buttonList.append(
@@ -905,6 +905,9 @@ SharkGame.Button = {
 };
 
 SharkGame.Changelog = {
+    "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20240906a": [
+        "Added another 4 new sprites courtesy of <a href='https://github.com/glowkate'>Glowkate!</a>.",
+    ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20240819a": [
         "Added another new sprite courtesy of <a href='https://github.com/glowkate'>Glowkate</a>.",
     ],

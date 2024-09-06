@@ -60,7 +60,7 @@ SharkGame.Gate = {
 
         if (gateRequirements.slots) {
             req.slots = {};
-            sharkmisc.tryAddProperty(creq, `slots`, {});
+            sharkmisc.tryAddProperty(creq, "slots", {});
             $.each(gateRequirements.slots, (resourceId, requiredAmount) => {
                 req.slots[resourceId] = Math.floor(requiredAmount);
                 sharkmisc.tryAddProperty(creq.slots, resourceId, false);
@@ -69,7 +69,7 @@ SharkGame.Gate = {
 
         if (gateRequirements.upgrades) {
             req.upgrades = [];
-            sharkmisc.tryAddProperty(creq, `upgrades`, {});
+            sharkmisc.tryAddProperty(creq, "upgrades", {});
             $.each(gateRequirements.upgrades, (_index, upgradeId) => {
                 req.upgrades.push(upgradeId);
                 sharkmisc.tryAddProperty(creq.upgrades, upgradeId, false);
@@ -78,7 +78,7 @@ SharkGame.Gate = {
 
         if (gateRequirements.resources) {
             req.resources = {};
-            sharkmisc.tryAddProperty(creq, `resources`, {});
+            sharkmisc.tryAddProperty(creq, "resources", {});
             $.each(gateRequirements.resources, (resourceId, requiredAmount) => {
                 req.resources[resourceId] = requiredAmount;
                 sharkmisc.tryAddProperty(creq.resources, resourceId, false);

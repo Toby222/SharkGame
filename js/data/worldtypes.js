@@ -247,7 +247,7 @@ SharkGame.WorldTypes = {
             vagueLongDesc: "You feel a strange power radiating from this world.",
             get longDesc() {
                 return `This place is completely shrouded in darkness. Glowing ${sharktext.getResourceName(
-                    `crystal`,
+                    "crystal",
                     false,
                     69,
                     sharkcolor.getElementColor("pane"),

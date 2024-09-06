@@ -30,9 +30,9 @@ SharkGame.Reflection = {
         const ref = SharkGame.Reflection;
         const content = $("#content");
         content.append($("<div>").attr("id", "tabMessage"));
-        content.append($(`<h2>`).attr(`id`, `enabledAspectHead`));
+        content.append($("<h2>").attr("id", "enabledAspectHead"));
         content.append($("<div>").attr("id", "aspectList"));
-        content.append($(`<h2>`).attr(`id`, `disabledAspectHead`));
+        content.append($("<h2>").attr("id", "disabledAspectHead"));
         content.append($("<div>").attr("id", "disabledAspectList"));
         let message = ref.message;
         const tabMessageSel = $("#tabMessage");
@@ -109,8 +109,8 @@ SharkGame.Reflection = {
             }
         });
         if ($("#disabledAspectList > div").length !== 0) {
-            $(`#disabledAspectHead`).html(`Disabled Aspects`);
-            $(`#enabledAspectHead`).html(`Enabled Aspects`);
+            $("#disabledAspectHead").html("Disabled Aspects");
+            $("#enabledAspectHead").html("Enabled Aspects");
         }
     },
 };

@@ -335,8 +335,7 @@ SharkGame.Stats = {
                 // do not display the resource's income if it requires a non-existent resource (looking at you, sponge)
                 for (const incomeResourceName in generatorData.income) {
                     // skip income that doesn't exist
-                    if (SharkGame.PlayerResources.get(incomeResourceName) < generatorData.income[incomeResourceName] && !generatorData.forceIncome)
-                        return;
+                    if (SharkGame.PlayerResources.get(incomeResourceName) < generatorData.income[incomeResourceName] && !generatorData.forceIncome) { return; }
                 }
 
                 $.each(generatorData.income, (incomeKey, incomeValue) => {

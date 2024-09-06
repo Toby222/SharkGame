@@ -21,22 +21,22 @@ SharkGame.ResourceTable = {
     world: {
         get name() {
             switch (world.worldType) {
-                case `volcanic`:
-                    return `vents`;
-                case `tempestuous`:
-                    return `the storm`;
+                case "volcanic":
+                    return "vents";
+                case "tempestuous":
+                    return "the storm";
                 default:
-                    return `the world`;
+                    return "the world";
             }
         },
         get singleName() {
             switch (world.worldType) {
-                case `volcanic`:
-                    return `vents`;
-                case `tempestuous`:
-                    return `the storm`;
+                case "volcanic":
+                    return "vents";
+                case "tempestuous":
+                    return "the storm";
                 default:
-                    return `the world`;
+                    return "the world";
             }
         },
         desc: "how are you seeing this",
@@ -48,18 +48,18 @@ SharkGame.ResourceTable = {
     specialResourceOne: {
         get name() {
             switch (world.worldType) {
-                case `volcanic`:
-                    return `lack of algae`;
+                case "volcanic":
+                    return "lack of algae";
                 default:
-                    return `???`;
+                    return "???";
             }
         },
         get singleName() {
             switch (world.worldType) {
-                case `volcanic`:
-                    return `lack of algae`;
+                case "volcanic":
+                    return "lack of algae";
                 default:
-                    return `???`;
+                    return "???";
             }
         },
         desc: "how are you seeing this",
@@ -72,13 +72,13 @@ SharkGame.ResourceTable = {
         get name() {
             switch (world.worldType) {
                 default:
-                    return `???`;
+                    return "???";
             }
         },
         get singleName() {
             switch (world.worldType) {
                 default:
-                    return `???`;
+                    return "???";
             }
         },
         desc: "how are you seeing this",
@@ -164,7 +164,7 @@ SharkGame.ResourceTable = {
         singleName: "sponge",
         get desc() {
             switch (world.worldType) {
-                case `volcanic`:
+                case "volcanic":
                     return "Soft, porous carnivores. Need algae.";
                 default:
                     return "Soft, porous carnivores.";
@@ -1575,12 +1575,12 @@ SharkGame.ResourceCategories = {
     places: {
         name: "Places",
         disposeMessage: [
-            `Guess we'll just forget where these are.`,
-            `Wait...where was that place again?`,
-            `The location has been barred.`,
-            `Alright everyone, pack it up! Get outta here!`,
+            "Guess we'll just forget where these are.",
+            "Wait...where was that place again?",
+            "The location has been barred.",
+            "Alright everyone, pack it up! Get outta here!",
         ],
-        resources: [`spongeFarm`, `coralFarm`],
+        resources: ["spongeFarm", "coralFarm"],
     },
     special: {
         name: "Special",

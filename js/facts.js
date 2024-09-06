@@ -18,7 +18,7 @@ SharkGame.FunFacts = {
             (!this.worldBased[currentWorld].areRequirementsMet || this.worldBased[currentWorld].areRequirementsMet())
         ) {
             _.each(this.worldBased[currentWorld].messages, (fact) => {
-                pool.push(sharktext.boldString(`Fun fact: `) + `<i>${fact}</i>`);
+                pool.push(sharktext.boldString("Fun fact: ") + `<i>${fact}</i>`);
             });
         }
 
@@ -55,7 +55,7 @@ SharkGame.FunFacts = {
             // also acts as a failsafe in case there are no other facts to display
             if (Math.random() < 0.1 || pool.length === 0) {
                 _.each(this.default, (fact) => {
-                    pool.push(sharktext.boldString(`Fun fact: `) + `<i>${fact}</i>`);
+                    pool.push(sharktext.boldString("Fun fact: ") + `<i>${fact}</i>`);
                 });
             }
             return pool;

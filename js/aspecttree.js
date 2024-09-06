@@ -192,10 +192,10 @@ SharkGame.AspectTree = {
     drawTable(table = $("<table>")) {
         table.html("").attr("id", "aspectTable");
 
-        const headerRow = $("<thead>").append($("<th>").html(`Name`).attr("scope", "col"));
-        headerRow.append($("<th>").html(`Description`).attr("scope", "col"));
-        headerRow.append($("<th>").html(`Level`).attr("scope", "col"));
-        headerRow.append($("<th>").html(`Cost`).attr("scope", "col"));
+        const headerRow = $("<thead>").append($("<th>").html("Name").attr("scope", "col"));
+        headerRow.append($("<th>").html("Description").attr("scope", "col"));
+        headerRow.append($("<th>").html("Level").attr("scope", "col"));
+        headerRow.append($("<th>").html("Cost").attr("scope", "col"));
 
         table.append(headerRow);
 
@@ -239,9 +239,9 @@ SharkGame.AspectTree = {
             const aspectNameTableData = $("<th>").html(aspectData.name).addClass("aspectTableName").attr("rowspan", "3").attr("scope", "rowgroup");
             const specialData = $("<td>").append(basicText + cantBuyText);
             const aspectTableDescriptionRow = $("<tr>").append(aspectNameTableData).append(specialData);
-            aspectTableDescriptionRow.append($(`<td>`));
+            aspectTableDescriptionRow.append($("<td>"));
             aspectTableDescriptionRow.append(
-                $(`<td>`)
+                $("<td>")
                     .html(!reqref.max ? aspectData.getCost(aspectData.level) : "N/A")
                     .attr("rowspan", "3"),
             );
@@ -249,11 +249,11 @@ SharkGame.AspectTree = {
             const aspectTableRowCurrent = $("<tr>");
 
             if (aspectData.level > 0) {
-                aspectTableRowCurrent.append($(`<td>`).html(`CURRENT: ${aspectData.getEffect(aspectData.level)}`));
+                aspectTableRowCurrent.append($("<td>").html(`CURRENT: ${aspectData.getEffect(aspectData.level)}`));
             } else {
-                aspectTableRowCurrent.append($(`<td>`).html(`CURRENT: Not bought, no effect.`));
+                aspectTableRowCurrent.append($("<td>").html("CURRENT: Not bought, no effect."));
             }
-            aspectTableRowCurrent.append($(`<td>`).html(aspectData.level));
+            aspectTableRowCurrent.append($("<td>").html(aspectData.level));
 
             // aspectTableRowCurrent.classList.add("aspect-table-row");
             // aspectTableRowCurrent.id = "aspect-table-row-" + aspectId;
@@ -261,11 +261,11 @@ SharkGame.AspectTree = {
             const aspectTableRowNext = $("<tr>");
             if (!reqref.max) {
                 // ${aspectData.level + 1}`
-                aspectTableRowNext.append($(`<td>`).html(`NEXT: ${aspectData.getEffect(aspectData.level + 1)}`));
-                aspectTableRowNext.append($(`<td>`).html(`${aspectData.level + 1}`));
+                aspectTableRowNext.append($("<td>").html(`NEXT: ${aspectData.getEffect(aspectData.level + 1)}`));
+                aspectTableRowNext.append($("<td>").html(`${aspectData.level + 1}`));
             } else {
-                aspectTableRowNext.append($(`<td>`).html(`NEXT: Already at maximum level.`));
-                aspectTableRowNext.append($(`<td>`).html(`N/A`));
+                aspectTableRowNext.append($("<td>").html("NEXT: Already at maximum level."));
+                aspectTableRowNext.append($("<td>").html("N/A"));
             }
 
             _.each([aspectTableDescriptionRow, aspectTableRowNext, aspectTableRowCurrent], (row) => {
@@ -801,10 +801,10 @@ SharkGame.AspectTree = {
 
             let tooltipText = "";
             if (button.level === 0) {
-                let costText = ``;
+                let costText = "";
                 if (tree.refundMode) {
                     if (button.noRefunds) {
-                        costText = `NO REFUNDS`;
+                        costText = "NO REFUNDS";
                     }
                 } else {
                     costText = `COST: <span class='${reqref.affordable ? "can-afford-aspect" : "cant-afford-aspect"}'>${cost} ESSENCE</span>`;
@@ -821,10 +821,10 @@ SharkGame.AspectTree = {
                     (tree.debugMode ? "" : "<hr class='hrForTooltipJuxtapositionInGateway'>" + `<span class='bold'>${costText}</span>`);
                 tooltipBox.addClass("forAspectTreeUnpurchased");
             } else if (button.level < button.max) {
-                let costText = ``;
+                let costText = "";
                 if (tree.refundMode) {
                     if (button.noRefunds) {
-                        costText = `NO REFUNDS`;
+                        costText = "NO REFUNDS";
                     } else {
                         costText = `REFUND VALUE: <span class="can-afford-aspect">${refundValue}</span>`;
                     }
@@ -857,15 +857,15 @@ SharkGame.AspectTree = {
                     `<br />${button.getEffect(button.level)}` +
                     `<br /><span class='littleTooltipText'>${button.description}</span>`;
             } else {
-                let costText = ``;
+                let costText = "";
                 if (tree.refundMode) {
                     if (button.noRefunds) {
-                        costText = `NO REFUNDS`;
+                        costText = "NO REFUNDS";
                     } else {
                         costText = `REFUND VALUE: <span class="can-afford-aspect">${refundValue}</span>`;
                     }
                 } else {
-                    costText = `MAXIMUM LEVEL.`;
+                    costText = "MAXIMUM LEVEL.";
                 }
 
                 const levelText =

@@ -79,10 +79,10 @@ SharkGame.TabHandler = {
             if (reqsMet) {
                 // special logic for special tabs
                 switch (tabName) {
-                    case `reflection`:
+                    case "reflection":
                         if (!SharkGame.persistentFlags.seenReflection) log.addDiscovery("Discovered " + tab.name + "!");
                         break;
-                    case `cheats`:
+                    case "cheats":
                         if (!SharkGame.persistentFlags.seenCheatsTab) log.addDiscovery("Discovered " + tab.name + "!");
                         break;
                     default:
@@ -199,7 +199,7 @@ SharkGame.TabHandler = {
     discoverTab(tab) {
         SharkGame.Tabs[tab].discovered = true;
 
-        if ((tab === `reflection` && SharkGame.persistentFlags.seenReflection) || (tab === `cheats` && SharkGame.persistentFlags.seenCheatsTab)) {
+        if ((tab === "reflection" && SharkGame.persistentFlags.seenReflection) || (tab === "cheats" && SharkGame.persistentFlags.seenCheatsTab)) {
             SharkGame.Tabs[tab].seen = true;
         }
 

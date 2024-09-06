@@ -290,7 +290,7 @@ SharkGame.HomeMessages = {
             {
                 name: "volcanic-shrimp-communication",
                 unlock: { upgrade: ["consistentCommunication"] },
-                message: "The homes (sponges) left behind by shrimp joining the frenzy may now be taken for ourselves.",
+                message: "The sponge homes left behind by shrimp joining the frenzy may now be taken for ourselves.",
             },
             {
                 name: "volcanic-monarchy",

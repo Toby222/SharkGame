@@ -906,7 +906,7 @@ SharkGame.Button = {
 
 SharkGame.Changelog = {
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20240906a": [
-        "Added another 4 new sprites courtesy of <a href='https://github.com/glowkate'>Glowkate!</a>.",
+        "Added another 4 new sprites courtesy of <a href='https://github.com/glowkate'>Glowkate</a>!",
     ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20240819a": [
         "Added another new sprite courtesy of <a href='https://github.com/glowkate'>Glowkate</a>.",

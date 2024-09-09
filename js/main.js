@@ -102,7 +102,7 @@ $.extend(SharkGame, {
     ],
     GAME_NAME: null,
     ACTUAL_GAME_NAME: "Shark Game",
-    VERSION: "20240906a",
+    VERSION: "20240909a",
     ORIGINAL_VERSION: 0.71,
     VERSION_NAME: "The Tempetuous Update",
     EPSILON: 1e-6, // floating point comparison is a joy
@@ -905,6 +905,10 @@ SharkGame.Button = {
 };
 
 SharkGame.Changelog = {
+    "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20240909a": [
+        "Added another one new sprite courtesy of <a href='https://github.com/glowkate'>Glowkate</a>!",
+        "Added a heap of new fun facts.",
+    ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20240906a": [
         "Added another 4 new sprites courtesy of <a href='https://github.com/glowkate'>Glowkate</a>!",
     ],

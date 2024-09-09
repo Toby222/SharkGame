@@ -161,10 +161,10 @@ SharkGame.FunFacts = {
             "There are real eusocial shrimps that live in communities in sponges on reefs, complete with queens.",
             "Shrimp are close relatives of lobsters. They have a lot of similarities, and in some ways are just smaller, narrower lobsters.",
         ],
-        eel: [
-            // "Eels come in a wide range of sizes, from just a few inches to multiple meters.",
-            // migratory eels, look into it
-        ],
+        // eel: [
+        // "Eels come in a wide range of sizes, from just a few inches to multiple meters.",
+        // migratory eels, look into it
+        // ],
         chimaera: [
             "Chimaera are closely related to sharks and rays.",
             "Chimaera are deep-sea animals, usually found more than 500 meters (~1500 feet) below the surface of the ocean.",
@@ -174,7 +174,7 @@ SharkGame.FunFacts = {
         ],
         billfish: [
             "Billfish do indeed have bones, unlike sharks and rays.",
-            "Swordfish and marlins are large, predatory fish. At adulthood, their only natural predators are sharks and whales.",
+            "Swordfish and marlins are large, predatory fish. At adulthood, their only natural predators are sharks (oh no) and whales.",
             "The top speed of marlins is commonly reported to be 60 mph, but this is not accurate. It's actually closer to 30 mph.",
             "The bill of a billfish is used to slash like a sword, not stab like a spear.",
             "Swordfish are not a group of fish, they are a single species: Xiphias gladius.",
@@ -193,11 +193,19 @@ SharkGame.FunFacts = {
         sharkonium: [
             "There is nothing suspicious about the machines.",
             "Small and medium-scale sharkonium machines do not require a power source. This is because sharkonium is made with crystals, which contain latent magic.",
+            "Sharkonium would remind a person of steel tinted purple. To a shark, it looks like shiny nothing.",
+            "Sharkonium has a ",
         ],
         porite: [
             "The idea for porite comes from the structure of bones, which have spongey insides that reduce their weight while retaining their strength.",
+            "Porite is stronger than glass, but brittle under pressure, so it's only appropriate to make tools, not machines.",
+            "Porite is a kind of glass. It melts at a low temperature and sets nicely, so broken tools are easily recycled.",
         ],
-        calcinium: ["Calcinium was inspired by the appearance and texture of limestone and seashells."],
+        calcinium: [
+            "Calcinium was inspired by the appearance and texture of limestone and seashells.",
+            "It take a lot of heat to make, and once formed, calcinium doesn't melt easily. Every batch needs to be molded quickly, or it will go to waste.",
+            "Calcinium is a very versatile material. Cooled quickly, it is a brittle ceramic - but cooled slowly, it's a rigid plastic. The lobsters make use of both methods.",
+        ],
         laser: [
             "Sharks with lasers were overdone, okay? 'Laser ray' is a pun, so it's obviously superior.",
             "Sand probably does not actually fuse into magic crystals. Unless you count glass.",
@@ -219,15 +227,42 @@ SharkGame.FunFacts = {
             "Many species of sponge have a mualistic realitionship with species of algae. The algaes use photosynthesis to produce food for the sponges.",
         ],
         algae: [
-            "Algae comes in many different shapes, sizes, and forms, like 'valonia ventricosa,' a species where every individual cell can grow larger than a grape.",
-            "Algae is neither plant nor animal. It is something else entirely (a protist?).",
+            "Algae comes in many different shapes, sizes, and forms. A very notable one is 'valonia ventricosa,' a species where every individual cell can grow larger than a grape.",
+            "Algae is neither plant nor animal. It is something else entirely (a 'protist').",
             "Kelp is a kind of algae. In fact, all seaweed is algae. The sea has very few true plants.",
         ],
         kelp: ["Kelp is not a plant, it's a kind of algae. Algae is also not a plant."],
-        seagrass: ["Unlike kelp, seagrass is a true plant. It is one of very few under the sea."],
-        arcana: ["Arcane, super-charged energy crystals are definitely not real."],
+        seagrass: [
+            "Unlike kelp, seagrass is a true plant. It is one of very few under the sea.",
+            "Seagrass flowers don't exactly look like the kind we are used to.",
+        ],
+        arcana: [
+            "Arcane, super-charged energy crystals are definitely not real.",
+            "These things snap like fireworks when you break them. It's pretty cool.",
+        ],
+        sacrifice: ["Nobody knows how the energy of the crystals gets into the frenzy."],
+        science: ["Real sharks do not know how to do science. Probably."],
+        sand: [
+            "In the real world, the ocean floor is not always sand. The deep ocean usually has much finer sediment.",
+            "Sand gets transported very long distances by ocean currents. The longer it takes to travel to its destination beach, the finer the sand will be.",
+        ],
+        ancientPart: [
+            "What do they do? We still aren't sure.",
+            "These parts would probably remind a person of train parts. To a shark, they just look like nothing.",
+            "What are they made of? I don't know, you tell me!",
+            "The ancient parts have a texture like painted-over concrete. They clink together with a sound like ceramic.",
+        ],
+        investigator: ["We are not sure where the octopuses get their funny hats. Presumably they just find them."],
+        eggBrooder: ["This is gross."],
+        delphinium: [
+            "To a person, delphinium is glitter on blue gold. To a shark, it's headache-inducing.",
+            "The dolphin recipe for delphinium is ancient. It took them many generations to perfect the process, or so they say.",
+            "The dolphins are rather fond of delphinium. They appreciate the practicality of sharkonium, however.",
+            "Delphinium is rather heavy, and doesn't do well under stress - but soft enough to be crafted into complex shapes.",
+        ],
         ice: ["In the original shark game, ice used to eat away your resources instead of slowing their production."],
         tar: ["In the original shark game, tar was gained passively. Machines produced basically none of it."],
+
     },
 
     default: [
@@ -241,5 +276,6 @@ SharkGame.FunFacts = {
         "New Frontiers, this Shark Game mod, was inspired by the unfolding nature of the Candy Box games and A Dark Room.",
         "Any timewalls in this game can be completely bypassed with good strategy.",
         "This game has keybinds. They are more useful than you might think. Check the options menu.",
+        "Shark Game: New Frontiers is a mod of Cirrial's Untitled Shark Game. It started as a refurbishment, but quickly evolved into a total remake.",
     ],
 };

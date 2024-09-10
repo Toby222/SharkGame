@@ -1344,21 +1344,21 @@ SharkGame.Resources = {
             if (amount > 0) {
                 isGeneratingText += `<br>
                 ${sharktext
-        .beautifyIncome(
-            amount,
-            " " +
+                        .beautifyIncome(
+                            amount,
+                            " " +
                             sharktext.getResourceName(generatedResource, false, false, sharkcolor.getElementColor("tooltipbox", "background-color")),
-        )
-        .bold()}`;
+                        )
+                        .bold()}`;
             } else if (amount < 0) {
                 isConsumingText += `<br>
                 ${sharktext
-        .beautifyIncome(
-            -amount,
-            " " +
+                        .beautifyIncome(
+                            -amount,
+                            " " +
                             sharktext.getResourceName(generatedResource, false, false, sharkcolor.getElementColor("tooltipbox", "background-color")),
-        )
-        .bold()}`;
+                        )
+                        .bold()}`;
             }
         });
         let producertext = "";

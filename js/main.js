@@ -91,7 +91,6 @@ $.extend(SharkGame, {
         "DUNGEONS",
         "The Adventure Continues",
         "To Be Continued",
-        "#TeamSeas",
         "Sharks of Rage",
         "Bedrock? Edition",
         "Java(script) Edition",
@@ -102,7 +101,7 @@ $.extend(SharkGame, {
     ],
     GAME_NAME: null,
     ACTUAL_GAME_NAME: "Shark Game",
-    VERSION: "20240909a",
+    VERSION: "20241106a",
     ORIGINAL_VERSION: 0.71,
     VERSION_NAME: "The Tempetuous Update",
     EPSILON: 1e-6, // floating point comparison is a joy
@@ -905,6 +904,9 @@ SharkGame.Button = {
 };
 
 SharkGame.Changelog = {
+    "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20241106a": [
+        "Added a new sprite courtesy of <a href='https://www.youtube.com/@WorkerDroneMainBattleTrain'>Main Battle Train</a>.",
+    ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20240909a": [
         "Added another one new sprite courtesy of <a href='https://github.com/glowkate'>Glowkate</a>!",
         "Added a heap of new fun facts.",

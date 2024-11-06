@@ -352,8 +352,13 @@ SharkGame.Resources = {
         return SharkGame.PlayerIncomeTable.get(resource);
     },
 
-    // Adds or subtracts resources based on amount given.
-    changeResource(resource, amount, norecalculation) {
+    /**
+     * Changes the owned amount of a resource.
+     * @param {string} resource Id of the resource to change.
+     * @param {number} amount Amount to change this resource by. Can be negative.
+     * @param {boolean} norecalculation Optional, default false. If true, do not refresh the income table's display after this change.
+     */
+    changeResource(resource, amount, norecalculation = false) {
         if (Math.abs(amount) < SharkGame.EPSILON) {
             return; // ignore changes below epsilon
         }
@@ -400,10 +405,20 @@ SharkGame.Resources = {
         SharkGame.PlayerResources.get(resource).totalAmount = newValue;
     },
 
+    /**
+     * Gets the owned amount of a resource.
+     * @param {string} resource Id of the resource to get.
+     * @return {number} Owned amount of this resource.
+     */
     getResource(resource) {
         return SharkGame.PlayerResources.get(resource).amount;
     },
 
+    /**
+     * Gets the total amount ever produced of a resource.
+     * @param {string} resource Id of the resource to get.
+     * @return {number} Total produced amount of this resource.
+     */
     getTotalResource(resource) {
         return SharkGame.PlayerResources.get(resource).totalAmount;
     },

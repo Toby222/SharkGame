@@ -341,9 +341,9 @@ SharkGame.Events = {
         },
         trigger() {
             if (SharkGame.Lab.findAllAffordableUpgrades().length) {
-                $("#tab-lab").html("(<strong>!</strong>) Laboratory");
+                $("#tab-lab").html(`(<strong>!</strong>) ${SharkGame.Lab.tabName}`);
             } else {
-                $("#tab-lab").html("Laboratory");
+                $("#tab-lab").html(`${SharkGame.Lab.tabName}`);
             }
             return true;
         },

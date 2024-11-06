@@ -828,7 +828,7 @@ SharkGame.Gateway = {
             switch (SharkGame.Aspects.distantForesight.level) {
                 case 1:
                     contentDiv.prepend($("<p>").html(worldData.foresight.longDesc));
-                    if (worldData.foresight.missing.length > 0) {
+                    if (worldData.foresight.missing && worldData.foresight.missing.length > 0) {
                         const missingList = $("<ul>").addClass("gatewayPropertyList");
                         _.each(worldData.foresight.missing, (missingResource) => {
                             missingList.append(
@@ -841,7 +841,7 @@ SharkGame.Gateway = {
                         });
                         contentDiv.prepend(missingList);
                     }
-                    if (worldData.foresight.present.length > 0) {
+                    if (worldData.foresight.present && worldData.foresight.present.length > 0) {
                         const presentList = $("<ul>").addClass("gatewayPropertyList");
                         _.each(worldData.foresight.present, (presentResource) => {
                             presentList.append(
@@ -860,7 +860,7 @@ SharkGame.Gateway = {
                         });
                         contentDiv.prepend(presentList);
                     }
-                    if (worldData.modifiers.length > 0) {
+                    if (worldData.modifiers && worldData.modifiers.length > 0) {
                         const modifierList = $("<ul>").addClass("gatewayPropertyList");
                         _.each(worldData.modifiers, (modifier) => {
                             if (gateway.playerHasSeenResource(modifier.resource) || !(worldData.foresight.present.indexOf(modifier.resource) > -1)) {

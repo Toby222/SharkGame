@@ -66,13 +66,18 @@ SharkGame.Log = {
         return this.totalCount % 2 === 1;
     },
 
-    addMessage(message) {
+    addMessage(message, sanitizeHtml = false) {
         const showAnims = SharkGame.Settings.current.showAnimations;
 
         if (!log.initialised) {
             log.init();
         }
-        const messageItem = $("<li>").html(message);
+        const messageItem = $("<li>");
+        if (sanitizeHtml) {
+            messageItem.text(message);
+        } else {
+            messageItem.html(message);
+        }
 
         if (log.isNextMessageEven()) {
             messageItem.addClass("evenMessage");
@@ -120,7 +125,7 @@ SharkGame.Log = {
             console.error(message);
             message = message.message;
         }
-        const messageItem = log.addMessage("Error: " + message);
+        const messageItem = log.addMessage("Error: " + message, true);
         messageItem.addClass("error");
         return messageItem;
     },

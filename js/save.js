@@ -136,7 +136,7 @@ SharkGame.Save = {
                     saveData.saveVersion = i;
                 }
                 // let player know update went fine
-                log.addMessage("Updated save data from v " + saveData.version + " to " + SharkGame.VERSION + ".");
+                log.addMessage("Updated save data from v " + saveData.version + " to " + SharkGame.VERSION + ".", true);
             }
 
             // we're going to assume that everything has already been reset; we assume that we're just loading values into a blank slate

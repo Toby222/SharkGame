@@ -402,7 +402,7 @@ declare global {
         init(): void;
         moveLog(): void;
         addMessage(message: string | JQuery.Node): JQuery<HTMLLIElement>;
-        addError(message: string | JQuery.Node): ReturnType<LogModule["addMessage"]>;
+        addError(message: string | JQuery.Node, sanitizeHtml?: boolean): ReturnType<LogModule["addMessage"]>;
         addDiscovery(message: string | JQuery.Node): ReturnType<LogModule["addMessage"]>;
         correctLogLength(): void;
         clearMessages(logThing?: boolean): void;

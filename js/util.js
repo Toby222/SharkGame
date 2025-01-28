@@ -496,11 +496,14 @@ SharkGame.TimeUtil = {
     getRunTime(ignoreMinuteHandAndPause) {
         const realRunTime = _.now() - SharkGame.timestampRunStart;
         const pausedTime = SharkGame.persistentFlags.totalPausedTime + SharkGame.persistentFlags.currentPausedTime;
-        let storedTime = SharkGame.flags.minuteHandTimer;
-        if (typeof SharkGame.flags.hourHandLeft === "number") {
+        let storedTime = 0;
+        if (Number.isFinite(SharkGame.flags.minuteHandTimer)) {
+            storedTime += SharkGame.flags.minuteHandTimer;
+        }
+        if (Number.isFinite(SharkGame.flags.hourHandLeft)) {
             storedTime -= SharkGame.flags.hourHandLeft;
         }
-        if (typeof SharkGame.flags.bonusTime === "number") {
+        if (Number.isFinite(SharkGame.flags.bonusTime)) {
             storedTime -= SharkGame.flags.bonusTime;
         }
 

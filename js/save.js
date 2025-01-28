@@ -89,8 +89,8 @@ SharkGame.Save = {
             // decompress string
             try {
                 saveDataString = pako.inflate(saveDataString, { to: "string" });
-            } catch {
-                throw new Error("Saved data is compressed, but it can't be decompressed. Can't load. Your save: " + saveDataString);
+            } catch (err) {
+                throw new Error("Saved data is compressed, but it can't be decompressed. Can't load. Your save: " + saveDataString + "\n", err);
             }
         }
 

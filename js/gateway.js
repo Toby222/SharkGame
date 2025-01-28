@@ -33,6 +33,9 @@ SharkGame.Gateway = {
     },
 
     enterGate(loadingFromSave) {
+        // To help diagnose negative time bug
+        // Can remove if/when that gets fixed
+        SharkGame.Save.createTaggedSave("PreGateway");
         SharkGame.PaneHandler.wipeStack();
 
         SharkGame.OverlayHandler.enterGateway();
@@ -516,7 +519,8 @@ SharkGame.Gateway = {
                 containerDiv.append(
                     $("<p>").html(
                         "You appear to have experienced a major bug that causes negative world-times.<br> The source of this bug is unknown.<br>" +
-                            "Please take a screenshot and join the discord. Send it in the #bugs-and-issues channel.<br> Enjoy the free essence, I guess?<br>" +
+                            "Please send a copy of your save to us (the <code>sharkGameSavePreGateway</code> entry in your Local Storage), either in the #bugs-and-issues channel of our discord or via email to <pre>timebug@shark.tobot.dev</pre>.<br> Enjoy the free essence, I guess?<br>" +
+                            `(To remove excess essence, type the following into your console <code>res.changeResource("essence", -1000)</code>, replacing 1000 with the number of excess essence you have; sorry for the inconvenience)<br>` +
                             `actual start time: ${SharkGame.timestampRunStart}   true pause time: ${SharkGame.persistentFlags.totalPausedTime}   current paused time: ${SharkGame.persistentFlags.currentPausedTime}<br>` +
                             `minute hand: ${SharkGame.flags.minuteHandTimer}    hour hand: ${SharkGame.flags.hourHandLeft}    bonus: ${SharkGame.flags.bonusTime}<br>` +
                             `calculated run time: ${gateway.getTimeInLastWorld(true)}   actual likely time: ${

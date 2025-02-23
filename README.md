@@ -2,11 +2,13 @@
 
 Shark Game is a web game made entirely in HTML, CSS and JavaScript. It is a game belonging to the "incremental" genre, though is not an "idle" game.
 
-It was originally conceived for Seamergency 2014 by Cirrial, who spent a few years working on it before moving on to other projects. In 2020, spencers145 (AKA base4) and Toby222 picked up the project to continue developemnt. spencers145 made a fork, where an older version of the project currently sits. Toby222 forked that to make this repo, which holds the up-to-date game.
+It was originally conceived for Seamergency 2014 by Cirrial, who spent a few years working on it before moving on to other projects. In 2020, spencers145 (AKA base4) and Toby222 picked up the project to continue developemnt. spencers145 made a fork, where an older version of the project currently sits. Toby222 forked that to make this repo, which holds the up-to-date game. 
 
 The hub branch holds the landing page for the game, which disambiguates the available versions of it, both current and historical. The alpha branch is for stable releases, and the dev branch is for development builds.
 
 The hub, alpha, and dev branches are deployed at https://shark.tobot.dev, https://alpha.shark.tobot.dev, and https://dev.shark.tobot.dev respectively.
+
+This branch is currently being updated by sylasbriarwood, me. As of 2025, I'm learning to code from scratch because I like this game. We'll see how it goes. I haven't figured out how to deploy it yet either but I won't worry about that until I actually have a big update to present.
 
 ## Sprite Packing
 

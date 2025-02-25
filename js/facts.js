@@ -161,10 +161,11 @@ SharkGame.FunFacts = {
             "There are real eusocial shrimps that live in communities in sponges on reefs, complete with queens.",
             "Shrimp are close relatives of lobsters. They have a lot of similarities, and in some ways are just smaller, narrower lobsters.",
         ],
-        // eel: [
-        // "Eels come in a wide range of sizes, from just a few inches to multiple meters.",
-        // migratory eels, look into it
-        // ],
+        eel: [
+            "Eels come in a wide range of sizes, from just a few inches to multiple meters.",
+            "The highest shock ever produced by an eel was 860 volts, more then any other animal!",
+            "Eels migrate a distance of 5,000 to 10,000 km across the Atlantic Ocean to the Sargasso Sea.",
+        ],
         chimaera: [
             "Chimaera are closely related to sharks and rays.",
             "Chimaera are deep-sea animals, usually found more than 500 meters (~1500 feet) below the surface of the ocean.",

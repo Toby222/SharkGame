@@ -97,14 +97,14 @@ SharkGame.FunFacts = {
         // add fish facts at some point
         shark: [
             "There are many species of sharks that investigate things with their mouths. This can end badly for the subject of investigation.",
-            "There have been social behaviors observed in lemon sharks, and evidence that suggests they prefer company to being alone.",
+            "There have been social behaviours observed in lemon sharks, and evidence that suggests they prefer company to being alone.",
             "Some shark species display 'tonic immobility' when rubbed on the nose. They stop moving, appear deeply relaxed, and can stay this way for up to 15 minutes before swimming away.",
             "In some shark species, eggs hatch within their mothers, and in some of these species the hatched babies eat unfertilised or even unhatched eggs.",
             "More people are killed by lightning every year than by sharks.",
             "White sharks have been observed to have a variety of body language signals to indicate submission and dominance towards each other without violence.",
             "A kiss from a shark can make you immortal. But only if they want you to be immortal.",
-            "A shark is worth one in the bush and a bunch in the seawater. Don't put sharks in bushes.",
-            "Sharks are very old, evolutionarily speaking. The first sharks emerged sometime around 400 million years ago.",
+            "A shark is worth one in the bush and a bunch in the sea water. Don't put sharks in bushes.",
+            "Sharks are very old, evolutionarily speaking. The first sharks emerged some time around 400 million years ago.",
             "Sharks have very rough skin, like sandpaper. In fact, shark skin was literally used as sandpaper in the past.",
             "Sharks do not have bones. Neither do rays.",
         ],

@@ -103,7 +103,7 @@ SharkGame.FunFacts = {
             "More people are killed by lightning every year than by sharks.",
             "White sharks have been observed to have a variety of body language signals to indicate submission and dominance towards each other without violence.",
             "A kiss from a shark can make you immortal. But only if they want you to be immortal.",
-            "A shark is worth one in the bush and a bunch in the sea water. Don't put sharks in bushes.",
+            "A shark is worth one in the bush, and a bunch in the sea water. Don't put sharks in bushes.",
             "Sharks are very old, evolutionarily speaking. The first sharks emerged some time around 400 million years ago.",
             "Sharks have very rough skin, like sandpaper. In fact, shark skin was literally used as sandpaper in the past.",
             "Sharks do not have bones. Neither do rays.",

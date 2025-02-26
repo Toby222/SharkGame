@@ -104,7 +104,6 @@ $.extend(SharkGame, {
         "Curse of the Shark",
         "Have I Played These Sharks Before?",
         "Hollow Shark: Shark Song",
-        
     ],
     GAME_NAME: null,
     ACTUAL_GAME_NAME: "Shark Game",

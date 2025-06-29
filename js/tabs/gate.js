@@ -9,8 +9,8 @@ SharkGame.Gate = {
     discoverReq: {
         upgrade: [
             "gateDiscovery",
-            "farAbandonedExploration",
-            "farHavenExploration",
+            "farExploration",
+            "farExploration",
             "rapidRecharging",
             "arcaneCompass",
             "apologeticAmnesty",

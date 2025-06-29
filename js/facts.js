@@ -65,7 +65,9 @@ SharkGame.FunFacts = {
     },
 
     worldBased: {
-        frigid: {},
+        frigid: {
+            messages: ["When water freezes, it expands a little bit. That's why full bottles of water break or explode when put in the freezer."],
+        },
         volcanic: {
             messages: [
                 "This world was originally called Violent, now it's Volcanic. Playtesters got confused and thought the world had violence, when really, it just has the threat of violence.",
@@ -113,6 +115,7 @@ SharkGame.FunFacts = {
             "Rays can be thought of as flattened sharks. The two are very closely related evolutionarily.",
             "Rays are pancakes of the sea. (note: probably not true)",
             "Rays do not have bones. Neither do sharks.",
+            "Some rays have a venomous stinger. So despite how much we may want to, we shouldn't hug them.",
         ],
         crab: [
             "Throughout history, many species of crustaceans have independently evovled into crabs for no discernable reason. The phenomenon is called carcinisation.",
@@ -149,7 +152,8 @@ SharkGame.FunFacts = {
             "Squid eat crabs. They're not eating yours out of politeness.",
             "Giant squid are real. They live incredibly deep in the ocean.",
             "Squid have no bones whatsoever.",
-            // Squid have camoflague look into it
+            "Squids have tiny ink sacs on their skin which expand when pulled by certain skin muscles, making it possible for them to camouflage themselves.",
+            // Based on https://www.youtube.com/watch?v=0wtLrlIKvJE
         ],
         lobster: [
             "Lobsters really do eat clams. They instinctively know how to crack them open.",
@@ -161,10 +165,11 @@ SharkGame.FunFacts = {
             "There are real eusocial shrimps that live in communities in sponges on reefs, complete with queens.",
             "Shrimp are close relatives of lobsters. They have a lot of similarities, and in some ways are just smaller, narrower lobsters.",
         ],
-        // eel: [
-        // "Eels come in a wide range of sizes, from just a few inches to multiple meters.",
-        // migratory eels, look into it
-        // ],
+        eel: [
+            "Eels come in a wide range of sizes, from just a few inches to multiple meters.",
+            "The highest shock ever produced by an eel was 860 volts, more then any other animal!",
+            "Eels migrate a distance of 5,000 to 10,000 km across the Atlantic Ocean to the Sargasso Sea.",
+        ],
         chimaera: [
             "Chimaera are closely related to sharks and rays.",
             "Chimaera are deep-sea animals, usually found more than 500 meters (~1500 feet) below the surface of the ocean.",
@@ -188,23 +193,31 @@ SharkGame.FunFacts = {
             // "Sharks would definitely not have a way of acquiring most kinds of jellyfish in real life.",
             "Jellyfish can be extremely dangerous. Some kinds of box jellyfish have fatal stings.",
             "Turritopsis dohrnii is a species of jellyfish that can restart its lifecycle at will. In theory, this grants it an infinite lifespan.",
+            "Jellyfish are very old, evolutionarily speaking. A few jellyfish fossils have been dated to approximately 500 million years ago.",
+            "The gastric system of jellyfish has only one hole, which means that food comes out from the same place as it goes in. Ewwww.",
+            "Jellyfish are from the 'cnidaria' phylum, the same phylum of sea anemones.",
+            "Despite its name and looking like a jellyfish, comb jellies are not related to jellyfish. They are ctenophores.",
             // do more research into jellies
+            // On it, boss -Biggest Brian
         ],
         sharkonium: [
             "There is nothing suspicious about the machines.",
             "Small and medium-scale sharkonium machines do not require a power source. This is because sharkonium is made with crystals, which contain latent magic.",
             "Sharkonium would remind a person of steel tinted purple. To a shark, it looks like shiny nothing.",
-            "Sharkonium has a ",
+            "Sharkonium does not taste like grapes. No, I will not let you taste it for yourself.",
         ],
+        // I just decided to put something in to complete the sentence, it was driving me nuts -Biggest Brian
         porite: [
             "The idea for porite comes from the structure of bones, which have spongey insides that reduce their weight while retaining their strength.",
             "Porite is stronger than glass, but brittle under pressure, so it's only appropriate to make tools, not machines.",
             "Porite is a kind of glass. It melts at a low temperature and sets nicely, so broken tools are easily recycled.",
+            "No, you can't eat it.",
         ],
         calcinium: [
             "Calcinium was inspired by the appearance and texture of limestone and seashells.",
             "It take a lot of heat to make, and once formed, calcinium doesn't melt easily. Every batch needs to be molded quickly, or it will go to waste.",
             "Calcinium is a very versatile material. Cooled quickly, it is a brittle ceramic - but cooled slowly, it's a rigid plastic. The lobsters make use of both methods.",
+            "While calcinium looks like meringue, it most probably doesn't taste anything like.",
         ],
         laser: [
             "Sharks with lasers were overdone, okay? 'Laser ray' is a pun, so it's obviously superior.",
@@ -218,6 +231,7 @@ SharkGame.FunFacts = {
             "Coral is not a plant, it is an animal. A weird, stationary animal.",
             "Coral are primarily carnivores. They eat plankton (teeny tiny things that can't swim), grabbing them with little tentacles and pulling them into their mouths.",
             "Many kinds of coral have a mutualistic relationship with species of alage, who produce nutrients in exchange for carbon dioxide and shelter.",
+            "Despite being as stationary as a sponge, coral is more closely related to jellyfishes.",
         ],
         sponge: [
             "Sponges are incredibly distinct from all other animals. They are asymmetric, have no organs, and their cells can change specialization at will.",
@@ -225,6 +239,8 @@ SharkGame.FunFacts = {
             "Sponge is not a plant, it is an animal. A weird, amorphous animal.",
             "The pores in sponges are designed to help them filter water for food at maximum efficiency.",
             "Many species of sponge have a mualistic realitionship with species of algae. The algaes use photosynthesis to produce food for the sponges.",
+            "Sponges have bacteria inside their own cells that help with the metabolism of many substances. This is called 'endosymbiosis'.",
+            "The first animal formed, the 'urmetazoa', was something akin to a sponge.",
         ],
         algae: [
             "Algae comes in many different shapes, sizes, and forms. A very notable one is 'valonia ventricosa,' a species where every individual cell can grow larger than a grape.",
@@ -254,6 +270,10 @@ SharkGame.FunFacts = {
         ],
         investigator: ["We are not sure where the octopuses get their funny hats. Presumably they just find them."],
         eggBrooder: ["This is gross."],
+        collectorCrab: [
+            "The Dromia personata is a species of crab that take sponges and attach them to their backs as a method of camouflage.",
+            "Don't touch the sponge on their backs. They're very protective about it.",
+        ],
         delphinium: [
             "To a person, delphinium is glitter on blue gold. To a shark, it's headache-inducing.",
             "The dolphin recipe for delphinium is ancient. It took them many generations to perfect the process, or so they say.",
@@ -262,6 +282,11 @@ SharkGame.FunFacts = {
         ],
         ice: ["In the original shark game, ice used to eat away your resources instead of slowing their production."],
         tar: ["In the original shark game, tar was gained passively. Machines produced basically none of it."],
+        calciniumConverter: [
+            "Machine-brain interfaces, such as the ones used by lobsters, actually already exist.",
+            "While the first machine-brain interface was created by the science shark team, in the real world, it was developed by brazilian scientist 'Miguel Niconelis'.",
+            "Machine-brain interfaces are normally done without any surgery, but the lobsters thought it looked cooler to jam the wires in their skulls.",
+        ],
 
     },
 

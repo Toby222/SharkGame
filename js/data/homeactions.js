@@ -3714,7 +3714,7 @@ SharkGame.HomeActions = {
                     const maxSpongeCycles = sponge / spongeCost;
                     const maxSandCycles = sand / sandCost;
 
-                    text += `<span class="littleGeneralText">`;
+                    text += "<span class=\"littleGeneralText\">";
                     if (maxSpongeCycles < maxSandCycles) {
                         text += `${sharktext.getResourceName(
                             "sponge",

@@ -772,7 +772,7 @@ SharkGame.Upgrades = {
                 },
             },
         },
-        farAbandonedExploration: {
+        farExploration: {
             name: "Far Exploration",
             desc: "In the distance lies a bunch of weird structures that sharks have dared not enter...so what happens if we do?",
             researchedMessage:
@@ -799,7 +799,7 @@ SharkGame.Upgrades = {
                 ancientPart: 88,
             },
             required: {
-                upgrades: ["farAbandonedExploration", "octalEfficiency"],
+                upgrades: ["farExploration", "octalEfficiency"],
                 seen: ["ancientPart"],
             },
             effect: {
@@ -819,7 +819,7 @@ SharkGame.Upgrades = {
                 ancientPart: 350,
             },
             required: {
-                upgrades: ["farAbandonedExploration", "engineering"],
+                upgrades: ["farExploration", "engineering"],
                 seen: ["ancientPart"],
             },
             effect: {
@@ -1137,7 +1137,7 @@ SharkGame.Upgrades = {
             },
         },
         /* Equivalent of farExploration.. named differently for unlocks or smth I think? */
-        farHavenExploration: {
+        farExploration: {
             name: "Far Exploration",
             desc: "Explore the vast reaches beyond the home ocean, and look for that portal that keeps popping up in dolphin texts.",
             researchedMessage: "Crystal-rich deposits were found, as well as what appears to be the portal of dolphin legend.",
@@ -1281,7 +1281,7 @@ SharkGame.Upgrades = {
                 science: 2000000000,
             },
             required: {
-                upgrades: ["whaleSong", "retroactiveRecordkeeping", "farHavenExploration"],
+                upgrades: ["whaleSong", "retroactiveRecordkeeping", "farExploration"],
             },
             effect: {
                 incomeMultiplier: {
@@ -2753,7 +2753,7 @@ SharkGame.Upgrades = {
         highEnergyFusion: {
             name: "High-Energy Fusion",
             desc: "The lobsters are excited to show us something, but they need a lot of help first.",
-            researchedMessage: "The process is so bright, it could melt out our eyes out - but it's so much better than the old fusion.",
+            researchedMessage: "The process is so bright, it could melt out our eyes - but it's so much better than the old fusion.",
             effectDesc: "Improved clam-crystal fusion ratio from 5-1 to 1-5. Recycler reshmycler, we have FUSION!!",
             cost: {
                 science: 1e9,
@@ -3325,7 +3325,7 @@ SharkGame.Upgrades = {
         firstDraft: {
             name: "First Draft",
             desc: "We need to convince the king not to kill us. Diplomacy seems like the only good option.",
-            researchedMessage: `We sent a letter with a ray. The ray came back in a panic, holding another note. The king is not impressed by our "vapid flattery."`,
+            researchedMessage: "We sent a letter with a ray. The ray came back in a panic, holding another note. The king is not impressed by our \"vapid flattery.\"",
             effectDesc:
                 "Tried and failed to resolve this issue via diplomacy. Our messenger has been inconsolable. They won't tell us what happened. This has stressed out the rays and shovelers, who are both working twice as hard.",
             cost: {

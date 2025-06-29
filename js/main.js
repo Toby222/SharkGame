@@ -98,6 +98,12 @@ $.extend(SharkGame, {
         "Mystery of Shark City",
         "Seas of Loathing",
         "Raiders of the Lost Shark",
+        "Dead Sharks Tell No Tales",
+        "At Sharks End",
+        "On Sharker Tides",
+        "Curse of the Shark",
+        "Have I Played These Sharks Before?",
+        "Hollow Shark: Shark Song",
     ],
     GAME_NAME: null,
     ACTUAL_GAME_NAME: "Shark Game",
@@ -904,6 +910,9 @@ SharkGame.Button = {
 };
 
 SharkGame.Changelog = {
+    "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20250629a": [
+        "Added a lot of missing sprites courtesy of <a href='https://github.com/glowkate'>Glowkate</a> and <a href='https://www.youtube.com/@biggestbrian'>BiggestBrian</a>",
+    ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20250127a": [
         "Added a new home message sprite courtesy of <a href='https://github.com/glowkate'>Glowkate</a>.",
     ],

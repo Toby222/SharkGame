@@ -1,3 +1,5 @@
+@use "sass:color";
+
 /*------------------------------------------------------
   MIXINS
 -------------------------------------------------------*/
@@ -72,10 +74,10 @@ $color-error: #e03030;
 $color-error-bg: #800000;
 
 $color-discovery: #ace3d1;
-$color-discovery-dark: darken(#ace3d1, 20%);
-$color-discovery-dark2: darken(#ace3d1, 35%);
-$color-discovery-dark3: darken(#ace3d1, 50%);
-$color-discovery-dark4: darken(#ace3d1, 65%);
+$color-discovery-dark: color.adjust(#ace3d1, $lightness: -20%, $space: hsl);
+$color-discovery-dark2: color.adjust(#ace3d1, $lightness: -35%, $space: hsl);
+$color-discovery-dark3: color.adjust(#ace3d1, $lightness: -50%, $space: hsl);
+$color-discovery-dark4: color.adjust(#ace3d1, $lightness: -65%, $space: hsl);
 
 $color-text: white;
 
@@ -193,7 +195,7 @@ $sidebar-width: 25%;
     --color-med: #{$color-med};
     --color-dark: #{$color-dark};
     --color-darker: #{$color-darker};
-    --color-title: #{rgba(red($color-med), green($color-med), blue($color-med), 0.2)};
+    --color-title: #{rgba(color.channel($color-med, 'red', $space: rgb), color.channel($color-med, 'green', $space: rgb), color.channel($color-med, 'blue', $space: rgb), 0.2)};
 
     :not(.no-theme) {
         &.abandoned {
@@ -202,7 +204,7 @@ $sidebar-width: 25%;
             --color-med: #{$color-med-abandoned};
             --color-dark: #{$color-dark-abandoned};
             --color-darker: #{$color-darker-abandoned};
-            --color-title: #{rgba(red($color-med-abandoned), green($color-med-abandoned), blue($color-med-abandoned), 0.2)};
+            --color-title: #{rgba(color.channel($color-med-abandoned, 'red', $space: rgb), color.channel($color-med-abandoned, 'green', $space: rgb), color.channel($color-med-abandoned, 'blue', $space: rgb), 0.2)};
         }
         &.chaotic {
             --color-lighter: #{$color-lighter-chaotic};
@@ -210,7 +212,7 @@ $sidebar-width: 25%;
             --color-med: #{$color-med-chaotic};
             --color-dark: #{$color-dark-chaotic};
             --color-darker: #{$color-darker-chaotic};
-            --color-title: #{rgba(red($color-med-chaotic), green($color-med-chaotic), blue($color-med-chaotic), 0.2)};
+            --color-title: #{rgba(color.channel($color-med-chaotic, 'red', $space: rgb), color.channel($color-med-chaotic, 'green', $space: rgb), color.channel($color-med-chaotic, 'blue', $space: rgb), 0.2)};
         }
         &.frigid {
             --color-lighter: #{$color-lighter-frigid};
@@ -218,7 +220,7 @@ $sidebar-width: 25%;
             --color-med: #{$color-med-frigid};
             --color-dark: #{$color-dark-frigid};
             --color-darker: #{$color-darker-frigid};
-            --color-title: #{rgba(red($color-med-frigid), green($color-med-frigid), blue($color-med-frigid), 0.2)};
+            --color-title: #{rgba(color.channel($color-med-frigid, 'red', $space: rgb), color.channel($color-med-frigid, 'green', $space: rgb), color.channel($color-med-frigid, 'blue', $space: rgb), 0.2)};
         }
         &.haven {
             --color-lighter: #{$color-lighter-haven};
@@ -226,7 +228,7 @@ $sidebar-width: 25%;
             --color-med: #{$color-med-haven};
             --color-dark: #{$color-dark-haven};
             --color-darker: #{$color-darker-haven};
-            --color-title: #{rgba(red($color-med-haven), green($color-med-haven), blue($color-med-haven), 0.2)};
+            --color-title: #{rgba(color.channel($color-med-haven, 'red', $space: rgb), color.channel($color-med-haven, 'green', $space: rgb), color.channel($color-med-haven, 'blue', $space: rgb), 0.2)};
         }
         &.shrouded {
             --color-lighter: #{$color-lighter-shrouded};
@@ -234,7 +236,7 @@ $sidebar-width: 25%;
             --color-med: #{$color-med-shrouded};
             --color-dark: #{$color-dark-shrouded};
             --color-darker: #{$color-darker-shrouded};
-            --color-title: #{rgba(red($color-med-shrouded), green($color-med-shrouded), blue($color-med-shrouded), 0.2)};
+            --color-title: #{rgba(color.channel($color-med-shrouded, 'red', $space: rgb), color.channel($color-med-shrouded, 'green', $space: rgb), color.channel($color-med-shrouded, 'blue', $space: rgb), 0.2)};
         }
         &.tempestuous {
             --color-lighter: #{$color-lighter-tempestuous};
@@ -242,7 +244,7 @@ $sidebar-width: 25%;
             --color-med: #{$color-med-tempestuous};
             --color-dark: #{$color-dark-tempestuous};
             --color-darker: #{$color-darker-tempestuous};
-            --color-title: #{rgba(red($color-med-tempestuous), green($color-med-tempestuous), blue($color-med-tempestuous), 0.2)};
+            --color-title: #{rgba(color.channel($color-med-tempestuous, 'red', $space: rgb), color.channel($color-med-tempestuous, 'green', $space: rgb), color.channel($color-med-tempestuous, 'blue', $space: rgb), 0.2)};
         }
         &.volcanic {
             --color-lighter: #{$color-lighter-volcanic};
@@ -250,7 +252,7 @@ $sidebar-width: 25%;
             --color-med: #{$color-med-volcanic};
             --color-dark: #{$color-dark-volcanic};
             --color-darker: #{$color-darker-volcanic};
-            --color-title: #{rgba(red($color-med-volcanic), green($color-med-volcanic), blue($color-med-volcanic), 0.2)};
+            --color-title: #{rgba(color.channel($color-med-volcanic, 'red', $space: rgb), color.channel($color-med-volcanic, 'green', $space: rgb), color.channel($color-med-volcanic, 'blue', $space: rgb), 0.2)};
         }
     }
 }
@@ -644,12 +646,12 @@ pre {
                     text-shadow: 0 0 0.8em $color-discovery-dark;
                 }
                 &:hover {
-                    color: lighten($color-discovery, 10%);
-                    text-shadow: 0 0 0.8em lighten($color-discovery-dark, 10%);
+                    color: color.adjust($color-discovery, $lightness: 10%, $space: hsl);
+                    text-shadow: 0 0 0.8em color.adjust($color-discovery-dark, $lightness: 10%, $space: hsl);
                 }
                 &:active {
-                    color: lighten($color-discovery, 10%);
-                    text-shadow: 0 0 0.8em lighten($color-discovery-dark, 10%);
+                    color: color.adjust($color-discovery, $lightness: 10%, $space: hsl);
+                    text-shadow: 0 0 0.8em color.adjust($color-discovery-dark, $lightness: 10%, $space: hsl);
                 }
             }
         }
@@ -928,12 +930,12 @@ button.newlyDiscovered {
                 text-shadow: 0 0 0.8em $color-discovery-dark;
             }
             &:hover {
-                color: lighten($color-discovery, 10%);
-                text-shadow: 0 0 0.8em lighten($color-discovery-dark, 10%);
+                color: color.adjust($color-discovery, $lightness: 10%, $space: hsl);
+                text-shadow: 0 0 0.8em color.adjust($color-discovery-dark, $lightness: 10%, $space: hsl);
             }
             &:active {
-                color: lighten($color-discovery, 10%);
-                text-shadow: 0 0 0.8em lighten($color-discovery-dark, 10%);
+                color: color.adjust($color-discovery, $lightness: 10%, $space: hsl);
+                text-shadow: 0 0 0.8em color.adjust($color-discovery-dark, $lightness: 10%, $space: hsl);
             }
         }
     }
@@ -1063,7 +1065,7 @@ button.newlyDiscovered {
         margin: auto;
         width: 25%;
         background: $color-danger-darker url("../img/recyclerbg.png") center;
-        color: lighten($color-danger-lighter, 30%);
+        color: color.adjust($color-danger-lighter, $lightness: 30%, $space: hsl);
         border: 0.2em solid $color-danger-lighter;
         @include box-shadow-inset(0, 0, 15px, 15px, $color-danger-darker);
         padding: 0.5em;
@@ -1258,7 +1260,7 @@ button {
 
 #tabSceneImageEssence {
     @extend #tabSceneImage;
-    @include box-shadow(0, 0, 5px, 5px, darken($color-essence, 30%));
+    @include box-shadow(0, 0, 5px, 5px, color.adjust($color-essence, $lightness: -30%, $space: hsl));
 }
 
 #sceneLeft,
@@ -1416,7 +1418,7 @@ button {
 
     h1 {
         text-align: center;
-        color: lighten($color-discovery, 10%);
+        color: color.adjust($color-discovery, $lightness: 10%, $space: hsl);
     }
 
     h2 {
@@ -1435,7 +1437,7 @@ button {
     }
 
     .medDesc {
-        color: lighten($color-discovery-dark2, 30%);
+        color: color.adjust($color-discovery-dark2, $lightness: 30%, $space: hsl);
     }
 
     .smallDesc {
@@ -1465,7 +1467,7 @@ button {
         @include box-shadow-inset(0px, 3px, 7px, 7px, $color-discovery-dark3);
 
         .medDesc {
-            color: darken($color-discovery, 10%);
+            color: color.adjust($color-discovery, $lightness: -10%, $space: hsl);
         }
 
         div {
@@ -1476,11 +1478,11 @@ button {
 
     &.disabled {
         background-color: $color-discovery-dark4;
-        color: lighten($color-discovery-dark3, 10%);
-        border-color: lighten($color-discovery-dark3, 10%);
+        color: color.adjust($color-discovery-dark3, $lightness: 10%, $space: hsl);
+        border-color: color.adjust($color-discovery-dark3, $lightness: 10%, $space: hsl);
 
         .medDesc {
-            color: darken($color-discovery-dark, 15%);
+            color: color.adjust($color-discovery-dark, $lightness: -15%, $space: hsl);
         }
 
         div {
@@ -1490,7 +1492,7 @@ button {
     }
 
     &.respecMode {
-        box-shadow: 0 0 6px lighten($color-discovery, 15%) inset;
+        box-shadow: 0 0 6px color.adjust($color-discovery, $lightness: 15%, $space: hsl) inset;
         background-color: $color-discovery-dark2;
     }
 }
@@ -1527,13 +1529,13 @@ button.gateway {
 }
 
 .gateway .essenceCount {
-    color: darken($color-essence, 20%);
-    text-shadow: 0 0 0.6em darken($color-essence, 20%);
+    color: color.adjust($color-essence, $lightness: -20%, $space: hsl);
+    text-shadow: 0 0 0.6em color.adjust($color-essence, $lightness: -20%, $space: hsl);
 }
 
 .gateway .essenceCountBrighter {
-    color: lighten($color-essence, 5%);
-    text-shadow: 0 0 0.6em lighten($color-essence, 5%);
+    color: color.adjust($color-essence, $lightness: 5%, $space: hsl);
+    text-shadow: 0 0 0.6em color.adjust($color-essence, $lightness: 5%, $space: hsl);
 }
 
 .gateway .numenCount {
@@ -1655,9 +1657,9 @@ button.planetButton {
 
     &:hover {
         text-shadow:
-            0 0 0.3em lighten($color-discovery, 5%),
-            0 0 0.6em lighten($color-discovery, 10%),
-            0 0 0.9em lighten($color-discovery, 15%);
+            0 0 0.3em color.adjust($color-discovery, $lightness: 5%, $space: hsl),
+            0 0 0.6em color.adjust($color-discovery, $lightness: 10%, $space: hsl),
+            0 0 0.9em color.adjust($color-discovery, $lightness: 15%, $space: hsl);
         @include clear-box-shadow();
 
         div {
@@ -1719,11 +1721,11 @@ button.planetButton {
 
 .forAspectTree {
     width: 300px;
-    background-color: darken($color-discovery-dark3, 10%);
+    background-color: color.adjust($color-discovery-dark3, $lightness: -10%, $space: hsl);
     border-color: $color-discovery-dark4;
     &Unpurchased {
         background-color: $color-discovery-dark4;
-        border-color: darken($color-discovery-dark4, 5%);
+        border-color: color.adjust($color-discovery-dark4, $lightness: -5%, $space: hsl);
     }
     &Affordable {
         background-color: $color-discovery-dark3;
@@ -1856,32 +1858,32 @@ button.planetButton {
         background: $color-discovery-dark3;
 
         &.power1 {
-            box-shadow: 0 0 6px lighten($color-discovery, 5%);
+            box-shadow: 0 0 6px color.adjust($color-discovery, $lightness: 5%, $space: hsl);
             border-color: $color-discovery-dark2;
-            background: lighten($color-discovery-dark3, 5%);
+            background: color.adjust($color-discovery-dark3, $lightness: 5%, $space: hsl);
         }
 
         &.power2 {
-            box-shadow: 0 0 6px lighten($color-discovery, 5%);
+            box-shadow: 0 0 6px color.adjust($color-discovery, $lightness: 5%, $space: hsl);
             border-color: $color-discovery-dark2;
-            background: lighten($color-discovery-dark3, 10%);
+            background: color.adjust($color-discovery-dark3, $lightness: 10%, $space: hsl);
         }
 
         &.power3 {
-            box-shadow: 0 0 7px lighten($color-discovery, 10%);
+            box-shadow: 0 0 7px color.adjust($color-discovery, $lightness: 10%, $space: hsl);
             border-color: $color-discovery-dark;
             background: $color-discovery-dark2;
         }
 
         &.power4 {
-            box-shadow: 0 0 8px lighten($color-discovery, 15%);
+            box-shadow: 0 0 8px color.adjust($color-discovery, $lightness: 15%, $space: hsl);
             border-color: $color-discovery;
-            background: lighten($color-discovery-dark2, 5%);
+            background: color.adjust($color-discovery-dark2, $lightness: 5%, $space: hsl);
         }
 
         &.power5 {
-            box-shadow: 0 0 9px lighten($color-discovery, 20%);
-            border-color: lighten($color-discovery, 15%);
+            box-shadow: 0 0 9px color.adjust($color-discovery, $lightness: 20%, $space: hsl);
+            border-color: color.adjust($color-discovery, $lightness: 15%, $space: hsl);
             background: $color-discovery-dark;
         }
     }
@@ -1946,9 +1948,9 @@ button.planetButton {
     background: $color-discovery-dark4;
 
     &.on {
-        box-shadow: 0 0 6px lighten($color-discovery, 5%);
+        box-shadow: 0 0 6px color.adjust($color-discovery, $lightness: 5%, $space: hsl);
         border-color: $color-discovery-dark2;
-        background: lighten($color-discovery-dark3, 10%);
+        background: color.adjust($color-discovery-dark3, $lightness: 10%, $space: hsl);
     }
 }
 
@@ -1958,8 +1960,8 @@ button.planetButton {
     border-color: $color-discovery-dark3;
 
     &.power1 {
-        background: lighten($color-discovery-dark4, 5%);
-        border-color: lighten($color-discovery-dark3, 5%);
+        background: color.adjust($color-discovery-dark4, $lightness: 5%, $space: hsl);
+        border-color: color.adjust($color-discovery-dark3, $lightness: 5%, $space: hsl);
         box-shadow: 0 0 6px $color-discovery-dark2;
     }
 
@@ -1983,7 +1985,7 @@ button.planetButton {
 
     &.power5 {
         background: $color-discovery;
-        border-color: lighten($color-discovery, 15%);
+        border-color: color.adjust($color-discovery, $lightness: 15%, $space: hsl);
         box-shadow: 0 0 15px $color-discovery;
     }
 }

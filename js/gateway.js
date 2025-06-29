@@ -520,7 +520,7 @@ SharkGame.Gateway = {
                     $("<p>").html(
                         "You appear to have experienced a major bug that causes negative world-times.<br> The source of this bug is unknown.<br>" +
                             "Please send a copy of your save to us (the <code>sharkGameSavePreGateway</code> entry in your Local Storage), either in the #bugs-and-issues channel of our discord or via email to <pre>timebug@shark.tobot.dev</pre>.<br> Enjoy the free essence, I guess?<br>" +
-                            `(To remove excess essence, type the following into your console <code>res.changeResource("essence", -1000)</code>, replacing 1000 with the number of excess essence you have; sorry for the inconvenience)<br>` +
+                            "(To remove excess essence, type the following into your console <code>res.changeResource(\"essence\", -1000)</code>, replacing 1000 with the number of excess essence you have; sorry for the inconvenience)<br>" +
                             `actual start time: ${SharkGame.timestampRunStart}   true pause time: ${SharkGame.persistentFlags.totalPausedTime}   current paused time: ${SharkGame.persistentFlags.currentPausedTime}<br>` +
                             `minute hand: ${SharkGame.flags.minuteHandTimer}    hour hand: ${SharkGame.flags.hourHandLeft}    bonus: ${SharkGame.flags.bonusTime}<br>` +
                             `calculated run time: ${gateway.getTimeInLastWorld(true)}   actual likely time: ${
@@ -757,10 +757,10 @@ SharkGame.Gateway = {
                         .html(
                             sharktext.boldString(`gamespeed is ${SharkGame.persistentFlags.dialSetting}× slower<br>
                     patience rewards ×${
-    SharkGame.persistentFlags.dialSetting > 1
-        ? Math.round((2 * Math.log(SharkGame.persistentFlags.dialSetting)) / Math.log(4))
-        : 1
-}`),
+                        SharkGame.persistentFlags.dialSetting > 1
+                            ? Math.round((2 * Math.log(SharkGame.persistentFlags.dialSetting)) / Math.log(4))
+                            : 1
+                    }`),
                         );
                 } else {
                     dialLabel = $("<p>")
@@ -1180,8 +1180,8 @@ SharkGame.Gateway = {
                 $("#dial-label").html(
                     sharktext.boldString(`gamespeed is ${SharkGame.persistentFlags.dialSetting}× slower<br>
                 Patience rewards ×${
-    SharkGame.persistentFlags.dialSetting > 1 ? Math.round((2 * Math.log(SharkGame.persistentFlags.dialSetting)) / Math.log(4)) : 1
-}`),
+                    SharkGame.persistentFlags.dialSetting > 1 ? Math.round((2 * Math.log(SharkGame.persistentFlags.dialSetting)) / Math.log(4)) : 1
+                }`),
                 );
             } else {
                 $("#dial-label").html("Adjust The Dial to modify Patience rewards.<br>...or don't. If you don't want to.");

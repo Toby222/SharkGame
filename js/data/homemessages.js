@@ -148,7 +148,6 @@ SharkGame.HomeMessages = {
                 name: "haven-dolphin-observes",
                 unlock: { totalResource: { coral: 75 } },
                 message: "A... thing observes us from afar. What the heck is that??",
-                scales: true,
             },
             {
                 name: "haven-dolphins",
@@ -161,7 +160,6 @@ SharkGame.HomeMessages = {
                 unlock: { totalResource: { dolphin: 20 } },
                 message:
                     "The dolphin pods that work with us speak of a star-spanning empire of their kind. They ask where our empire is. And they smile.",
-                scales: true,
             },
             {
                 name: "haven-papyrus",
@@ -327,7 +325,7 @@ SharkGame.HomeMessages = {
             {
                 name: "volcanic-hope",
                 unlock: { upgrade: ["apologeticAmnesty"] },
-                message: `"Perhaps not all sharks are so vile," says the king of shrimps. "Perhaps, you will be different."`,
+                message: "\"Perhaps not all sharks are so vile,\" says the king of shrimps. \"Perhaps, you will be different.\"",
             },
         ],
 
@@ -471,7 +469,6 @@ SharkGame.HomeMessages = {
                 name: "frigid-distant-village",
                 unlock: { totalResource: { science: 8 } },
                 message: "While scanning the horizon, you notice a gap in the ice. You peer through it, and spot something else.",
-                scales: true,
             },
             {
                 name: "frigid-village",
@@ -495,13 +492,11 @@ SharkGame.HomeMessages = {
                 unlock: { totalResource: { squid: 125 } },
                 message:
                     "In the center of the settlement lies a vibrating...thing, and a strange gate. The thing buzzes loudly, casting enormous energy across the water.",
-                scales: true,
             },
             {
                 name: "frigid-squid",
                 unlock: { totalResource: { squid: 250 } },
                 message: "The squid speak of an ancient visitor who saved their world. They ask if you too, have seen this visitor.",
-                scales: true,
             },
             {
                 name: "frigid-suspicion",

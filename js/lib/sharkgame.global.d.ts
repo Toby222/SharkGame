@@ -368,7 +368,6 @@ declare global {
             {
                 name: string;
                 message: string;
-                scales?: boolean;
                 unlock?: Partial<{
                     resource: Record<ResourceName, number>;
                     totalResource: Record<ResourceName, number>;

@@ -1734,7 +1734,7 @@ SharkGame.HomeActions = {
                 resource: {
                     octopus: 1,
                 },
-                upgrade: ["farAbandonedExploration"],
+                upgrade: ["farExploration"],
             },
             outcomes: [
                 "An octopus is a scavenger now.",

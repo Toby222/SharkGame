@@ -11,8 +11,8 @@
 ~~"Battery"        Buried deep within the complex lies a massive, dimly glowing battery. The squid say replacing it will get the machine running at full power.,~~ (courtesy of Glowkate)
 "Heat Returns"        A wave of heat washes over you, and the dingy complex comes back to life. The gate turns on.
 
-~~### HAVEN
-"Done"        The great song booms across the open water, carrying itself to all corners of the ocean. The gate reacts.~~
+### ~~HAVEN~~
+~~"Done"        The great song booms across the open water, carrying itself to all corners of the ocean. The gate reacts.~~
 
 ### MARINE
 "Sentience"        All of us have boards now. Children are born half-machine. The lobsters call it effective.

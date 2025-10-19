@@ -120,7 +120,7 @@ Billfish Biology        unlock billfish pairs,~~
 ~~Heavy Sifting        seperate light and heavier sand to make all uses of sand cheaper,~~ (courtesy of Glowkate)
 Sense of Direction        actually navigate the storm properly,
 ~~Laser Lenses        use glass bottles to focus lasers to make laser rays cheaper,~~
-Crystal Clippers        tool for stormgoers,
+~~Crystal Clippers        tool for stormgoers,~~
 Routing        use charts we have to make efficient routes,
 Heat Harnesses        move heat using special crystal harnesses,
 Superclippers        BIG CLIPPER,

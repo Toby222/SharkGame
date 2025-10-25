@@ -37,7 +37,7 @@
 ~~"Shrimp Threat"        You are approached by an army of shrimp. They relay a very clear message to you: cooperate, or be destroyed. You decide to stop harvesting sponges.,~~
 "Shrimp Communication"         The homes (sponges) left behind by shrimp joining the frenzy may now be taken for ourselves.,
 ~~"Monarchy"        The shrimps follow a caste system with the king of shrimps on top. They ask who your king is.,~~
-"Smithing"        Porite: glassy hunks sealed on the outside but porous on the inside: it's lightweight, yet it stays strong.,
+~~"Smithing"        Porite: glassy hunks sealed on the outside but porous on the inside: it's lightweight, yet it stays strong.,~~
 "Acolytes"        The acolytes gather. They pray for their king. They pray for their world. They pray for you.,
 "Beauty"        The king is speechless. As he views the great industrial city, his subjects gather and cheer, celebrating his arrival.,
 ~~"Curious Crabs"        Sort of just off to the side, a group of curious crabs congregate and discuss stuff that we don't understand.,~~

@@ -24,7 +24,7 @@
 "Truth"        A team of eels get your attention. They have something from the caverns: it's a book. You can't read a thing inside it, but...that looks like arcana...and that looks like...a warning.
 
 ### Tempestuous
-"Billfish"        "The so-called 'billfish' apologize for their behavior. They say no shark has entered this cave in a long, long time.",
+~~"Billfish"        "The so-called 'billfish' apologize for their behavior. They say no shark has entered this cave in a long, long time.",~~
 "Sandbags"        "Stormgoers tredge slowly across the seabed. They dig through the sand extracting buried seagrass, but are too heavy to bring back crystals.",
 "Stories"        "The billfish tell stories of life before the storm and an ancient visitor who brought them prosperity. They ask if you can bring them prosperity, too.",
 "Expeditions"        "The billfish line up in droves to volunteer for expeditions, danger or otherwise. They don't need convincing, just equipment.",

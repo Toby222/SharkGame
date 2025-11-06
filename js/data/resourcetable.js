@@ -887,9 +887,9 @@ SharkGame.ResourceTable = {
     },
 
     explorer: {
-        name: "chimaera explorers",
-        singleName: "chimaera explorer",
-        desc: "Treasure lies in the deep.",
+        name: "quimeras exploradoras",
+        singleName: "quimera exploradora",
+        desc: "Tesouro se esconde na profundezas.",
         color: "#FFF2D6",
         income: {
             arcana: 0.004,
@@ -898,9 +898,9 @@ SharkGame.ResourceTable = {
     },
 
     sifter: {
-        name: "eel sifters",
-        singleName: "eel sifter",
-        desc: "The sand hides many secrets.",
+        name: "enguias garimpeiras",
+        singleName: "enguia garimpeira",
+        desc: "A areia esconde segredos.",
         color: "#A3915A",
         income: {
             sand: 100,
@@ -912,15 +912,16 @@ SharkGame.ResourceTable = {
     // ABANDONED
 
     octopus: {
-        name: "octopuses", // the word 'octopus' in english is taken from latin
+        name: "polvos", // the word 'octopus' in english is taken from latin
         // which in turn took it from greek
         // when it was taken from greek and made into latin it kept the original plural
         // now the word is taken from latin and maybe we should take the original plural but
         // look basically the point is this is a long and storied word
         // and the english plural system should apply because we're talking about octopus, not ὀκτώπους, so just
         // why are you reading this
-        singleName: "octopus",
-        desc: "Lifeforms of pure reason.",
+        //in portuguese we just put an "s" in the end
+        singleName: "polvo",
+        desc: "Formas de vida puramente racionais.",
         color: "#965F37",
         income: {
             clam: 2,
@@ -930,9 +931,9 @@ SharkGame.ResourceTable = {
     },
 
     investigator: {
-        name: "octopus investigators",
-        singleName: "octopus investigator",
-        desc: "Curiousity is the seed of progress.",
+        name: "polvos investigadores",
+        singleName: "polvo investigador",
+        desc: "Todas as descobertas começam como uma pergunta.",
         color: "#4c5cad",
         income: {
             science: 2,
@@ -941,9 +942,9 @@ SharkGame.ResourceTable = {
     },
 
     scavenger: {
-        name: "octopus scavengers",
-        singleName: "octopus scavenger",
-        desc: "Soon, the city will hold no secrets.",
+        name: "polvos catadores",
+        singleName: "polvo catador",
+        desc: "Daqui a pouco, não haverá mais segredos nessa cidade.",
         color: "#B43B02",
         income: {
             ancientPart: 0.01,
@@ -952,9 +953,9 @@ SharkGame.ResourceTable = {
     },
 
     collector: {
-        name: "collector crabs",
-        singleName: "collector crab",
-        desc: "Harvesters of a dying world.",
+        name: "caranguejos-esponja",
+        singleName: "caranguejo-esponja",
+        desc: "Reunindo os pedaços de um mundo morto.",
         color: "#ff7847",
         income: {
             sponge: 0.5,
@@ -963,9 +964,9 @@ SharkGame.ResourceTable = {
     },
 
     clamCollector: {
-        name: "clam collectors",
-        singleName: "clam collector",
-        desc: "Directive: amass resources.",
+        name: "coletores mexílicos",
+        singleName: "coletor mexílico",
+        desc: "Ordem do dia: Acumular recursos.",
         color: "#727887",
         income: {
             clam: 300,
@@ -977,7 +978,7 @@ SharkGame.ResourceTable = {
     sprongeSmelter: {
         name: "spronge smelters",
         singleName: "spronge smelter",
-        desc: "Directive: biological enhancement.",
+        desc: "Ordem do dia: Melhoramento biológico.",
         color: "#76614C",
         income: {
             spronge: 45,
@@ -993,9 +994,9 @@ SharkGame.ResourceTable = {
     },
 
     eggBrooder: {
-        name: "egg brooders",
-        singleName: "egg brooder",
-        desc: "Directive: repopulation.",
+        name: "chocadeiras",
+        singleName: "chocadeira",
+        desc: "Ordem do dia: Repopular.",
         color: "#836E5F",
         income: {
             octopus: 1,
@@ -1005,17 +1006,17 @@ SharkGame.ResourceTable = {
     },
 
     spronge: {
-        name: "spronge",
-        singleName: "spronge",
-        desc: "The mutated.",
+        name: "espronja",
+        singleName: "espronja",
+        desc: "Mudado.",
         color: "#A97D53",
         value: 70,
     },
 
     tar: {
-        name: "tar",
-        singleName: "tar",
-        desc: "Our greatest mistake.",
+        name: "óleo",
+        singleName: "óleo",
+        desc: "Nosso maior erro.",
         color: "#4B4B4B",
         income: {
             shark: -0.001,
@@ -1061,17 +1062,17 @@ SharkGame.ResourceTable = {
     },
 
     ancientPart: {
-        name: "ancient parts",
-        singleName: "ancient part",
-        desc: "The mistakes of our predecessors.",
+        name: "partes antigas",
+        singleName: "parte antiga",
+        desc: "O erro de nosso pais.",
         color: "#8a6853",
         value: 500,
     },
 
     filter: {
-        name: "sponge filters",
-        singleName: "sponge filter",
-        desc: "The solution to our mistakes.",
+        name: "filtros de esponja",
+        singleName: "filtro de esponja",
+        desc: "A esperança para consertar nossos erros.",
         color: "#FFC89C",
         income: {
             tar: -0.01,
@@ -1083,14 +1084,15 @@ SharkGame.ResourceTable = {
     // FRIGID
 
     squid: {
-        name: "squid",
-        singleName: "squid",
+        name: "lulas",
+        singleName: "lula",
         // when referring to a group of squid, they are squid.
         // when referring to various kinds of squids, they are squids.
         // therefore references to the different professions lumped in with other squids will use 'squids'
         // and other circumstances referring to a single kind, like this one, will use 'squid'
         // why are you reading this
-        desc: "Indebted, and forever loyal.",
+        //in portuguese we just put an "s"   
+        desc: "Endividados conosco. Para sempre leais.",
         color: "#FA9272",
         income: {
             fish: 4,
@@ -1100,9 +1102,9 @@ SharkGame.ResourceTable = {
     },
 
     urchin: {
-        name: "sea urchins",
-        singleName: "sea urchin",
-        desc: "Simple-minded. Others will do thinking for them.",
+        name: "ouriços",
+        singleName: "ouriço",
+        desc: "Simplórios e despreucupados. Outros pensam por eles.",
         color: "#B98DE0",
         income: {
             sand: 0.1,
@@ -1112,9 +1114,9 @@ SharkGame.ResourceTable = {
     },
 
     spawner: {
-        name: "urchin spawners",
-        singleName: "urchin spawner",
-        desc: "A hope for offspring, with no coordinated effort.",
+        name: "ouriços férteis",
+        singleName: "ouriço fértil",
+        desc: "Com sorte formam prole, mas sem esforço coordenado.",
         color: "#B056FF",
         income: {
             urchin: 0.05,
@@ -1123,9 +1125,9 @@ SharkGame.ResourceTable = {
     },
 
     collective: {
-        name: "squid collectives",
-        singleName: "squid collective",
-        desc: "Group interaction leads to better selection.",
+        name: "coletivos de lulas",
+        singleName: "coletivo de lulas",
+        desc: "Interação em grupo sempre leva a algo interessante.",
         color: "#FF4E28",
         income: {
             squid: 0.05,
@@ -1134,9 +1136,9 @@ SharkGame.ResourceTable = {
     },
 
     extractionTeam: {
-        name: "extraction teams",
-        singleName: "extraction team",
-        desc: "We work better together.",
+        name: "times de extração",
+        singleName: "time de extração",
+        desc: "Nós trabalhamos melhor como equipe.",
         color: "#ff7847", // needs new color
         income: {
             crystal: 1,
@@ -1145,9 +1147,9 @@ SharkGame.ResourceTable = {
     },
 
     heater: {
-        name: "heaters",
-        singleName: "heater",
-        desc: "Bringer of life to the frozen wasteland.",
+        name: "aquecedores",
+        singleName: "aquecedor",
+        desc: "Trazendo a vida de volta a este inferno gélido.",
         color: "#D13F32",
         income: {
             kelp: -500,
@@ -1157,9 +1159,9 @@ SharkGame.ResourceTable = {
     },
 
     ice: {
-        name: "ice",
-        singleName: "ice",
-        desc: "Impending doom. Slows down some of the frenzy.",
+        name: "gelo",
+        singleName: "gelo",
+        desc: "Nossa perdição. Dificulta a movimentação do nosso cardume.",
         color: "#E4F1FB",
         value: -100,
         forceIncome: true,
@@ -1396,19 +1398,28 @@ SharkGame.ResourceSpecialProperties = {
 SharkGame.ResourceCategories = {
     harmful: {
         name: "Harmful",
-        disposeMessage: ["Oh you'd like that, wouldn't you."],
+        disposeMessage: [
+            "Boa tentativa, campeão.",
+            "Tente outra vez.",
+            "Hmmm. Não.",
+            "Esse não é um problema que você pode apenas 'jogar fora'.",
+            "Talvez se você apertar com mais força."
+            "Isso não funciona dessa maneira",
+            ],
         resources: ["tar", "ice"],
     },
     scientific: {
         name: "Science",
         disposeMessage: [
-            "Thousands of sharkhours of research down the drain.",
-            "What possible reason are you doing this for?!",
+            "Cientistas gastaram tanto tempo e esforço para depois ser TUDO JOGADO FORA COMO LIXO. AAAAAAA QUE RAIVA!",
+            "O que faria isso parecer remotamente um boa ideia?",
+            "Tubarões começaram a tomar cloroquina",
+            "Caranguejos passaram a acreditar em apenas dois gêneros",
             "The shark academies will hear of this anti-intellectual act of barbarism!",
             "The science advisors frantically murmur among themselves while disposing of the science.",
             "We're getting rid of the science now! No more learning! No more progression! Just mindlessly clicking the exact same buttons we've been clicking for hours!!",
-            "Are you afraid of PROGRESS?",
-            "Ignorance is bliss.",
+            "Que foi? O PROGRESSO de assustou?",
+            "Aprender é difícil. Mais fácil ser burro.",
         ],
         resources: [
             "science",

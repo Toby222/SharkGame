@@ -154,7 +154,7 @@ SharkGame.ResourceTable = {
     seaApple: {
         name: "holotúrias",
         singleName: "holotúria",
-        desc: "Filtradores coloridos.",
+        desc: "Filtradores gosmentos.",
         color: "#F0C2C2",
         value: 3,
     },
@@ -209,9 +209,9 @@ SharkGame.ResourceTable = {
     },
 
     kelp: {
-        name: "kelp",
-        singleName: "kelp",
-        desc: "A home for the stranger.",
+        name: "algas",
+        singleName: "alga",
+        desc: "Uma casa para um estranho.",
         color: "#9CC232",
         income: {
             seaApple: 0.001,
@@ -220,25 +220,25 @@ SharkGame.ResourceTable = {
     },
 
     coral: {
-        name: "coral",
+        name: "corais",
         singleName: "coral",
-        desc: "Colorful carnivores.",
+        desc: "Carnívoros coloridos.",
         color: "#CA354F",
         value: 3,
     },
 
     algae: {
-        name: "algae",
-        singleName: "algae",
-        desc: "Slimy sponge feeders.",
+        name: "microalgas",
+        singleName: "microalga",
+        desc: "Alimento de esponja.",
         color: "#549572",
         value: 0.4,
     },
 
     seagrass: {
-        name: "seagrass",
-        singleName: "seagrass",
-        desc: "Little plants.", // set this
+        name: "ervas marinhas",
+        singleName: "erva marinha",
+        desc: "Plantinhas oceânicas. Ótimas para um bom bolado.", // set this
         color: "#5AC766", // set this
         value: 10, // set this
     },
@@ -260,17 +260,17 @@ SharkGame.ResourceTable = {
     // PROCESSED
 
     sharkonium: {
-        name: "sharkonium",
-        singleName: "sharkonium",
-        desc: "Progress incarnate.",
+        name: "tubarônio",
+        singleName: "tubarônio",
+        desc: "Todo nosso progresso em forma física.",
         color: "#8D70CC",
         value: 70,
     },
 
     junk: {
-        name: "residue",
-        singleName: "residue",
-        desc: "Industrial potential.",
+        name: "nata",
+        singleName: "nata",
+        desc: "Gosma industrial. Matéria-prima mestre.",
         color: "#ABABAB",
         value: 1,
     },
@@ -278,9 +278,9 @@ SharkGame.ResourceTable = {
     // FRENZY
 
     shark: {
-        name: "sharks",
-        singleName: "shark",
-        desc: "Apex predators of the seas.",
+        name: "tubarões",
+        singleName: "tubarão",
+        desc: "Os predadores principais dos mares.",
         color: "#92C1E0",
         income: {
             fish: 1,
@@ -290,22 +290,22 @@ SharkGame.ResourceTable = {
     },
 
     ray: {
-        name: "rays",
-        singleName: "ray",
-        desc: "Kindred to the sharks.",
+        name: "arraias",
+        singleName: "arraia",
+        desc: "Primo dos tubarões.",
         color: "#797CFC",
         income: {
             fish: 0.2,
             sand: 1,
         },
-        jobs: ["laser", "maker", "scholar", "shoveler", "clamScavenger"],
+        jobs: ["laser", "maker", "scholar", "shoveler", "clamScavanger"],
         value: 1000,
     },
 
     crab: {
-        name: "crabs",
-        singleName: "crab",
-        desc: "Dutiful, loyal crustaceans.",
+        name: "caranguejos",
+        singleName: "caranguejo",
+        desc: "Crustáceos leais ao cardume.",
         color: "#C03030",
         income: {
             crystal: 0.02,
@@ -316,9 +316,9 @@ SharkGame.ResourceTable = {
     },
 
     nurse: {
-        name: "nurse sharks",
-        singleName: "nurse shark",
-        desc: "Safeguarding the future.",
+        name: "tubarões enfermeiros",
+        singleName: "tubarão enfermeiro",
+        desc: "Cuidando da nova geração.",
         color: "#C978DE",
         income: {
             shark: 0.01,
@@ -327,9 +327,9 @@ SharkGame.ResourceTable = {
     },
 
     maker: {
-        name: "ray makers",
-        singleName: "ray maker",
-        desc: "Caretakers of the helpless.",
+        name: "arraias criadoras",
+        singleName: "arraia criadora",
+        desc: "Criando os indefesos.",
         color: "#5355ED",
         income: {
             ray: 0.05,
@@ -338,9 +338,9 @@ SharkGame.ResourceTable = {
     },
 
     brood: {
-        name: "crab broods",
-        singleName: "crab brood",
-        desc: "The unending process.",
+        name: "ninhadas de caranguejos",
+        singleName: "ninhada de caranguejos",
+        desc: "Um processo interminável.",
         color: "#9E7272",
         income: {
             crab: 0.2,
@@ -349,9 +349,9 @@ SharkGame.ResourceTable = {
     },
 
     scientist: {
-        name: "science sharks",
-        singleName: "science shark",
-        desc: "Creators of the shark future.",
+        name: "tubarões cientistas",
+        singleName: "tubarão cientista",
+        desc: "Pensando pelo futuro.",
         color: "#DCEBF5",
         income: {
             science: 0.5,
@@ -360,9 +360,9 @@ SharkGame.ResourceTable = {
     },
 
     laser: {
-        name: "laser rays",
-        singleName: "laser ray",
-        desc: "Destructive forces of creation.",
+        name: "arraias laser",
+        singleName: "arraia laser",
+        desc: "O poder da destruição e criação.",
         color: "#E85A5A",
         income: {
             sand: -50,
@@ -372,9 +372,9 @@ SharkGame.ResourceTable = {
     },
 
     planter: {
-        name: "planter crabs",
-        singleName: "planter crab",
-        desc: "Stewards of an ecosystem.",
+        name: "caranguejos plantadores",
+        singleName: "caranguejo plantador",
+        desc: "Senhores de um ecossistema.",
         color: "#AAE03D",
         income: {
             kelp: 0.3,
@@ -383,9 +383,9 @@ SharkGame.ResourceTable = {
     },
 
     crystalMiner: {
-        name: "crystal miners",
-        singleName: "crystal miner",
-        desc: "Devourers of the lattice.",
+        name: "mineradores de cristal",
+        singleName: "minerador de cristal",
+        desc: "Destruidores incansáveis de rochas.",
         color: "#B2CFCB",
         income: {
             crystal: 100,
@@ -396,9 +396,9 @@ SharkGame.ResourceTable = {
     },
 
     sandDigger: {
-        name: "sand diggers",
-        singleName: "sand digger",
-        desc: "Consumers of the seabed.",
+        name: "comedores de areia",
+        singleName: "comedor de areia",
+        desc: "Consumidores insaciáveis do solo.",
         color: "#D6CF9F",
         income: {
             sand: 200,
@@ -408,9 +408,9 @@ SharkGame.ResourceTable = {
     },
 
     autoTransmuter: {
-        name: "auto-transmuters",
-        singleName: "auto-transmuter",
-        desc: "Mystic processes automated.",
+        name: "transmutadores automáticos",
+        singleName: "transmutador automático",
+        desc: "Produção mística automata.",
         color: "#B5A7D1",
         income: {
             get crystal() {
@@ -425,9 +425,9 @@ SharkGame.ResourceTable = {
     },
 
     fishMachine: {
-        name: "fish machines",
-        singleName: "fish machine",
-        desc: "Indiscriminate hunter.",
+        name: "máquinas de peixe",
+        singleName: "máquina de peixe",
+        desc: "Caçador impiedoso.",
         color: "#C9C7A7",
         income: {
             fish: 400,
@@ -437,9 +437,9 @@ SharkGame.ResourceTable = {
     },
 
     skimmer: {
-        name: "skimmers",
-        singleName: "skimmer",
-        desc: "Engines of industry.",
+        name: "desnatadeiras",
+        singleName: "desnatadeira",
+        desc: "Engrenagens da indústria.",
         color: "#8D4863",
         income: {
             junk: 750,
@@ -457,10 +457,10 @@ SharkGame.ResourceTable = {
     // MARINE
 
     lobster: {
-        name: "lobsters",
-        singleName: "lobster",
+        name: "lagostas",
+        singleName: "lagosta",
         color: "#BF0F00",
-        desc: "Trainees.",
+        desc: "Novatos.",
         income: {
             clam: 2,
         },
@@ -469,10 +469,10 @@ SharkGame.ResourceTable = {
     },
 
     berrier: {
-        name: "lobster berriers",
-        singleName: "lobster berrier",
+        name: "lagostas ovadas",
+        singleName: "lagosta ovada",
         color: "#719188",
-        desc: "There's always more.",
+        desc: "Sempre precisamos de mais.",
         income: {
             lobster: 0.05,
         },
@@ -480,25 +480,25 @@ SharkGame.ResourceTable = {
     },
 
     harvester: {
-        name: "harvester lobsters",
-        singleName: "harvester lobster",
-        desc: "null",
+        name: "lagostas colheitadoras",
+        singleName: "lagosta colheitadora",
+        desc: "Algas são necessárias para o progresso",
         color: "#718493",
         value: 3000,
     },
 
     calcinium: {
-        name: "calcinium",
-        singleName: "calcinium",
-        desc: "Lobster-invented, clam-derived ceramic.",
+        name: "calcinício",
+        singleName: "calcinício",
+        desc: "Cerâmica inventada por lagostas, feito de conchas.",
         color: "#F5F5DB",
         value: 75,
     },
 
     clamScavenger: {
-        name: "clam scavengers",
-        singleName: "clam scavenger",
-        desc: "Half-machine, half-ray, totally ridiculous.",
+        name: "coletores mexílicos",
+        singleName: "coletor mexílico",
+        desc: "Meio máquina-meio arraia, completamente exagero.",
         color: "#C3C4DD",
         income: {
             clam: 250,
@@ -507,9 +507,9 @@ SharkGame.ResourceTable = {
     },
 
     seabedStripper: {
-        name: "seabed strippers",
-        singleName: "seabed stripper",
-        desc: "The end of environmentalism.",
+        name: "desmatadores oceânicos",
+        singleName: "desmatador oceânico",
+        desc: "O progresso sem limites.",
         color: "#7C8A60",
         income: {
             kelp: 100,
@@ -518,9 +518,9 @@ SharkGame.ResourceTable = {
     },
 
     calciniumConverter: {
-        name: "calcinium converters",
-        singleName: "calcinium converter",
-        desc: "Trained.",
+        name: "conversores de calcinício",
+        singleName: "conversor de calcinício",
+        desc: "Treinado.",
         color: "#836E5F",
         income: {
             get crystal() {
@@ -537,8 +537,8 @@ SharkGame.ResourceTable = {
     // SAVED FOR LATER
 
     coralglass: {
-        name: "coralglass",
-        singleName: "coralglass",
+        name: "vidro coroso",
+        singleName: "vidro coroso",
         desc: "null",
         color: "#FDD5B4",
         value: 70,
@@ -547,9 +547,9 @@ SharkGame.ResourceTable = {
     // volcanic
 
     shrimp: {
-        name: "shrimp",
-        singleName: "shrimp",
-        desc: "Third caste.",
+        name: "camarões",
+        singleName: "camarão",
+        desc: "A base da pirâmide.",
         color: "#EF5D22",
         income: {
             algae: 0.5,
@@ -559,9 +559,9 @@ SharkGame.ResourceTable = {
     },
 
     queen: {
-        name: "shrimp queens",
-        singleName: "shrimp queen",
-        desc: "Second caste.",
+        name: "rainhas",
+        singleName: "rainha",
+        desc: "O meio da pirâmide.",
         color: "#EEA271",
         income: {
             shrimp: 1,
@@ -570,9 +570,9 @@ SharkGame.ResourceTable = {
     },
 
     curiousCrab: {
-        name: "curious crabs",
-        singleName: "curious crab",
-        desc: "Insatiable learners.",
+        name: "siris curiosos",
+        singleName: "siri curioso",
+        desc: "O que matou o gato.",
         color: "#912E34",
         income: {
             science: 0.25,
@@ -582,49 +582,49 @@ SharkGame.ResourceTable = {
     },
 
     shoveler: {
-        name: "shoveler rays",
-        singleName: "shoveler ray",
-        desc: "Let's get shoveling!",
+        name: "arraias pázudas",
+        singleName: "arraia pázuda",
+        desc: "Daí então PÁ!",
         color: "#C49E45",
         value: 7500,
     },
 
     farmer: {
-        name: "shrimp farmers",
-        singleName: "shrimp farmer",
-        desc: "It's honest work.",
+        name: "camarões fazendeiros",
+        singleName: "camarão fazendeiro",
+        desc: "Trabalhadores honestos.",
         color: "#DD7A49",
         value: 1500,
     },
 
     porite: {
-        name: "porite",
-        singleName: "porite",
-        desc: "Shiny glass with holes inside.",
+        name: "porita",
+        singleName: "porita",
+        desc: "Vidro brilhante esburacado.",
         color: "#FDD5B4",
         value: 150,
     },
 
     researcher: {
-        name: "researcher crabs",
-        singleName: "researcher crab",
-        desc: "Don't you find this all rather fascinating?",
+        name: "caranguejos pesquisadores",
+        singleName: "caranguejo pesquisador",
+        desc: "Fascinados por descobrir sobre o mundo ao redor.",
         color: "#EEEEEE",
         value: 3750,
     },
 
     acolyte: {
-        name: "algae acolytes",
-        singleName: "algae acolyte",
-        desc: "Praise be to algae.",
+        name: "seguidores da alga",
+        singleName: "seguidor da alga",
+        desc: "Todos saúdam a alga.",
         color: "#1D3D1A",
         value: 500,
     },
 
     spongeFarm: {
-        name: "sponge farms",
-        singleName: "sponge farm",
-        desc: "Peaceful fields for spongekind.",
+        name: "fazendas de esponja",
+        singleName: "fazenda de esponja",
+        desc: "Terras serenes para as esponjas.",
         color: "#B38A46",
         income: {
             sponge: 0.5,
@@ -633,9 +633,9 @@ SharkGame.ResourceTable = {
     },
 
     coralFarm: {
-        name: "coral farms",
-        singleName: "coral farm",
-        desc: "Coral corrals.",
+        name: "fazendas de coral",
+        singleName: "fazenda de coral",
+        desc: "Curral para coral.",
         color: "#6E323D",
         income: {
             coral: 2,
@@ -649,9 +649,9 @@ SharkGame.ResourceTable = {
     // once you get to the facility, you unlock it.
 
     billfish: {
-        name: "billfish",
-        singleName: "billfish",
-        desc: "Battered, but never broken.",
+        name: "peixes-espada",
+        singleName: "peixe-espada",
+        desc: "Sofreram, mas resistiram.",
         color: "#BEC7CC", // set this
         income: {
             fish: 2,
@@ -661,9 +661,9 @@ SharkGame.ResourceTable = {
     },
 
     stormgoer: {
-        name: "crab stormgoers",
-        singleName: "crab stormgoer",
-        desc: "Courage.",
+        name: "caranguejos desbravadores",
+        singleName: "caranguejo desbravador",
+        desc: "Coragem.",
         color: "#568F5C", // set this
         income: {
             seagrass: 1,
@@ -672,9 +672,9 @@ SharkGame.ResourceTable = {
     },
 
     billfishExplorer: {
-        name: "billfish explorers",
-        singleName: "billfish explorer",
-        desc: "The great pioneers.",
+        name: "espadas exploradoras",
+        singleName: "espada exploradora",
+        desc: "Grandes pioneiros.",
         color: "#CCCCCC", // set this
         income: {
             chart: 0.01,
@@ -683,33 +683,33 @@ SharkGame.ResourceTable = {
     },
 
     chart: {
-        name: "charts",
-        singleName: "chart",
-        desc: "It's what we've found.",
+        name: "fragmentos",
+        singleName: "fragmento",
+        desc: "O que conseguimos.",
         color: "#D9D1B6",
         value: 100,
     },
 
     map: {
-        name: "map", // you won't ever have more than one so i'm setting this as just "map" for the resource table tooltip
-        singleName: "map",
-        desc: "It's what we've been looking for.",
+        name: "O mapa", // you won't ever have more than one so i'm setting this as just "map" for the resource table tooltip
+        singleName: "mapa",
+        desc: "O que queríamos.",
         color: "#7A7254", // set this
         value: 100,
     },
 
     billfishMechanic: {
-        name: "billfish mechanics",
-        singleName: "billfish mechanic",
-        desc: "The great inventors.",
+        name: "espadas mecânicas",
+        singleName: "espada mecânica",
+        desc: "Inventores geniais.",
         color: "#CCCCCC", // set this
         value: 1000,
     },
 
     billfishPair: {
-        name: "billfish pairs",
-        singleName: "billfish pair",
-        desc: "It takes two.",
+        name: "duplas de espadas",
+        singleName: "dupla de espadas",
+        desc: "Ninguém nasce de chocadeira.",
         color: "#485054", // set this
         income: {
             billfish: 0.02,
@@ -720,9 +720,9 @@ SharkGame.ResourceTable = {
     // HAVEN
 
     dolphin: {
-        name: "dolphins",
-        singleName: "dolphin",
-        desc: "Fallen from greatness.",
+        name: "golfinhos",
+        singleName: "golfinho",
+        desc: "Uma vez grandiosos",
         color: "#C6BAC6",
         income: {
             coral: 0.2,
@@ -732,9 +732,9 @@ SharkGame.ResourceTable = {
     },
 
     whale: {
-        name: "whales",
-        singleName: "whale",
-        desc: "The gatekeepers.",
+        name: "baleias",
+        singleName: "baleia",
+        desc: "Guardiões do portão.",
         color: "#37557C",
         income: {
             fish: 10000,
@@ -744,9 +744,9 @@ SharkGame.ResourceTable = {
     },
 
     biologist: {
-        name: "dolphin biologists",
-        singleName: "dolphin biologist",
-        desc: "Why are we encouraging them to multiply??",
+        name: "golfinhos biólogos",
+        singleName: "golfinho biólogo",
+        desc: "Porque estamos deixando eles se multiplicarem??",
         color: "#5C9976",
         income: {
             dolphin: 0.005,
@@ -755,9 +755,9 @@ SharkGame.ResourceTable = {
     },
 
     treasurer: {
-        name: "dolphin treasurers",
-        singleName: "dolphin treasurer",
-        desc: "Guardians of the reefs.",
+        name: "golfinhos tesoureiros",
+        singleName: "golfinho tesoureiro",
+        desc: "Administram os recifes.",
         color: "#B4DBBC",
         income: {
             crystal: 1,
@@ -767,25 +767,25 @@ SharkGame.ResourceTable = {
     },
 
     historian: {
-        name: "dolphin historians",
-        singleName: "dolphin historian",
-        desc: "The only real scholars around here.",
+        name: "golfinhos historiadores",
+        singleName: "golfinhos historiador",
+        desc: "Que conta história para boi dormir.",
         color: "#9FBCBF",
         value: 3000,
     },
 
     chorus: {
-        name: "great chorus",
-        singleName: "great chorus",
-        desc: "A grand ensemble, singing to the tune of life itself.",
+        name: "O coro",
+        singleName: "O coro",
+        desc: "Um lindo concerto, cantando para todos a música da vida.",
         color: "#85BBA9",
         value: 100000,
     },
 
     crimsonCombine: {
-        name: "crimson combines",
-        singleName: "crimson combine",
-        desc: "Harvesters, cloaked in a red mist of coral.",
+        name: "fuscões vermelhos",
+        singleName: "fuscão vermelho",
+        desc: "Colheitadeiras com uma fina camada vermelha de coral.",
         color: "#E79E88",
         income: {
             coral: 250,
@@ -794,9 +794,9 @@ SharkGame.ResourceTable = {
     },
 
     kelpCultivator: {
-        name: "kelp cultivators",
-        singleName: "kelp cultivator",
-        desc: "Mechanical gardeners.",
+        name: "cultivadoras de alga",
+        singleName: "cultivadora de alga",
+        desc: "Jardins mecanizados.",
         color: "#68E06B",
         income: {
             kelp: 200,
@@ -805,9 +805,9 @@ SharkGame.ResourceTable = {
     },
 
     tirelessCrafter: {
-        name: "tireless crafters",
-        singleName: "tireless crafter",
-        desc: "Restless machines.",
+        name: "artesãos infinitos",
+        singleName: "artesão infinito",
+        desc: "Máquinas incansáveis.",
         color: "#9AEBCF",
         income: {
             delphinium: 15,
@@ -822,9 +822,9 @@ SharkGame.ResourceTable = {
     },
 
     delphinium: {
-        name: "delphinium",
-        singleName: "delphinium",
-        desc: "Shiny, but probably worthless.",
+        name: "golfínio",
+        singleName: "golfínio",
+        desc: "Nem tudo que brilha vale de algo.",
         color: "#5BD1A8",
         value: 70,
     },
@@ -832,9 +832,9 @@ SharkGame.ResourceTable = {
     // SHROUDED
 
     chimaera: {
-        name: "chimaeras",
-        singleName: "chimaera",
-        desc: "The artisans.",
+        name: "quimeras",
+        singleName: "quimera",
+        desc: "Os artesãos.",
         color: "#7D77A5",
         income: {
             jellyfish: 2.5,
@@ -844,9 +844,9 @@ SharkGame.ResourceTable = {
     },
 
     eel: {
-        name: "eels",
-        singleName: "eel",
-        desc: "The builders.",
+        name: "enguias",
+        singleName: "enguia",
+        desc: "Os pedreiros.",
         color: "#718D68",
         income: {
             fish: 2,
@@ -857,9 +857,9 @@ SharkGame.ResourceTable = {
     },
 
     pit: {
-        name: "eel pits",
-        singleName: "eel pit",
-        desc: "Never too many.",
+        name: "poços de enguia",
+        singleName: "poço de enguia",
+        desc: "Nunca é demais.",
         color: "#3F6E86",
         income: {
             eel: 0.02,
@@ -868,9 +868,9 @@ SharkGame.ResourceTable = {
     },
 
     diver: {
-        name: "diver sharks",
-        singleName: "diver shark",
-        desc: "Daring souls, braving the deep for all of sharkkind.",
+        name: "tubarões mergulhadores",
+        singleName: "tubarão mergulhador",
+        desc: "Corajosos são aqueles que desbravam a escuridão pelo bem de todos nós.",
         color: "#6A74AB",
         income: {
             crystal: 0.5,
@@ -879,9 +879,9 @@ SharkGame.ResourceTable = {
     },
 
     scholar: {
-        name: "ray scholars",
-        singleName: "ray scholar",
-        desc: "Even the arcane unfolds at the hands of study.",
+        name: "arraias estudantes",
+        singleName: "arraia estudante",
+        desc: "Até o arcano e divino são explicadas nas barbatanas de um estudioso.",
         color: "#C3C4FF",
         value: 3500,
     },

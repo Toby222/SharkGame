@@ -5,15 +5,15 @@ SharkGame.ResourceTable = {
     numen: {
         name: "numina",
         singleName: "numen",
-        desc: "You think as a deity. You act as a deity. You are a deity.",
+        desc: "Você pensa como um deus. Você age como um deus. Você é um deus.",
         color: "#FFFFFF",
         value: -1,
     },
 
     essence: {
-        name: "essence",
-        singleName: "essence",
-        desc: "Etheric force, raw and dangerous.",
+        name: "essência",
+        singleName: "essência",
+        desc: "Um poder etéreo. Bruto e perigoso.",
         color: "#ACE3D1",
         value: -1,
     },
@@ -21,25 +21,25 @@ SharkGame.ResourceTable = {
     world: {
         get name() {
             switch (world.worldType) {
-                case "volcanic":
-                    return "vents";
-                case "tempestuous":
-                    return "the storm";
+                case "vulcânico":
+                    return "fontes termais";
+                case "tempestuoso":
+                    return "a tempestade";
                 default:
-                    return "the world";
+                    return "o mundo";
             }
         },
         get singleName() {
             switch (world.worldType) {
-                case "volcanic":
-                    return "vents";
-                case "tempestuous":
-                    return "the storm";
+                case "vulcânico":
+                    return "fonte termais";
+                case "tempestuoso":
+                    return "a tempestade";
                 default:
-                    return "the world";
+                    return "o mundo";
             }
         },
-        desc: "how are you seeing this",
+        desc: "Se você estiver vendo isso, eu quebrei algo.",
         color: "#FFFFFF",
         value: 123456789,
         forceIncome: true,
@@ -48,21 +48,21 @@ SharkGame.ResourceTable = {
     specialResourceOne: {
         get name() {
             switch (world.worldType) {
-                case "volcanic":
-                    return "lack of algae";
+                case "vulcânico":
+                    return "falta de alga";
                 default:
                     return "???";
             }
         },
         get singleName() {
             switch (world.worldType) {
-                case "volcanic":
-                    return "lack of algae";
+                case "vulcânico":
+                    return "falta de alga";
                 default:
                     return "???";
             }
         },
-        desc: "how are you seeing this",
+        desc: "Se você estiver vendo isso, eu quebrei algo.",
         color: "#FFFFFF",
         value: 123456789,
         forceIncome: true,
@@ -81,20 +81,20 @@ SharkGame.ResourceTable = {
                     return "???";
             }
         },
-        desc: "how are you seeing this",
+        desc: "Se você estiver vendo isso, eu quebrei algo.",
         color: "#FFFFFF",
         value: 123456789,
         forceIncome: false,
     },
 
     aspectAffect: {
-        name: "aspects",
-        singleName: "aspects",
-        desc: "what",
+        name: "aspecto",
+        singleName: "aspecto",
+        desc: "que?",
         income: {
             get crystal() {
-                if (SharkGame.Aspects.crystallineSkin.level && world.worldType !== "volcanic") {
-                    const crystalAmount = res.getResource("crystal");
+                if (SharkGame.Aspects.crystallineSkin.level && world.worldType !== "vulcânico") {
+                    const crystalAmount = res.getResource("cristal");
                     if (crystalAmount < 25 * 2 ** SharkGame.Aspects.crystallineSkin.level) {
                         return (25 * 2 ** SharkGame.Aspects.crystallineSkin.level - crystalAmount) / 2;
                     }
@@ -102,7 +102,7 @@ SharkGame.ResourceTable = {
                 return 0;
             },
             get coral() {
-                if (SharkGame.Aspects.crystallineSkin.level && world.worldType === "volcanic") {
+                if (SharkGame.Aspects.crystallineSkin.level && world.worldType === "vulcânico") {
                     const coralAmount = res.getResource("coral");
                     if (coralAmount < 25 * 2 ** SharkGame.Aspects.crystallineSkin.level) {
                         return (25 * 2 ** SharkGame.Aspects.crystallineSkin.level - coralAmount) / 2;
@@ -116,9 +116,9 @@ SharkGame.ResourceTable = {
     // MAGICAL
 
     sacrifice: {
-        name: "sacrifices",
-        singleName: "sacrifice",
-        desc: "The cost of progress.",
+        name: "sacrifícios",
+        singleName: "sacrifício",
+        desc: "O custo do progresso.",
         color: "#FFD6FC",
         value: 1,
     },
@@ -126,7 +126,7 @@ SharkGame.ResourceTable = {
     arcana: {
         name: "arcana",
         singleName: "arcana",
-        desc: "Inscrutable mysteries.",
+        desc: "Mistérios incompreensíveis.",
         color: "#E791FF",
         value: 1,
     },
@@ -134,9 +134,9 @@ SharkGame.ResourceTable = {
     // SCIENCE
 
     science: {
-        name: "science",
-        singleName: "science",
-        desc: "Lifeblood of progress.",
+        name: "ciência",
+        singleName: "ciência",
+        desc: "Base de todo o progresso.",
         color: "#BBA4E0",
         value: 100,
     },
@@ -144,30 +144,30 @@ SharkGame.ResourceTable = {
     // ANIMALS
 
     fish: {
-        name: "fish",
-        singleName: "fish",
-        desc: "The hunted.",
+        name: "peixes",
+        singleName: "peixe",
+        desc: "A presa.",
         color: "#E3D85B",
         value: 2,
     },
 
     seaApple: {
-        name: "sea apples",
-        singleName: "sea apple",
-        desc: "Rooted filters.",
+        name: "holotúrias",
+        singleName: "holotúria",
+        desc: "Filtradores coloridos.",
         color: "#F0C2C2",
         value: 3,
     },
 
     sponge: {
-        name: "sponge",
-        singleName: "sponge",
+        name: "esponjas",
+        singleName: "esponja",
         get desc() {
             switch (world.worldType) {
-                case "volcanic":
-                    return "Soft, porous carnivores. Need algae.";
+                case "vulcânico":
+                    return "Carnívoros porosos e estáticos. Precisam de alga.";
                 default:
-                    return "Soft, porous carnivores.";
+                    return "Carnívoros porosos e estáticos.";
             }
         },
         color: "#ED9847",
@@ -175,17 +175,17 @@ SharkGame.ResourceTable = {
     },
 
     jellyfish: {
-        name: "jellyfish",
-        singleName: "jellyfish",
-        desc: "Squishy. Painful.",
+        name: "águas-vivas",
+        singleName: "água-viva",
+        desc: "Molengas. Dolorosos.",
         color: "#E3B8FF",
         value: 110,
     },
 
     clam: {
-        name: "clams",
-        singleName: "clam",
-        desc: "An acquired taste.",
+        name: "mexilhões",
+        singleName: "mexilhão",
+        desc: "Um gosto a se adquirir.",
         color: "#828FB5",
         value: 10,
     },
@@ -193,17 +193,17 @@ SharkGame.ResourceTable = {
     // MATERIALS
 
     sand: {
-        name: "sand",
-        singleName: "sand",
-        desc: "Flesh of the ocean floor.",
+        name: "areia",
+        singleName: "areia",
+        desc: "A base de todo o oceano.",
         color: "#C7BD75",
         value: 3,
     },
 
     crystal: {
-        name: "crystals",
-        singleName: "crystal",
-        desc: "A strange, glowing material.",
+        name: "cristais",
+        singleName: "cristal",
+        desc: "Uma bugiganga estranha que brilha.",
         color: "#6FD9CC",
         value: 10,
     },

@@ -1531,7 +1531,7 @@ SharkGame.ResourceCategories = {
             "De volta a uma vida mais simples.",
             "Os colegas de trabalho fizeram uma festinha de despedida. O astral não estava muito alto.",
             "Eles voltaram para um trabalho em que eles sabem melhor o que estão fazendo.",
-            "Você teve que confortar e assegurar os recém-demitido que eles não teriam o salário cortado. Depois você lembrou que você não paga salário algum."
+            "Você teve que confortar e assegurar os recém-demitido que eles não teriam o salário cortado. Depois você lembrou que você não paga salário algum.",
         ],
         resources: [
             "scientist",

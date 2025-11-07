@@ -1403,7 +1403,7 @@ SharkGame.ResourceCategories = {
             "Tente outra vez.",
             "Hmmm. Não.",
             "Esse não é um problema que você pode apenas 'jogar fora'.",
-            "Talvez se você apertar com mais força."
+            "Talvez se você apertar com mais força.",
             "Isso não funciona dessa maneira",
             ],
         resources: ["tar", "ice"],

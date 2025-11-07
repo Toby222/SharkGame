@@ -10,8 +10,8 @@ SharkGame.Aspects = {
 
         max: 8,
         level: 0,
-        name: "Apotheosis",
-        description: "The path begins here.",
+        name: "Apoteose",
+        description: "Seu caminho começa aqui.",
         noRefunds: true,
         core: true,
         getCost(level) {
@@ -23,7 +23,7 @@ SharkGame.Aspects = {
             }
         },
         getEffect(level) {
-            return "Manual resource collection <strong>×" + (level > 0 ? level * 4 : 1) + "</strong>.";
+            return "Coleção manual de recursos é <strong>" + (level > 0 ? level * 4 : 1) + "×</strong> mais forte.";
         },
         getUnlocked() {},
         prerequisites: [],
@@ -39,16 +39,16 @@ SharkGame.Aspects = {
 
         max: 20,
         level: 0,
-        name: "Path of Industry",
-        description: "Unlock the potential of those around you.",
+        name: "Rumo Industrial",
+        description: "Desbloqueie o potencial daquele a sua volta.",
         getCost(level) {
             return 2 * level + 2;
         },
         getEffect(level) {
             return (
-                "Multiply the efficiency of " +
+                "Multiplica a eficiência dos " +
                 sharktext.getResourceName("shark", false, 69, sharkcolor.getElementColor("tooltipbox", "background-color")) +
-                ", their jobs, and their fundamental machines by <strong>" +
+                ", suas especializações, e suas máquinas por <strong>" +
                 (level + 1) +
                 "×</strong>."
             );
@@ -58,7 +58,7 @@ SharkGame.Aspects = {
                 return "???";
             }
             if (gateway.completedWorlds.length < 3) {
-                return "Scout at least two worlds to unlock this aspect.";
+                return "Explore pelo menos dois mundos para desbloquear";
             }
         },
         prerequisites: ["apotheosis"],
@@ -87,8 +87,8 @@ SharkGame.Aspects = {
 
         max: 3,
         level: 0,
-        name: "Token of Industry",
-        description: "You're the one calling the shots, boss.",
+        name: "Ficha da Indústria",
+        description: "Você é quem manda, chefe.",
         core: true,
         getCost(level) {
             switch (level) {
@@ -103,11 +103,11 @@ SharkGame.Aspects = {
         getEffect(level) {
             switch (level) {
                 case 1:
-                    return "Unlock a <strong>moveable token</strong> that <strong>multiplies</strong> production of whatever it is placed on.";
+                    return "Desbloqueia uma <strong>ficha móvel</strong> que <strong>multiplica</strong> a produção de qualquer recurso na qual é colocada.";
                 case 2:
-                    return "Unlock a second token (tokens cannot stack on the same resource).";
+                    return "Desbloqueia uma segunda ficha (fichas não acumulam no mesmo recurso).";
                 case 3:
-                    return "Unlock a third token (tokens cannot stack on the same resource).";
+                    return "Desbloqueia uma terceira ficha (fichas não acumulam no mesmo recurso).";
             }
         },
         getUnlocked() {},
@@ -124,15 +124,15 @@ SharkGame.Aspects = {
 
         max: 1,
         level: 0,
-        name: "Path of Enlightenment",
-        description: "Unlock the potential of yourself.",
+        name: "Rumo do Esclarecimento",
+        description: "Desbloqueie o pontential de si mesmo.",
         noRefunds: true,
         core: true,
         getCost(_level) {
             return 2;
         },
         getEffect(_level) {
-            return "Gain the power to travel between worlds.";
+            return "Ganhe o poder de atravessar por mundos.";
         },
         getUnlocked() {},
         prerequisites: ["apotheosis"],
@@ -148,19 +148,19 @@ SharkGame.Aspects = {
 
         max: 1,
         level: 0,
-        name: "Distant Foresight",
-        description: "See the unseen.",
+        name: "Previsão Profunda",
+        description: "Perceba o imperceptível.",
         noRefunds: true,
         core: true,
         getCost(_level) {
             return 2;
         },
         getEffect(_level) {
-            return "Reveals much more information about a world before you choose to visit it.";
+            return "Mostra muito mais informação sobre um mundo antes de visitá-lo.";
         },
         getUnlocked() {
             if (gateway.completedWorlds.length < 2) {
-                return "Scout at least one world to unlock this aspect.";
+                return "Explore pelo menos um mundo para desbloquear.";
             }
         },
         prerequisites: ["pathOfEnlightenment"],
@@ -176,19 +176,18 @@ SharkGame.Aspects = {
 
         max: 6,
         level: 0,
-        name: "Patience",
-        description: "They say that good things come to those who wait.",
+        name: "Paciência",
+        description: "Não há lugar para a sabedoria onde não há paciência. -Santo Agolfinho",
         core: true,
         getCost(level) {
             return level > 0 ? (level + 1) ** 2 : 4;
         },
         getEffect(level) {
             return (
-                "Gain nothing now. Every time a world is completed, gain <strong>" +
-                level +
-                "</strong> additional " +
+                "Não ganhe nada agora. Toda vez que se completa um mundo, ganhe <strong>" +
+                level + " " +
                 sharktext.getResourceName("essence", false, 69, sharkcolor.getElementColor("tooltipbox", "background-color")) +
-                " (this bonus is <strong>not</strong> increased by gumption)."
+                "</strong> adicional (Esse bônus <strong>não</strong> aumenta com Culhões)."
             );
         },
         getUnlocked() {},
@@ -205,8 +204,8 @@ SharkGame.Aspects = {
 
         max: 1,
         level: 0,
-        name: "The Dial",
-        description: "No matter how long it takes, you can still do it.",
+        name: "O seletor",
+        description: "Não importa o quanto demore. Eu sei que você conseguirá.",
         noRefunds: true,
         core: true,
         getCost(_level) {
@@ -214,16 +213,16 @@ SharkGame.Aspects = {
         },
         getEffect(_level) {
             return (
-                "Unlock the choice to slow down time in exchange for a large " +
-                sharktext.boldString("multiplier") +
-                " on " +
-                sharktext.boldString("Patience") +
-                " rewards."
+                "Desbloqueia a opção de desacelerar o tempo em troca de um grande " +
+                sharktext.boldString("multiplicador") +
+                " na recompensa de " +
+                sharktext.boldString("Paciência")
+                
             );
         },
         getUnlocked() {
             if (res.getTotalResource("essence") < 32) {
-                return "Earn 32 lifetime essence to unlock this aspect.";
+                return "Consiga um total de 32 essência para desbloquear.";
             }
         },
         prerequisites: ["patience"],
@@ -239,18 +238,18 @@ SharkGame.Aspects = {
 
         max: 10,
         level: 0,
-        name: "Path of Time",
-        description: "Patience is the choice of those who prefer inaction.",
+        name: "Rumo do Tempo",
+        description: "Paciência é a escolha para quem preferem a inação.",
         getCost(level) {
             return 3 * level + 2;
         },
         getEffect(level) {
             return (
-                "Start with <strong>" +
+                "Começa com <strong>" +
                 25 * 2 ** level +
                 "</strong> " +
                 sharktext.getResourceName("crab", false, 69, sharkcolor.getElementColor("tooltipbox", "background-color")) +
-                ". If they do not exist, start with an equivalent."
+                ". Se eles não existirem, começa com um equivalente."
             );
         },
         getUnlocked() {
@@ -258,7 +257,7 @@ SharkGame.Aspects = {
                 return "???";
             }
             if (gateway.completedWorlds.length < 3) {
-                return "Scout at least two worlds to unlock this aspect.";
+                return "Explore dois mundos para desbloquear.";
             }
         },
         prerequisites: ["apotheosis"],
@@ -287,17 +286,17 @@ SharkGame.Aspects = {
 
         max: 3,
         level: 0,
-        name: "Coordinated Cooperation",
+        name: "Cooperação Coordenada",
         description: "Maybe the squid had a point. Maybe teamwork really is the key.",
         core: true,
         getCost(level) {
             return 16 * (level + 1) ** 2;
         },
         getEffect(level) {
-            return "Tokens increase production by <strong>" + (level + 2) + "×</strong>.";
+            return "Fichas aumentam a produção em <strong>" + (level + 2) + "×</strong>.";
         },
         getUnlocked() {
-            return gateway.completedWorlds.includes("frigid") ? "" : "Complete the Frigid worldtype to unlock this aspect.";
+            return gateway.completedWorlds.includes("frigid") ? "" : "Complete o mundo gélido para desbloquear.";
         },
         prerequisites: ["tokenOfIndustry"],
         clicked(_event) {
@@ -312,13 +311,13 @@ SharkGame.Aspects = {
 
         max: 4,
         level: 0,
-        name: "Synthetic Transmutation",
-        description: "Surely, our materials don't need to be 100% pure. Surely.",
+        name: "Transmutação Sintética",
+        description: "Nossos materiais não precisam ser totalmente, 100% puros. Certo?",
         getCost(level) {
             return 2 * level + 3;
         },
         getEffect(level) {
-            return "Artificial materials are <strong>" + 20 * level + "%</strong> cheaper to produce manually.";
+            return "Materiais artificias são <strong>" + 20 * level + "%</strong> mais baratos de serem produzidos manualmente.";
         },
         getUnlocked() {},
         prerequisites: ["pathOfIndustry"],
@@ -334,13 +333,13 @@ SharkGame.Aspects = {
 
         max: 2,
         level: 0,
-        name: "Amorphous Assembly",
-        description: "Machines that make use of similar components are better machines.",
+        name: "Montagem Amorfa",
+        description: "Máquinas que usam componentes substituíveis são máquinas melhores.",
         getCost(level) {
             return 3 + 4 * level;
         },
         getEffect(level) {
-            return "All machines have non-artificial-material costs reduced by <strong>" + 50 * level + "%</strong>.";
+            return "Os custos de materiais não artificiais são reduzidas em <strong>" + 50 * level + "%</strong> para todas as máquinas.";
         },
         getUnlocked() {},
         prerequisites: ["syntheticTransmutation"],
@@ -356,13 +355,13 @@ SharkGame.Aspects = {
 
         max: 2,
         level: 0,
-        name: "Mechanical Manifestation",
-        description: "Given raw, etherial energy, machines can make more with less.",
+        name: "Manifestação Mecânica",
+        description: "Com a energia etérea desse Além, máquinas podem produzir mais com menos.",
         getCost(level) {
             return 2 + 2 * level;
         },
         getEffect(level) {
-            return "Reduce how much machines making artificial materials consume by <strong>" + 50 * level + "%</strong>.";
+            return "Máquinas produtoras de material artificial tem seu consumo reduzido em <strong>" + 50 * level + "%</strong>.";
         },
         getUnlocked() {},
         prerequisites: ["syntheticTransmutation"],
@@ -378,7 +377,7 @@ SharkGame.Aspects = {
 
         max: 8,
         level: 0,
-        name: "The Plan",
+        name: "O plano",
         description: "Professionals have standards. Be polite, be efficient, and have a plan to recruit everyone you meet.",
         getCost(level) {
             return 2 * level ** 2 + 4;

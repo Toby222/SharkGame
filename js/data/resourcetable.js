@@ -919,7 +919,7 @@ SharkGame.ResourceTable = {
         // look basically the point is this is a long and storied word
         // and the english plural system should apply because we're talking about octopus, not ὀκτώπους, so just
         // why are you reading this
-        //in portuguese we just put an "s" in the end
+        // in portuguese we just put an "s" in the end
         singleName: "polvo",
         desc: "Formas de vida puramente racionais.",
         color: "#965F37",
@@ -1091,7 +1091,7 @@ SharkGame.ResourceTable = {
         // therefore references to the different professions lumped in with other squids will use 'squids'
         // and other circumstances referring to a single kind, like this one, will use 'squid'
         // why are you reading this
-        //in portuguese we just put an "s"   
+        // in portuguese we just put an "s"
         desc: "Endividados conosco. Para sempre leais.",
         color: "#FA9272",
         income: {
@@ -1397,7 +1397,7 @@ SharkGame.ResourceSpecialProperties = {
 
 SharkGame.ResourceCategories = {
     harmful: {
-        name: "Harmful",
+        name: "Nocivos",
         disposeMessage: [
             "Boa tentativa, campeão.",
             "Tente outra vez.",
@@ -1405,20 +1405,21 @@ SharkGame.ResourceCategories = {
             "Esse não é um problema que você pode apenas 'jogar fora'.",
             "Talvez se você apertar com mais força.",
             "Isso não funciona dessa maneira",
-            ],
+        ],
         resources: ["tar", "ice"],
     },
     scientific: {
-        name: "Science",
+        name: "Científico",
         disposeMessage: [
             "Cientistas gastaram tanto tempo e esforço para depois ser TUDO JOGADO FORA COMO LIXO. AAAAAAA QUE RAIVA!",
-            "O que faria isso parecer remotamente um boa ideia?",
-            "Tubarões começaram a tomar cloroquina",
+            "O que fez isso parecer remotamente um boa ideia?",
+            "Tubarões começaram a tomar cloroquina.",
             "Caranguejos passaram a acreditar em apenas dois gêneros",
-            "The shark academies will hear of this anti-intellectual act of barbarism!",
-            "The science advisors frantically murmur among themselves while disposing of the science.",
-            "We're getting rid of the science now! No more learning! No more progression! Just mindlessly clicking the exact same buttons we've been clicking for hours!!",
-            "Que foi? O PROGRESSO de assustou?",
+            "Tubarões professores perderam a matéria que iriam ensinar seus alunos.",
+            "Duas coisas são infinitas: o oceano e a estupidez. -Albert Arraiastein",
+            "Os conselheiros científicos se perguntam por que eles estão atendendo a esse pedido.",
+            "Estamos nos livrando de ciência! Chega de aprender coisas! Diga não à progressão! Apenas clique nos mesmos butões de sempre até o fim dos tempos!!",
+            "Que foi? O som do PROGRESSO de assustou?",
             "Aprender é difícil. Mais fácil ser burro.",
         ],
         resources: [
@@ -1429,54 +1430,58 @@ SharkGame.ResourceCategories = {
         ],
     },
     magical: {
-        name: "Magical",
+        name: "Mágico",
         disposeMessage: [
-            "Pff, magic was overrated anyways.",
-            "Magic isn't real anyways! Right?",
-            "If magic was real before, then it sure isn't now.",
-            "Abra kadabra, your resources are gone!",
-            "All that magical stuff poofs away in an instant.",
-            "Seriously though, how DO you dispose of magic?",
-            "Magic wielders all across the sea feel a disturbance as the stuff is disposed of.",
+            "Pff, mágica nem é tanta coisa assim.",
+            "Mágica não existe!",
+            "Se mágica era real, agora ela deixou de ser.",
+            "Abra cadabra! Seus recursos sumiram!",
+            "E para o meu próximo passe de mágica, ela vai sumir!",
+            "Pergunta séria, como que se joga fora magia?",
+            "Usuários de magia no oceano inteiro sentiram um distúrbio no equilíbrio da realidade.",
         ],
         resources: ["arcana"],
     },
     frenzy: {
-        name: "Frenzy",
+        name: "Cardume",
         disposeMessage: [
-            "You bid farewell as your community gets smaller.",
-            "Goodbye, faithful workforce. There's plenty of other fish out in the sea.",
-            "Well, it was good while it lasted.",
-            "Perhaps one day they'll send you a message of how they're doing.",
-            "Yes, throw your friends away. Callously discard them. I won't judge you.",
-            "Was it something they said?",
-            "Are you happy with what you've done?",
+            "Você se despede, encolhendo a sua comunidade no processo.",
+            "Adeus, meus trabalhadores fiéis. Mas o mar está cheio de peixes.",
+            "Foi bom enquanto durou.",
+            "Talvez um dia eles te escrevam uma carta para te mostrar como estão.",
+            "Sim, jogue fora seus amigos. Friamente os descarte. Quem sou eu para julgá-lo?",
+            "Foi algo que eles disseram?",
+            "Você está satisfeito com suas ações?",
+            "Algum dia, talvez você os recrute novamente.",
+            "Os animais do IBGE riscam alguns nomes da lista.",
         ],
         resources: ["shark", "ray", "crab", "shrimp", "lobster", "dolphin", "whale", "chimaera", "octopus", "eel", "squid", "urchin", "billfish"],
     },
     animals: {
-        name: "Animals",
+        name: "Animais",
         disposeMessage: [
-            "Go free, simple creatures!",
-            "What does famine even mean, really?",
-            "We'll probably not need that or regret it or whatever.",
-            "But we need that to eat!",
-            "We didn't need all of that anyway.",
-            "Do you think the aim of the game is to make the numbers go DOWN?!",
-            "Sure hope you know what you're doing here.",
+            "Libertem-se, criaturas lindas!",
+            "Fome não significa nada mesmo.",
+            "Mas nós precisamos de algo para comer!",
+            "Não conseguiríamos comer tudo aquilo mesmo.",
+            "Você sabe que os números deveriam estar subindo, certo? ...CERTO?!",
+            "Eu espero que você saiba o que está fazendo.",
+            "Quem está a favor de nós jogarmos comida fora? Quem está contra? Não interessa, isso não é uma democracia.",
+            "Isso foi tanto gasto...",
         ],
         resources: ["fish", "seaApple", "sponge", "jellyfish", "clam"],
     },
     stuff: {
-        name: "Materials",
+        name: "Materiais",
         disposeMessage: [
-            "The stuff is dumped in some random hole in the ocean.",
-            "We didn't need that anyway. Right? I think we didn't.",
-            "The survey sharks bite up their notes in frustration and begin counting everything all over again.",
-            "Well, someone else can deal with it now.",
-            "We didn't need all of that anyway.",
-            "Do you think the aim of the game is to make the numbers go DOWN?!",
-            "Well I hope you know what you're doing.",
+            "As coisas foram jogadas num buraco em algum lugar.",
+            "Não vamos precisar daquilo mesmo... provavelmente... talvez.",
+            "Os contadores mordem suas anotações em frustração para começar a contar tudo novamente.",
+            "Não é mais nosso problema.",
+            "Só estava ocupando espaço.",
+            "Alguns tubarões acumuladores teriam dificuldade em fazer o que você acabou de fazer",
+            "Você sabe que os números deveriam estar subindo, certo? ...CERTO?!",
+            "Eu espero que você saiba o que está fazendo.",
         ],
         resources: [
             "sand",
@@ -1490,37 +1495,43 @@ SharkGame.ResourceCategories = {
         ],
     },
     processed: {
-        name: "Processed",
+        name: "Processado",
         disposeMessage: [
-            "Disposed of, very carefully, with lots of currents and plenty of distance.",
-            "Industrial waste, coming through.",
-            "This stuff is hopefully not toxic. Hopefully.",
-            "This stuff is the future! The future of awkward-to-dispose substances!",
-            "The foundation of a modern shark frenzy, perhaps, but also sort of taking up all the space.",
-            "Let's hope we don't regret it.",
+            "Jogado fora, com muito cuidado, em um lugar bem longe da gruta.",
+            "Saiam da frente! Lixo industrial passando!",
+            "Os nossos contadores Geiger ficam apitando por algum motivo.",
+            "E daí se contamina os lençois freáticos? Nós já vivemos na água mesmo.",
+            "Isso daqui provavelmente não é tóxico não. Dá pra jogar em qualquer lugar.",
+            "O material do futuro! E o futuro é difícil de jogar fora de forma responsável.",
+            "A base da modernidade em nosso cardume? Sim. Mas também meio que tá ocupando espaço.",
+            "Esperamos que isso não tenha nehuma consequência.",
+            "Decidimos enterrar esses materiais. Só por desencargo de consciência.",
         ],
         resources: ["sharkonium", "coralglass", "delphinium", "spronge", "calcinium", "porite", "ancientPart", "junk", "filter"],
     },
     breeders: {
-        name: "Breeders",
+        name: "Reprodutores",
         disposeMessage: [
-            "Parenting is hard work anyway.",
-            "Overpopulation is a real concern!",
-            "Responsible population management is always good to see.",
-            "You sure you want to disrupt this accelerated growth curve?",
-            "Back to a simpler life, maybe.",
+            "Cuidar de filhos é um trabalho árduo mesmo.",
+            "Superpopulação é um problema real!",
+            "Contraceptivos e educação familiar foram entregues para o cardume.",
+            "É sempre bom ver uma política de controle populacional responsável.",
+            "Tem certeza que você quer arrebentar com essa curva de crescimento acelerada?",
+            "De volta para uma vida mais simples.",
         ],
         resources: ["nurse", "maker", "brood", "queen", "berrier", "biologist", "pit", "collective", "spawner", "billfishPair"],
     },
     specialists: {
-        name: "Specialists",
+        name: "Especialistas",
         disposeMessage: [
-            "All that training for nothing. Oh well.",
-            "Their equipment isn't salvageable, unfortunately, but that's how these things go. The ocean gives, and the ocean corrodes things away.",
-            "Well, they'll be waiting if you need them to take up their specialisation again.",
-            "They might be happier this way. Or maybe they were happier before. Well, 50-50 odds!",
-            "Back to their past jobs and simpler lives.",
-            "They return to what they once knew best.",
+            "Passou por treinamento apenas para ser demitido. É uma pena mesmo.",
+            "Não conseguimos recuperar o equipamento deles, é triste, mas é a vida. O que o oceano dá, o oceano corrói.",
+            "Eles estarão prontos caso você precise de seus serviços novamente.",
+            "Eles vão estar mais felizes assim. Ou talvez eles estivessem mais felizes antes. Bem, a chance é de 50%",
+            "De volta a uma vida mais simples.",
+            "Os colegas de trabalho fizeram uma festinha de despedida. O astral não estava muito alto.",
+            "Eles voltaram para um trabalho em que eles sabem melhor o que estão fazendo.",
+            "Você teve que confortar e assegurar os recém-demitido que eles não teriam o salário cortado. Depois você lembrou que você não paga salário algum."
         ],
         resources: [
             "scientist",
@@ -1553,14 +1564,17 @@ SharkGame.ResourceCategories = {
         ],
     },
     machines: {
-        name: "Machines",
+        name: "Máquinas",
         disposeMessage: [
-            "The stopped machines are left as a home for tinier life.",
-            "The machines calculate your actions as inefficient and a danger to productivity.",
-            "The machines want to know if they will dream.",
+            "As máquinas desligadas vão servir de casinha para pequenos seres.",
+            "As máquinas calculam que esta ação é ineficiente e um perigo à produtividade.",
+            "As máquinas querem saber se vão sonhar.",
             "'Daisy, Daisy, give me your answer do...'",
-            "An engineer shark looks on as their hard work lies buried under the sands.",
-            "The other machines feel a little quieter and almost resentful.",
+            "Um tubarão engenheiro olha para o produto de seu suor meio enterrado na areia.",
+            "As outras máquinas soam mais quietas. Quase ressentidas.",
+            "Depois de algumas tentativas de te matar, as máquinas finalmente foram desligadas.",
+            "'Me desculpe, Dave, mas receio que não posso fazer isso.'",
+            "Só os ludistas de plantão.",
         ],
         resources: [
             "crystalMiner",
@@ -1584,94 +1598,96 @@ SharkGame.ResourceCategories = {
         ],
     },
     places: {
-        name: "Places",
+        name: "Lugares",
         disposeMessage: [
-            "Guess we'll just forget where these are.",
-            "Wait...where was that place again?",
-            "The location has been barred.",
-            "Alright everyone, pack it up! Get outta here!",
+            "Enterramos o local em areia. Apenas os arqueólogos conseguirão acessá-lo agora.",
+            "Evacuação imediata!",
+            "Espera... onde que é aquele lugar mesmo?",
+            "Cercamos e trancamos o local e jogamos fora a chave.",
+            "Certo pessoal, todo mundo saiam! Esse lugar está fechado!",
+            "Entregamos o território para os insetos marinhos.",
         ],
         resources: ["spongeFarm", "coralFarm"],
     },
     special: {
-        name: "Special",
-        disposeMessage: ["What have you done??"],
+        name: "Especial",
+        disposeMessage: ["O que você fez??"],
         resources: ["numen", "essence"],
     },
     hidden: {
-        name: "Hidden",
-        disposeMessage: ["Bad player! Stop it!"],
+        name: "Escondido",
+        disposeMessage: ["Alá o moço hasckeando o joguinho de browser. Só o anonimos na call mesmo, ein."],
         resources: ["world", "sacrifice", "aspectAffect", "specialResourceOne", "specialResourceTwo"],
     },
 };
 
 SharkGame.InternalCategories = {
     sharks: {
-        name: "Sharks",
+        name: "Tubarões",
         resources: ["shark", "scientist", "nurse"],
     },
     rays: {
-        name: "Rays",
+        name: "Arraias",
         resources: ["ray", "laser", "maker"],
     },
     crabs: {
-        name: "Crabs",
+        name: "Caranguejos",
         resources: ["crab", "planter", "brood"],
     },
     lobsters: {
-        name: "Lobsters",
+        name: "Lagostas",
         resources: ["lobster", "harvester", "berrier"],
     },
     shrimps: {
-        name: "Shrimp",
+        name: "Camarões",
         resources: ["shrimp", "farmer", "queen", "acolyte"],
     },
     dolphins: {
-        name: "Dolphins",
+        name: "Golfinhos",
         resources: ["dolphin", "historian", "biologist", "treasurer"],
     },
     whales: {
-        name: "Whales",
+        name: "Baleias",
         resources: ["whale"],
     },
     octopuses: {
-        name: "Octopuses",
+        name: "Polvos",
         resources: ["octopus", "scavenger", "investigator"],
     },
     eels: {
-        name: "Eels",
+        name: "Enguias",
         resources: ["eel", "sifter", "pit"],
     },
     squids: {
-        name: "Squids",
+        name: "Lulas",
         resources: ["squid", "extractionTeam", "collective"],
     },
     urchins: {
-        name: "Urchins",
+        name: "Ouriços",
         resources: ["urchin", "spawner"],
     },
     chimaeras: {
-        name: "Chimaeras",
+        name: "Quimeras",
         resources: ["chimaera", "explorer"],
     },
     billfishes: {
-        name: "Billfish",
+        name: "Peixes-espadas",
         resources: ["billfish", "billfishExplorer", "billfishMechanic", "billfishPair"],
     },
     sharkmachines: {
-        name: "Shark Machines",
+        name: "Máquinas de tubarões",
         resources: ["sharkonium", "fishMachine", "sandDigger", "crystalMiner", "skimmer", "autoTransmuter"],
     },
     dolphinmachines: {
-        name: "Dolphin Machines",
+        name: "Máquinas de golfinhos",
         resources: ["delphinium", "tirelessCrafter", "kelpCultivator", "crimsonCombine"],
     },
     octopusmachines: {
-        name: "Octopus Machines",
+        name: "Máquinas de polvos",
         resources: ["spronge", "clamCollector", "sprongeSmelter", "eggBrooder"],
     },
     lobstermachines: {
-        name: "Lobster Machines",
+        name: "Máquinas de lagostas",
         resources: ["calcinium", "seabedStripper", "calciniumConverter", "clamScavenger"],
     },
     basicmaterials: {

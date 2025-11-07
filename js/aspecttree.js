@@ -43,13 +43,13 @@ SharkGame.AspectTree = {
             width: 30,
             height: 30,
 
-            name: "Respec",
-            description: "Toggles respec mode.",
+            name: "Reembolso",
+            description: "Liga/desliga o modo reembolso.",
             getEffect() {
                 if (tree.refundMode) {
-                    return "Deactivate respec mode.";
+                    return "Desliga o modo reembolso.";
                 } else {
-                    return "Activate respec mode to refund aspects (if possible) on click.";
+                    return "Ativa o modo reembolso para vender aspectos (se possível).";
                 }
             },
             clicked() {
@@ -71,13 +71,13 @@ SharkGame.AspectTree = {
             width: 30,
             height: 30,
 
-            name: "Respec All",
-            description: "Respecs all aspects.",
+            name: "Reinicio",
+            description: "Reembolsa todos o aspectos.",
             getEffect() {
-                return "Respec ALL refundable aspects.";
+                return "Vende TODOS os aspectos reembolsáveis.";
             },
             clicked() {
-                if (confirm("Are you sure you want to respec ALL refundable aspects?")) {
+                if (confirm("Tem certeza que queres vender TODOS os aspectos reembolsáveis?")) {
                     tree.respecTree();
                 }
             },
@@ -95,12 +95,12 @@ SharkGame.AspectTree = {
             height: 30,
 
             name: "Debug",
-            description: "Toggles debug mode.",
+            description: "Liga/desliga modo de debug.",
             getEffect() {
                 if (tree.debugMode) {
-                    return "Deactivate debug mode.";
+                    return "Desliga modo de debug.";
                 } else {
-                    return "Activate debug mode to freely change levels of aspects.";
+                    return "Ativa modo debug para mudar os níveis dos aspectos livremente.";
                 }
             },
             clicked() {
@@ -222,11 +222,11 @@ SharkGame.AspectTree = {
             let basicText = "";
             let cantBuyText = "";
             if (!reqref.prereqsMet && aspectData.level === 0) {
-                cantBuyText = "With your infinite vision, you can see this aspect, but cannot buy it.";
+                cantBuyText = "Com sua visão infinita, você sente esse aspecto, mas não consegue desbluqueá-lo.";
             } else if (reqref.locked) {
-                cantBuyText = "This aspect is locked. " + reqref.locked;
+                cantBuyText = "Esse aspecto está bloqueado. " + reqref.locked;
             } else if (reqref.isolated) {
-                cantBuyText = "This aspect's prerequisites aren't met, even though you have levels in it.";
+                cantBuyText = "Você não alcançou os prerequisitos desse aspecto, mesmo tendo níveis dele.";
             }
             basicText =
                 " A" +
@@ -438,14 +438,14 @@ SharkGame.AspectTree = {
 
             context.save();
             context.fillStyle = getComputedStyle(document.getElementById("backToGateway")).color;
-            context.fillText("on scouting missions", 440, 10);
-            context.fillText("you can only bring core aspects", 440, 25);
-            context.fillText("non-core aspects ->", 440, 60);
-            context.fillText("<- core aspects", 300, 60);
-            context.fillText("on scouting missions", 440, 710);
-            context.fillText("you can only bring core aspects", 440, 725);
-            context.fillText("non-core aspects ->", 440, 680);
-            context.fillText("<- core aspects", 300, 680);
+            context.fillText("em missões de descoberta", 440, 10);
+            context.fillText("apenas aspectos basais são ativos", 440, 25);
+            context.fillText("aspectos superficiais ->", 440, 60);
+            context.fillText("<- aspectos basais", 300, 60);
+            context.fillText("em missões de descoberta", 440, 710);
+            context.fillText("apenas aspectos basais são ativos", 440, 725);
+            context.fillText("aspectos superficiais ->", 440, 680);
+            context.fillText("<- aspectos basais", 300, 680);
             context.restore();
         }
 
@@ -824,12 +824,12 @@ SharkGame.AspectTree = {
                 let costText = "";
                 if (tree.refundMode) {
                     if (button.noRefunds) {
-                        costText = "NO REFUNDS";
+                        costText = "SEM REEMBOLSO";
                     } else {
-                        costText = `REFUND VALUE: <span class="can-afford-aspect">${refundValue}</span>`;
+                        costText = `VALOR DO REEMBOLSO: <span class="can-afford-aspect">${refundValue}</span>`;
                     }
                 } else {
-                    costText = `COST: <span class='${reqref.affordable ? "can-afford-aspect" : "cant-afford-aspect"}'>${cost} ESSENCE</span>`;
+                    costText = `CUSTO: <span class='${reqref.affordable ? "can-afford-aspect" : "cant-afford-aspect"}'>${cost} ESSÊNCIA</span>`;
                 }
 
                 const levelText =
@@ -860,12 +860,12 @@ SharkGame.AspectTree = {
                 let costText = "";
                 if (tree.refundMode) {
                     if (button.noRefunds) {
-                        costText = "NO REFUNDS";
+                        costText = "SEM REEMBOLSO";
                     } else {
-                        costText = `REFUND VALUE: <span class="can-afford-aspect">${refundValue}</span>`;
+                        costText = `VALOR DO REEMBOLSO: <span class="can-afford-aspect">${refundValue}</span>`;
                     }
                 } else {
-                    costText = "MAXIMUM LEVEL.";
+                    costText = "NÍVEL MÁXIMOS.";
                 }
 
                 const levelText =

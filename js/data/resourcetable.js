@@ -21,7 +21,7 @@ SharkGame.ResourceTable = {
     world: {
         get name() {
             switch (world.worldType) {
-                case "vulcânico":
+                case "volcanic":
                     return "fontes termais";
                 case "tempestuous":
                     return "a tempestade";
@@ -31,7 +31,7 @@ SharkGame.ResourceTable = {
         },
         get singleName() {
             switch (world.worldType) {
-                case "vulcânico":
+                case "volcanic":
                     return "fonte termais";
                 case "tempestuous":
                     return "a tempestade";
@@ -48,7 +48,7 @@ SharkGame.ResourceTable = {
     specialResourceOne: {
         get name() {
             switch (world.worldType) {
-                case "vulcânico":
+                case "volcanic":
                     return "falta de alga";
                 default:
                     return "???";
@@ -56,7 +56,7 @@ SharkGame.ResourceTable = {
         },
         get singleName() {
             switch (world.worldType) {
-                case "vulcânico":
+                case "volcanic":
                     return "falta de alga";
                 default:
                     return "???";

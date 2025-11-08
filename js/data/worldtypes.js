@@ -46,18 +46,18 @@ SharkGame.WorldTypes = {
         },
     },
     marine: {
-        name: "Marine",
-        vagueDesc: "Feels familiar.",
-        desc: "A serene, blue marble.",
-        shortDesc: "strange blue",
+        name: "Marinho",
+        vagueDesc: "Parece familiar.",
+        desc: "Uma serene bolinha azul.",
+        shortDesc: "estranho azul",
         foresight: {
-            vagueLongDesc: "This place is so familiar.",
-            longDesc: "A vast, blue ocean, swarming with fish.",
+            vagueLongDesc: "Esse lugar é tão familiar.",
+            longDesc: "Um vasto oceano azul, cheio de peixe.",
             missing: ["laser"],
             present: ["clam", "lobster"],
             tip: "",
         },
-        entry: "You enter a serene blue sea, all your previous knowledge a dim memory.",
+        entry: "Você entra num mar serene azulado, todo seu conhecimento anterior apenas uma memória nebulosa.",
         style: "default",
         includedResources: [
             "basics",
@@ -86,18 +86,18 @@ SharkGame.WorldTypes = {
         par: 55,
     },
     haven: {
-        name: "Haven",
-        vagueDesc: "Feels lively.",
-        desc: "An aquamarine world of plenty. So beautiful, yet so vulnerable.",
-        shortDesc: "thriving aquamarine",
+        name: "Paradisíaco",
+        vagueDesc: "Parece animado.",
+        desc: "Um rico mundo aquamarino. Tão lindo, e tão vulnerável.",
+        shortDesc: "próspero aquamarinho",
         foresight: {
             vagueLongDesc: "You can sense a lot of activity in this world.",
-            longDesc: "The water is clear, the sand is clean, and the fish are plenty. A paradise in every way.",
+            longDesc: "A água é límpida, a areia está limpa, e os peixes são fartos. Um paraíso de toda maneira.",
             missing: ["laser", "sharkonium"],
             present: ["coral", "dolphin", "whale"],
-            tip: "The abudance of resources might may your stay here shorter than others.",
+            tip: "A abundância de recurso pode fazer a sua estadia neste mundo mais curta que o normal.",
         },
-        entry: "Remembering nothing, you find yourself in a beautiful atoll. Life will be good here.",
+        entry: "Não se lembrando de nada, você está agora num lindo atol. Sua vida será boa aqui.",
         style: "haven",
         includedResources: [
             "basics",
@@ -121,18 +121,18 @@ SharkGame.WorldTypes = {
         par: 35,
     },
     tempestuous: {
-        name: "Tempestuous",
-        desc: "A swirling maelstrom where nothing rests.",
-        vagueDesc: "Feels turbulent.",
-        shortDesc: "swirling grey",
+        name: "Tempestuoso",
+        desc: "Uma tempestade perpétua onde nada fica parado.",
+        vagueDesc: "Parece turbulento.",
+        shortDesc: "inquieto cinza",
         foresight: {
-            vagueLongDesc: "It's hard to feel out this place. Everything's constantly moving.",
+            vagueLongDesc: "É difícil entender esse mundo. Tudo está se movendo o tempo inteiro.",
             longDesc:
-                "A terrible storm has taken up residence here. It's hard to think, much less get anything done, with all the strong currents whipping stuff around.",
+                "Uma tempestade terrível se instalou aqui. É difícil de pensar, pior ainda de fazer qualquer coisa, com as correntezas espalhando tudo.",
             missing: ["kelp", "seaApple", "crystalMiner"],
             present: ["billfish", "seagrass"],
         },
-        entry: "You recall nothing and know only the storms. The unrelenting, restless storms scattering your possessions and allies.",
+        entry: "Você não lembra de nada, a chuva é a única coisa que você conhece. A tempestade constante, interminável fica roubando suas coisas e seus amigos.",
         style: "tempestuous",
         includedResources: [
             "basics",
@@ -153,17 +153,17 @@ SharkGame.WorldTypes = {
         par: 55,
     },
     volcanic: {
-        name: "Volcanic",
-        vagueDesc: "Feels hot.",
-        desc: "An ocean close to boiling and choking under sulphuric fumes.",
-        shortDesc: "searing red",
+        name: "Vulcânico",
+        vagueDesc: "Parece quente.",
+        desc: "Um oceano fervente e coberto por fumaça sulfúrica.",
+        shortDesc: "escaldante vermelho",
         foresight: {
-            vagueLongDesc: "Horrible heat sears your mind from afar.",
-            longDesc: "Despite its seemingly inhospitable atmosphere, this world is teeming with life.",
+            vagueLongDesc: "Uma quentura agoniante açoita a sua mente de longe.",
+            longDesc: "Mesmo com sua atmosfera extrema, esse mundo está fervendo com vida.",
             missing: ["crystal", "shark", "kelp"],
             present: ["coral", "sponge", "algae", "shrimp"],
         },
-        entry: "The burning waters sear the last traces of your past experiences from you. From beneath, the vents spew forth a heavy cloud of smoke.",
+        entry: "As águas ferventes escaldam qualquer memória de sua mente. Do solo, fontes hidrotermais liberam um fumo pesado.",
         style: "volcanic",
         includedResources: [
             "basics",
@@ -187,33 +187,33 @@ SharkGame.WorldTypes = {
         par: 55,
     },
     abandoned: {
-        name: "Abandoned",
-        vagueDesc: "Feels grimy.",
-        desc: "A dying world filled with machinery.",
-        shortDesc: "murky dark green",
+        name: "Abandonado",
+        vagueDesc: "Parece sujo.",
+        desc: "Um mundo consumido, cheio de máquinas.",
+        shortDesc: "turvo verde-escuro",
         foresight: {
-            vagueLongDesc: "This world has an aura of death and apathy.",
+            vagueLongDesc: "Esse mundo tem uma energia de morte e apatia.",
             get longDesc() {
                 return (
-                    "The water here is dank and tinted green by " +
+                    "A água aqui está encardida e tingida de verde por " +
                     (gateway.isWorldBeaten("abandoned")
                         ? sharktext.getResourceName("tar", undefined, undefined, sharkcolor.getElementColor("pane")) + "."
-                        : "an unrecognizable substance.") +
-                    " Husks of machinery litter the ocean floor."
+                        : "uma substância tóxica.") +
+                    " Cascas de maquinário velho infestam o solo."
                 );
             },
             missing: ["seaApple", "kelp"],
             present: ["octopus", "sponge", "clam", "tar"],
             get tip() {
                 return (
-                    "This ocean is polluted with " +
+                    "Esse oceano está poluído com " +
                     (gateway.isWorldBeaten("abandoned")
                         ? sharktext.getResourceName("tar", undefined, undefined, sharkcolor.getElementColor("pane"))
-                        : "an unrecognizable substance" + ". It is only harmful when machines produce it.")
+                        : "uma substância tóxica" + ". Só é perigoso quando máquinas produzem.")
                 );
             },
         },
-        entry: "The water is tainted. The pungent smell snaps you awake to the lifeless landscape. You do not know who left this world so torn and empty.",
+        entry: "A água está contaminada. O cheiro pútrico te acorda para um mundo esgotado. Você não sabe quem destruiu esse mundo dessa forma.",
         style: "abandoned",
         bonus: 1,
         includedResources: [
@@ -240,24 +240,24 @@ SharkGame.WorldTypes = {
         par: 45,
     },
     shrouded: {
-        name: "Shrouded",
-        vagueDesc: "Feels mysterious.",
-        desc: "A dark, murky ocean of secrecy.",
+        name: "Escuro",
+        vagueDesc: "Parece misterioso.",
+        desc: "Um oceano escuro e sombrio, cheio de segredos.",
         foresight: {
-            vagueLongDesc: "You feel a strange power radiating from this world.",
+            vagueLongDesc: "Você sente um poder estranho emanando desse mundo.",
             get longDesc() {
-                return `This place is completely shrouded in darkness. Glowing ${sharktext.getResourceName(
+                return `Esse mundo está envolto por escuridão. Lindos ${sharktext.getResourceName(
                     "crystal",
                     false,
                     69,
                     sharkcolor.getElementColor("pane"),
-                )} litter the water and strange figures lurk among the endless shadows.`;
+                )} brilhantes estão espalhados pelas cavernas e figuras estranhas se escondem nas sombras.`;
             },
             missing: ["kelp", "crab", "laser"],
             present: ["jellyfish", "chimaera", "eel"],
         },
-        shortDesc: "dark mysterious",
-        entry: "Blackness. You know only blindness in these dark forsaken waters. Foggy memory leads you to follow a stream of crystals.",
+        shortDesc: "escuro misterioso",
+        entry: "Escuridão. Você só conhece a cegueira negra nessas águas. Uma memória nebulosa te leva a seguir um caminho de cristais.",
         style: "shrouded",
         includedResources: [
             "essence",
@@ -282,13 +282,13 @@ SharkGame.WorldTypes = {
         par: 50,
     },
     frigid: {
-        name: "Frigid",
-        vagueDesc: "Feels chilly.",
-        desc: "An arctic ocean dangling on the edge of frozen doom.",
-        shortDesc: "freezing white",
+        name: "Gélido",
+        vagueDesc: "Parece frio.",
+        desc: "Um oceano ártico no precipício de serem tomadas pelo gelo.",
+        shortDesc: "congelante branco",
         foresight: {
-            vagueLongDesc: "Bitter cold stings your mind from afar.",
-            longDesc: "The world is mostly frozen, but a small pocket of warmer water seems to preserve what little chance life has here.",
+            vagueLongDesc: "Frio desconsertante cerca a sua mente ao olhar para esse mundo.",
+            longDesc: "Esse mundo está em sua maioria congelado, mas um pequeno bolsão de água morna preserva algumas poucas espécies sobreviventes.",
             missing: ["seaApple", "ray"],
             present: ["squid", "urchin"],
             get tip() {
@@ -301,7 +301,7 @@ SharkGame.WorldTypes = {
                 );
             },
         },
-        entry: "The arctic water freezes away whatever thoughts you may have had. So cold.",
+        entry: "A água ártica te impede de lembrar de qualquer mundo anterior de tão frio que é.",
         style: "frigid",
         includedResources: [
             "sharks",

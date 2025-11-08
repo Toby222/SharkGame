@@ -23,7 +23,7 @@ SharkGame.ResourceTable = {
             switch (world.worldType) {
                 case "vulcânico":
                     return "fontes termais";
-                case "tempestuoso":
+                case "tempestuous":
                     return "a tempestade";
                 default:
                     return "o mundo";
@@ -33,7 +33,7 @@ SharkGame.ResourceTable = {
             switch (world.worldType) {
                 case "vulcânico":
                     return "fonte termais";
-                case "tempestuoso":
+                case "tempestuous":
                     return "a tempestade";
                 default:
                     return "o mundo";

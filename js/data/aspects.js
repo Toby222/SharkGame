@@ -217,7 +217,6 @@ SharkGame.Aspects = {
                 sharktext.boldString("multiplicador") +
                 " na recompensa de " +
                 sharktext.boldString("Paciência")
-                
             );
         },
         getUnlocked() {
@@ -296,7 +295,7 @@ SharkGame.Aspects = {
             return "Fichas aumentam a produção em <strong>" + (level + 2) + "×</strong>.";
         },
         getUnlocked() {
-            return gateway.completedWorlds.includes("frigid") ? "" : "Complete o mundo gélido para desbloquear.";
+            return gateway.completedWorlds.includes("frigid") ? "" : "Complete o mundo Gélido para desbloquear.";
         },
         prerequisites: ["tokenOfIndustry"],
         clicked(_event) {
@@ -378,12 +377,12 @@ SharkGame.Aspects = {
         max: 8,
         level: 0,
         name: "O plano",
-        description: "Professionals have standards. Be polite, be efficient, and have a plan to recruit everyone you meet.",
+        description: "'Eu estou bolando o melhor plano infalível que você ja viu. Nos tornaremos donos do mundo!' -Cetaceolinha",
         getCost(level) {
             return 2 * level ** 2 + 4;
         },
         getEffect(level) {
-            return "Core frenzy members are <strong>" + 100 * (1 - 0.5 ** level) + "%</strong> cheaper to hire.";
+            return "O custo dos membros do cardume são <strong>" + 100 * (1 - 0.5 ** level) + "%</strong> menores.";
         },
         getUnlocked() {},
         prerequisites: ["pathOfIndustry"],
@@ -399,13 +398,13 @@ SharkGame.Aspects = {
 
         max: 8,
         level: 0,
-        name: "Collective Cooperation",
-        description: "Direct your frenzy. Learn to control them.",
+        name: "Cooperação Coletiva",
+        description: "Direcione seu cardume. Aprenda a controlá-lo.",
         getCost(level) {
             return 10 * level + 5;
         },
         getEffect(level) {
-            return "The effect from tokens of industry is <strong>" + (level + 1) + "×</strong> stronger.";
+            return "O efeito da ficha de industria é <strong>" + (level + 1) + "×</strong> mais forte.";
         },
         getUnlocked() {},
         prerequisites: ["thePlan"],
@@ -421,13 +420,13 @@ SharkGame.Aspects = {
 
         max: 8,
         level: 0,
-        name: "Constructed Conception",
-        description: "Reproduction is inefficient. Control biology as a means to an end.",
+        name: "Concepção Arquitetada",
+        description: "Reprodução natural não é eficient. Controle a biologia como uma ferramenta sua.",
         getCost(level) {
             return 2 * level + 3;
         },
         getEffect(level) {
-            return "All breeders are <strong>" + 2 ** level + "×</strong> faster.";
+            return "Todos os reprodutores são <strong>" + 2 ** level + "×</strong> mais rápidos.";
         },
         getUnlocked() {},
         prerequisites: ["thePlan"],
@@ -450,8 +449,8 @@ SharkGame.Aspects = {
 
         max: 5,
         level: 0,
-        name: "Destiny Gamble",
-        description: "Where we end up is all luck, but sometimes, we can stack the deck.",
+        name: "Apostas do Destino",
+        description: "Nosso caminho se dá por sorte, mas tem vezes que nós podemos viciar os dados.",
         noRefunds: true,
         core: true,
         getCost(level) {
@@ -459,10 +458,10 @@ SharkGame.Aspects = {
         },
         getEffect(level) {
             return (
-                "Between worlds, have the opportunity to reroll your world selection up to <strong>" +
+                "Ao escolher os mundos, você terá a oportunidade de mudar a seleção do seu destino <strong>" +
                 level +
-                " time" +
-                (level > 1 ? "s" : "") +
+                " vez" +
+                (level > 1 ? "es" : "") +
                 "</strong>."
             );
         },
@@ -489,19 +488,19 @@ SharkGame.Aspects = {
 
         max: 1,
         level: 0,
-        name: "Clean Slate",
-        description: "To build anew, you must first destroy what is already there.",
+        name: "Tela em Branco",
+        description: "Para construir algo novo, primeiro deve-se apagar o que já foi construido.",
         noRefunds: true,
         core: true,
         getCost(_level) {
             return 3;
         },
         getEffect(_level) {
-            return "Unlock the ability to refund some aspects.";
+            return "Desbloqueia a abilidade de reembolsar alguns aspectos.";
         },
         getUnlocked() {
             if (gateway.completedWorlds.length < 2) {
-                return "Scout at least one world to unlock this aspect.";
+                return "Explore dois mundos para desbloquear.";
             }
         },
         prerequisites: ["distantForesight"],
@@ -512,7 +511,7 @@ SharkGame.Aspects = {
             if (when === "levelUp" && SharkGame.Settings.current.doAspectTable === "table") {
                 SharkGame.Button.makeButton("respecModeButton", "respec mode", $("#aspectTreeNavButtons"), tree.toggleRefundMode);
                 SharkGame.Button.makeButton("respecButton", "respec all", $("#aspectTreeNavButtons"), () => {
-                    if (confirm("Are you sure you want to respec all refundable aspects?")) {
+                    if (confirm("Tem certeza que queres vender TODOS os aspectos reembolsáveis?")) {
                         tree.respecTree();
                     }
                 });
@@ -527,18 +526,18 @@ SharkGame.Aspects = {
 
         max: 16,
         level: 0,
-        name: "Crystalline Skin",
-        description: "Become one with the lattice.",
+        name: "Alma Crystalina",
+        description: "Vire um com as pedras.",
         getCost(level) {
             return 3 + level ** 2;
         },
         getEffect(level) {
             return (
-                "If you have less than <strong>" +
+                "Enquanto você tiver menos que <strong>" +
                 25 * 2 ** level +
                 "</strong> " +
                 sharktext.getResourceName("crystal", false, 69, sharkcolor.getElementColor("tooltipbox", "background-color")) +
-                ", they will rapidly increase back to that amount. If they do not exist, this applies to an equivalent resource."
+                ", eles vão ser produzidos rapidamente. Se eles não existirem, este aspecto se aplicará a um recurso equivalente."
             );
         },
         getUnlocked() {},
@@ -588,32 +587,32 @@ SharkGame.Aspects = {
 
         max: 5,
         level: 0,
-        name: "Internal Calculator",
-        description: "The octopuses could always manifest the rational from the confusing. Master their efficiency inside your own mind.",
+        name: "Calculadora Interna",
+        description: "Os polvos sempre se mostraram racionais mesmo em situações confusas. Desenvolva sua mente e desenvolva essa eficiência.",
         getCost(_level) {
             return 3;
         },
         getEffect(level) {
             if (level === 1) {
                 return (
-                    "If a research costs <strong>" +
+                    "Se uma pesquisa custa <strong>" +
                     150 +
                     "</strong> " +
                     sharktext.getResourceName("science", false, false, sharkcolor.getElementColor("tooltipbox", "background-color")) +
-                    " or less, then its science cost is halved."
+                    " ou menos, seu custo de " + sharktext.getResourceName("science", false, false, sharkcolor.getElementColor("tooltipbox", "background-color")) + " é dividido pela metade."
                 );
             } else {
                 return (
-                    "If a research costs <strong>" +
+                    "Se uma pesquisa custa <strong>" +
                     150 * (level - 1) ** 2 +
                     "</strong> " +
                     sharktext.getResourceName("science", false, false, sharkcolor.getElementColor("tooltipbox", "background-color")) +
-                    " or less, then all its costs are halved."
+                    " ou menos, todos os seus custos são divididos pela metade."
                 );
             }
         },
         getUnlocked() {
-            return gateway.completedWorlds.includes("abandoned") ? "" : "Complete the Abandoned worldtype to unlock this aspect.";
+            return gateway.completedWorlds.includes("abandoned") ? "" : "Complete o mundo Abandonado para desbloquear.";
         },
         prerequisites: ["pathOfTime"],
         clicked(_event) {
@@ -628,16 +627,16 @@ SharkGame.Aspects = {
 
         max: 2,
         level: 0,
-        name: "Extensive Organization",
-        description: "Be prepared. Organize. No wasted time.",
+        name: "Organização Prévia",
+        description: "Esteja preparado. Organize-se. Não gaste tempo.",
         getCost(_level) {
             return 2;
         },
         getEffect(level) {
             if (level === 1) {
-                return "Start with the grotto already unlocked.";
+                return "Comece com a gruta já desbloqueada.";
             } else {
-                return "Start with the grotto and the laboratory already unlocked.";
+                return "Comece com a gruta e o laboratório já desbloqueados.";
             }
         },
         getUnlocked() {
@@ -664,24 +663,24 @@ SharkGame.Aspects = {
 
         max: 5,
         level: 0,
-        name: "The Hour Hand",
-        description: "Time is a construct of the mind.",
+        name: "O Ponteiro das Horas",
+        description: "O tempo é um conceito da mente.",
         core: true,
         getCost(level) {
             return 3 + level;
         },
         getEffect(level) {
             return (
-                "The Minute Hand starts with " +
+                "O Ponteiro dos Minutos começara com " +
                 sharktext.boldString(60 * level + "s") +
-                " when entering a world. This " +
-                sharktext.boldString("DOESN'T") +
-                " count against your world-time when used."
+                " ao entrar num mundo. Isso " +
+                sharktext.boldString("NÃO VAI") +
+                " contar no seu tempo de conclusão se usado."
             );
         },
         getUnlocked() {
             if (gateway.completedWorlds.length < 2) {
-                return "Scout at least one world to unlock this aspect.";
+                return "Explore um mundo para desbloquear.";
             }
         },
         prerequisites: ["tokenOfIndustry"],
@@ -697,23 +696,23 @@ SharkGame.Aspects = {
 
         max: 5,
         level: 0,
-        name: "Double Time",
-        description: "Why work twice as hard when you have twice as long?",
+        name: "Expansão Temporal",
+        description: "E se, ao invés de trabalhar mais duro, nós tivermos mais tempo?",
         core: false,
         getCost(level) {
             return 3 * level + 3;
         },
         getEffect(level) {
             return (
-                "The Minute Hand earns " +
+                "O Ponteiro dos Minutos ganha " +
                 sharktext.boldString(level + 1 + "×") +
-                " time from all sources (except The Hour Hand). " +
-                "Bonus time counts against your world-time when used."
+                " mais tempo de todas as fontes (exceto do Ponteiro das Horas). " +
+                "Esse tempo bônus vai contar no seu tempo de conclusão se usado."
             );
         },
         getUnlocked() {
             if (res.getTotalResource("essence") < 32) {
-                return "Earn 32 lifetime essence to unlock this aspect.";
+                return "Consiga um total de 32 essência para desbloquear.";
             }
         },
         prerequisites: ["theHourHand"],
@@ -729,23 +728,23 @@ SharkGame.Aspects = {
 
         max: 5,
         level: 0,
-        name: "Overtime",
-        description: "No time for breaks!",
+        name: "Escala 6x1",
+        description: "Sem tempo pra descanso!",
         core: false,
         getCost(level) {
             return 3 * level + 3;
         },
         getEffect(level) {
             return (
-                "The Minute Hand gains " +
+                "O Ponteiro dos Minutos ganha " +
                 sharktext.boldString(sharktext.beautify(0.2 * level) + "s") +
-                " per second while disabled. " +
-                "Bonus time counts against your world-time when used."
+                " por segundo enquanto desativado. " +
+                "Esse tempo bônus vai contar no seu tempo de conclusão se usado."
             );
         },
         getUnlocked() {
             if (res.getTotalResource("essence") < 32) {
-                return "Earn 32 lifetime essence to unlock this aspect.";
+                return "Consiga um total de 32 essência para desbloquear.";
             }
         },
         prerequisites: ["theHourHand"],
@@ -761,21 +760,21 @@ SharkGame.Aspects = {
 
         max: 5,
         level: 0,
-        name: "Gumption",
-        description: "Resourcefulness leads to prosperity.",
+        name: "Culhões",
+        description: "Prosperidade gera prosperidade.",
         core: true,
         getCost(level) {
             return level !== 4 ? 5 + level : 4;
         },
         getEffect(level) {
             return (
-                "For each unspent " +
+                "Para cada " +
                 sharktext.getResourceName("essence", false, 69, sharkcolor.getElementColor("tooltipbox", "background-color")) +
-                " you have, increase non-patience " +
+                " não gasta, aumente os ganhos de " +
                 sharktext.getResourceName("essence", false, 69, sharkcolor.getElementColor("tooltipbox", "background-color")) +
-                " gains by <strong>" +
+                " (não contando ganhos por Paciência) por <strong>" +
                 level +
-                "%</strong>. Effect caps at <strong>100%</strong>."
+                "%</strong>. Efeito máximo em <strong>100%</strong>."
             );
         },
         getUnlocked() {},
@@ -792,8 +791,8 @@ SharkGame.Aspects = {
 
         max: 1,
         level: 0,
-        name: "Meditation",
-        description: "Breathe. Focus. Feel the current. Control it.",
+        name: "Meditação",
+        description: "Respire. Foque. Sinta a correnteza. Controle-a.",
         noRefunds: true,
         core: true,
         getCost(_level) {
@@ -801,14 +800,14 @@ SharkGame.Aspects = {
         },
         getEffect(_level) {
             if (SharkGame.Settings.current.idleEnabled) {
-                return "Unlock a pause button to toggle idle mode at will.";
+                return "Desbloqueie um botão para pausar a qualquer momento.";
             } else {
-                return "Unlock a pause button that freezes most timers and all resources.";
+                return "Desbloqueie um botão para parar a maioria dos timers e todos os recursos.";
             }
         },
         getUnlocked() {
             if (gateway.completedWorlds.length < 2) {
-                return "Scout at least one world to unlock this aspect.";
+                return "Explore pelo menos um mundo para desbloquear.";
             }
         },
         prerequisites: ["pathOfEnlightenment"],
@@ -824,15 +823,15 @@ SharkGame.Aspects = {
 
         max: 1,
         level: 0,
-        name: "Infinity Vision",
-        description: "Nothing can remain hidden to astute observers.",
+        name: "Visão Infinita",
+        description: "Nada fica escondido para observadores espertos.",
         noRefunds: true,
         core: true,
         getCost(_level) {
             return 10;
         },
         getEffect(_level) {
-            return "Reveal all aspects which are not locked.";
+            return "Revela todos os aspectos não bloqueados.";
         },
         getUnlocked() {},
         prerequisites: ["distantForesight"],

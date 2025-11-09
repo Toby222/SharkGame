@@ -291,7 +291,7 @@ SharkGame.HomeActions = {
                 "Pegou uma água-viva crina de cavalo.",
                 "Pegou uma medusa imortal.",
                 "Pegou uma medusa-de-riscas-púrpuras.",
-                "Grabbed a mane jellyfish.",
+                "Pegou uma medusa-compasso,.",
                 "Grabbed a sun jellyfish.",
                 "Grabbed a square jellyfish.",
                 "Grabbed a physalia jellyfish.",

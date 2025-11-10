@@ -95,7 +95,7 @@ SharkGame.HomeActions = {
                 "Pegou um peixe à milanesa... Espera, quê?",
                 "Pegou um peixe bola gato.",
                 "Você pegou um peixe, parabéns!",
-                "Você venceu o jogo!"
+                "Você venceu o jogo!",
                 "Peixe.",
                 "Pegou um tubarão. Espera aí... Não, esquece, não era um tubarão.",
                 "Pegou uma anchova.",
@@ -291,12 +291,10 @@ SharkGame.HomeActions = {
                 "Pegou uma água-viva crina de cavalo.",
                 "Pegou uma medusa imortal.",
                 "Pegou uma medusa-de-riscas-púrpuras.",
-                "Pegou uma medusa-compasso,.",
-                "Grabbed a sun jellyfish.",
-                "Grabbed a square jellyfish.",
-                "Grabbed a physalia jellyfish.",
-                "Grabbed a king jellyfish.",
-                "Grabbed a cassiopeia jellyfish.",
+                "Pegou uma medusa compasso.",
+                "Pegou um botão-azul.",
+                "Pegou uma medusa coroa.",
+                "Pegou uma água-viva riscada.",
             ],
             helpText: "Arrisque sua integridade física ao caçar águas-vivas sob ameaça de choque.",
         },
@@ -304,7 +302,7 @@ SharkGame.HomeActions = {
         // CONVERSIONS ////////////////////////////////////////////////////////////////////////////////
 
         seaApplesToScience: {
-            name: "Study sea apples",
+            name: "Estudar holotúrias",
             effect: {
                 resource: {
                     science: 4,
@@ -319,14 +317,16 @@ SharkGame.HomeActions = {
                 upgrade: ["xenobiology"],
             },
             outcomes: [
-                "There's science inside these things, surely!",
-                "The cause of science is advanced!",
-                "This is perhaps maybe insightful!",
-                "Why are we even doing this? Who knows! Science!",
-                "What is even the point of these things? Why are they named for fruit? They're squirming!",
-                "Results still inconclusive! Unsurpsingly...",
+                "E se essas coisas forem feitas de ciência?",
+                "A ciência foi avançada!",
+                "Isso talvez tenha a chance de ser esclarecedor!",
+                "Por que estamos fazendo isso? Ninguém sabe!",
+                "Para que servem essas coisas? Por que eles são tão molengas? Eles estão se remexendo, que nojo!",
+                "Resultados ainda inconclusivos! Para a surpresa de ninguém...",
+                "Achamos um vale para 4 ciência em cada bicho dissecado.",
+                "Passo 1: Holotúria. Passo 2: ??? Passo 3: Ciência!",
             ],
-            helpText: "Dissect the sea apples our kelp attracts to gain additional science. Research!",
+            helpText: "Disseque as holotúria que nossas algas atraem para conseguir ciência.",
         },
 
         /*
@@ -361,7 +361,7 @@ SharkGame.HomeActions = {
         */
 
         pearlConversion: {
-            name: "Convert clam pearls",
+            name: "Converter pérolas",
             effect: {
                 resource: {
                     crystal: 1,
@@ -379,18 +379,20 @@ SharkGame.HomeActions = {
                 upgrade: ["pearlConversion"],
             },
             outcomes: [
-                "Pearls to crystals! One day. One day, we will get this right and only use the pearl.",
-                "Welp, we somehow turned rocks to crystals. Oh. Nope, those were clams. Not rocks. It's so hard to tell sometimes.",
-                "Okay, we managed to only use the pearls this time, but we, uh, had to break the clams open pretty roughly.",
-                "Pearls to... nope. Clams to crystals. Science is hard.",
+                "Pérolas para cristais! Algum dia, eu juro, algum dia nós conseguiremos usar apenas a pérola.",
+                "Os cientistas celebraram transformarem pedras em cristais! Mas depois the olhar mais perto, eram mexilões, não pedras.",
+                "Então, dessa vez conseguimos converter apenas as pérolas, mas... bem, tivemos que quebrar os mexilhões.",
+                "Pérolas para cr... Droga. Mexilhões para cristais.",
+                "Com cuidado... Com cuidado... Foi! Convertemos os mexilhões sem pérola em cristais!... espera, quê?",
+                "Transformamos cristais em pérolas. Não, calma aí... Perdão, li errado, é o contrário.",
             ],
-            helpText: "Convert a pearl (and the clam around it) into crystal.",
+            helpText: "Transformar uma pérola (com os mexilhões em volta) em cristais.",
         },
 
         // MAKE ADVANCED RESOURCES  ///////////////////////////////////////////////////////////////////////////////
 
         transmuteSharkonium: {
-            name: "Transmute stuff to sharkonium",
+            name: "Transmute coisas em tubarônio",
             effect: {
                 resource: {
                     sharkonium: 1,
@@ -417,23 +419,25 @@ SharkGame.HomeActions = {
                 upgrade: ["transmutation"],
             },
             outcomes: [
-                "Transmutation destination!",
-                "Transmutation rejuvenation!",
-                "Transmogrification revelation!",
-                "Transformation libation!",
-                "Transfiguration nation! ...wait.",
-                "Sharkonium arise!",
-                "Arise, sharkonium!",
-                "More sharkonium!",
-                "The substance that knows no name! Except the name sharkonium!",
-                "The substance that knows no description! It's weird to look at.",
-                "The foundation of a modern shark frenzy!",
+                "Transmutação com satisfação!",
+                "Transmutação com perfeição!",
+                "Transmogrificação com convicção!",
+                "Transformação com ambição!",
+                "Transição com dedicação!",
+                "Transfiguração com pegação!",
+                "Transmutação com educação!",
+                "Tubarônio quentinho saindo do forno!",
+                "Barras de tubarônio feitas!",
+                "Mais tubarônio!",
+                "A substância sem nome! Exceto pelo nome 'tubarônio'!",
+                "Eu não sei como descrever tubarônio. Ele só parece tão estranho.",
+                "O pilar de um cardume moderno!",
             ],
-            helpText: "Convert ordinary resources into sharkonium, building material of the future!",
+            helpText: "Converta simples recursos em tubarônio, a material do futuro!",
         },
 
         smeltCoralglass: {
-            name: "Smelt stuff to coralglass",
+            name: "Fundir vidro coroso",
             effect: {
                 resource: {
                     coralglass: 1,
@@ -448,19 +452,19 @@ SharkGame.HomeActions = {
                 upgrade: ["coralglassSmelting"],
             },
             outcomes: [
-                "Coralglass smelted!",
-                "Coralglass melted! No. Wait.",
-                "How does coral become part of glass? Well, you see, it's all very simple, or that's what the lobster told me.",
-                "The backbo-- the exoskeleton of the crustacean industry!",
-                "So fragile. Yet so useful.",
+                "Vidro coroso fundido!",
+                "Vidro coroso f*****! Ai, mil perdões, saiu sem querer!",
+                "Como que o coral se incorpora em vidro? Bem, é bem simples, as lagostas fazer funcionar.",
+                "O pilar d-- o exoesqueleto da indústria crustaceana!",
+                "Tão frágil. Mas tão útil.",
             ],
-            helpText: "Smelt resources into coralglass for use in crustacean machines!",
+            helpText: "Funda coisas para fazer o vidro especial das máquinas dos crustáceos!",
         },
 
         // BUY ANIMALS ////////////////////////////////////////////////////////////////////////////////
 
         getShark: {
-            name: "Recruit shark",
+            name: "Recrutar tubarão",
             effect: {
                 resource: {
                     shark: 1,
@@ -507,7 +511,7 @@ SharkGame.HomeActions = {
             ],
             multiOutcomes: [
                 "A whole bunch of sharks join you.",
-                "That's a lot of sharks.",
+                "Isso são vários tubarões.",
                 "The shark community grows!",
                 "More sharks! MORE SHARKS!",
                 "Sharks for the masses. Mass sharks.",
@@ -518,7 +522,7 @@ SharkGame.HomeActions = {
                 "A gam of sharks! Yes, that's correct.",
                 "A college of sharks! They're a little smarter than a school.",
             ],
-            helpText: "Recruit a shark to help catch more fish.",
+            helpText: "Recrute um tubarão para caçar mais peixes.",
         },
 
         getManta: {

@@ -714,7 +714,7 @@ SharkGame.HomeActions = {
                 "Mais uma remessa de pranchetas aquáticas! Não tem nenhuma diferença de pranchetas comuns.",
                 "Careful teeth record the discoveries!",
                 "Fizemos uma festa de colação de grau para uma nova turma.",
-                "Um novo time de pesquisa foi criado."
+                "Um novo time de pesquisa foi criado.",
             ],
             helpText: "Treine um tubarão na arte da pesquisa e na ciência de... bem, da ciência.",
         },
@@ -754,7 +754,7 @@ SharkGame.HomeActions = {
         */
 
         getNurse: {
-            name: "Train nurse shark",
+            name: "Treinar tubarão enfermeiro",
             effect: {
                 resource: {
                     nurse: 1,
@@ -772,26 +772,29 @@ SharkGame.HomeActions = {
                 upgrade: ["biology"],
             },
             outcomes: [
-                "A nurse shark is ready!",
-                "Shark manufacturer primed.",
-                ".",
-                "Medical exam passed! Nurse shark is go!",
+                "Um tubarão enfermeiro foi treinado!",
+                "Fazedor de tubarão pronto.",
+                "Finalmente alguém para ajudar nos partos.",
+                "Foram anos de estudo para formar este enfermeiro.",
+                "A residência foi difícil. Mas este tubarão teve vocação.",
+                "Ajudar os vulneráveis e enfermos é a maior vocação que se pode ter.",
             ],
             multiOutcomes: [
-                "More sharks are on the way soon.",
-                "Shark swarm begins!",
-                "There will be no end to the sharks!",
-                "Sharks forever!",
-                "The sharks will never end. The sharks are eternal.",
-                "More sharks to make more sharks to make more sharks...",
+                "Mais tubarões estão a caminho.",
+                "Quem sabe agora a fila para ser atendido ande.",
+                "O enxame começou!",
+                "Tubarões para todo sempre!",
+                "Tubarões infinitos!",
+                "Não haverá fim aos tubarões, nós somos eternos!",
+                "Mais tubarões fazem mais tubarões fazem mais tubarões fazem mais...",
             ],
-            helpText: "Remove a shark from fish duty and set them to shark making duty.",
+            helpText: "Remova um tubarão do trabalho de caça e coloque-o para fazer tubarõezinhos.",
         },
 
         // RAY JOBS ////////////////////////////////////////////////////////////////////////////////
 
         getLaser: {
-            name: "Equip laser ray",
+            name: "Equipar uma arraia laser",
             effect: {
                 resource: {
                     laser: 1,
@@ -809,20 +812,25 @@ SharkGame.HomeActions = {
                 upgrade: ["laserRays"],
             },
             outcomes: [
-                "Laser ray online!",
-                "Laser ray! With a laser ray! It's laser ray, with a laaaaaser raaaay!",
-                "Laser ray.",
-                "Ray suited up with a laaaaaaser!",
-                "Ray lasered. To use a laser. Not the subject of a laser.",
+                "Arraia laser na área!",
+                "Arraia laser! Com um arraio laser!",
+                "Arraia. Laser",
+                "Mais uma arraia ignorando as instruções de segurança.",
+                "Um laser com uma arraia.",
+                "Arraia foi equipada com um laser.",
+                "'Eu tenho um laser' -Arraia com laser",
             ],
             multiOutcomes: [
-                "Boil the seabed!",
-                "Churn the sand to crystal!",
-                "Laser ray armada in position!",
-                "Ray crystal processing initiative is growing stronger every day!",
-                "Welcome to the future! The future is lasers!",
+                "Derreta o solo!",
+                "Mais cristais!",
+                "Destrua a areia!",
+                "Não confunda laser com lazer. Mesmo que ambos sejam divertidos.",
+                "Exército laser em posição!",
+                "O projeto de produção de cristais das arraias cresce a cada dia!",
+                "Queime tudo! Mas de preferência apenas areia!",
+                "Bem-vindo ao futuro. O futuro é feito de lasers!",
             ],
-            helpText: "Remove a ray from sand detail and let them fuse sand into raw crystal.",
+            helpText: "Dê um laser para uma arraia e deixe-a fundir areia em cristal.",
         },
 
         /*
@@ -864,7 +872,7 @@ SharkGame.HomeActions = {
         */
 
         getMaker: {
-            name: "Instruct a ray maker",
+            name: "Instruir um criador de arraias",
             effect: {
                 resource: {
                     maker: 1,
@@ -884,8 +892,8 @@ SharkGame.HomeActions = {
             outcomes: [
                 "More rays lets you get more rays which you can then use to get more rays.",
                 "The ray singularity begins!",
-                "A ray maker is ready.",
-                "Looks like you gave them quite the ray maker blow! 'Them' being the intangible enemy that is lacking in resources.",
+                "Um criador de arraias foi treinado.",
+                "[Esta piada é intraduzível]",
                 "The ray seems concerned, but obliges. The mission has been given.",
             ],
             multiOutcomes: [
@@ -893,9 +901,9 @@ SharkGame.HomeActions = {
                 "More ray makers means more rays. Do you understand what that means?! Do you?! It means more rays. Good. On the same page, then.",
                 "Rapidly breeding aquatic wildlife is probably a severe ecological hazard. Good thing this isn't Earth's oceans, probably!",
                 "Have you ever thought about what the rays wanted? Because this might have been what they wanted after all.",
-                "MORE LASER RAYS FOR THE LASER ARMY-- oh. Well, this is good too.",
+                "MAIS ARRAIAS LASER PARA O EXÉRCI-- ah. Tá, isso também é aceitável.",
             ],
-            helpText: "Remove a ray from sand business and let them concentrate on making more rays.",
+            helpText: "Tire uma arraia do setor de areia para que ele possa se concentrar em fazer mais arraias.",
         },
 
         /*

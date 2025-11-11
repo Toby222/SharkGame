@@ -522,7 +522,7 @@ SharkGame.HomeActions = {
                 "Um tubarão zebra se junta a você.",
             ],
             multiOutcomes: [
-                "A whole bunch of sharks join you.",
+                "Um monte de tubarões se juntam a você",
                 "Isso são vários tubarões.",
                 "A comunidade tubarônica cresce!",
                 "Mais tubarões! Mais tubarões! MAIS TUBARÕES!",
@@ -774,7 +774,7 @@ SharkGame.HomeActions = {
             outcomes: [
                 "A nurse shark is ready!",
                 "Shark manufacturer primed.",
-                "Nurse shark trained.",
+                ".",
                 "Medical exam passed! Nurse shark is go!",
             ],
             multiOutcomes: [

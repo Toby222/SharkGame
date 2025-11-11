@@ -66,7 +66,7 @@ SharkGame.FunFacts = {
 
     worldBased: {
         frigid: {
-            messages: ["When water freezes, it expands a little bit. That's why full bottles of water break or explode when put in the freezer."],
+            messages: ["Água expande no processo de congelamento. É por isso que garrafas cheias de água quebram ou estouram se forem postas no congelador."],
         },
         volcanic: {
             messages: [
@@ -81,10 +81,10 @@ SharkGame.FunFacts = {
         },
         shrouded: {},
         abandoned: {
-            messages: ["This world was the first one to be remade for New Frontiers."],
+            messages: ["'Abandonado' foi o primeiro mundo a ser refeito para Novas Fronteiras."],
         },
         haven: {
-            messages: ["Kelp paper is real. You cannot write on it though."],
+            messages: ["Papel de alga é real. Mas não é possível escrever nele."],
             areRequirementsMet() {
                 return SharkGame.Upgrades.purchased.includes("sunObservation");
             },
@@ -98,19 +98,19 @@ SharkGame.FunFacts = {
     resourceBased: {
         // add fish facts at some point
         shark: [
-            "There are many species of sharks that investigate things with their mouths. This can end badly for the subject of investigation.",
+            "Muitas espécies de tubarão investigam coisas usando a boca. Isso tende a não ser bom para quem está sendo investigado.",
             "There have been social behaviours observed in lemon sharks, and evidence that suggests they prefer company to being alone.",
             "Some shark species display 'tonic immobility' when rubbed on the nose. They stop moving, appear deeply relaxed, and can stay this way for up to 15 minutes before swimming away.",
             "In some shark species eggs hatch within their mothers, and in some of these species the hatched babies eat unfertilised or even unhatched eggs.",
-            "More people are killed by lightning every year than by sharks.",
+            "Mais pessoas morrem por ano ao serem alvejadas por um raio do que por ataques de tubarão.",
             "White sharks have been observed to have a variety of body language signals to indicate submission and dominance towards each other without violence.",
-            "A kiss from a shark can make you immortal. But only if they want you to be immortal.",
+            "Uma bitoca de um tubarão pode te tornar imortal. Mas apenas se o tubarão quiser .",
             "A shark is worth one in the bush, and a bunch in the sea water. Don't put sharks in bushes.",
             "Sharks are very old, evolutionarily speaking. The first sharks emerged some time around 400 million years ago.",
             "Sharks have very rough skin, like sandpaper. In fact, shark skin was literally used as sandpaper in the past.",
-            "Sharks do not have bones. Neither do rays.",
+            "Tubarões não tem ossos. Arraias também não.",
         ],
-        crystal: ["Magic crystals are probably not real."],
+        crystal: ["Cristais mágicos provavelmente não são reais."],
         ray: [
             "Rays can be thought of as flattened sharks. The two are very closely related evolutionarily.",
             "Rays are pancakes of the sea. (note: probably not true)",

@@ -147,7 +147,7 @@ SharkGame.FunFacts = {
         ],
         urchin: [
             "Ouriços comem principalmente algas. Muita alga.",
-            "Jáfoi observadoque ouriços vão vestir diferentes items em cima de si mesmos, como pedras. Se você os der um chapeuzinho, eles vão vesti-lo também. Ainda se debate do porquê deles fazerem isso.",
+            "Já foi observadoque ouriços vão vestir diferentes items em cima de si mesmos, como pedras. Se você os der um chapeuzinho, eles vão vesti-lo também. Ainda se debate do porquê deles fazerem isso.",
             "A maioria dos ouriços não são venenosos.",
             "Os espinhos da maioria dos ouriços não são afiados. Tanto que muitas espécies podem ser seguradas na mão.",
         ],
@@ -161,10 +161,10 @@ SharkGame.FunFacts = {
             // Based on https://www.youtube.com/watch?v=0wtLrlIKvJE
         ],
         lobster: [
-            "Lobsters really do eat clams. They instinctively know how to crack them open.",
-            "Due to a biological quirk, lobsters are highly resistant to aging and can live for an extremely long time. Some will live longer than humans.",
-            "Lobsters have teeth in their stomach, not in their mouth, and they chew with those teeth.",
-            "Lobsters have asymmetric claws. One of them, called the crusher, is used for...crushing. The other, called the pincer, is used for...pincing. Marine biologists were feeling creative, clearly.",
+            "Lagostas realmente comem mexilhões. Eles instintivamente os quebram para abri-los.",
+            "Por causa de uma pequena peculiaridade biológica, lagostar são muito resistentes ao envelhecimento e podem viver por muito tempo. Alguns vão até viver mais que você.",
+            "Lagostas tem dentes dentro de seu estômago, não na boca, e eles mastigam com esse dentes.",
+            "Lagostas têm garras assimétricas. A maior, chamada de esmagadora, é usada para esmagar. A outra, chamada de estripadora, é usada para estripar. Biólogos marinhos estavam inspirados naquele dia.",
         ],
         shrimp: [
             "There are real eusocial shrimps that live in communities in sponges on reefs, complete with queens.",
@@ -172,7 +172,7 @@ SharkGame.FunFacts = {
         ],
         eel: [
             "Eels come in a wide range of sizes, from just a few inches to multiple meters.",
-            "The highest shock ever produced by an eel was 860 volts, more then any other animal!",
+            "O maior choque já registrado por uma enguia foi de 860 volts, mais do que qualquer outro animal!",
             "Eels migrate a distance of 5,000 to 10,000 km across the Atlantic Ocean to the Sargasso Sea.",
         ],
         chimaera: [
@@ -191,8 +191,8 @@ SharkGame.FunFacts = {
             "Swordfish, spearfish, and marlins are part of a larger group of fish called billfish (the group featured in this game), of which there are only 12 species.",
         ],
         seaApple: [
-            "Sea apples are a type of sea cucumber. They feed on debris and detritus.",
-            "Sea apples are in no way actually attracted to kelp. The apples in this game are weird.",
+            "Holotúrias são um tipo de pepino-do-mar. Eles se alimentam de restos e migalhas no solo.",
+            "Holotúrias não são atraídas de forma alguma a algas. É só as desse jogo que são estranhas.",
         ],
         jellyfish: [
             // "Sharks would definitely not have a way of acquiring most kinds of jellyfish in real life.",
@@ -219,24 +219,24 @@ SharkGame.FunFacts = {
             "No, you can't eat it.",
         ],
         calcinium: [
-            "Calcinium was inspired by the appearance and texture of limestone and seashells.",
-            "It take a lot of heat to make, and once formed, calcinium doesn't melt easily. Every batch needs to be molded quickly, or it will go to waste.",
-            "Calcinium is a very versatile material. Cooled quickly, it is a brittle ceramic - but cooled slowly, it's a rigid plastic. The lobsters make use of both methods.",
-            "While calcinium looks like meringue, it most probably doesn't taste anything like.",
+            "Calcinício foi inspirado pela aparência e textura de calcário e conchas.",
+            "Toma muita energia para fazer, e quando formado, calcinício não derrete fácil. Cada fornada tem que ser moldada rápido, se não vai ter que ir pro lixo.",
+            "Calcinício é um material bem versátil. Se esfriar rápido, é uma cerâmica frágil - mas esfriado lentamente, é um plástico forte. E as lagostas usam ambas versões.",
+            "Enquanto que calcinício pareça com merengue, o gosto não tem nada haver.",
         ],
         laser: [
-            "Sharks with lasers were overdone, okay? 'Laser ray' is a pun, so it's obviously superior.",
-            "Sand probably does not actually fuse into magic crystals. Unless you count glass.",
-            "We do not know how the rays strap lasers to themselves. It is known only to the sharks.",
-            "Laser rays take power directly from the heat of hydrothermal vents, so they are each tethered to a small operating area.",
-            "By default, the laser ray's laser is quite low-temperature. It takes quite a bit of effort (and sand) to properly fuse anything.",
+            "Juntar tubarões com lasers é muito 2010, sabe? 'Arraia laser' é um trocadilho, então é muito melhor.",
+            "Areia provavelmente não se funde em crystais mágicos. A não ser que você conte vidro.",
+            "Nós não sabemos como que as arraias conseguem amarrar lasers em si mesmas. Apenas os tubarões sabem.",
+            "Arraias laser pegam a energia diretamente do calor de fontes hidrotermais, então elas estão presas a uma área relativamente pequena.",
+            "Normalmente, a energia do laser de uma arraia não é muito quente. Por isso toma muito tempo (e areia) para fundir qualquer coisa direito.",
         ],
         coral: [
-            "Some coral can actually catch small fish.",
-            "Coral is not a plant, it is an animal. A weird, stationary animal.",
-            "Coral are primarily carnivores. They eat plankton (teeny tiny things that can't swim), grabbing them with little tentacles and pulling them into their mouths.",
-            "Many kinds of coral have a mutualistic relationship with species of algae, who produce nutrients in exchange for carbon dioxide and shelter.",
-            "Despite being as stationary as a sponge, coral is more closely related to jellyfishes.",
+            "Alguns corais conseguem caçar peixes pequenos.",
+            "Corais não são plantas, mas sim animais. Um estranho animal estacionário.",
+            "Corais são principalmente carnívoros. Eles comem plankton (coisas muito pequenas que não sabem nadar) grudando neles com os tentáculos e os puxando para suas bocas.",
+            "Muitos corais têm uma relação mutualística com espécies de algas, que produzem nutrientes em troca de gás carbônico e abrigo.",
+            "Mesmo sendo paradão como uma esponja, coral é mais próximo de águas-vivas.",
         ],
         sponge: [
             "Sponges are incredibly distinct from all other animals. They are asymmetric, have no organs, and their cells can change specialization at will.",

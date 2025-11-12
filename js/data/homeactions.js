@@ -890,11 +890,11 @@ SharkGame.HomeActions = {
                 upgrade: ["rayBiology"],
             },
             outcomes: [
-                "More rays lets you get more rays which you can then use to get more rays.",
-                "The ray singularity begins!",
+                "Mais arraias para você conseguir mais arraias que vocÊ usa para mais arraia.",
+                "A singul-arraia-dade começou!",
                 "Um criador de arraias foi treinado.",
                 "[Esta piada é intraduzível]",
-                "The ray seems concerned, but obliges. The mission has been given.",
+                "A arraia parece consternada, mas obedece. Missão dada é missão comprida.",
             ],
             multiOutcomes: [
                 "All these makers. What are they making? What is it for? Oh. It's rays, and it's probably for sand or something.",

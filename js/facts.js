@@ -92,7 +92,7 @@ SharkGame.FunFacts = {
         },
         marine: {},
         tempestuous: {
-            messages: ["Diferente da língua inglesa, o português faz sentido. Portanto 'tempestuoso' significa 'algo que apresenta tempestades'."],
+            messages: ["Diferente da língua inglesa, o português faz sentido. Portanto 'tempestuoso' significa 'algo que tem tempestades'."],
         },
     },
 
@@ -100,7 +100,7 @@ SharkGame.FunFacts = {
         // add fish facts at some point
         shark: [
             "Muitas espécies de tubarão investigam coisas usando a boca. Isso tende a não ser bom para quem está sendo investigado.",
-            "There have been social behaviours observed in lemon sharks, and evidence that suggests they prefer company to being alone.",
+            "Comportamentos sociais foram registrados entre tubarões-limão, e toda evidência aponta a eles preferirem estar uns com os outros do que estarem sozinhos.",
             "Algumas espécies de tubarão tem 'imobilidade tônica' quando seu nariz é esfregado. Eles param de se mexer, aparentam extremamente relaxados e podem ficar assim por até 15 minutos antes de voltar ao estado normal.",
             "Em algumas espécies, os ovos se chocam dentro das próprias mães, e entre esses espécies, os tubarõezinhos chocados comem os ovos não fertilizados e até mesmo irmãos dentro do ovo.",
             "Mais pessoas morrem por ano ao serem alvejadas por um raio do que por ataques de tubarão.",
@@ -133,28 +133,31 @@ SharkGame.FunFacts = {
             "Cada tentáculo de um polvo é considerado ter um cérebro próprio. Podemos pensar neles como soldados (pequenos cérebros) sendo comandados por um chefe no meio (um cérebro grande).",
         ],
         dolphin: [
-            "Dolphins are considered some of the most intelligent animal problem-solvers, next to monkeys, elephants and parrots as examples.",
-            "Dolphins are not smug in real life. Probably. Maybe.",
-            "Dolphins are creative and capable of abstract thought. In captivity, they can be asked to invent new tricks, and will often succeed.",
-            "Dolphins have been seen directly communicating with each other. In fact, it is believed that they can hold full, coherent conversations.",
+            "Golfinhos são considerados um dos animais mais inteligentes de múltiplas formas, semelhantemente a macacos, elefantes e papagaios.",
+            "Golfinhos não são tão cheios de si na vida real. Provavelmente. Talvez.",
+            "Golfinhos são criativos e capazes de pensamento abstrato. Em cativeiro, eles podem ser pedidos para inventar novos truques e muitas vezes o farão.",
+            "Já se observou golfinhos comunicando diretamente uns com os outros. Tanto que, alguns acreditam que eles podem ter conversas coerentes entre si.",
         ],
         whale: [
-            "The top 10 largest animal species are all whales.",
-            "While some whales are active hunters, others are merely supersized filter feeders. This game's whales are of unspecified type.",
-            "Most whales are very social creatures. Most whales travel in small groups called pods, which might make up clans, and then communities. (some, however, are solitary)",
-            "It is not completely understood why whales sing, but scientists agree it serves some kind of social purpose." /* Whales are observed to react to each other's songs and come to */,
+            "As 10 maiores espécies conhecidas no mundo são todas baleias.",
+            "Se uma baleia um dia conseguisse uma arma e atirasse em outra, os jornais diriam: Baleia baleia baleia.",
+            "Enquanto algumas baleias caçam ativamente, outras apenas filtram a água em busca de plankton. Nós não especificamos qual tipo são as baleias deste mundo.",
+            "A maioria das baleias são criaturas sociais. A maioria das baleias andam juntas em baleais, que podem formar clãn, e então comunidades. (porém, também existem baleias solitárias)",
+            "Não se sabe exatamente o porquê do canto das baleias, mas cientistas concordam que tem algum propósito social." /* Whales are observed to react to each other's songs and come to */,
         ],
         urchin: [
-            "Sea urchins primarily eat kelp. A lot of kelp.",
-            "Sea urchins have been observed to wear various items on top of themselves, such as rocks. If you give them little hats, they will wear those too. It is not agreed upon why they do this.",
-            "Most sea urchins are not venomous.",
-            "The spines on most sea urchins are not very sharp. Many species of urchin can be held in the palm.",
+            "Ouriços comem principalmente algas. Muita alga.",
+            "Jáfoi observadoque ouriços vão vestir diferentes items em cima de si mesmos, como pedras. Se você os der um chapeuzinho, eles vão vesti-lo também. Ainda se debate do porquê deles fazerem isso.",
+            "A maioria dos ouriços não são venenosos.",
+            "Os espinhos da maioria dos ouriços não são afiados. Tanto que muitas espécies podem ser seguradas na mão.",
         ],
         squid: [
-            "Squid eat crabs. They're not eating yours out of politeness.",
-            "Giant squid are real. They live incredibly deep in the ocean.",
-            "Squid have no bones whatsoever.",
-            "Squids have tiny ink sacs on their skin que expandem ao ser puxados por músculos específicos da pele, possibilitando sua camuflagem.",
+            "Lulas comem caranguejos. Elas só não comem os seus por respeito.",
+            "Lulas gigantes são reais. Elas vivem nas produndezas do oceano.",
+            "Lulas não tem ossos algum.",
+            "Se tem 8 tentáculos, não é uma lula.",
+            "Lula da Silva é o 35° e 39° presidente do Brasil, e não tem nenhuma relação com o animal.",
+            "Algumas espécies de lula têm sacos de tinta na sua pele que expandem ao ser puxados por músculos específicos, possibilitando sua camuflagem.",
             // Based on https://www.youtube.com/watch?v=0wtLrlIKvJE
         ],
         lobster: [

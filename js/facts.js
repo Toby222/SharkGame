@@ -120,7 +120,7 @@ SharkGame.FunFacts = {
             "Algumas arraias tem um ferrão venenoso. Então mesmo que queiramos muito, não deveríamos abraçá-las.",
         ],
         crab: [
-            "Throughout history, many species of crustaceans have independently evovled into crabs for no discernable reason. The phenomenon is called carcinisation.",
+            "Ao longo da história, muitas espéciesde crustáceos independentemente se desenvolveram até virarem caranguejos. Deram até o nome de 'carcinização' a esse fenômeno.",,
             "Muitas espécies de caranguejos têm algum tipo de assimetria de garra. Eles têm tamanhos e formatos diferentes que dão para cada garra um trabalho especializado.",
         ],
         octopus: [
@@ -129,8 +129,8 @@ SharkGame.FunFacts = {
             "In novel circumstances, octopuses are capable of simple problem-solving. They show visible confusion when confronted with difficult problems, and take time to contemplate possible solutions.",
             "Octopuses can get bored in captivity. They may fiddle with toys or interact with humans for entertainment.",
             "Octopuses have great dexterity. They can use their tentacles in a surprising variety of ways to manipulate objects.",
-            "Octopuses have no bones whatsoever.",
-            "Each limb of an octopus is considered to individually have a brain to itself. They can be thought of as soldiers (the little brains) being commanded by a general in the center (a big brain).",
+            "Polvos não tem ossos algum.",
+            "Cada tentáculo de um polvo é considerado ter um cérebro próprio. They can be thought of as soldiers (the little brains) being commanded by a general in the center (a big brain).",
         ],
         dolphin: [
             "Dolphins are considered some of the most intelligent animal problem-solvers, next to monkeys, elephants and parrots as examples.",

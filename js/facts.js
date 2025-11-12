@@ -92,7 +92,7 @@ SharkGame.FunFacts = {
         },
         marine: {},
         tempestuous: {
-            messages: ["'Tempestuous' does not mean stormy. It means emotionally turbulent. But it's close enough."],
+            messages: ["Diferente da língua inglesa, o português faz sentido. Portanto 'tempestuoso' significa 'algo que apresenta tempestades'."],
         },
     },
 
@@ -120,17 +120,17 @@ SharkGame.FunFacts = {
             "Algumas arraias tem um ferrão venenoso. Então mesmo que queiramos muito, não deveríamos abraçá-las.",
         ],
         crab: [
-            "Ao longo da história, muitas espéciesde crustáceos independentemente se desenvolveram até virarem caranguejos. Deram até o nome de 'carcinização' a esse fenômeno.",,
+            "Ao longo da história, muitas espéciesde crustáceos independentemente se desenvolveram até virarem caranguejos. Deram até o nome de 'carcinização' a esse fenômeno.",
             "Muitas espécies de caranguejos têm algum tipo de assimetria de garra. Eles têm tamanhos e formatos diferentes que dão para cada garra um trabalho especializado.",
         ],
         octopus: [
-            "It's octopuses, not octopi.",
+            "Se tem 8 tentáculos, é um polvo.",
             "Polvos são capazes de se camuflar muito bem. Eles podem mudar de cor, padrãoe textura para combinar com o ambiente, é o suficiente para confundir qualquer animal, até mesmo humanos.",
-            "In novel circumstances, octopuses are capable of simple problem-solving. They show visible confusion when confronted with difficult problems, and take time to contemplate possible solutions.",
-            "Octopuses can get bored in captivity. They may fiddle with toys or interact with humans for entertainment.",
-            "Octopuses have great dexterity. They can use their tentacles in a surprising variety of ways to manipulate objects.",
+            "Em condições específicas, polvos conseguem resolverem problemas simples. Eles até ficam confusos com problemas difícieis e tiram tempo de seu dia para contemplar soluções possíveis.",
+            "Polvos ficam entediados em cativeiro. Para se distrair, eles podem brincar com objetos ou interagir com humanos em volta.",
+            "Polvos são extremamente hábeis. Eles conseguem usar seus tentáculos em uma grande variedade de jeitos para mexer objetos.",
             "Polvos não tem ossos algum.",
-            "Cada tentáculo de um polvo é considerado ter um cérebro próprio. They can be thought of as soldiers (the little brains) being commanded by a general in the center (a big brain).",
+            "Cada tentáculo de um polvo é considerado ter um cérebro próprio. Podemos pensar neles como soldados (pequenos cérebros) sendo comandados por um chefe no meio (um cérebro grande).",
         ],
         dolphin: [
             "Dolphins are considered some of the most intelligent animal problem-solvers, next to monkeys, elephants and parrots as examples.",
@@ -154,7 +154,7 @@ SharkGame.FunFacts = {
             "Squid eat crabs. They're not eating yours out of politeness.",
             "Giant squid are real. They live incredibly deep in the ocean.",
             "Squid have no bones whatsoever.",
-            "Squids have tiny ink sacs on their skin which expand when pulled by certain skin muscles, making it possible for them to camouflage themselves.",
+            "Squids have tiny ink sacs on their skin que expandem ao ser puxados por músculos específicos da pele, possibilitando sua camuflagem.",
             // Based on https://www.youtube.com/watch?v=0wtLrlIKvJE
         ],
         lobster: [

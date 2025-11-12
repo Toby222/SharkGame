@@ -18,7 +18,7 @@ SharkGame.FunFacts = {
             (!this.worldBased[currentWorld].areRequirementsMet || this.worldBased[currentWorld].areRequirementsMet())
         ) {
             _.each(this.worldBased[currentWorld].messages, (fact) => {
-                pool.push(sharktext.boldString("Fun fact: ") + `<i>${fact}</i>`);
+                pool.push(sharktext.boldString("Fato sobre o mundo: ") + `<i>${fact}</i>`);
             });
         }
 
@@ -32,14 +32,15 @@ SharkGame.FunFacts = {
                     _.each(facts, (fact) => {
                         pool.push(
                             sharktext.boldString(
-                                `${sharktext.getResourceName(
+                                `Fato de
+                                ${sharktext.getResourceName(
                                     resource,
                                     false,
                                     1,
                                     SharkGame.Log.isNextMessageEven()
                                         ? sharkcolor.getVariableColor("--color-dark")
                                         : sharkcolor.getVariableColor("--color-med"),
-                                )} fact: `,
+                                )}: `,
                             ) + `<i>${fact}</i>`,
                         );
                     });
@@ -60,7 +61,7 @@ SharkGame.FunFacts = {
             }
             return pool;
         } else {
-            return ["Fun fact: <i>New fun facts are unlocked as you see new stuff. Keep playing to unlock some!</i>"];
+            return ["Fato: <i>Novos fatos são desbloqueados com você vendo. Keep playing to unlock some!</i>"];
         }
     },
 
@@ -70,10 +71,10 @@ SharkGame.FunFacts = {
         },
         volcanic: {
             messages: [
-                "This world was originally called Violent, now it's Volcanic. Playtesters got confused and thought the world had violence, when really, it just has the threat of violence.",
-                "Hydrothermal vents do not spew fire in real life. They spew smoke.",
-                "Hydrothermal vents support a diverse array of sea life due to their high output of minerals. Bacteria eat these minerals, forming the base of a food chain.",
-                "Hydrothermal vents are found at fault lines in the earth's crust, where water becomes superheated due to magma rising close to the ocean floor.",
+                "Esse mundo originalmente se chamava 'Violento' antes de virar Vulcânico. Jogadores de teste ficaram confusos acharam que o mundo tinha violência quando, na verdade, era apenas a ameaça de violência.",
+                "Fontes hidrotermais cospem fogo na vida real. Apenas fumaça.",
+                "Fontes hidrotermais mantêm uma grande parte da vida marinha porque liberam grandes quantidades de minerais. Bactérias se alimentam desses minerais e elas servem como a base dale várias cadeias alimentares.",
+                "Fontes hidrotermais são encontradas em quebras na crosta terrestre, onde a água fica superaquecida por causa do calor do magma mais perto do solo oceânico que o normal.",
             ],
             areRequirementsMet() {
                 return SharkGame.Upgrades.purchased.includes("thermalVents");
@@ -100,30 +101,31 @@ SharkGame.FunFacts = {
         shark: [
             "Muitas espécies de tubarão investigam coisas usando a boca. Isso tende a não ser bom para quem está sendo investigado.",
             "There have been social behaviours observed in lemon sharks, and evidence that suggests they prefer company to being alone.",
-            "Some shark species display 'tonic immobility' when rubbed on the nose. They stop moving, appear deeply relaxed, and can stay this way for up to 15 minutes before swimming away.",
-            "In some shark species eggs hatch within their mothers, and in some of these species the hatched babies eat unfertilised or even unhatched eggs.",
+            "Algumas espécies de tubarão tem 'imobilidade tônica' quando seu nariz é esfregado. Eles param de se mexer, aparentam extremamente relaxados e podem ficar assim por até 15 minutos antes de voltar ao estado normal.",
+            "Em algumas espécies, os ovos se chocam dentro das próprias mães, e entre esses espécies, os tubarõezinhos chocados comem os ovos não fertilizados e até mesmo irmãos dentro do ovo.",
             "Mais pessoas morrem por ano ao serem alvejadas por um raio do que por ataques de tubarão.",
-            "White sharks have been observed to have a variety of body language signals to indicate submission and dominance towards each other without violence.",
-            "Uma bitoca de um tubarão pode te tornar imortal. Mas apenas se o tubarão quiser .",
-            "A shark is worth one in the bush, and a bunch in the sea water. Don't put sharks in bushes.",
-            "Sharks are very old, evolutionarily speaking. The first sharks emerged some time around 400 million years ago.",
-            "Sharks have very rough skin, like sandpaper. In fact, shark skin was literally used as sandpaper in the past.",
+            "Tubarões brancos já foram observados usando linguagem corporal para demonstrar submissão e dominância entre si sem usar violência.",
+            "Uma bitoca de um tubarão pode te tornar imortal. Mas apenas se o tubarão quiser.",
+            "Mais vale um tubarão na mão do que dois a voar. Isso se dá porque tubarões não conseguem voar.",
+            "Em termos evolutivos, tubarões são muito velhos. Os primeiros tubarões surgiram há mais ou menos 400 milhões de anos.",
+            "Tubarões tem pele muito grossa, parecendo uma lixa. Tanto que pele de tubarão era usada antigamente para lixar coisas.",
             "Tubarões não tem ossos. Arraias também não.",
         ],
         crystal: ["Cristais mágicos provavelmente não são reais."],
         ray: [
-            "Rays can be thought of as flattened sharks. The two are very closely related evolutionarily.",
-            "Rays are pancakes of the sea. (note: probably not true)",
-            "Rays do not have bones. Neither do sharks.",
-            "Some rays have a venomous stinger. So despite how much we may want to, we shouldn't hug them.",
+            "Pode-se pensar em arraias como tubarões achatados. Ambos são muito parecidos geneticamente.",
+            "Arraias são as tapiocas do oceano. (nota de rodapé: citação necessária)",
+            "Arraias não tem ossos. Tubarões também não.",
+            "Recentemente, uma terceira espécie de jamanta foi descoberta na costa brasileira. Faz o L.",
+            "Algumas arraias tem um ferrão venenoso. Então mesmo que queiramos muito, não deveríamos abraçá-las.",
         ],
         crab: [
             "Throughout history, many species of crustaceans have independently evovled into crabs for no discernable reason. The phenomenon is called carcinisation.",
-            "Some species of crab exhibit a kind of claw asymmetry. Called the crusher and cutter, they have different shapes that give their claws more specialized purposes.",
+            "Muitas espécies de caranguejos têm algum tipo de assimetria de garra. Eles têm tamanhos e formatos diferentes que dão para cada garra um trabalho especializado.",
         ],
         octopus: [
             "It's octopuses, not octopi.",
-            "Octopuses are capable of extremely advanced camoflague. They can change color, pattern, and texture to match their surroundings, enough to easily fool anything, even humans.",
+            "Polvos são capazes de se camuflar muito bem. Eles podem mudar de cor, padrãoe textura para combinar com o ambiente, é o suficiente para confundir qualquer animal, até mesmo humanos.",
             "In novel circumstances, octopuses are capable of simple problem-solving. They show visible confusion when confronted with difficult problems, and take time to contemplate possible solutions.",
             "Octopuses can get bored in captivity. They may fiddle with toys or interact with humans for entertainment.",
             "Octopuses have great dexterity. They can use their tentacles in a surprising variety of ways to manipulate objects.",

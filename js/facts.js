@@ -267,7 +267,7 @@ SharkGame.FunFacts = {
             "Tubarões reais não sabem como fazer ciência. Provavelmente.",
             "A maior parte da ciência no cardume é feita por tubarões cientistas de instituições públicas.",
             "Os cientistas tubarões que negam a efetividade de vacinas têm um nome: Charlaturões.",
-            ],
+        ],
         sand: [
             "No mundo real, o solo oceânico nem sempre é feito de areia. O sedimento do fundo do mar muitas vezes é bem mais fino.",
             "Correntezas oceânicas podem carregar areia por distâncias enormes até alguma praia. E quanto mais longe é levada, mais fina a areia fica.",

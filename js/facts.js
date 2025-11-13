@@ -186,7 +186,7 @@ SharkGame.FunFacts = {
         billfish: [
             "Billfish do indeed have bones, unlike sharks and rays.",
             "Swordfish and marlins are large, predatory fish. At adulthood, their only natural predators are sharks (oh no) and whales.",
-            "The top speed of marlins is commonly reported to be 60 mph, but this is not accurate. It's actually closer to 30 mph.",
+            "Normalmente é noticiado que a velocidade máxima de marlim chega a quase 100 km/h, mas isso está errado. É mais próximo de 50 km/h.",
             "The bill of a billfish is used to slash like a sword, not stab like a spear.",
             "Swordfish are not a group of fish, they are a single species: Xiphias gladius.",
             "Swordfish, spearfish, and marlins are part of a larger group of fish called billfish (the group featured in this game), of which there are only 12 species.",

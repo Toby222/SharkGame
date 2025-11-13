@@ -186,7 +186,7 @@ SharkGame.FunFacts = {
         billfish: [
             "Billfish do indeed have bones, unlike sharks and rays.",
             "Swordfish and marlins are large, predatory fish. At adulthood, their only natural predators are sharks (oh no) and whales.",
-            "Normalmente é noticiado que a velocidade máxima de marlim chega a quase 100 km/h, mas isso está errado. É mais próximo de 50 km/h.",
+            "Normalmente é noticiado que a velocidade máxima de marlins chega a quase 100 km/h, mas isso está errado. É mais próximo de 50 km/h.",
             "The bill of a billfish is used to slash like a sword, not stab like a spear.",
             "Swordfish are not a group of fish, they are a single species: Xiphias gladius.",
             "Swordfish, spearfish, and marlins are part of a larger group of fish called billfish (the group featured in this game), of which there are only 12 species.",
@@ -207,10 +207,10 @@ SharkGame.FunFacts = {
             // On it, boss -Biggest Brian
         ],
         sharkonium: [
-            "There is nothing suspicious about the machines.",
+            "Não tem nada suspeito nas máquinas.",
             "Small and medium-scale sharkonium machines do not require a power source. This is because sharkonium is made with crystals, which contain latent magic.",
-            "Sharkonium would remind a person of steel tinted purple. To a shark, it looks like shiny nothing.",
-            "Sharkonium does not taste like grapes. No, I will not let you taste it for yourself.",
+            "Tubarônio would remind a person of steel tinted purple. Para um tubarão, parece como um troço brilhante.",
+            "Tubarônio não vai ter gosto algum de uva. Não, eu não vou te deixar testar.",
         ],
         // I just decided to put something in to complete the sentence, it was driving me nuts -Biggest Brian
         porite: [

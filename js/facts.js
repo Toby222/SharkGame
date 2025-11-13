@@ -1,5 +1,5 @@
 SharkGame.FunFacts = {
-    dilutedResources: ["shark", "ray", "crab", "fish"], // dilute these while not in starter to keep the fun facts fresher
+    dilutedResources: ["shark", "ray", "crab", "fish", "science"], // dilute these while not in starter to keep the fun facts fresher
 
     showFact() {
         log.addMessage(this.getFact());
@@ -286,12 +286,12 @@ SharkGame.FunFacts = {
             "The dolphins are rather fond of delphinium. They appreciate the practicality of sharkonium, however.",
             "Delphinium is rather heavy, and doesn't do well under stress - but soft enough to be crafted into complex shapes.",
         ],
-        ice: ["In the original shark game, ice used to eat away your resources instead of slowing their production."],
-        tar: ["In the original shark game, tar was gained passively. Machines produced basically none of it."],
+        ice: ["No jogo original, o gelo apenas consumia seus recursos ao invés de diminuir sua produção."],
+        tar: ["No jogo original, graxa era produzida sozinha. Máquinas quase não produziam graxa alguma."],
         calciniumConverter: [
-            "Machine-brain interfaces, such as the ones used by lobsters, actually already exist.",
-            "Enquanto que a perimeira interface cérebro-máquina tenha sido criada por tubarões cientistas em colaboração com as lagostas, no mundo real, quem desenvolveu foi o time do cientista brasileiro 'Miguel Niconelis'.",
-            "Machine-brain interfaces are normally done without any surgery, but the lobsters thought it looked cooler to jam the wires in their skulls.",
+            "Interfaces cérebro-máquina, como as usadas pelas lagostas, já existem desde antes de 2014.",
+            "Enquanto que a primeira interface cérebro-máquina tenha sido criada por tubarões cientistas em colaboração com as lagostas, no mundo real, quem desenvolveu foi o time do cientista brasileiro 'Miguel Niconelis'.",
+            "Interfaces cérebro-máquina podem ser facilmente feitas sem cirurgia, mas as lagostas acho que seria muito maneiro ter fios enfiados no crânio.",
         ],
 
     },
@@ -299,14 +299,14 @@ SharkGame.FunFacts = {
     default: [
         "Shark Game's initial bare minimum code came from an abandoned idle game about bees. Almost no trace of bees remains!",
         "The existence of resources that create resources that create resources in this game were inspired by Derivative Clicker!",
-        "Kitten Game was an inspiration for this game! This surprises probably no one. The very first message the game gives you is a nod of sorts.",
-        "There is a surprising deficit of cookie in this game.",
-        "Remoras were banished from the oceans in the long bygone eras. The sharks hope they never come back.",
-        "Fun facts will only talk about things you have already seen in-game.",
-        "Fun facts have always been in the game's code, but have never been exposed until this system for displaying them was added.",
-        "New Frontiers, this Shark Game mod, was inspired by the unfolding nature of the Candy Box games and A Dark Room.",
-        "Any timewalls in this game can be completely bypassed with good strategy.",
-        "This game has keybinds. They are more useful than you might think. Check the options menu.",
-        "Shark Game: New Frontiers is a mod of Cirrial's Untitled Shark Game. It started as a refurbishment, but quickly evolved into a total remake.",
+        "'Kitten Game' foi uma inspiração para esse jogo! Para a surpresa de 0 pessoas. A primeira mensagem do jogo é uma referência.",
+        "Tem uma surpreendente falta de biscoitos para um jogo clicker aqui.",
+        "Rêmoras foram banidas do oceano a tempos atrás. Os tubarões esperam que eles nunca mais voltem.",
+        "'Fatos' só vai falar sobre coisas que você tem desbloqueado no jogo.",
+        "O sistema de 'fatos' sempre esteve no código do jogo, mas não eram acessíveis até botarem esse botão de fatos.",
+        "Novas Fronteiras, esse mod de 'Shark Game', foi inspirado pelo estilo de descoberta de mecânicas dos jogos da série 'Candy Box' e 'A Dark Room'.",
+        "Quaisquer barreiras de progressão neste jogo podem ser perpassados com uma boa estratégia. Do latim estrategí.",
+        "Esse jogo tem atalhos. Eles podem ser bem úteis. Procure-os no menu de opções.",
+        "'Shark Game: Novas Fronteiras' é um mod do jogo feito por Cirrial 'Untitled Shark Game'. Começou como uma melhoria, mas virou um remake completo.",
     ],
 };

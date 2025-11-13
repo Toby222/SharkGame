@@ -890,7 +890,7 @@ SharkGame.HomeActions = {
                 upgrade: ["rayBiology"],
             },
             outcomes: [
-                "Mais arraias para você conseguir mais arraias que vocÊ usa para mais arraia.",
+                "Mais arraias para você conseguir mais arraias que você usa para mais arraia.",
                 "A singul-arraia-dade começou!",
                 "Um criador de arraias foi treinado.",
                 "[Esta piada é intraduzível]",
@@ -898,9 +898,9 @@ SharkGame.HomeActions = {
             ],
             multiOutcomes: [
                 "All these makers. What are they making? What is it for? Oh. It's rays, and it's probably for sand or something.",
-                "More ray makers means more rays. Do you understand what that means?! Do you?! It means more rays. Good. On the same page, then.",
-                "Rapidly breeding aquatic wildlife is probably a severe ecological hazard. Good thing this isn't Earth's oceans, probably!",
-                "Have you ever thought about what the rays wanted? Because this might have been what they wanted after all.",
+                "Mais criadores de arraias significa a mais arraias. Sabe o que isso quer dizer?! Sabe?! Quer dizer mais arraias. Bom. Nós concordamos, então.",
+                "A procriação desenfrada de animais provavelmente traz um risco ao ecossistema. Que bom que esses não são os oceanos da Terra, eu acho.",
+                "Você já pensou em qual é o desejo das arraias? Porque talvez esse fosse o que elas sempre desejaram, na verdade.",
                 "MAIS ARRAIAS LASER PARA O EXÉRCI-- ah. Tá, isso também é aceitável.",
             ],
             helpText: "Tire uma arraia do setor de areia para que ele possa se concentrar em fazer mais arraias.",

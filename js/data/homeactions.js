@@ -897,7 +897,7 @@ SharkGame.HomeActions = {
                 "A arraia parece consternada, mas obedece. Missão dada é missão comprida.",
             ],
             multiOutcomes: [
-                "All these makers. What are they making? What is it for? Oh. It's rays, and it's probably for sand or something.",
+                "Todos esse criadores. O que estão criandondE para que vai servir? Ah, tendi. Estão criando arraias. E elas vão servir para pega areia ou algo assim.",
                 "Mais criadores de arraias significa a mais arraias. Sabe o que isso quer dizer?! Sabe?! Quer dizer mais arraias. Bom. Nós concordamos, então.",
                 "A procriação desenfrada de animais provavelmente traz um risco ao ecossistema. Que bom que esses não são os oceanos da Terra, eu acho.",
                 "Você já pensou em qual é o desejo das arraias? Porque talvez esse fosse o que elas sempre desejaram, na verdade.",
@@ -947,7 +947,7 @@ SharkGame.HomeActions = {
         // CRAB JOBS ////////////////////////////////////////////////////////////////////////////////
 
         getPlanter: {
-            name: "Gear up planter crab",
+            name: "Prepare um plantador",
             effect: {
                 resource: {
                     planter: 1,
@@ -965,21 +965,22 @@ SharkGame.HomeActions = {
                 upgrade: ["kelpHorticulture"],
             },
             outcomes: [
-                "Crab set up with seeds.",
-                "Shell studded with kelp.",
-                "Crab is going on a mission. A mission... to farm.",
-                "Planter crab equipped and ready to move a few feet and start planting some things!",
-                "Crab is ready to farm!",
+                "Um siri recebeu as sementes.",
+                "Uma carapaça foi enrolada em alga marinha.",
+                "Um caranguejo foi se aventurar. Uma aventura... nas canas.",
+                "Plantador equipado e pronto para andar um pouco e plantar coisas!",
+                "Caranguejo pronto para a colheita!",
             ],
             multiOutcomes: [
-                "Carpet the seabed!",
-                "Kelp kelp kelp kelp kelp kelp kelp kelp.",
-                "Horticulturists unite!",
-                "Strike the sand!",
-                "Pat the sand very gently and put kelp in it!",
-                "More kelp. The apples. They hunger. They hunger for kelp.",
+                "Cubra o solo!",
+                "Alga alga alga alga alga alga alga alga alga.",
+                "A fronteira da agricultura avança!",
+                "Colha e plante!",
+                "Siris para a colheita!",
+                "Carinhosamente faça um buraquinho na areia ponha alga dentro!",
+                "Mais alga. As holotúria querem mais. Elas clamam por mais.",
             ],
-            helpText: "Equip a crab with the equipment and training to plant kelp across the ocean bottom.",
+            helpText: "Dê a um caranguejo equipamento e treinamento para plantar algas pelo fundo do oceano.",
         },
 
         /*
@@ -1021,7 +1022,7 @@ SharkGame.HomeActions = {
         */
 
         getBrood: {
-            name: "Form crab brood",
+            name: "Form crab br",
             effect: {
                 resource: {
                     brood: 1,
@@ -1039,9 +1040,9 @@ SharkGame.HomeActions = {
                 upgrade: ["crabBiology"],
             },
             outcomes: [
-                "A bunch of crabs pile together into some sort of weird cluster.",
+                "Um monte de caranguejos se empilham para fazer uma bola estranha de crustáceos.",
                 "Crab team, assemble! FORM THE CRAB BROOD!",
-                "[This message has been censored for reasons of being mostly really gross.]",
+                "[Eesa mensagem foi censurada por ser meio nojenta.]",
                 "Eggs, eggs everywhere, but never stop and think.",
                 "Writhing crab pile. Didn't expect those words next to each other today, did you.",
                 "The crab brood is a rarely witnessed phenomenon, due to being some strange behaviour of crabs that have been driven to seek crystals for reasons only they understand.",

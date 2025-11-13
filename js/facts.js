@@ -167,20 +167,21 @@ SharkGame.FunFacts = {
             "Lagostas têm garras assimétricas. A maior, chamada de esmagadora, é usada para esmagar. A outra, chamada de estripadora, é usada para estripar. Biólogos marinhos estavam inspirados naquele dia.",
         ],
         shrimp: [
-            "There are real eusocial shrimps that live in communities in sponges on reefs, complete with queens.",
-            "Shrimp are close relatives of lobsters. They have a lot of similarities, and in some ways are just smaller, narrower lobsters.",
+            "Realmente existem camarões sociais que vivem em comunidades ao redor de esponjas de recifes, eles têm até rainhas lá.",
+            "Camarões são primos próximos de lagostas. Eles têm muitas similaridades, em algumas maneiras eles são apenas lagostas, só que menores e magrinhas..",
         ],
         eel: [
-            "Eels come in a wide range of sizes, from just a few inches to multiple meters.",
+            "Enguias podem ter tamanhos muito diferentes, desde poucos centímetros até vários metros.",
             "O maior choque já registrado por uma enguia foi de 860 volts, mais do que qualquer outro animal!",
-            "Eels migrate a distance of 5,000 to 10,000 km across the Atlantic Ocean to the Sargasso Sea.",
+            "Enguias europeias migram uma distância de 5,000 até 10,000 km pelo Oceano Atlântico para chegar no Mar dos Cargaços.",
         ],
         chimaera: [
-            "Chimaera are closely related to sharks and rays.",
-            "Chimaera are deep-sea animals, usually found more than 500 meters (~1500 feet) below the surface of the ocean.",
-            "Chimaera have a venomous spine in front of their dorsal fin.",
-            "Chimaera are not purple, they are completely pale. They don't bother with colors because deep-sea animals like chimaera cannot be seen anyways.",
-            "Chimaera do not have bones. Neither do sharks or rays.",
+            "Quimeras têm uma ancestralidade comum próxima a tubarões e arraias.",
+            "Quimeras são animais de oceano profundo, normalmente são achados abaixo de 500 metros (~1.5 estádios do Maracanã) da superfície da água.",
+            "A maioria das espécies de quimera têm um espinho venenoso na frente de sua barbatana superior.",
+            "Quimeras não são roxas, elas são pálidas. Elas não se importam com cores bonitas porque animais das profudezas do mar não conseguem ver nada mesmo.",
+            "Quimeras não têm ossos. Da mesma maneira que tubarões e arraias.",
+            "Em muitas espécies de quimera, o focinho contém um órgão que detecta campos elétricos, como aqueles presentes em um batimento cardíaco, por exemplo.",
         ],
         billfish: [
             "Billfish do indeed have bones, unlike sharks and rays.",
@@ -192,16 +193,16 @@ SharkGame.FunFacts = {
         ],
         seaApple: [
             "Holotúrias são um tipo de pepino-do-mar. Eles se alimentam de restos e migalhas no solo.",
-            "Holotúrias não são atraídas de forma alguma a algas. É só as desse jogo que são estranhas.",
+            "Holotúrias reais não são atraídas de forma alguma a algas. É só as desse jogo que são estranhas.",
         ],
         jellyfish: [
             // "Sharks would definitely not have a way of acquiring most kinds of jellyfish in real life.",
-            "Jellyfish can be extremely dangerous. Some kinds of box jellyfish have fatal stings.",
+            "Águas-vivas podem ser extremamente perigosas. A picada de algumas vespas-do-mar consegue matar um adulto.",
             "Turritopsis dohrnii is a species of jellyfish that can restart its lifecycle at will. In theory, this grants it an infinite lifespan.",
             "Jellyfish are very old, evolutionarily speaking. A few jellyfish fossils have been dated to approximately 500 million years ago.",
-            "The gastric system of jellyfish has only one hole, which means that food comes out from the same place as it goes in. Ewwww.",
-            "Jellyfish are from the 'cnidaria' phylum, the same phylum of sea anemones.",
-            "Despite its name and looking like a jellyfish, comb jellies are not related to jellyfish. They are ctenophores.",
+            "O sistema digestivo de águas-vivas só tem um buraco, o que quer dizer que comida sai pelo mesmo lugar que entra. Eca.",
+            "Águas-vivas são do filo 'cnidaria', o mesmo filo de anêmonas.",
+            "Apesar de seus nomes e aparência, águas-vivas-de-pente não tem nada haver com águas-vivas. Elas são de filos diferentes.",
             // do more research into jellies
             // On it, boss -Biggest Brian
         ],

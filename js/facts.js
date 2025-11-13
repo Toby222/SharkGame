@@ -289,7 +289,7 @@ SharkGame.FunFacts = {
         tar: ["In the original shark game, tar was gained passively. Machines produced basically none of it."],
         calciniumConverter: [
             "Machine-brain interfaces, such as the ones used by lobsters, actually already exist.",
-            "While the first machine-brain interface was created by the science shark team, in the real world, it was developed by brazilian scientist 'Miguel Niconelis'.",
+            "Enquanto que a perimeira interface cérebro-máquina tenha sido criada por tubarões cientistas em colaboração com as lagostas, no mundo real, quem desenvolveu foi o time do cientista brasileiro 'Miguel Niconelis'.",
             "Machine-brain interfaces are normally done without any surgery, but the lobsters thought it looked cooler to jam the wires in their skulls.",
         ],
 

@@ -1,7 +1,7 @@
 "use strict";
 SharkGame.TitleBar = {
     saveLink: {
-        name: "save",
+        name: "salvar",
         main: true,
         onClick() {
             try {
@@ -14,7 +14,7 @@ SharkGame.TitleBar = {
     },
 
     optionsLink: {
-        name: "options",
+        name: "opções",
         main: true,
         onClick() {
             SharkGame.PaneHandler.showOptions();
@@ -30,16 +30,16 @@ SharkGame.TitleBar = {
     }, */
 
     skipLink: {
-        name: "skip",
+        name: "pular",
         main: true,
         onClick() {
             if (main.isFirstTime()) {
                 // save people stranded on home world
-                if (confirm("Do you want to reset your game?")) {
+                if (confirm("Você quer reiniciar o seu jogo?")) {
                     // just reset
                     main.resetGame();
                 }
-            } else if (confirm("Is this world causing you too much trouble? Want to go back to the gateway?")) {
+            } else if (confirm("Esse mundo está te causando problemas? Você quer voltar para o entre-mundos?")) {
                 SharkGame.wonGame = false;
                 main.endGame();
             }
@@ -47,7 +47,7 @@ SharkGame.TitleBar = {
     },
 
     funFactsLink: {
-        name: "fun fact",
+        name: "Fatos curiosos",
         main: false,
         onClick() {
             SharkGame.FunFacts.showFact();
@@ -55,7 +55,7 @@ SharkGame.TitleBar = {
     },
 
     changelogLink: {
-        name: "changelog",
+        name: "registro de atualização",
         main: false,
         onClick() {
             SharkGame.PaneHandler.showChangelog();
@@ -71,7 +71,7 @@ SharkGame.TitleBar = {
     }, */ // credits now at bottom of page
 
     donateLink: {
-        name: "donate",
+        name: "doações",
         main: false,
         onClick() {
             SharkGame.PaneHandler.addPaneToStack("Donate", SharkGame.Panes.donate);
@@ -85,7 +85,7 @@ SharkGame.TitleBar = {
     },
 
     hubLink: {
-        name: "back to hub",
+        name: "para o menu principal",
         main: false,
         onClick() {
             try {
@@ -93,7 +93,7 @@ SharkGame.TitleBar = {
             } catch (err) {
                 log.addError(err);
             }
-            log.addMessage("Saved game.");
+            log.addMessage("Jogo salvo.");
             window.location.href = "https://shark.tobot.dev/";
         },
     },

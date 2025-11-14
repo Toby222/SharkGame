@@ -425,8 +425,8 @@ SharkGame.ResourceTable = {
     },
 
     fishMachine: {
-        name: "máquinas de peixe",
-        singleName: "máquina de peixe",
+        name: "armadilhas de peixe",
+        singleName: "armadilha de peixe",
         desc: "Caçador impiedoso.",
         color: "#C9C7A7",
         income: {

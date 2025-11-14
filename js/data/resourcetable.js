@@ -976,8 +976,8 @@ SharkGame.ResourceTable = {
     },
 
     sprongeSmelter: {
-        name: "spronge smelters",
-        singleName: "spronge smelter",
+        name: "batedores de espronja",
+        singleName: "batedor de espronja",
         desc: "Ordem do dia: Melhoramento biológico.",
         color: "#76614C",
         income: {
@@ -1072,7 +1072,7 @@ SharkGame.ResourceTable = {
     filter: {
         name: "filtros de esponja",
         singleName: "filtro de esponja",
-        desc: "A esperança para consertar nossos erros.",
+        desc: "A esperança para nossos erros.",
         color: "#FFC89C",
         income: {
             tar: -0.01,

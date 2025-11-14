@@ -1022,7 +1022,7 @@ SharkGame.HomeActions = {
         */
 
         getBrood: {
-            name: "Form crab br",
+            name: "Formar uma ninhada",
             effect: {
                 resource: {
                     brood: 1,
@@ -1041,21 +1041,23 @@ SharkGame.HomeActions = {
             },
             outcomes: [
                 "Um monte de caranguejos se empilham para fazer uma bola estranha de crustáceos.",
-                "Crab team, assemble! FORM THE CRAB BROOD!",
-                "[Eesa mensagem foi censurada por ser meio nojenta.]",
-                "Eggs, eggs everywhere, but never stop and think.",
-                "Writhing crab pile. Didn't expect those words next to each other today, did you.",
-                "The crab brood is a rarely witnessed phenomenon, due to being some strange behaviour of crabs that have been driven to seek crystals for reasons only they understand.",
+                "Time crustáceo, juntem-se! FORMEMOS A NINHADA!",
+                "[Essa mensagem foi censurada por ser meio nojenta.]",
+                "Ovos, ovos em todo lugar, but never stop and think.",
+                "Hoje, no Manual do Mundo, nós fizemos uma bola perfeita de caranguejo.",
+                "Uma pilha de siris em constante deformação. Eu nunca esperava ter que falar essas palavras juntas.",
+                "A ninhada de caranguejos é um fenômeno raramente visto, porque apenas caranguejos que buscam cristais mágicos têm esse comportamento.",
+                "Deveríamos avisá-los que são de espécies diferentes?",
             ],
             multiOutcomes: [
-                "The broods grow. The swarm rises.",
-                "All these crabs are probably a little excessive. ...is what I could say, but I'm going to say this instead. MORE CRABS.",
-                "A sea of crabs on the bottom of the sea. Clickity clackity.",
-                "Snip snap clack clack burble burble crabs crabs crabs crabs.",
-                "More crabs are always a good idea. Crystals aren't cheap.",
-                "The broods swell in number. The sharks are uneasy, but the concern soon passes.",
+                "As ninhadas crescem. A multidão aumenta.",
+                "Todos esses siris parece meio excessivo. ...é o que eu iria dizer se eu não quisesse dizer: MAIS SIRIS!",
+                "Um mar de caranguejos no fundo do mar. Clic clac, fazem suas garras.",
+                "Snip snap, clic clac, siri caranguejo, caranguejo siri.",
+                "Mais caranguejos é sempre bom. Cristais são valiosos.",
+                "As ninhadas ficam maiores. Os tubarões se desconcertam, mas suas preocupações passam com o tempo.",
             ],
-            helpText: "Meld several crabs into a terrifying, incomprehensible crab-producing brood cluster.",
+            helpText: "Aglomere diversos caranguejos em uma ninhada estranha para produzir mais caranguejos de alguma forma incompreensível e nojenta.",
         },
 
         // LOBSTER JOBS ////////////////////////////////////////////////////////////////////////////////
@@ -1139,7 +1141,7 @@ SharkGame.HomeActions = {
         // SHARK MACHINES ////////////////////////////////////////////////////////////////////////////////
 
         getCrystalMiner: {
-            name: "Build crystal miner",
+            name: "Erguer minerador de cristal",
             effect: {
                 resource: {
                     crystalMiner: 1,
@@ -1170,23 +1172,27 @@ SharkGame.HomeActions = {
                 upgrade: ["automation"],
             },
             outcomes: [
-                "Crystal miner activated.",
-                "Crystal miner constructed.",
-                "Mining machine online.",
-                "Construction complete.",
-                "Carve rock. Remove sand. Retrieve target.",
+                "Minerador de cristal ativado.",
+                "Minerador de cristal construído.",
+                "Máquina mineradora conectada.",
+                "Mineiro de pé.",
+                "Construção completa.",
+                "Minerador ligado.",
+                "Cortar pedra. Remover areia. Pegar cristal.",
             ],
             multiOutcomes: [
-                "The machines rise.",
-                "The miners dig.",
-                "The crystal shall be harvested.",
-                "Crystal miners are complete.",
+                "As máquinas se erguem.",
+                "Mais buracos foram feitos.",
+                "Os mineradores cavam.",
+                "O cristal deve ser extraído.",
+                "Projeto de mineração começado.",
+                "Caranguejos reclamam de se tornarem obsoletos.",
             ],
-            helpText: "Construct a machine to automatically harvest crystals efficiently.",
+            helpText: "Construa uma máquina que pega cristais de forma eficiente sem esforço.",
         },
 
         getSandDigger: {
-            name: "Build sand digger",
+            name: "Erguer comedor de areia",
             effect: {
                 resource: {
                     sandDigger: 1,
@@ -1210,25 +1216,26 @@ SharkGame.HomeActions = {
                 upgrade: ["automation"],
             },
             outcomes: [
-                "Sand digger constructed.",
-                "Sand digger reaches into the seabed.",
-                "The digger begins to shuffle sand into its machine maw. Rays dart away.",
-                "The machine is online.",
-                "The machine acts immediately, shovelling sand.",
+                "Comedor de areia construído.",
+                "Um comedor de areia encosta no solo arenoso.",
+                "O comedor começa a sugar areia para dentro de sua boca metálica. Arraias fogem imediatamente.",
+                "A máquina faz os seus primeiros barulhos.",
+                "A máquina começa imediatamente, cavando o assoalho.",
             ],
             multiOutcomes: [
-                "The machines increase in number.",
-                "The diggers devour.",
-                "All sand must be gathered.",
-                "The rays are concerned.",
-                "Devour the sands. Consume.",
-                "Giant machines blot out our sun.",
+                "Mais máquinas se juntam.",
+                "Os comedores cavam.",
+                "Não sobrará areia alguma.",
+                "As arraias não gostam de como isso parece.",
+                "Devorar a areia. Consumir o chão.",
+                "Mais máquinas gigantes levantam areia.",
+                "O sol é bloqueado pela poeira arenosa.",
             ],
-            helpText: "Construct a machine to automatically dig up sand efficiently.",
+            helpText: "Construa uma máquina que cave areia por si só.",
         },
 
         getFishMachine: {
-            name: "Build fish machine",
+            name: "Erguer armadilha de peixe",
             effect: {
                 resource: {
                     fishMachine: 1,
@@ -1243,21 +1250,21 @@ SharkGame.HomeActions = {
                 upgrade: ["automation"],
             },
             outcomes: [
-                "Fish machine activated.",
-                "Fish machine constructed.",
-                "Fishing machine online.",
-                "Construction complete.",
+                "Armadilha ativada.",
+                "Armadilha de peixe construída.",
+                "Uma armadilha foi ligada.",
+                "Construção completa.",
                 "The quarry moves. But the machine is faster.",
             ],
             multiOutcomes: [
-                "One day there will be no fish left. Only the machines.",
-                "Today the shark is flesh. Tomorrow, machine.",
-                "Your metal servants can sate the hunger. The hunger for fish.",
-                "The fishing machines are more efficient than the sharks. But they aren't very smart.",
-                "Automated fishing.",
-                "The power of many, many sharks, in many, many devices.",
+                "Um dia não restará peixe no oceano. Apenas as máquinas.",
+                "Hoje o tubarão é de carne. Mas talvez amanhã, seja de metal.",
+                "Apenas os seus serventes metálicos conseguem saciar sua fome. A fome por peixes.",
+                "As armadilhas são muito mais eficientes que os tubarões. Mas não são muito espertas.",
+                "Caça aumatizada.",
+                "O poder de muitos, muitos tubarões, em apenas algumas máquinas.",
             ],
-            helpText: "Construct a machine to automatically gather fish efficiently.",
+            helpText: "Construa uma máquina que que atrai e automaticame prende peixes em grandes quantidades.",
         },
 
         getAutoTransmuter: {
@@ -1288,17 +1295,18 @@ SharkGame.HomeActions = {
                 "Auto-transmuter activated.",
                 "Auto-transmuter constructed.",
                 "Transmutation machine online.",
-                "Construction complete.",
-                "Provide inputs. Only the output matters.",
+                "Construção completa.",
+                "Dê a matéria-prima. Apenas o produto importa.",
             ],
             multiOutcomes: [
                 "Auto-transmuters are prepared.",
-                "The difference between science and magic is reliable application.",
-                "All is change.",
-                "Change is all.",
-                "The machines know many secrets, yet cannot speak of them.",
+                "As máquinas. Elas conseguem pensar?",
+                "A única diferença de ciência e mágica é poder confiar nela.",
+                "Tudo é mudança.",
+                "Mudança é tudo.",
+                "As máquinas sabem de muitos segredos, mas são incapazes de compartilhá-los.",
             ],
-            helpText: "Construct a machine to automatically and efficiently transmute sand and crystal to sharkonium.",
+            helpText: "Construa uma máquina para transmutar areia e cristal em tubarônio de forma automática.",
         },
 
         getSkimmer: {
@@ -1656,16 +1664,16 @@ SharkGame.HomeActions = {
                 "An atlantic banded octopus joins you.",
             ],
             multiOutcomes: [
-                "Efficiency increases with limb count.",
-                "Hard to understand, but hardworking nonetheless.",
-                "The minds of the octopuses are a frontier unbraved by many sharks.",
-                "They hardly seem to notice you. They take their payment and begin to harvest.",
-                "They say something about the schedule being on target.",
-                "One of the new batch tells you to find unity in efficiency.",
+                "Eficiência aumeta com o número de membros.",
+                "Difícil de entender, mas ainda assim bons trabalhadores.",
+                "A mente dos polvos são uma fronteira inexplorável pela maioria dos tubarões.",
+                "Eles mal parecem te dar bola. Eles só pegam o pagamento e começam as coletar.",
+                "Eles falam algo sobre o programa estar sendo seguido.",
+                "Um dos novos contratados te fala para achar união na eficiência.",
                 "You could have sworn you saw an octopus among the crowd glinting like metal.",
-                "Octopi? No. Octopodes? Definitely not.",
+                "Pôlvos? Não. Polvós? Definitivamente não.",
             ],
-            helpText: "Pay an octopus for their efficient clam retrieval services.",
+            helpText: "Contrate um polvo por seu serviço de coleção de mexilhão.",
         },
 
         // SHARK JOBS ////////////////////////////////////////////////////////////////////////////////

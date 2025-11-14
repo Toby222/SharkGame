@@ -9,7 +9,7 @@ SharkGame.TitleBar = {
             } catch (err) {
                 log.addError(err);
             }
-            log.addMessage("Saved game.");
+            log.addMessage("Jogo salvo.");
         },
     },
 

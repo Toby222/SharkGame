@@ -33,8 +33,8 @@ SharkGame.Settings = {
 
     showAnimations: {
         defaultSetting: true,
-        name: "Show Animations",
-        desc: "Whether to show animated transitions.",
+        name: "Mostrar animações",
+        desc: "Deveríamos ter transições animadas?",
         category: "PERFORMANCE",
         options: [true, false], // might remove this option? could be a pain to continue supporting it
     },
@@ -43,8 +43,8 @@ SharkGame.Settings = {
 
     minimizedTopbar: {
         defaultSetting: true,
-        name: "Minimized Title Bar",
-        desc: "Whether to minimize the title bar at the top.",
+        name: "Minimizar título",
+        desc: "Deveríamos minimizar a barra superior com o título?",
         category: "LAYOUT",
         options: [true, false],
         onChange() {
@@ -54,10 +54,10 @@ SharkGame.Settings = {
 
     logLocation: {
         defaultSetting: "right",
-        name: "Log Location",
-        desc: "Where to put the log.",
+        name: "Local dos registros",
+        desc: "Onde deveríamos botar os registros?",
         category: "LAYOUT",
-        options: ["right", "left", "top"],
+        options: ["direita", "esquerda", "em cima"],
         onChange() {
             log.moveLog();
         },
@@ -65,8 +65,8 @@ SharkGame.Settings = {
 
     groupResources: {
         defaultSetting: true,
-        name: "Group Resources",
-        desc: "Whether to categorize resources in the table.",
+        name: "Agrupar recursos",
+        desc: "Deveríamos categorizar os recursos em grupinhos?",
         category: "LAYOUT",
         options: [true, false],
         onChange() {
@@ -76,8 +76,8 @@ SharkGame.Settings = {
 
     smallTable: {
         defaultSetting: false,
-        name: "Smaller Table",
-        desc: "Whether to make the stuff table smaller.",
+        name: "Tabela menor",
+        desc: "Deveríamos fazer a tabela de recursos menor?",
         category: "LAYOUT",
         options: [true, false],
         onChange() {
@@ -87,8 +87,8 @@ SharkGame.Settings = {
 
     logMessageMax: {
         defaultSetting: 30,
-        name: "Max Log Messages",
-        desc: "Max number of messages kept in the log.",
+        name: "Registros máximos",
+        desc: "Qual é a quantidade máxima de registros ao mesmo tempo?",
         category: "LAYOUT",
         options: [5, 10, 15, 20, 30, 60],
         onChange() {
@@ -98,8 +98,8 @@ SharkGame.Settings = {
 
     sidebarWidth: {
         defaultSetting: "30%",
-        name: "Sidebar Width",
-        desc: "How much screen space the sidebar should take.",
+        name: "Largura da barra lateral",
+        desc: "Quanto espaço a barra lateral deveria tomar?",
         category: "LAYOUT",
         options: ["25%", "30%", "35%"],
         onChange() {
@@ -116,8 +116,8 @@ SharkGame.Settings = {
 
     notation: {
         defaultSetting: "default",
-        name: "Number Notation",
-        desc: "How numbers should be formatted.",
+        name: "Notação numérica",
+        desc: "Como que os números deveriam ser formatados?",
         category: "APPEARANCE",
         options: ["default", /* "exponen", */ "SI"],
         onChange() {
@@ -128,10 +128,10 @@ SharkGame.Settings = {
 
     colorCosts: {
         defaultSetting: "color",
-        name: "Color Resource Names",
-        desc: "How to color names of resources.",
+        name: "Cor dos recursos",
+        desc: "Como devem ser a cores dos nomes dos recursos?",
         category: "APPEARANCE",
-        options: ["color", "bright", "none"],
+        options: ["colorido", "brilhante", "sem cor"],
         onChange() {
             res.rebuildTable = true;
             stats.recreateIncomeTable = true;
@@ -140,8 +140,8 @@ SharkGame.Settings = {
 
     boldCosts: {
         defaultSetting: true,
-        name: "Bold Resource Names",
-        desc: "Should resource names be bolded?",
+        name: "Recursos em negrito",
+        desc: "O nome dos recursos deveriam ser escritos em negrito?",
         options: [true, false],
         category: "APPEARANCE",
         onChange() {
@@ -152,24 +152,24 @@ SharkGame.Settings = {
 
     alwaysSingularTooltip: {
         defaultSetting: false,
-        name: "Tooltip Always Singular",
-        desc: "Should the tooltip only show what one of each thing produces?",
+        name: "Informações singulares",
+        desc: "As informações extras deveriam mostrar a produção de apenas uma unidade do recurso?",
         category: "APPEARANCE",
         options: [true, false],
     },
 
     tooltipQuantityReminders: {
         defaultSetting: true,
-        name: "Tooltip Amount Reminder",
-        desc: "Should tooltips tell you much you own of stuff?",
+        name: "Informações de quantidade",
+        desc: "As informações extras deveriam te mostrar o quanto que você tem de cada coisa?",
         category: "APPEARANCE",
         options: [true, false],
     },
 
     enableThemes: {
         defaultSetting: true,
-        name: "Enable Planet-dependent Styles",
-        desc: "Should page colors change for different planets?",
+        name: "Habilitar estilos customizados",
+        desc: "As cores do jogo deveriam ser baseados no mundo em que você está?",
         options: [true, false],
         category: "APPEARANCE",
         onChange() {
@@ -183,16 +183,16 @@ SharkGame.Settings = {
 
     showIcons: {
         defaultSetting: true,
-        name: "Show Action Button icons",
-        desc: "Show button icons?",
+        name: "Mostrar ícones de ação",
+        desc: "Mostrar as imagens nos botões de ação?",
         category: "APPEARANCE",
         options: [true, false],
     },
 
     showTabImages: {
         defaultSetting: true,
-        name: "Show Tab Header Images",
-        desc: "Mostrar arte?",
+        name: "Mostar imagens de evento",
+        desc: "Mostrar arte dos eventos do mundo?",
         category: "APPEARANCE",
         options: [true, false],
         onChange() {
@@ -205,7 +205,7 @@ SharkGame.Settings = {
     doAspectTable: {
         defaultSetting: "tree",
         name: "Planilha/Árvore de aspectos",
-        desc: "Desenha uma árvore de aspectos, ou uma planilha de aspectos menos acessível?",
+        desc: "Mostrar uma árvore de aspectos, ou uma planilha de aspectos menos acessível?",
         category: "ACCESSIBILITY",
         options: ["tree", "table"],
     },

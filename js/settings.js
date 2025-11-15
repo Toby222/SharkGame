@@ -22,8 +22,8 @@ SharkGame.Settings = {
 
     framerate: {
         defaultSetting: 20,
-        name: "Framerate/TPS",
-        desc: "How fast to update the game.",
+        name: "Taxa de quadros",
+        desc: "O quão rápido o jogo é atualizado.",
         category: "PERFORMANCE",
         options: [1, 2, 5, 10, 20, 30],
         onChange() {
@@ -192,7 +192,7 @@ SharkGame.Settings = {
     showTabImages: {
         defaultSetting: true,
         name: "Show Tab Header Images",
-        desc: "Show art?",
+        desc: "Mostrar arte?",
         category: "APPEARANCE",
         options: [true, false],
         onChange() {
@@ -204,16 +204,16 @@ SharkGame.Settings = {
 
     doAspectTable: {
         defaultSetting: "tree",
-        name: "Aspect Table or Tree",
-        desc: "Draw a visual aspect tree or a more accessible aspect table?",
+        name: "Planilha/Árvore de aspectos",
+        desc: "Desenha uma árvore de aspectos, ou uma planilha de aspectos menos acessível?",
         category: "ACCESSIBILITY",
         options: ["tree", "table"],
     },
 
     verboseTokenDescriptions: {
         defaultSetting: false,
-        name: "Verbose Token",
-        desc: "Should tokens display text saying where they are?",
+        name: "Ficha prolixa",
+        desc: "Deveria ter um texto apontando onde as fichas estão?",
         category: "ACCESSIBILITY",
         options: [true, false],
         onChange() {
@@ -223,8 +223,8 @@ SharkGame.Settings = {
 
     minuteHandEffects: {
         defaultSetting: true,
-        name: "Minute Hand Special Effects",
-        desc: "Should the minute hand glow a ton?",
+        name: "Efeitos especiais do ponteiro dos minutos",
+        desc: "O ponteiro dos minutos deveria brilhar muito?",
         category: "ACCESSIBILITY",
         options: [true, false],
         onChange() {
@@ -236,8 +236,8 @@ SharkGame.Settings = {
 
     idleEnabled: {
         defaultSetting: true,
-        name: "Stored Offline Progress",
-        desc: "Should the game store idle progress for later use? (otherwise, it will not go idle and will have real offline progress)",
+        name: "Guardar progresso desligado",
+        desc: "O jogo deveria guardar o tempo para uso posterior? (se não, a produção de recursos vai continuar com o jogo desligado e nenhum tempo extra será ganho)",
         category: "OTHER",
         options: [true, false],
         onChange() {
@@ -247,16 +247,16 @@ SharkGame.Settings = {
 
     showTooltips: {
         defaultSetting: true,
-        name: "Tooltips",
-        desc: "Whether to show informational tooltips when hovering over certain stuff.",
+        name: "Informações extras",
+        desc: "Deveríamos mostrar informações sobre ações, recursos e outras coisas quando seu mouse passa por cima?",
         category: "OTHER",
         options: [true, false],
     },
 
     updateCheck: {
         defaultSetting: true,
-        name: "Check for updates",
-        desc: "Whether to notify you of new updates.",
+        name: "Conferir atualizações",
+        desc: "Deveríamos te notificar de atualizações?",
         category: "OTHER",
         options: [true, false],
         onChange() {
@@ -269,16 +269,16 @@ SharkGame.Settings = {
 
     truePause: {
         defaultSetting: false,
-        name: "True Pause",
-        desc: "When using the pause button aspect, should the game not build up idle time?",
+        name: "Pausa verdadeira",
+        desc: "Ao usar o aspecto do botão de pausa, deveríamos impedir que isso conte como tempo extra?",
         category: "OTHER",
         options: [true, false],
     },
 
     offlineModeActive: {
         defaultSetting: true,
-        name: "Offline Progress",
-        desc: "Should there be ANY offline progress?",
+        name: "Progresso desligado",
+        desc: "Deveria ter ALGUM tipo de progresso enquanto o jogo está desligado?",
         category: "OTHER",
         options: [true, false],
     },
@@ -288,17 +288,17 @@ SharkGame.Settings = {
     autosaveFrequency: {
         // times given in minutes
         defaultSetting: 5,
-        name: "Autosave Frequency",
-        desc: "Number of minutes between autosaves.",
+        name: "Frequência de salvamento automático",
+        desc: "Número de minutos entre os salvamentos automáticos.",
         category: "SAVES",
         options: [1, 2, 5, 10, 30],
         onChange() {
             clearInterval(main.autosaveHandler);
             main.autosaveHandler = setInterval(main.autosave, SharkGame.Settings.current.autosaveFrequency * 60000);
             log.addMessage(
-                "Now autosaving every " +
+                "Salvando agora a cada " +
                     SharkGame.Settings.current.autosaveFrequency +
-                    " minute" +
+                    " minuto" +
                     sharktext.plural(SharkGame.Settings.current.autosaveFrequency) +
                     ".",
             );

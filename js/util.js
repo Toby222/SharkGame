@@ -345,8 +345,8 @@ SharkGame.TextUtil = {
             name = name.bold();
         }
 
-        if (SharkGame.Settings.current.colorCosts !== "none") {
-            let color = SharkGame.Settings.current.colorCosts === "color" ? resource.color : sharkcolor.getBrightColor(resource.color);
+        if (SharkGame.Settings.current.colorCosts !== "sem cor") {
+            let color = SharkGame.Settings.current.colorCosts === "colorido" ? resource.color : sharkcolor.getBrightColor(resource.color);
             if (darken) {
                 color = sharkcolor.colorLum(resource.color, -0.5);
             } else if (background) {

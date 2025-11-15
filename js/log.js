@@ -17,13 +17,13 @@ SharkGame.Log = {
         const logDiv = $("<div id='log'></div>");
 
         switch (SharkGame.Settings.current.logLocation) {
-            case "left":
+            case "esquerda":
                 $("#sidebar").append(logDiv.append("<h3>Log<h3/>").append($("<ul id='messageList'></ul>").addClass("forLeftSide")));
                 $("#wrapper").removeClass("topLogActive");
                 $("#titlebackground").removeClass("topLogActive");
                 $("#tabList").css("margin-right", 0);
                 break;
-            case "top":
+            case "em cima":
                 $("#titlebar").append(logDiv);
                 logDiv
                     .append($("<button id='extendLog' class='min close-button'>⯆</button>").on("click", log.toggleExtendedLog))

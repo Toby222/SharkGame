@@ -167,7 +167,7 @@ SharkGame.Stats = {
                             resourceName,
                             disableButton,
                             amountToDispose,
-                            sharkcolor.getElementColor("dispose-" + resourceName, "background-color")+ " fora.",
+                            sharkcolor.getElementColor("dispose-" + resourceName, "background-color") + " fora.",
                         );
                 }
 

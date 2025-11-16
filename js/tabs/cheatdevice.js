@@ -3,7 +3,7 @@ SharkGame.CheatsAndDebug = {
     tabId: "cheats",
     tabDiscovered: false,
     tabSeen: false,
-    tabName: "Cheaty Powers",
+    tabName: "Trapaçarias",
     tabBg: "img/bg/bg-gate.png",
 
     sceneImage: "img/events/misc/scene-reflection.png",
@@ -37,7 +37,7 @@ SharkGame.CheatsAndDebug = {
     cheatButtons: {
         giveEverything: {
             get name() {
-                return "Give " + sharktext.beautify(sharkmath.getBuyAmount(true)) + " of Everything";
+                return "Ganhar " + sharktext.beautify(sharkmath.getBuyAmount(true)) + " de Tudo";
             },
             type: "numeric",
             updates: true,
@@ -48,7 +48,7 @@ SharkGame.CheatsAndDebug = {
         },
         removeEverything: {
             get name() {
-                return "Remove " + sharktext.beautify(sharkmath.getBuyAmount(true)) + " of Everything";
+                return "Perder " + sharktext.beautify(sharkmath.getBuyAmount(true)) + " de Tudo";
             },
             updates: true,
             category: "stuff",
@@ -60,7 +60,7 @@ SharkGame.CheatsAndDebug = {
             get name() {
                 const resource = $("#somethingSelector")[0].value;
                 return (
-                    "Give " +
+                    "Ganhar " +
                     sharktext.beautify(sharkmath.getBuyAmount(true)) +
                     " " +
                     sharktext.getResourceName(resource, false, sharkmath.getBuyAmount(true), sharkcolor.getVariableColor("--color-light"))
@@ -101,7 +101,7 @@ SharkGame.CheatsAndDebug = {
         },
         pause: {
             get name() {
-                return cad.pause ? "Unpause Game" : "Pause Game";
+                return cad.pause ? "Despausar Jogo" : "Pausar Jogo";
             },
             updates: true,
             category: "debug",
@@ -111,7 +111,7 @@ SharkGame.CheatsAndDebug = {
         },
         stop: {
             get name() {
-                return cad.stop ? "Resume Execution" : "Halt Execution";
+                return cad.stop ? "Continuar Execução" : "Para Execução";
             },
             updates: true,
             category: "debug",
@@ -120,7 +120,7 @@ SharkGame.CheatsAndDebug = {
             },
         },
         changeSpeed: {
-            name: "Game speed",
+            name: "Velocidade do Jogo",
             type: "up-down",
             category: "modifiers",
             clickUp() {
@@ -133,7 +133,7 @@ SharkGame.CheatsAndDebug = {
             },
         },
         changeUpgradePrices: {
-            name: "Upgrade prices",
+            name: "Custo de Melhorias",
             type: "up-down",
             category: "modifiers",
             clickUp() {
@@ -146,7 +146,7 @@ SharkGame.CheatsAndDebug = {
             },
         },
         changeStuffPrices: {
-            name: "Cost of stuff",
+            name: "Preço de Coisas",
             type: "up-down",
             category: "modifiers",
             clickUp() {
@@ -160,7 +160,7 @@ SharkGame.CheatsAndDebug = {
         },
         toggleFreeStuff: {
             get name() {
-                return cad.actionPriceModifier ? "Enable free stuff" : "Disable free stuff";
+                return cad.actionPriceModifier ? "Habilitar coisas grátis" : "Disabilitar coisas grátis";
             },
             category: "modifiers",
             updates: true,
@@ -171,7 +171,7 @@ SharkGame.CheatsAndDebug = {
         },
         toggleFreeUpgrades: {
             get name() {
-                return cad.upgradePriceModifier ? "Enable free upgrades" : "Disable free upgrades";
+                return cad.upgradePriceModifier ? "Habilitar melhorias grátis" : "Desativar melhorias grátis";
             },
             category: "modifiers",
             updates: true,
@@ -183,9 +183,9 @@ SharkGame.CheatsAndDebug = {
         toggleDebugButton: {
             get name() {
                 if (SharkGame.HomeActions.getActionTable().debugbutton.unauthorized) {
-                    return "Enable debug button";
+                    return "Habilitar botão de debug";
                 } else {
-                    return "Disable debug button";
+                    return "Desativar botão de debug";
                 }
             },
             category: "debug",
@@ -197,9 +197,9 @@ SharkGame.CheatsAndDebug = {
         toggleBeautify: {
             get name() {
                 if (cad.noNumberBeautifying) {
-                    return "Enable number formatting";
+                    return "Formatar números";
                 } else {
-                    return "Disable number formatting";
+                    return "Tirar formatação de números";
                 }
             },
             category: "debug",
@@ -209,28 +209,28 @@ SharkGame.CheatsAndDebug = {
             },
         },
         beatWorld: {
-            name: "Beat this world immediately",
+            name: "Vencer este mundo imediatamante",
             category: "misc",
             click() {
                 log.addMessage(cad.beatWorldPlease());
             },
         },
         addUpgrades: {
-            name: "Get all upgrades",
+            name: "Conseguir todas as melhorias",
             category: "misc",
             click() {
                 cad.addUpgradesPlease();
             },
         },
         addIdleTime: {
-            name: "Add idle time",
+            name: "Adicionar tempo extra",
             category: "misc",
             click() {
                 cad.addIdleTimePlease();
             },
         },
         rollDice: {
-            name: "Roll the dice for wacky effects",
+            name: "Role um dado, efeitos malucos",
             location: "right",
             category: "nonsense",
             click() {
@@ -239,7 +239,7 @@ SharkGame.CheatsAndDebug = {
         },
         freezeGame: {
             get name() {
-                return cad.frozen ? "Unfreeze game" : "Freeze the game";
+                return cad.frozen ? "Descongelar recursos" : "Congelar recursos";
             },
             updates: true,
             category: "nonsense",
@@ -248,7 +248,7 @@ SharkGame.CheatsAndDebug = {
             },
         },
         forceExistence: {
-            name: "Make all resources exist",
+            name: "Fazer todas as coisas existirem",
             location: "right",
             category: "nonsense",
             click() {
@@ -292,7 +292,7 @@ SharkGame.CheatsAndDebug = {
                 "<img width=400 height=200 src='" +
                 cad.sceneImage +
                 "' id='tabSceneImageEssence'>" +
-                "Doubles as a debug menu and a location for various cheats.";
+                "Serve como um menu de debug e um painel de trapaças.";
             $("#tabMessage").css("background-image", "url('" + cad.tabBg + "')");
         }
         $("#tabMessage").html(message);
@@ -391,25 +391,25 @@ SharkGame.CheatsAndDebug = {
             if (defaultValue !== cad[which]) {
                 switch (which) {
                     case "pause":
-                        msg = "Game paused.";
+                        msg = "Jogo pausado.";
                         break;
                     case "stop":
-                        msg = "Game processing halted.";
+                        msg = "Processamento do jogo parado.";
                         break;
                     case "speed":
-                        msg = "Game speed x" + cad.speed + ".";
+                        msg = "Velocidade do tempo x" + cad.speed + ".";
                         break;
                     case "upgradePriceModifier":
-                        msg = "Upgrades cost " + cad.upgradePriceModifier + "x normal.";
+                        msg = "Melhorias têm " + cad.upgradePriceModifier + "x o preço normal.";
                         break;
                     case "actionPriceModifier":
-                        msg = "Buying stuff costs " + cad.actionPriceModifier + "x normal.";
+                        msg = "Preço de compra multiplicado por " + cad.actionPriceModifier + "x.";
                         break;
                     case "noNumberBeautifying":
-                        msg = "Number formatting disabled.";
+                        msg = "Formatação numérica desativada.";
                         break;
                     case "cycling":
-                        msg = "Cycling styles.";
+                        msg = "Mudando estilos.";
                         break;
                 }
             }
@@ -511,7 +511,7 @@ SharkGame.CheatsAndDebug = {
 
     togglePausePlease() {
         if (cad.stop) {
-            log.addError("The game is stopped. You can't also pause it.");
+            log.addError("O jogo parou. Você não consegue pausá-lo.");
             return;
         }
         if (!cad.pause) {
@@ -525,7 +525,7 @@ SharkGame.CheatsAndDebug = {
     },
     toggleStopPlease() {
         if (cad.pause) {
-            log.addError("The game is paused. You can't also stop it.");
+            log.addError("O jogo está pausado. Você não consegue pará-lo.");
             return;
         }
         if (!cad.stop) {
@@ -541,7 +541,7 @@ SharkGame.CheatsAndDebug = {
         if (cad.frozen) {
             cad.frozen = false;
             res.setResource("ice", 0);
-            return "Game unfrozen.";
+            return "Movimento volta ao oceano.";
         }
         cad.frozen = true;
         world.forceExistence("ice");
@@ -551,50 +551,50 @@ SharkGame.CheatsAndDebug = {
         res.clearNetworks();
         res.buildIncomeNetwork();
         res.reconstructResourcesTable();
-        return "ICE going, doofus!";
+        return "Zero absoluto atingido!";
     },
     freeEssencePlease(howMuch = 15) {
         res.changeResource("essence", howMuch);
-        return "Okay, but only because you asked nicely.";
+        return "Certo, mas só porque você foi tão bonzinho.";
     },
     goFasterPlease() {
         if (cad.speed === 512) {
-            return "I think you've had enough.";
+            return "Acho que já está rápido o suficiente.";
         }
         let msg = "";
         cad.speed *= 2;
         switch (cad.speed) {
             case 2:
-                msg = "Going twice as fast.";
+                msg = "Acelerando o tempo para o dobro.";
                 break;
             case 512:
-                msg = "Going...really fast.";
+                msg = "Acelerando o tempo para...muito rápido.";
                 break;
             default:
-                msg = "Going " + cad.speed + " times normal speed.";
+                msg = "Acelerando o tempo para " + cad.speed + "x.";
                 break;
         }
         return msg;
     },
     reallyFastPlease() {
         cad.speed = 512;
-        return "Set game speed to 512x.";
+        return "Tudo está 512x a velocidade normal.";
     },
     goSlowerPlease() {
         if (cad.speed === 1 / 512) {
-            return "I think that's slow enough, don't you?";
+            return "O mundo já me parece meio lento, não acha?";
         }
         let msg = "";
         cad.speed *= 0.5;
         switch (cad.speed) {
             case 1 / 2:
-                msg = "Going twice as slow.";
+                msg = "Desacelerando o tempo pela metade.";
                 break;
             case 1 / 512:
-                msg = "Going...really slow.";
+                msg = "Desacelerando o tempo para...muito lento.";
                 break;
             default:
-                msg = "Going " + cad.speed + " times normal speed.";
+                msg = "Desacelerando o tempo para " + cad.speed + "x.";
                 break;
         }
         return msg;
@@ -620,7 +620,7 @@ SharkGame.CheatsAndDebug = {
         });
     },
     doSomethingCoolPlease() {
-        return "Did something really cool.";
+        return "Uma coisa muito legal foi feita.";
         // this doesn't do anything
     },
     beatWorldPlease() {
@@ -644,14 +644,14 @@ SharkGame.CheatsAndDebug = {
                 SharkGame.ResourceMap.get("world").income.tar = 1;
                 SharkGame.ResourceMap.get("world").baseIncome.tar = 1;
                 res.reconstructResourcesTable();
-                return "Rolled a one. Uh oh.";
+                return "Rolou um 1... Oh não.";
             case 2:
                 res.addNetworkNode(SharkGame.GeneratorIncomeAffectors, "fish", "exponentiate", "shark", 0.999);
                 res.addNetworkNode(SharkGame.GeneratorIncomeAffectors, "sand", "exponentiate", "ray", 0.999);
                 res.addNetworkNode(SharkGame.GeneratorIncomeAffectors, "crystal", "exponentiate", "crab", 0.999);
                 res.clearNetworks();
                 res.buildIncomeNetwork();
-                return "Rolled a two. Fish make sharks slower. Sand makes rays slower. Crystal makes crabs slower. Oops.";
+                return "Rolou um 2. Peixes fazem tubarões lentos. Areia faz arraias lentas. Cristais fazem siris lento. Foi mal.";
             case 3:
                 if (world.doesResourceExist("fish")) {
                     if (!SharkGame.ResourceMap.get("fish").income) {
@@ -671,22 +671,22 @@ SharkGame.CheatsAndDebug = {
                     SharkGame.ResourceMap.get("fish").baseIncome.whale = -0.001;
                     SharkGame.ResourceMap.get("fish").baseIncome.squid = -0.001;
                     SharkGame.ResourceMap.get("fish").forceIncome = true;
-                    return "Rolled a three. The fish are fighting back!";
+                    return "Rolou um 3. O peixes estão se revoltando!";
                 }
-                return "Rolled a three, but fish don't exist, so nothing happened.";
+                return "Rolou um 3, mas peixes não existem, então nada aconteceu.";
             case 4:
                 if (SharkGame.ResourceMap.get("shark").baseIncome.fish) {
                     SharkGame.ResourceMap.get("shark").baseIncome.fish = -1;
                     res.reapplyModifiers("shark", "fish");
-                    return "Rolled a four. The sharks are eating all the fish!";
+                    return "Rolou um 4. Os tubarões estão comendo todos os peixes!";
                 } else {
                     SharkGame.ResourceMap.get("shark").baseIncome.shark = -1;
                     res.reapplyModifiers("shark", "shark");
-                    return "Rolled a four. The sharks would be eating fish, but they don't catch fish anymore. NOW THEY'RE EATING EACHOTHER! AAAAAAAAAAAAAAAA";
+                    return "Rolou um 4. Os tubarões estariam comendo peixes, mas eles não caçam peixes. ELES ESTÃO PRATICANDO CANIBALISMO! AAAAAAAAAAAAAAAA";
                 }
             case 5:
                 res.applyModifier("resourceBoost", "fish", 0.125);
-                return "Rolled a five. I just killed 87.5% of all fish in the ocean. Now you get 87.5% less fish.";
+                return "Rolou um 5. Eu acabei de fazer todos os peixes em perigo de extinção. Agora o cardume produz 87.5% menos peixes.";
             case 6:
                 SharkGame.ResourceMap.forEach((_value, key) => {
                     if (key !== "essence") {
@@ -694,18 +694,18 @@ SharkGame.CheatsAndDebug = {
                         res.changeResource(key, 1);
                     }
                 });
-                return "Rolled a 6...you own one of exactly everything now. Only one.";
+                return "Rolou um 6...Você agora tem 1 unidade de tudo. Apena uma.";
             case 7:
                 res.changeResource("shark", res.getResource("shark") * 255);
-                return "Rolled a seven. Your sharks have been duplicated. A lot.";
+                return "Rolou um 7. Seus tubarões foram duplicados. Algumas vezes seguidas.;
             case 8:
                 res.addNetworkNode(SharkGame.ResourceIncomeAffectors, "sand", "multiply", "sand", 0.001);
                 res.clearNetworks();
                 res.buildIncomeNetwork();
-                return "Rolled an eight. Sand makes its own production faster.";
+                return "Rolou um 8. Areia acelera a sua própria produção.";
             case 9:
                 res.changeResource("fish", 10000000000 * Math.random() ** 3);
-                return "Rolled a nine. You eat fish hooray!";
+                return "Rolou um 9. Você pode comer peixes agora! Eba!";
             case 10:
                 if (!SharkGame.ResourceMap.get("shark").income) {
                     SharkGame.ResourceMap.get("shark").income = {};
@@ -724,7 +724,7 @@ SharkGame.CheatsAndDebug = {
                 res.reapplyModifiers("shark", "shark");
                 res.reapplyModifiers("shark", "ray");
                 res.reapplyModifiers("shark", "crab");
-                return "Rolled a ten. Sharks now produce themselves. And rays. And crabs. But not fish. Not anymore.";
+                return "Rolou um 10. Tubarões produzem mais tubarões. E arraias. E caranguejos. Mas não peixes. Não mais.";
             case 11:
                 res.addNetworkNode(SharkGame.GeneratorIncomeAffectors, "nurse", "exponentiate", "nurse", 1.01);
                 res.addNetworkNode(SharkGame.GeneratorIncomeAffectors, "nurse", "exponentiate", "shark", 0.98);
@@ -732,7 +732,7 @@ SharkGame.CheatsAndDebug = {
                 res.addNetworkNode(SharkGame.GeneratorIncomeAffectors, "maker", "exponentiate", "ray", 0.98);
                 res.clearNetworks();
                 res.buildIncomeNetwork();
-                return "Rolled an eleven. Nurses speed up one another, but slow down sharks. Ditto for rays and makers.";
+                return "Rolou um 11. Enfermeiros aceleram uns ao outros, mas atrapalham tubarões. Mesma coisa com arraias criadoras.";
             case 12:
                 if (!SharkGame.ResourceMap.get("world").income) {
                     SharkGame.ResourceMap.get("world").income = {};
@@ -742,15 +742,15 @@ SharkGame.CheatsAndDebug = {
                 }
                 SharkGame.ResourceMap.get("world").income.shark = 1;
                 SharkGame.ResourceMap.get("world").baseIncome.shark = 1;
-                return "Rolled a twelve. The world now gives you free sharks. Sweet.";
+                return "Rolou um 12. O mundo te dá tubarões grátis. Perfeito!";
             case 13:
                 if (world.doesResourceExist("fish")) {
                     res.addNetworkNode(SharkGame.GeneratorIncomeAffectors, "fish", "multiply", "shark", 0.0005);
                     res.clearNetworks();
                     res.buildIncomeNetwork();
-                    return "Rolled a thirteen. Sharks get faster for every fish owned. I guess a good meal makes for better workers.";
+                    return "Rolou um 13. Tubarões ficam mais rápidos com cada peixe. Trabalhadores sempre trabalham melhor depois do almoço.";
                 }
-                return "Rolled a thirteen, but fish don't exist, so nothing happened.";
+                return "Rolou um 13, mas peixes não existem. Então nada aconteceu.";
             case 14:
                 if (world.doesResourceExist("crab")) {
                     world.worldResources.get("crab").exists = false;
@@ -783,13 +783,13 @@ SharkGame.CheatsAndDebug = {
                         delete SharkGame.HomeActions.generated[world.worldType].getExtractionTeam;
                     }
                     SharkGame.TabHandler.setUpTab();
-                    return "Rolled a fourteen. What are you talking about? Crabs aren't real. There were never crabs to begin with.";
+                    return "Rolou um 14. O que foi isso? Caraguejos? Siris? Nunca ouvi falar. Eu não acho que eles existem.";
                 }
-                return "Rolled a fourteen, but crabs don't exist, so nothing happened.";
+                return "Rolou um 14, mas caranguejos não existem, então nada aconteceu.";
             case 15:
                 SharkGame.ResourceMap.get("science").baseIncome = { scientist: 0.01 };
                 SharkGame.ResourceMap.get("science").income = { scientist: 0.01 };
-                return "Rolled a fifteen. Science produces more science sharks. I guess knowledge is contagious?";
+                return "Rolou um 15. Ciência produz cientistas. Que nem o poste que mija no cachorro.";
             case 16:
                 SharkGame.ResourceMap.get("crystal").income = { sand: 1 };
                 SharkGame.ResourceMap.get("crystal").baseIncome = { sand: 1 };
@@ -798,14 +798,14 @@ SharkGame.CheatsAndDebug = {
                 if (!SharkGame.ResourceMap.get("fish").income) {
                     SharkGame.ResourceMap.get("fish").income = {};
                 }
-                return "Rolled a sixteen. Crystals now produce sand. Sand produces fish. Fish still produces whatever it did before. What?";
+                return "Rolou um 16. Cristais produzem areia. E areia produzem peixe. Peixes... Acho que nada aconteceu com eles, aconteceu?";
             case 17:
                 world.forceExistence("crab");
                 world.forceExistence("brood");
                 res.changeResource("crab", 10);
                 SharkGame.ResourceMap.get("crab").baseIncome.brood = 0.01;
                 res.reapplyModifiers("crab", "brood");
-                return "Rolled a seventeen. The crabs. They're multiplying.";
+                return "Rolou um 17. Os caranguejos. Eles estão proliferando!";
             case 18:
                 if (world.doesResourceExist("fish")) {
                     if (!SharkGame.ResourceMap.get("fish").income) {
@@ -826,16 +826,16 @@ SharkGame.CheatsAndDebug = {
                     SharkGame.ResourceMap.get("fish").baseIncome.squid = 0.005;
                     SharkGame.ResourceMap.get("fish").baseIncome.whale = 0.00001;
                     SharkGame.ResourceMap.get("fish").baseIncome.fish = -0.999;
-                    return "Rolled an eighteen. Fish will now purchase frenzy members for you. Thank me later.";
+                    return "Rolou um 18. Peixes agora recrutam o seu cardume por você. De nada.";
                 }
-                return "Rolled an eighteen, but fish don't exist, so nothing happened.";
+                return "Rolou um 18, mas peixes não existem, então nada aconteceu.";
             case 19:
                 cad.upgradePriceModifier = 0;
                 cad.actionPriceModifier = 4;
-                return "Rolled a nineteen. Upgrades are free, yay! But everything is four times as expensive. Not-so-yay.";
+                return "Rolou um 19. Melhorias são grátis, AEEEE! Mas todo o resto é 4 vezes mais caro... Aeee?";
             case 20:
                 res.specialMultiplier *= 20;
-                return "Rolled a perfect twenty. Everything times 20.";
+                return "Rolou um acerto crítico! Tudo multiplicado por 20.";
         }
     },
     // challengeMePlease() {
@@ -866,88 +866,88 @@ SharkGame.CheatsAndDebug = {
     // },
     expensiveUpgradesPlease() {
         if (cad.upgradePriceModifier === 512) {
-            return "I'm not letting you subject yourself to any more of this.";
+            return "Eu não vou deixar você piorar essa situação ainda mais.";
         }
         let msg = "";
         cad.upgradePriceModifier *= 2;
         switch (cad.upgradePriceModifier) {
             case 0:
-                log.addError("Can't change the price of upgrades because they're free.");
+                log.addError("Não dá para mudar o preço das melhorias porque elas estão grátis.");
                 break;
             case 2:
-                msg = "Upgrades are twice as expensive.";
+                msg = "Melhorias custam o dobro do normal.";
                 break;
             case 512:
-                msg = "Upgrades are...really expensive.";
+                msg = "Melhorias custam os olhos da cara.";
                 break;
             default:
-                msg = "Upgrades are " + cad.upgradePriceModifier + " times normal price.";
+                msg = "Melhorias custam " + cad.upgradePriceModifier + " vezes o normal.";
                 break;
         }
         return msg;
     },
     cheaperUpgradesPlease() {
         if (cad.upgradePriceModifier === 1 / 512) {
-            return "Is this not easy enough for you yet??";
+            return "Ainda está difícil demais para você??";
         }
         let msg = "";
         cad.upgradePriceModifier *= 0.5;
         switch (cad.upgradePriceModifier) {
             case 0:
-                log.addError("Can't change the price of upgrades because they're free.");
+                log.addError("Não dá para mudar o preço das melhorias porque elas estão grátis.");
                 break;
             case 1 / 2:
-                msg = "Upgrades are half as expensive.";
+                msg = "Melhorias custam a metado do normal.";
                 break;
             case 1 / 512:
-                msg = "Upgrades are...really cheap.";
+                msg = "Melhorias a preço de banana.";
                 break;
             default:
-                msg = "Upgrades are " + cad.upgradePriceModifier + " times normal price.";
+                msg = "Melhorias custam " + cad.upgradePriceModifier + " vezes o normal.";
                 break;
         }
         return msg;
     },
     expensiveStuffPlease() {
         if (cad.actionPriceModifier === 512) {
-            return "Seriously?";
+            return "Na moral? Na moralzinha?";
         }
         let msg = "";
         cad.actionPriceModifier *= 2;
         switch (cad.actionPriceModifier) {
             case 0:
-                log.addError("Can't change the price of stuff because it's free.");
+                log.addError("Não dá para mudar o preço de nada poque já está grátis.");
                 break;
             case 2:
-                msg = "Stuff is twice as expensive.";
+                msg = "Preço das coisas dobrado.";
                 break;
             case 512:
-                msg = "Stuff is...really expensive.";
+                msg = "Tudo isso é folheado a ouro por acaso?";
                 break;
             default:
-                msg = "Stuff is " + cad.actionPriceModifier + " times normal price.";
+                msg = "Preço das coisas está " + cad.actionPriceModifier + " vezes o normal.";
                 break;
         }
         return msg;
     },
     cheaperStuffPlease() {
         if (cad.actionPriceModifier === 1 / 512) {
-            return "Is this not easy enough for you yet??";
+            return "E você quer mais barato??";
         }
         let msg = "";
         cad.actionPriceModifier *= 0.5;
         switch (cad.actionPriceModifier) {
             case 0:
-                log.addError("Can't change the price of stuff because it's free.");
+                log.addError("Não dá para mudar o preço de nada poque já está grátis.");
                 break;
             case 1 / 2:
-                msg = "Stuff is half as expensive.";
+                msg = "Preço das coisas está pela metade.";
                 break;
             case 1 / 512:
-                msg = "Stuff is...really cheap.";
+                msg = "As coisas estão uma pechincha!";
                 break;
             default:
-                msg = "Stuff is " + cad.actionPriceModifier + " times normal price.";
+                msg = "Preço das coisas está " + cad.actionPriceModifier + " vezes o normal.";
                 break;
         }
         return msg;
@@ -955,19 +955,19 @@ SharkGame.CheatsAndDebug = {
     toggleFreeStuff() {
         if (cad.actionPriceModifier === 0) {
             cad.actionPriceModifier = 1;
-            return "Made stuff not free.";
+            return "Capitalismo implementado novamente.";
         } else {
             cad.actionPriceModifier = 0;
-            return "Made stuff free.";
+            return "Coisas estão grátis.";
         }
     },
     toggleFreeUpgrades() {
         if (cad.upgradePriceModifier === 0) {
             cad.upgradePriceModifier = 1;
-            return "Made upgrades not free.";
+            return "Melhorias não são mais grátis.";
         } else {
             cad.upgradePriceModifier = 0;
-            return "Made upgrades free.";
+            return "Melhorias grátis.";
         }
     },
     addUpgradesPlease() {
@@ -975,7 +975,7 @@ SharkGame.CheatsAndDebug = {
         $.each(upgradeTable, (upgradeId) => {
             SharkGame.Lab.addUpgrade(upgradeId);
         });
-        return "Added all upgrades. This might get weird.";
+        return "Adicionou todas as melhorias. Isso talvez fique estranho.";
     },
     addIdleTimePlease(time = Math.random() * 120000 + 30000) {
         SharkGame.flags.minuteHandTimer += time;
@@ -988,7 +988,7 @@ SharkGame.CheatsAndDebug = {
         });
         $("#content").empty();
         cad.switchTo();
-        return "Okay, here we go...";
+        return "Então tá... Lá vamos nós.";
     },
     doEgg() {
         if (SharkGame.flags.egg) {

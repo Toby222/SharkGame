@@ -697,7 +697,7 @@ SharkGame.CheatsAndDebug = {
                 return "Rolou um 6...Você agora tem 1 unidade de tudo. Apena uma.";
             case 7:
                 res.changeResource("shark", res.getResource("shark") * 255);
-                return "Rolou um 7. Seus tubarões foram duplicados. Algumas vezes seguidas.;
+                return "Rolou um 7. Seus tubarões foram duplicados. Algumas vezes seguidas.";
             case 8:
                 res.addNetworkNode(SharkGame.ResourceIncomeAffectors, "sand", "multiply", "sand", 0.001);
                 res.clearNetworks();

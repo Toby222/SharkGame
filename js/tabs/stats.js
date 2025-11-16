@@ -16,9 +16,9 @@ SharkGame.Stats = {
     bannedDisposeCategories: ["special", "harmful", "hidden"],
 
     message:
-        "The grotto is a place to keep a better track of resources." +
-        "</br></br>You can also dispose of those you don't need anymore." +
-        "</br>Disposing specialists returns them to their normal, previous lives.",
+        "A gruta é o lugar em que nós mantemos maior controle das nossas coisas." +
+        "</br></br>Também dá para jogar fora as coisas que não quisermos." +
+        "</br>Descartar especialistas os coloca de volta às suas vidas normais, com empregos de colarinho azul.",
 
     init() {
         SharkGame.TabHandler.registerTab(this);
@@ -48,16 +48,16 @@ SharkGame.Stats = {
         tabMessageSel.html(message);
 
         const disposeSel = $("#disposeResource");
-        disposeSel.append($("<h3>").html("Dispose of Stuff"));
+        disposeSel.append($("<h3>").html("Jogue Coisas Fora"));
         main.createBuyButtons("rid", disposeSel, "append");
         stats.createDisposeButtons();
 
         const table = stats.createIncomeTable();
         const incomeDataSel = $("#incomeData");
-        incomeDataSel.append($("<h3>").html("Income Details"));
+        incomeDataSel.append($("<h3>").html("Detalhes da produção"));
         incomeDataSel.append(
             $("<p>")
-                .html("(Listed below are resources, the income each resource gives you, and the total income you're getting from each thing.)")
+                .html("(Abaixo estão listados os recursos, a produção de uma unidade deles, e a produção total de cada recurso.)")
                 .addClass("medDesc"),
         );
 
@@ -68,11 +68,11 @@ SharkGame.Stats = {
             clear: "both",
         });
 
-        SharkGame.Button.makeButton("switchButton", "Swap Producers and Produced", switchButtonDiv, stats.toggleSwitch).addClass("min-block");
+        SharkGame.Button.makeButton("switchButton", "Alternar produtores e recursos", switchButtonDiv, stats.toggleSwitch).addClass("min-block");
         if (SharkGame.Settings.current.grottoMode === "simple") {
-            SharkGame.Button.makeButton("modeButton", "Swap to Advanced mode", switchButtonDiv, stats.toggleMode).addClass("min-block");
+            SharkGame.Button.makeButton("modeButton", "Mudar para o modo Avançado", switchButtonDiv, stats.toggleMode).addClass("min-block");
         } else {
-            SharkGame.Button.makeButton("modeButton", "Swap to Simple mode", switchButtonDiv, stats.toggleMode).addClass("min-block");
+            SharkGame.Button.makeButton("modeButton", "Mudar para o modo Simples", switchButtonDiv, stats.toggleMode).addClass("min-block");
         }
         incomeDataSel.append(switchButtonDiv);
 
@@ -84,22 +84,22 @@ SharkGame.Stats = {
         genStats.append($("<h3>").html("General Stats"));
         const firstTime = main.isFirstTime();
         genStats.append(
-            $("<p>").html("Real time since you began your journey:<br/><span id='gameTime' class='timeDisplay'></span>").addClass("medDesc"),
+            $("<p>").html("Tempo de mundo real desde o começo da jornada:<br/><span id='gameTime' class='timeDisplay'></span>").addClass("medDesc"),
         );
         if (!firstTime) {
             genStats.append(
                 $("<p>")
-                    .html("Relative time since you came through the gate:<br/><span id='runTime' class='timeDisplay'></span>")
+                    .html("Tempo relativo desde que você saiu do portal:<br/><span id='runTime' class='timeDisplay'></span>")
                     .addClass("medDesc"),
             );
             if (SharkGame.persistentFlags.scouting === false) {
                 genStats.append($("<p>").html(`Par: ${gateway.getPar()} minutes`).addClass("medDesc"));
             }
         }
-        genStats.append($("<h3>").html("Total Ocean Resources Acquired"));
+        genStats.append($("<h3>").html("Recursos Totais no Oceano"));
         if (!firstTime) {
             genStats.append(
-                $("<p>").html("Essence given is the total acquired for the entire game and not just for this world.").addClass("medDesc"),
+                $("<p>").html("Essência adquirida mostrada conta para o jogo inteiro, não só para este mundo.").addClass("medDesc"),
             );
         }
         genStats.append(stats.createTotalAmountTable());
@@ -151,7 +151,7 @@ SharkGame.Stats = {
                 }
                 const disableButton = resourceAmount < amountToDispose || amountToDispose <= 0;
                 let label =
-                    "Dispose of " +
+                    "Descartar " +
                     sharktext.beautify(amountToDispose) +
                     "<br/>" +
                     sharktext.getResourceName(
@@ -162,12 +162,12 @@ SharkGame.Stats = {
                     );
                 if (amountToDispose <= 0) {
                     label =
-                        "Can't dispose any more " +
+                        "Não dá para jogar mais " +
                         sharktext.getResourceName(
                             resourceName,
                             disableButton,
                             amountToDispose,
-                            sharkcolor.getElementColor("dispose-" + resourceName, "background-color"),
+                            sharkcolor.getElementColor("dispose-" + resourceName, "background-color")+ " fora.",
                         );
                 }
 
@@ -202,7 +202,7 @@ SharkGame.Stats = {
             }
             log.addMessage(SharkGame.choose(category.disposeMessage));
         } else {
-            log.addMessage("Can't dispose that much! You don't have enough of it.");
+            log.addMessage("Você não consegue tanta coisa fora! Nem temos os recursos pra fazer isso!");
         }
     },
 
@@ -609,42 +609,42 @@ SharkGame.Stats = {
             if (SharkGame.Settings.current.switchStats) {
                 row.append(
                     $("<td>")
-                        .html("<span><u>" + "RESOURCE".bold() + "</u></span>")
+                        .html("<span><u>" + "RECURSO".bold() + "</u></span>")
                         .addClass("evenRow"),
                 );
                 row.append(
                     $("<td>")
-                        .html("<span><u>" + "AMOUNT".bold() + "</u></span>")
+                        .html("<span><u>" + "QUANTIA".bold() + "</u></span>")
                         .addClass("evenRow"),
                 );
 
                 row.append(
                     $("<td>")
-                        .html("<span><u>" + "GENERATOR".bold() + "</u></span>")
+                        .html("<span><u>" + "GERADOR".bold() + "</u></span>")
                         .addClass("evenRow"),
                 );
             } else {
                 row.append(
                     $("<td>")
-                        .html("<span><u>" + "AMOUNT".bold() + "</u></span>")
+                        .html("<span><u>" + "QUANTIA".bold() + "</u></span>")
                         .addClass("evenRow"),
                 );
                 row.append(
                     $("<td>")
-                        .html("<span><u>" + "GENERATOR".bold() + "</u></span>")
+                        .html("<span><u>" + "GERADOR".bold() + "</u></span>")
                         .addClass("evenRow"),
                 );
 
                 row.append(
                     $("<td>")
-                        .html("<span><u>" + "RESOURCE".bold() + "</u></span>")
+                        .html("<span><u>" + "RECURSO".bold() + "</u></span>")
                         .addClass("evenRow"),
                 );
             }
 
             row.append(
                 $("<td>")
-                    .html("<span><u><b>" + (SharkGame.Settings.current.grottoMode === "advanced" ? "BASE INCOME" : "INCOME PER") + "</b></u></span>")
+                    .html("<span><u><b>" + (SharkGame.Settings.current.grottoMode === "advanced" ? "PRODUÇÃO BASE" : "PRODUÇÃO INDV.") + "</b></u></span>")
                     .addClass("evenRow"),
             );
 
@@ -658,9 +658,9 @@ SharkGame.Stats = {
                 row.append(
                     tooltip(
                         $("<td>")
-                            .html("<div style='text-align:center; color:" + res.UPGRADE_MULTIPLIER_COLOR + "'><strong>U</strong></div>")
+                            .html("<div style='text-align:center; color:" + res.UPGRADE_MULTIPLIER_COLOR + "'><strong>T</strong></div>")
                             .addClass("evenRow"),
-                        "<strong>U</strong>pgrade effects",
+                        "Efeito de <strong>T</strong>ecnologias",
                     ),
                 );
                 if (main.isFirstTime()) {
@@ -671,9 +671,9 @@ SharkGame.Stats = {
                     row.append(
                         tooltip(
                             $("<td>")
-                                .html("<div style='text-align:center; color:" + res.WORLD_MULTIPLIER_COLOR + "'><strong>W</strong></div>")
+                                .html("<div style='text-align:center; color:" + res.WORLD_MULTIPLIER_COLOR + "'><strong>M</strong></div>")
                                 .addClass("evenRow"),
-                            "<strong>W</strong>orld effects",
+                            "Efeitos do <strong>M</strong>undo",
                         ),
                     );
                     row.append(
@@ -681,7 +681,7 @@ SharkGame.Stats = {
                             $("<td>")
                                 .html("<div style='text-align:center; color:" + res.ASPECT_MULTIPLIER_COLOR + "'><strong>A</strong></div>")
                                 .addClass("evenRow"),
-                            "<strong>A</strong>spect effects",
+                            "Efeito de <strong>A</strong>spectos",
                         ),
                     );
                     row.append(
@@ -689,7 +689,7 @@ SharkGame.Stats = {
                             $("<td>")
                                 .html("<div style='text-align:center; color:" + res.RESOURCE_AFFECT_MULTIPLIER_COLOR + "'><strong>R</strong></div>")
                                 .addClass("evenRow"),
-                            "How some <strong>R</strong>esources affect each other",
+                            "Como alguns <strong>R</strong>ecursos se afetam",
                         ),
                     );
                 }
@@ -756,10 +756,10 @@ SharkGame.Stats = {
     toggleMode() {
         if (SharkGame.Settings.current.grottoMode === "simple") {
             SharkGame.Settings.current.grottoMode = "advanced";
-            document.getElementById("modeButton").innerHTML = "Swap to Simple mode";
+            document.getElementById("modeButton").innerHTML = "Mudar para o modo Simples";
         } else {
             SharkGame.Settings.current.grottoMode = "simple";
-            document.getElementById("modeButton").innerHTML = "Swap to Advanced mode";
+            document.getElementById("modeButton").innerHTML = "Mudar para o modo Avançado";
         }
         stats.createIncomeTable();
         stats.updateTableKey();
@@ -773,15 +773,15 @@ SharkGame.Stats = {
 
         if (world.worldType !== "start") {
             document.getElementById("tableKey").innerHTML =
-                "<br> <b><u>TABLE KEY</b></u>" +
-                `<br> <span style='color:${res.UPGRADE_MULTIPLIER_COLOR}'><b>This color</b></span> is for <strong>U</strong>pgrade effects.` +
-                `<br> <span style='color:${res.WORLD_MULTIPLIER_COLOR}'><b>This color</b></span> is for <strong>W</strong>orld effects.` +
-                `<br> <span style='color:${res.ASPECT_MULTIPLIER_COLOR}'><b>This color</b></span> is for <strong>A</strong>spect effects.` +
-                `<br> <span style='color:${res.RESOURCE_AFFECT_MULTIPLIER_COLOR}'><b>This color</b></span> is for how some <strong>R</strong>esources affect each other.`;
+                "<br> <b><u>GUIA PARA TABELA</b></u>" +
+                `<br> <span style='color:${res.UPGRADE_MULTIPLIER_COLOR}'><b>Essa cor</b></span> é para efeito de <strong>T</strong>ecnologias.` +
+                `<br> <span style='color:${res.WORLD_MULTIPLIER_COLOR}'><b>Essa cor</b></span> é para efeitos do <strong>M</strong>undo.` +
+                `<br> <span style='color:${res.ASPECT_MULTIPLIER_COLOR}'><b>Essa cor</b></span> é para efeito de <strong>A</strong>spectos.` +
+                `<br> <span style='color:${res.RESOURCE_AFFECT_MULTIPLIER_COLOR}'><b>Essa cor</b></span> é para o efeito de alguns <strong>R</strong>ecursos entre si.`;
         } else {
             document.getElementById("tableKey").innerHTML =
-                "<br> <b><u>TABLE KEY</b></u>" +
-                `<br> <span style='color:${res.UPGRADE_MULTIPLIER_COLOR}'><b>This color</b></span> is for upgrade effects.`;
+                "<br> <b><u>GUIA PARA TABELA</b></u>" +
+                `<br> <span style='color:${res.UPGRADE_MULTIPLIER_COLOR}'><b>Essa cor</b></span> é para efeito de <strong>T</strong>ecnologias.`;
         }
     },
 
@@ -824,7 +824,7 @@ SharkGame.Stats = {
             }
 
             if (!$.isEmptyObject(generatorCondensedObject.genAffect.decrease)) {
-                text += "<span class='littleTooltipText'>" + (addedAnyLabelsYet ? "<br>then " : "") + "IS DECREASED BY</span><br>";
+                text += "<span class='littleTooltipText'>" + (addedAnyLabelsYet ? "<br>then " : "") + "ESTÁ SENDO DIMINUIDO POR</span><br>";
                 addedAnyLabelsYet = true;
                 $.each(generatorCondensedObject.genAffect.decrease, (affector, degree) => {
                     const amount = SharkGame.Settings.current.alwaysSingularTooltip ? 1 : res.getResource(affector);
@@ -838,7 +838,7 @@ SharkGame.Stats = {
             }
 
             if (!$.isEmptyObject(generatorCondensedObject.genAffect.multincrease)) {
-                text += "<span class='littleTooltipText'>" + (addedAnyLabelsYet ? "<br>then " : "") + "IS MULTIPLICATIVELY INCREASED BY</span><br>";
+                text += "<span class='littleTooltipText'>" + (addedAnyLabelsYet ? "<br>then " : "") + "ESTÁ SENDO MULTIPLICADO POR</span><br>";
                 addedAnyLabelsYet = true;
                 $.each(generatorCondensedObject.genAffect.multincrease, (affector, degree) => {
                     const amount = SharkGame.Settings.current.alwaysSingularTooltip ? 1 : res.getResource(affector);
@@ -852,7 +852,7 @@ SharkGame.Stats = {
             }
 
             if (!$.isEmptyObject(generatorCondensedObject.genAffect.multdecrease)) {
-                text += "<span class='littleTooltipText'>" + (addedAnyLabelsYet ? "<br>then " : "") + "IS MULTIPLICATIVELY DECREASED BY</span><br>";
+                text += "<span class='littleTooltipText'>" + (addedAnyLabelsYet ? "<br>then " : "") + "ESTÁ SENDO DIMINUIDO POR</span><br>";
                 addedAnyLabelsYet = true;
                 $.each(generatorCondensedObject.genAffect.multdecrease, (affector, degree) => {
                     const amount = SharkGame.Settings.current.alwaysSingularTooltip ? 1 : res.getResource(affector);
@@ -887,7 +887,7 @@ SharkGame.Stats = {
             }
 
             if (!$.isEmptyObject(generatedCondensedObject.resAffect.decrease)) {
-                text += "<span class='littleTooltipText'>" + (addedAnyLabelsYet ? "<br>then " : "") + "ARE DECREASED BY</span><br>";
+                text += "<span class='littleTooltipText'>" + (addedAnyLabelsYet ? "<br>then " : "") + "ESTÁ SENDO DIMINUIDO POR</span><br>";
                 addedAnyLabelsYet = true;
                 $.each(generatedCondensedObject.resAffect.decrease, (affector, degree) => {
                     const amount = SharkGame.Settings.current.alwaysSingularTooltip ? 1 : res.getResource(affector);
@@ -901,7 +901,7 @@ SharkGame.Stats = {
             }
 
             if (!$.isEmptyObject(generatedCondensedObject.resAffect.multincrease)) {
-                text += "<span class='littleTooltipText'>" + (addedAnyLabelsYet ? "<br>then " : "") + "ARE MULTIPLICATIVELY INCREASED BY</span><br>";
+                text += "<span class='littleTooltipText'>" + (addedAnyLabelsYet ? "<br>then " : "") + "ESTÁ SENDO AUMENTADO POR</span><br>";
                 addedAnyLabelsYet = true;
                 $.each(generatedCondensedObject.resAffect.multincrease, (affector, degree) => {
                     const amount = SharkGame.Settings.current.alwaysSingularTooltip ? 1 : res.getResource(affector);
@@ -915,7 +915,7 @@ SharkGame.Stats = {
             }
 
             if (!$.isEmptyObject(generatedCondensedObject.resAffect.multdecrease)) {
-                text += "<span class='littleTooltipText'>" + (addedAnyLabelsYet ? "<br>then " : "") + "ARE MULTIPLICATIVELY DECREASED BY</span><br>";
+                text += "<span class='littleTooltipText'>" + (addedAnyLabelsYet ? "<br>then " : "") + "ESTÁ SENDO DIMINUIDO POR </span><br>";
                 addedAnyLabelsYet = true;
                 $.each(generatedCondensedObject.resAffect.multdecrease, (affector, degree) => {
                     const amount = SharkGame.Settings.current.alwaysSingularTooltip ? 1 : res.getResource(affector);

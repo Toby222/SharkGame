@@ -327,7 +327,7 @@ SharkGame.PaneHandler = {
         let row = $("<tr>");
         row.append(
             $("<td>").html(
-                "Import/Export Save:<br/><span class='smallDesc'>(Turn your save into text for other people to load, or as a backup.)</span>",
+                "Import/Export Save:<br/><span class='smallDesc'>(Transforme seu progresso em texto para mandar para outras pessoas ou para guarda você mesmo.)</span>",
             ),
         );
         row.append(
@@ -340,8 +340,8 @@ SharkGame.PaneHandler = {
                         const importText = $("#importExportField").val();
                         if (importText === "") {
                             SharkGame.PaneHandler.nextPaneInStack();
-                            log.addError("You need to paste something in first!");
-                        } else if (confirm("Are you absolutely sure? This will override your current save.")) {
+                            log.addError("Você precisa botar algum texto antes!");
+                        } else if (confirm("Você tem certeza? O seu progresso atual vai ser perdido.")) {
                             SharkGame.Save.importData(importText);
                         }
                     }),
@@ -365,8 +365,8 @@ SharkGame.PaneHandler = {
         // BACKUP MANAGEMENT
         row = $("<tr>");
         const row2 = $("<tr>");
-        row.append($("<td>").html("Save Backups:<br/><span class='smallDesc'>(Create a backup save.)</span>"));
-        row2.append($("<td>").html("Load Backups:<br/><span class='smallDesc'>(Load a backup save.)</span>"));
+        row.append($("<td>").html("Save Backups:<br/><span class='smallDesc'>(Criar uma cópia de segurança.)</span>"));
+        row2.append($("<td>").html("Load Backups:<br/><span class='smallDesc'>(Carregar uma cópia de segurança.)</span>"));
 
         _.each(["1", "2", "3"], (tag) => {
             row.append(
@@ -376,7 +376,7 @@ SharkGame.PaneHandler = {
                         .addClass("option-button")
                         .on("click", () => {
                             if (SharkGame.Save.savedGameExists(`Backup${tag}`)) {
-                                if (!confirm("There is already a save in this slot. Overwrite it?")) {
+                                if (!confirm("Já tem um jogo salvo neste local. Sobrescrevê-lo?")) {
                                     return;
                                 }
                             }
@@ -394,7 +394,7 @@ SharkGame.PaneHandler = {
                     if (!$(`#load${tag}`).hasClass("disabled") && SharkGame.Save.savedGameExists(`Backup${tag}`)) {
                         if (
                             confirm(
-                                `Are you absolutely sure you want to load this save${SharkGame.Save.getTaggedSaveCharacteristics(`Backup${tag}`)}?`,
+                                `Você tem certeza que quer carregar este jogo${SharkGame.Save.getTaggedSaveCharacteristics(`Backup${tag}`)}?`,
                             )
                         ) {
                             SharkGame.Save.loadTaggedSave(`Backup${tag}`);
@@ -413,14 +413,14 @@ SharkGame.PaneHandler = {
 
         if (SharkGame.persistentFlags.unlockedDebug) {
             const loadButton = $("<button>")
-                .html("load pre-cheats backup")
+                .html("cópia pré-trapaças")
                 .attr("id", "loadCheats")
                 .addClass("option-button")
                 .on("click", () => {
                     if (!$("#loadCheats").hasClass("disabled") && SharkGame.Save.savedGameExists("BackupCheats")) {
                         if (
                             confirm(
-                                `Are you absolutely sure you want to load this save${SharkGame.Save.getTaggedSaveCharacteristics("BackupCheats")}?`,
+                                `Você tem certeza que quer carregar este jogo${SharkGame.Save.getTaggedSaveCharacteristics("BackupCheats")}?`,
                             )
                         ) {
                             SharkGame.Save.loadTaggedSave("BackupCheats");
@@ -438,14 +438,14 @@ SharkGame.PaneHandler = {
 
         // SETTING WIPE
         row = $("<tr>");
-        row.append($("<td>").html("Wipe Settings:<br/><span class='smallDesc'>(Change all settings to default.)</span>"));
+        row.append($("<td>").html("Redefinir configurações:<br/><span class='smallDesc'>(Limpar todas as configurações.)</span>"));
         row.append(
             $("<td>").append(
                 $("<button>")
-                    .html("wipe")
+                    .html("limpar")
                     .addClass("option-button")
                     .on("click", () => {
-                        if (confirm("Are you absolutely sure you want to wipe your settings to default?")) {
+                        if (confirm("Tem certeza que você quer redifinir suas configurações?")) {
                             $.each(SharkGame.Settings.current, (settingName) => {
                                 if (SharkGame.Settings[settingName]) {
                                     SharkGame.Settings.current[settingName] = SharkGame.Settings[settingName].defaultSetting;
@@ -467,15 +467,15 @@ SharkGame.PaneHandler = {
         // add save wipe
         row = $("<tr>");
         row.append(
-            $("<td>").html("Wipe Save:<br/><span class='smallDesc'>(Completely wipe your main save and reset the game. COMPLETELY. FOREVER.)</span>"),
+            $("<td>").html("Apagar jogo:<br/><span class='smallDesc'>(Apaga o seu progresso e recomeça o jogo do zero. COMPLETAMENTE. PARA SEMPRE.)</span>"),
         );
         row.append(
             $("<td>").append(
                 $("<button>")
-                    .html("wipe")
+                    .html("apagar")
                     .addClass("option-button")
                     .on("click", () => {
-                        if (confirm("Are you absolutely sure you want to wipe your save?\nIt'll be gone forever!")) {
+                        if (confirm("Tem certeza que você quer apagar o seu progresso?\nEle não vai ser recuperável!")) {
                             main.resetGame();
                         }
                     }),
@@ -485,11 +485,11 @@ SharkGame.PaneHandler = {
 
         if (SharkGame.persistentFlags.unlockedDebug) {
             row = $("<tr>");
-            row.append($("<td>").html("Hide Cheats:<br/><span class='smallDesc'>(Hide or show cheats.)</span>"));
+            row.append($("<td>").html("Esconder trapaças:<br/><span class='smallDesc'>(Esconder a aba de trapaças.)</span>"));
             row.append(
                 $("<td>").append(
                     $("<button>")
-                        .html("show")
+                        .html("não")
                         .addClass("option-button")
                         .on("click", () => {
                             cad.debug();
@@ -499,7 +499,7 @@ SharkGame.PaneHandler = {
             row.append(
                 $("<td>").append(
                     $("<button>")
-                        .html("hide")
+                        .html("sim")
                         .addClass("option-button")
                         .on("click", () => {
                             cad.hideDebug();
@@ -509,7 +509,7 @@ SharkGame.PaneHandler = {
             optionsTable.prepend(row);
 
             optionsTable.prepend(
-                $("<tr>").html("<h3><br><span style='text-decoration: underline'>" + sharktext.boldString("CHEATS and DEBUG") + "</span></h3>"),
+                $("<tr>").html("<h3><br><span style='text-decoration: underline'>" + sharktext.boldString("TRAPAÇAS e DEBUG") + "</span></h3>"),
             );
         }
 
@@ -527,7 +527,7 @@ SharkGame.PaneHandler = {
         );
         optionsTable.prepend(row);
 
-        optionsTable.prepend($("<tr>").html("<h3><br><span style='text-decoration: underline'>" + sharktext.boldString("KEYBINDS") + "</span></h3>"));
+        optionsTable.prepend($("<tr>").html("<h3><br><span style='text-decoration: underline'>" + sharktext.boldString("ATALHOS") + "</span></h3>"));
 
         return optionsTable;
     },
@@ -642,20 +642,20 @@ SharkGame.PaneHandler = {
             $("<div>")
                 .attr("id", "aspectInnerWarning")
                 .append(
-                    "Uh oh!<br>Your save has aspects that are no longer in the game!<br>I'm sorry, but there's only one way we can fix this:<br>your <strong>aspects</strong> have been <strong>refunded</strong><br>so that you can <strong>replace them</strong> with <strong>new ones</strong>.<br><br>Remember that you can use the <strong>skip</strong> button<br>in the top-left of the screen to go back to the gateway.<br>",
+                    "Opa!<br>O seu jogo contém aspectos que não existem mais no jogo!<br>Mil perdões, mas só tem um jeito de consertar isso:<br>seus <strong>aspectos</strong> foram <strong>reembolsados</strong><br>para que você os <strong>substitua</strong> com <strong>novos aspectos</strong>.<br><br>Lembre-se que você sempre pode apertar no botão <strong>'pular'</strong><br>no canto superior esquerdo para voltar ao entremundos.<br>",
                 )
                 .addClass("paneContentDiv"),
         );
         SharkGame.Button.makeButton(
             "confirmUnderstood",
-            "I understand my <br><strong>ASPECTS</strong> ARE <strong>REFUNDED</strong>",
+            "Eu entendo que os meus <br><strong>ASPECTOS</strong> FORAM <strong>REEMBOLSADOS</strong>",
             aspectWarnDiv,
             () => {
                 SharkGame.PaneHandler.nextPaneInStack();
                 SharkGame.missingAspects = false;
             },
         );
-        this.addPaneToStack("THAT'S NOT GOOD...", aspectWarnDiv, true);
+        this.addPaneToStack("ISSO NÃO É NADA BOM...", aspectWarnDiv, true);
     },
 
     showUnlockedCheatsMessage() {

@@ -603,20 +603,20 @@ SharkGame.Resources = {
                     $("#tooltipbox")
                         .html(
                             sharktext.boldString(
-                                "Drag this token onto stuff to increase production.<br><br>While a token is still in its slot, you can also click where you want it to go.",
+                                "Arraste esta ficha a algum recurso para aumentar sua produção.<br><br>Enquanto uma ficha estiver guardada, você também pode clicar onde quiseres que ela vá.",
                             ),
                         )
                         .addClass("forHomeButtonOrGrotto");
                 } else {
-                    $("#tooltipbox").html(sharktext.boldString("Click this slot or click the token to recall it.")).addClass("forHomeButtonOrGrotto");
+                    $("#tooltipbox").html(sharktext.boldString("Clique aqui ou na ficha para guardá-la novamente.")).addClass("forHomeButtonOrGrotto");
                 }
             }
         },
 
         tryReturnToken(_event, duringLoad, token = $("#" + this.id)) {
             if (!token.length) {
-                log.addError("Tried to return token, but couldn't find it!");
-                log.addError("Tried to find this token: " + token.attr("id"));
+                log.addError("Tentamos retornar a ficha, mas não achamos!");
+                log.addError("Tentamos achar esta ficha: " + token.attr("id"));
                 return;
             }
             if (SharkGame.flags.tokens[token.attr("id")] !== "NA") {
@@ -691,11 +691,11 @@ SharkGame.Resources = {
                         return false;
                     }
                     if (tokenLocation === "NA") {
-                        textToDisplay += "in its slot.";
+                        textToDisplay += "está guardado.";
                     } else if (tokenLocation.includes("income")) {
-                        textToDisplay += "boosting all " + sharktext.getResourceName(tokenLocation.split("-")[1], false, 1) + " gains.";
+                        textToDisplay += "está aumentando a produção de" + sharktext.getResourceName(tokenLocation.split("-")[1], false, 1) + ".";
                     } else if (tokenLocation.includes("resource")) {
-                        textToDisplay += "boosting " + sharktext.getResourceName(tokenLocation.split("-")[1], false, 1) + " efficiency.";
+                        textToDisplay += "está aumentando a eficiência de" + sharktext.getResourceName(tokenLocation.split("-")[1], false, 1) + " .";
                     }
                 });
                 $("#token-description").html(textToDisplay);
@@ -809,42 +809,43 @@ SharkGame.Resources = {
         disableNextTick: false,
         realMultiplier: 1,
         onMessages: [
-            "Time warps around you.",
-            "Everything seems to get faster.",
-            "Your vision warps as time bends.",
-            "The hands of a nearby clock speed up.",
-            "Frenzy members acclerate around you.",
-            "You feel strange. Everything feels wrong. It's so fast.",
-            "A strange feeling washes over you, and everything around you speeds up.",
-            "You feel your mind twisting. Churning. Everything seems so fast.",
-            "Things start piling up around you. You can't even tell who's doing it.",
-            "You feel a crushing weight on your mind, and everything seems to get faster.",
-            "You feel groggy. Everything speeds up.",
-            "You can barely understand what's happening around you anymore. The speed is jarring.",
-            "You feel sluggish. Everything around you seems so much faster.",
-            "Your vision gets blurry. Everything is blurry. It's all a blur.",
-            "Time seems to stretch from your perspective. It feels so wrong.",
-            "An otherworldly sensation overcomes you.",
-            "Confusion and distress overtake you as the hands of time speed up.",
-            "You float in place, taking in the sights as beautiful colors buzz by and the light of day flashes against night.",
-            "You feel disconnected, like you've been unplugged from the world. Time whizzes by.",
-            "You approach what feels like an edge: like you could tip over at any moment, and fall deep into the abyss.",
-            "What is this? What's going on? Everything feels like it's spinning.",
+            "O tempo se curva a sua volta.",
+            "Tudo parece ficar mais rápido.",
+            "Sua visão está turva, e o tempo está estranho.",
+            "Os ponteiros de um relógio próximo aceleram.",
+            "Seus companheiros de cardume passam avoados por você.",
+            "Você se sente estranho. Tudo parece errado. Rápido demais.",
+            "Você se sente enjoado, tudo a sua volta acelera.",
+            "Você sente sua cabeça doer. Latejar. Tudo está tão rápido.",
+            "Coisas começam a serem empilhados a sua volta. Você não sabe nem quem está fazendo isso.",
+            "Um peso se instala na sua mente, e tudo acelera.",
+            "Você se sente grogue. Tudo passa rápido.",
+            "Você não consegue entender direito nada que está acontecendo. Toda essa velocidade é demais.",
+            "Uma lentidão parece tomar seu corpo. Tudo a sua volta está rápido demais.",
+            "Sua visão está embaçada. Tudo está embaçado. Tudo virou um borrão.",
+            "O tempo se encolhe na sua perspectiva. E parece tão errado.",
+            "Uma sensação fora deste mundo toma você.",
+            "Confusão e aflição te atingem com o ponteiro do tempo acelerando.",
+            "Você flutua no lugar, olhando as lindas cores passando e a luz do dia piscando com a noite.",
+            "Você se sente dissociando, como se não fizesse mais parte do mundo. O tempo só passa.",
+            "Você se aproxima do que parece ser um limite: como se tivesse a um segundo de cair desse plano, e se perder num abismo.",
+            "O que é isso? O que está acontecendo? Tudo está girando.",
         ],
         offMessages: [
-            "You feel a headache coming on as time slows down again.",
-            "You feel a weight lifting as time slows down.",
-            "You breathe a sigh of relief as the world returns to normal.",
-            "Compared to how fast it just was, everything seems to grind to a halt.",
-            "Clarity washes over you. You feel alert, aware, as everything goes back to normal.",
-            "The forcible time-warp stops.",
-            "You feel your senses return to you like the sudden snap of a rubber band.",
-            "You are now keenly aware of what's around you as it all slows down.",
-            "You shake your head furiously, clearing the sluggishness from your mind. You feel normal again.",
-            "Your field of view warps significantly. Just how much were you even able to see? You can't remember.",
-            "You simply float right where you are, still coming to your senses.",
-            "Your vision sharpens. Your senses are keen. You can feel everything again.",
-            "You come back from the brink, exhaustion replaced by energy and enthusiasm.",
+            "Uma aura de enxaqueca se mostra presente com tudo desacelerando.",
+            "Um peso sai da sua cabeça com o tempo ficando normal.",
+            "O volta ao normal, e você se sente aliviado como nunca.",
+            "Comparado a como tudo estava, agora tá tudo tão agonizantemente lento.",
+            "Você é atingido por clareza. Você está consciente e alerta ao mundo voltando ao regular.",
+            "Sua viagem no tempo forçosa parou.",
+            "Seus sentidos retornam a você como se um choque tivesse te acordado.",
+            "Com o tempo desacelerando, você está novamente ciente do que acontece a sua volta.",
+            "Você chacoalha a sua cabeça, limpando a lerdeza que estava sentindo. Você se sente normal de novo.",
+            "Sua visão se curva e deforma de volta ao normal. O quanto que você viu? Nem você consegue lembrar.",
+            "Você fica no lugar por um tempo, se acostumando à velocidade normal das coisas.",
+            "Sua visão volta a focar. Seus sentidos voltam ao normal. Como é bom entender tudo novamente.",
+            "Você volta da beira da sua mente, energia e entusiasmo tomam espaço de exaustão.",
+            "O que foi isso? Eu tava sonhando? Halucinando?",
         ],
 
         allowMinuteHand() {
@@ -1094,11 +1095,11 @@ SharkGame.Resources = {
             if (SharkGame.Settings.current.showTooltips) {
                 if (SharkGame.Settings.current.idleEnabled) {
                     $("#tooltipbox").html(
-                        "This is the <strong>minute hand</strong>.<br>It stores offline and idle progress.<br><br>Use the slider to adjust speed.<br>Press the button to unleash it.",
+                        "Este é o <strong>ponteiro dos minutos</strong>.<br>Ele guarda o progresso quando o jogo está desligado ou ocioso.<br><br>Use a chave abaixo para ajustar a velocidade.<br>Aperte o botão para ativá-lo.",
                     );
                 } else {
                     $("#tooltipbox").html(
-                        "This is the <strong>minute hand</strong>.<br>It stores time from various sources.<br><br>Use the slider to adjust speed.<br>Press the button to unleash it.",
+                        "Este é o <strong>ponteiro dos minutos</strong>.<br>Ele guarda o tempo de algumas fontes.<br><br>Use a chave abaixo para ajustar a velocidade.<br>Aperte o botão para ativá-lo.",
                     );
                 }
             }
@@ -1144,9 +1145,9 @@ SharkGame.Resources = {
 
         showTooltip() {
             if (cad.pause) {
-                $("#tooltipbox").html("Click to <strong>unpause</strong>.");
+                $("#tooltipbox").html("Clique para <strong>continuar</strong>.");
             } else {
-                $("#tooltipbox").html("Click to <strong>pause</strong>, stopping most timers and all resources.");
+                $("#tooltipbox").html("Clique para <strong>pausar</strong>, parando a maioria dos contadores e todos os recursos.");
             }
         },
     },

@@ -1509,8 +1509,8 @@ SharkGame.HomeActions = {
                 "Fascinante.",
                 "Progresso.",
                 "Ohh. Agora eu entendi. É... eu... isso é... esquece.",
-                "What are these even made out of??",
-                "Now that it's taken apart, how do we put it back together??",
+                "Do que que essas coisas são feitas??",
+                "Agora que conseguimos desmontar, como que montamos de volta??",
                 "A rebimboca está conectada à...parafuseta. A parafuseta está...hm... não, isso tá errado.",
                 "Aprendemos muito com tudo isso! Eu acho!",
             ],
@@ -1522,7 +1522,7 @@ SharkGame.HomeActions = {
         transmuteSharkonium: {},
 
         forgeSpronge: {
-            name: "Forge sponge into spronge",
+            name: "Transforme esponja em espronja",
             effect: {
                 resource: {
                     spronge: 1,
@@ -1552,8 +1552,8 @@ SharkGame.HomeActions = {
             outcomes: [
                 "It pulses. That's unsettling.",
                 "It shakes and quivers and otherwise acts sort of like sharkonium which is kind of freaking me out uh help",
-                "Well, the octopuses know how to use this, I think.",
-                "What... what <em>is</em> that?!",
+                "Pelo menos os polvos sabem usar isso know how to use this, I think.",
+                "M- Mas o que... o que é essa <em>coisa</em>?!",
                 "Spronge. What a name. I don't think I could name it anything myself. Apart from 'horrifying'.",
                 "Sweet fishmas, it's glowing. It's glowing!",
             ],

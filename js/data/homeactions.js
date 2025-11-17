@@ -1292,14 +1292,15 @@ SharkGame.HomeActions = {
                 upgrade: ["engineering"],
             },
             outcomes: [
-                "Auto-transmuter activated.",
-                "Auto-transmuter constructed.",
-                "Transmutation machine online.",
+                "Auto-transmutadora ativada.",
+                "Transmutadora automática construída.",
+                "Máquina de transmutação ligada.",
                 "Construção completa.",
+                "Transmutação automatizada.",
                 "Dê a matéria-prima. Apenas o produto importa.",
             ],
             multiOutcomes: [
-                "Auto-transmuters are prepared.",
+                "Transmutadoras erguidas.",
                 "As máquinas. Elas conseguem pensar?",
                 "A única diferença de ciência e mágica é poder confiar nela.",
                 "Tudo é mudança.",
@@ -1310,7 +1311,7 @@ SharkGame.HomeActions = {
         },
 
         getSkimmer: {
-            name: "Build skimmer",
+            name: "Erguer desnatadeira",
             effect: {
                 resource: {
                     skimmer: 1,
@@ -1334,20 +1335,21 @@ SharkGame.HomeActions = {
                 upgrade: ["engineering"],
             },
             outcomes: [
-                "Skimmer activated.",
-                "Skimmer constructed.",
-                "Residue producer online.",
-                "Construction complete.",
-                "Sacrifices must be made for progress.",
+                "Desnatadeira ativada.",
+                "Desnatadeira construida.",
+                "Produtor de nata funcionando.",
+                "Construção completa.",
+                "Sacrifícios são o preço do progresso.",
             ],
             multiOutcomes: [
-                "The lesser resource becomes the greatest of all.",
-                "Transmutation is limited. The recycler is greater.",
-                "Consumption and production are two halves of the greater whole.",
-                "The creations of sharks emerge from a pattern as old as their species.",
+                "O recurso mais inútil se torna o mais importante de todos.",
+                "Transmutação é limitada. O reciclador não.",
+                "A indústria não para.",
+                "Destruição e Produção são dois lados da mesma moeda.",
+                "As criações dos tubarões vêm de um padrão tão antigo quanto a sua espécie.",
             ],
             helpText:
-                "Construct a machine to automatically recycle fish and sand into residue with perfect efficiency.",
+                "Construa uma máquina para automaticamente reciclar peixe e areia em nata com total eficiência.",
         },
 
         // MODDED MACHINES
@@ -1463,7 +1465,7 @@ SharkGame.HomeActions = {
         // CONVERSIONS ////////////////////////////////////////////////////////////////////////////////
 
         spongeFiltration: {
-            name: "Manufacture sponge filter",
+            name: "Fabricar filtro de esponja",
             effect: {
                 resource: {
                     filter: 1,
@@ -1478,21 +1480,21 @@ SharkGame.HomeActions = {
                 upgrade: ["environmentalism"],
             },
             outcomes: [
-                "Sweet, sweet filtration!",
-                "Smell that water! Couldn't you just eat it like fish?!",
-                "Hope restored.",
-                "In darkness, we find salvation.",
-                "One organism corrects the mistakes of another.",
-                "Clean water restored.",
-                "Surely, this is sustainable.",
-                "Begone, filth!",
-                "Saved by sponge. Who would've thought?",
+                "Filtração! Que lindo! Que belo!",
+                "Sente só essa água! Daria até para lamber de tão limpa!",
+                "Esperança restaurada.",
+                "Na escuridão, nós achamos a luz.",
+                "Um organismo corrige os erros de outro.",
+                "Água restaurada.",
+                "Certamente, isso é sustentável.",
+                "Nunca mais, lodo!",
+                "Salvo pela esponja. Quem imaginaria?",
             ],
-            helpText: "Create filters from sponge to get rid of tar.",
+            helpText: "Crie filtros de esponja para tirar o óleo da água.",
         },
 
         breakDownAncientPart: {
-            name: "Break down ancient parts",
+            name: "Desmontar partes antigas",
             effect: {
                 resource: {
                     science: 2500,
@@ -1504,15 +1506,15 @@ SharkGame.HomeActions = {
                 upgrade: ["reverseEngineering"],
             },
             outcomes: [
-                "Fascinating.",
-                "Progress.",
-                "Ohh. Now it makes sense. Wait, nevermind.",
+                "Fascinante.",
+                "Progresso.",
+                "Ohh. Agora eu entendi. É... eu... isso é... esquece.",
                 "What are these even made out of??",
                 "Now that it's taken apart, how do we put it back together??",
-                "The doohickey's connected to the...spring-thing. The spring-thing's connected to the...wait, no it isn't.",
-                "A lot was learned from this! Maybe!",
+                "A rebimboca está conectada à...parafuseta. A parafuseta está...hm... não, isso tá errado.",
+                "Aprendemos muito com tudo isso! Eu acho!",
             ],
-            helpText: "Break down ancient parts to advance science.",
+            helpText: "Quebre as partes antigas para análise e ciência.",
         },
 
         // MAKE ADVANCED RESOURCES  ///////////////////////////////////////////////////////////////////////////////

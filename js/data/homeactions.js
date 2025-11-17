@@ -1550,18 +1550,18 @@ SharkGame.HomeActions = {
                 upgrade: ["industrialGradeSponge"],
             },
             outcomes: [
-                "It pulses. That's unsettling.",
-                "It shakes and quivers and otherwise acts sort of like sharkonium which is kind of freaking me out uh help",
-                "Pelo menos os polvos sabem usar isso know how to use this, I think.",
+                "Isso parece estar respirando. Isso é desconcertante.",
+                "Ele se mexe e treme, mas qge como se fosse tubarônio de toda outra forma e isso está meio que me assustando.",
+                "Pelo menos os polvos sabem usar isso know how to use this, eu espero.",
                 "M- Mas o que... o que é essa <em>coisa</em>?!",
-                "Spronge. What a name. I don't think I could name it anything myself. Apart from 'horrifying'.",
-                "Sweet fishmas, it's glowing. It's glowing!",
+                "Espronja. Mas que nome. Eu, pessoalmente não conseguiria pensar em nenhum nome para isso. Além de 'horripilante'.",
+                "Mas que legal, está brilhando... Pera aí, está brilhando?!",
             ],
-            helpText: "Repurpose boring old sponge into spronge, building material of the future.",
+            helpText: "Transforme essa esponja normalzinha em espronja™, o material do futuro!",
         },
 
         fuseAncientPart: {
-            name: "Fuse stuff into ancient parts",
+            name: "Fundir coisas em partes antigas",
             effect: {
                 resource: {
                     ancientPart: 1,
@@ -1588,16 +1588,16 @@ SharkGame.HomeActions = {
                 upgrade: ["highEnergyFusion"],
             },
             outcomes: [
-                "FUSION!",
-                "Progress.",
-                "The past is irrelevant when we create the future.",
-                "What are we making again? What is this material???",
-                "The water boils with energy, and the finished product drops to the seafloor.",
-                "Fusion completed.",
-                "The lasers converge to a point, superheating the clams and reforming them.",
-                "How could this be made without already having the parts??",
+                "FUSÃO!",
+                "Progresso.",
+                "O paassado é irrelevante ao criarmos o futuro.",
+                "Pode me lembrar de novo, o que estamos fazendo? Que material é esse???",
+                "A água ferve com energia, e o produto final cai no chão.",
+                "Fusão completa.",
+                "Os lasers se encontram em um ponto, superaquecendo os mexilhões e fundindo eles.",
+                "Como que isso foi criado sem as partes já feitas??",
             ],
-            helpText: "Convert clams (and crystals) directly into ancient parts.",
+            helpText: "Converta mexilhões (e cristais) diretamente em partes antigas.",
         },
 
         // BUY ANIMALS ////////////////////////////////////////////////////////////////////////////////
@@ -1609,7 +1609,7 @@ SharkGame.HomeActions = {
         getCrab: {},
 
         getOctopus: {
-            name: "Employ octopus",
+            name: "Empregar polvo",
             effect: {
                 resource: {
                     octopus: 1,
@@ -1672,7 +1672,7 @@ SharkGame.HomeActions = {
                 "Eles mal parecem te dar bola. Eles só pegam o pagamento e começam as coletar.",
                 "Eles falam algo sobre o programa estar sendo seguido.",
                 "Um dos novos contratados te fala para achar união na eficiência.",
-                "You could have sworn you saw an octopus among the crowd glinting like metal.",
+                "Você podia jurar que você viu um polvo no meio de todo mundo brilhando como metal.",
                 "Pôlvos? Não. Polvós? Definitivamente não.",
             ],
             helpText: "Contrate um polvo por seu serviço de coleção de mexilhão.",

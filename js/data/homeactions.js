@@ -1651,7 +1651,7 @@ SharkGame.HomeActions = {
                 "Um polvo Gigante Africano se junta a você.",
                 "Um polvo Gigante do Sul se junta a você.",
                 "Um polvo Pigmeu do Pacífico se junta a você.",
-                "A japanese pygmy octopus joins you.",
+                "Um Grande Polvo Listrado do Pacífico se junta a você.",
                 "A east pacific red octopus joins you.",
                 "A spider octopus joins you.",
                 "A moon octopus joins you.",

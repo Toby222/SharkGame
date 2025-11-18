@@ -1,4 +1,4 @@
-0"use strict";
+"use strict";
 window.SharkGame = window.SharkGame || {};
 
 window.onmousemove = (event) => {

@@ -1,4 +1,4 @@
-"use strict";
+0"use strict";
 window.SharkGame = window.SharkGame || {};
 
 window.onmousemove = (event) => {
@@ -48,7 +48,7 @@ $(document).on("keydown", (event) => {
 $.extend(SharkGame, {
     GAME_NAMES: [
         "Domingão do Cação",
-        "O Jogo do Tubarão",
+        "Tubarão. Jogo. Preciso falar mais?",
         "Chega De Mariscos, De Negar o Meu Desejo",
         "Oceano Clicker",
         "Os Oceanos Vêm de Marte e É Pra Lá Que Eu Vou",
@@ -73,7 +73,7 @@ $.extend(SharkGame, {
         "Guelra Mundial T",
         "Fuga das Tainhas",
         "Golfinho Pooh e a Árvore de Mar",
-        "Golphinho Impact",
+        "Golfinho Impact",
         "Tubarão",
         "Cardumão do Huck",
         "Two and Arraia Men",
@@ -84,33 +84,41 @@ $.extend(SharkGame, {
         "Diário de um Barbatana",
         "Os Peixinhos Mágicos",
         ":jogo do tubarão:",
-        "Sharkware Edition",
-        "Help Wanted",
-        "NOT FINISHED",
+        "Kick Tubarovski",
+        "Contratando",
+        "A TERMINAR",
         "Deluxe",
         "doo doo do-do do-do",
         "DUNGEONS",
-        "The Adventure Continues",
-        "To Be Continued",
-        "Sharks of Rage",
+        "A Aventura Continua",
+        "Continua",
+        "Camarêncio: O Otimista",
         "Bedrock? Edition",
-        "Java(script) Edition",
-        "You are a Shark",
-        "Mystery of Shark City",
-        "Seas of Loathing",
-        "Raiders of the Lost Shark",
-        "Dead Sharks Tell No Tales",
-        "At Sharks End",
-        "On Sharker Tides",
-        "Curse of the Shark",
-        "Have I Played These Sharks Before?",
-        "Hollow Shark: Shark Song",
-    ],
+        "Edição Java(script)",
+        "Você é um Tubarão",
+        "O Códigolfinho da Vinci",
+        "Tubarões-Anjos e Demônios",
+        "A Culpa é das Enguias",
+        "Um Dia de Holotúria",
+        "Tubarão Em Todo Lugar Ao Mesmo Tempo",
+        "A Viagem de Siri-ro",
+        "Vale a Pena Ver de Polvo",
+        "Deltubarune",
+        "Mansão Foster de Arraias Imaginárias",
+        "O Caranguejo e a Rosa",
+        "Hollow Náutico: Siri Song",
+        "Viva a Sociedade Água-viva",
+        "Marmonas Arraiassinas",
+        "Camarães de Areia",
+        "Ouriço de Tolo",
+        "O Arraialista",
+        "Lagosta dos Cisnes",
+     ],
     GAME_NAME: null,
     ACTUAL_GAME_NAME: "Shark Game",
     VERSION: "20250127a",
     ORIGINAL_VERSION: 0.71,
-    VERSION_NAME: "The Tempetuous Update",
+    VERSION_NAME: "A Atualização Tempestuosa",
     EPSILON: 1e-6, // floating point comparison is a joy
     BIGGEST_SAFE_NUMBER: 1000000000000,
     MAX: 1e300,
@@ -447,7 +455,7 @@ Mod of v ${SharkGame.ORIGINAL_VERSION}`,
             // acknowledge long time gaps
             // (update these messages some time later)
             if (secondsElapsed > 3600) {
-                let notification = "Welcome back! It's been ";
+                let notification = "Bem vindo de volta! Faz ";
                 const numHours = Math.floor(secondsElapsed / 3600);
                 if (numHours > 24) {
                     const numDays = Math.floor(numHours / 24);
@@ -458,18 +466,16 @@ Mod of v ${SharkGame.ORIGINAL_VERSION}`,
                             if (numMonths > 12) {
                                 const numYears = Math.floor(numMonths / 12);
                                 notification +=
-                                    "almost " +
-                                    (numYears === 1 ? "a" : numYears) +
-                                    " year" +
+                                    "quase " +
+                                    (numYears === 1 ? "um" : numYears) +
+                                    " ano" +
                                     sharktext.plural(numYears) +
-                                    ", thanks for remembering this exists!";
+                                    ", obrigado por lembrar de nós!";
                             } else {
                                 notification +=
-                                    "like " +
-                                    (numMonths === 1 ? "a" : numMonths) +
-                                    " month" +
-                                    sharktext.plural(numMonths) +
-                                    ", it's getting kinda crowded.";
+                                    "mais ou menos " +
+                                    (numMonths === 1 ? "um mês" : numMonths + " meses") +
+                                    ", está ficando meio apertado aqui.";
                             }
                         } else {
                             notification +=

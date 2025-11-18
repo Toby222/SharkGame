@@ -113,7 +113,7 @@ $.extend(SharkGame, {
         "Ouriço de Tolo",
         "O Arraialista",
         "Lagosta dos Cisnes",
-     ],
+    ],
     GAME_NAME: null,
     ACTUAL_GAME_NAME: "Shark Game",
     VERSION: "20250127a",
@@ -455,7 +455,7 @@ Mod of v ${SharkGame.ORIGINAL_VERSION}`,
             // acknowledge long time gaps
             // (update these messages some time later)
             if (secondsElapsed > 3600) {
-                let notification = "Bem vindo de volta! Faz ";
+                let notification = "Bem vindo de volta! Há ";
                 const numHours = Math.floor(secondsElapsed / 3600);
                 if (numHours > 24) {
                     const numDays = Math.floor(numHours / 24);
@@ -479,14 +479,14 @@ Mod of v ${SharkGame.ORIGINAL_VERSION}`,
                             }
                         } else {
                             notification +=
-                                "about " + (numWeeks === 1 ? "a" : numWeeks) + " week" + sharktext.plural(numWeeks) + ", you were gone a while!";
+                                "já " + (numWeeks === 1 ? "uma" : numWeeks) + " semana" + sharktext.plural(numWeeks) + ", você ficou um tempinho fora!";
                         }
                     } else {
                         notification +=
-                            (numDays === 1 ? "a" : numDays) + " day" + sharktext.plural(numDays) + ", and look at all the stuff you have now!";
+                            (numDays === 1 ? "um" : numDays) + " dia" + sharktext.plural(numDays) + ", olha só tudo que foi produzido até agora!";
                     }
                 } else {
-                    notification += (numHours === 1 ? "an" : numHours) + " hour" + sharktext.plural(numHours) + " since you were seen around here!";
+                    notification += (numHours === 1 ? "uma" : numHours) + " hora" + sharktext.plural(numHours) + " desde a última vez que te vimos!";
                 }
                 log.addMessage(notification);
             }
@@ -709,7 +709,7 @@ Mod of v ${SharkGame.ORIGINAL_VERSION}`,
     autosave() {
         try {
             SharkGame.Save.saveGame();
-            log.addMessage("Autosaved.");
+            log.addMessage("Salvamento automático.");
         } catch (err) {
             log.addError(err);
         }
@@ -720,9 +720,9 @@ Mod of v ${SharkGame.ORIGINAL_VERSION}`,
             if (data.sha !== SharkGame.COMMIT_SHA) {
                 $("#updateGameBox")
                     .html(
-                        `You see a new update swimming towards you.<br> On it you can just make out the words <br>"${
+                        `Vocêvê uma atualização nadando até você.<br> Nela, vocêsó consegue decifrar as palavras <br>"${
                             data.commit.message.split("\n")[0]
-                        }". <br>Click to update.`,
+                        }". <br>Clique para atualizar.`,
                     )
                     .on("click", () => {
                         try {
@@ -731,7 +731,7 @@ Mod of v ${SharkGame.ORIGINAL_VERSION}`,
                         } catch (err) {
                             log.addError(err);
                             console.error(err);
-                            log.addMessage("Something went wrong while saving.");
+                            log.addMessage("Algo deu errado ao salvar.");
                         }
                     });
             }
@@ -918,16 +918,16 @@ SharkGame.Button = {
 
 SharkGame.Changelog = {
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20250630a": [
-        "Fix broken progression of Abandoned Ocean",
+        "Consertar progressão quebrada do Oceano Abandonado",
     ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20250629a": [
-        "Added a lot of missing sprites courtesy of <a href='https://github.com/glowkate'>Glowkate</a> and <a href='https://www.youtube.com/@biggestbrian'>BiggestBrian</a>",
+        "Um monte de imagens pendentes foram adicionadas, cortesia de sprites <a href='https://github.com/glowkate'>Glowkate</a> e <a href='https://www.youtube.com/@biggestbrian'>BiggestBrian</a>",
     ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20250127a": [
         "Added a new home message sprite courtesy of <a href='https://github.com/glowkate'>Glowkate</a>.",
     ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20241214a": [
-        "Added another 2 new sprites courtesy of <a href='https://github.com/glowkate'>Glowkate</a>.",
+        "2 novas imagens foram adicionadas, cortesia de <a href='https://github.com/glowkate'>Glowkate</a>.",
     ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20241128a": [
         "Added another another new sprite courtesy of <a href='https://www.youtube.com/@WorkerDroneMainBattleTrain'>Main Battle Train</a>.",
@@ -976,7 +976,7 @@ SharkGame.Changelog = {
         "Added home message history. You may now freely scroll back and forth between previously seen home messages while in a world.",
         "For the millionth time, attempted to fix negative world time bugs (and failed).",
         "Many new sprites.",
-        "New fun facts.",
+        "Novos fatos.",
         "Fixed issues with uncategorized home actions.",
         "Fixed issue with verbose token displaying internal names.",
         "Fixed a bug where disabling offline progress did absolutely nothing.",
@@ -988,7 +988,7 @@ SharkGame.Changelog = {
         "Added 3 new aspects that complement the changes to minute hand time.",
         "Changed the pricing and location of aspects on the tree.",
         "Disabling idle time accruing in the minute hand no longer completely removes it from the UI.",
-        "Added a choice to use SI units.",
+        "Adicionamos a opção de usar Notação Científica.",
         "Fixed a bug where tooltips would persist when changing tabs via hotkey.",
         "Fixed a bug where the game throws errors when trying to disable buttons while paused.",
         "Greatly improved aspect tree on touchscreen devices.",
@@ -1014,7 +1014,7 @@ SharkGame.Changelog = {
         "Did other assorted tasks.",
     ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20220603a": [
-        "Added Marine worldtype.",
+        "Adicionamos o Oceano Marinho.",
         "Planet descriptions are now much more vague until you've visited them.",
         "Distant Foresight greatly decreases vagueness of planet descriptions now.",
         "Swapped the order of some aspects on the tree.",

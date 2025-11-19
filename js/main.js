@@ -340,7 +340,7 @@ Mod of v ${SharkGame.ORIGINAL_VERSION}`,
                 if (SharkGame.Save.savedGameExists()) {
                     try {
                         SharkGame.Save.loadGame();
-                        log.addMessage("Loaded game.");
+                        log.addMessage("Jogo carregado.");
                     } catch (err) {
                         log.addError(err);
                     }

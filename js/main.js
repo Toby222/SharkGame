@@ -878,21 +878,21 @@ Mod of v ${SharkGame.ORIGINAL_VERSION}`,
     checkForCategorizationOversights() {
         $.each(SharkGame.ResourceTable, (resourceName, resourceObj) => {
             if (!res.getCategoryOfResource(resourceName)) {
-                log.addError(new Error(`${resourceName} does not have a category.`));
+                log.addError(new Error(`${resourceName} não tem categoria.`));
             }
 
             if (!resourceObj.desc) {
-                log.addError(new Error(`${resourceName} does not have a description.`));
+                log.addError(new Error(`${resourceName} não tem descrição.`));
             }
 
             if (!resourceObj.name || !resourceObj.singleName) {
-                log.addError(new Error(`${resourceName} does not have a name.`));
+                log.addError(new Error(`${resourceName} não tem nome.`));
             }
         });
         _.each(SharkGame.Gateway.allowedWorlds, (worldName) => {
             $.each(SharkGame.HomeActions[worldName], (actionName) => {
                 if (!home.getActionCategory(actionName)) {
-                    log.addError(new Error(`${actionName} does not have a category.`));
+                    log.addError(new Error(`${actionName} não tem categoria.`));
                 }
             });
         });
@@ -921,61 +921,61 @@ SharkGame.Changelog = {
         "Consertar progressão quebrada do Oceano Abandonado",
     ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20250629a": [
-        "Um monte de imagens pendentes foram adicionadas, cortesia de sprites <a href='https://github.com/glowkate'>Glowkate</a> e <a href='https://www.youtube.com/@biggestbrian'>BiggestBrian</a>",
+        "Um monte de imagens pendentes foram adicionadas, cortesia de <a href='https://github.com/glowkate'>Glowkate</a> e <a href='https://www.youtube.com/@biggestbrian'>BiggestBrian</a>",
     ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20250127a": [
-        "Added a new home message sprite courtesy of <a href='https://github.com/glowkate'>Glowkate</a>.",
+        "Uma nova imagem de progressão de mundo foi adicionada, cortesia de <a href='https://github.com/glowkate'>Glowkate</a>.",
     ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20241214a": [
         "2 novas imagens foram adicionadas, cortesia de <a href='https://github.com/glowkate'>Glowkate</a>.",
     ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20241128a": [
-        "Added another another new sprite courtesy of <a href='https://www.youtube.com/@WorkerDroneMainBattleTrain'>Main Battle Train</a>.",
-        "Added another 2 new sprites courtesy of <a href='https://github.com/glowkate'>Glowkate</a>.",
+        "Adicionamos mais uma nova imagem, cortesia de <a href='https://www.youtube.com/@WorkerDroneMainBattleTrain'>Main Battle Train</a>.",
+        "Adicionamos mais duas novas imagens, cortesia de <a href='https://github.com/glowkate'>Glowkate</a>.",
     ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20241119a": [
-        "Added another new sprite courtesy of <a href='https://www.youtube.com/@WorkerDroneMainBattleTrain'>Main Battle Train</a>.",
-        "Added another new sprite courtesy of <a href='https://github.com/glowkate'>Glowkate</a>.",
+        "Adicionamos mais uma nova imagem, cortesia de <a href='https://www.youtube.com/@WorkerDroneMainBattleTrain'>Main Battle Train</a>.",
+        "Adicionamos mais uma nova imagem, cortesia de <a href='https://github.com/glowkate'>Glowkate</a>.",
     ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20241106a": [
-        "Added a new sprite courtesy of <a href='https://www.youtube.com/@WorkerDroneMainBattleTrain'>Main Battle Train</a>.",
+        "Adicionamos uma nova imagem, cortesia de <a href='https://www.youtube.com/@WorkerDroneMainBattleTrain'>Main Battle Train</a>.",
     ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20240909a": [
-        "Added another one new sprite courtesy of <a href='https://github.com/glowkate'>Glowkate</a>!",
-        "Added a heap of new fun facts.",
+        "Adicionamos mais uma nova imagem, cortesia de <a href='https://github.com/glowkate'>Glowkate</a>!",
+        "Muitos fatos interessantes foram adicionados.",
     ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20240906a": [
-        "Added another 4 new sprites courtesy of <a href='https://github.com/glowkate'>Glowkate</a>!",
+        "Adicionamos mais 4 novas imagens, cortesia de <a href='https://github.com/glowkate'>Glowkate</a>!",
     ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20240819a": [
-        "Added another new sprite courtesy of <a href='https://github.com/glowkate'>Glowkate</a>.",
+        "Adicionamos mais uma nova imagem, cortesia de <a href='https://github.com/glowkate'>Glowkate</a>.",
     ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20240818a": [
-        "Added another new home message image, courtesy of <a href='https://x.com/stormwalker124'>stormwalker</a>.",
-        "Added a sprite for billfish pairs courtesy of <a href='https://github.com/glowkate'>Glowkate</a>.",
+        "Adicionamos mais uma imagem de progressão de mundo, cortesia de <a href='https://x.com/stormwalker124'>stormwalker</a>.",
+        "Adicionamos uma imagem para pares de espadas, courtesia de <a href='https://github.com/glowkate'>Glowkate</a>.",
     ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20240805a": [
-        "Added a new home message image, courtesy of <a href='https://x.com/stormwalker124'>stormwalker</a>.",
-        "Fixed a bug where a home message image in Haven wasn't appearing.",
+        "Adicionamos uma nova imagem de progressão de mundo, cortesia de <a href='https://x.com/stormwalker124'>stormwalker</a>.",
+        "Consertamos um problema em que a imagem no Paradiso não estava aparecendo.",
     ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20240803a": [
-        "Added a new upgrade to the starter world: Crystal Scoops, to increase the speed of that world dramatically and make for slightly more interesting crab-to-laser-ray competition.",
-        "Added 4 new home message images, courtesy of <a href='https://x.com/stormwalker124'>stormwalker</a>.",
+        "Adicionamos uma nova melhoria ao mundo inicial: Pá de Cristal, para acelerar bastante a progressão e fomentar uma competição entre caranguejos e arraias laser mais interessante.",
+        "Adicionamos mais 4 novas imagens, cortesia de <a href='https://x.com/stormwalker124'>stormwalker</a>.",
         "This happened silently in January, but: fixed the negative world time bug.",
         "Made a few changes to older ones.",
-        "Fixed the shrimp home message image not appearing.",
+        "Consertamos um problema em que a imagem no g.",
         "Fixed the lobster home message image not appearing.",
-        "Fixed the sponge filter sprite not appearing.",
-        "Fixed the pry sponge sprite disappearing in Volcanic.",
-        "Edited some home message requirements.",
-        "Edited the home message text at the end of Shrouded and Abandoned.",
-        "Edited some of the random game tab names.",
+        "Consertamos o ícone dos filtros de esponja não aparecer.",
+        "Consertamos o ícone de arrancar esponja desaparecendo no Mundo Vulcânico.",
+        "Editamos os pré-requisitos de algumas mensagens de progressão",
+        "Editamos o texto do final dos mundos Escuro e Abandonado.",
+        "Editamos alguns nome de aba aleatórios.",
     ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20230618a": [
         "Added Tempestuous worldtype.",
         "Added home message history. You may now freely scroll back and forth between previously seen home messages while in a world.",
-        "For the millionth time, attempted to fix negative world time bugs (and failed).",
-        "Many new sprites.",
+        "Pela milionésima vez, tentamos arrumar o problema do tempo negativo (e falhamos).",
+        "Muitas imagens novas.",
         "Novos fatos.",
         "Fixed issues with uncategorized home actions.",
         "Fixed issue with verbose token displaying internal names.",
@@ -1255,11 +1255,11 @@ SharkGame.Changelog = {
     "0.3 (2014/08-ish)": ["Added description to options.", "Added save import/export.", "Added the ending panel."],
     "0.23 (2014/08-ish)": ["Added autosave.", "Income system overhauled.", "Added options panel."],
     "0.22 (2014/08-ish)": [
-        "Offline mode added. Resources will increase even with the game off!",
-        "(Resource income not guaranteed to be 100% accurate.)",
+        "Modo desligado criado. Recursos vão ser produzidos mesmo com o jogo desligado!",
+        "(Não garantimos que ganho de recursos vai ser 100% acurado.)",
     ],
-    "0.21 (2014/08-ish)": ["Save and load added."],
-    "<0.21 (2014/08-ish)": ["A whole bunch of stuff.", "Resource table, log, initial buttons, the works."],
+    "0.21 (2014/08-ish)": ["Salvamemto e carregamento adicionado."],
+    "<0.21 (2014/08-ish)": ["Um monte de coisa.", "Tabela de recursos, registros, butões iniciais, ossos do ofício."],
 };
 
 $(() => {

@@ -50,7 +50,6 @@
         return r
     }()({
         1: [function (require, module, exports) {
-            "use strict";
             var wheel = require("wheel");
             var animate = require("amator");
             var eventify = require("ngraph.events");
@@ -508,7 +507,7 @@
                     // custom change to conditionally disable panning iniated using a touch
                     if (beforeMouseDown(e))
                         return;
-                        
+
                     if (e.touches.length === 1) {
                         return handleSingleFingerTouch(e, e.touches[0])
                     } else if (e.touches.length === 2) {

@@ -4,7 +4,7 @@
 "Reverse Engineering"        *The components spin and whirr and click together, but their purpose eludes us. What secrets are you hiding in your mechanisms?*
 
 ### FRIGID
-"Village"         A small village of squid greet you respectfully. The water in this place is a little warmer, and you hear a quiet, ambient hum.,
+~~"Village"         A small village of squid greet you respectfully. The water in this place is a little warmer, and you hear a quiet, ambient hum.,~~
 "Teamwork"        The squid champion the value of teamwork and the necessity of cooperation. They say they follow by example.,
 "Squid"        The squid speak of an ancient visitor who saved their world. They ask if you too, have seen this visitor.,
 "Suspicion"        The squid describe the machine with fascination. They ask if we feel the same. They see something we do not.,

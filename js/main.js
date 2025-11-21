@@ -1101,11 +1101,11 @@ SharkGame.Changelog = {
         "Added auto color-visibility adjuster. Tries to change the color of text if it would be hard to read on a certain background.",
     ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> 0.2 patch 20210610a": [
-        "Fixed bug where haven had no essence. Oops.",
-        "Changed home messages a little.",
-        "Retconned some previous patch notes.",
-        "Added sprite for octopus investigator.",
-        "Internal stuff.",
+        "Fixed bug where haven had no essence. .",
+        "Mudamos um pouco alguns textos da história.",
+        "Sumimos com algumas notas de atualização.",
+        "Adicionamos ícone para polvo investigador.",
+        "Coisas internas.",
     ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> 0.2 patch 20210515a": ["Adicionamos texto faltante.", "Fizemos coisas internas."],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> 0.2 patch 20210422a": [

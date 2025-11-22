@@ -1629,7 +1629,7 @@ SharkGame.HomeActions = {
                 "Um polvo de Anéis Azuis se junta a você. Cuidado com ele.",
                 "Um polvo Comum se junta a você.",
                 "Um polvo Pigmeu do Atlântico se junta a você. ",
-                "Um polvo Gigante do Pacífico se junta a você.",
+                "Um polvo Zebra Pigmeu se junta a você.",
                 "Um polvo Mimético se junta a você.",
                 "Um polvo de Sete Braços se junta a você. Mas que aberração.",
                 "Um polvo de Recife do Caribe se junta a você.",
@@ -1657,13 +1657,14 @@ SharkGame.HomeActions = {
                 "Um polvo do Atlântico Norte se junta a você.",
                 "Um polvo Algas se junta a você.",
                 "Um polvo Veia se junta a você.",
-                "A gloomy octopus joins you.",
-                "A veiled octopus joins you.",
-                "A bighead octopus joins you.",
-                "A common octopus joins you.",
-                "A club pygmy octopus joins you.",
-                "A star-sucker pygmy octopus joins you.",
-                "An atlantic banded octopus joins you.",
+                "Um polvo Panqueca de Carnarvon se junta a você.",
+                "Um polvo Pigmeu Listrado se junta a você.",
+                "Uma lula se passando como polvo se junta a você. Todo mundo sabe, mas ninguém se importam, desde que faça o trabalho.",
+                "Um polvo Wunderpus se junta a você.",
+                "Um polvo Gigante da Patagônia se junta a você.",
+                "Um polvo Estrela se junta a você.",
+                "Um polvo da Areia se junta a você.",
+                "Um polvo de Leste se junta a você.",
             ],
             multiOutcomes: [
                 "Eficiência aumeta com o número de membros.",
@@ -1673,7 +1674,7 @@ SharkGame.HomeActions = {
                 "Eles falam algo sobre o programa estar sendo seguido.",
                 "Um dos novos contratados te fala para achar união na eficiência.",
                 "Você podia jurar que você viu um polvo no meio de todo mundo brilhando como metal.",
-                "Pôlvos? Não. Polvós? Definitivamente não.",
+                "Pólvos? Não. Polvós? Definitivamente não.",
             ],
             helpText: "Contrate um polvo por seu serviço de coleção de mexilhão.",
         },
@@ -1698,7 +1699,7 @@ SharkGame.HomeActions = {
         // CRAB JOBS ////////////////////////////////////////////////////////////////////////////////
 
         getCollector: {
-            name: "Instruct collector crab",
+            name: "Instruir caranguejo-esponja",
             effect: {
                 resource: {
                     collector: 1,
@@ -1716,22 +1717,22 @@ SharkGame.HomeActions = {
                 upgrade: ["agriculture"],
             },
             outcomes: [
-                "Crab understands how to snip sponge.",
-                "Crab will now get sponges.",
-                "This crab has graduated from sponge school.",
-                "One more educated individual, ready to do a surprisingly difficult task.",
+                "Um siri entende como cortar esponjas agora.",
+                "O caranguejo vai começar a pegar esponjas.",
+                "Este caranguejo graduou da faculdade de esponja.",
+                "Mais um siri instruído, preparado para fazer um trabalho surpreendentemente difícil.",
             ],
             multiOutcomes: [
-                "The crabs now understand how to get sponges.",
-                "Collect and conquer. The sponges. Conquer the sponges.",
-                "Sponge incoming!",
-                "The porous fiends are no match for the claws of a crab!",
-                "Crystals? Who needs crystals when you can have sponge?!",
-                "Yes, collecting sponges is much harder than it looks!",
-                "Why do we need these again?",
-                "Each rock will have a crab, as each sponge has a rock.",
+                "Os siris agora entendem como cortar esponjas.",
+                "Dividir e conquistar. As esponjas. Conquistar as esponjas.",
+                "Esponja a caminho!",
+                "Esses demônios porosos não conseguem competir com as garras de um caranguejo!",
+                "Cristais? Pra que cristal se podemos ter esponja?!",
+                "Sim, pegar esponjas é mais difícil do que parece!",
+                "Para que que nós queremos isto mesmo?",
+                "Não sobrará esponja sobre pedra, pois as esponjas estarão sobre os siris.",
             ],
-            helpText: "Instruct a crab on the proper way to collect sponges from rocks.",
+            helpText: "Instrua caranguejos sobre o jeito correto de tirar esponjas das pedras.",
         },
 
         getBrood: {},
@@ -1739,7 +1740,7 @@ SharkGame.HomeActions = {
         // OCTOPUS JOBS ////////////////////////////////////////////////////////////////////////////////
 
         getInvestigator: {
-            name: "Reassign octopus as Investigator",
+            name: "Realocar polvo para investigação",
             effect: {
                 resource: {
                     investigator: 1,
@@ -1758,10 +1759,10 @@ SharkGame.HomeActions = {
             },
             outcomes: [
                 "An octopus is an investigator now.",
-                "Octopus, investigator.",
-                "The role has been assigned. investigator.",
+                "Polvo, investigador.",
+                "Seu serviço foi dado. Investigador.",
                 "The delegation has been made. investigator.",
-                "This individual now investigates.",
+                "Este indivíduo agora investiga.",
             ],
             multiOutcomes: [
                 "Investigators will study the unknown in pursuit of collective gain.",

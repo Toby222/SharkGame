@@ -2026,10 +2026,15 @@ SharkGame.HomeActions = {
                 "Um Golfinho de Laterais Brancas do Pacífico se junta a você.",
                 "Um Golfinho do Crepúsculo se junta a você.",
                 "Um Golfinho de Heaviside se junta a você.",
-                "A long-beaked common dolphin joins you.",
-                "An atlantic white sided dolphin joins you.",
-                "An atlantic hump-backed dolphin joins you.",
-                "An atlantic spotted dolphin joins you.",
+                "Um Golfinho Comum de Bico Longo se junta a você.",
+                "Um Golfinho de Risso se junta a você",
+                "Um Delphinus tropicalis se junta a você. Ai ai, esse se acha inteligentinho",
+                "Um Boto Tucuxi se junta a você.",
+                "Um Golfinho de Manges se junta a você.",
+                "Um Golfinho Listrado se junta a você.",
+                "Um Golfinho de Bico Branco se junta a você.",
+                "Um Golfinho Ampulheta se junta a você.",
+                "Um Golfinho de Peale se junta a você.",
             ],
             multiOutcomes: [
                 "Um grupo social de golfinhos!",
@@ -2111,7 +2116,7 @@ SharkGame.HomeActions = {
         // DOLPHIN JOBS ////////////////////////////////////////////////////////////////////////////////
 
         getTreasurer: {
-            name: "Promote dolphin treasurer",
+            name: "Promover golfinho tesoureiro",
             effect: {
                 resource: {
                     treasurer: 1,
@@ -2126,25 +2131,26 @@ SharkGame.HomeActions = {
                 upgrade: ["coralCollection"],
             },
             outcomes: [
-                "Treasurer of the dolphin treasures, go!",
-                "We are trusting this dolphin with a lot. Is that wise?",
-                "A dolphin is promoted to where it can do slightly more damage!",
-                "Dolphin treasurer ready to do... whatever it is they do.",
-                "O que que isso tem haver com tesouras?",
+                "Tesoureiro dos tesouros golfinhescos, em ação!",
+                "Estamos pondo muita fé nesse gollfinho. Será que é uma boa ideia?",
+                "Um golfinho é promovido para um papel em que pode causar mais problemas!",
+                "Golfinho tesoureiro pronto para fazer... seja lá o que ele faz.",
+                "O golfinho promovido fez um discurso de meia hora sobre a 'honra' que é ser escolhido.",
             ],
             multiOutcomes: [
-                "Do we need this many treasurers?",
-                "Should we be encouraging this?",
-                "We require more crystals.",
-                "You might be playing a dangerous game trusting these guys.",
-                "The treasury grows!",
+                "Precisamos de tantos tesoureiros assim?",
+                "Isso é algo que deveríamos estar encorajando?",
+                "Precisamos de mais cristais.",
+                "Pode ser perigoso nós confiarmos tanto nesse pessoal.",
+                "A tesouraria cresce!",
+                "Que nome idiota, o trabalho deles não tem nada haver com tesouras.",
             ],
             helpText:
-                "Promote a dolphin to a harder job involving interest on precious coral and crystal or something like that.",
+                "Promova um golfinho para um trabalho mais complicado envolvendo juros de corais e cristais preciosos ou sei lá mais o quê.",
         },
 
         getHistorian: {
-            name: "Qualify dolphin historian",
+            name: "Entitular golfinho historiador",
             effect: {
                 resource: {
                     historian: 1,
@@ -2162,9 +2168,9 @@ SharkGame.HomeActions = {
                 upgrade: ["retroactiveRecordkeeping"],
             },
             outcomes: [
-                "We've given a dolphin free opportunity to ramble. WHY?!",
+                "Demos a um golfinho a oportunidadede falar mais que o normal. POR QUÊ?!",
                 "Let's humour this dolphin's rambling.",
-                "This historian might have some insight.",
+                "Esse historiador talvez esteja fazendo um bom ponto.",
                 "Maybe this dolphin can answer the question of why we're even working with dolphins.",
                 "There are questions we have that this historian could answer for us.",
             ],
@@ -2172,17 +2178,17 @@ SharkGame.HomeActions = {
                 "We begrudgingly acknowledge that working together is providing us with new insights.",
                 "History is told by the victors. The dolphins are losers, but they'll tell it anyway.",
                 "These pretentious clicking jerks can sometimes raise a good point.",
-                "Oh joy. We're encouraging them to talk more.",
+                "Mas que beleza. Estamos estimulando eles a falar ainda mais.",
                 "Maybe if we let them talk about themselves a lot, they'll stop being so mean??",
                 "Ah, yes. Qualify an ego-stroker.",
-                "For the last time, I don't need to hear the story of Dolphantine again!!",
+                "Pela última vez, ninguém quer ouvir sobre a Guerra do Golfo de novo!!",
             ],
             helpText:
-                "Determine which of these dolphins is actually smart, and not just repeating meaningless stories.",
+                "Determine quais dos golfinhos são espertos mesmo, e quais são apenas uma vitrola quebrada com suas histórias inúteis.",
         },
 
         getBiologist: {
-            name: "Train dolphin biologist",
+            name: "Treinar um golfinho biólogo",
             effect: {
                 resource: {
                     biologist: 1,
@@ -2200,17 +2206,17 @@ SharkGame.HomeActions = {
                 upgrade: ["dolphinBiology"],
             },
             outcomes: [
-                "Dolphin biologist graduated!",
-                "Biologist trained.",
+                "Golfinho biólogose graduou!",
+                "Biólogo treinado.",
                 "Dolphin dedicated to dolphin duty.",
                 "Specialist dolphin ready for dolphin.",
             ],
             multiOutcomes: [
-                "More of them. Eesh.",
-                "Dolphins proliferate.",
+                "Mais deles. Eca.",
+                "Golfinhos se proliferam.",
                 "Dolphin biologists ready for whatever passes for their 'research'.",
                 "Smug hedonists, the lot of them!",
-                "The dolphin population regretfully grows.",
+                "É com grande pesar que digo: A população de golfinhos cresce.",
             ],
             helpText:
                 "Train a dolphin to specialise in biology. Dolphin biology, specifically, and production, apparently.",

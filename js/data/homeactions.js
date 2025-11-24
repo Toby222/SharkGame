@@ -2032,18 +2032,19 @@ SharkGame.HomeActions = {
                 "An atlantic spotted dolphin joins you.",
             ],
             multiOutcomes: [
-                "A pod of dolphins!",
-                "More of them. Hm.",
-                "More of these squeaky chatterers.",
-                "More whiners.",
-                "Do we need these guys?",
-                "They have to be good for something.",
+                "Um grupo social de golfinhos!",
+                "Um grupo de golfinhos! Eles nem pensaram em um nome coletivo legal.",
+                "Mais deles. Hm.",
+                "Mais desse pessoal chioso.",
+                "Mais chorões.",
+                "Nós precisamos mesmo desses bundas-pálidas?",
+                "Eles devem servir para alguma coisa.",
             ],
-            helpText: "Pay a dolphin to help us get coral or something. Prepare to put up with whining.",
+            helpText: "Pague um golfinho para ajudar a pegar coral ou algo assim. Prepare-se para lidar com o chiado deles.",
         },
 
         getWhale: {
-            name: "Reach whale",
+            name: "Trazer baleia",
             effect: {
                 resource: {
                     whale: 1,
@@ -2074,13 +2075,14 @@ SharkGame.HomeActions = {
                 "A dwarf sperm whale joins you.",
             ],
             multiOutcomes: [
-                "A pod of whales!",
-                "Aloof, mysterious, big.",
-                "So majestic. Wait, no, we're looking at a boulder formation.",
-                "The songs are mesmerising.",
-                "They might not all eat fish, but they're great at rounding them up.",
+                "Um baleal de baleias!",
+                "Reservados, misteriosos, grandes",
+                "Tão lindos... Espera, aquilo são apenas pedronas?",
+                "As músicas sâo majestosas.",
+                "A água treme com suas canções.",
+                "Muitos deles podem não comer peixes, mas eles são ótimos em pegá-los.",
             ],
-            helpText: "Persuade one of the great whales to help us out. They can round up entire schools.",
+            helpText: "Persuadir uma grande baleia para nos ajudar. Eles conseguem sugar cardumes inteiros.",
         },
 
         // SHARK JOBS ////////////////////////////////////////////////////////////////////////////////
@@ -2128,6 +2130,7 @@ SharkGame.HomeActions = {
                 "We are trusting this dolphin with a lot. Is that wise?",
                 "A dolphin is promoted to where it can do slightly more damage!",
                 "Dolphin treasurer ready to do... whatever it is they do.",
+                "O que que isso tem haver com tesouras?",
             ],
             multiOutcomes: [
                 "Do we need this many treasurers?",

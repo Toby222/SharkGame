@@ -211,7 +211,7 @@ SharkGame.HomeActions = {
                 "Tirou uma esponja-de-fibra das pedras.",
                 "Tirou uma esponja-barril-gigante das pedras.",
             ],
-            helpText: "Retire uma esponja colada no solo para eventual uso.",
+            helpText: "Retire uma esponja colada nas pedras para eventual uso.",
         },
 
         getClam: {
@@ -424,7 +424,7 @@ SharkGame.HomeActions = {
                 "Transmogrificação com convicção!",
                 "Transformação com ambição!",
                 "Transição com dedicação!",
-                "Transfiguração com pegação!",
+                "Transmute coisas em tubarônioguração com pegação! ...pera quê?",
                 "Transmutação com educação!",
                 "Tubarônio quentinho saindo do forno!",
                 "Barras de tubarônio feitas!",
@@ -433,7 +433,7 @@ SharkGame.HomeActions = {
                 "Eu não sei como descrever tubarônio. Ele só parece tão estranho.",
                 "O pilar de um cardume moderno!",
             ],
-            helpText: "Converta simples recursos em tubarônio, a material do futuro!",
+            helpText: "Converta simples recursos em tubarônio, o material do futuro!",
         },
 
         smeltCoralglass: {
@@ -1551,7 +1551,7 @@ SharkGame.HomeActions = {
             },
             outcomes: [
                 "Isso parece estar respirando. Isso é desconcertante.",
-                "Ele se mexe e treme, mas qge como se fosse tubarônio de toda outra forma e isso está meio que me assustando.",
+                "Ele se mexe e treme, mas age como se fosse tubarônio de toda outra forma e isso está meio que me assustando.",
                 "Pelo menos os polvos sabem usar isso know how to use this, eu espero.",
                 "M- Mas o que... o que é essa <em>coisa</em>?!",
                 "Espronja. Mas que nome. Eu, pessoalmente não conseguiria pensar em nenhum nome para isso. Além de 'horripilante'.",
@@ -1805,7 +1805,7 @@ SharkGame.HomeActions = {
                 "Catadores cararão apenas o que ainda parece útil.",
                 "Scavengers will act as instructed.",
             ],
-            helpText: "Delegate an octopus to scavenge strange mechanical components from the city.",
+            helpText: "Delegar um polvo para pegar componentes mecânicos da cidade.",
         },
 
         // SHARK MACHINES ////////////////////////////////////////////////////////////////////////////////
@@ -1828,7 +1828,7 @@ SharkGame.HomeActions = {
         // OCTOPUS MACHINES /////////////////////////////////////////////////////////
 
         getClamCollector: {
-            name: "Build clam collector",
+            name: "Contruir coletor mexílico",
             effect: {
                 resource: {
                     clamCollector: 1,
@@ -1843,22 +1843,23 @@ SharkGame.HomeActions = {
                 upgrade: ["sprongeBiomimicry"],
             },
             outcomes: [
-                "Machine: clam collector. Operation: in progress.",
-                "Machine: clam collector. Operation: beginning.",
-                "Machine: clam collector. Result: clam collection.",
-                "Machine: clam collector. Result: food for the masses.",
+                "Máquina: Coletor mexílico. Operação: Em progresso.",
+                "Máquina: Coletor mexílico. Operação: Inicializando.",
+                "Máquina: Coletor mexílico. Nome: Meio idiota.",
+                "Máquina: Coletor mexílico. Resultado: Coleta de mexilhão.",
+                "Máquina: Coletor mexílico. Resultado: Comida para o povo.",
             ],
             multiOutcomes: [
-                "These machines feel strangely alive. They pulse and throb.",
-                "There exist more clam collectors now.",
-                "The biomachine expands.",
-                "The octopuses tell me, find unity in efficiency. Find peace in automation.",
+                "As máquinas parecem vivas de um jeito estranho. Elas palpitam e latejam.",
+                "Mais coletores de mexilhão existem.",
+                "A biomáquina aumenta.",
+                "Os polvos me contam: Ache união na eficiência. Ache paz na automação.",
             ],
-            helpText: "This octopus machine collects clams. Simple purpose, simple machine.",
+            helpText: "Essa máquina-polvo pega mexilhões. Propósito simples para uma máquina simples.",
         },
 
         getEggBrooder: {
-            name: "Build egg brooder",
+            name: "Construir chocadeira",
             effect: {
                 resource: {
                     eggBrooder: 1,
@@ -1877,23 +1878,23 @@ SharkGame.HomeActions = {
                 upgrade: ["sprongeBiomimicry"],
             },
             outcomes: [
-                "Machine: egg brooder. Operation: in progress.",
-                "Machine: egg brooder. Operation: beginning.",
-                "Machine: egg brooder. Result: egg maintenance.",
-                "Machine: egg brooder. Result: population rises.",
-                "Machine: egg brooder. Cost: within acceptable parameters.",
+                "Máquina: Chocadeira. Operação: Em progresso.",
+                "Máquina: Chocadeira. Operação: Inicializando.",
+                "Máquina: Chocadeira. Result: Manutenção de ovos.",
+                "Máquina: Chocadeira. Result: Aumento de população.",
+                "Máquina: Chocadeira. Custo: Aceitável.",
             ],
             multiOutcomes: [
-                "These machines feel strangely alive. They pulse and throb.",
-                "There exist more egg brooders now.",
-                "The biomachine expands.",
-                "The octopuses tell me, find unity in efficiency. Find peace in an optimised generation.",
+                "As máquinas parecem vivas de um jeito estranho. Elas palpitam e latejam.",
+                "Existem mais chocadeiras agora.",
+                "A biomáquina prolifera.",
+                "Os polvos me contam: Ache união na eficiência. Ache paz na geração otimizada.",
             ],
-            helpText: "This octopus machine broods and incubates octopus eggs.",
+            helpText: "Essa máquina-polvo incuba e choca ovos de polvo.",
         },
 
         getSprongeSmelter: {
-            name: "Build spronge smelter",
+            name: "Construir batedor de espronja",
             effect: {
                 resource: {
                     sprongeSmelter: 1,
@@ -1908,18 +1909,18 @@ SharkGame.HomeActions = {
                 upgrade: ["sprongeBiomimicry"],
             },
             outcomes: [
-                "Machine: spronge smelter. Operation: in progress.",
-                "Machine: spronge smelter. Operation: beginning.",
-                "Machine: spronge smelter. Result: spronge smelting.",
-                "Machine: spronge smelter. Result: further development.",
+                "Máquina: Batedor de espronja. Operação: Em progresso.",
+                "Máquina: Batedor de espronja. Operação: Inicializando.",
+                "Máquina: Batedor de espronja. Resultado: Espronja batida.",
+                "Máquina: Batedor de espronja. Resultado: Desenvolvimento industrial.",
             ],
             multiOutcomes: [
-                "These machines feel strangely alive. They pulse and throb.",
-                "There exist more spronge smelters now.",
-                "The biomachine expands.",
-                "The octopuses tell me, find unity in efficiency. Find peace in an assured future.",
+                "As máquinas parecem vivas de um jeito estranho. Elas palpitam e latejam.",
+                "Existem mais batedores de espronja agora.",
+                "A biomáquina cresce.",
+                "Os polvos me contam: Ache união na eficiência. Ache paz num futuro assegurado.",
             ],
-            helpText: "This octopus machine imbues sponge with industrial potential. Requires residue for function.",
+            helpText: "Essa máquina-polvo embebe esponja com potencial industrial. Necessita de nata para funcionar.",
         },
     },
     haven: {
@@ -1944,7 +1945,7 @@ SharkGame.HomeActions = {
         transmuteSharkonium: {},
 
         fuseDelphinium: {
-            name: "Fuse stuff into delphinium",
+            name: "Fundir coisas em golfínio",
             effect: {
                 resource: {
                     delphinium: 1,
@@ -1971,14 +1972,15 @@ SharkGame.HomeActions = {
                 upgrade: ["aquamarineFusion"],
             },
             outcomes: [
-                "Fusion confusion.",
-                "Fission's fishy.",
-                "Delphinium, something that, much like its inventors, just isn't quite as legitimate in the ocean.",
-                "Delphinium, a substance we tolerate!",
-                "Delphinium! It's a product!",
-                "Delphinium! It... uh, is a thing! That exists!",
+                "Fusão confusão!",
+                "Fusão pervesão!",
+                "Fusão... fusão... não consegui pensar em nada.",
+                "Delfínio, algo que, que nem seus inventores, just isn't quite as legitimate in the ocean.",
+                "Delfínio, um dos materiais do oceano!",
+                "Delfínio! Nós toleramos, eu acho!",
+                "Delfínio! É... é... é algo! Que existe!",
             ],
-            helpText: "Fuse valuable resources into delphinium, which is kinda like sharkonium. Except worse.",
+            helpText: "Fundir recursos preciosos em delfínio, que é tipo tubarônio. Porém pior.",
         },
 
         // BUY ANIMALS ////////////////////////////////////////////////////////////////////////////////
@@ -1990,7 +1992,7 @@ SharkGame.HomeActions = {
         getCrab: {},
 
         getDolphin: {
-            name: "Fetch dolphin",
+            name: "Buscar golfinho",
             effect: {
                 resource: {
                     dolphin: 1,
@@ -2005,14 +2007,14 @@ SharkGame.HomeActions = {
                 upgrade: ["cetaceanAwareness"],
             },
             outcomes: [
-                "A white beaked dolphin joins you.",
-                "A short finned pilot whale joins you.",
-                "A pantropical dolphin joins you.",
-                "A long-finned pilot whale joins you.",
-                "A hourglass dolphin joins you.",
-                "A bottlenose dolphin joins you.",
-                "A striped dolphin joins you.",
-                "A pygmy killer whale joins you.",
+                "Uma Toninha se junta a você.",
+                "Um Golfinho Nariz de Garrafa se junta a você.",
+                "Um Golfinho de Dentes Rugosos se junta a você.",
+                "Um Golfinho Pintado do Atlântico se junta a você.",
+                "Um Boto Cinza se junta a você.",
+                "Um Golfinho Rotador se junta a você.",
+                "Um Boto Cor de Rosa se junta a você.",
+                "Um Boto do Índico se junta a você.",
                 "A melon-headed whale joins you.",
                 "An irrawaddy dolphin joins you.",
                 "A dusky dolphin joins you.",
@@ -3263,7 +3265,7 @@ SharkGame.HomeActions = {
         debugbutton: {},
 
         getClam: {
-            name: "Get clam",
+            name: "Coletar mexilhão",
             effect: {
                 resource: {
                     get clam() {
@@ -3276,34 +3278,35 @@ SharkGame.HomeActions = {
                 upgrade: ["clamScooping"],
             },
             outcomes: [
-                "Got a grooved carpet shell.",
-                "Got a hard clam.",
-                "Got a manila clam.",
-                "Got a soft clam.",
-                "Got an atlantic surf clam.",
-                "Got an ocean quahog.",
-                "Got a pacific razor clam.",
-                "Got a pismo clam.",
-                "Got a geoduck.",
-                "Got an atlantic jackknife clam.",
-                "Got a lyrate asiatic hard clam.",
-                "Got an ark clam.",
-                "Got a nut clam.",
-                "Got a duck clam.",
-                "Got a marsh clam.",
-                "Got a file clam.",
-                "Got a giant clam.",
-                "Got an asiatic clam.",
-                "Got a peppery furrow shell.",
-                "Got a pearl oyster.",
+                "Conseguiu um mexilhão-galego.",
+                "Conseguiu um mexilhão-azul",
+                "Conseguiu um mexilhão-chileno.",
+                "Conseguiu o Mexilhãozinho. Ele será útil para lutar contra O MAL.",
+                "Conseguiu um mexilhão-dourado.",
+                "Conseguiu um mexilhão-verde.",
+                "Conseguiu um mexilhão-zebra.",
+                "Conseguiu um mexilhão-pérola.",
+                "Conseguiu uma amêijoa-fina.",
+                "Conseguiu um mexilhão-falso. Mentiroso.",
+                "Conseguiu um mexilhão-da-califórnia.",
+                "Conseguiu um mexilhão-da-coreia.",
+                "Conseguiu uma amêijoa-asiática.",
+                "Conseguiu uma amêijoa-japonesa.",
+                "Conseguiu uma amêijoa-babosa.",
+                "Conseguiu uma amêijoa-mercenária.",
+                "Conseguiu uma sarnabi.",
+                "Conseguiu um mexilhão-Rabbitsfoot.",
+                "Conseguiu um mexilhão-Snuffbox.",
+                "Conseguiu uma amêijoa-boa.",
+                "Conseguiu uma amêijoa-gigante.",
             ],
-            helpText: "Fetch a clam. Why do we need clams now? Who knows.",
+            helpText: "Pegue um mexilhão. Para que vamos usá-lo? Sei lá, mano, deixa de encheção.",
         },
 
         // CONVERSIONS ////////////////////////////////////////////////////////////////////////////////
 
         seaApplesToScience: {
-            name: "Study sea apples",
+            name: "Estudar holotúrias",
             effect: {
                 resource: {
                     science: 4,
@@ -3318,18 +3321,20 @@ SharkGame.HomeActions = {
                 upgrade: ["xenobiology"],
             },
             outcomes: [
-                "There's science inside these things, surely!",
-                "The cause of science is advanced!",
-                "This is perhaps maybe insightful!",
-                "Why are we even doing this? Who knows! Science!",
-                "What is even the point of these things? Why are they named for fruit? They're squirming!",
-                "Results still inconclusive! Unsurpsingly...",
+                "E se essas coisas forem feitas de ciência?",
+                "A ciência foi avançada!",
+                "Isso talvez tenha a chance de ser esclarecedor!",
+                "Por que estamos fazendo isso? Ninguém sabe!",
+                "Para que servem essas coisas? Por que eles são tão molengas? Eles estão se remexendo, que nojo!",
+                "Resultados ainda inconclusivos! Para a surpresa de ninguém...",
+                "Achamos um vale para 4 ciência em cada bicho dissecado.",
+                "Passo 1: Holotúria. Passo 2: ??? Passo 3: Ciência!",
             ],
-            helpText: "Dissect the sea apples our kelp attracts to gain additional science. Research!",
+            helpText: "Disseque as holotúria que nossas algas atraem para conseguir ciência.",
         },
 
         pearlConversion: {
-            name: "Convert clam pearls",
+            name: "Converter pérolas",
             effect: {
                 resource: {
                     get crystal() {
@@ -3356,18 +3361,20 @@ SharkGame.HomeActions = {
                 upgrade: ["pearlConversion"],
             },
             outcomes: [
-                "Pearls to crystals! One day. One day, we will get this right and only use the pearl.",
-                "Welp, we somehow turned rocks to crystals. Oh. Nope, those were clams. Not rocks. It's so hard to tell sometimes.",
-                "Okay, we managed to only use the pearls this time, but we, uh, had to break the clams open pretty roughly.",
-                "Pearls to... nope. Clams to crystals. Science is hard.",
+                "Pérolas para cristais! Algum dia, eu juro, algum dia nós conseguiremos usar apenas a pérola.",
+                "Os cientistas celebraram transformarem pedras em cristais! Mas depois the olhar mais perto, eram mexilões, não pedras.",
+                "Então, dessa vez conseguimos converter apenas as pérolas, mas... bem, tivemos que quebrar os mexilhões.",
+                "Pérolas para cr... Droga. Mexilhões para cristais.",
+                "Com cuidado... Com cuidado... Foi! Convertemos os mexilhões sem pérola em cristais!... espera, quê?",
+                "Transformamos cristais em pérolas. Não, calma aí... Perdão, li errado, é o contrário.",
             ],
-            helpText: "Convert pearls (and the clams around them) into crystal.",
+            helpText: "Transformar uma pérola (com os mexilhões em volta) em cristais.",
         },
 
         // MAKE ADVANCED RESOURCES  ///////////////////////////////////////////////////////////////////////////////
 
         transmuteSharkonium: {
-            name: "Transmute stuff to sharkonium",
+            name: "Transmute coisas em tubarônio",
             effect: {
                 resource: {
                     sharkonium: 1,
@@ -3394,19 +3401,21 @@ SharkGame.HomeActions = {
                 upgrade: ["transmutation"],
             },
             outcomes: [
-                "Transmutation destination!",
-                "Transmutation rejuvenation!",
-                "Transmogrification revelation!",
-                "Transformation libation!",
-                "Transfiguration nation! ...wait.",
-                "Sharkonium arise!",
-                "Arise, sharkonium!",
-                "More sharkonium!",
-                "The substance that knows no name! Except the name sharkonium!",
-                "The substance that knows no description! It's weird to look at.",
-                "The foundation of a modern shark frenzy!",
+                "Transmutação com satisfação!",
+                "Transmutação com perfeição!",
+                "Transmogrificação com convicção!",
+                "Transformação com ambição!",
+                "Transição com dedicação!",
+                "Transfiguração com pegação! ...pera quê?",
+                "Transmutação com educação!",
+                "Tubarônio quentinho saindo do forno!",
+                "Barras de tubarônio feitas!",
+                "Mais tubarônio!",
+                "A substância sem nome! Exceto pelo nome 'tubarônio'!",
+                "Eu não sei como descrever tubarônio. Ele só parece tão estranho.",
+                "O pilar de um cardume moderno!",
             ],
-            helpText: "Convert ordinary resources into sharkonium, building material of the future!",
+            helpText: "Converta simples recursos em tubarônio, o material do futuro!",
         },
 
         fuseCalcinium: {
@@ -3708,7 +3717,7 @@ SharkGame.HomeActions = {
         },
 
         prySponge2: {
-            name: "Pry sponge",
+            name: "Arrancar esponja",
             effect: {
                 resource: {
                     get sponge() {
@@ -3721,30 +3730,31 @@ SharkGame.HomeActions = {
                 upgrade: ["consistentCommunication"],
             },
             outcomes: [
-                "Pried an orange elephant ear sponge from the rocks.",
-                "Pried a brain sponge from the rocks.",
-                "Pried a branching tube sponge from the rocks.",
-                "Pried a brown volcano carpet from the rocks.",
-                "Pried a row pore rope sponge from the rocks.",
-                "Pried a branching vase sponge from the rocks.",
-                "Pried a chicken liver sponge from the rocks.",
-                "Pried a red boring sponge from the rocks.",
-                "Pried a heavenly sponge from the rocks.",
-                "Pried a brown encrusting octopus sponge from the rocks.",
-                "Pried a stinker sponge from the rocks.",
-                "Pried a black-ball sponge from the rocks.",
-                "Pried a strawberry vase sponge from the rocks.",
-                "Pried a convoluted orange sponge from the rocks.",
-                "Pried a touch-me-not sponge from the rocks. Ow.",
-                "Pried a lavender rope sponge from the rocks.",
-                "Pried a red-orange branching sponge from the rocks.",
-                "Pried a variable boring sponge from the rocks.",
-                "Pried a loggerhead sponge from the rocks.",
-                "Pried a yellow sponge from the rocks.",
-                "Pried an orange lumpy encrusting sponge from the rocks.",
-                "Pried a giant barrel sponge from the rocks.",
+                "Tirou uma esponja das pedras. Ele nos chamou para caçar água-vivas.",
+                "Tirou uma esponja-lacunosa das pedras.",
+                "Tirou uma esponja tão suja que nem conseguimos identificar das pedras.",
+                "Tirou uma esponja bola-da-morte das pedras.",
+                "Tirou uma esponja-tubo-púrpura das pedras.",
+                "Tirou uma esponja de cozinha das pedras... Eca, tem pedaço de comida colado",
+                "Tirou uma esponja-rim das pedras.",
+                "Tirou uma esponja calcária das pedras.",
+                "Tirou uma esponja-pele-de-galinha das pedras.",
+                "Tirou uma esponja-carnuda das pedras.",
+                "Tirou uma esponja-couro das pedras.",
+                "Tirou uma esponja-perfurante-amarela das pedras.",
+                "Tirou uma esponja-perfurante-verde das pedras.",
+                "Tirou uma esponja-de-fuso das pedras.",
+                "Tirou uma esponja-cratera das pedras.",
+                "Tirou uma esponja-árvore das pedras.",
+                "Tirou uma laranja-do-mar das pedras.",
+                "Tirou uma esponja 'Puffball' laranja das pedras.",
+                "Tirou uma esponja-cratera-vermelha das pedras..",
+                "Tirou uma orelha-de-elefante das pedras.",
+                "Tirou uma esponja-amarela das pedras.",
+                "Tirou uma esponja-de-fibra das pedras.",
+                "Tirou uma esponja-barril-gigante das pedras.",
             ],
-            helpText: "Grab a sponge from the seabed for future use.",
+            helpText: "Retire uma esponja colada nas pedras para eventual uso.",
         },
 
         // MAKE ADVANCED RESOURCES  ///////////////////////////////////////////////////////////////////////////////
@@ -4650,17 +4660,17 @@ SharkGame.HomeActions = {
 SharkGame.HomeActionCategories = {
     all: {
         // This category should be handled specially.
-        name: "All",
+        name: "Tudo",
         actions: [],
     },
 
     basic: {
-        name: "Basic",
+        name: "Básico",
         actions: ["catchFish", "debugbutton", "prySponge", "prySponge2", "getClam", "getJellyfish"],
     },
 
     frenzy: {
-        name: "Frenzy",
+        name: "Cardume",
         actions: [
             "getShark",
             "getManta",
@@ -4679,7 +4689,7 @@ SharkGame.HomeActionCategories = {
     },
 
     professions: {
-        name: "Jobs",
+        name: "Trabalhos",
         actions: [
             "getDiver",
             // "getProspector",
@@ -4713,7 +4723,7 @@ SharkGame.HomeActionCategories = {
     },
 
     breeders: {
-        name: "Producers",
+        name: "Proliferadores",
         actions: [
             "getNurse",
             "getMaker",
@@ -4730,7 +4740,7 @@ SharkGame.HomeActionCategories = {
     },
 
     processing: {
-        name: "Processing",
+        name: "Refinamento",
         actions: [
             "seaApplesToScience",
             // "spongeToScience",
@@ -4753,7 +4763,7 @@ SharkGame.HomeActionCategories = {
     },
 
     machines: {
-        name: "Shark Machines",
+        name: "Máquinas Tubarônicas",
         actions: [
             "getCrystalMiner",
             "getSandDigger",
@@ -4767,7 +4777,7 @@ SharkGame.HomeActionCategories = {
     },
 
     otherMachines: {
-        name: "Other Machines",
+        name: "Outras Máquinas",
         actions: [
             "getSpongeFarmer",
             "getBerrySprayer",
@@ -4786,12 +4796,12 @@ SharkGame.HomeActionCategories = {
     },
 
     places: {
-        name: "Places",
+        name: "Lugares",
         actions: ["getSpongeFarm", "getCoralFarm"],
     },
 
     unique: {
-        name: "Unique",
+        name: "Único",
         actions: ["getChorus"],
     },
 };

@@ -2169,18 +2169,18 @@ SharkGame.HomeActions = {
             },
             outcomes: [
                 "Demos a um golfinho a oportunidadede falar mais que o normal. POR QUÊ?!",
-                "Let's humour this dolphin's rambling.",
+                "Então tá, vamos dar palco para esse golfinho maluco falar.",
                 "Esse historiador talvez esteja fazendo um bom ponto.",
-                "Maybe this dolphin can answer the question of why we're even working with dolphins.",
+                "Talvez este consiga responder por que estamos nós estamos trabalhando com os golfinhos.",
                 "There are questions we have that this historian could answer for us.",
             ],
             multiOutcomes: [
                 "We begrudgingly acknowledge that working together is providing us with new insights.",
-                "History is told by the victors. The dolphins are losers, but they'll tell it anyway.",
+                "História é contada pelos vencedores. Os golfinhos são perdedores, mas eles vão contá-la mesmo assim.",
                 "These pretentious clicking jerks can sometimes raise a good point.",
                 "Mas que beleza. Estamos estimulando eles a falar ainda mais.",
-                "Maybe if we let them talk about themselves a lot, they'll stop being so mean??",
-                "Ah, yes. Qualify an ego-stroker.",
+                "Se a gente deixar eles falarem bastante mesmo, eles vão deixar de ser tão babacas?",
+                "Ah, sim, ótima ideia. Dê títulos para quem já tá com o ego inflado.",
                 "Pela última vez, ninguém quer ouvir sobre a Guerra do Golfo de novo!!",
             ],
             helpText:
@@ -2206,26 +2206,26 @@ SharkGame.HomeActions = {
                 upgrade: ["dolphinBiology"],
             },
             outcomes: [
-                "Golfinho biólogose graduou!",
+                "Golfinho biólogo se graduou!",
                 "Biólogo treinado.",
-                "Dolphin dedicated to dolphin duty.",
-                "Specialist dolphin ready for dolphin.",
+                "Golfinho se dedicando para trabalho de golfinho.",
+                "Especialista em golfinhos pronto para golfinhar.",
             ],
             multiOutcomes: [
                 "Mais deles. Eca.",
                 "Golfinhos se proliferam.",
-                "Dolphin biologists ready for whatever passes for their 'research'.",
-                "Smug hedonists, the lot of them!",
+                "Biólogos golfinhos preparados para seja lá o que eles chamam de 'pesquisa'.",
+                "Hedonistas convencidos, todos eles!",
                 "É com grande pesar que digo: A população de golfinhos cresce.",
             ],
             helpText:
-                "Train a dolphin to specialise in biology. Dolphin biology, specifically, and production, apparently.",
+                "Treine um golfinho para se especializar em biologia. Biologia de golfinho, especificamente, e produção, pelo visto.",
         },
 
         // WHALE JOBS ////////////////////////////////////////////////////////////////////////////////
 
         getChorus: {
-            name: "Assemble great chorus",
+            name: "Juntar o Coro",
             effect: {
                 resource: {
                     chorus: 1,
@@ -2251,14 +2251,14 @@ SharkGame.HomeActions = {
                 upgrade: ["eternalSong"],
             },
             outcomes: [
-                "The chorus is made.",
-                "The singers sing an immortal tune.",
-                "The song is indescribable.",
-                "Serenity, eternity.",
-                "What purpose does the song have?",
-                "Liquid infinity swirls around the grand chorus.",
+                "O Coro foi formado.",
+                "Os cantores cantam a música imortal.",
+                "Eu- eu- palavras não conseguem descrever essa música.",
+                "Serenidade, eternidade.",
+                "Qual é o propósito dessa música? Como ela faz isso?",
+                "Infinidade líquida borbulha em volta do Coro.",
             ],
-            helpText: "Form the singers of the eternal song. Let it flow through this world.",
+            helpText: "Junte os cantores da canção eterna. Deixe-o espalhar pelo mundo.",
         },
 
         // SHARK MACHINES ////////////////////////////////////////////////////////////////////////////////

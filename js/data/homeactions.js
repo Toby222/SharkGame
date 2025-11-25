@@ -2393,9 +2393,9 @@ SharkGame.HomeActions = {
             ],
             multiOutcomes: [
                 "Delfínio. A versão malígna do tubarônio.",
-                "Delfínio. Porque nós queremos materias piores, certo?",
+                "Delfínio. Porque nós queremos materiais piores, certo?",
                 "Um processo silencioso a temperatura ambiente, que nem como funciona nossos transmutadores automáticos.",
-                "Delfínio. Nós não entendemos. Parece muito tubarônio, porém pior.",
+                "Delfínio. Nós não entendemos. Parece muito que nem tubarônio, porém sem fazer direito.",
                 "A complexidade dessas máquinas é completamente desnecessária. Os golfinhos acham que isso é esperto, mas existem jeitos tão mais fáceis.",
             ],
             helpText:
@@ -2444,16 +2444,16 @@ SharkGame.HomeActions = {
                 "A grass squid joins you.",
             ],
             multiOutcomes: [
-                "The squid join the frenzy, but stay close to the village.",
-                "The squid are cooperative and obedient. They do as directed.",
-                "A squiggle of squid! No, of course that's not real.",
-                "You all. Hunting duty. Get on it.",
-                "Squid are ready to hunt.",
-                "The squid venture out in search of fish.",
+                "Lulas se juntam ao cardume, mas se mantém perto da vila.",
+                "As lulas cooperativas e obedientes. Elas fazem o que lhes é dito.",
+                "Uma patota de lulas! Não, esse não é o coletivo real de lulas.",
+                "Todos vocês. Comecem a caçar. Vai logo.",
+                "Lulas estão prontas para a caça.",
+                "As lulas saem por aí em busca de peixe.",
                 "The squid have no qualms about joining the frenzy.",
-                "The squid offer their utmost respect.",
+                "As lulas não demonstram nada além de respeito para você.",
             ],
-            helpText: "Enlist a squid to help us hunt down fish. Squid are used to the cold.",
+            helpText: "Aliste uma lula para ajudar a caçar peixes. Lulas estão acostumadas ao frio.",
         },
 
         getCrab: {

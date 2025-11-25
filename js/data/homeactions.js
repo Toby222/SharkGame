@@ -2312,12 +2312,13 @@ SharkGame.HomeActions = {
                 "Tesoureiros são lentos. Máquinas são rápidas. Mas não tão rápidas, lembre-seque ainda é feito de delfínio.",
                 "Espero que o oceano não precise de todo esse coral para nada.",
                 "A névoa vermelha está chegando.",
+                "O Agro é tech, o Agro é pop, o Agro é tudo.",
             ],
             helpText: "Essa máquina dos golfinhos retira coral do solo a uma velocidade até meio irresponsável.",
         },
 
         getKelpCultivator: {
-            name: "Build kelp cultivator",
+            name: "Montar cultiveira de alga",
             effect: {
                 resource: {
                     kelpCultivator: 1,
@@ -2338,23 +2339,23 @@ SharkGame.HomeActions = {
                 upgrade: ["dolphinTechnology"],
             },
             outcomes: [
-                "The kelp cultivator activates and begins planting its garden.",
-                "The kelp cultivator turns on and nagivates to a suitable planting spot.",
-                "The kelp cultivator will not disturb the natural order.",
-                "The kelp cultivator works in tandem with nature.",
+                "A cultiveira acende e começa a semear seu jardim.",
+                "A cultiveira se dirige a seu local de plantio apropriado.",
+                "A cultiveira não vai perturbar o ciclo natural.",
+                "A cultiveira de alga trabalha em conjunto da natureza.",
             ],
             multiOutcomes: [
-                "Sustainability is a must.",
-                "These gentle machines are, in fact, slow and methodical, just as expected from dolphin machines.",
-                "Toward their gardens, these machines can almost feel care.",
-                "The machines do not like the sea apples. They forcefully extract them for us.",
-                "I mean, it's clearly eco-friendly, but is it really necessary to go this slow??",
+                "Sustentabilidade é um dever do agora.",
+                "Essas frágeis máquinas são lentas e metódicas, como se espera de uma máquina feita por golfinhos.",
+                "Pelos jardins, essas máquinas quase conseguem sentir amor.",
+                "As cultiveiras não gostam de holotúrias. Elas forçosamente tiram elas das algas por nós.",
+                "Tipo, isso tudo é bem sustentável, bem verde, mas precisava ser tão lento assim??",
             ],
-            helpText: "This dolphin machine carefully tends to gardens of kelp.",
+            helpText: "Essa máquina cuidadosamente zela por jardins algáticos.",
         },
 
         getTirelessCrafter: {
-            name: "Build tireless crafter",
+            name: "Montar artesão infinito",
             effect: {
                 resource: {
                     tirelessCrafter: 1,
@@ -2385,19 +2386,20 @@ SharkGame.HomeActions = {
                 upgrade: ["dolphinTechnology"],
             },
             outcomes: [
-                "Tireless crafter fuses the matter.",
-                "Tireless crafter never ceases.",
-                "Tireless crafter lays foundation for a future.",
-                "Tireless crafter is an accident waiting to happen.",
+                "Artesão infinito funde materiais.",
+                "Artesão infinito nunca para.",
+                "Artesão infinito faz a fundação para um futuro.",
+                "Artesão infinito é um acidente esperando para acontecer.",
             ],
             multiOutcomes: [
-                "Delphinium. The warped counterpart to sharkonium.",
-                "A silent, heatless process, much like the auto-transmuter's method of operation.",
-                "Delphinium. We don't understand it. It feels a lot like sharkonium, but warmer.",
-                "The complexity of these machines is unwarranted. The dolphins think themselves smarter, but we have simpler, more effective solutions.",
+                "Delfínio. A versão malígna do tubarônio.",
+                "Delfínio. Porque nós queremos materias piores, certo?",
+                "Um processo silencioso a temperatura ambiente, que nem como funciona nossos transmutadores automáticos.",
+                "Delfínio. Nós não entendemos. Parece muito tubarônio, porém pior.",
+                "A complexidade dessas máquinas é completamente desnecessária. Os golfinhos acham que isso é esperto, mas existem jeitos tão mais fáceis.",
             ],
             helpText:
-                "This dolphin machine creates delphinium. What good that is to us is a mystery. Use it to make their useless machines, I guess?",
+                "Essa máquina golfinho produz delfínio. O que de bom sai disso, ninguém sabe. Fazer mais máquinas ruins, eu imagino.",
         },
     },
     frigid: {

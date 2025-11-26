@@ -794,8 +794,8 @@ SharkGame.ResourceTable = {
     },
 
     kelpCultivator: {
-        name: "cultivadoras de alga",
-        singleName: "cultivadora de alga",
+        name: "cultiveiras de alga",
+        singleName: "cultiveira de alga",
         desc: "Jardins mecanizados.",
         color: "#68E06B",
         income: {

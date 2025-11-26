@@ -2519,7 +2519,7 @@ SharkGame.HomeActions = {
 
         getExtractionTeam: {
             // i consider this a squid job
-            name: "Organize extraction team",
+            name: "Organizar time de extração",
             effect: {
                 resource: {
                     extractionTeam: 1,
@@ -2535,28 +2535,30 @@ SharkGame.HomeActions = {
                 upgrade: ["assistedExtraction"],
             },
             outcomes: [
-                "Team assembled.",
-                "Initiating teamwork.",
-                "Cooperation commencing.",
-                "The crab climbs onto the squid's head. Now, they are a team.",
-                "Crab + Squid = Crystal???",
-                "The squid's speed quickly makes up for the effect of the cold on the crab, and they zip into the distance.",
-                "The squid straps the crab to itself with a band of kelp. That's one way, I guess.",
+                "Time montado.",
+                "Trabalho em equipe :D",
+                "Cooperação coomeçando.",
+                "Eu vos declaro caranguejo e lula.",
+                "O caranguejo sobe na cabeça de uma lula. Agora, eles viraram um time.",
+                "Caranguejo + Lula = Cristais???",
+                "A velocidade e tamanho da lula equilibra o efeito do frio no siri, e os dois saem nadando para extrair cristais.",
+                "Um siri fazendo barra na lula. Incrível!",
+                "O caranguejo se agarra na alga em volta da lula para se segurar. Funciona, eu acho.",
             ],
             multiOutcomes: [
-                "The method of cooperation varies, but the result is always the same.",
-                "Some of these pairs have...unique strategies. That one has make a bundle with its kelp.",
-                "The pairs dart off into the ocean.",
-                "The teams form a loose group, which then moves in a general direction.",
-                "Teamwork makes the dream work, or something.",
-                "That's a lot of crystal.",
-                "Has anyone ever stopped to consider why these things need kelp?",
+                "A forma que a cooperação toma difere, mas o resultado é sempre o mesmo.",
+                "Alguns desdes times têm...estratégias bem originais. Aquele ali fez um cobertorzinho com a alga.",
+                "Os pares voam que nem torpedos pelo oceano.",
+                "As duplas se juntam em um pequeno enxame e, então, movem-se a uma direção geral.",
+                "Trabalho em equipe faz trabalho sem equiparação, ou algo assim.",
+                "Jessiri! Nós precisamos de mais cristais, Jessiri! -Arralter White",
+                "Alguém aqui já percebeu que não sabemos por que esses times precisam de alga?",
             ],
-            helpText: "Convince a squid and a crab to work together to gather crystals.",
+            helpText: "Convença uma lula e um caranguejo a se juntarem para coletar mais cristais.",
         },
 
         getCollective: {
-            name: "Assemble squid collective",
+            name: "Juntar coletivo de lulas",
             effect: {
                 resource: {
                     collective: 1,
@@ -2571,21 +2573,22 @@ SharkGame.HomeActions = {
                 upgrade: ["squidBiology"],
             },
             outcomes: [
-                "The squid have been collected.",
-                "The group congregates and begins doing whatever it is they do.",
-                "A collective of squid collectively collects itself.",
-                "I collect that this collective is collectively collected.",
-                "Why is it not called a collection?",
-                "A bunch of squid get together and do something or other.",
+                "As lulas se coletaram.",
+                "É até meio parecido com ninhadas de caranguejos.",
+                "O grupo se junta e começam a fazer seja lá o que lhes é de respeito.",
+                "Um coletivo de lulas coletivamente se coletaram.",
+                "Eu coleciono coletivos coletivamente coletados.",
+                "O correto não é 'uma coleção de lulas'?",
+                "Um monte de lulas se juntam para fazer o que eles fazem.",
             ],
             multiOutcomes: [
-                "Collect the squid. Collect them.",
-                "Collected a bunch of squid, I guess.",
-                "Why do squid have to do everything as a team???",
-                "I'm a bit concerned about future living space at this point.",
-                "How many squid could possibly be needed to do this job??",
+                "Colecione as lulas. Colecione todas elas!",
+                "Juntou um monte de lulas, parabéns.",
+                "Por que que tudo é trabalho em equipe com essas lulas???",
+                "Estou um pouco preocupado com a questão da moradia para tanta lula.",
+                "Quantas lulas será que precisamos para esse trabalho??",
             ],
-            helpText: "Bring together a group of squid to produce even more squid.",
+            helpText: "Junte um grupo de lulas para produzir ainda mais lulas.",
         },
 
         // CRAB JOB ////////////////////////////////////////////////////////////////////////////////
@@ -2595,7 +2598,7 @@ SharkGame.HomeActions = {
         // URCHIN JOB ////////////////////////////////////////////////////////////////////////////////////
 
         getSpawner: {
-            name: "Designate urchin spawner",
+            name: "Designar ouriços férteis",
             effect: {
                 resource: {
                     spawner: 1,
@@ -2610,20 +2613,22 @@ SharkGame.HomeActions = {
                 upgrade: ["urchinBiology"],
             },
             outcomes: [
-                "Wait, so, run this process by me again real quick?",
-                "The urchin stops collecting kelp.",
-                "If urchins could talk, I'd want to know what they think of this change of profession.",
+                "Espera aí, dá para me explicar de novo como nós fazemos isso?",
+                "O ouriço para de coletar alga.",
+                "eca eca eca eca eca eca eca",
+                "São tantos ovinhos",
+                "Se ouriços pudessem falar, eu adoraria perguntar o que eles acham dessa nova profissão.",
             ],
             multiOutcomes: [
-                "Hold on - more?",
-                "Wait, who said we needed more?",
-                "Did we not already have enough?",
-                "At this rate, the entire sea floor will eventually fill up with urchins!",
-                "Seriously, I can't look anywhere and NOT see more of them.",
+                "Calma aí - mais?",
+                "Quem disse que nós precisávamos de mais?",
+                "Nós não temos o suficiente?",
+                "Se continuarmos assim, não vai sobrar chão para tanto ouriço!",
+                "Eu não consigo olhar para lugar algum sem ver mais ouricinhos, é sério.",
                 "I'm gonna wake up tomorrow covered in these things, I swear.",
-                "I'm a bit concerned about future living space at this point.",
+                "Estou muito preocupado com a questão de espaço para o cardume.",
             ],
-            helpText: "Tell an urchin to go make more urchins.",
+            helpText: "Fale para um ouriço fazer mais ouriços.",
         },
 
         // SHARK MACHINES ////////////////////////////////////////////////////////////////////////////////
@@ -2637,7 +2642,7 @@ SharkGame.HomeActions = {
         getAutoTransmuter: {},
 
         getHeater: {
-            name: "Build heater",
+            name: "Erguer aquecedor",
             effect: {
                 resource: {
                     heater: 1,
@@ -2658,27 +2663,26 @@ SharkGame.HomeActions = {
                 upgrade: ["artificialHeating"],
             },
             outcomes: [
-                "Heater activated.",
-                "Heater constructed.",
-                "Climate control online.",
-                "Construction complete.",
-                "Less-ice-inator is ready to go.",
+                "Aquecedor aquecendo.",
+                "Aquecedor montado.",
+                "Controle climático ativado.",
+                "Construção concluída.",
+                "Tarde demais, Perry, o derretor de gelo-inator está pronto para funcionar!",
             ],
             multiOutcomes: [
-                "The ice crawls toward us regardless.",
-                "Are we fighting a hopeless cause?",
-                "The machines extend our lives, but can they truly save us?",
-                "The warmth. The warmth we desired so much.",
-                "The frozen sea lives a little longer.",
-                "This world dies slower.",
+                "O gelo se expande em nossa direção de qualquer forma.",
+                "Estamos lutando por uma causa perdida?",
+                "As máquinas extender nossa vida, mas conseguem nos salvar?",
+                "Ahhh. O quentinho pelo qual tanto rezamos.",
+                "Esse oceano gélido sobrevive por um pouco mais tempo.",
+                "Esse mundo congela mais lentamente.",
             ],
             get helpText() {
                 return SharkGame.Upgrades.purchased.indexOf("rapidRecharging") > -1
-                    ? "Construct one of the machines we used to slow the formerly-advancing ice shelf. Not much use now."
-                    : "Construct a machine to slow down the advancing ice shelf.";
+                    ? "Construa uma das máquinas que usávamos para desacelerar as paredes de gelo. Não é mais tão útil."
+                    : "Construca uma máquina para segurar as paredes gélidas.";
             },
-        },
-    },
+        
     shrouded: {
         catchFish: {},
 
@@ -2689,7 +2693,7 @@ SharkGame.HomeActions = {
         // CONVERSIONS ////////////////////////////////////////////////////////////////////////////////
 
         jellyfishToScience: {
-            name: "Dismantle jellyfish",
+            name: "Desmanchar água-viva",
             effect: {
                 resource: {
                     science: 4,
@@ -2708,7 +2712,7 @@ SharkGame.HomeActions = {
                 "These things are like a bag of wonders. Weird, tasteless wonders.",
                 "Wow, sea apples seemed weird, but these things barely exist.",
                 "Well, they turned out just as fragile as they looked.",
-                "So interesting!",
+                "Que interessante!",
             ],
             helpText: "Examine the goop inside the stinging jellies! Discovery!",
         },

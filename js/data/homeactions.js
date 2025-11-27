@@ -2682,7 +2682,9 @@ SharkGame.HomeActions = {
                     ? "Construa uma das máquinas que usávamos para desacelerar as paredes de gelo. Não é mais tão útil."
                     : "Construca uma máquina para segurar as paredes gélidas.";
             },
-        
+        },
+    },
+    
     shrouded: {
         catchFish: {},
 

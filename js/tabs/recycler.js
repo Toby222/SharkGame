@@ -3,7 +3,7 @@ SharkGame.Recycler = {
     tabId: "recycler",
     tabDiscovered: false,
     tabSeen: false,
-    tabName: "Recycler",
+    tabName: "Recicladora",
     tabBg: "img/bg/bg-recycler.png",
 
     sceneImage: "img/events/misc/scene-recycler.png",
@@ -12,10 +12,10 @@ SharkGame.Recycler = {
         upgrade: ["recyclerDiscovery"],
     },
 
-    message: "Convert things into residue, and residue into things!<br/><span class='medDesc'>Feed the machines. Feed them.</span>",
+    message: "Dissolva coisas em nata, e transforme nata em coisas!<br/><span class='medDesc'>Feed the machines. Feed them.</span>",
 
     recyclerInputMessages: [
-        "The machines grind and churn.",
+        "As engrenagens giram e moem.",
         "Screech clunk chomp munch erp.",
         "Clunk clunk clunk screeeeech.",
         "The recycler hungrily devours the stuff you offer.",

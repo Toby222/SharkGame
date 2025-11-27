@@ -2680,7 +2680,7 @@ SharkGame.HomeActions = {
             get helpText() {
                 return SharkGame.Upgrades.purchased.indexOf("rapidRecharging") > -1
                     ? "Construa uma das máquinas que usávamos para desacelerar as paredes de gelo. Não é mais tão útil."
-                    : "Construca uma máquina para segurar as paredes gélidas.";
+                    : "Construa uma máquina para segurar as paredes gélidas.";
             },
         },
     },
@@ -2716,7 +2716,7 @@ SharkGame.HomeActions = {
                 "Well, they turned out just as fragile as they looked.",
                 "Que interessante!",
             ],
-            helpText: "Examine the goop inside the stinging jellies! Discovery!",
+            helpText: "Examine a geleia dentro das águas picantes! Ciência!",
         },
 
         makeSacrifice: {

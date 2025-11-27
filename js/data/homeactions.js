@@ -2625,7 +2625,7 @@ SharkGame.HomeActions = {
                 "Nós não temos o suficiente?",
                 "Se continuarmos assim, não vai sobrar chão para tanto ouriço!",
                 "Eu não consigo olhar para lugar algum sem ver mais ouricinhos, é sério.",
-                "I'm gonna wake up tomorrow covered in these things, I swear.",
+                "Eu juro, algum dia eu vou acordar com esses bichos todos em cima de mim.",
                 "Estou muito preocupado com a questão de espaço para o cardume.",
             ],
             helpText: "Fale para um ouriço fazer mais ouriços.",
@@ -2684,7 +2684,7 @@ SharkGame.HomeActions = {
             },
         },
     },
-    
+
     shrouded: {
         catchFish: {},
 

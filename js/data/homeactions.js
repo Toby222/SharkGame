@@ -4675,7 +4675,7 @@ SharkGame.HomeActions = {
             },
         },
     },
-};
+},
 
 SharkGame.HomeActionCategories = {
     all: {

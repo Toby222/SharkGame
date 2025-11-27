@@ -3,7 +3,7 @@ SharkGame.Lab = {
     tabId: "lab",
     tabDiscovered: false,
     tabSeen: false,
-    tabName: "Laboratory",
+    tabName: "Laboratório",
     tabBg: "img/bg/bg-lab.png",
 
     get sceneImage() {
@@ -152,14 +152,14 @@ SharkGame.Lab = {
                     if (res.getTotalResource("scientist") < 1) {
                         message = "Estamos na caverna. E agora?";
                     } else {
-                        message = "Os cientistas estão sem ideias por enquanto, mas certamente tem novas descobertas a serem feitas.";
+                        message = "Os cientistas estão sem ideias por enquanto, mas certamente há novas descobertas a serem feitas.";
                     }
                     break;
                 case "volcanic":
-                    message = "The crabs are out of ideas, but there are always more discoveries to be made.";
+                    message = "Os caranguejos estão sem ideias por agora, mas certamente há novas curiosidades a serem achadas.";
                     break;
                 default:
-                    message = "The scientists are out of ideas, but there are always more discoveries to be made.";
+                    message = "Os cientistas estão sem ideias por enquanto, mas certamente há novas descobertas a serem feitas.";
             }
             $("#buttonList").html($("<p>").html(message));
 

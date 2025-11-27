@@ -3,7 +3,7 @@ SharkGame.Reflection = {
     tabId: "reflection",
     tabDiscovered: false,
     tabSeen: false,
-    tabName: "Reflection",
+    tabName: "Reflexão",
     tabBg: "img/bg/bg-gate.png",
 
     sceneImage: "img/events/misc/scene-reflection.png",
@@ -15,8 +15,8 @@ SharkGame.Reflection = {
     },
 
     message:
-        "You may not remember everything, but you are something more than a shark now." +
-        "</br><span='medDesc'>Reflect upon the changes in yourself and reality you have made here.</span>",
+        "Você pode não se lembrar de tudo, mas você é mais que apenas um tubarão agora." +
+        "</br><span='medDesc'>Reflita nas mudanças que você fez em você mesmo e na realidade ao redor.</span>",
 
     init() {
         SharkGame.TabHandler.registerTab(this);
@@ -77,7 +77,7 @@ SharkGame.Reflection = {
             }
         });
         if ($("#aspectList > div").length === 0) {
-            listSel.append("<p><em>You have no aspects to you yet.</em></p>");
+            listSel.append("<p><em>Você não formou aspectos ainda.</em></p>");
         }
 
         const listSelDisabled = $("#disabledAspectList");

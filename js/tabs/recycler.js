@@ -237,7 +237,7 @@ SharkGame.Recycler = {
             log.addMessage(SharkGame.choose(rec.recyclerInputMessages));
         } else {
             log.addError("Não há recursos suficientes para essa transação. Você pode estar tentando botar recursos demais de uma vez.");
-    
+        }
 
         rec.updateEfficiency(resourceName);
 

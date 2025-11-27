@@ -16,21 +16,21 @@ SharkGame.Recycler = {
 
     recyclerInputMessages: [
         "As engrenagens giram e moem.",
-        "Screech clunk chomp munch erp.",
-        "Clunk clunk clunk screeeeech.",
-        "The recycler hungrily devours the stuff you offer.",
-        "The offerings are no more.",
-        "Viscous, oily mess sloshes within the machine.",
-        "The recycler reprocesses.",
+        "Scriiinch clank chomp monch beep.",
+        "Clenk clenk clenk scriiiiiich.",
+        "A recicladora devora tudo que você dá como se sentisse fome.",
+        "E as offerendas se foram.",
+        "Uma gosma viscosa e oleosa agita dentro da máquina.",
+        "A recicladora reprocessa.",
     ],
 
     recyclerOutputMessages: [
-        "A brand new whatever!",
-        "The recycler regurgitates your demand, immaculately formed.",
-        "How does a weird blackish gel become THAT?",
-        "Some more stuff to use! Maybe even to recycle!",
-        "Gifts from the machine! Gifts that may have cost a terrible price!",
-        "How considerate of this unfeeling, giant apparatus! It provides you stuff at inflated prices!",
+        "Recursos, novinho em folha!",
+        "A recicladora regurgita seu pedido, em estado pristina.",
+        "Como que um gel todo cinzento e estranho virou ISSO?",
+        "Mais coisas para usar! Talvez até para reciclar!",
+        "Presentes das máquina! Presentes que custaram um preço terrível!",
+        "Mas quanta consideração desse gigante aparelho sem emoções! Ele te dá coisas a preços super inflacionados!",
     ],
 
     allowedCategories: {
@@ -203,16 +203,16 @@ SharkGame.Recycler = {
                 rec.bannedResources.indexOf(resourceName) === -1
             ) {
                 SharkGame.Button.makeHoverscriptButton(
-                    "input-" + resourceName,
-                    "Recycle " + sharktext.getResourceName(resourceName, undefined, undefined, sharkcolor.getVariableColor("--color-light")),
+                    "entrada-" + resourceName,
+                    "Reciclar " + sharktext.getResourceName(resourceName, undefined, undefined, sharkcolor.getVariableColor("--color-light")),
                     inputButtonDiv,
                     rec.onInput,
                     rec.onInputHover,
                     rec.onInputUnhover,
                 );
                 SharkGame.Button.makeHoverscriptButton(
-                    "output-" + resourceName,
-                    "Convert to " + sharktext.getResourceName(resourceName, undefined, undefined, sharkcolor.getVariableColor("--color-light")),
+                    "saída-" + resourceName,
+                    "Converter para " + sharktext.getResourceName(resourceName, undefined, undefined, sharkcolor.getVariableColor("--color-light")),
                     outputButtonDiv,
                     rec.onOutput,
                     rec.onOutputHover,
@@ -236,8 +236,8 @@ SharkGame.Recycler = {
             res.changeResource("tar", Math.max(amount * junkPerResource * 0.0000002 + res.getProductAmountFromGeneratorResource("filter", "tar"), 0));
             log.addMessage(SharkGame.choose(rec.recyclerInputMessages));
         } else {
-            log.addError("Not enough resources for that transaction. This might be caused by putting in way too many resources at once.");
-        }
+            log.addError("Não há recursos suficientes para essa transação. Você pode estar tentando botar recursos demais de uma vez.");
+    
 
         rec.updateEfficiency(resourceName);
 
@@ -278,7 +278,7 @@ SharkGame.Recycler = {
             res.changeResource("junk", -Number(junkNeeded));
             log.addMessage(SharkGame.choose(rec.recyclerOutputMessages));
         } else {
-            log.addMessage("You don't have enough for that!");
+            log.addMessage("Você não tem nata para tudo isso!");
         }
 
         // disable button until next frame
@@ -363,7 +363,7 @@ SharkGame.Recycler = {
             }
             let amountstring = sharktext.beautify(produced);
             amountstring =
-                "<br/><br/>AND " +
+                "<br/><br/>E " +
                 amountstring.bold() +
                 " " +
                 sharktext.getResourceName("tar", undefined, undefined, sharkcolor.getElementColor("junkDisplay"));
@@ -373,7 +373,7 @@ SharkGame.Recycler = {
                     sharktext.beautify(Math.max(produced - tarTolerance, 0)) +
                     " " +
                     sharktext.getResourceName("tar", undefined, undefined, sharkcolor.getElementColor("junkDisplay")) +
-                    " WITH<br/>" +
+                    " COM<br/>" +
                     sharktext.getResourceName("filter", false, 2, sharkcolor.getElementColor("junkDisplay")) +
                     ")";
             }
@@ -396,11 +396,11 @@ SharkGame.Recycler = {
 
         return (
             (rec.getEfficiency() * 100).toFixed(2).toString().bold() +
-            "<b>%<br/>EFFICIENCY</b><br/><br/>EQUIVALENT TO:<br/>" +
+            "<b>%<br/>EFICIÊNCIA</b><br/><br/>EQUIVALENTE A:<br/>" +
             amountstring.bold() +
             " " +
             sharktext.getResourceName(rec.hoveredResource, undefined, undefined, sharkcolor.getElementColor("junkDisplay")).bold() +
-            "<br/>WORTH OF RESIDUE"
+            "<br/>MEDIDAS DE NATA"
         );
     },
 

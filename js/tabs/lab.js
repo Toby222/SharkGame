@@ -44,13 +44,13 @@ SharkGame.Lab = {
         switch (world.worldType) {
             case "tempestuous":
                 if (res.getTotalResource("scientist") < 1) {
-                    return "Sort of just off to the side, there's a cave.";
+                    return "Em um canto, há uma caverna.";
                 }
-                return "Sort of just off to the side, the science sharks congregate and discuss things with words you've never heard before.";
+                return "Num canto da caverna, os tubarões cientistas se juntam e discutem usando palavras que você nunca ouviu antes.";
             case "volcanic":
-                return "Sort of just off to the side, a group of curious crabs congregate and discuss stuff that we don't understand.";
+                return "Num canto do cardume, um grupinho de caranguejos curioso se juntam para discutir coisas que não entendemos.";
             default:
-                return "Sort of just off to the side, the science sharks congregate and discuss things with words you've never heard before.";
+                return "Num canto do cardume, os tubarões cientistas se juntam e discutem usando palavras que você nunca ouviu antes.";
         }
     },
     get messageDone() {
@@ -137,10 +137,10 @@ SharkGame.Lab = {
             let message;
             switch (world.worldType) {
                 case "volcanic":
-                    message = "We rest content, sure that our work is done.";
+                    message = "Nós descansamos felizes, uma vez que todo nosso trabalho está feito.";
                     break;
                 default:
-                    message = "The scientists rest content, sure that they're done with their work.";
+                    message = "Os cientistas estão contentes, cientes de que terminaram seus trabalhos.";
             }
 
             $("#buttonList").html($("<p>").html(message));
@@ -150,9 +150,9 @@ SharkGame.Lab = {
             switch (world.worldType) {
                 case "tempestuous":
                     if (res.getTotalResource("scientist") < 1) {
-                        message = "We're in the cave. Now what?";
+                        message = "Estamos na caverna. E agora?";
                     } else {
-                        message = "The scientists are out of ideas, but there are always more discoveries to be made.";
+                        message = "Os cientistas estão sem ideias por enquanto, mas certamente tem novas descobertas a serem feitas.";
                     }
                     break;
                 case "volcanic":
@@ -183,9 +183,9 @@ SharkGame.Lab = {
             if (hintResource) {
                 $("#buttonList").append(
                     $("<p>").html(
-                        "You get the feeling that " +
+                        "Sua intuição diz que " +
                             sharktext.getResourceName(hintResource, false, 2, sharkcolor.getElementColor("buttonList")) +
-                            " may be the key.",
+                            " pode dar algumas ideias.",
                     ),
                 );
             } else {

@@ -1178,7 +1178,7 @@ SharkGame.Changelog = {
         "Categorias adicionadas às ações na aba de Mar para ajudar quem estiver tentando entender todos os botões.",
         "Ações recentemente descobertas aparecem brilhando para sua conveniência.",
         "O jeito que o progresso muda após o portal está... um pouco diferente.",
-        //o que caralhos isso significa?
+        // o que caralhos isso significa?
         "Configurações não são redefinidas após completar um mundo.",
         "Artefatos existem.",
         "Imagens são um trabalho em progresso. Perdão pelo gráficos temporários nesses tempos ardilosos.",
@@ -1190,9 +1190,9 @@ SharkGame.Changelog = {
     ],
     "0.61 (2014/12/12)": [
         "Adicionamos categorias para botões na aba de Mar, porque terão muitos botões.",
-        //Eu tenho certeza que eu já traduzi isto
+        // Eu tenho certeza que eu já traduzi isto
         "Mexemos em arquivos miscelâneos.",
-        //tar???
+        // tar???
         "Uma base foi feita para a versão 0.7, que vai ser o lançamento oficial.",
     ],
     "0.6 - Return of Shark (2014/12/8)": [
@@ -1208,17 +1208,17 @@ SharkGame.Changelog = {
     "0.59 (2014/09/30)": [
         "Vários probleminhas sendo consertados!",
         "Tempo do final de uma jogatina agora é mostrado no final da jogatina.",
-        "A couple of fixes for issues only found in IE11.",
-        "Fixed a bug that could let people buy hundreds of things for cheap by overwhelming the game's capacity for input. Hopefully fixed, anyway.",
-        "Gaudy social media share menu shoehorned in below the game title. Enjoy!",
+        "Consertamos problemas que só achamos em IE11.",
+        "Arrumamos o problema de conseguir comprar centenas de coisas pelo preço de um por ultrapassar a capacidade do jogo de processar comandos. Espero que esteja consertado.",
+        "Mídias sociais enfiadas debaixo do título do jogo. Aproveite!",
     ],
     "0.531 (2014/08/20)": [
-        "Banned sea apples from the recycler because the feedback loop is actually far more crazy powerful than I was expecting. Whoops!",
+        "Banimos holotúrias de entrar na recicladora porque o ciclo holotúria <--> alga é muito mais forte que eu imaginava. Ops!",
     ],
-    "0.53 (2014/08/18)": ["Changed Recycler so that residue into new machines is linear, but into new resources is constant."],
+    "0.53 (2014/08/18)": ["Recicladora agora consegue produzir recursos de nata com custo constante, mas máquinas com custo linear."],
     "0.52 (2014/08/18)": [
-        "Emergency bug-fixes.",
-        "Cost to assemble residue into new things is now LINEAR (gets more expensive as you have more things) instead of CONSTANT.",
+        "Conserto de emergência.",
+        "Custo de produzir coisas por meio de nata é agora LINEAR (fica mais caro quando você tem mais de algo) ao invés de CONSTANTE.",
     ],
     "0.51 (2014/08/18)": [
         "Edited the wording of import/export saving.",
@@ -1249,12 +1249,12 @@ SharkGame.Changelog = {
         "Resource effectiveness multipliers now displayed in table." +
             "<ul><li>These are not multipliers for how much of that resource you are getting.</li></ul>",
         "Some dumb behind the scenes things to make the code look nicer.",
-        "Added this changelog!",
+        "Fizemos esse registro de atualizações!",
         "Removed upgrades list on the left. It'll come back in a future version.",
         "Added ray and crab generating resources, and unlocking techs.",
     ],
-    "0.47 (2014/08-ish)": ["Bulk of game content added.", "Last update for Seamergency 2014!"],
-    "0.4 (2014/08-ish)": ["Added Laboratory tab.", "Added the end of the game tab."],
+    "0.47 (2014/08-ish)": ["O grosso do jogo foi adicionado.", "Última atualização para 'Seamergency 2014!'"],
+    "0.4 (2014/08-ish)": ["Aba de laboratório adicionada.", "Aba de fim de jogo adicionada."],
     "0.3 (2014/08-ish)": ["Adicionamos descrição às configurações.", "Importação e exportação de jogos agora é possível.", "Adicionamos uma tela final."],
     "0.23 (2014/08-ish)": ["Adicionamos salvamento automático.", "Sistema de produção mudado.", "Fizemos menu de configurações."],
     "0.22 (2014/08-ish)": [

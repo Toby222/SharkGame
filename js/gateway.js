@@ -378,13 +378,13 @@ SharkGame.Gateway = {
 
             // construct the gateway content
             const gatewayContent = $("<div>");
-            gatewayContent.append($("<p>").html("You are a shark in the space between worlds."));
+            gatewayContent.append($("<p>").html("Você é um tubarão num espaço entre mundos."));
             if (!SharkGame.wonGame) {
                 gatewayContent.append(
-                    $("<p>").html("It is not clear how you have ended up here, but you remember a bitter defeat.").addClass("medDesc"),
+                    $("<p>").html("Não lhe é claro como você veio para aqui, mas você se lembra de uma triste derrota.").addClass("medDesc"),
                 );
             }
-            gatewayContent.append($("<p>").html(sharktext.boldString("Something unseen says,")).addClass("medDesc"));
+            gatewayContent.append($("<p>").html(sharktext.boldString("Algo transcendental diz,")).addClass("medDesc"));
             gatewayContent.append(
                 $("<em>")
                     .attr("id", "gatewayVoiceMessage")
@@ -395,67 +395,67 @@ SharkGame.Gateway = {
             if (baseReward > 0) {
                 gatewayContent.append(
                     $("<p>").html(
-                        "Entering this place has changed you, granting you <span class='essenceCount'>" +
+                            "Entrar aqui te mudou, aumentando a sua essência por <span class='essenceCount'>" +
                             sharktext.beautify(baseReward) +
-                            "</span> essence.",
+                            "</span>.",
                     ),
                 );
             }
             if (speedReward > 0) {
                 gatewayContent.append(
                     $("<p>").html(
-                        "You completed this world " +
+                        "Você completou este mundo " +
                             sharktext.beautify(gateway.getMinutesBelowPar()) +
-                            ` minute${gateway.getMinutesBelowPar() === 1 ? "" : "s"} faster than par, granting you <span class='essenceCount'>` +
+                            ` minuto${gateway.getMinutesBelowPar() === 1 ? "" : "s"} mais rápido que o normal, e você conseguiu <span class='essenceCount'>` +
                             sharktext.beautify(speedReward) +
-                            "</span> additional essence.",
+                            "</span> de essência adicional.",
                     ),
                 );
             } else if (SharkGame.wonGame && !gateway.wasOnScoutingMission() && !gateway.getMinutesBelowPar()) {
                 gatewayContent.append(
-                    $("<p>").html("You didn't beat this world fast enough to get below par. If you did, you would get more essence."),
+                    $("<p>").html("Você não venceu esse oceano rápido o suficiente. Se tivesse o feito, você teria mais essência."),
                 );
             }
             if (gumptionBonus) {
                 gatewayContent.append(
                     $("<p>").html(
-                        "Your gumption lets you scrounge up <span class='essenceCount'>" +
+                        "Seus culhões te dão mais <span class='essenceCount'>" +
                             sharktext.beautify(gumptionBonus, false, 2) +
-                            "</span> extra essence.",
+                            "</span> de essência extra.",
                     ),
                 );
             }
             if (patienceReward > 0) {
                 gatewayContent.append(
                     $("<p>").html(
-                        "Your patience pays off, granting you <span class='essenceCount'>" +
+                        "Sua paciência é recompensada, te proporcionando <span class='essenceCount'>" +
                             sharktext.beautify(patienceReward) +
-                            "</span> additional essence.",
+                            "</span> de essência adicional.",
                     ),
                 );
             }
             if (speedReward || gumptionBonus || patienceReward) {
                 gatewayContent.append(
                     $("<p>").html(
-                        "You gained <span class='essenceCount'>" +
+                        "Ao todo, sua essência aumentou em <span class='essenceCount'>" +
                             sharktext.beautify(speedReward + patienceReward + baseReward + gumptionBonus, false, 2) +
-                            "</span> essence overall.",
+                            "</span>.",
                     ),
                 );
             }
             gatewayContent.append(
                 $("<p>").html(
                     sharktext.boldString(
-                        "You have <span id='essenceHeldDisplay' class='essenceCount'>" +
+                        "Você tem <span id='essenceHeldDisplay' class='essenceCount'>" +
                             sharktext.beautify(essenceHeld, false, 2) +
-                            "</span> essence.",
+                            "</span> de essência.",
                     ),
                 ),
             );
             if (storedTime >= 1000) {
                 gatewayContent.append(
                     $("<p>").html(
-                        `(By the way, you took ${sharktext.boldString(res.minuteHand.formatMinuteTime(storedTime))} of unused idle time with you.)`,
+                        `(E também, você trouxe ${sharktext.boldString(res.minuteHand.formatMinuteTime(storedTime))} de tempo extra não usado com você.)`,
                     ),
                 );
             }
@@ -463,11 +463,11 @@ SharkGame.Gateway = {
                 const numenName = numenHeld > 1 ? "numina" : "numen";
                 gatewayContent.append(
                     $("<p>").html(
-                        "You also have <span class='numenCount'>" +
+                        "Você também tem <span class='numenCount'>" +
                             sharktext.beautify(numenHeld) +
                             "</span> " +
                             numenName +
-                            ", and you radiate divinity.",
+                            " radiando a luz divina dentro de você.",
                     ),
                 );
             }
@@ -480,13 +480,13 @@ SharkGame.Gateway = {
 
             // add navigation buttons
             const navButtons = $("<div>").addClass("gatewayButtonList");
-            SharkGame.Button.makeButton("backToGateway", "aspects", navButtons, () => {
+            SharkGame.Button.makeButton("backToGateway", "aspectos", navButtons, () => {
                 gateway.ui.switchViews(gateway.ui.showAspects);
             });
-            SharkGame.Button.makeButton("toOptions", "options", navButtons, SharkGame.PaneHandler.showOptions);
+            SharkGame.Button.makeButton("toOptions", "configurações", navButtons, SharkGame.PaneHandler.showOptions);
             SharkGame.Button.makeHoverscriptButton(
                 "toWorlds",
-                "worlds",
+                "mundos",
                 navButtons,
                 () => {
                     if (SharkGame.Aspects.pathOfEnlightenment.level) {
@@ -495,7 +495,7 @@ SharkGame.Gateway = {
                 },
                 () => {
                     if (!SharkGame.Aspects.pathOfEnlightenment.level) {
-                        $("#tooltipbox").addClass("forAspectTreeUnpurchased").html("You're not yet sure what this means.");
+                        $("#tooltipbox").addClass("forAspectTreeUnpurchased").html("Você não entende o que isto significa.");
                     }
                 },
                 () => {
@@ -519,17 +519,17 @@ SharkGame.Gateway = {
                 containerDiv.append(
                     $("<p>").html(
                         "You appear to have experienced a major bug that causes negative world-times.<br> The source of this bug is unknown.<br>" +
-                            "Please send a copy of your save to us (the <code>sharkGameSavePreGateway</code> entry in your Local Storage), either in the #bugs-and-issues channel of our discord or via email to <pre>timebug@shark.tobot.dev</pre>.<br> Enjoy the free essence, I guess?<br>" +
-                            "(To remove excess essence, type the following into your console <code>res.changeResource(\"essence\", -1000)</code>, replacing 1000 with the number of excess essence you have; sorry for the inconvenience)<br>" +
-                            `actual start time: ${SharkGame.timestampRunStart}   true pause time: ${SharkGame.persistentFlags.totalPausedTime}   current paused time: ${SharkGame.persistentFlags.currentPausedTime}<br>` +
-                            `minute hand: ${SharkGame.flags.minuteHandTimer}    hour hand: ${SharkGame.flags.hourHandLeft}    bonus: ${SharkGame.flags.bonusTime}<br>` +
-                            `calculated run time: ${gateway.getTimeInLastWorld(true)}   actual likely time: ${
+                            "Por favor, mande uma cópia do seu jogo (o <code>sharkGameSavePreGateway</code> no seu Armazenamento Local) para nós, ou pelo canal #bugs-and-issues do nossos servidor do Discord ou por email para <pre>timebug@shark.tobot.dev</pre>.<br> E, sei lá, aproveite a essência grátis?<br>" +
+                            "(Para remover a essência em excesso, digite a seguinte mensagem no console do seu navegador <code>res.changeResource(\"essence\", -1000)</code>, substituindo 1000 com o número de essência em excesso que você ganhou; desculpa pela inconveniência)<br>" +
+                            `tempo de começo: ${SharkGame.timestampRunStart}   tempo verdadeiramente pausado: ${SharkGame.persistentFlags.totalPausedTime}   tempo atual pausado: ${SharkGame.persistentFlags.currentPausedTime}<br>` +
+                            `ponteiro dos minutos: ${SharkGame.flags.minuteHandTimer}    ponteiro das horas: ${SharkGame.flags.hourHandLeft}    bônus: ${SharkGame.flags.bonusTime}<br>` +
+                            `tempo calculado no mundo: ${gateway.getTimeInLastWorld(true)}   o provável tempo verdadeiro: ${
                                 _.now() - SharkGame.timestampRunStart
                             }<br>`,
                     ),
                 );
             } else {
-                containerDiv.append($("<p>").html(`<em>Time spent within last ocean:</em><br/>${gateway.getTimeInLastWorld()}`));
+                containerDiv.append($("<p>").html(`<em>Tempo gasto no último oceano:</em><br/>${gateway.getTimeInLastWorld()}`));
             }
         },
 
@@ -579,30 +579,30 @@ SharkGame.Gateway = {
                         }
                     }),
             );
-            aspectTreeContent.append($("<strong>").html(" ESSENCE"));
-            aspectTreeContent.append($("<p>").html("Your will flows into solid shapes beyond your control.<br>Focus."));
+            aspectTreeContent.append($("<strong>").html(" ESSÊNCIA"));
+            aspectTreeContent.append($("<p>").html("Sua vontade flui sobre coisas sólidas além do seu controle.<br>Tenha foco."));
             aspectTreeContent.append(tree.drawTree(SharkGame.Settings.current.doAspectTable === "table"));
 
             const buttonDiv = $("<div>").attr("id", "aspectTreeNavButtons").addClass("gatewayButtonList");
 
             // add return to gateway button
-            SharkGame.Button.makeButton("backToGateway", "return to gateway", buttonDiv, () => {
+            SharkGame.Button.makeButton("backToGateway", "voltar ao entre-mundos", buttonDiv, () => {
                 gateway.ui.switchViews(gateway.ui.showGateway);
                 $("#tooltipbox").empty().removeClass("forAspectTree forAspectTreeUnpurchased");
             });
 
             if (SharkGame.Settings.current.doAspectTable === "table") {
                 if (SharkGame.Aspects.cleanSlate.level) {
-                    SharkGame.Button.makeButton("respecModeButton", "respec mode", buttonDiv, tree.toggleRefundMode);
-                    SharkGame.Button.makeButton("respecButton", "respec all", buttonDiv, () => {
-                        if (confirm("Are you sure you want to respec all refundable aspects?")) {
+                    SharkGame.Button.makeButton("respecModeButton", "modo reembolso", buttonDiv, tree.toggleRefundMode);
+                    SharkGame.Button.makeButton("respecButton", "reembolsar tudo", buttonDiv, () => {
+                        if (confirm("Tem certeza que quer reembolsar todos os aspectos reembolsáveis?")) {
                             tree.respecTree();
                         }
                     });
                 }
 
                 if (SharkGame.persistentFlags.debug) {
-                    SharkGame.Button.makeButton("debugModeButton", "debug mode", buttonDiv, tree.toggleDebugMode);
+                    SharkGame.Button.makeButton("debugModeButton", "modo debug", buttonDiv, tree.toggleDebugMode);
                 }
             }
 
@@ -623,7 +623,7 @@ SharkGame.Gateway = {
         showPlanets(foregoAnimation) {
             // construct the gateway content
             const planetSelectionContent = $("<div>");
-            planetSelectionContent.append($("<p>").html("Other worlds await."));
+            planetSelectionContent.append($("<p>").html("Outros mundos esperam."));
 
             // show planet pool
             const planetPool = $("<div>").addClass("gatewayButtonList");
@@ -636,7 +636,7 @@ SharkGame.Gateway = {
             planetSelectionContent.append(planetPool);
 
             planetSelectionContent.append(
-                $("<p>").html("NOTE: When you first visit a world, you are SCOUTING it. If you choose to replay it, you are NOT SCOUTING it."),
+                $("<p>").html("NOTA: Quando você entra num mundo pela primeira vez, você está o EXPLORANDO. Se você entrar de novo nele, você NÃO está mais EXPLORANDO."),
             );
 
             if (SharkGame.Aspects.destinyGamble.level > 0) {
@@ -644,12 +644,12 @@ SharkGame.Gateway = {
             }
 
             if (SharkGame.persistentFlags.debug) {
-                SharkGame.Button.makeButton("visitButton", "visit any world", planetSelectionContent, gateway.ui.showWorldVisitMenu);
+                SharkGame.Button.makeButton("visitButton", "visitar qualquer mundo", planetSelectionContent, gateway.ui.showWorldVisitMenu);
             }
 
             // add return to gateway button
             const returnButtonDiv = $("<div>");
-            SharkGame.Button.makeButton("backToGateway", "return to gateway", returnButtonDiv, () => {
+            SharkGame.Button.makeButton("backToGateway", "voltar ao entre-mundos", returnButtonDiv, () => {
                 gateway.ui.switchViews(gateway.ui.showGateway);
             });
             planetSelectionContent.append(returnButtonDiv);
@@ -664,13 +664,13 @@ SharkGame.Gateway = {
             if (!_.isUndefined(SharkGame.persistentFlags.destinyRolls)) {
                 switch (SharkGame.persistentFlags.destinyRolls) {
                     case 0:
-                        $("#destinyGamble").html("No rerolls remain. Beat a world to recharge.").addClass("disabled");
+                        $("#destinyGamble").html("Não há mais mudança. Entre em um mundo para recarregar.").addClass("disabled");
                         break;
                     case 1:
-                        $("#destinyGamble").html("Reroll Worlds (1 reroll remains)");
+                        $("#destinyGamble").html("Mudar Mundos (1 mudança resta)");
                         break;
                     default:
-                        $("#destinyGamble").html("Reroll Worlds (" + SharkGame.persistentFlags.destinyRolls + " rerolls remain)");
+                        $("#destinyGamble").html("Mudar Mundos (" + SharkGame.persistentFlags.destinyRolls + " mudanças restam)");
                 }
             }
         },
@@ -681,14 +681,14 @@ SharkGame.Gateway = {
 
             // construct the gateway content
             const gatewayContent = $("<div>").append(
-                $("<p>").html((seenWorldYet ? "Replay the " + selectedWorldData.name + " W" : "Scout this w") + "orld?"),
+                $("<p>").html(seenWorldYet ? "Re-entrar no Mundo " + selectedWorldData.name + "?" : "Explorar este mundo?"),
             );
 
             gatewayContent.append(
                 $("<p>")
                     .attr("id", "predicted-gain")
                     .html(
-                        `${seenWorldYet ? "A par time" : "This"} would grant you <strong>` +
+                        `${seenWorldYet ? "O tempo normal" : "Isso"} te presenteará com <strong>` +
                             sharktext.beautify(
                                 Math.ceil(
                                     (1 + gateway.getGumptionBonus()) *
@@ -701,9 +701,9 @@ SharkGame.Gateway = {
                                 false,
                                 2,
                             ) +
-                            "</strong> " +
+                            "</strong> de " +
                             sharktext.getResourceName("essence", undefined, undefined, sharkcolor.getElementColor("pane")) +
-                            " overall.",
+                            " ao todo.",
                     ),
             );
 
@@ -723,7 +723,7 @@ SharkGame.Gateway = {
 
             if (seenWorldYet && selectedWorldData.par) {
                 gatewayContent.append(
-                    $("<p>").html("Par: <strong>" + selectedWorldData.par + " minutes</strong><br>Beat the world faster for extra essence."),
+                    $("<p>").html("Tempo normal: <strong>" + selectedWorldData.par + " minutes</strong><br> Passe por esse mundo mais rápido para ganhar mais essência."),
                 );
             }
 
@@ -755,7 +755,7 @@ SharkGame.Gateway = {
                     dialLabel = $("<p>")
                         .attr("id", "dial-label")
                         .html(
-                            sharktext.boldString(`gamespeed is ${SharkGame.persistentFlags.dialSetting}× slower<br>
+                            sharktext.boldString(`velocidade do jogo está ${SharkGame.persistentFlags.dialSetting}× mais lento<br>
                     patience rewards ×${
                         SharkGame.persistentFlags.dialSetting > 1
                             ? Math.round((2 * Math.log(SharkGame.persistentFlags.dialSetting)) / Math.log(4))
@@ -765,7 +765,7 @@ SharkGame.Gateway = {
                 } else {
                     dialLabel = $("<p>")
                         .attr("id", "dial-label")
-                        .html("Adjust The Dial to modify Patience rewards.<br>...or don't. If you don't want to.");
+                        .html("Ajuste O Seletor para mudar as recompensas de Paciência.<br>...ou não. Não estou te obrigando a nada.");
                 }
 
                 gatewayContent.append(dialLabel);
@@ -774,13 +774,13 @@ SharkGame.Gateway = {
 
             // add confirm button
             const confirmButtonDiv = $("<div>");
-            SharkGame.Button.makeButton("progress", "proceed", confirmButtonDiv, () => {
+            SharkGame.Button.makeButton("progress", "continuar", confirmButtonDiv, () => {
                 function checkAspects() {
                     let doProceed = true;
                     $.each(SharkGame.Aspects, (_aspectName, aspectData) => {
                         if (aspectData.level && !aspectData.core) {
                             doProceed = confirm(
-                                "Woah, hold on! Only CORE ASPECTS work when scouting, but you have some that aren't! If you continue, these non-core aspects will stop working until you leave. Are you sure that you want to proceed?",
+                                "Opa, espera aí! Apenas ASPECTOS CENTRAIS funcionam durante uma exploração, e você tem alguns aspectos que não são! Se continuar, esses aspectos não centrais vão parar de funcionar até você voltar aqui. Tem certeza que quer continuar?",
                             );
                             return false;
                         }
@@ -801,7 +801,7 @@ SharkGame.Gateway = {
 
             // add return to planets button
             const returnButtonDiv = $("<div>");
-            SharkGame.Button.makeButton("backToGateway", "reconsider", returnButtonDiv, () => {
+            SharkGame.Button.makeButton("backToGateway", "reconsiderar", returnButtonDiv, () => {
                 gateway.ui.switchViews(gateway.ui.showPlanets);
             });
             gatewayContent.append(returnButtonDiv);
@@ -850,7 +850,7 @@ SharkGame.Gateway = {
                         _.each(worldData.foresight.present, (presentResource) => {
                             presentList.append(
                                 $("<li>").html(
-                                    "You feel the presence of " +
+                                    "Você sente a presença de " +
                                         sharktext.getResourceName(
                                             presentResource,
                                             false,
@@ -903,11 +903,11 @@ SharkGame.Gateway = {
         },
 
         showWorldVisitMenu() {
-            const menuContent = $("<div>").append($("<p>").html("Pick a world to visit:"));
+            const menuContent = $("<div>").append($("<p>").html("Escolha um mundo para visitar:"));
             const visitButtons = $("<div>").attr("id", "visitButtons");
 
             _.each(gateway.allowedWorlds, (planetName) => {
-                SharkGame.Button.makeButton(planetName + "VisitButton", "visit " + planetName, visitButtons, () => {
+                SharkGame.Button.makeButton(planetName + "VisitButton", "visitar " + planetName, visitButtons, () => {
                     if (SharkGame.persistentFlags.minuteStorage > 1000) {
                         gateway.ui.showMinuteHandStorageExtraction(planetName);
                     } else {
@@ -919,7 +919,7 @@ SharkGame.Gateway = {
             });
 
             menuContent.append(visitButtons);
-            SharkGame.Button.makeButton("backButton", "go back", menuContent, () => {
+            SharkGame.Button.makeButton("backButton", "voltar", menuContent, () => {
                 gateway.ui.switchViews(gateway.ui.showPlanets);
             });
 

@@ -3,7 +3,7 @@ SharkGame.Home = {
     tabId: "home",
     tabDiscovered: true,
     tabSeen: true,
-    tabName: "Home Sea",
+    tabName: "Lar",
     tabBg: "img/bg/bg-homesea.png",
 
     currentButtonTab: null,
@@ -20,7 +20,7 @@ SharkGame.Home = {
 
     setup() {
         // rename home tab
-        const tabName = SharkGame.WorldTypes[world.worldType].name + " Ocean";
+        const tabName = "Oceano " + SharkGame.WorldTypes[world.worldType].name;
         home.tabName = tabName;
         if (SharkGame.Tabs.home) {
             SharkGame.Tabs.home.name = tabName;
@@ -321,7 +321,7 @@ SharkGame.Home = {
             });
             sceneDiv.append($("<div>").html("").attr("id", "tabSceneTracker"));
 
-            let message = "<strong class='medDesc'>You are a shark in a " + worldType.shortDesc + " sea.</strong>";
+            let message = "<strong class='medDesc'>Você é um tubarão em um oceano " + worldType.shortDesc + ".</strong>";
             message += "<br><strong id='extraMessage'><br></strong>";
             tabMessage.html(message).prepend(sceneDiv);
         }
@@ -485,7 +485,7 @@ SharkGame.Home = {
 
         // check for any infinite quantities
         if (_.some(actionCost, (cost) => !cost.isFinite())) {
-            label += "<br>Maxed out";
+            label += "<br>Máximo";
         } else {
             const costText = sharktext.resourceListToString(actionCost, !enableButton, sharkcolor.getElementColor(actionName, "background-color"));
             if (costText !== "") {
@@ -883,14 +883,16 @@ SharkGame.Home = {
             if (_.some(validGenerators, (_degree, resourceName) => res.isInCategory(resourceName, "harmful"))) {
                 $("#tooltipbox").addClass("gives-consumer");
             }
-            text += "<span class='littleTooltipText'>" + (addedAnyLabelsYet ? "and " : "") + "INCREASE" + (usePlural ? "" : "S") + "</span><br/>";
+            text += "<span class='littleTooltipText'>" + (addedAnyLabelsYet ? "e " : "") + "AUMENTA" + (usePlural ? "" : "M") + "</span><br/>";
             addedAnyLabelsYet = true;
             $.each(condensedObject.resAffect.increase, (affectedResource, degreePerPurchase) => {
                 text +=
-                    sharktext.boldString("all ") +
+                    sharktext.boldString("todos ") +
+                    "os" +
+                    sharktext.boldString(" ganhos ") +
+                    "de " +
                     sharktext.getResourceName(affectedResource, false, false, sharkcolor.getElementColor("tooltipbox", "background-color")) +
-                    sharktext.boldString(" gains ") +
-                    " by " +
+                    " por " +
                     sharktext.boldString(sharktext.beautify(buyingHowMuch * degreePerPurchase * 100) + "%") +
                     "<br>";
             });
@@ -900,14 +902,16 @@ SharkGame.Home = {
             if (_.some(condensedObject.resAffect.decrease, (_degree, resourceName) => !res.isInCategory(resourceName, "harmful"))) {
                 $("#tooltipbox").addClass("gives-consumer");
             }
-            text += "<span class='littleTooltipText'>" + (addedAnyLabelsYet ? "and " : "") + "DECREASE" + (usePlural ? "" : "S") + "</span><br/>";
+            text += "<span class='littleTooltipText'>" + (addedAnyLabelsYet ? "e " : "") + "DIMINU" + (usePlural ? "I" : "EM") + "</span><br/>";
             addedAnyLabelsYet = true;
             $.each(condensedObject.resAffect.decrease, (affectedResource, degreePerPurchase) => {
                 text +=
-                    sharktext.boldString("all ") +
+                    sharktext.boldString("todos ") +
+                    "os" +
+                    sharktext.boldString(" ganhos ") +
+                    "de " +
                     sharktext.getResourceName(affectedResource, false, false, sharkcolor.getElementColor("tooltipbox", "background-color")) +
-                    sharktext.boldString(" gains ") +
-                    " by " +
+                    " por " +
                     sharktext.boldString(sharktext.beautify(buyingHowMuch * degreePerPurchase * 100) + "%") +
                     "<br>";
             });
@@ -919,18 +923,20 @@ SharkGame.Home = {
             }
             text +=
                 "<span class='littleTooltipText'>" +
-                (addedAnyLabelsYet ? "and " : "") +
-                "MULTIPLICATIVELY INCREASE" +
-                (usePlural ? "" : "S") +
-                "</span><br/>";
+                (addedAnyLabelsYet ? "e " : "") +
+                "AUMENTA" +
+                (usePlural ? "" : "M") +
+                "MULTIPLICATIVAMENTE</span><br/>";
             addedAnyLabelsYet = true;
             $.each(condensedObject.resAffect.multincrease, (affectedResource, degreePerPurchase) => {
                 degreePerPurchase = degreePerPurchase ** buyingHowMuch - 1;
                 text +=
-                    sharktext.boldString("all ") +
+                    sharktext.boldString("todos ") +
+                    "os" +
+                    sharktext.boldString(" ganhos ") +
+                    "de " +
                     sharktext.getResourceName(affectedResource, false, false, sharkcolor.getElementColor("tooltipbox", "background-color")) +
-                    sharktext.boldString(" gains ") +
-                    " by " +
+                    " por " +
                     sharktext.boldString(sharkmath.beautif(degreePerPurchase * 100) + "%") +
                     "<br>";
             });
@@ -942,44 +948,46 @@ SharkGame.Home = {
             }
             text +=
                 "<span class='littleTooltipText'>" +
-                (addedAnyLabelsYet ? "and " : "") +
-                "MULTIPLICATIVELY DECREASE" +
-                (usePlural ? "" : "S") +
-                "</span><br/>";
+                (addedAnyLabelsYet ? "e " : "") +
+                "DIMINU" +
+                (usePlural ? "I" : "EM") +
+                "MULTIPLICATIVAMENTE</span><br/>";
             addedAnyLabelsYet = true;
             $.each(condensedObject.resAffect.multdecrease, (affectedResource, degreePerPurchase) => {
                 degreePerPurchase = 1 - degreePerPurchase ** buyingHowMuch;
                 text +=
-                    sharktext.boldString("all ") +
+                    sharktext.boldString("todos ") +
+                    "os" +
+                    sharktext.boldString(" ganhos ") +
+                    "de " +
                     sharktext.getResourceName(affectedResource, false, false, sharkcolor.getElementColor("tooltipbox", "background-color")) +
-                    sharktext.boldString(" gains ") +
-                    " by " +
+                    " por " +
                     sharktext.boldString(sharktext.beautify(degreePerPurchase * 100) + "%") +
                     "<br>";
             });
         }
 
         if (!$.isEmptyObject(condensedObject.genAffect.increase)) {
-            text += "<span class='littleTooltipText'>" + (addedAnyLabelsYet ? "and " : "") + "INCREASE" + (usePlural ? "" : "S") + "</span><br/>";
+            text += "<span class='littleTooltipText'>" + (addedAnyLabelsYet ? "e " : "") + "AUMENTA" + (usePlural ? "" : "M") + "</span><br/>";
             addedAnyLabelsYet = true;
             $.each(condensedObject.genAffect.increase, (affectedGenerator, degreePerPurchase) => {
                 text +=
+                    sharktext.boldString(" velocidade de ") +
                     sharktext.getResourceName(affectedGenerator, false, false, sharkcolor.getElementColor("tooltipbox", "background-color")) +
-                    sharktext.boldString(" speed ") +
-                    " by " +
+                    " em " +
                     sharktext.boldString(sharktext.beautify(buyingHowMuch * degreePerPurchase * 100) + "%") +
                     "<br>";
             });
         }
 
         if (!$.isEmptyObject(condensedObject.genAffect.decrease)) {
-            text += "<span class='littleTooltipText'>" + (addedAnyLabelsYet ? "and " : "") + "DECREASE" + (usePlural ? "" : "S") + "</span><br/>";
+            text += "<span class='littleTooltipText'>" + (addedAnyLabelsYet ? "e " : "") + "DIMINU" + (usePlural ? "I" : "EM") + "</span><br/>";
             addedAnyLabelsYet = true;
             $.each(condensedObject.genAffect.decrease, (affectedGenerator, degreePerPurchase) => {
                 text +=
+                    sharktext.boldString(" velocidade de ") +
                     sharktext.getResourceName(affectedGenerator, false, false, sharkcolor.getElementColor("tooltipbox", "background-color")) +
-                    sharktext.boldString(" speed ") +
-                    " by " +
+                    " em " +
                     sharktext.boldString(sharktext.beautify(buyingHowMuch * degreePerPurchase * 100) + "%") +
                     "<br>";
             });
@@ -988,17 +996,17 @@ SharkGame.Home = {
         if (!$.isEmptyObject(condensedObject.genAffect.multincrease)) {
             text +=
                 "<span class='littleTooltipText'>" +
-                (addedAnyLabelsYet ? "and " : "") +
-                "MULTIPLICATIVELY INCREASE" +
-                (usePlural ? "" : "S") +
-                "</span><br/>";
+                (addedAnyLabelsYet ? "e " : "") +
+                "AUMENTA" +
+                (usePlural ? "" : "M") +
+                "MULTIPLICATIVAMENTE</span><br/>";
             addedAnyLabelsYet = true;
             $.each(condensedObject.genAffect.multincrease, (affectedGenerator, degreePerPurchase) => {
                 degreePerPurchase = degreePerPurchase ** buyingHowMuch - 1;
                 text +=
+                    sharktext.boldString(" velocidade de ") +
                     sharktext.getResourceName(affectedGenerator, false, false, sharkcolor.getElementColor("tooltipbox", "background-color")) +
-                    sharktext.boldString(" speed ") +
-                    " by " +
+                    " em " +
                     sharktext.boldString(sharktext.beautify(degreePerPurchase * 100) + "%") +
                     "<br>";
             });
@@ -1007,17 +1015,17 @@ SharkGame.Home = {
         if (!$.isEmptyObject(condensedObject.genAffect.multdecrease)) {
             text +=
                 "<span class='littleTooltipText'>" +
-                (addedAnyLabelsYet ? "and " : "") +
-                "MULTIPLICATIVELY DECREASE" +
-                (usePlural ? "" : "S") +
-                "</span><br/>";
+                (addedAnyLabelsYet ? "e " : "") +
+                "DIMINU" +
+                (usePlural ? "I" : "EM") +
+                "MULTIPLICATIVAMENTE</span><br/>";
             addedAnyLabelsYet = true;
             $.each(condensedObject.genAffect.multdecrease, (affectedGenerator, degreePerPurchase) => {
                 degreePerPurchase = 1 - degreePerPurchase ** buyingHowMuch;
                 text +=
+                    sharktext.boldString(" velocidade de ") +
                     sharktext.getResourceName(affectedGenerator, false, false, sharkcolor.getElementColor("tooltipbox", "background-color")) +
-                    sharktext.boldString(" speed ") +
-                    " by " +
+                    " em " +
                     sharktext.boldString(sharktext.beautify(degreePerPurchase * 100) + "%") +
                     "<br>";
             });

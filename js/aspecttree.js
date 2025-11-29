@@ -439,13 +439,13 @@ SharkGame.AspectTree = {
             context.save();
             context.fillStyle = getComputedStyle(document.getElementById("backToGateway")).color;
             context.fillText("em missões de descoberta", 440, 10);
-            context.fillText("apenas aspectos basais são ativos", 440, 25);
+            context.fillText("apenas aspectos centrais são ativos", 440, 25);
             context.fillText("aspectos superficiais ->", 440, 60);
-            context.fillText("<- aspectos basais", 300, 60);
+            context.fillText("<- aspectos centrais", 300, 60);
             context.fillText("em missões de descoberta", 440, 710);
-            context.fillText("apenas aspectos basais são ativos", 440, 725);
+            context.fillText("apenas aspectos centrais são ativos", 440, 725);
             context.fillText("aspectos superficiais ->", 440, 680);
-            context.fillText("<- aspectos basais", 300, 680);
+            context.fillText("<- aspectos centrais", 300, 680);
             context.restore();
         }
 

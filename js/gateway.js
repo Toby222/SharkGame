@@ -395,7 +395,7 @@ SharkGame.Gateway = {
             if (baseReward > 0) {
                 gatewayContent.append(
                     $("<p>").html(
-                            "Entrar aqui te mudou, aumentando a sua essência por <span class='essenceCount'>" +
+                        "Entrar aqui te mudou, aumentando a sua essência por <span class='essenceCount'>" +
                             sharktext.beautify(baseReward) +
                             "</span>.",
                     ),
@@ -837,7 +837,7 @@ SharkGame.Gateway = {
                         _.each(worldData.foresight.missing, (missingResource) => {
                             missingList.append(
                                 $("<li>").html(
-                                    "This world has no " +
+                                    "Esse mundo não possui " +
                                         sharktext.getResourceName(missingResource, false, 2, sharkcolor.getElementColor("pane")) +
                                         ".",
                                 ),
@@ -890,7 +890,7 @@ SharkGame.Gateway = {
                         contentDiv.prepend(modifierList);
                         contentDiv.prepend($("<p>").html("ATTRIBUTES:"));
                     } else {
-                        contentDiv.prepend($("<p>").html("NO KNOWN ATTRIBUTES"));
+                        contentDiv.prepend($("<p>").html("SEM ATRIBUTOS CONHECIDOS"));
                     }
                     break;
                 default:
@@ -923,7 +923,7 @@ SharkGame.Gateway = {
                 gateway.ui.switchViews(gateway.ui.showPlanets);
             });
 
-            SharkGame.PaneHandler.swapCurrentPane("DEBUG VISIT", menuContent, true, 500, true);
+            SharkGame.PaneHandler.swapCurrentPane("VISITA DE DEBUG", menuContent, true, 500, true);
             gateway.transitioning = false;
         },
 
@@ -938,7 +938,7 @@ SharkGame.Gateway = {
                         "<br>" +
                         (seenWorldYet ? deeperPlanetData.desc : deeperPlanetData.vagueDesc) +
                         (seenWorldYet && gateway.getPar(planetData.type)
-                            ? "<br>Par: <strong>" + gateway.getPar(planetData.type) + " minutes</strong>"
+                            ? "<br>Tempo normal: <strong>" + gateway.getPar(planetData.type) + " minutos</strong>"
                             : "");
 
                     buttonSel.html(label);
@@ -1004,28 +1004,28 @@ SharkGame.Gateway = {
                 }
 
                 $("#remaining-time").html(
-                    `According to your selection, you would leave ${sharktext.boldString(
+                    `De acordo com a sua escolha, você deixará ${sharktext.boldString(
                         res.minuteHand.formatMinuteTime(storage - requestedTime, true),
-                    )} in storage.`,
+                    )} guardados.`,
                 );
-                $("#requested-time").html(`You would take ${sharktext.boldString(res.minuteHand.formatMinuteTime(requestedTime, true))} with you.`);
+                $("#requested-time").html(`Você levará ${sharktext.boldString(res.minuteHand.formatMinuteTime(requestedTime, true))} com você.`);
             }
 
             const menuContent = $("<div>").append(
-                $("<p>").html(`You have some ${SharkGame.Settings.current.idleEnabled ? "idle " : ""}time in storage.`),
+                $("<p>").html(`Você tem algum ${SharkGame.Settings.current.idleEnabled ? "tempo extra" : "tempo"} armazenado.`),
             );
             const timeSelection = $("<div>").attr("id", "minute-storage-selection");
 
             const timeLeft = res.minuteHand.formatMinuteTime(SharkGame.persistentFlags.minuteStorage, true);
-            timeSelection.append($("<p>").html(`There is ${sharktext.boldString(timeLeft)} left.`));
+            timeSelection.append($("<p>").html(`Há ${sharktext.boldString(timeLeft)} restante.`));
 
             if (!gateway.completedWorlds.includes(worldtype)) {
                 timeSelection.append(
-                    $("<p>").html(sharktext.boldString("Since you're going on a scouting mission, you can take up to 10 minutes with you.")),
+                    $("<p>").html(sharktext.boldString("Já que você está indo para uma missão de exploração, você pode levar até 10 minutos com você.")),
                 );
             }
 
-            timeSelection.append($("<p>").html("How much would you like to take with you to the next world?"));
+            timeSelection.append($("<p>").html("Quanto que você gostaria de levar com você para esse próximo mundo?"));
 
             const times = timeLeft.split(" ");
             times.reverse();
@@ -1132,7 +1132,7 @@ SharkGame.Gateway = {
                 timeSelection.append($("<strong>").html("s"));
             }
             timeSelection.append(
-                $("<p>").html(sharktext.boldString("ONLY TAKE AS MUCH AS YOU NEED!<br>Anything that you take but don't use will be discarded.")),
+                $("<p>").html(sharktext.boldString("EVITE O DESPERDÍCIO, LEVE APENAS O NECESSÁRIO!<br>O que você levar mas não usar vai sumir no final de tudo.")),
             );
             timeSelection.append($("<hr>"));
             timeSelection.append($("<p>").attr("id", "remaining-time"));
@@ -1178,19 +1178,19 @@ SharkGame.Gateway = {
         updateVisuals() {
             if (SharkGame.persistentFlags.dialSetting > 1) {
                 $("#dial-label").html(
-                    sharktext.boldString(`gamespeed is ${SharkGame.persistentFlags.dialSetting}× slower<br>
+                    sharktext.boldString(`velocidade do jogo ${SharkGame.persistentFlags.dialSetting}× mais lento<br>
                 Patience rewards ×${
                     SharkGame.persistentFlags.dialSetting > 1 ? Math.round((2 * Math.log(SharkGame.persistentFlags.dialSetting)) / Math.log(4)) : 1
                 }`),
                 );
             } else {
-                $("#dial-label").html("Adjust The Dial to modify Patience rewards.<br>...or don't. If you don't want to.");
+                $("#dial-label").html("Ajuste O Seletor para mudar as recompensas de Paciência.<br>...ou não. Não estou te obrigando a nada.");
             }
 
             const selectedWorldData = SharkGame.WorldTypes[gateway.selectedWorld];
             const seenWorldYet = gateway.completedWorlds.includes(gateway.selectedWorld);
             $("#predicted-gain").html(
-                `${seenWorldYet ? "A par time" : "This"} would grant you <strong>` +
+                `${seenWorldYet ? "O tempo normal" : "Isso"} te presenteará com <strong>` +
                     sharktext.beautify(
                         Math.ceil(
                             (1 + gateway.getGumptionBonus()) * ((seenWorldYet ? 2 : 4) + (selectedWorldData.bonus ? selectedWorldData.bonus : 0)) +
@@ -1204,30 +1204,30 @@ SharkGame.Gateway = {
                     ) +
                     "</strong> " +
                     sharktext.getResourceName("essence", undefined, undefined, sharkcolor.getElementColor("pane")) +
-                    " overall.",
+                    " ao todo.",
             );
         },
     },
 };
 
 SharkGame.Gateway.PresenceFeelings = {
-    clam: "hard things?",
-    sponge: "porous things?",
-    jellyfish: "squishy things?",
-    coral: "colorful things?",
-    dolphin: "annoying scholars?",
-    whale: "wise scholars?",
-    octopus: "logical entities?",
-    squid: "loyal hunters?",
-    urchin: "dimwitted creatures?",
-    shrimp: "simple creatures?",
-    lobster: "worriless crustaceans?",
-    chimaera: "familiar predators?",
-    eel: "slithering hunters?",
-    tar: "something dirty?",
-    algae: "something slimy?",
-    seagrass: "some plants?",
-    billfish: "resolute survivalists?",
+    clam: "coisinhas duras?",
+    sponge: "coisas porosas?",
+    jellyfish: "coisas molengas?",
+    coral: "coisas coloridas?",
+    dolphin: "pentelhos eruditos?",
+    whale: "gigantes sábios?",
+    octopus: "entidades lógicas?",
+    squid: "caçadores leais?",
+    urchin: "criaturas sem cérebro?",
+    shrimp: "seguidores simples?",
+    lobster: "crutáceos irresponsáveis?",
+    chimaera: "predadoras familiares?",
+    eel: "caçadores rastejantes?",
+    tar: "algo nojento?",
+    algae: "algo microscópico?",
+    seagrass: "umas planta?",
+    billfish: "sobreviventes determinados?",
 };
 
 SharkGame.Gateway.Messages = {
@@ -1236,80 +1236,80 @@ SharkGame.Gateway.Messages = {
             min: 5,
             max: 10,
             messages: [
-                "Your aptitude grows, I see.",
-                "Your presence is weak, but it grows stronger.",
-                "What new sights have you seen in these journeys?",
-                "How are you finding your voyage?",
-                "Have you noticed how few can follow you through the gates?",
+                "Eu sinto e percebo, tua aptidão cresce.",
+                "Tua presença ainda está fraca, mas ela vem aumentando.",
+                "Que novas paisagens tens visto nessas jornadas?",
+                "O que está achando de tua jornada?",
+                "Percebeste como quase ninguém consegue te seguir aqui?",
             ],
         },
         {
             min: 11,
             max: 30,
             messages: [
-                "How quickly do you travel through worlds?",
-                "You are becoming familiar with this.",
-                "Back so soon?",
-                "Welcome back, to the space between spaces.",
+                "O quão rápido viajas pelos mundos?",
+                "Me pareces estar ficando familiar com isso.",
+                "De volta já?",
+                "Bem vinde de volta, ao espaço entre os espaços.",
             ],
         },
         {
             min: 31,
             max: 50,
             messages: [
-                "You are a traveller like any other.",
-                "I see you here more than ever. Can you see me?",
-                "What do you remember?",
-                "You remind me of myself, from a long, long time ago.",
-                "Welcome back to irregular irreality.",
+                "És um viajante como qualquer outro.",
+                "Eu te vejo mais do que nunca. Consegues tu me ver?",
+                "Do que te lembras?",
+                "Me lembras de uma versão minha, de um época se se foi há muito tempo.",
+                "Bem vinde de novo à irrealidade irregular.",
             ],
         },
         {
             min: 51,
             max: 200,
             messages: [
-                "Have you found your home yet?",
-                "Surely your home lies but a jump or two away?",
-                "Have you ever returned to one of the worlds you've been before?",
-                "Can you find anyone else that journeys so frequently as you?",
-                "You have become so strong. So powerful.",
-                "I remember when you first arrived here, with confusion and terror in your mind.",
+                "Já achaste tua casa?",
+                "Certamente teu lar jaz no próximo mundo, não?",
+                "Já retornaste a algum dos mundos os quais exploraras?",
+                "Consegues achar outro alguém que viaja tanto quanto tu?",
+                "Tens ficado tão forte. Tão poderoso.",
+                "Me lembro da tua primeira vez aqui, tomade por confusão e horror.",
             ],
         },
         {
             min: 201,
             messages: [
-                "Your devotion to the journey is alarming.",
-                "You exceed anything I've ever known.",
+                "Tua devoção à essa jornada é pavorosa.",
+                "Ultrapassas qualquer coisa que já vi antes.",
                 "You are a force of will within the shell of a shark.",
-                "It surprises me how much focus and dedication you show. Perhaps you may settle in your next world?",
-                "Does your home exist?",
-                "Is there an end to your quest?",
-                "Why are you still searching? Many others would have surrendered to the odds by this point.",
+                "Me surpreende teu foco e dedicação. Mas talvez possas alojar-te no próximo mundo?",
+                "Teu lar realmente existe?",
+                "Haverá um fim à tua procura?",
+                "Por que ainda procuras? Tantos outros já teriam desistido a este ponto.",
             ],
         },
     ],
     lastPlanetBased: {
-        start: ["What brings you here, strange one?", "Your journey has only just begun.", "Welcome to the end of the beginning."],
+        start: ["O que lhe traz aqui, pequenino forasteiro?", "Tua jornada acabou de começar.", "Bem vinde ao fim de teu início."],
         marine: [
-            "Did your last ocean feel all too familiar?",
-            "Do you bring life, or do you bring death, worldbuilder?",
-            "A tragedy; or, perhaps, merely the cost of progress.",
-            "We confront our mistakes as choices. We repeat them, or we do not.",
+            "Teu último oceano lhe pareceu familiar?",
+            "Trazes vida, ou trazes morte, criador de mundos?",
+            "Uma tragédia; ou, talvez, meramente o custo do progresso.",
+            "Nós confrontamos nossos erros como escolhas. Nós os repetimos, ou aprendemos a evitá-los.",
         ],
         haven: [
-            "A beautiful paradise. It may be a while before you find a world so peaceful.",
-            "What shining atoll do you leave behind? Those who could not follow you will surely live happily.",
-            "Why did you leave?",
+            "Um paraíso maravilhoso. Talvez leve um tempo até achares um mundo tão lindo novamente.",
+            "Que atol vislumbrante deixaste para trás? Aqueles que não puderam te seguir certamente viverão felizes.",
+            "Por que saíste?",
             "The incessant chatter of the dolphins has stopped.",
             "Something echoed from the gate into this realm. Was that you?",
             "Do you wonder how the dolphins arrived in this state?",
         ],
         tempestuous: [
-            "You braved the maelstrom and came from it unscathed.",
-            "Charge through the whirlpool. Give no quarter to the storm.",
-            "Do you wonder who built the great machine?",
-            "The billfish are fast, but not brave. It was you who gave them their courage.",
+            "Desbravaste a tempestade e saiste são e salvo.",
+            "Avança pelo redemoinho. Não dê trégua à tempestade.",
+            "Já perguntaste quem contruiu essa grande máquina?",
+            "Os peixes-espada são rápidos, mas não corajosos. Foste tu que os mostrou sua bravura.",
         ],
         volcanic: [
             "The boiling ocean only stirred you on.",
@@ -1321,51 +1321,51 @@ SharkGame.Gateway.Messages = {
         ],
         abandoned: [
             "Do you wonder who abandoned the machines?",
-            "Do the octopuses know who came before them? Do you know?",
-            "We confront our mistakes as choices. We repeat them, or we do not.",
+            "Sabes os polvos quem veio antes deles? Sabes tu?",
+            "Nós confrontamos nossos erros como escolhas. Nós os repetimos, ou aprendemos a evitá-los.",
         ],
         shrouded: [
-            "Did the chimaeras recognise who you were?",
-            "What did you learn from the dark world?",
-            "To fall into darkness is easy, but to escape it is another story.",
-            "Such strange forces guide the chimaeras, just as strange forces guide you.",
-            "Do you wonder where the shards came from?",
-            "Do you wonder who the ancients were?",
+            "As quimeras te reconheceram?",
+            "O que aprendeste do mundo sombrio?",
+            "Para fitar o abismo é fácil, mas aguentar quando o abismo fita de volta é difícil.",
+            "Forças estranhas guiavam as quimeras, assim como forças estranhas te guiam.",
+            "Já ponderaste de onde vieram os fragmentos mágicos?",
+            "Perguntas-te quem eram os anciões?",
         ],
         frigid: [
-            "...did you miss the rays?",
-            "Tell me: Where do you see the line between friend and food? The urchins are as simple-minded as the fish.",
-            "Do you wonder who the squid look up to?",
-            "Do you wonder who built the great machine?",
+            "...sentiste falta das arraias?",
+            "Conta-me: Como tu diferencias amigos de comida? Os ouriços são tão cabeça oca quanto um peixe.",
+            "Indagas a quem será que as lulas admiravam?",
+            "Perguntas-te que construiu a grande máquina?",
         ],
     },
     loss: [
-        "No matter. You will succeed in the future, no doubt.",
-        "Never give in. Never surrender. Empty platitudes, perhaps, but sound advice nonetheless.",
-        "Mistakes are filled with lessons. Learn never to repeat them.",
+        "Não importa. Vais ter êxito na próxima vez, sem dúvida.",
+        "Nunca desistas. Nunca te dê por vencide. Bordões vazios, possivelmente, mas um conselho sábio independentemente.",
+        "Erros são preenchidos de aprendizados. Aprenda a não os repetir.",
         /*         "How does it feel to know that everyone who trusted you has perished?",
         "Another world dies. Was this one significant to you?", */
-        "A sad event. There is plenty of time to redeem yourself.",
+        "Lamentável. Mas terás tempo para redimir-te.",
         /*         "What a pity. What a shame. I hear the mournful cries of a dying ocean.", */
-        "You can do better. You will do better. Believe.",
+        "Consegues melhor. Farás melhor. Acredita.",
         /*         "You wish to get back here so quickly?",
         "You and everything you knew has died. Perhaps not you. Perhaps not.", */
-        "One more try, perhaps?",
-        "Excellence is pure habit. We are what we repeatedly do. Try again, and do better.",
+        "Tenta outra vez, quem sabe?",
+        "A excelencia é um hábito. Somos o que sempre fazemos. Tenta de novo, e faça melhor.",
     ],
     generic: [
-        "There is no warmth or cold here. Only numbness.",
-        "What do you seek?",
-        "We are on the edge of infinity, peering into a boundless sea of potential.",
-        "You may not see me. Do not worry. I can see you.",
-        "What am I? Oh, it is not so important. Not so soon.",
-        "Is this the dream of a shark between worlds, or are the worlds a dream and this place your reality?",
-        "A crossroads. Decisions. Decisions that cannot be taken so lightly.",
-        "There are such sights to behold for the ones who can see here.",
-        "You are to the ocean what we are to the pathways.",
-        "You swim through liquid eternity. You are now, always, and forever.",
-        "The prodigal shark returns.",
-        "Your constant drive to continue fuels your capacity to overcome.",
-        "There is no space in this universe you cannot make your own.",
+        "Aqui não há calor, não há frio, não há dor. Apenas um torpor.",
+        "O que procuras?",
+        "Estamos na borda do infinito, contemplando um oceano de potencial.",
+        "Tu não me vês. Não te preocupa. Eu consigo te ver muito bem.",
+        "Quem sou eu? Ora, isso não é importante. Não agora.",
+        "Será isto um sonho de ume tubarão entre mundos, ou serão os mundos os sonhos e este lugar tua realidade?",
+        "Uma encruzilhada. Decisões. Decisões a serem tomadas seriamente.",
+        "Há cousas para se apreciar por aqueles que conseguem enxegar neste local.",
+        "És ao oceano o que somos às trilhas.",
+        "Nadas em infinidade líquida. Tu estás agora, sempre, e eternamente.",
+        "Ê tubarão pródigo retorna.",
+        "Tua perpétua vontade continua te levando a superar a ti mesmo.",
+        "Não há espaço neste universo que não consigas transformar em teu.",
     ],
 };

@@ -395,7 +395,6 @@ SharkGame.AspectTree = {
         tree.previousButton = button;
         requestAnimationFrame(tree.render);
     },
-
     render() {
         const context = tree.context;
         if (context === undefined) return;

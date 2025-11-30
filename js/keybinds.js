@@ -143,7 +143,7 @@ SharkGame.Keybinds = {
         keyID = this.composeKeys(keyID);
 
         const boundAction = this.keybinds[keyID];
-        if (this.bindMode && boundAction !== "bind home ocean button") {
+        if (this.bindMode && boundAction !== "fazer atalho para botão de ação") {
             if (_.isUndefined(modifiersEntry)) {
                 this.settingKey = keyID;
                 this.updateBindModeState();
@@ -164,7 +164,7 @@ SharkGame.Keybinds = {
         keyID = this.composeKeys(keyID);
 
         const boundAction = this.keybinds[keyID];
-        if (this.bindMode && boundAction !== "bind home ocean button") {
+        if (this.bindMode && boundAction !== "fazer atalho para botão de ação") {
             if (!isModifier) {
                 this.settingKey = keyID;
                 this.updateBindModeState();
@@ -206,7 +206,7 @@ SharkGame.Keybinds = {
                     // do nothing for now
                     // TODO: Implement this, I suppose
                     break;
-                case "bind home ocean button":
+                case "fazer atalho para botão de ação":
                     if (!this.bindModeLock) {
                         this.toggleBindMode(true);
                     }
@@ -214,27 +214,27 @@ SharkGame.Keybinds = {
                 case "close current pane":
                     SharkGame.PaneHandler.tryClosePane();
                     break;
-                case "pause":
+                case "pausar":
                     if (SharkGame.Aspects.meditation.level && !SharkGame.gameOver) {
                         res.pause.togglePause();
                     }
                     break;
-                case "switch to home tab":
+                case "mudar à aba do oceano":
                     SharkGame.TabHandler.keybindSwitchTab("home");
                     break;
-                case "switch to lab tab":
+                case "mudar à aba do laboratório":
                     SharkGame.TabHandler.keybindSwitchTab("lab");
                     break;
-                case "switch to grotto tab":
+                case "mudar à aba da gruta":
                     SharkGame.TabHandler.keybindSwitchTab("stats");
                     break;
-                case "switch to recycler tab":
+                case "mudar à aba da recicladora":
                     SharkGame.TabHandler.keybindSwitchTab("recycler");
                     break;
-                case "switch to gate tab":
+                case "mudar à aba do portal":
                     SharkGame.TabHandler.keybindSwitchTab("gate");
                     break;
-                case "switch to reflection tab":
+                case "mudar à aba do reflexo":
                     SharkGame.TabHandler.keybindSwitchTab("reflection");
                     break;
                 case "switch home button tab left":
@@ -247,7 +247,7 @@ SharkGame.Keybinds = {
                         home.changeButtonTab(home.getNextButtonTab());
                     }
                     break;
-                case "switch to buy 1":
+                case "mudar para comprar 1":
                     if (!$("#buy-1").hasClass("disabled")) {
                         SharkGame.Settings.current.buyAmount = 1;
                         $("#custom-input").attr("disabled", true);
@@ -255,7 +255,7 @@ SharkGame.Keybinds = {
                         $("#buy-1").addClass("disabled");
                     }
                     break;
-                case "switch to buy 10":
+                case "mudar para comprar 10":
                     if (!$("#buy-10").hasClass("disabled")) {
                         SharkGame.Settings.current.buyAmount = 10;
                         $("#custom-input").attr("disabled", true);
@@ -263,7 +263,7 @@ SharkGame.Keybinds = {
                         $("#buy-10").addClass("disabled");
                     }
                     break;
-                case "switch to buy 100":
+                case "mudar para comprar 100":
                     if (!$("#buy-100").hasClass("disabled")) {
                         SharkGame.Settings.current.buyAmount = 100;
                         $("#custom-input").attr("disabled", true);
@@ -271,7 +271,7 @@ SharkGame.Keybinds = {
                         $("#buy-100").addClass("disabled");
                     }
                     break;
-                case "switch to buy 1/3 max":
+                case "mudar para comprar 1/3 do max":
                     if (!$("#buy--3").hasClass("disabled")) {
                         SharkGame.Settings.current.buyAmount = -3;
                         $("#custom-input").attr("disabled", true);
@@ -279,7 +279,7 @@ SharkGame.Keybinds = {
                         $("#buy--3").addClass("disabled");
                     }
                     break;
-                case "switch to buy 1/2 max":
+                case "mudar para comprar 1/2 do max":
                     if (!$("#buy--2").hasClass("disabled")) {
                         SharkGame.Settings.current.buyAmount = -2;
                         $("#custom-input").attr("disabled", true);
@@ -287,7 +287,7 @@ SharkGame.Keybinds = {
                         $("#buy--2").addClass("disabled");
                     }
                     break;
-                case "switch to buy max":
+                case "mudar para comprar máximo":
                     if (!$("#buy--1").hasClass("disabled")) {
                         SharkGame.Settings.current.buyAmount = -1;
                         $("#custom-input").attr("disabled", true);
@@ -295,7 +295,7 @@ SharkGame.Keybinds = {
                         $("#buy--1").addClass("disabled");
                     }
                     break;
-                case "switch to buy custom":
+                case "mudar para comprar customizado":
                     if (!$("#buy-custom").hasClass("disabled")) {
                         SharkGame.Settings.current.buyAmount = "custom";
                         $("#custom-input").attr("disabled", false);
@@ -303,16 +303,16 @@ SharkGame.Keybinds = {
                         $("#buy-custom").addClass("disabled");
                     }
                     break;
-                case "open options":
+                case "abrir configurações":
                     if (!SharkGame.PaneHandler.isPaneAlreadyUp("Options")) {
                         SharkGame.PaneHandler.showOptions();
                     }
                     break;
-                case "save":
+                case "salvar":
                     SharkGame.Save.saveGame();
                     SharkGame.Log.addMessage("Saved game.");
                     break;
-                case "skip world":
+                case "":
                     if (!SharkGame.gameOver) {
                         SharkGame.TitleBar.skipLink.onClick();
                     }

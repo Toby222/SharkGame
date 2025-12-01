@@ -211,7 +211,7 @@ SharkGame.Keybinds = {
                         this.toggleBindMode(true);
                     }
                     break;
-                case "close current pane":
+                case "fechar painel aberto":
                     SharkGame.PaneHandler.tryClosePane();
                     break;
                 case "pausar":
@@ -237,12 +237,12 @@ SharkGame.Keybinds = {
                 case "mudar à aba do reflexo":
                     SharkGame.TabHandler.keybindSwitchTab("reflection");
                     break;
-                case "switch home button tab left":
+                case "trocar categoria de ações à esquerda":
                     if (SharkGame.Tabs.current === "home") {
                         home.changeButtonTab(home.getPreviousButtonTab());
                     }
                     break;
-                case "switch home button tab right":
+                case "trocar categoria de ações à direita":
                     if (SharkGame.Tabs.current === "home") {
                         home.changeButtonTab(home.getNextButtonTab());
                     }
@@ -317,22 +317,22 @@ SharkGame.Keybinds = {
                         SharkGame.TitleBar.skipLink.onClick();
                     }
                     break;
-                case "toggle idle time use":
+                case "ativar/desativar uso do tempo extra":
                     if (SharkGame.persistentFlags.everIdled && !SharkGame.gameOver) {
                         res.minuteHand.toggleMinuteHand();
                     }
                     break;
-                case "return all tokens":
+                case "retirar todas as fichas":
                     _.each(res.tokens.list, (token) => {
                         res.tokens.tryReturnToken(null, false, token);
                     });
                     break;
-                case "buy topmost upgrade":
+                case "comprar melhoria do topo":
                     if (!cad.pause && !cad.stop) {
                         SharkGame.Lab.onLabButton(SharkGame.Lab.findAllAffordableUpgrades()[0]);
                     }
                     break;
-                case "press all buying buttons":
+                case "apertar todos os botões de compra":
                     if (!SharkGame.flags.pressedAllButtonsThisTick) {
                         _.each(home.buttonNamesList, (actionName, actionData) => {
                             // actionData gets immediately overwritten because
@@ -346,7 +346,7 @@ SharkGame.Keybinds = {
                         SharkGame.flags.pressedAllButtonsThisTick = true;
                     }
                     break;
-                case "enter gate":
+                case "entrar no portal":
                     if (SharkGame.Gate.shouldBeOpen()) {
                         SharkGame.Gate.enterGate();
                     }
@@ -369,7 +369,7 @@ SharkGame.Keybinds = {
 
     bindMenuNewBind(keyID) {
         this.waitForKey = false;
-        this.addKeybind(keyID, "nothing");
+        this.addKeybind(keyID, "nada");
         // just remake the whole pane
         SharkGame.PaneHandler.nextPaneInStack();
         SharkGame.PaneHandler.showKeybinds();
@@ -390,13 +390,13 @@ SharkGame.Keybinds = {
 
             textConatiner.append($("<h1>").html("ACTION BIND MODE"));
             if (_.isUndefined(this.settingAction) && _.isUndefined(this.settingKey)) {
-                textConatiner.append($("<p>").html("<strong>Click the button you want to bind, then press a key to bind it to.</strong>"));
+                textConatiner.append($("<p>").html("<strong>Clque numaação e então aperte na tecla que você quer conectar.</strong>"));
             } else if (!_.isUndefined(this.settingAction) && _.isUndefined(this.settingKey)) {
-                textConatiner.append($("<p>").html(`<strong>Press a key to bind to ${this.cleanActionID(this.settingAction)}.</strong>`));
+                textConatiner.append($("<p>").html(`<strong>Aperte na tecla para conectá-la a ${this.cleanActionID(this.settingAction)}.</strong>`));
             } else if (_.isUndefined(this.settingAction) && !_.isUndefined(this.settingKey)) {
-                textConatiner.append($("<p>").html(`<strong>Click a button to bind to ${this.settingKey}.</strong>`));
+                textConatiner.append($("<p>").html(`<strong>Clique numa ação para conectá-la a ${this.settingKey}.</strong>`));
             } else {
-                textConatiner.append($("<p>").html(`<strong>Bound ${this.settingKey} to ${this.cleanActionID(this.settingAction)}.</strong>`));
+                textConatiner.append($("<p>").html(`<strong>${this.settingKey} agora ativa ${this.cleanActionID(this.settingAction)}.</strong>`));
             }
 
             $("#overlay").append(textConatiner);

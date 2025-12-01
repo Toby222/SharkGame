@@ -2991,20 +2991,20 @@ SharkGame.HomeActions = {
                 "Um Tubarão Elefante se junta a você.",
                 "Uma Quimera Cubana se junta a você.",
                 "Uma Quimera Leopardo se junta a você.",
-                "A marbled ghostshark joins you.",
-                "A striped rabbitfish joins you.",
-                "A large-eyed rabbitfish joins you.",
-                "A spookfish joins you.",
-                "A dark ghostshark joins you.",
-                "A purple chimaera joins you.",
-                "A pointy-nosed blue chimaera joins you.",
-                "A giant black chimaera joins you.",
-                "A smallspine spookfish joins you.",
-                "A pacific longnose chimaera joins you.",
-                "A dwarf sicklefin chimaera joins you.",
-                "A sicklefin chimaera joins you.",
-                "A paddle-nose chimaera joins you.",
-                "A straightnose rabbitfish joins you.",
+                "Uma Quimera Púrpura se junta a você.",
+                "Uma Quimera do Oceano Pacífico se junta a você.",
+                "Uma Quimera Lusitana se junta a você.",
+                "Uma Quimera Americana se junta a você.",
+                "Uma Quimera de Nove Manchas se junta a você.",
+                "Uma Quimera de Carpenter se junta a você.",
+                "Um Peixe Espantalho de Nariz Estreito da Australásia se junta a você. Ufa, que nome.",
+                "Uma Quimera de Nariz Comprido se junta a você.",
+                "Uma Quimera Fantasma Australiana se junta a você.",
+                "Uma Quimera Antártica se junta a você.",
+                "Uma Quimera do Cabo se junta a você.",
+                "Uma Quimera Prateada se junta a você.",
+                "Uma Quimera Africana se junta a você.",
+                "Uma Quimera de Owston se junta a você.",
             ],
             multiOutcomes: [
                 "Muitas quimeras vêm das profundezas.",
@@ -3022,7 +3022,7 @@ SharkGame.HomeActions = {
         // SHARK JOBS ////////////////////////////////////////////////////////////////////////////////
 
         getDiver: {
-            name: "Prepare diver shark",
+            name: "Preparar um tubarão mergulhador",
             effect: {
                 resource: {
                     diver: 1,
@@ -3039,19 +3039,20 @@ SharkGame.HomeActions = {
                 },
             },
             outcomes: [
-                "Well, better you than me.",
-                "Good luck down there!",
-                "You're doing good work for us, diver shark.",
-                "Fare well on your expeditions, shark!",
+                "Melhor você indo do que eu.",
+                "Boa sorte lá embaixo!",
+                "Estaremos esperando ansiosamente pela sua volta.",
+                "Você está fazendo um ótimo trabalho, mergulhador.",
+                "Fica com deus na sua aventura, tubarão!",
             ],
             multiOutcomes: [
-                "Follow the crystals!",
-                "We will find the secrets of the deep!",
-                "Brave the deep!",
-                "Find the crystals for science!",
-                "Deep, dark, scary waters. Good luck, all of you.",
+                "Sigam os cristais!",
+                "Descobriremos o que as profundezas guardam para nós.",
+                "Desbravem o abismo!",
+                "Tragam-nos os cristais pela ciéncia!",
+                "Águas escuras, isoladas e medonhas. Que Deus proteja todos vocês.",
             ],
-            helpText: "Let a shark go deep into the darkness for more crystals and whatever else they may find.",
+            helpText: "Faça um tubarão adentrar águas profundas em busca de cristais e qualquer coisa mais for achado.",
         },
 
         getScientist: {
@@ -3164,7 +3165,7 @@ SharkGame.HomeActions = {
         },
 
         getScholar: {
-            name: "Train ray scholar",
+            name: "Alfabetizar arraia estudiosa",
             effect: {
                 resource: {
                     scholar: 1,
@@ -3179,28 +3180,28 @@ SharkGame.HomeActions = {
                 upgrade: ["arcaneStudy"],
             },
             outcomes: [
-                "Study buddy!",
-                "Another scholar receives their doctorate in magical stuff.",
-                "The ray receives their degree.",
-                "The ray receives a certificate.",
-                "Ray, ready to learn!",
-                "Congratulations buddy, you've earned the right to speculate about weird fragment thingies!",
+                "Estudo dos pontudo!",
+                "Outro estudioso defende uma tese de doutorado sobre coisas mágicas.",
+                "A arraia ganhou permissão para estudar magia.",
+                "A arraia recebe seu certificado.",
+                "Arraia, pronta para estudar!",
+                "Parabéns mano, seu trabalho agora é especular em cima de pedaços estranhos de coisinhos brilhante!",
             ],
             multiOutcomes: [
-                "No, not ray scientists, scholars!",
-                "Curious minds begin to tinker and toy with the strange substance that composes arcana.",
+                "Não, não são arraias cientistas, são arraias estudantes!",
+                "Criaturas curiosas começam a mexer e testar com as substâncias estranhas que formam a arcana.",
                 "Just how much is there to learn about this stuff?",
-                "They don't do science. They do study.",
-                "The other side of the coin of research.",
-                "The scientists and the scholars rarely collaborate, so they form their own schools.",
+                "Eles não produzem ciência. Eles estudam.",
+                "O outro lado da pesquisa.",
+                "Os cientistas e os estudiosos quanse nunca colaboram, então cada um forma sua própria ciência.",
             ],
-            helpText: "Train a ray to study the mystical properties of arcana.",
+            helpText: "Ensine uma arraia como estudar as propriedades mágicas da arcana.",
         },
 
         // EEL JOBS ////////////////////////////////////////////////////////////////////////////////
 
         getPit: {
-            name: "Dig eel pit",
+            name: "Cavar um poço de enguia",
             effect: {
                 resource: {
                     pit: 1,
@@ -3219,10 +3220,10 @@ SharkGame.HomeActions = {
                 upgrade: ["eelHabitats"],
             },
             outcomes: [
-                "Why does it take three eels? Oh well. We don't really need to know.",
-                "Dig that pit. We can dig it.",
+                "Why does it take three eels? Ãh, acho melhor continuar sem saber.",
+                "Eu sou um tubarão e estou cavando um buraco.",
                 "Let's get digging.",
-                "Oh, hey, this hole's already empty. Well, isn't that something.",
+                "Ah, olha só, já achamos esse buraco vazio. Bem, mas que conveniente.",
             ],
             multiOutcomes: [
                 "Let's get digging.",

@@ -672,7 +672,7 @@ SharkGame.HomeActions = {
                 "Tantos caranguejos.",
                 "É com tristeza que digo: Uma siririca não é um conjunto de siris.",
             ],
-            helpText: "Recrute um caranguejo (ou siri) para pegar coisas que tubarões to find things that sharks and rays overlook.",
+            helpText: "Recrute um caranguejo (ou siri) para pegar coisas que tubarões e arraias deixam passar.",
         },
 
         // SHARK JOBS ////////////////////////////////////////////////////////////////////////////////
@@ -2464,7 +2464,7 @@ SharkGame.HomeActions = {
                     shark: 6,
                 },
             },
-            helpText: "Hire a crab to find things that sharks overlook.",
+            helpText: "Recrute um caranguejo (ou siri) para pegar coisas que tubarões deixam passar.",
         },
 
         getUrchin: {
@@ -2904,7 +2904,7 @@ SharkGame.HomeActions = {
         },
 
         getEel: {
-            name: "Hire eel",
+            name: "Empregar enguia.",
             effect: {
                 resource: {
                     eel: 1,

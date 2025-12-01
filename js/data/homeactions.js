@@ -3022,7 +3022,7 @@ SharkGame.HomeActions = {
         // SHARK JOBS ////////////////////////////////////////////////////////////////////////////////
 
         getDiver: {
-            name: "Preparar um tubarão mergulhador",
+            name: "Equipar um tubarão mergulhador",
             effect: {
                 resource: {
                     diver: 1,
@@ -3220,20 +3220,22 @@ SharkGame.HomeActions = {
                 upgrade: ["eelHabitats"],
             },
             outcomes: [
-                "Why does it take three eels? Ãh, acho melhor continuar sem saber.",
+                "Por que que precisa de três enguias? Ãh, talvez seja melhor continuar sem saber.",
                 "Eu sou um tubarão e estou cavando um buraco.",
-                "Let's get digging.",
+                "Hora da caventura!",
+                "Ok, talvez eu tenha feito um poço grande demais.",
+                "Esse buraco é um pouco pequeno, mas as enguias cabem direitinho.",
                 "Ah, olha só, já achamos esse buraco vazio. Bem, mas que conveniente.",
             ],
             multiOutcomes: [
-                "Let's get digging.",
-                "Eel tide rises.",
-                "More eels! They're handy to have.",
-                "Many eyes from the caves.",
-                "Secret homes!",
-                "The eels are content.",
+                "Hora da caventura.",
+                "A onda enguiática cresce.",
+                "E se ao invés de vários buraquinhos, nós fizéssemos um buracão enorme?",                "Mais enguias! Quanto mais, melhor.",
+                "Olhos te observam dos buracos.",
+                "Casinhas secretas!",
+                "As enguias estão contentes.",
             ],
-            helpText: "Find a suitable pit for eels to make more eels.",
+            helpText: "Faça um poço adequado para convencer as enguias a criarem mais enguias.",
         },
 
         getSifter: {
@@ -3253,13 +3255,13 @@ SharkGame.HomeActions = {
             },
             outcomes: [
                 "Eel sifter ready to find things!",
-                "Eel ready to sift through the sands!",
+                "Enguia está pronta para garimpar a areia!",
                 "Time to sift, eel. Time to seek, search and sift.",
                 "Time for this little guy to find some goodies.",
             ],
             multiOutcomes: [
                 "Time to find the things!",
-                "Sift. It's a fun word. Siiiiffft.",
+                "Essa enguia significa grarimpo! Gra! Rim! Po!",
                 "Sifters scouring the seabed for some special stuff.",
                 "Shifters ready to shift! Wait. No. Hang on.",
                 "Sifting the seabed for scores of surprises!",

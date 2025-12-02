@@ -794,7 +794,7 @@ SharkGame.HomeActions = {
         // RAY JOBS ////////////////////////////////////////////////////////////////////////////////
 
         getLaser: {
-            name: "Equipar uma arraia laser",
+            name: "Dar laser para uma arraia",
             effect: {
                 resource: {
                     laser: 1,
@@ -872,7 +872,7 @@ SharkGame.HomeActions = {
         */
 
         getMaker: {
-            name: "Instruir um criador de arraias",
+            name: "Instruir criador de arraias",
             effect: {
                 resource: {
                     maker: 1,
@@ -3056,7 +3056,7 @@ SharkGame.HomeActions = {
         },
 
         getScientist: {
-            name: "Train science shark",
+            name: "Treinar tubarão cientista",
             effect: {
                 resource: {
                     scientist: 1,
@@ -3074,27 +3074,31 @@ SharkGame.HomeActions = {
                 },
             },
             outcomes: [
-                "Doctor Shark, coming right up!",
-                "A scientist shark is revealed!",
-                "After many painful years of study, a shark that has developed excellent skills in making excuses-- er, in science!",
-                "PhD approved!",
-                "Graduation complete!",
-                "A new insight drives a new shark to take up the cause of science!",
+                "Doutor tubarão, pronto para o trabalho!",
+                "Um tubarão cientista foi treinado!",
+                "Depois de anos de estudo árduo, um tubarão desevolveu abilidades únicas em inventar menti-- quer dizer, em ciência!",
+                "Projeto de doutorado aprovado!",
+                "Mais um graduado!",
+                "A ciência ganhou mais um soldado!",
+                "Mais um tubarão dedicando anos de sua vida para o progresso científico!",
+                "Uma nova epifania leva um tubarão a se dedicar pela causa científica!",
             ],
             multiOutcomes: [
-                "The training program was a success!",
-                "Look at all this science!",
-                "Building a smarter, better shark!",
-                "Beakers! Beakers underwater! It's madness!",
-                "Let the science commence!",
-                "Underwater clipboards! No I don't know how that works either!",
+                "O programa de cotas foi um sucesso!",
+                "Olha só toda essa ciência!",
+                "Construindo um cardume melhor e mais esperto.",
+                "Balões! Balões volumétricos debaixo d'água! Que loucura é essa?!",
+                "Conhecimento se alastra pelo cardume!",
+                "Mais uma remessa de pranchetas aquáticas! Não tem nenhuma diferença de pranchetas comuns.",
                 "Careful teeth record the discoveries!",
+                "Fizemos uma festa de colação de grau para uma nova turma.",
+                "Um novo time de pesquisa foi criado.",
             ],
-            helpText: "Train a shark in the fine art of research and the science of, well, science.",
+            helpText: "Treine um tubarão na arte da pesquisa e na ciência de... bem, da ciência.",
         },
 
         getNurse: {
-            name: "Train nurse shark",
+            name: "Treinar tubarão enfermeiro",
             effect: {
                 resource: {
                     nurse: 1,
@@ -3112,26 +3116,29 @@ SharkGame.HomeActions = {
                 upgrade: ["biology"],
             },
             outcomes: [
-                "A nurse shark is ready!",
-                "Shark manufacturer primed.",
-                "Nurse shark trained.",
-                "Medical exam passed! Nurse shark is go!",
+                "Um tubarão enfermeiro foi treinado!",
+                "Fazedor de tubarão pronto.",
+                "Finalmente alguém para ajudar nos partos.",
+                "Foram anos de estudo para formar este enfermeiro.",
+                "A residência foi difícil. Mas este tubarão teve vocação.",
+                "Ajudar os vulneráveis e enfermos é a maior vocação que se pode ter.",
             ],
             multiOutcomes: [
-                "More sharks are on the way soon.",
-                "Shark swarm begins!",
-                "There will be no end to the sharks!",
-                "Sharks forever!",
-                "The sharks will never end. The sharks are eternal.",
-                "More sharks to make more sharks to make more sharks...",
+                "Mais tubarões estão a caminho.",
+                "Quem sabe agora a fila para ser atendido ande.",
+                "O enxame começou!",
+                "Tubarões para todo sempre!",
+                "Tubarões infinitos!",
+                "Não haverá fim aos tubarões, nós somos eternos!",
+                "Mais tubarões fazem mais tubarões fazem mais tubarões fazem mais...",
             ],
-            helpText: "Remove a shark from fish duty and set them to shark making duty.",
+            helpText: "Remova um tubarão do trabalho de caça e coloque-o para fazer tubarõezinhos.",
         },
 
         // RAY JOBS ////////////////////////////////////////////////////////////////////////////////
 
         getMaker: {
-            name: "Instruct a ray maker",
+            name: "Instruir criador de arraias",
             effect: {
                 resource: {
                     maker: 1,
@@ -3149,19 +3156,20 @@ SharkGame.HomeActions = {
                 upgrade: ["rayBiology"],
             },
             outcomes: [
-                "More rays lets you get more rays which you can then use to get more rays.",
-                "The ray singularity begins!",
-                "A ray maker is ready.",
-                "Looks like you gave them quite the ray maker blow! 'Them' being the intangible enemy that is lacking in resources.",
-                "The ray seems concerned, but obliges. The mission has been given.",
+                "Mais arraias para você conseguir mais arraias que você usa para mais arraia.",
+                "A singul-arraia-dade começou!",
+                "Um criador de arraias foi treinado.",
+                "[Esta piada é intraduzível]",
+                "A arraia parece consternada, mas obedece. Missão dada é missão comprida.",
             ],
             multiOutcomes: [
-                "All these makers. What are they making? What is it for? Oh. It's rays, and it's probably for sand or something.",
-                "More ray makers means more rays. Do you understand what that means?! Do you?! It means more rays. Good. On the same page, then.",
-                "Rapidly breeding aquatic wildlife is probably a severe ecological hazard. Good thing this isn't Earth's oceans, probably!",
-                "Have you ever thought about what the rays wanted? Because this might have been what they wanted after all.",
+                "Todos esse criadores. O que estão criandondE para que vai servir? Ah, tendi. Estão criando arraias. E elas vão servir para pega areia ou algo assim.",
+                "Mais criadores de arraias significa a mais arraias. Sabe o que isso quer dizer?! Sabe?! Quer dizer mais arraias. Bom. Nós concordamos, então.",
+                "A procriação desenfrada de animais provavelmente traz um risco ao ecossistema. Que bom que esses não são os oceanos da Terra, eu acho.",
+                "Você já pensou em qual é o desejo das arraias? Porque talvez esse fosse o que elas sempre desejaram, na verdade.",
+                "MAIS ARRAIAS LASER PARA O EXÉRCI-- ah. Tá, isso também é aceitável.",
             ],
-            helpText: "Remove a ray from sand business and let them concentrate on making more rays.",
+            helpText: "Tire uma arraia do setor de areia para que ele possa se concentrar em fazer mais arraias.",
         },
 
         getScholar: {
@@ -3268,7 +3276,7 @@ SharkGame.HomeActions = {
                 "Garimpeiro fuçando a areia em busca de preciosidades.",
                 "Grimpeiros prontos para grimpar! Pera. Não, tem algo errado.",
                 "Peneirando o solo por um acervo de surpresas!",
-                "É quase uma caça ao tesouro."
+                "É quase uma caça ao tesouro.",
             ],
             helpText: "Especialise uma enguia no trabalho de corno que é achar coisas legais em meio à areia.",
         },
@@ -3318,7 +3326,7 @@ SharkGame.HomeActions = {
 
         getAutoTransmuter: {},
     },
-    
+
     marine: {
         catchFish: {},
 
@@ -3987,7 +3995,7 @@ SharkGame.HomeActions = {
         // RAY JOBS ////////////////////////////////////////////////////////////////////////////////
 
         getMaker: {
-            name: "Instruct a ray maker",
+            name: "Instruir criador de arraias",
             effect: {
                 resource: {
                     maker: 1,
@@ -4005,19 +4013,20 @@ SharkGame.HomeActions = {
                 upgrade: ["rayBiology"],
             },
             outcomes: [
-                "More rays lets you get more rays which you can then use to get more rays.",
-                "The ray singularity begins!",
-                "A ray maker is ready.",
-                "Looks like you gave them quite the ray maker blow! 'Them' being the intangible enemy that is lacking in resources.",
-                "The ray seems concerned, but obliges. The mission has been given.",
+                "Mais arraias para você conseguir mais arraias que você usa para mais arraia.",
+                "A singul-arraia-dade começou!",
+                "Um criador de arraias foi treinado.",
+                "[Esta piada é intraduzível]",
+                "A arraia parece consternada, mas obedece. Missão dada é missão comprida.",
             ],
             multiOutcomes: [
-                "All these makers. What are they making? What is it for? Oh. It's rays, and it's probably for sand or something.",
-                "More ray makers means more rays. Do you understand what that means?! Do you?! It means more rays. Good. On the same page, then.",
-                "Rapidly breeding aquatic wildlife is probably a severe ecological hazard. Good thing this isn't Earth's oceans, probably!",
-                "Have you ever thought about what the rays wanted? Because this might have been what they wanted after all.",
+                "Todos esse criadores. O que estão criandondE para que vai servir? Ah, tendi. Estão criando arraias. E elas vão servir para pega areia ou algo assim.",
+                "Mais criadores de arraias significa a mais arraias. Sabe o que isso quer dizer?! Sabe?! Quer dizer mais arraias. Bom. Nós concordamos, então.",
+                "A procriação desenfrada de animais provavelmente traz um risco ao ecossistema. Que bom que esses não são os oceanos da Terra, eu acho.",
+                "Você já pensou em qual é o desejo das arraias? Porque talvez esse fosse o que elas sempre desejaram, na verdade.",
+                "MAIS ARRAIAS LASER PARA O EXÉRCI-- ah. Tá, isso também é aceitável.",
             ],
-            helpText: "Remove a ray from sand business and let them concentrate on making more rays.",
+            helpText: "Tire uma arraia do setor de areia para que ele possa se concentrar em fazer mais arraias.",
         },
 
         getShoveler: {

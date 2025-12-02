@@ -3230,7 +3230,8 @@ SharkGame.HomeActions = {
             multiOutcomes: [
                 "Hora da caventura.",
                 "A onda enguiática cresce.",
-                "E se ao invés de vários buraquinhos, nós fizéssemos um buracão enorme?",                "Mais enguias! Quanto mais, melhor.",
+                "E se ao invés de vários buraquinhos, nós fizéssemos um buracão enorme?",
+                "Mais enguias! Quanto mais, melhor.",
                 "Olhos te observam dos buracos.",
                 "Casinhas secretas!",
                 "As enguias estão contentes.",
@@ -3239,7 +3240,7 @@ SharkGame.HomeActions = {
         },
 
         getSifter: {
-            name: "Train eel sifter",
+            name: "Ensinar enguias a garimpar",
             effect: {
                 resource: {
                     sifter: 1,
@@ -3254,25 +3255,28 @@ SharkGame.HomeActions = {
                 upgrade: ["arcaneSifting"],
             },
             outcomes: [
-                "Eel sifter ready to find things!",
+                "Este garimpeiro irá achar recursos!",
                 "Enguia está pronta para garimpar a areia!",
-                "Time to sift, eel. Time to seek, search and sift.",
-                "Time for this little guy to find some goodies.",
+                "Dos mesmos criadores de secar gelo: Agora estamos peneirando areia.",
+                "Acorda, enguia. Segunda-feira já chegou. Hora do garimpo.",
+                "Tá na hora de você, enguia, brilhar.. Literalmente.",
+                "É o momento desse carinha comprido nos conseguir vários coisinhos.",
             ],
             multiOutcomes: [
-                "Time to find the things!",
+                "Hora de achar coisas!",
                 "Essa enguia significa grarimpo! Gra! Rim! Po!",
-                "Sifters scouring the seabed for some special stuff.",
-                "Shifters ready to shift! Wait. No. Hang on.",
-                "Sifting the seabed for scores of surprises!",
+                "Garimpeiro fuçando a areia em busca de preciosidades.",
+                "Grimpeiros prontos para grimpar! Pera. Não, tem algo errado.",
+                "Peneirando o solo por um acervo de surpresas!",
+                "É quase uma caça ao tesouro."
             ],
-            helpText: "Specialise an eel in finding interesting things on the seabed.",
+            helpText: "Especialise uma enguia no trabalho de corno que é achar coisas legais em meio à areia.",
         },
 
         // CHIMAERA JOBS ////////////////////////////////////////////////////////////////////////////////
 
         getExplorer: {
-            name: "Prepare chimaera explorer",
+            name: "Preparar quimera exploradora",
             effect: {
                 resource: {
                     explorer: 1,
@@ -3287,20 +3291,21 @@ SharkGame.HomeActions = {
                 upgrade: ["abyssalEnigmas"],
             },
             outcomes: [
-                "A seeker of mysteries is prepared.",
-                "The chimaera explorer is ready for their journey.",
-                "Explorer ready for some answers!",
-                "The chimaera swims down to the ocean below.",
+                "Um procurador de mistérios foi preparado.",
+                "A quimera exploradora se arruma para sua jornada.",
+                "Explorador pronto para trazer respostas!",
+                "A quimera se aprofunda no oceano.",
+                "Com sua marmita junto dela, a quimera começa explorar.",
             ],
             multiOutcomes: [
-                "The exploration party is ready.",
-                "Learn the secrets of the deeps!",
-                "More mysteries to uncover.",
-                "Ancient riddles for ancient creatures.",
-                "Find the truth beneath the waves!",
+                "O time de exploração se apronta.",
+                "Hora de descobrir os segredos das profundezas!",
+                "Mais mistérios para desvendar.",
+                "Enigmas ancestrais para criaturas anciãs.",
+                "Achem a verdade sob a escuridão!",
             ],
             helpText:
-                "Help prepare a chimaera for exploration to parts unknown in search of the mysterious and elusive arcana.",
+                "Ajude a preparar uma quimera para explorar mares estranhos em busca de espólios arcanos.",
         },
 
         // SHARK MACHINES ////////////////////////////////////////////////////////////////////////////////
@@ -3313,6 +3318,7 @@ SharkGame.HomeActions = {
 
         getAutoTransmuter: {},
     },
+    
     marine: {
         catchFish: {},
 
@@ -3473,7 +3479,7 @@ SharkGame.HomeActions = {
         },
 
         fuseCalcinium: {
-            name: "Fuse stuff to calcinium",
+            name: "Fundir calcinício",
             effect: {
                 resource: {
                     calcinium: 1,
@@ -3500,17 +3506,18 @@ SharkGame.HomeActions = {
                 upgrade: ["calciniumStudies"],
             },
             outcomes: [
-                "Fusion complete.",
-                "Clams sacrificed.",
-                "The fresh calcinium boils the water around it as it cools.",
-                "The clams and crystals meld together into a single unit.",
-                "The structures of the clams and crystals interlock, then solidify.",
-                "Bits of debris shoot out, glowing with heat as two become one.",
-                "Onlookers watch in awe as the lightshow goes on.",
-                "The pearl works its magic.",
-                "Completed fusion.",
+                "Fusão feita.",
+                "Fusão mexilhão.",
+                "Mexilhões sacrificados.",
+                "Uma nova fornada de calcinício ferve a água a sua volta enquanto esfria.",
+                "Os mexilhões e cristais se juntam em algo único.",
+                "A estrutura de conchas e de cristais se ligam e misturam, então solidificam.",
+                "Pedaços de detritos se soltam, brilhando de calor enquanto vários pedaços viram um.",
+                "Espectadores assistem incrédulos quanto o show de cores e formas acontecendo em sua frente.",
+                "A pérola (e o mexilhão em volta) viram o que têm que virar.",
+                "Processo terminado.",
             ],
-            helpText: "Smelt resources into calcinium for use in crustacean machines.",
+            helpText: "Derreta recursos para fazer calcinício para uso em máquinas crustáceas.",
         },
 
         // BUY ANIMALS ////////////////////////////////////////////////////////////////////////////////
@@ -3550,7 +3557,7 @@ SharkGame.HomeActions = {
                 "A crawdad joins you.",
             ],
             multiOutcomes: [
-                "Lobsters lobsters lobsters lobsters.",
+                "Lagostas lagostas lagostas lagostas.",
                 "But they weren't rocks...",
                 "The clam forecast is looking good!",
                 "They're all about the clams!",

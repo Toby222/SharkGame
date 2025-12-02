@@ -3640,7 +3640,7 @@ SharkGame.HomeActions = {
         getBrood: {},
 
         getSeabedStripper: {
-            name: "Equip seabed stripper",
+            name: "Aparamentar desmatador oceânico",
             effect: {
                 resource: {
                     seabedStripper: 1,
@@ -3658,31 +3658,31 @@ SharkGame.HomeActions = {
                 upgrade: ["calciniumRobotics"],
             },
             outcomes: [
-                "Planter has been upgraded.",
-                "Seabed stripper, ready to destroy the forests.",
-                "One seabed stripper, ready to pretend to be a sea spider.",
-                "One snippy crab coming right up.",
-                "Snip.",
-                "The crab gestures with all its claws.",
-                "Promoted a planter.",
-                "Improved a planter.",
+                "Plantador melhorado.",
+                "Desmatador oceânico, pronto para desmatar o oceano.",
+                "Um desmatador oceânico... fingindo ser uma aranha marinha.",
+                "Um caranguejo cheio de garras, é pra já!",
+                "Clic.",
+                "O siri começa a mexer todos seus novos membros.",
+                "Plantador promovido.",
+                "Plantador aprimorado.",
             ],
             multiOutcomes: [
-                "Snip snip snip.",
+                "Clic clac clic clac clic.",
                 "The claws rip into kelp like a synchronized dance.",
-                "The sound of plants ripping fills the water.",
-                "Directive: extract kelp from forests.",
-                "Many small snippers come to life and begin snipping through kelp at incredible speed.",
-                "The crabs join another group headed out in search of new forests.",
-                "Too many arms, honestly.",
+                "O som de plantas sendo arrancadas ecoa pelo oceano.",
+                "Ordens: extrair alga das florestas.",
+                "Muitas garrinhas acordam à vida e começam a cortar alga em velocidade recorde.",
+                "Os siris juntam outro grupo de desmatadores em busca de uma nova floresta.",
+                "Honestamente, acho que isso é braço demais.",
             ],
-            helpText: "Equip a planter with many additional arms for maximum efficiency.",
+            helpText: "Incorporar muitos braços extras em um caraguejo em busca de eficiência máxima.",
         },
 
         // LOBSTER JOBS ////////////////////////////////////////////////////////////////////////////////
 
         getBerrier: {
-            name: "Form lobster berrier",
+            name: "Formar lagosta ovada",
             effect: {
                 resource: {
                     berrier: 1,
@@ -3700,19 +3700,20 @@ SharkGame.HomeActions = {
                 upgrade: ["crustaceanBiology"],
             },
             outcomes: [
-                "We didn't need to see the process behind this.",
-                "One lobster brimming with eggs to go.",
-                "It's like some weird counterpart to the planter crab. But with eggs.",
-                "Lobster with rocks ready to make a move. Oh, okay, eggs, whatever, see, they look like shiny pebbles from a distance and... oh, forget it.",
+                "Nós não precisávamos ver como isso acontecia.",
+                "Uma lagosta cheio de ovinhos prontos para serem chocados.",
+                "E a lagosta sortuda a ser caviada é..."
+                "Como assim o correto é ovada? Tipo, jogaram ovos na lagosta? É aniversário dela?",
+                "Lagosta com caviar pronta. Tá, certo, ova, tá bom, entendi. É só que elas parecem caviar, só que menores e mais deles e... ah, tanto faz, esquece.",
             ],
             multiOutcomes: [
-                "Berrier isn't even a word!",
-                "Berries and eggs aren't even the same thing!",
-                "How do these things swim with this much weighing them down?",
-                "We aren't running out of volunteers any time soon.",
-                "Did you see them fight for this job? Claws everywhere, I tell you!",
+                "Caviada não é nem um palavra!",
+                "Caviar e ovos não sãonem a mesma coisa!",
+                "Como que esses bichos nadam com tanto ovo colado neles?",
+                "Podemos não ter mais recurso, mas o que não vai faltar são voluntários para serem ovados.",
+                "Você viu elas brigando por essas vagas de trabalho? Maluco, era garra para todo lado!",
             ],
-            helpText: "Dedicate a lobster to egg production. We don't know how it works. Ask the lobsters.",
+            helpText: "Escolha uma lagosta voluntária para produzir ovos. Não sabemos como isso funciona. Pergunte a uma lagosta.",
         },
 
         // SHARK MACHINES ////////////////////////////////////////////////////////////////////////////////
@@ -3728,7 +3729,7 @@ SharkGame.HomeActions = {
         // CRUSTACEAN MACHINES /////////////////////////////////////////////////////////
 
         getCalciniumConverter: {
-            name: "Assemble calcinium converter",
+            name: "Montar conversor de calcinício",
             effect: {
                 resource: {
                     calciniumConverter: 1,
@@ -3746,25 +3747,26 @@ SharkGame.HomeActions = {
                 upgrade: ["calciniumCybernetics"],
             },
             outcomes: [
-                "One lobster-turned-cyborg coming right up.",
-                "Incoming cyborg.",
-                "Lobster has been augmented.",
-                "The lobster gets to work immediately.",
-                "The lobster ignores your presence as it searches for materials.",
-                "The converter begins to convert.",
-                "The converter asks for materials.",
+                "Uma lagosta-ciborgue saindo da linha de montagem.",
+                "Ciborgue funcionando.",
+                "Uma lagosta se aperfeiçoou.",
+                "A lagosta começa o seu trabalho imediatamente.",
+                "A lagosta ignora você, procurando materiais.",
+                "O conversor começa sua conversão.",
+                "O conversor demanda materiais",
             ],
             multiOutcomes: [
-                "Lasers charged.",
-                "Fusion beams ready.",
-                "Future!?",
-                "Directive: automate.",
+                "Lasers carregados.",
+                "Os raios de fusão brilham.",
+                "Futuro!?",
+                "Ordens: automatizar.",
                 "Setting phasers to fuse...",
-                "The power of the sun in an attached limb!",
-                "Focus. Focus. Come on...fuse!",
-                "Two becomes one.",
+                "A força do sol em um órgão mecânico!",
+                "Foquem. Foquem. Se preparem...fundam!",
+                "Dois se tornam um.",
+                "Uma raça nova de lagostas.",
             ],
-            helpText: "Modify a lobster to fuse calcinium with cool cyborg laser beams.", // This crustacean machine distributes lobster eggs for optimal hatching conditions.
+            helpText: "Modifique uma lagosta para fundir calcinício com seus raios a laser super estilosos a lobster.", // This crustacean machine distributes lobster eggs for optimal hatching conditions.
         },
     },
     volcanic: {
@@ -3912,11 +3914,11 @@ SharkGame.HomeActions = {
                 upgrade: ["secretSmelting"],
             },
             outcomes: [
-                "Porite smelted!",
-                "Porite melted! No. Wait.",
-                "How does sponge become part of glass? Well, you see, it's all very simple, or that's what the shrimp told me.",
+                "Porita fundida!",
+                "Porita f*****! Ai, mil perdões, saiu sem querer",
+                "Como que esponja vira parte do vidro? Então, perceba, é bem simples, pelo menos é isso que os camarões me contaram.",
                 "The backbo-- the exoskeleton of the shrimp industry!",
-                "So fragile. Yet so useful.",
+                "Tão frágil. Mas tão útil.",
             ],
             helpText: "Smelt resources into porite for use in shrimp tools!",
         },
@@ -3940,7 +3942,7 @@ SharkGame.HomeActions = {
         },
 
         getShrimp: {
-            name: "Acquire shrimp",
+            name: "Trazer camarão",
             effect: {
                 resource: {
                     shrimp: 1,
@@ -3991,7 +3993,7 @@ SharkGame.HomeActions = {
                 "So many shrimp, it's like a cloud!",
                 "I can't cope with this many shrimp!",
                 "Shrimp, they're like bugs, except not bugs or anything related at all!",
-                "They're so tiny!",
+                "Eles são tão pequititinhos!",
                 "How can something so small take up so much space?",
                 "Sponge forever!",
             ],

@@ -469,8 +469,8 @@ SharkGame.ResourceTable = {
     },
 
     berrier: {
-        name: "lagostas ovadas",
-        singleName: "lagosta ovada",
+        name: "lagostas caviadas",
+        singleName: "lagosta caviada",
         color: "#719188",
         desc: "Sempre precisamos de mais.",
         income: {

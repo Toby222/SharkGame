@@ -4199,9 +4199,10 @@ SharkGame.HomeActions = {
             },
             outcomes: ["Pronto para ciência.", "Esses artigos não vão se escrever sozinhos!"],
             multiOutcomes: [
-                "Quem que pegou todo o café?",
-                "Why do we all have to wear these <i>ridiculous ties?</i>",
-                "This is all within theoretical limits.",
+                // All of these are Franjinha quotes from the movie Turma da Mônica: Uma Aventura no Tempo
+                "Muita calma nesta hora, Bidu! Agora eu vou juntar.. Os quatro elementos!",
+                "Se alguma coisa der errado nesta parte da experiência, pode acontecer muita confusão!",
+                "Já pensou Bidu, que invenções os cientistas vão criar daqui a cem, duzentos anos?.",
                 "I hope those containment parameters are still nominal.",
                 "No, not headcrabs. Just regular crabs.",
                 "Ah, tudo muito nominal.",

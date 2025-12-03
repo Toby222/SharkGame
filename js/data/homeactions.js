@@ -4008,7 +4008,7 @@ SharkGame.HomeActions = {
                 "Um, dois, três, quatro, cin... Hmmm. Já perdi a conta.",
                 "São tantos camarões a sua volta, parece um enxame!",
                 "Eu não consigo manter controle algum de tanto camarão!",
-                "Shrimp, they're like bugs, except not bugs or anything related at all!",
+                "Camarões, são que nem insetos, só que sem ser insetos ou qualquer coisa coisa remotamente próxima a um inseto!",
                 "Eles são tão pequititinhos!",
                 "Como pode que animais tão pequenos sejam tão espaçosos?",
                 "Esponja pra sempre!",
@@ -4055,7 +4055,7 @@ SharkGame.HomeActions = {
         },
 
         getShoveler: {
-            name: "Equipar arraia pázuda",
+            name: "Equipar arraia pazúda",
             effect: {
                 resource: {
                     shoveler: 1,
@@ -4082,23 +4082,23 @@ SharkGame.HomeActions = {
                 "Cavador cavando.",
                 "Uma arraia sabe como usar uma pá.",
                 "Arraia com pá.",
-                "O cavador pega na pá. De forma profissional.",
-                "A arraia pázuda começa a cavar a areia saindo das fontes termais.",
+                "O cavador pega uma pá. De forma profissional.",
+                "A arraia pazúda começa a cavar a areia saindo das fontes termais.",
                 "O cavador se direciona para a fonte termal mais próxima.",
-                "A arraia pega o seu equipamento.",
+                "A pazúda pega no seu equipamento.",
                 "Essa arraia está determinada a aumentar produtividade.",
             ],
             multiOutcomes: [
-                "Glory to the sand.",
-                "It's shoveling time!",
-                "Dig dig dig.",
-                "Can you dig it?",
-                "The ray has a tool. It's a shovel, because it's a tool designed for shoving stuff.",
-                "The rays descend on the nearest vent.",
-                "The rays disperse and make their way to individual vents.",
-                "The rays begin clearing the top layer of sand around nearby vents.",
+                "Glória à areia!",
+                "PÁ!",
+                "Não deixem areia sobre areia!",
+                "Pazúdas e seu buracão no solo.",
+                "As arraias ganharam uma ferramenta. É uma pá, por isso elas são arraias pazúdas.",
+                "As arraias se juntam em voltam da fonte termal mais próxima.",
+                "Os cavadores se separam para procurar por fontes termais.",
+                "As pazúdas começam a extrair a camada de areia superficial .",
             ],
-            helpText: "Teach a ray to quickly move sand around using a huge, specialized scoop.",
+            helpText: "Treine uma arraia para conseguir nadar direito mesmo com uma pá enorme amarrada nela.",
         },
 
         // CRAB JOBS ////////////////////////////////////////////////////////////////////////////////
@@ -4139,7 +4139,7 @@ SharkGame.HomeActions = {
         }, */
 
         getCuriousCrab: {
-            name: "Recognize curious crab",
+            name: "Incentivar caraguejo curioso",
             effect: {
                 resource: {
                     curiousCrab: 1,
@@ -4156,25 +4156,28 @@ SharkGame.HomeActions = {
                 },
             },
             outcomes: [
-                "This crab is itching to know things.",
-                "The crab starts examining random debris on the seafloor.",
-                "This crab is very curious.",
-                "I need to know. I MUST KNOW!",
-                "This crab will not stop until everything is learned. Everything ever.",
+                "Esse siri não precisa de incentivo. Ele já está curioso o suficiente.",
+                "O siri está olhando fixamente um coral de formato engraçado.",
+                "O siri começou a questionar até sobre a própria existência.",
+                "O siri começa a investigar sujeira aleatória do chão.",
+                "As perguntas continuam sempre as mesmas. Quem eu sou? Da onde venho? Aonde vou dá?",
+                "Um siri fica muito curioso.",
+                "'Eu quero saber' se torna 'Eu PRECISO saber!'",
+                "Esse siri não vai parar até tudo for entendido. Tudo mesmo.",
             ],
             multiOutcomes: [
-                "The crabs just seem happy to help.",
-                "Curious ones identified.",
-                "Hmm...",
-                "They seem lost in collective thought.",
-                "The crabs begin talking with each other about some weird questions they came up with.",
-                "The crabs begin discussing some funny ideas that they had.",
+                "Alguns desses parecem felizes só de estarem ajudando.",
+                "Curiosos identificados.",
+                "Hmm... Análise.",
+                "Eles parecem imersos em pensamento coletivo.",
+                "Siris conversam entre si sobre perguntas malucas que eles inventaram.",
+                "Os caranguejos começam uma discussão sobre umas ideias estranhas que tiveram.",
             ],
-            helpText: "Find a crab that is curious and recognize them as a curious crab.",
+            helpText: "Ache um caranguejo que seja curioso e o incentive a ser ainda mais curioso.",
         },
 
         getResearcher: {
-            name: "Gear up researcher",
+            name: "Financiar pesquisador",
             effect: {
                 resource: {
                     researcher: 1,
@@ -4194,19 +4197,19 @@ SharkGame.HomeActions = {
             prereq: {
                 upgrade: ["secretSmithing"],
             },
-            outcomes: ["Ready for collaboration.", "These papers won't write themselves!"],
+            outcomes: ["Pronto para ciência.", "Esses artigos não vão se escrever sozinhos!"],
             multiOutcomes: [
-                "Do you know who ate all the donuts?",
+                "Quem que pegou todo o café?",
                 "Why do we all have to wear these <i>ridiculous ties?</i>",
                 "This is all within theoretical limits.",
                 "I hope those containment parameters are still nominal.",
                 "No, not headcrabs. Just regular crabs.",
-                "Yes, this all looks nominal.",
+                "Ah, tudo muito nominal.",
                 "I am rather looking forward to this analysis, aren't you?",
                 "Aren't you a bit worried about that exponential cascade scenario we discussed?",
                 "The crabs just seem happy to help.",
             ],
-            helpText: "Grant a curious crab enough equipment to perform actual experiments.",
+            helpText: "Dê equipamento e uma bolsa para um caranguejo curioso para que ele possa fazer experimentos de verdade.",
         },
 
         getBrood: {
@@ -4254,7 +4257,7 @@ SharkGame.HomeActions = {
         // SHRIMP JOBS ////////////////////////////////////////////////////////////////////////////////
 
         getQueen: {
-            name: "Crown shrimp queen",
+            name: "Coroar uma rainha camarão",
             effect: {
                 resource: {
                     queen: 1,
@@ -4273,11 +4276,11 @@ SharkGame.HomeActions = {
             },
             outcomes: [
                 "Up the ranks you go, little one.",
-                "Shrimp queen prepped for duty!",
-                "A royal shrimp is she!",
-                "More shrimp for the shrimp superorganism!",
-                "Give it time before they start singing about wanting to break free.",
-                "Long live the tiny tiny shrimp queen!",
+                "Rainha camarão preparada para a realeza!",
+                "Uma nova linhagem real se forma!",
+                "Mais camarão para a sociedade camarônica!",
+                "Quanto tempo você acha que vai tomar até ela começar a cantar sobre liberdade?",
+                "Vida longa à pequetuxa rainha camarão!",
             ],
             multiOutcomes: [
                 "Okay, so it's not exactly a royal role, but hey, they're gonna be making eggs for a long time. Humour them.",

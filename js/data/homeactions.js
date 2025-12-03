@@ -3563,7 +3563,7 @@ SharkGame.HomeActions = {
                 "Uma Pitu se junta a você.",
                 "Uma Lagosta Africana se junta a você.",
                 "Um Lagostim de Água Doce se junta a você.",
-                "Uma Lagosta de São Paulo se junta a você. Não, não do estado, da ilha."
+                "Uma Lagosta de São Paulo se junta a você. Não, não do estado, da ilha.",
                 "Uma Lagosta Espinhosa se junta a você.",
                 "Um Lavagante Europeu se junta a você.",
                 "Um Lavagante Americano se junta a você.",

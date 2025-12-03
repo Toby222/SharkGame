@@ -3702,7 +3702,7 @@ SharkGame.HomeActions = {
             outcomes: [
                 "Nós não precisávamos ver como isso acontecia.",
                 "Uma lagosta cheio de ovinhos prontos para serem chocados.",
-                "E a lagosta sortuda a ser caviada é..."
+                "E a lagosta sortuda a ser caviada é...",
                 "Como assim o correto é ovada? Tipo, jogaram ovos na lagosta? É aniversário dela?",
                 "Lagosta com caviar pronta. Tá, certo, ova, tá bom, entendi. É só que elas parecem caviar, só que menores e mais deles e... ah, tanto faz, esquece.",
             ],

@@ -4345,7 +4345,7 @@ SharkGame.HomeActions = {
         },
 
         getAcolyte: {
-            name: "Indoctrinar seguidor da alga",
+            name: "Indocrinar seguidor da alga",
             effect: {
                 resource: {
                     acolyte: 1,
@@ -4440,18 +4440,19 @@ SharkGame.HomeActions = {
                 upgrade: ["coralCloning"],
             },
             outcomes: [
-                "Coral farm constructed, coral barn raised.",
-                "Now growing coral in this general location.",
-                "Sand tilled. Coral planted.",
-                "'Right here, this will be a farm!' And so it was.",
+                "Fazenda de esponja construída, celeiro de esponja erguido.",
+                "Agora crescendo esponja por aqui nesta área.",
+                "Areia arada. Esponja plantada.",
+                "'Bem aqui, isto será uma fazenda!' E então virou.",
             ],
             multiOutcomes: [
-                "Do we really need to till the sand to grow coral?",
-                "Grow, coral! Grow!",
-                "The crabs are pleased.",
-                "Is anybody staffing these?",
-                "Farms are a-go.",
-                "Designated growing spots.",
+                "Nós precisamos mesmo arar o solo para crescer esponja?",
+                "Cresça, esponja! Cresça!",
+                "Eu espero que nós tenhamos alga o suficiente para sustentar essa quantidade de esponja.",
+                "Os camarões gostaram disso.",
+                "Tem alguém trabalhando nesses lugares?",
+                "Colcozes foram abertos.",
+                "Locais de crescimento designados.",
             ],
             helpText: "Pick a spot and set up a coral farm there.",
         },

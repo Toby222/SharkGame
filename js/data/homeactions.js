@@ -455,7 +455,7 @@ SharkGame.HomeActions = {
                 "Vidro coroso fundido!",
                 "Vidro coroso f*****! Ai, mil perdões, saiu sem querer!",
                 "Como que o coral se incorpora em vidro? Bem, é bem simples, as lagostas fazer funcionar.",
-                "O pilar d-- o exoesqueleto da indústria crustaceana!",
+                "O pilar d- o exoesqueleto da indústria crustaceana!",
                 "Tão frágil. Mas tão útil.",
             ],
             helpText: "Funda coisas para fazer o vidro especial das máquinas dos crustáceos!",
@@ -3916,11 +3916,11 @@ SharkGame.HomeActions = {
             outcomes: [
                 "Porita fundida!",
                 "Porita f*****! Ai, mil perdões, saiu sem querer",
-                "Como que esponja vira parte do vidro? Então, perceba, é bem simples, pelo menos é isso que os camarões me contaram.",
-                "The backbo-- the exoskeleton of the shrimp industry!",
+                "Como que a esponja se incorpora ao vidro? Bem, é bem simples, os camarões fazer funcionar.",
+                "O pilar d- o exoesqueleto da indústria camarônica!",
                 "Tão frágil. Mas tão útil.",
             ],
-            helpText: "Smelt resources into porite for use in shrimp tools!",
+            helpText: "Funda coisas para fazer o treco especial das ferramentas dos camarões!",
         },
 
         // BUY ANIMALS ////////////////////////////////////////////////////////////////////////////////
@@ -4214,7 +4214,7 @@ SharkGame.HomeActions = {
         },
 
         getBrood: {
-            name: "Form crab brood",
+            name: "Formar uma ninhada",
             effect: {
                 resource: {
                     brood: 1,
@@ -4238,21 +4238,24 @@ SharkGame.HomeActions = {
                 upgrade: ["crabBiology"],
             },
             outcomes: [
-                "A bunch of crabs pile together into some sort of weird cluster.",
-                "Crab team, assemble! FORM THE CRAB BROOD!",
-                "[This message has been censored for reasons of being mostly really gross.]",
-                "Eggs, eggs everywhere, but never stop and think.",
-                "Writhing crab pile. Didn't expect those words next to each other today, did you.",
+                "Um monte de caranguejos se empilham para fazer uma bola estranha de crustáceos.",
+                "Time crustáceo, juntem-se! FORMEMOS A NINHADA!",
+                "[Essa mensagem foi censurada por ser meio nojenta.]",
+                "Ovos, ovos em todo lugar, but never stop and think.",
+                "Hoje, no Manual do Mundo, nós fizemos uma bola perfeita de caranguejo.",
+                "Uma pilha de siris em constante deformação. Eu nunca esperava ter que falar essas palavras juntas.",
+                "A ninhada de caranguejos é um fenômeno raramente visto, porque apenas caranguejos que buscam cristais mágicos têm esse comportamento.",
+                "Deveríamos avisá-los que são de espécies diferentes?",
             ],
             multiOutcomes: [
-                "The broods grow. The swarm rises.",
-                "All these crabs are probably a little excessive. ...is what I could say, but I'm going to say this instead. MORE CRABS.",
-                "A sea of crabs on the bottom of the sea. Clickity clackity.",
-                "Snip snap clack clack burble burble crabs crabs crabs crabs.",
-                "More crabs are always a good idea. Crystals aren't cheap.",
-                "The broods swell in number. The sharks are uneasy, but the concern soon passes.",
+                "As ninhadas crescem. A multidão aumenta.",
+                "Todos esses siris parece meio excessivo. ...é o que eu iria dizer se eu não quisesse dizer: MAIS SIRIS!",
+                "Um mar de caranguejos no fundo do mar. Clic clac, fazem suas garras.",
+                "Snip snap, clic clac, siri caranguejo, caranguejo siri.",
+                "Mais caranguejos é sempre bom. Cristais são valiosos.",
+                "As ninhadas ficam maiores. Os tubarões se desconcertam, mas suas preocupações passam com o tempo.",
             ],
-            helpText: "Meld several crabs into a terrifying, incomprehensible crab-producing brood cluster.",
+            helpText: "Aglomere diversos caranguejos em uma ninhada estranha para produzir mais caranguejos de alguma forma incompreensível e nojenta.",
         },
 
         // SHRIMP JOBS ////////////////////////////////////////////////////////////////////////////////

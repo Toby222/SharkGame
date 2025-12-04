@@ -4415,7 +4415,7 @@ SharkGame.HomeActions = {
                 "Colcozes foram abertos.",
                 "Locais de crescimento designados.",
             ],
-            helpText: "Pick a spot and set up a sponge farm there.",
+            helpText: "Escolha um lugar e instale uma fazenda de esponja lá.",
         },
 
         getCoralFarm: {
@@ -4440,21 +4440,20 @@ SharkGame.HomeActions = {
                 upgrade: ["coralCloning"],
             },
             outcomes: [
-                "Fazenda de esponja construída, celeiro de esponja erguido.",
-                "Agora crescendo esponja por aqui nesta área.",
-                "Areia arada. Esponja plantada.",
+                "Fazenda de coral construída, celeiro de coral erguido.",
+                "Agora crescendo coral por aqui nesta área.",
+                "Areia arada. Coral plantado.",
                 "'Bem aqui, isto será uma fazenda!' E então virou.",
             ],
             multiOutcomes: [
-                "Nós precisamos mesmo arar o solo para crescer esponja?",
-                "Cresça, esponja! Cresça!",
-                "Eu espero que nós tenhamos alga o suficiente para sustentar essa quantidade de esponja.",
-                "Os camarões gostaram disso.",
+                "Nós precisamos mesmo arar o solo para crescer coral?",
+                "Cresça, coral! Cresça!",
+                "Os caranguejos gostaram disso.",
                 "Tem alguém trabalhando nesses lugares?",
                 "Colcozes foram abertos.",
                 "Locais de crescimento designados.",
             ],
-            helpText: "Pick a spot and set up a coral farm there.",
+            helpText: "Escolha um lugar e instale uma fazenda de coral lá.",
         },
     },
     tempestuous: {
@@ -4465,7 +4464,7 @@ SharkGame.HomeActions = {
         // CONVERSIONS ////////////////////////////////////////////////////////////////////////////////
 
         seagrassToScience: {
-            name: "Study seagrass flowers",
+            name: "Estudar flores de ervas marinhas",
             effect: {
                 resource: {
                     get science() {
@@ -4482,16 +4481,17 @@ SharkGame.HomeActions = {
                 upgrade: ["xenobiology"],
             },
             outcomes: [
-                "There's science inside these things, surely!",
-                "The cause of science is advanced!",
-                "This is perhaps maybe insightful!",
-                "Why are we even doing this? Who knows! Science!",
-                "Results still inconclusive! Unsurpsingly...",
-                "Quick question. What's a flower?",
-                "At least it's not gross.",
+                "Tem ciência dentro dessas coisa, eu pressinto!",
+                "A causa da ciência avança!",
+                "Isso talvez possa see possivelmente informativo!",
+                "Por que estamos fazendo isso? Eu sei lá! Pela ciência!",
+                "Resultados ainds inconclusivos! Para a surpresa de ninguém...",
+                "Perguntinha. O que é uma flor?",
+                "Pelo menos não é nojento.",
+                "E se a gente enrolar em papel e sugar uma ponta?",
                 "We would learn a lot more from these if they weren't so absolutely tiny.",
             ],
-            helpText: "Dissect seagrass flowers to further the cause of science. This is research, probably!",
+            helpText: "Disseque flores de ervas marinhas para ciência. É provavelmente assim que pesquisa funciona!",
         },
 
         // MAKE ADVANCED RESOURCES  ///////////////////////////////////////////////////////////////////////////////
@@ -4507,7 +4507,7 @@ SharkGame.HomeActions = {
         getCrab: {},
 
         getBillfish: {
-            name: "Fetch billfish",
+            name: "Pedir favor a um peixe-espada",
             effect: {
                 resource: {
                     billfish: 1,
@@ -4522,28 +4522,29 @@ SharkGame.HomeActions = {
                 upgrade: ["cavernousContact"],
             },
             outcomes: [
-                "A swordfish joins you.",
-                "A sailfish joins you.",
-                "A black marlin joins you.",
-                "A blue marlin joins you.",
-                "A white marlin joins you.",
-                "A shortbill spearfish joins you.",
-                "A striped marlin joins you.",
-                "A roundscale spearfish joins you.",
-                "A longbill spearfish joins you.",
+                "Um Espadim Azul do Atlântico se junta a você.",
+                "Um Espadim Raiado se junta a você.",
+                "Um Espadim do Mediterrâneo se junta a você.",
+                "Um Espadim Peto se junta a você.",
+                "Um Espadim de Bico Curto se junta a você.",
+                "Um Espadim Branco do Atlântico se junta a você.",
+                "Um Espadarte se junta a você.",
+                "Um Veleiro se junta a você.",
+                "Um Espadim Negro se junta a você.",
+                "Um Espadim Bicudo se junta a você.",
             ],
             multiOutcomes: [
-                "The billfish cometh! En garde, storm!",
-                "You swear you heard the clink of swords from within the school you just summoned.",
-                "Brave the storm, friends. Brave the storm.",
-                "This swarm shall save the sea.",
-                "More! More! The fish will flow.",
-                "Better you all than me.",
-                "What are these guys so enthusiastic for?",
-                "A flotilla of swordfish! No, seriously.",
-                "A school of billfish emerges from the back of the cave.",
+                "Os peixes-espada aproximam-se! En garde, tempestade!",
+                "Você jura que ouviu um tilintar de espadas vindo do seu cardume.",
+                "Entrente a tempestade, amigos. Mostre que vocês não estão de brincadeira.",
+                "Esse enxame vai salvar o oceano.",
+                "Mais! Mais! Os peixes devem ser aos montes!",
+                "Melhor vocês irem lá. Eu fico aqui cuidando da gruta",
+                "Por que será que esses caras estão tão felizes?",
+                "Um arsenal de peixes-espada! Eles podem agir como armas.",
+                "Um cardume de peixes-espada emergem dos fundos da caverna.",
             ],
-            helpText: "Fetch a billfish from the back of the cave and ask them to help us catch fish.",
+            helpText: "Ache um peixe-espada lá no fundo da caverna e peça a eles nos ajudar a pegar peixes.",
         },
 
         // SHARK JOBS ////////////////////////////////////////////////////////////////////////////////

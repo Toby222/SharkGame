@@ -4279,16 +4279,16 @@ SharkGame.HomeActions = {
                 upgrade: ["eusociality"],
             },
             outcomes: [
-                "Up the ranks you go, little one.",
+                "Um camarão subiu na sociedade.",
                 "Rainha camarão preparada para a realeza!",
                 "Uma nova linhagem real se forma!",
                 "Mais camarão para a sociedade camarônica!",
-                "Quanto tempo você acha que vai tomar até ela começar a cantar sobre liberdade?",
+                "Quanto tempo você acha que vai tomar até ela começar a cantar sobre querer se libertar?",
                 "Vida longa à pequetuxa rainha camarão!",
             ],
             multiOutcomes: [
                 "Okay, so it's not exactly a royal role, but hey, they're gonna be making eggs for a long time. Humour them.",
-                "This is the weirdest monarchy in existence.",
+                "Essa é a monarquia mais esquisita que eu já vi.",
                 "Welcome to the superorganisation!",
                 "They want to ride their bicycle.",
                 "Give it time before they start singing about wanting to break free.",
@@ -4296,7 +4296,7 @@ SharkGame.HomeActions = {
                 "Go, more shrimps!",
                 "Neverending shrimp cycle, GO!",
             ],
-            helpText: "Crown a shrimp queen to make more shrimp.",
+            helpText: "Coroe uma rainha camarão para fazer mais camarão.",
         },
 
         getFarmer: {

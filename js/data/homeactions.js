@@ -4577,7 +4577,7 @@ SharkGame.HomeActions = {
         // CRAB JOBS ////////////////////////////////////////////////////////////////////////////////
 
         getStormgoer: {
-            name: "Gear up crab stormgoer",
+            name: "Aparatar caranguejo desbravador",
             effect: {
                 resource: {
                     stormgoer: 1,
@@ -4603,24 +4603,24 @@ SharkGame.HomeActions = {
             },
             outcomes: [
                 "Saindo do forno um caranguejo preparado para NÃO pegar cristais.",
-                "Heavy-duty crab coming right up.",
+                "Caranguejo pesado para trabalho pesado.",
                 "Esse crustáceo está preparado para viver o resto de sua vida cortando grama.",
-                "Grass me up, stormgoer.",
+                "Erva-me, desbravador.",
                 "Este entra na tempestade.",
                 "Saudamos o seu trabalho, pequeno siri.",
                 "Bon voyage, pequenino.",
             ],
             multiOutcomes: [
                 "A pedido dos caranguejos, você confirma novamente que sim, os sacos de areia estão seguros.",
-                "You have to wonder how they manage to carry all that around.",
+                "Você se pergunta como eles conseguem andar com tanta coisa nas costas.",
                 "Hm... Talvez só mais um saco para ter certeza.",
-                "These ones go into the storm.",
-                "The crabs double check their sandbags, then set off into the great unknown.",
+                "Os caranguejos entram na tempestade.",
+                "Os siris dão uma última olhada nos seus sacos, então se retiram para o turbulento mundo exterior.",
                 "Quanta areia que nós gastamos com isso mesmo?",
-                "Snip snip snip.",
-                "Snip snap snip.",
+                "Clec clec clec.",
+                "Clic clac clic.",
             ],
-            helpText: "Weigh down a crab with sand to keep it from being carried away in the storm.",
+            helpText: "Deixe um caranguejo bem pesado com areia para que ele não seja levado pela ventania.",
         },
 
         getBrood: {},
@@ -4628,7 +4628,7 @@ SharkGame.HomeActions = {
         // BILLFISH JOBS ////////////////////////////////////////////////////////////////////////////////
 
         getBillfishPair: {
-            name: "Match billfish pair",
+            name: "Junte uma dupla de espadas",
             effect: {
                 resource: {
                     billfishPair: 1,
@@ -4643,7 +4643,7 @@ SharkGame.HomeActions = {
                 upgrade: ["billfishBiology"],
             },
             outcomes: [
-                "Billfish paired.",
+                "Peixes-espada casados.",
                 "Two of one makes one of...two...or something.",
                 "I pronouce you bill and fish.",
                 "Found a match!",

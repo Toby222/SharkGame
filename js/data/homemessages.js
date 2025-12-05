@@ -35,47 +35,47 @@ SharkGame.HomeMessages = {
             {
                 name: "start-tribe",
                 unlock: { resource: { shark: 12, ray: 4, crab: 5 } },
-                message: "Sua nova tribo ao seu comando!",
+                message: "Sua nova tribo está ao seu comando!",
             },
             {
                 name: "start-crystals",
                 unlock: { resource: { shark: 1, crystal: 10 } },
-                message: "The crystals are shiny. Some sharks stare at them curiously.",
+                message: "Os cristais reluzem. Alguns tubarões os observam, curiosos.",
             },
             {
                 name: "start-science",
                 unlock: { resource: { scientist: 1 } },
-                message: "The science sharks swim in their own school.",
+                message: "Os tubarões cientistas nadam juntos dentro do teu cardume.",
             },
             {
                 name: "start-discoveries",
                 unlock: { upgrade: ["crystalContainer"] },
-                message: "More discoveries are needed.",
+                message: "Mais descobertas são necessárias.",
             },
             {
                 name: "start-nurse",
                 unlock: { resource: { nurse: 1 } },
-                message: "The shark community grows with time.",
+                message: "A comunidade de tubarões cresce com o tempo.",
             },
             {
                 name: "start-exploration",
                 unlock: { upgrade: ["exploration"] },
-                message: "You hear faint songs and cries in the distance.",
+                message: "Você ouve fracas músicas e cantos distantes.",
             },
             {
                 name: "start-machines",
                 unlock: { upgrade: ["automation"] },
-                message: "Machines to do things for you.<br>Machines to do things faster than you or any shark.",
+                message: "Máquinas para fazer coisas para você.<br>Máquinas para fazer coisas mais rápido que você ou qualquer outro tubarão.",
             },
             {
                 name: "start-chasm",
                 unlock: { upgrade: ["farExploration"] },
-                message: "This place is not your home. You remember a crystal blue ocean.<br>The chasms beckon.",
+                message: "Este lugar não é a sua casa. Você lembra de um oceano azul cristal.<br>O abismo te contempla de volta.",
             },
             {
                 name: "start-gate",
                 unlock: { upgrade: ["gateDiscovery"] },
-                message: "The gate beckons. The secret must be unlocked.",
+                message: "O portal te chama. Seus segredos devem ser descobertos.",
             },
         ],
 
@@ -83,51 +83,51 @@ SharkGame.HomeMessages = {
         marine: [
             {
                 name: "marine-default",
-                message: "Schools of fish fill the vast expanse. This place feels so familiar.",
+                message: "Cardumes de peixe populam sua vastidão. Esse lugar te parece tão familiar.",
             },
             {
                 name: "marine-noticed-lobsters",
                 unlock: { upgrade: ["crystalContainer"] },
-                message: "You notice some creatures on the ocean floor. They laze about and ignore your presence.",
+                message: "Você percebe umas criaturas na areia. Elas não fazem muita coisa e ignoram a sua presença.",
             },
             {
                 name: "marine-noticed-lobsters-2",
                 unlock: { upgrade: ["seabedGeology"] },
-                message: "You notice some creatures on the ocean floor. They laze about and ignore your presence.",
+                message: "Você percebe umas criaturas na areia. Elas não fazem muita coisa e ignoram a sua presença.",
             },
             {
                 name: "marine-lobsters",
                 unlock: { totalResource: { lobster: 1 } },
-                message: "The lobsters work, but seem carefree. They worry about nothing.",
+                message: "As lagostas trabalham, mas parecem despreocupados. Eles não se estressam com nada.",
             },
             {
                 name: "marine-lobsters-talk",
                 unlock: { totalResource: { lobster: 125 } },
                 message:
-                    "The lobsters tell tales of grandiose adventures and vast riches from a time long past. They ask themselves why they ever abandoned that life.",
+                    "As lagostas contam contos com grandiosas aventuras e riqueza incontável de um tempo há muito perdido. Eles se perguntam por que eles abandonaram essa vida.",
             },
             {
                 name: "marine-calcinium",
                 unlock: { totalResource: { calcinium: 1 } },
-                message: "Calcinium. It's rough, hard, and chalky. It feels fragile, but isn't.",
+                message: "Calcinício. É áspero, duro, e branco. Ele parece frágil, mas não é.",
             },
             {
                 name: "marine-robotics",
                 unlock: { totalResource: { clamScavenger: 1 } },
-                message: "A cold, rough limb fishes clams out of the seabed. The lobsters watch intently.",
+                message: "Um membro frio e duro pesca mexilhões do solo. As lagostas assistem com atenção.",
             },
             {
                 // do color transition 1 here
                 name: "marine-bioengineering",
                 unlock: { upgrade: ["bioengineering"] },
                 message:
-                    "Stone-to-brain interface. Shelbernetic enhancements. Population automation. The lobsters say that calcinium is an extension of life itself.",
+                    "Uma interface cérebro-pedra. Melhorias conchibernéticas. Automação populacional. As lagostas afirmam que o calcinício é uma extensão da vida em si.",
             },
             {
                 // second color transition
                 name: "marine-sentience",
                 unlock: { upgrade: ["sentientCircuitBoards"] },
-                message: "All of us have boards now. Children are born half-machine. The lobsters call it effective.",
+                message: "Todo o cardume tem aprimoramentos. Crianças nascem meio-máquina. As lagostas chamam de eficiente.",
                 // we can't understand it, no, we could never hope to understand it like the lobsters do
                 // 'they [the circuits] even die...just like us.'
             },
@@ -135,63 +135,63 @@ SharkGame.HomeMessages = {
                 // final color transition
                 name: "marine-abandoned",
                 unlock: { upgrade: ["mobiusShells"] },
-                message: "Murk spills out of the frenzy. A rancid fog begins to descend. This dying world drags everyone down with it.",
+                message: "Um negrume emana do cardume. Uma névoa rançosa começa a se instalar. Esse mundo está se destruindo e vai arrastar todos junto dele.",
             },
         ],
 
         haven: [
             {
                 name: "haven-default",
-                message: "These oceans are rich with life. A thriving reef surrounds you.",
+                message: "Esse oceano está estourando de vida. Um recife próspero te cerca.",
             },
             {
                 name: "haven-dolphin-observes",
                 unlock: { totalResource: { coral: 75 } },
-                message: "A... thing observes us from afar. What the heck is that??",
+                message: "Uma... coisa nos observa de longd. Mas o que diabos é aquilo??",
             },
             {
                 name: "haven-dolphins",
                 unlock: { totalResource: { dolphin: 1 }, homeAction: ["getDolphin"] },
                 message:
-                    "A dolphin joins the frenzy. We told it to go get fish, but it came back with coral. It insists that the coral is more valuable.",
+                    "Um golfinho se junta ao cardume. Nós dissemos para ele caçar peixes, mas ele voltou com coral. Ele fica insistindo que coral é mais importante.",
             },
             {
                 name: "haven-dolphin-empire",
                 unlock: { totalResource: { dolphin: 20 } },
                 message:
-                    "The dolphin pods that work with us speak of a star-spanning empire of their kind. They ask where our empire is. And they smile.",
+                    "Os grupos sociais de golfinhos que trabalham conosco nos falam de um império golfinesco que domina estrelas inteiras. Eles perguntam onde está o nosso império. E então sorriem.",
             },
             {
                 name: "haven-papyrus",
                 unlock: { upgrade: ["sunObservation"] },
-                message: "Pieces of condensed kelp (???) are washing up in the currents.<br/>Something is carved into them.",
+                message: "Pedaços de alga condensada (???) estão sendo trazidas pelas correntes.<br/>Algo foi gravado neles.",
             },
             {
                 name: "haven-stories",
                 unlock: { upgrade: ["delphineHistory"] },
                 message:
-                    "The dolphin's self-indulgent tales make frequent references to a mystical gate. And, they don't know where it is. Of course they don't.",
+                    "As histórias indulgentes dos golfinhos mencionam muito um portal mágico. Só que eles não sabem onde está. Ah, que conveniente, claro que não sabem.",
             },
             {
                 name: "haven-whales",
                 unlock: { totalResource: { whale: 1 }, homeAction: ["getWhale"] },
-                message: "The whales speak rarely to us, working in silence as they sing to the ocean. What do they sing for?",
+                message: "As baleias quase nunca falam conosco, silenciosamente trabalhando enquanto para o oceano. Por que será que cantam?",
             },
             {
                 name: "haven-history",
                 unlock: { upgrade: ["retroactiveRecordkeeping"] },
                 message:
-                    "The grand sum of all dolphin knowledge is laid out before us,<br/>and it is pitifully small. The original collections have been lost to time.",
+                    "O compêndio de todo o conhecimento dos golfinhos está diante de nós,<br/>e é ridiculamente pequeno. Os registros originais se perderam nas areias do tempo.",
             },
             {
                 name: "haven-song",
                 unlock: { upgrade: ["whaleSong"] },
-                message: "The whale song fills you with the same feeling as the gates. But so much smaller.",
+                message: "A música da baleia te enche com aquela sensação, a mesma do portal. Mas tão fracamente.",
             },
             {
                 name: "haven-done",
                 unlock: { resource: { chorus: 1 } },
-                message: "The great song booms across the open water, carrying itself to all corners of the ocean.<br/>The gate reacts.",
+                message: "O Coro ressoa pelas águas, espalhando para os quatro cantos do oceano.<br/>O portal reage.",
             },
         ],
 

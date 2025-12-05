@@ -5,37 +5,37 @@ SharkGame.HomeMessages = {
         start: [
             {
                 name: "start-you-are-a-shark",
-                message: "You feel a bit hungry.",
+                message: "Você gostaria de comer algo.",
             },
             {
                 name: "start-shark",
                 unlock: { totalResource: { fish: 5 } },
-                message: "You attract the attention of a shark. Maybe they can help you catch fish!",
+                message: "Você atrai a atenção de um tubarão. Talvez ele possa ajudar você a caçar os peixes!",
             },
             {
                 name: "start-sharks",
                 unlock: { resource: { shark: 2 } },
-                message: "More sharks swim over, curious and watchful.",
+                message: "Mais tubarões se aproximam, curiosos e em alerta.",
             },
             {
                 name: "start-ray",
                 unlock: { resource: { shark: 5 } },
-                message: "Some rays drift over.",
+                message: "Algumas arraia chegam perto.",
             },
             {
                 name: "start-quite-the-group",
                 unlock: { resource: { shark: 6, ray: 2 } },
-                message: "You have quite the group going now.",
+                message: "Você tem um bom grupo junto de você agora.",
             },
             {
                 name: "start-crab",
                 unlock: { resource: { shark: 10, ray: 4 } },
-                message: "Some curious crabs come over.",
+                message: "Uns caranguejos curiosos vêm ver.",
             },
             {
                 name: "start-tribe",
                 unlock: { resource: { shark: 12, ray: 4, crab: 5 } },
-                message: "Your new tribe is at your command!",
+                message: "Sua nova tribo ao seu comando!",
             },
             {
                 name: "start-crystals",

@@ -269,12 +269,12 @@ SharkGame.HomeMessages = {
         volcanic: [
             {
                 name: "volcanic-default",
-                message: "Scorching vents fill the sea with white and black smoke. There's not a shark in sight.",
+                message: "Fontes ferventes enchem o mar com fumaça cinzenta. Não tem um tubarão sequer a sua volta.",
             },
             {
                 name: "volcanic-shrimp-contact",
                 unlock: { totalResource: { sponge: 1 } },
-                message: "You are approached by a single shrimp. They relay a message to you: stop harvesting sponges, or face the wrath of the king of shrimps.",
+                message: "Um camarãozinho chega perto de você. Êlu relay a message to you: stop harvesting sponges, or face the wrath of the king of shrimps.",
             },
             {
                 name: "volcanic-shrimp-threat",

@@ -135,7 +135,7 @@ SharkGame.HomeMessages = {
                 // final color transition
                 name: "marine-abandoned",
                 unlock: { upgrade: ["mobiusShells"] },
-                message: "Um negrume emana do cardume. Uma névoa rançosa começa a se instalar. Esse mundo está se destruindo e vai arrastar todos junto dele.",
+                message: "Um negrume emana do cardume. Uma névoa rançosa começa a se instalar. Esse mundo está se destruindo e vai arrastar todos junto com ele.",
             },
         ],
 
@@ -198,34 +198,34 @@ SharkGame.HomeMessages = {
         tempestuous: [
             {
                 name: "tempestuous-default",
-                message: "Horrible wind whips you around, scattering your possessions and allies.",
+                message: "Ventos terríveis te chicoteiam pela água, espalhando suas coisas e aliados.",
             },
             {
                 name: "tempestuous-cave",
                 unlock: { upgrade: ["statsDiscovery"] },
-                message: "You take shelter inside the cave. You can still feel the wind, but it's gentle now.",
+                message: "Você se abriga dentro da caverna. Você ainda consegue sentir o vento, mas agora está mais suave.",
             },
             {
                 name: "tempestuous-cave-rustling",
                 unlock: { upgrade: ["crystalBite"] },
-                message: "You hear a rustling from the dark backside of the cave.",
+                message: "Você ouve um barulhinho vindo do fundo da caverna.",
             },
             {
                 name: "tempestuous-billfish",
                 unlock: { upgrade: ["cavernousContact"] },
-                message: "The so-called 'billfish' apologize for their behavior. They say no shark has entered this cave in a long, long time.",
+                message: "Os 'peixes-espada', como eles se chamaram, se desculpam por se esconderem. Eles dizem que nenhum tubarão entrou nesta caverna há um bom tempo.",
             },
             {
                 name: "tempestuous-sandbags",
                 unlock: { resource: { stormgoer: 10 } },
                 message:
-                    "Stormgoers tredge slowly across the seabed. They dig through the sand extracting buried seagrass, but are too heavy to bring back crystals.",
+                    "Desbravadores marcham lentamente pela areia. Suas patas marcam o chão enquanto extraem erva marinha, mas eles estão pesados demais para trazer cristais também.",
             },
             {
                 name: "tempestuous-stories",
                 unlock: { upgrade: ["billfishBiology"] },
                 message:
-                    "The billfish tell stories of life before the storm and an ancient visitor who brought them prosperity. They ask if you can bring them prosperity, too.",
+                    "As espadas contam histórias da vida antes da tempestade e de um antigo visitante que os trouxe prosperidade. Eles te perguntam se você também consegue trazê-los prosperidade.",
             },
             /*
                 name: "tempestuous-special",
@@ -235,34 +235,34 @@ SharkGame.HomeMessages = {
             {
                 name: "tempestuous-bottles",
                 unlock: { upgrade: ["magicBottles"] },
-                message: "A silent wind swirls gently in each bottle. You feel the tumbling of a storm inside.",
+                message: "Uma ventania uiva gentilmente dentro de cada garrafa. Você sente a turbulência de uma tempestade tremendo o frasco.",
             },
             {
                 name: "tempestuous-expeditions",
                 unlock: { upgrade: ["routing"] },
                 message:
-                    "The billfish line up in droves to volunteer for expeditions, danger or otherwise. They don't need convincing, just equipment.",
+                    "Os peixes-espada formam filas para se voluntariar para expedições, apesar de qualquer perigo. Eles não precisam ser convencidos, apenas do equipamento.",
             },
             {
                 name: "tempestuous-map",
                 unlock: { upgrade: ["cartographicCompleteness"] },
-                message: "A grand map lays stretched out against the cavern wall. In the top right corner is a strange shape with a door.",
+                message: "Um mapa enorme foi pregado na parede da caverna. No canto direito superior, há uma forma estranha com uma porta.",
             },
             {
                 name: "tempestuous-machine",
                 unlock: { upgrade: ["theExpedition"] },
-                message: "The hallways of the facility echo with sounds of turning cogs. Billfish swim rapidly up and down the halls.",
+                message: "Os corredores da construção ecoam com os sons de engrenagens girando. Peixes-espada nadam pelas câmaras.",
             },
             {
                 name: "tempestuous-generator",
                 unlock: { upgrade: ["internalExploration"] },
                 message:
-                    "The generator is completely disabled, yet the facility is still running. The wind howls outside as mechanics tinker excitedly with our machines.",
+                    "O gerador está completamente desligada, e mesmo assim, a instalação persiste funcionando. O vento ressoa lá fora enquanto os mecânicos mexem empolgados com as máquinas.",
             },
             {
                 name: "tempestuous-legends",
                 unlock: { upgrade: ["cumulusControl"] },
-                message: "As the storm draws its final breath, you overhear two billfish talking. One asks the other why the visitor never returned.",
+                message: "Com o fim da tempestade, você ouve a conversa de um par de espadas. Um pergunta por que o visitante nunca voltou.",
             },
         ],
 

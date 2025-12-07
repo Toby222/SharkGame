@@ -274,7 +274,7 @@ SharkGame.HomeMessages = {
             {
                 name: "volcanic-shrimp-contact",
                 unlock: { totalResource: { sponge: 1 } },
-                message: "Um camarãozinho chega perto de você. Êlu relay a message to you: stop harvesting sponges, or face the wrath of the king of shrimps.",
+                message: "Um camarãozinho chega perto de você. Êlu te passa a mensagem: pare de colher as esponjas, ou entrente a ira do Camarão Rei.",
             },
             {
                 name: "volcanic-shrimp-threat",
@@ -283,28 +283,28 @@ SharkGame.HomeMessages = {
                         return SharkGame.flags.prySpongeGained > 200 && !SharkGame.flags.gotFarmsBeforeShrimpThreat;
                     },
                 },
-                message: "You are approached by an army of shrimp. They relay a very clear message to you: cooperate, or be destroyed. You decide to stop harvesting sponges.",
+                message: "Um exército de camarõezinhos chega perto de você. Elus te passam a mensagem de forma ainda mais clara: coopere, ou seja obliterado. Você decide parar de colher as esponjas.",
             },
             {
                 name: "volcanic-shrimp-communication",
                 unlock: { upgrade: ["consistentCommunication"] },
-                message: "The sponge homes left behind by shrimp joining the frenzy may now be taken for ourselves.",
+                message: "As casas esponjosas que abandonadas pelos camarões que se juntaram ao cardume agora podem ser coletadas por nós. Perfeito.",
             },
             {
                 name: "volcanic-monarchy",
                 unlock: { totalResource: { queen: 1 } },
-                message: "The shrimps follow a caste system with the king of shrimps on top. They ask who your king is.",
+                message: "Os camarões seguem um sistema rígido de castas, onde o Camarão Rei fica no topo. Elus perguntam quem é o seu rei.",
             },
             {
                 name: "volcanic-shrimps",
                 unlock: { upgrade: ["sustainableSolutions"] },
                 message:
-                    "The shrimp speak of an ancient visitor who violated their world, and how they wish to restore it. They work hard for their future.",
+                    "Os camarões contam sobre um antigo visitante que violou o mundo delus, e como querem restaurá-lo. Eles trabalham duro pelos seus futuros.",
             },
             {
                 name: "volcanic-smithing",
                 unlock: { totalResource: { porite: 1 } },
-                message: "Porite: glassy hunks sealed on the outside but porous on the inside: it's lightweight, yet it stays strong.",
+                message: "Porita: pedaços de vidro selados, porém porosos em seu interior: muito leve e, ainda assim, resistente.",
             },
             {
                 name: "volcanic-noticed",

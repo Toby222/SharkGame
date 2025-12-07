@@ -309,30 +309,30 @@ SharkGame.HomeMessages = {
             {
                 name: "volcanic-noticed",
                 unlock: { upgrade: ["glassTempering"] },
-                message: "Rumors say the king has caught wind of your plans. They say he plans to destroy the entire frenzy.",
+                message: "Rumores dizem que o rei descobriu os seus planos. Dizem que ele planeja destruir o cardume inteiro.",
             },
             {
                 name: "volcanic-acolytes",
                 unlock: { upgrade: ["algaeAcolytes"] },
-                message: "The acolytes gather. They pray for their king. They pray for their world. They pray for you.",
+                message: "Os seguidores se juntam. Elus rezam pelo Rei. Elus rezam pelo seu mundo. Elus rezam por você.",
             },
             // Rumor has it that the king of shrimps guards the key to a secret, sacred gate in his sandcastle.
             {
                 name: "volcanic-beauty",
                 unlock: { upgrade: ["finalDraft"] },
-                message: "The king is speechless. As he views the great industrial city, his subjects gather and cheer, celebrating his arrival.",
+                message: "O Rei está sem palavras. Olhando a grande cidade indústrial que você criou, os súditos dele o saudam e celebram sua presença.",
             },
             {
                 name: "volcanic-hope",
                 unlock: { upgrade: ["apologeticAmnesty"] },
-                message: "\"Perhaps not all sharks are so vile,\" says the king of shrimps. \"Perhaps, you will be different.\"",
+                message: "\"Talvez nem todos os tubarões sejam desprezíveis,\" diz o Camarão Rei. \"Talvez, você seja diferente.\"",
             },
         ],
 
         abandoned: [
             {
                 name: "abandoned-default",
-                message: "The tar clogs the gills of everyone here. This dying world drags everyone down with it.",
+                message: "A graxa entope as guelras de todos aqui. Esse mundo destruído vai arrastar todos junto com ele.",
             },
             {
                 name: "abandoned-octopus-scrutinizes",

@@ -409,7 +409,7 @@ SharkGame.HomeMessages = {
             {
                 name: "shrouded-eel-onlookers",
                 unlock: { upgrade: ["crystalContainer"] },
-                message: "Divers have reported sightings of wiggly things on the ocean floor. They dart into their holes when approached.",
+                message: "Mergulhadores relatam ver coisinhas ondulantes of wiggly things on the ocean floor. They dart into their holes when approached.",
             },
             {
                 name: "shrouded-eels",

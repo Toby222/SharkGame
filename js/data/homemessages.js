@@ -337,28 +337,28 @@ SharkGame.HomeMessages = {
             {
                 name: "abandoned-octopus-scrutinizes",
                 unlock: { upgrade: ["statsDiscovery"] },
-                message: "An octopus wanders over. It scrutinizes your attempt at organization.",
+                message: "Um polvo chega junto. Julgando as suas tentativas irrisórias de organização.",
             },
             {
                 name: "abandoned-octopus",
                 unlock: { totalResource: { octopus: 1 } },
-                message: "The octopus works tirelessly.",
+                message: "O polvo trabalha sem folga. 8 dias na semana.",
             },
             {
                 name: "abandoned-octopuses",
                 unlock: { totalResource: { octopus: 16 } },
-                message: "More octopuses join. They work in perfect unison.",
+                message: "Mais polvos se juntam. Eles trabalham em união perfeita.",
             },
             {
                 name: "abandoned-production",
                 unlock: { upgrade: ["octopusMethodology"] },
                 message:
-                    "The octopuses speak of production and correct action. They speak of unity through efficiency. They regard us with cold, neutral eyes.",
+                    "Os polvos se importam com produção e com agir corretamente; falam sobre união por eficiência; e nos veem com um olhar frio e apático.",
             },
             {
                 name: "abandoned-spronge",
                 unlock: { resource: { spronge: 1 } },
-                message: "Residue pumps through spronge like blood. It pulses and throbs.",
+                message: "A nata circula pela espronja como sangue em veias. Em resposta, ela bate e .",
             },
             {
                 name: "abandoned-exploration",

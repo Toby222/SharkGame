@@ -309,7 +309,7 @@ SharkGame.HomeMessages = {
             {
                 name: "volcanic-noticed",
                 unlock: { upgrade: ["glassTempering"] },
-                message: "Rumores dizem que o rei descobriu os seus planos. Dizem que ele planeja destruir o cardume inteiro.",
+                message: "Você ouve por aí que o Rei descobriu os seus planos. Dizem que ele planeja destruir o cardume inteiro.",
             },
             {
                 name: "volcanic-acolytes",
@@ -409,72 +409,72 @@ SharkGame.HomeMessages = {
             {
                 name: "shrouded-eel-onlookers",
                 unlock: { upgrade: ["crystalContainer"] },
-                message: "Mergulhadores relatam ver coisinhas ondulantes of wiggly things on the ocean floor. They dart into their holes when approached.",
+                message: "Mergulhadores relatam ver coisinhas ondulantes no fundo do oceano. Eles se escondem em seus buracos quando chegamos perto.",
             },
             {
                 name: "shrouded-eels",
                 unlock: { totalResource: { eel: 1 } },
-                message: "The eels chatter among their hiding places. They like the sharks.",
+                message: "As enguias conversam conosco dos buracos deles. Eles gostaram de nós.",
             },
             {
                 name: "shrouded-distant-chimaeras",
                 unlock: { upgrade: ["exploration"] },
-                message: "In the fog of darkness, the shapes of strange creatures can be made out. They dart away when light approaches.",
+                message: "No véu da escuridão, nós conseguimos distinguir os formatos de alguma criatura estranha. Elas fogem quando tocados por luz.",
             },
             {
                 name: "shrouded-chimaeras",
                 unlock: { totalResource: { chimaera: 1 } },
                 message:
-                    "The chimaeras imply they are ancient kin of the shark kind, reunited through wild coincidence. We don't understand, but they seem to think we do.",
+                    "As quimeras sugerem que são um elo ancião de nós tubarões, reunidos novamente por coincidências incríveis. Nós não fazemos a menor ideia sobre isso, mas elas acham que nós entendemos.",
             },
             {
                 name: "shrouded-arcana",
                 unlock: { totalResource: { arcana: 5 } },
-                message: "These hadal artifacts glow faintly, only in pitch blackness. That glow makes you feel something that you don't understand.",
+                message: "Esse artefatos abissais brilham levemente, mas apenas no breu completo. O brilho te faz sentir coisas que você não compreende.",
             },
             {
                 name: "shrouded-power",
                 unlock: { totalResource: { sacrifice: 100 } },
                 message:
-                    "Every broken shard disintegrates in a blinding flash of light. That familiar feeling washes over you with every sacrifice. The sharp snap of broken arcana echoes in your mind.",
+                    "Cada pedaço estoura em um clarão. Cada sacrifício te inundando com aquela sensação familiar. O estalo de arcana quebrada ecoa na sua mente.",
             },
             {
                 name: "shrouded-city",
                 unlock: { upgrade: ["arcaneHeart"] },
-                message: "The sounds of explorers echo endlessly through the tunnels of the broken city. The eels say they are filled with hope.",
+                message: "O som dos exploradores ecoa quase infinitamente pelos túneis da cidade esfacelada. As enguias dizem que nunca estiveram mais esperançosas.",
             },
             {
                 name: "shrouded-truth",
                 unlock: { totalResource: { sacrifice: 9000000000000000 } },
-                message: "A team of eels get your attention. They have something from the caverns: it's a book, filled with images of pink crystals.",
+                message: "Um grupo de enguias chama a sua atenção. Eles trouxeram algo das cavernas: Um livro. Cheio de figuras de cristais rosas.",
             },
         ],
 
         frigid: [
             {
                 name: "frigid-default",
-                message: "Giant shards of glassy ice surround you on all sides.",
+                message: "Placas gigantes de gelo pontudo te cercam por todos os lados.",
             },
             {
                 name: "frigid-ice-one",
                 unlock: { resource: { ice: 20 } },
-                message: "You feel tired.",
+                message: "Você está cansando.",
             },
             {
                 name: "frigid-icy-doom",
                 unlock: { resource: { ice: 500 } },
-                message: "So cold. So hungry. <span class='smallDesc'>So hopeless.</span>",
+                message: "Tanto frio. Tanta fome. <span class='smallDesc'>Nenhuma esperança.</span>",
             },
             {
                 name: "frigid-distant-village",
                 unlock: { totalResource: { science: 8 } },
-                message: "While scanning the horizon, you notice a gap in the ice. You peer through it, and spot something else.",
+                message: "Analisando o horizonte, você percebe uma fresta pelo gelo. Você dá uma olhada... e acha alguma coisa.",
             },
             {
                 name: "frigid-village",
                 unlock: { upgrade: ["civilContact"] },
                 message:
-                    "A small village of squid greets you respectfully. The water in this place is a little warmer, and you hear a quiet, ambient hum.",
+                    "Uma pequena vila de lulas te cumprimenta. The water in this place is a little warmer, and you hear a quiet, ambient hum.",
             },
             {
                 name: "frigid-urchins",

@@ -358,45 +358,45 @@ SharkGame.HomeMessages = {
             {
                 name: "abandoned-spronge",
                 unlock: { resource: { spronge: 1 } },
-                message: "A nata circula pela espronja como sangue em veias. Em resposta, ela bate e .",
+                message: "A nata circula pela espronja como sangue em veias. Em resposta, ela bate e a bombeia.",
             },
             {
                 name: "abandoned-exploration",
                 unlock: { upgrade: ["exploration"] },
-                message: "Great spires loom in the distance. Loose cables are strung together on the horizon.",
+                message: "Grandes prédios surgem na distância. Uma trama de cabos estão embolados até o horizonte.",
             },
             {
                 name: "abandoned-gate",
                 unlock: { upgrade: ["farAbandonedExploration"] },
                 message:
-                    "This gate stands inert and lifeless like the city around it. The slots are already filled, but it looks like it's turned off.",
+                    "Esse portal está tão inerte e apagado quanto à cidade a sua volta. Seus receptáculos já estão preenchidos, mas ainda está desativado.",
             },
             {
                 name: "abandoned-reverse-engineering",
                 unlock: { upgrade: ["reverseEngineering"] },
                 message:
-                    "The components spin and whirr and click together, but their purpose eludes us. What secrets are you hiding in your mechanisms?",
+                    "As partes giram, clicam e encaixam umas com as outras, mas não conseguimos entender para quê. Quais segredos escondem-se nesses estranhos mecanismos?",
             },
             {
                 name: "abandoned-high-energy-fusion",
                 unlock: { upgrade: ["highEnergyFusion"] },
-                message: "The light is blinding, but the output is worth it. The pieces of a broken past unite to create a brighter future.",
+                message: "A luz é capaz de cegar, mas o resultado vale a cegueira temporária. Os pedaços de um passado perdido se juntam para formar um futuro melhor.",
             },
             {
                 name: "abandoned-done",
                 unlock: { upgrade: ["artifactAssembly"] },
-                message: "The gate buzzes to life, glowing ethereally. If you squint, you can barely make out a blue ocean on the other side.",
+                message: "O portal acorda com um brilho fora desde mundo. Se você apertar os olhos, você quase consegue ver um oceano azul do outro lado.",
             },
             {
                 name: "abandoned-tar-one",
                 unlock: { resource: { tar: 5 } },
-                message: "The tar is killing everything! Maybe a filter could save us?",
+                message: "A graxa está matando tudo! Tem que ter algum jeito de limpá-la.",
                 transient: true,
             },
             {
                 name: "abandoned-tar-two",
                 unlock: { resource: { tar: 500 } },
-                message: "Only machines will remain. All is lost. <span class='smallDesc'>All is lost.</span>",
+                message: "Apenas as máquinas resistem. Tudo foi perdido. <span class='smallDesc'>Tudo está perdido.</span>",
                 transient: true,
             },
         ],
@@ -404,7 +404,7 @@ SharkGame.HomeMessages = {
         shrouded: [
             {
                 name: "shrouded-default",
-                message: "The crystals are easier to find, but the darkness makes it hard to find anything else.",
+                message: "Os cristais ficaram mais fáceis de se ver, mas a escuridão dificulta ver qualquer outra coisa.",
             },
             {
                 name: "shrouded-eel-onlookers",

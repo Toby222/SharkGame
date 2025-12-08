@@ -474,34 +474,34 @@ SharkGame.HomeMessages = {
                 name: "frigid-village",
                 unlock: { upgrade: ["civilContact"] },
                 message:
-                    "Uma pequena vila de lulas te cumprimenta. The water in this place is a little warmer, and you hear a quiet, ambient hum.",
+                    "Uma pequena vila de lulas te cumprimenta. A água desse lugar não está tão gelada e você ouve um chiado ambiente, bem baixinho.",
             },
             {
                 name: "frigid-urchins",
                 unlock: { totalResource: { urchin: 2 } },
                 message:
-                    "The urchins scuttle along the ground and hop about, gathering kelp and placing it into a large, central pile. They know nothing but the kelp.",
+                    "Ouriços se rastejam pelo chão e de vez em quando dão um pulinho, coletando algas e juntando-a numa pilha central. Eles parecem não saber de nada além da alga.",
             },
             {
                 name: "frigid-teamwork",
                 unlock: { totalResource: { extractionTeam: 1 } },
-                message: "The squid champion the value of teamwork and the necessity of cooperation. They say they follow by example.",
+                message: "As lulas prezam fortemente pelo trabalho em equipe e pela necessidade de cooperação. Eles dizem que estão apenas seguindo um exemplo.",
             },
             {
                 name: "frigid-machine",
                 unlock: { totalResource: { squid: 125 } },
                 message:
-                    "In the center of the settlement lies a vibrating...thing, and a strange gate. The thing buzzes loudly, casting enormous energy across the water.",
+                    "No centro do lugarejo, há uma grande... coisa que vibra, e junto um portal estranho. A coisa faz um barulho alto, liberando muita energia pelo oceano.",
             },
             {
                 name: "frigid-squid",
                 unlock: { totalResource: { squid: 250 } },
-                message: "The squid speak of an ancient visitor who saved their world. They ask if you too, have seen this visitor.",
+                message: "As lulas relembram um visitante antigo que salvou seu mundo. Elas perguntam se você também viu esse salvador.",
             },
             {
                 name: "frigid-suspicion",
                 unlock: { upgrade: ["automation"] },
-                message: "The squid describe the machine with fascination. They ask if we feel the same. They see something we do not.",
+                message: "As lulas estão empolvorosas vendo a máquina. They ask if we feel the same. They see something we do not.",
             },
             {
                 name: "frigid-battery",
@@ -512,7 +512,7 @@ SharkGame.HomeMessages = {
             {
                 name: "frigid-heat-returns",
                 unlock: { upgrade: ["rapidRecharging"] },
-                message: "A wave of heat washes over you, and the dingy complex comes back to life. The gate turns on.",
+                message: "Uma onda morna passa por você e o prédio sombrio volta a vida. O portal também o faz.",
             },
         ],
         /*

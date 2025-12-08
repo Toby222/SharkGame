@@ -501,7 +501,7 @@ SharkGame.HomeMessages = {
             {
                 name: "frigid-suspicion",
                 unlock: { upgrade: ["automation"] },
-                message: "As lulas estão empolvorosas vendo a máquina. They ask if we feel the same. They see something we do not.",
+                message: "As lulas estão empolvorosas vendo a máquina. E perguntam se nós sentimos o mesmo. Elas veem algo e nós não.",
             },
             {
                 name: "frigid-battery",

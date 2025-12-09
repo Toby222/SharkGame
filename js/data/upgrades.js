@@ -394,9 +394,9 @@ SharkGame.Upgrades = {
             name: "Biologia Arraiística",
             desc: "Mesmo sendo primos de nos tubarões, não sabemos quase nada das arraias. Nós podemos consertar isso. Só precisamos de uma armadilha.",
             researchedMessage:
-                "Aparentemente, poderíamos ter apenas perguntado. Mas conseguimos descobrir como arraias fazem mais arrainhas. É bem parecido como tubarões funcionam, mas é com arraias.",
+                "Aparentemente, poderíamos ter apenas perguntado. Mas conseguimos descobrir como arraias fazem mais arrainhas. É bem parecido como tubarões funcionam, mas com arraias.",
             effectDesc:
-                "Arraias e arraias laser são duas vezes mais rápidas Rays and laser rays are twice as effective, and ray makers are available. We may never repair the shark-ray relations to their former state after how awkward this whole affair was.",
+                "Arraias e arraias laser são duas vezes mais rápidas e criadores de arraias estão disponíveis. Mas talvez as relações tubarão-arraia nunca voltem ao seu estado original depois de quão vergonhoso isso foi para todos os envolvidos.",
             cost: {
                 science: 1500,
                 sand: 10000,
@@ -412,12 +412,12 @@ SharkGame.Upgrades = {
             },
         },
         crabBiology: {
-            name: "Crab Biology",
-            desc: "Crabs are a mystery. They keep to themselves and dig up crystals or put down plants. What is even up with that? What ARE crabs??",
+            name: "Biologia Caranguêsa",
+            desc: "Esse bichos são um mistério. Eles são meio calados e apenas cavam cristais ou plantas coisas. Por que eles fazem isso? E o QUE são siris??",
             researchedMessage:
-                "It turns out crabs are friendly crustaceans that have revealed to the sharks the secrets of crab generation. It involves eggs, or something. Squirmy eggs.",
+                "Parece que caranguejos são crustáceos amigáveis que revelaram aos tubarões os segredos de produção de caraguejo. Envolvendo ovos, ou algo parecido. Ovos que se mexem.",
             effectDesc:
-                "Crabs and planter crabs are four and two times as effective, respectively, and crab broods are available. Crabs are alright but they are also sort of terrifying and weird. Good thing they're on our side!",
+                "Caranguejos e plantadores são, respectivamente, 4 e 2 vezes mais rápido, e ninhadas de caranguejo podem ser formadas. Siris aparentemente são apenas um tipo de caranguejo, o que é legal, mas um pouco assustador, porque caranguejos são assustadores e esquisitos. Que bom que eles estão do nosso lado!",
             cost: {
                 science: 8500,
                 kelp: 1000,
@@ -434,11 +434,11 @@ SharkGame.Upgrades = {
             },
         },
         sunObservation: {
-            name: "Sun Observation",
-            desc: "We must determine what is with the weird glare on the surface of the water.",
-            researchedMessage: "Shark science has discovered the sun! It has also discovered that looking directly into the sun hurts.",
+            name: "Observação Solar",
+            desc: "Precisamos entender que brilho maluco é aquele na superfície da água.",
+            researchedMessage: "Cientistas acabaram de descobrir o Sol! Eles também descobriram que olhar para sol dói.",
             effectDesc:
-                "Planter crabs are twice as effective. Is a suns worth many fish? We can see a sun, but where is it really? And what is it made of?",
+                "Plantadores colhem duas vezes mais alga. Será que um sol vale vários peixes? Nós vemos o Sol, mas onde que está? O que faz um Sol brilhar?",
             cost: {
                 science: 7500,
             },
@@ -452,10 +452,10 @@ SharkGame.Upgrades = {
             },
         },
         exploration: {
-            name: "Exploration",
-            desc: "Swim beyond the home seas to see what can be found!",
-            researchedMessage: "Found lots of schools of fish! So many different schools! And such untapped sand reserves!",
-            effectDesc: "Sharks and rays are twice as effective. Did you know oceans are big? Fascinating!",
+            name: "Exploração",
+            desc: "Nade além desse mar conhecido para vez o que mais achamos!",
+            researchedMessage: "Achamos um monte de peixes! De todo tipo de cardume possível! E tantas reservas de areia não exploradas!",
+            effectDesc: "Tubarões e arraias pegam o dobro de recursos. Você sabia que oceanos eram tão grandes assim? Incrível!",
             cost: {
                 science: 10000,
                 fish: 50000,
@@ -471,10 +471,10 @@ SharkGame.Upgrades = {
             },
         },
         farExploration: {
-            name: "Far Exploration",
-            desc: "Explore the vast reaches beyond the home ocean.",
-            researchedMessage: "Crystal-rich deposits were found, as well as strange, deep chasms.",
-            effectDesc: "Crabs are four times as effective. Did you know oceans are actually even bigger than big? Remarkable!",
+            name: "Exploração Longínqua",
+            desc: "Explore as vastas águas além de qualquer expedição já feita.",
+            researchedMessage: "Depósitos ricos em cristal foram achados, junto de abismos grandes e profundos.",
+            effectDesc: "Caranguejos quadruplicam sua eficiência. Did you know oceans are actually even bigger than big? Remarkable!",
             cost: {
                 science: 12000,
                 fish: 125000,
@@ -489,10 +489,10 @@ SharkGame.Upgrades = {
             },
         },
         gateDiscovery: {
-            name: "Chasm Exploration",
-            desc: "A campaign of risky, foolhardy expeditions to the deeps, to find whatever can be found.",
+            name: "Exploração Abissal",
+            desc: "Muitas expedições perigosas e audaciosas ao fundo do abismo, para pegar o que acharmos.",
             researchedMessage: "A strange structure was found from clues within the chasms. The cost was great, but the discovery is greater!",
-            effectDesc: "Something ancient lurked in the depths.",
+            effectDesc: "Algo ancestral reside nas profundezas.",
             cost: {
                 science: 1e6,
                 shark: 1000,
@@ -519,11 +519,11 @@ SharkGame.Upgrades = {
             },
         },
         clamScooping: {
-            name: "Clam Scooping",
-            desc: "We see these things all over the seabed but we can't tell which are clams and which are rocks.",
+            name: "Coleta de Mexilhão",
+            desc: "Vemos essas coisas por toda parte, mas não conseguimos diferenciar quais são mexilhões e quais são pedras.",
             researchedMessage:
-                "Patient observation has shown that clams and rocks are in fact different and distinct things. Now we won't be scooping up any more rocks!",
-            effectDesc: "Clams can be collected like fish.",
+                "Observação cuidadosa revelou que mexilhões e pedras são realmente coisas diferentes. Agora não vamos mais coletar pedras por acidente!",
+            effectDesc: "Mexilhões podem ser coletados como se fosse peixe.",
             cost: {
                 science: 250,
             },
@@ -545,11 +545,11 @@ SharkGame.Upgrades = {
             },
         },
         spongeCollection: {
-            name: "Sponge Collection",
-            desc: "We can see these things littering the reefs and beds, but only the octopuses know how to collect them without breaking them.",
+            name: "Coleta de Esponja",
+            desc: "Nós vemos esses troços em meio aos recifes, mas apenas os polvos sabem como pegá-los sem os destruir.",
             researchedMessage:
-                "Understanding the fragile nature of sponges and their weird porous texture, we can now collect sponges by not biting so hard.",
-            effectDesc: "Sponge can be collected in the same way fish can be.",
+                "Ao entender a natureza frágil das esponjas e sua estranha estrutura porosa, descobrimos que podemos coletá-las se mordermos bem de leve apenas.",
+            effectDesc: "Esponja pode ser coletada como se fosse peixe.",
             cost: {
                 science: 888,
             },
@@ -558,11 +558,11 @@ SharkGame.Upgrades = {
             },
         },
         industrialGradeSponge: {
-            name: "Industrial-Grade Sponge",
-            desc: "Our octopus contacts inform us that sponge is highly useful with a little augmentation. Let's figure this out.",
+            name: "Esponja de Produção Industrial",
+            desc: "Nossos contatos de oito patas informaram que a esponja pode ser muito útil com um pouco de aperfeiçoamento. Vamos ver no que dá.",
             researchedMessage:
-                "By infusing sponge with processed matter, we have devised spronge, a versatile super-material that kind of freaks us out!",
-            effectDesc: "Enables creation of spronge, the backbone... uh... the core material in cephalopod technology.",
+                "Infundindo esponja com material processado, nós formamos a famosa 'espronja', um super-material super-versátil que está me dando ânsia só de olhar!",
+            effectDesc: "Criação de espronja é possível, a coluna da... ãhh... o material central da tecnologia cefalopódico.",
             cost: {
                 science: 2500,
                 sponge: 800,
@@ -575,10 +575,10 @@ SharkGame.Upgrades = {
         },
         automation: { cost: { science: 1750 } },
         environmentalism: {
-            name: "Environmentalism",
-            desc: "The machines produce what now?! Quick, we need a solution - sponges filter stuff, right?!",
+            name: "Ambientalismo",
+            desc: "As máquinas estão produzindo o quê?! Rápido, precisamos de uma solução - esponjas filtram a água, certo?!",
             researchedMessage: "With the right kind of stretching and squishing, we can turn sponges into weird little filter things!",
-            effectDesc: "Sponges can be turned into filters to stop the tar from killing us all. Yay!",
+            effectDesc: "Esponjas podem ser transformadas em filtros para impedir a graxa de matar a todos nós. Ufa!",
             cost: {
                 science: 250,
                 sponge: 15,
@@ -588,7 +588,7 @@ SharkGame.Upgrades = {
             },
         },
         engineering: {
-            effectDesc: "Shark machines are twice as effective.",
+            effectDesc: "Máquinas de tubarônio são duas vezes mais eficientes.",
             effect: {
                 incomeBoost: {
                     crystalMiner: 2,
@@ -599,7 +599,7 @@ SharkGame.Upgrades = {
         },
         recyclerDiscovery: {
             effectDesc:
-                "Allows recycling of materials by virtue of a horrifying mechanical maw that consumes all that ventures near it. Future? Also, skimmers are now possible to create.",
+                "Possibilita a reciclagem de materiais recycling of materials by virtue of a horrifying mechanical maw that consumes all that ventures near it. Future? Also, skimmers are now possible to create.",
             cost: {
                 science: 6000,
                 sharkonium: 2000,

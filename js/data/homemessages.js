@@ -501,18 +501,18 @@ SharkGame.HomeMessages = {
             {
                 name: "frigid-suspicion",
                 unlock: { upgrade: ["automation"] },
-                message: "As lulas estão empolvorosas vendo a máquina. E perguntam se nós sentimos o mesmo. Elas veem algo e nós não.",
+                message: "As lulas estão empolvorosas vendo a máquina. E perguntam se nós sentimos o mesmo. Elas veem algo que nós não.",
             },
             {
                 name: "frigid-battery",
                 unlock: { upgrade: ["internalInquiry"] },
                 message:
-                    "Buried deep within the complex lies a massive, dimly glowing battery. The squid say replacing it will get the machine running at full power.",
+                    "No centro do complexo, há uma bateria enorme, porém seu brilho está se esvaindo. As lulas falam que substitui-la irá fazer a máquina funcionar novamente.",
             },
             {
                 name: "frigid-heat-returns",
                 unlock: { upgrade: ["rapidRecharging"] },
-                message: "Uma onda morna passa por você e o prédio sombrio volta a vida. O portal também o faz.",
+                message: "Um mormaço passa por você e o prédio sombrio volta a vida. Juno, o portal se abre.",
             },
         ],
         /*

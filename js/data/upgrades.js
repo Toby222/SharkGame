@@ -345,9 +345,9 @@ SharkGame.Upgrades = {
         },
         agriculture: {
             name: "Agricultura",
-            desc: "The hunter-gatherer lifestyle will only work so well for us. Maybe we should gather these animals in one place and let them grow.",
-            researchedMessage: "It is so much easier to get things when they're all in one place. It's like the ocean is our grotto now!",
-            effectDesc: "Advances in agriculture will fuel future endeavors. Who knows what we'll do next!",
+            desc: "Não sabemos por quanto tempo uma sociedade caçadora-coletora irá nos servir. Talvez devêssemos juntar nossos animais e deixá-los crescer.",
+            researchedMessage: "É tão mais fácil conseguir coisas quando elas estão todas em um lugar. Como se o oceano inteiro estivesse na nossa gruta!",
+            effectDesc: "Advanços na agricultura irão incentivar futuras empreitadas. Quem sabe qual vai ser o nosso próximo passo!",
             cost: {
                 science: 500,
                 sand: 1500,
@@ -357,10 +357,10 @@ SharkGame.Upgrades = {
             },
         },
         kelpHorticulture: {
-            name: "Kelp Horticulture",
-            desc: "Determine what it takes to plant kelp all over the seabed. Maybe this is useful.",
-            researchedMessage: "Crab-specific gear has been invented to allow for kelp farming! This is possibly useful.",
-            effectDesc: "Crabs can become kelp farmers and grow a living carpet across the bottom of the sea.",
+            name: "Horticultura de Alga",
+            desc: "Descubra o que é necessário para encher o solo de alga marinha. Possivelmente será útil.",
+            researchedMessage: "Equipamento caranguêjico foi inventado para eles começarem a plantar alga! Isso é possivelmente útil.",
+            effectDesc: "Caranguejos podem se especializar em fazendeiros de algas e crescer um tapete verde pelo fundo do oceano.",
             cost: {
                 science: 1500,
                 sand: 2000,
@@ -371,9 +371,9 @@ SharkGame.Upgrades = {
             },
         },
         xenobiology: {
-            name: "Xenobiology",
+            name: "Xenobiologia",
             desc: "Determine what is with these weird faceless creatures we keep finding.",
-            researchedMessage: "Results inconclusive! Further research required. It could be such a benefit for science!",
+            researchedMessage: "Resultados inconclusivos! Further research required. It could be such a benefit for science!",
             effectDesc:
                 "Kelp produces sea apples twice as fast. We can dissect sea apples and jellyfish for science. Also, sea apple isn't a fruit. Gross.",
             cost: {

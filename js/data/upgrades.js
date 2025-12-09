@@ -86,10 +86,10 @@ SharkGame.Upgrades = {
     },
     default: {
         crystalBite: {
-            name: "Crystal Bite-Gear",
-            desc: "Bite the crystals we have into something to help biting!",
-            researchedMessage: "Weird teeth-wear has been developed, and sharks can now catch fish better as a result.",
-            effectDesc: "Sharks are twice as effective with their new biting gear. Turns out they work better outside the mouth!",
+            name: "Mordedura de Cristal",
+            desc: "Morda os cristais até eles ficarem num formato que nos ajude a morder ainda melhor!",
+            researchedMessage: "Dentaduras estranhas foram feitas, e tubarões conseguem agora caçar peixes melhor.",
+            effectDesc: "Com seus novos mordedores, a efetividade dos tubarões é dobrada. Na verdade, funciona ainda melhor se for usado fora da boca!",
             cost: {
                 science: 50,
                 fish: 100,
@@ -102,10 +102,10 @@ SharkGame.Upgrades = {
             },
         },
         crystalSpade: {
-            name: "Crystal Spades",
-            desc: "Fashion strange harness-tools for the rays.",
-            researchedMessage: "The rays can now bother the sand more effectively, and dig up more sand now!",
-            effectDesc: "Rays are twice as effective with their specially adapted digging tools.",
+            name: "Chapa de Cristal",
+            desc: "Bata no cristal até produzir uma armadura de cabeça para as raias.",
+            researchedMessage: "As arraias conseguem perturbar mais a areia, ou seja, agora coletamos mais areia!",
+            effectDesc: "Efetividade das arraias aumenta por 100% devido a suas novas ferramentas adaptadas ao seus formatos.",
             cost: {
                 science: 50,
                 sand: 500,
@@ -118,11 +118,11 @@ SharkGame.Upgrades = {
             },
         },
         crystalScoop: {
-            name: "Crystal Scoops",
-            desc: "Design funny looking holdy-things for the crabs!",
-            researchedMessage: "Our crabs used to brush aside the sand to look for crystals - now they can scoop it! Scoopy scoop.",
+            name: "Coletor de Cristal",
+            desc: "Invente uns seguradores engraçados para os caranguejos!",
+            researchedMessage: "Nossos caranguejos antes tinham que varrer a areia com as patas para achar os cristais - agora eles podem ! Scoopy scoop.",
             effectDesc:
-                "Crabs are twice as effective at digging for crystals. The crabs are overjoyed to hold these tiny tools with their tiny claws.",
+                "Caranguejos são duas vezes mais efetivos ao procurar por cristais. Eles estão em êxtase por segurar essas mini ferramentas com suas mini garras.",
             cost: {
                 science: 50,
                 crystal: 10,

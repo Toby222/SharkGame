@@ -829,6 +829,22 @@ SharkGame.ResourceTable = {
         value: 70,
     },
 
+    // SHORE
+    
+    mudskipper: {
+        name: "mudskippers",
+        singleName: "mudskipper",
+        //color: "#undecided",
+        desc: "The liberated prey.",
+        income: {
+            driftwood: 0.5,
+        },
+        //jobs: ["undecided"],
+        //value: 1000, (what does this mean?)
+    },
+
+    
+
     // SHROUDED
 
     chimaera: {

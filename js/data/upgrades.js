@@ -311,11 +311,11 @@ SharkGame.Upgrades = {
             },
         },
         superprocessing: {
-            name: "Superprocessing",
-            desc: "The recycler wasn't really meant for millions of fish at once. Seeing as that transaction is fairly common, we should probably do something about it.",
-            researchedMessage: "Eureka! If we make the big things bigger, and the grinders grindier, we can process way more material at once!",
+            name: "Superprocessamento",
+            desc: "A recicladora não foi feita com o dissolução de milhões de peixes em mente. Considerando que isso é uma demanda bem comum, nós provavelmente deveríamos fazer algo sobre isso.",
+            researchedMessage: "Eureka! Se fizermos as coisas grandes ficarem maiores, e os moedores mais moídos, nós poderemos processar muito mais material de uma só vez!",
             effectDesc:
-                "The recycler's efficiency only starts dropping at 10 million material inserted at once, instead of 100 thousand. The base efficiency is now 100%.",
+                "A eficiência da recicladora só começa a cair na casa dos 10 milhões de itens de uma só vez, ao invés de 100 mil. A eficiência máxima também aumentou para 100%.",
             cost: {
                 science: 1e6,
                 sharkonium: 5e5,
@@ -326,11 +326,11 @@ SharkGame.Upgrades = {
             },
         },
         biology: {
-            name: "Biology",
-            desc: "What is a shark? What is inside a shark, except for large amounts of fish?",
-            researchedMessage: "With a new understanding of their own biology, sharks can now specialise in the manufacture of new sharks.",
+            name: "Biologia",
+            desc: "O que é um tubarão? O que tem dentro de um tubarão, além de muitos peixes?",
+            researchedMessage: "Com uma nova compreensão da própria biologia, tubarões agora podem se especializar em montar novos tubarões.",
             effectDesc:
-                "Sharks are twice as effective, and nurse sharks can be bought. Did you know shark eggs don't actually form just because a shark wills them to exist?",
+                "Tubarões produzem duas vezes mais e tubarões enfermeiros podem ser treinados. Você sabia que ovos de tubarão não aparecem apenas porque um tubarão pediu muito a Papai do Céu?",
             cost: {
                 science: 600,
             },
@@ -344,7 +344,7 @@ SharkGame.Upgrades = {
             },
         },
         agriculture: {
-            name: "Agriculture",
+            name: "Agricultura",
             desc: "The hunter-gatherer lifestyle will only work so well for us. Maybe we should gather these animals in one place and let them grow.",
             researchedMessage: "It is so much easier to get things when they're all in one place. It's like the ocean is our grotto now!",
             effectDesc: "Advances in agriculture will fuel future endeavors. Who knows what we'll do next!",

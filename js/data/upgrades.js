@@ -372,10 +372,10 @@ SharkGame.Upgrades = {
         },
         xenobiology: {
             name: "Xenobiologia",
-            desc: "Determine what is with these weird faceless creatures we keep finding.",
-            researchedMessage: "Resultados inconclusivos! Further research required. It could be such a benefit for science!",
+            desc: "Tente explicar oque que são essas frutinhas que ficam sainda da nossa alga.",
+            researchedMessage: "Resultados inconclusivos! Mais pesquisa é necessária. Pode ser um grande benefício para a ciência!",
             effectDesc:
-                "Kelp produces sea apples twice as fast. We can dissect sea apples and jellyfish for science. Also, sea apple isn't a fruit. Gross.",
+                "Algas produzem holotúrias duas vezes mais rápido. Nós podemos dissecar holotúrias pela ciência. Também, nós descobrimos que holotúrias não são frutas. Que nojo.",
             cost: {
                 science: 2000,
             },
@@ -391,12 +391,12 @@ SharkGame.Upgrades = {
             },
         },
         rayBiology: {
-            name: "Ray Biology",
-            desc: "Though kindred to the sharks, we know so little about the rays. If only we could fix this. We need to bait a sand trap.",
+            name: "Biologia Arraiística",
+            desc: "Mesmo sendo primos de nos tubarões, não sabemos quase nada das arraias. Nós podemos consertar isso. Só precisamos de uma armadilha.",
             researchedMessage:
-                "Apparently we could have just asked. We learned how rays make more rays. It's kinda similar to sharks, really, but rays.",
+                "Aparentemente, poderíamos ter apenas perguntado. Mas conseguimos descobrir como arraias fazem mais arrainhas. É bem parecido como tubarões funcionam, mas é com arraias.",
             effectDesc:
-                "Rays and laser rays are twice as effective, and ray makers are available. We may never repair the shark-ray relations to their former state after how awkward this whole affair was.",
+                "Arraias e arraias laser são duas vezes mais rápidas Rays and laser rays are twice as effective, and ray makers are available. We may never repair the shark-ray relations to their former state after how awkward this whole affair was.",
             cost: {
                 science: 1500,
                 sand: 10000,

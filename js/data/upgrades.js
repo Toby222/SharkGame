@@ -120,7 +120,7 @@ SharkGame.Upgrades = {
         crystalScoop: {
             name: "Coletor de Cristal",
             desc: "Invente uns seguradores engraçados para os caranguejos!",
-            researchedMessage: "Nossos caranguejos antes tinham que varrer a areia com as patas para achar os cristais - agora eles podem ! Scoopy scoop.",
+            researchedMessage: "Nossos caranguejos antes tinham que varrer a areia com as patas para achar os cristais - agora eles podem cavá-los!",
             effectDesc:
                 "Caranguejos são duas vezes mais efetivos ao procurar por cristais. Eles estão em êxtase por segurar essas mini ferramentas com suas mini garras.",
             cost: {
@@ -134,10 +134,10 @@ SharkGame.Upgrades = {
             },
         },
         crystalContainer: {
-            name: "Crystal Containers",
-            desc: "Make weird bottle things from the crystals we have. Maybe useful??",
-            researchedMessage: "Well, things can go into these containers that aren't water. This makes science easier!",
-            effectDesc: "Scientists are twice as effective at making with the science.",
+            name: "Garrafas de Cristal",
+            desc: "Faça uns trecos garrafescos usando os nossos cristais. Talvez seja útil??",
+            researchedMessage: "Bem, coisas que não são água podem ser guardadas nesse vidrinhos. A ciência ficou mais fácil!",
+            effectDesc: "Cientistas têm sua velocidade dobrada ao fazer ciência.",
             cost: {
                 science: 100,
                 crystal: 50,

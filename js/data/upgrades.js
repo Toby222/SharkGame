@@ -103,7 +103,7 @@ SharkGame.Upgrades = {
         },
         crystalSpade: {
             name: "Chapa de Cristal",
-            desc: "Bata no cristal até produzir uma armadura de cabeça para as raias.",
+            desc: "Aperte o cristal até produzir uma armadura de cabeça para as raias.",
             researchedMessage: "As arraias conseguem perturbar mais a areia, ou seja, agora coletamos mais areia!",
             effectDesc: "Efetividade das arraias aumenta por 100% devido a suas novas ferramentas adaptadas ao seus formatos.",
             cost: {
@@ -122,7 +122,7 @@ SharkGame.Upgrades = {
             desc: "Invente uns seguradores engraçados para os caranguejos!",
             researchedMessage: "Nossos caranguejos antes tinham que varrer a areia com as patas para achar os cristais - agora eles podem cavá-los!",
             effectDesc:
-                "Caranguejos são duas vezes mais efetivos ao procurar por cristais. Eles estão em êxtase por segurar essas mini ferramentas com suas mini garras.",
+                "Caranguejos são duas vezes mais eficientes ao procurar por cristais. Eles estão em êxtase por segurar essas mini ferramentas com suas mini garras.",
             cost: {
                 science: 50,
                 crystal: 10,
@@ -149,11 +149,11 @@ SharkGame.Upgrades = {
             },
         },
         statsDiscovery: {
-            name: "Storage Caverns",
-            desc: "It's about time to start moving the stores we have to a better place. We've found one but it needs setting up.",
+            name: "Caverna Armazém",
+            desc: "Tá na hora de nós termos um lugar de verdade para manter nossos estoques. Achamos um cafofo, mas precisa ser arrumado.",
             researchedMessage:
-                "All the goods we've acquired are now being stored and itemised in a mostly flooded cavern system. We're organized! Sort of!",
-            effectDesc: "By storing things in a centralised location, we now finally have an idea of what we're doing...sort of.",
+                "Todos as nossas coisas foram guardadas, separadas e categorizadas em um sistema de cavernas inundado. Nós estamos todos organizados! Mais ou menos!",
+            effectDesc: "Ao armazenar nossos bens em um local centralizado, finalmente podemos manter controle do que estamos fazendo...em sua maior parte.",
             cost: {
                 science: 150,
             },
@@ -162,10 +162,10 @@ SharkGame.Upgrades = {
             },
         },
         underwaterChemistry: {
-            name: "Underwater Chemistry",
-            desc: "With the weird bottles, we can now put things and other things into them and see what happens.",
-            researchedMessage: "Well, nothing useful was determined, but if we keep on doing it we make tremendous leaps for science!",
-            effectDesc: "Scientists are twice as effective with their new chemical insights.",
+            name: "Química Submersa",
+            desc: "Com nossas garrafas estrahas, podemos colocar coisas junto com outras coisas e ver o que acontece.",
+            researchedMessage: "Então, nada de útil foi descoberto, mas se a gente continuar com isso, vamos fazer grandes passos pela ciência!",
+            effectDesc: "Cientistas usam seus novos conhecimentos químicos para dobrar sua eficiência.",
             cost: {
                 science: 200,
                 crystal: 50,
@@ -180,10 +180,10 @@ SharkGame.Upgrades = {
             },
         },
         seabedGeology: {
-            name: "Seabed Geology",
-            desc: "Study the bottom of the ocean to determine the rich, deep, juicy secrets it contains.",
-            researchedMessage: "Not only did we find a whole bunch of weird things, the rays found that there was more sand!",
-            effectDesc: "Rays are twice as effective with their understanding of the seabed and its varieties of sediment.",
+            name: "Geologia Oceânica",
+            desc: "Estude o fundo do oceano para determinar seus ricos e belos segredinhos.",
+            researchedMessage: "Não só descobrimos muitas coisas estranhas, as arraias descobriram que existe mais areia do que apenas areia!",
+            effectDesc: "Com um novo entendimento do solo oceânico e seus sedimentos, eficiência de arraias é dobrada.",
             cost: {
                 science: 250,
                 sand: 750,
@@ -198,10 +198,10 @@ SharkGame.Upgrades = {
             },
         },
         thermalVents: {
-            name: "Thermal Vents",
-            desc: "Investigate the boiling vents that just seem to keep on heating things up.",
-            researchedMessage: "This is a wondrous, unending source of heat! Something good must come from this.",
-            effectDesc: "A power source for future technologies has been discovered.",
+            name: "Fontes Termais",
+            desc: "Investigue os buracos ferventes que ficam jogando água quente.",
+            researchedMessage: "Mas que belo! Nós temos uma nascente de calor interminável! Tenho certezza que algo bom virá disso.",
+            effectDesc: "Uma fonte de poder quase infinita foi descoberta. Novas tecnologias são possíveis!",
             cost: {
                 science: 300,
                 sand: 1000,
@@ -211,10 +211,10 @@ SharkGame.Upgrades = {
             },
         },
         laserRays: {
-            name: "Laser Rays",
-            desc: "Using arcane shark mystery science, capture the heat of the vents for use by rays.",
-            researchedMessage: "The rays can now be granted gear that will let them fuse sand into crystal! Future!",
-            effectDesc: "Laser rays can now be geared up to burn the very sand to glassy crystal.",
+            name: "Raia LASER",
+            desc: "Usa ciência tubarão super mágica e maneira para pegar o calor das fontes para uso.",
+            researchedMessage: "As arraias agora podem ser equipadas com um laser para fundir areia em cristal! Bem vindos ao futuro! Tudo no futuro é cromado!",
+            effectDesc: "Podemos treinar arraias laser para derreter areia em cristal vítreo.",
             cost: {
                 science: 100,
                 sand: 5000,
@@ -225,10 +225,10 @@ SharkGame.Upgrades = {
             },
         },
         transmutation: {
-            name: "Transmutation",
-            desc: "By heating things up and doing science things to them, maybe new things can be made!",
-            researchedMessage: "A new form of material has been discovered! It has been named after its discoverer, Dr. Sharkonium.",
-            effectDesc: "Enables transmutation of some random junk we have lying around into sharkonium, material of the future.",
+            name: "Transmutação",
+            desc: "Ao esquentar coisas e fazer ciência, novas coisas podem ser feitas!",
+            researchedMessage: "Um novo tipo de material foi descoberto! Foi batizado em homenagem de seu criador, Dr. Tubarão.",
+            effectDesc: "Permite a transmutação de umas coisas que nós temos jogadas por aí em tubarônio, o material do futuro.",
             cost: {
                 science: 4000,
                 crystal: 1500,
@@ -239,10 +239,10 @@ SharkGame.Upgrades = {
             },
         },
         automation: {
-            name: "Automation",
-            desc: "Using sharkonium, we can make things to do things so we don't have to do the things!",
-            researchedMessage: "Now we don't have to do all the work, machines can do it for us! Future!!",
-            effectDesc: "Machines can be built to supplement population duties. This is efficient.",
+            name: "Automação",
+            desc: "Usando tubaônio, podemos fazer coisas que fazem coisas para que nós não precisemos fazer as coisas!",
+            researchedMessage: "Agora não precisamos fazer todo o trabalho, já que as máquinas o fazem por nós! FUTUUURO!!",
+            effectDesc: "Máquinas podem ser construídas para ajudar na produção do cardume de forma mais eficiente.",
             cost: {
                 science: 3500,
                 sharkonium: 250,
@@ -252,10 +252,10 @@ SharkGame.Upgrades = {
             },
         },
         engineering: {
-            name: "Engineering",
-            desc: "The machines sort of suck. Let's make them better by learning how!",
-            researchedMessage: "The machines are twice as good now! We've figured out new designs in the process, too!",
-            effectDesc: "Machines are twice as effective. Skimmers and auto-transmuters are now possible to create.",
+            name: "Engenharia",
+            desc: "Nossas máquinas são meio ruins. Vamos aprender a montá-las melhor!",
+            researchedMessage: "Dobramos a produção das máquinas, e ainda aprendemos a fazer outras máquinas! Dois em um!",
+            effectDesc: "Produção de máquinas vezes dois. Desnatadoras e transmutadoras automáticas são agora construíveis.",
             cost: {
                 science: 5000,
                 sharkonium: 1750,
@@ -273,11 +273,11 @@ SharkGame.Upgrades = {
             },
         },
         recyclerDiscovery: {
-            name: "Recycler",
-            desc: "Devise a system of pulverising unwanted resources into a component paste, and reusing them as something else.",
+            name: "Recicladora",
+            desc: "Invente um sistema de destruir recursos em uma gosma para ser reutilizada em outra coisa.",
             researchedMessage:
-                "Well this thing is frankly terrifying. I wouldn't swim anywhere near the input holes if I were you. Maybe it'll help though!",
-            effectDesc: "Allows recycling of materials by virtue of a horrifying mechanical maw that consumes all that ventures near it. Future?",
+                "Bem, isso daqui parece que veio de um pesadelo. Eu não atreveria a nadar perto de qualquer buraco dessa máquina. Mas ela certamente pode ser útil para nós!",
+            effectDesc: "Possibilita a reciclagem de materiais por meio de uma boca aterrorizante que consume e destrói tudo que chega perto. Futuro?",
             cost: {
                 science: 75000,
                 sharkonium: 25000,
@@ -287,10 +287,10 @@ SharkGame.Upgrades = {
             },
         },
         iterativeDesign: {
-            name: "Iterative Design",
-            desc: "The machines are useful, but they could be better. Let's build new ones, from scratch!",
-            researchedMessage: "As it turns out, science is about learning from mistakes, or so the scientists say. About their own mistakes.",
-            effectDesc: "All shark machines run twice as fast. Again! Scientists are 4 times faster as well.",
+            name: "Design Iterado",
+            desc: "As máquinas são boas, mas poderiam ser melhores. Vamos refazer nossas máquinas do zero!",
+            researchedMessage: "E nós aprendemos que ciência é sobre aprender de erros, é o que diz os cientistas. Sobre seus próprios erros.",
+            effectDesc: "Todas as máquinas tubarônicas duplicam sua velocidade. Sim, de novo! Além disso, cientistas quadruplicam sua eficiência.",
             cost: {
                 science: 15000,
                 sharkonium: 17500,

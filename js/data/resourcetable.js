@@ -1062,8 +1062,8 @@ SharkGame.ResourceTable = {
     },
 
     ancientPart: {
-        name: "partes antigas",
-        singleName: "parte antiga",
+        name: "componentes antigos",
+        singleName: "componente antigo",
         desc: "O erro de nosso pais.",
         color: "#8a6853",
         value: 500,

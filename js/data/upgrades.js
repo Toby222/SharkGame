@@ -577,7 +577,7 @@ SharkGame.Upgrades = {
         environmentalism: {
             name: "Ambientalismo",
             desc: "As máquinas estão produzindo o quê?! Rápido, precisamos de uma solução - esponjas filtram a água, certo?!",
-            researchedMessage: "With the right kind of stretching and squishing, we can turn sponges into weird little filter things!",
+            researchedMessage: "Puxando e esmagando as esponjas direitinho, podemos transformá-las em pequenas membranas que servem como filtros!",
             effectDesc: "Esponjas podem ser transformadas em filtros para impedir a graxa de matar a todos nós. Ufa!",
             cost: {
                 science: 250,
@@ -599,7 +599,7 @@ SharkGame.Upgrades = {
         },
         recyclerDiscovery: {
             effectDesc:
-                "Possibilita a reciclagem de materiais recycling of materials by virtue of a horrifying mechanical maw that consumes all that ventures near it. Future? Also, skimmers are now possible to create.",
+                "Possibilita a reciclagem de materiais por meio de uma boca aterrorizante que consume e destrói tudo que chega perto. Futuro? Além disso desbloqueia construção de desnatadoras.",
             cost: {
                 science: 6000,
                 sharkonium: 2000,
@@ -626,12 +626,12 @@ SharkGame.Upgrades = {
             },
         },
         sprongeBiomimicry: {
-            name: "Spronge Biomimicry",
-            desc: "The cephalopod school of thought is that a machine that mimics life is a better machine. We don't understand this so well yet.",
+            name: "Biomimetização Com Espronja",
+            desc: "A escola de pensamento pôlvica dita que uma máquina que imita a vida é uma máquina melhor. Nós não entendemos por quê.",
             researchedMessage:
-                "For machines that mimic life, these things sure put out a lot of pollution. It's sort of alarming. Very alarming, even.",
+                "Considerando máquinas que imitam vida, essas máquinas soltam poluição pra dar com pau. O que é deveras inquietante. Alarmante, cepá. Preocupante, porventura. Quiçá, até estarrecedor.",
             effectDesc:
-                "We can mimic some of the life-mimicking biotechnology the octopuses use, but it gums up the oceans so quickly. So very dangerous.",
+                "Nós conseguimos imitar parte da biotecnologia mimetizante que os polvos usam, mas enlamea o oceano rapidamente. Muito perigoso.",
             cost: {
                 science: 6000,
                 spronge: 200,
@@ -644,8 +644,8 @@ SharkGame.Upgrades = {
         },
         agriculture: {
             researchedMessage:
-                "While the tar makes it difficult to pull off, it is so much easier to get things when they're all in one place. It's like the ocean is our grotto now!",
-            effectDesc: "Crabs can now specialize in collecting sponge.",
+                "Enquanto que a graxa torne mais difícil, É tão mais fácil conseguir coisas quando elas estão todas em um lugar. Como se o oceano inteiro estivesse na nossa gruta!",
+            effectDesc: "Caranguejos podem ser especializar na colheita de esponja.",
             cost: {
                 science: 2000,
                 sand: 500,
@@ -691,10 +691,10 @@ SharkGame.Upgrades = {
             },
         },
         octopusMethodology: {
-            name: "Octopus Methodology",
-            desc: "The octopuses claim they know ways to improve their routines and machines.",
-            researchedMessage: "We have no idea what thought processes guide these cephalopod allies of ours, but they know how to get results.",
-            effectDesc: "Octopuses can specialise in investigation, and octopuses work twice as efficiently.",
+            name: "Metodologia Pôlvica",
+            desc: "Os polvos dizem que conseguem melhorar a eficiência de suas rotinas e máquinas.",
+            researchedMessage: "Não fazemos a menor ideia o que passa pela cabeça enorme desses nossos aliados, mas eles sabem como conseguir resultados.",
+            effectDesc: "Polvos trabalham duas vezes mais rápido e podem se tornar investigadores.",
             cost: {
                 science: 888,
                 clam: 888,
@@ -711,11 +711,11 @@ SharkGame.Upgrades = {
             },
         },
         octalEfficiency: {
-            name: "Octal Efficiency",
-            desc: "The octopuses wish to further enhance their productivity for collective gain.",
+            name: "Eficiência Octal",
+            desc: "Os polvos querem aumentar ainda mais a própria eficiência pelo cardume.",
             researchedMessage:
-                "The instructions constructed and disseminated by the octopuses are complex and only understood to other octopuses. Head hurts. Something about the number eight.",
-            effectDesc: "Octopuses, investigators, and their machines are twice as effective. Find unity in efficiency.",
+                "As instruções feitas e disseminadas pelos polvos são complexas e compreendidas apenas por outros polvos. Cabeça dói. Alguma coisa sobre o número oito.",
+            effectDesc: "Polvos, investigadores e máquinas de espronja são 2 vezes mais eficientes. Ache união na eficiência.",
             cost: {
                 science: 8888,
                 clam: 88888,
@@ -863,7 +863,7 @@ SharkGame.Upgrades = {
             events: ["abandonedRefundInvestigators"],
         },
         artifactAssembly: {
-            name: "Artifact Assembly",
+            name: "Montagem Artefática",
             desc: "Assemble the pieces. Open the gate. We demand it.",
             researchedMessage: "It worked perfectly! Our little controller managed to coax the gate into turning on!",
             effectDesc: "It is done.",

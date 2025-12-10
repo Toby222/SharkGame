@@ -365,7 +365,7 @@ SharkGame.WorldTypes = {
              longDesc: "A lapping, sandy ocean, creeping upon the shores.",
              missing: ["kelpstuff"],
              present: ["mudskipper", "driftwood", "hardbark", "coral"],
-             tip: "",
+             tip: "Not all is as it seems. Respect the brown fish that survive the beyond.",
           },
             entry: "You enter a low-strung turquoise sea, all your memory a shade.",
             style: "default",
@@ -383,7 +383,7 @@ SharkGame.WorldTypes = {
             absentResources: ["kelp"],
             modifiers: [
              {type: "multiplier", modifier: "planetaryIncomeMultiplier", resource: "crab", amount: 1}
-            ]
+            ],
             gateType: "slots",
             gateCosts: {
                fish: 1,

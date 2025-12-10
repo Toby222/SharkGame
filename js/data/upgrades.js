@@ -773,7 +773,7 @@ SharkGame.Upgrades = {
             },
         },
         farExploration: {
-            name: "Exploração Longíqua",
+            name: "Exploração Longínqua",
             desc: "No horizonte, tem muitas estruturas estranhas que os tubarões não arriscaram entrar...mas o que acontece se entrarmos?",
             researchedMessage:
                 "Pelo visto, novas descobertas acontecem! Não há sinais de vida algum, mas achamos várias máquinas estranhas e um portal estranho.",
@@ -813,7 +813,7 @@ SharkGame.Upgrades = {
             name: "Engenharia Reversa",
             desc: "O que são esses pedaços? Por que eles têm esse formato?!",
             researchedMessage: "Resultados inconclusivos. Precisamos de mais análises.",
-            effectDesc: "Componentes antigos podem ser destruídos pela ciência. Cientistas dobram e investigadores quadruplicam suas velocidades.",
+            effectDesc: "Componentes antigos podem ser destruídos por ciência. Cientistas dobram e investigadores quadruplicam suas velocidades.",
             cost: {
                 science: 150000,
                 ancientPart: 350,
@@ -831,10 +831,10 @@ SharkGame.Upgrades = {
         },
         highEnergyFusion: {
             name: "Fusão de Alta Energia",
-            desc: "These old parts must have some kind of use! Question is, can we figure it out???",
-            researchedMessage: "The secret of high-energy fusion has been unlocked. Scavenge no more. We will do it ourselves.",
+            desc: "Essas parte velhas devem servir para algo! Só que, conseguimos decobrir???",
+            researchedMessage: "O segredo ancião da fusão de alta energia foi redescoberto. Para que catar? Nós mesmos vamos os construir.",
             effectDesc:
-                "Laser rays can fuse sand to crystal at an absurd rate: 128 times faster! We have figured out how to create more ancient parts by fusing clams and crystals.",
+                "Arraias laser conseguem fundir areia em cristal a um ritmo absurdo: 128 vezes mais rápido! Descobrimos também como fazer mais componentes antigos usando mexilhões e cristais.",
             cost: {
                 science: 7500000,
                 ancientPart: 1000,
@@ -849,10 +849,10 @@ SharkGame.Upgrades = {
             },
         },
         investigatetions: {
-            name: "Investi-gate-tions",
-            desc: "Temporarily commit 500 investigators to investigating the gate. Uncover its mysteries in record time!",
-            researchedMessage: "Using our reverse-engineering techniques, the investigators have come up with a theory on how to open the gate!",
-            effectDesc: "Gate investigated. We think we have a way to open it, but it's not gonna be easy...the mechanism is complicated.",
+            name: "Investigação Portalária",
+            desc: "Temporariamente ponha 500 investigadores para analisar o portal. Descubra seus segredos em tempo recorde!",
+            researchedMessage: "Usando nossas técnicas de engenharia reversa, os investigadores fizeram uma teoria em como abrir o portal!",
+            effectDesc: "Portal investigado. Acho que nós temos um meio de abri-lo, mas uma coisa que não vai ser é fácil...o mecanismo é complicado.",
             cost: {
                 science: 4e7,
                 investigator: 500,
@@ -864,9 +864,9 @@ SharkGame.Upgrades = {
         },
         artifactAssembly: {
             name: "Montagem Artefática",
-            desc: "Assemble the pieces. Open the gate. We demand it.",
-            researchedMessage: "It worked perfectly! Our little controller managed to coax the gate into turning on!",
-            effectDesc: "It is done.",
+            desc: "Junte as peças. Abra o portal. Nós ordenamos.",
+            researchedMessage: "Funcionou perfeitamente! Nosso controlezinho convenceu mesmo o portal a se ligar!",
+            effectDesc: "Foi feito.",
             cost: {
                 ancientPart: 400000,
             },
@@ -875,10 +875,10 @@ SharkGame.Upgrades = {
             },
         },
         eightfoldOptimisation: {
-            name: "Eightfold Optimisation",
-            desc: "Enhance productivity. Optimise. Improve. Improve.",
-            researchedMessage: "Peak productivity attained. Maintain course. Maintain efficiency.",
-            effectDesc: "Octopuses and their roles, as well as their machines, are all eight times as effective. Optimised.",
+            name: "Otimização Óctupla",
+            desc: "Aumentar produtividade. Otimizar. Melhorar. Aprimorar.",
+            researchedMessage: "Chegamos ao cume da produtividade. Mantenha isso. Mantenha eficiência.",
+            effectDesc: "Polvos e suas especializações, junto de suas máquinas, estão todos oito vezes mais eficientes. Aperfeiçoados.",
             cost: {
                 science: 8e7,
             },
@@ -899,11 +899,11 @@ SharkGame.Upgrades = {
             },
         },
         mechanisedAlchemy: {
-            name: "Mechanised Alchemy",
-            desc: "Better engineering and transmutation processes lead to a refinement of our machines.",
-            researchedMessage: "We are blurring the line between science and magic more than ever before!",
+            name: "Alquimia Mechanizada",
+            desc: "Engenharia e transmutação melhores levam à sofisticação de nossas máquinas.",
+            researchedMessage: "Estamos cada vez mais apagando a separação entre ciência e magia!",
             effectDesc:
-                "Shark machines are all four times as effective, filters are 8 times as effective. We work better with the machines, not against them.",
+                "Máquinas tubarônicas são quatro vezes mais eficientes, filtros são 8 vezes mais rápidos. Nosso trabalho é melhor junto das máquinas, não contra elas.",
             cost: {
                 science: 1e8,
             },
@@ -927,11 +927,11 @@ SharkGame.Upgrades = {
         crystalBite: {},
         crystalSpade: {},
         cetaceanAwareness: {
-            name: "Cetacean Awareness",
-            desc: "From a distance, it's hard to tell which of us are really sharks or... those other things. We need to figure this out.",
+            name: "Percepção Cetácea",
+            desc: "De longe, é difícil identificar quem são tubarões e quem são... outras coisas. Precisamos entender isso.",
             researchedMessage:
-                "Right, so, dolphins have a horizontal tail and sharks have a vertical tail. Also, APPARENTLY, they have warm blood and bigger brains. Jerks.",
-            effectDesc: "Dolphins can now be recruited.",
+                "Certo, então, golfinhos têm um rabo na horizontal e tubarões tem um rabo na vertical. Também, APARENTEMENTE, eles tem sangue quente e 'cérebros maiores'. Panacas.",
+            effectDesc: "Golfinhos podem ser recrutadoes (mesmo que ninguém queira fazer isso).",
             cost: {
                 science: 125,
                 coral: 100,
@@ -952,7 +952,7 @@ SharkGame.Upgrades = {
             },
         },
         agriculture: {
-            effectDesc: "Dolphin effectiveness times 2. Discovered agricultural methods. We'll see if this bears fruit.",
+            effectDesc: "Efetividade dos golfinhos vezes 2. Descobrimos métodos agriculturais. Vamos ver se isso dá certo.",
             cost: {
                 science: 500,
                 sand: 10000,
@@ -965,10 +965,10 @@ SharkGame.Upgrades = {
             },
         },
         coralCollection: {
-            name: "Coral Collection",
-            desc: "The dolphins keep talking about coral and crystals and pretty artwork. All the time. What??? Why do you care??",
-            researchedMessage: "So it's a cultural thing. Fine, collect your coral. See if I care.",
-            effectDesc: "Dolphins can now specialize in becoming treasurers.",
+            name: "Coleção de Coral",
+            desc: "Os golfinhos ficam falando de corais e cristais e belas artes. Sem para. E??? Quem se importa??",
+            researchedMessage: "Pelo visto é um 'coisa cultural'. Então tá, pega aí seu coral. Eu nem quero saber.",
+            effectDesc: "Golfinhos podem se especializar em tesouraria.",
             cost: {
                 science: 400,
                 coral: 250,
@@ -986,7 +986,7 @@ SharkGame.Upgrades = {
         },
         xenobiology: {
             effectDesc:
-                "We know how to harvest sea apples twice as quickly, and we can dissect sea apples for science. Also, sea apple isn't a fruit.",
+                "Nós sabemos como coletas holotúrias duas vezes mais rápido, além de como dissecá-las por ciência. Também, nós descobrimos que holotúrias não são frutas. Eca.",
             cost: {
                 seaApple: 20,
             },
@@ -996,12 +996,12 @@ SharkGame.Upgrades = {
             },
         },
         dolphinBiology: {
-            name: "Dolphin Biology",
-            desc: "Do we really have to learn about this? We do? Alright, then.",
+            name: "Biologia Golfinhosa",
+            desc: "Precisamos mesmo aprender isso? Sério mesmo? Então tá.",
             researchedMessage:
-                "We managed to offend the dolphins with our questions so much they decided to form their own biological research team.",
+                "Nós ofendemos tanto os golfinhos com nossas perguntas que eles formaram um próprio time próprio de pesquisa biológica.",
             effectDesc:
-                "Dolphins are four times as effective but four times a small number is still small. Treasurers are twice as effective too. Also now they can make more dolphins. <em>Hooray.</em>",
+                "Golfinhos são quatro vezes mais eficientes, mas 4 vezes nada ainda é nada. Tesoureiros produzem o dobro também. Além disso, conseguimos agora produzir mais golfinhos. <em>êêêê.</em>",
             cost: {
                 science: 3000,
                 coral: 1000,
@@ -1024,7 +1024,7 @@ SharkGame.Upgrades = {
         },
         rayBiology: {
             effectDesc:
-                "Rays are four times as effective. We may never repair the shark-ray relations to their former state after how awkward this whole affair was.",
+                "Arraias são quatro vezes mais rápidas e criadores de arraias estão disponíveis. Mas talvez as relações tubarão-arraia nunca voltem ao seu estado original depois de quão vergonhoso isso foi para todos os envolvidos.",
             cost: {
                 science: 2250,
                 sand: 5000,
@@ -1039,7 +1039,7 @@ SharkGame.Upgrades = {
             },
         },
         delphineHistory: {
-            name: "Delphine History",
+            name: "História Delfínica",
             desc: "We keep finding all these flat pieces of kelp washing up in the current. What is with them? Why are they crunchy?!",
             researchedMessage: "A dolphin overheard us talking about it, and they came over and 'read' something from it. What?!",
             effectDesc:

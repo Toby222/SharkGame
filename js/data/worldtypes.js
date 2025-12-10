@@ -382,7 +382,8 @@ SharkGame.WorldTypes = {
              "mudskipperpuppets"],
             absentResources: ["kelp"],
             modifiers: [
-             {type: "multiplier", modifier: "planetaryIncomeMultiplier", resource: "crab", amount: 1}
+             { type: "multiplier", modifier: "planetaryIncomeMultiplier", resource: "crab", amount: 1 }
+             { type: "multiplier", modifier: "planetaryResourceBoost", resource: "sand", amount: 2.5 }
             ],
             gateType: "slots",
             gateCosts: {

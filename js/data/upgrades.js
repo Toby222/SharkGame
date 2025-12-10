@@ -737,7 +737,7 @@ SharkGame.Upgrades = {
             },
         },
         sunObservation: {
-            desc: "É difícil de se ver, mas tem um brilho estranho na superfície da água e precisamos saber o que é.",
+            desc: "É difícil de ver, mas tem um brilho estranho na superfície da água e precisamos saber o que é.",
             effectDesc:
                 "Polvos investigadores, tubarões cientistas e siris coletores têm a velocidade dobrada. Será que um sol vale vários peixes? Nós vemos o Sol, mas onde que está? O que faz um Sol brilhar?",
             cost: {
@@ -1040,10 +1040,10 @@ SharkGame.Upgrades = {
         },
         delphineHistory: {
             name: "História Delfínica",
-            desc: "We keep finding all these flat pieces of kelp washing up in the current. What is with them? Why are they crunchy?!",
-            researchedMessage: "A dolphin overheard us talking about it, and they came over and 'read' something from it. What?!",
+            desc: "Esses pedaços finos de alga ficam aparecendo nas correntes. O que são? Por que são crocantes?!",
+            researchedMessage: "Um golfinho nos ouviu discutindo sobre, e ele veio e 'leu' coisas da alga. Como assim?!",
             effectDesc:
-                "All dolphin roles are twice as effective. Discovered the remnants of dolphin civilization in the form of kelp...papyrus. Okay then??",
+                "Todos os golfinhos têm sua produção dobrada. Descobrimos os restos de uma civilização de golfinhos por meio de papíro...de alga. Tár??",
             cost: {
                 science: 25000,
             },
@@ -1094,11 +1094,11 @@ SharkGame.Upgrades = {
             },
         },
         whaleCommunication: {
-            name: "Whale Communication",
-            desc: "We can hear faint cries in the distance. What is out there?",
+            name: "Comunicação Baleiística",
+            desc: "Nós conseguimos ouvir choros distantes. O que está fazendo isso?",
             researchedMessage:
-                "Okay, 'whales' are out there. They're similar to dolphins, except less rude, and really big. Oh, and, they collect tons of fish.",
-            effectDesc: "Whales can now be recruited.",
+                "Certo, 'baleias' estão fazendo isso. Elas parecem golfinhos, só que menos rudes, e muito grandes. Ah, é mesmo, eles também pegam peixes à farta.",
+            effectDesc: "Baleias podem ser recrutadas.",
             cost: {
                 fish: 2000000,
             },
@@ -1107,11 +1107,11 @@ SharkGame.Upgrades = {
             },
         },
         aquamarineFusion: {
-            name: "Aquamarine Fusion",
-            desc: "The kelp papyrus things have instructions on how to make some gross thing called delphinium, so now we feel obligated to make it. Are we sure we want to do this?",
+            name: "Fusão Aquamarinha",
+            desc: "Aqueles papíros de alga têm receita de como fazer um treco feio chamado delfínio, então nós nos sentimos obrigados a fazê-lo. É sério que nós queremos fazer isso?",
             researchedMessage:
-                "Using the knowledge gained from the kelp slab things, we've figured out how to make delphinium and now we feel gross.",
-            effectDesc: "Enables transmutation of a bunch of junk into delphinium.",
+                "Usando o 'conhecimento' obtidas das placas de alga esquisitas, descobrimos como fazer delfínio e agora estamos questionando todas nossas decisões até agora.",
+            effectDesc: "Possibilita a transmutação de recursos potencialmente úteis em lixo.",
             cost: {
                 science: 125000,
                 coral: 200000,
@@ -1122,11 +1122,11 @@ SharkGame.Upgrades = {
             },
         },
         dolphinTechnology: {
-            name: "Dolphin Technology",
-            desc: "Regardless of the material, the machines might be good. Probably not, but we're going to be thorough anyways.",
+            name: "Tecnologia Cetácea",
+            desc: "Independente do material, as máquinas podem ser boas. Provavelmente não, mas nós temos que testar mesmo assim.",
             researchedMessage:
-                "Dolphin technology is pretty ornate. We spent more time figuring out which parts weren't strictly necessary than we did actually building machines!",
-            effectDesc: "We've figured out some dolphin machinery. As expected, it's not the best - but it'll have to do.",
+                "A tecnologia dos golfinhos é bem enfeitada. Nós gastamos mais tempo vendo quais partes eram apenas estéticas do que realmente construíndo as máquinas em si!",
+            effectDesc: "Desvendamos como funciona uma boa parte da maquinaria dos golfinhos. Para a surpresa de ninguém, não é muito bom - mas é o que tem pra hoje.",
             cost: {
                 science: 50000,
                 delphinium: 15000,
@@ -1157,11 +1157,11 @@ SharkGame.Upgrades = {
             },
         },
         whaleSong: {
-            name: "The Whale Song",
-            desc: "The whales claim to know segments of some form of ancient ethereal music that connects worlds. We can collect what they know to piece it together ourselves.",
-            researchedMessage: "What we've put together is definitely a song...but something's missing. This can't be the whole thing.",
+            name: "O Canto das Baleias",
+            desc: "As baleias dizem que sabem partes de alguma música etérea anciã que junta mundos. Podemos pegar tudo que elas sabem e juntar.",
+            researchedMessage: "Bem, o que nós juntamos é certamente uma das música já existentes...Mas tem que ter algo faltando. Isso não pode ser tudo.",
             effectDesc:
-                "Whales are 4 times as effective. The whales have worked with us to put together pieces of an ancient song. We don't think it's everything, though.",
+                "Baleias são 4 vezes mais eficientes. As baleias trabalharam conosco para juntar as partes de uma música antiga. Porém não achamos que esteja completo.",
             cost: {
                 fish: 500000000,
             },
@@ -1176,11 +1176,11 @@ SharkGame.Upgrades = {
             },
         },
         retroactiveRecordkeeping: {
-            name: "Retroactive Recordkeeping",
-            desc: "We've been sitting on a massive stockpile of these kelp papyrus...things. Maybe we should try organizing them.",
-            researchedMessage: "The dolphins were the first to volunteer with helping to organize this stuff. I GUESS we could give them a chance.",
+            name: "Registração Retroativa",
+            desc: "Nós temos quase uma montanha dessas coisas...papirescas. Acho que deveríamos tentar organizá-las.",
+            researchedMessage: "Os golfinhos foram os primeiros a se voluntariar para organizar esses troços. Hm, eu ACHO que vamos dar para eles uma chance.",
             effectDesc:
-                "Scientists are 16 times as effective. Can now assign dolphins as historians who will help catalogue all of the information we have on these kelp things.",
+                "Efetividade de cientistas vezes 16 Podemos agora formar golfinhos como historiadores que vão ajudar a catalogar toda a informação dos nossos negócios de alga.",
             cost: {
                 science: 2000000,
             },
@@ -1197,12 +1197,12 @@ SharkGame.Upgrades = {
             },
         },
         imperialDesigns: {
-            name: "Imperial Designs",
-            desc: "Finally, we've found them! After rummaging through the kelp papyrus for a bit, we came across the original designs for the dolphin machines.",
+            name: "Desenhos Imperiais",
+            desc: "Finalmente, achamos! Depois de reviear nossa coleção de papiro, encontramos os desenhos originais das máquinas de delfínio.",
             researchedMessage:
-                "Upon further examination, these suck! These designs will never work! Look, let's show them-- oh. Oh, apparently they do. Huh.",
+                "Olhando melhor, eles são terríveis! Esses planos nunca funcionariam! É por isso que não usamos.  Olha só, deixa eu mostrar-- a. Eles, aparentemente eles...funcionam? Hmm.",
             effectDesc:
-                "Kelp cultivators and crimson combines are 4 times faster, and tireless crafters are four times as efficient. We begrudingly admit their quality is not entirely terrible.",
+                "Cultiveiras e fuscões vermelhos funcionam 4 vezes mais rápido e artesões produzem 4 vezes mais. É com coração pesado que nós temos que admitir que as máquinas não são completamente inúteis.",
             cost: {
                 science: 7500000,
                 delphinium: 250000,
@@ -1222,10 +1222,10 @@ SharkGame.Upgrades = {
             },
         },
         ancientAgriculture: {
-            name: "Ancient Agriculture",
-            desc: "Now that we've got it all in one place, we're finding that a lot of these pages on farming methods are part of an entire book!",
+            name: "Agricultura Anciã",
+            desc: "Agora que juntamos tudo, percebemos que muitas dessas páginas de métodos de plantio são parte de um só livro!",
             researchedMessage:
-                "We spent so long arguing with the dolphins about minute details that a small group of dolphins and sharks finished sorting it before we even decided on a plan. Oops.",
+                "N[s ficamos tanto tempo discutindo com os golfinhos sobre detalhes minúsculos de como proceder que um grupinho de golfinhos e tubarões amadores se juntou e terminou o trabalho antes mesmo de termos algum plano. Oops.",
             effectDesc:
                 "Planter crabs times 16, kelp cultivators times 2, all coral income times 4. Nobody has talked about the wasteful argument since it happened...we thought the dolphins would rub it in our faces by now, but they seem totally disinterested.",
             cost: {
@@ -1271,7 +1271,7 @@ SharkGame.Upgrades = {
             },
         },
         eternalSong: {
-            name: "The Eternal Song",
+            name: "O Coro Eterno",
             desc: "The song of the whales is mentioned in dolphin texts dating back as far as we can find. I think we're onto something.",
             researchedMessage:
                 "The song of the whales was only ever half of the composition. The dolphins were the key to completing it. Now we have the pieces.",

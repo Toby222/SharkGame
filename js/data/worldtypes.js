@@ -363,8 +363,8 @@ SharkGame.WorldTypes = {
          foresight: {
              vagueLongDesc: "This place is so shallow.",
              longDesc: "A lapping, sandy ocean, creeping upon the shores.",
-             missing: [“kelpstuff”],
-             present: ["mudskipper", "driftwood", “hardbark”, "coral"],
+             missing: ["kelpstuff"],
+             present: ["mudskipper", "driftwood", "hardbark", "coral"],
              tip: "",
           },
             entry: "You enter a low-strung turquoise sea, all your memory a shade.",
@@ -388,9 +388,9 @@ SharkGame.WorldTypes = {
                fish: 1,
                sand: 1,
                crystal: 1,
-               kelp: 1,
-               seaApple: 1,
-               sharkonium: 1,
+               driftwood: 1,
+               coral: 1,
+               hardbark: 1,
         },
     },
     stone: {

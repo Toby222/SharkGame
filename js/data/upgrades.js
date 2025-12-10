@@ -413,11 +413,11 @@ SharkGame.Upgrades = {
         },
         crabBiology: {
             name: "Biologia Caranguêsa",
-            desc: "Esse bichos são um mistério. Eles são meio calados e apenas cavam cristais ou plantas coisas. Por que eles fazem isso? E o QUE são siris??",
+            desc: "Esse bichos são um mistério. Eles são meio calados e apenas cavam cristais ou plantam coisas. Por que eles fazem isso? E o QUE são siris??",
             researchedMessage:
                 "Parece que caranguejos são crustáceos amigáveis que revelaram aos tubarões os segredos de produção de caraguejo. Envolvendo ovos, ou algo parecido. Ovos que se mexem.",
             effectDesc:
-                "Caranguejos e plantadores são, respectivamente, 4 e 2 vezes mais rápido, e ninhadas de caranguejo podem ser formadas. Siris aparentemente são apenas um tipo de caranguejo, o que é legal, mas um pouco assustador, porque caranguejos são assustadores e esquisitos. Que bom que eles estão do nosso lado!",
+                "Caranguejos e plantadores são, respectivamente, 4 e 2 vezes mais rápido, e ninhadas de caranguejo podem ser formadas. Siris aparentemente são apenas um tipo de caranguejo, o que é legal, mas um pouco assustador, porque caranguejos são assustadores. Que bom que eles estão do nosso lado!",
             cost: {
                 science: 8500,
                 kelp: 1000,
@@ -671,9 +671,9 @@ SharkGame.Upgrades = {
             },
         },
         crabBiology: {
-            desc: "Crabs are a mystery. They keep to themselves and dig up crystals or pick up sponge. What is even up with that? What ARE crabs??",
+            desc: "Esse bichos são um mistério. Eles são meio calados e apenas cavam cristais ou pegam esponja. Por que eles fazem isso? E o QUE são siris??",
             effectDesc:
-                "Crabs and sponge collectors are four times as effective, and crab broods are available. Crabs are alright but they are also sort of terrifying and weird. Good thing they're on our side!",
+                "Caranguejos e coletores são 4 vezes mais rápido, e ninhadas de caranguejo podem ser formadas. Siris aparentemente são apenas um tipo de caranguejo, o que é legal, mas um pouco assustador, porque caranguejos são assustadores. Que bom que eles estão do nosso lado!",
             cost: {
                 science: 2700,
                 fish: 2500,
@@ -737,9 +737,9 @@ SharkGame.Upgrades = {
             },
         },
         sunObservation: {
-            desc: "It's hard to see, but there's a weird glare on the surface of the water, and we need to figure out what it means.",
+            desc: "É difícil de se ver, mas tem um brilho estranho na superfície da água e precisamos saber o que é.",
             effectDesc:
-                "Octopus investigators, science sharks, and collector crabs are twice as effective. Is a suns worth many fish? We can see a sun, but where is it really? And what is it made of?",
+                "Polvos investigadores, tubarões cientistas e siris coletores têm a velocidade dobrada. Será que um sol vale vários peixes? Nós vemos o Sol, mas onde que está? O que faz um Sol brilhar?",
             cost: {
                 science: 22500,
             },
@@ -755,9 +755,9 @@ SharkGame.Upgrades = {
             },
         },
         exploration: {
-            desc: "Venture into open waters to see what can be found!",
-            researchedMessage: "Fish, sand, and crystals can be found! Even further out, though, there's something else.",
-            effectDesc: "Crabs are 4 times more effective, and collectors are twice as effective...and something was spotted in the distance.",
+            desc: "Aventure-se em águas distantes para encontrar novas coisas!",
+            researchedMessage: "Água, peixes, areia e cristais foram encontrados! E mais afastado, há algo mais.",
+            effectDesc: "Caranguejos são 4 vezes e coletores são duas vezes mais rápidos...E nós vimos alguma coisa lá longe.",
             cost: {
                 science: 30000,
                 fish: 30000,
@@ -773,12 +773,12 @@ SharkGame.Upgrades = {
             },
         },
         farExploration: {
-            name: "Far Exploration",
-            desc: "In the distance lies a bunch of weird structures that sharks have dared not enter...so what happens if we do?",
+            name: "Exploração Longíqua",
+            desc: "No horizonte, tem muitas estruturas estranhas que os tubarões não arriscaram entrar...mas o que acontece se entrarmos?",
             researchedMessage:
-                "As it turns out, discoveries happen! There are no signs of life, but we found lots of weird machines and a strange gate.",
+                "Pelo visto, novas descobertas acontecem! Não há sinais de vida algum, mas achamos várias máquinas estranhas e um portal estranho.",
             effectDesc:
-                "Explored the city in the distance and discovered a gate and some weird machines. Octopuses can now specialize in scavenging around the city.",
+                "A cidade distante foi explorada e um portal com máquinas esquisitas foram achadas. Polvos agora podem se especializar em catar os restos da cidade.",
             cost: {
                 science: 75000,
                 fish: 75000,
@@ -788,12 +788,12 @@ SharkGame.Upgrades = {
             },
         },
         superiorSearchAlgorithms: {
-            name: "Superior Search Algorithms",
-            desc: "Why is finding stuff so hard?!?!",
+            name: "Algoritmos de Busca Superiores",
+            desc: "Por que que achar coisas é tão difícil?!?!",
             researchedMessage:
-                "As our octopus bretheren explain, it was hard because we kept telling them to go in circles. They used the word 'inept'.",
+                "Como foi explicado pelos nossos amigos polvos, era difícil porque nossas ordens eram deles andarem em círculos. A palavra que usaram foi 'infradotado'.",
             effectDesc:
-                "The octopuses have taken control of both scavenging operations and are refusing to listen to our directions. Still, scavengers are 8 times faster and collectors are 4 times faster.",
+                "Os polvos tomaram as rédeas das nossas duas operações de catação e pararam de ouvir as nossas instruções. Mesmo assim, catadores são 8 vezes mais rápidos e coletores são 4 vezes mais eficientes.",
             cost: {
                 science: 88888,
                 ancientPart: 88,
@@ -810,10 +810,10 @@ SharkGame.Upgrades = {
             },
         },
         reverseEngineering: {
-            name: "Reverse Engineering",
-            desc: "What is up with these parts? Why are they shaped like that?!",
-            researchedMessage: "Results inconclusive. Further analysis pending.",
-            effectDesc: "Ancient parts can be sacrificed for science. Scientists are twice as effective, and investigators are 4 times as effective.",
+            name: "Engenharia Reversa",
+            desc: "O que são esses pedaços? Por que eles têm esse formato?!",
+            researchedMessage: "Resultados inconclusivos. Precisamos de mais análises.",
+            effectDesc: "Componentes antigos podem ser destruídos pela ciência. Cientistas dobram e investigadores quadruplicam suas velocidades.",
             cost: {
                 science: 150000,
                 ancientPart: 350,
@@ -830,7 +830,7 @@ SharkGame.Upgrades = {
             },
         },
         highEnergyFusion: {
-            name: "High-Energy Fusion",
+            name: "Fusão de Alta Energia",
             desc: "These old parts must have some kind of use! Question is, can we figure it out???",
             researchedMessage: "The secret of high-energy fusion has been unlocked. Scavenge no more. We will do it ourselves.",
             effectDesc:

@@ -834,17 +834,42 @@ SharkGame.ResourceTable = {
     mudskipper: {
         name: "mudskippers",
         singleName: "mudskipper",
-        //color: "#undecided",
+        color: /*"#undecided"*/,
         desc: "The liberated prey.",
         income: {
             driftwood: 0.5,
         },
-        //jobs: ["undecided"],
-        //value: 1000, (what does this mean?)
+        jobs: ["burrow"],
+        value: /*1000*/, //(what does this mean?)
     },
 
-    
+    burrow: {
+        name: "mudskipper burrows",
+        singleName: "mudskipper burrow",
+        color: /*"#undecided"*/,
+        desc: "",
+        income: {
+            mudskipper: 0.05,
+        },
+        value: /*dunno*/,
+    },
 
+    driftwood: {
+        name: "driftwood",
+        singleName: "driftwood",
+        desc: "Buoyant detritus from the beyond.",
+        color: /*"#no idea yet"*/,
+        value: /*dunno either*/,
+    },
+
+    hardbark: {
+        name: "hardbark",
+        singleName: "hardbark",
+        desc: "Pistons and mechanisms for the puppets.",
+        color: /*"#smooth criminal"*/,
+        value: /*guess what? I still don't know*/,
+    },
+            
     // SHROUDED
 
     chimaera: {
@@ -1044,6 +1069,7 @@ SharkGame.ResourceTable = {
             chimaera: -0.001,
             octopus: -0.005,
             eel: -0.001,
+            mudskipper: -0.01,
             nurse: -0.003,
             maker: -0.003,
             brood: -0.003,
@@ -1071,6 +1097,7 @@ SharkGame.ResourceTable = {
             collective: -0.001,
             extractionTeam: -0.001,
             spawner: -0.001,
+            burrow: -0.01,
         },
         value: -100,
         forceIncome: true,
@@ -1457,7 +1484,7 @@ SharkGame.ResourceCategories = {
             "Was it something they said?",
             "Are you happy with what you've done?",
         ],
-        resources: ["shark", "ray", "crab", "shrimp", "lobster", "dolphin", "whale", "chimaera", "octopus", "eel", "squid", "urchin", "billfish"],
+        resources: ["shark", "ray", "crab", "shrimp", "lobster", "dolphin", "whale", "chimaera", "octopus", "eel", "squid", "urchin", "billfish", "mudskipper"],
     },
     animals: {
         name: "Animals",
@@ -1492,6 +1519,7 @@ SharkGame.ResourceCategories = {
             "seagrass",
             // "stone",
             // "gravel",
+            "driftwood",
         ],
     },
     processed: {
@@ -1504,7 +1532,7 @@ SharkGame.ResourceCategories = {
             "The foundation of a modern shark frenzy, perhaps, but also sort of taking up all the space.",
             "Let's hope we don't regret it.",
         ],
-        resources: ["sharkonium", "coralglass", "delphinium", "spronge", "calcinium", "porite", "ancientPart", "junk", "filter"],
+        resources: ["sharkonium", "coralglass", "delphinium", "spronge", "calcinium", "porite", "ancientPart", "junk", "filter", "hardbark"],
     },
     breeders: {
         name: "Breeders",
@@ -1515,7 +1543,7 @@ SharkGame.ResourceCategories = {
             "You sure you want to disrupt this accelerated growth curve?",
             "Back to a simpler life, maybe.",
         ],
-        resources: ["nurse", "maker", "brood", "queen", "berrier", "biologist", "pit", "collective", "spawner", "billfishPair"],
+        resources: ["nurse", "maker", "brood", "queen", "berrier", "biologist", "pit", "collective", "spawner", "billfishPair", "burrow"],
     },
     specialists: {
         name: "Specialists",
@@ -1663,6 +1691,10 @@ SharkGame.InternalCategories = {
         name: "Billfish",
         resources: ["billfish", "billfishExplorer", "billfishMechanic", "billfishPair"],
     },
+    mudskippers: {
+        name: "Mudskippers",
+        resources: ["mudskipper", "burrow"],
+    },
     sharkmachines: {
         name: "Shark Machines",
         resources: ["sharkonium", "fishMachine", "sandDigger", "crystalMiner", "skimmer", "autoTransmuter"],
@@ -1678,6 +1710,10 @@ SharkGame.InternalCategories = {
     lobstermachines: {
         name: "Lobster Machines",
         resources: ["calcinium", "seabedStripper", "calciniumConverter", "clamScavenger"],
+    },
+    mudskipperpuppets: {
+        name: "Mudskipper Puppets",
+        resources: [/*"no clue yet lol"*/],
     },
     basicmaterials: {
         resources: ["fish", "sand", "crystal", "science", "junk"],

@@ -1501,7 +1501,7 @@ SharkGame.Upgrades = {
             },
         },
         exploration: {
-            name: "Exploration",
+            name: "Exploração (no gelo)",
             desc: "Swim beyond the home seas to see what can be found!",
             researchedMessage: "Found lots of fish, but also a giant wall of cracked ice. It's like a bubble around us as far as we can see!",
             effectDesc: "Sharks are twice as effective, squids are twice as effective. Did you know oceans are big? Fascinating!",
@@ -1520,11 +1520,11 @@ SharkGame.Upgrades = {
             },
         },
         glacialNavigation: {
-            name: "Glacial Navigation",
-            desc: "Explore the icebergs that lie beyond the warmth. Maybe we can learn something useful?",
+            name: "Navegação Frígida",
+            desc: "Explore os gelos flutuantes além do quentinho. Talvez apredamos algo de bom.",
             researchedMessage:
-                "Exploring the icebergs yielded...more icebergs. It's a cold world out there, but there are untapped crystal reserves at the border.",
-            effectDesc: "Extraction teams are four times as effective thanks to newly-discovered crystal deposits.",
+                "Explorar montanhas de gelo flutuant nos rendeu...mais gelo. É um mundo frio e calculista lá fora, mas tem um monte de cristal na borda.",
+            effectDesc: "Times de extração são quatro vezes mais eficientes graças às reservas naturais de cristal que achamos.",
             cost: {
                 science: 8000,
                 fish: 90000,
@@ -1566,13 +1566,13 @@ SharkGame.Upgrades = {
             },
         },
         internalInvestigation: {
-            name: "Internal Investigation",
-            desc: "There's something up with that big machine. Why is it there? What does it do? Why is there a gate attached to it?",
+            name: "Investigação Interna",
+            desc: "Tem algo estranho com essa máquina. Por que está aqui? O que faz? Para que serve aquele portal no lado?",
             researchedMessage:
-                "When we went to tamper with the machine, we found a secret hatch. It leads to a massive underground complex beneath the village!",
-            effectDesc: "We accidentally discovered the underground complex. The squid do not seem to know we have stumbled upon it.",
+                "Quando fomos mexer na máquina, achamos uma portinhola secreta. E ela leva para um labirinto enorme debaixo da vila!",
+            effectDesc: "Sem querer, nós descobrimos o complexo abaixo da terra. As lulas não sabem ainda o que nós achamos.",
             cost: {
-                science: 35000,
+                science: 35000
             },
             required: {
                 upgrades: ["automation"],
@@ -1580,10 +1580,10 @@ SharkGame.Upgrades = {
             },
         },
         artificialHeating: {
-            name: "Artificial Heating",
-            desc: "Okay, seriously, I'm getting real sick of being cold all the time! How do we heat stuff up?",
-            researchedMessage: "With machines, of course! And copious amounts of kelp for power. Don't ask.",
-            effectDesc: "Developed artificial heating machines to battle the ice.",
+            name: "Aquecimento Sintético",
+            desc: "Sério, na boa, estou cansado do meu nariz e minhas barbatanas geladas o tempo inteiro! Como que se esquenta coisas?",
+            researchedMessage: "Com máquinas, é claro! E uma cacetada de alga como fonte de energia. Não pergunte.",
+            effectDesc: "Desenvolvemos máquinas que produzem calor sozinhas para barrar o gelo.",
             cost: {
                 science: 20000,
                 kelp: 250000,
@@ -1672,10 +1672,10 @@ SharkGame.Upgrades = {
         },
         creatureCoalition: {
             name: "Creature Coalition",
-            desc: "Everyone feels it; the cold eats at us all. The squid are right, we have to cooperate to make progress.",
+            desc: "Todos sentem; the cold eats at us all. The squid are right, we have to cooperate to make progress.",
             researchedMessage:
                 "Had a sort of group huddle to decide our plan. The squid had some sort of motivational speech prepared or something, and it seems to have lifted the frenzy's spirits.",
-            effectDesc: "Sharks and crabs x8. Urchins, squids, extraction teams and scientists x4. Go team!",
+            effectDesc: "Sharks and crabs x8. Urchins, squids, extraction teams and scientists x4. Tudo nosso, nada deles!",
             cost: {
                 science: 1250000,
             },

@@ -1304,7 +1304,7 @@ SharkGame.Upgrades = {
             },
         },
         urchinAttraction: {
-            name: "Atração Ouriçária",
+            name: "Atração de Ouriços",
             desc: "Podemos ver pequenas bolinhas espetudas andando pelo chão. O que são elas? Por que tem tantos em todo lugar?!",
             researchedMessage: "Fizemos duas descobertas maravilhosas: elas são sencientes (bem pouco), e elas doem de se encostar.",
             effectDesc:
@@ -1340,7 +1340,7 @@ SharkGame.Upgrades = {
         seabedGeology: {
             researchedMessage: "Not only did we find a whole bunch of weird things, we found that there was more sand!",
             effectDesc:
-                "Urchins gather sand twice as fast. Not that they understand how to do it faster, but that we've shown them better techniques to mimic.",
+                "Ouriços pegam areia duas vezes mais rápido. Não porque eles entendem como pegá-la melhor, mas porque nós mostramos a eles outras técnicas para imitar.",
             cost: {
                 science: 200,
                 sand: 100,
@@ -1357,18 +1357,18 @@ SharkGame.Upgrades = {
         civilContact: {
             name: "Contato Civilizacional",
             desc: "Nós vemos algumas estruturas estranhas através de uma falha no gelo. Mas o que exatamente é aquilo?",
-            researchedMessage: "Nós visitamos as estruturas e acabamos descobrindo uma civilização inteira vivendo!",
+            researchedMessage: "Nós visitamos as estruturas e acabamos descobrindo uma civilização inteira vivendo lá!",
             effectDesc: "Achamos as lulas. Elas podem ser alistadas para ajudar a pegar peixe. Também nos mudamos para um lugar menos congelado.",
             cost: {
                 science: 40,
             },
         },
         teamSpirit: {
-            name: "Team Spirit",
-            desc: "The squid seem adamant on showing us the way of teamwork, or something.",
+            name: "Espírito de Equipe",
+            desc: "As lulas estão resolutas em nos mostrar a mágica do 'trabalho em equipe'.",
             researchedMessage:
-                "The squid said something about being efficient and cooperative and blah blah blah. It's a little pretentious, but I GUESS they have a point.",
-            effectDesc: "Sharks, crabs, urchins, extraction teams, scientists, and squid production times 2. Go team?",
+                "Uma lula ficou falando algo sobre eficiência e cooperação e blá blá blá não sei o que lá. É uma conversa de metido, mas não posso discordar que ele tenha um ponto.",
+            effectDesc: "Tubarões, caranguejos, ouriços, times de extração, cientistas e lulas todos produzem o dobro de antes. Tudo nosso, time?",
             cost: {
                 science: 3000,
             },
@@ -1388,11 +1388,11 @@ SharkGame.Upgrades = {
             },
         },
         agriculture: {
-            name: "Agriculture",
-            desc: "The hunter-gatherer lifestyle seems like the only option, but maybe we could learn something more sustainable?",
+            name: "Agricultura",
+            desc: "A vida de caçador-coletor parece ser a única possibilidade, mas talvez possamos achar algum jeito mais sustentável?",
             researchedMessage:
-                "It sorta worked. We've had to plant kelp all over the place, since the urchins just tear through it if it's all together.",
-            effectDesc: "Urchins gather kelp twice as fast. Just kelp. Only the kelp.",
+                "Meio que funcionou. Tivemos que plantar a alga espalhada por todo lugar, senão os ouriços pegam e comem tudo se estiver em um só lugar.",
+            effectDesc: "Ouriços coletam alga duas vezes mais rápido. Toda a alga. E apenas alga.",
             cost: {
                 science: 350,
                 sand: 400,
@@ -1407,11 +1407,11 @@ SharkGame.Upgrades = {
             },
         },
         assistedExtraction: {
-            name: "Assisted Extraction",
-            desc: "Crabs take forever to get crystals. The squid insist that working together will help. I guess it's better than nothing.",
+            name: "Extração Assistida",
+            desc: "Caranguejos demoram demais para pegar cristais. E as lulas insistem que podem ajudar se trabalharem juntos. Acho que vale a tentativa.",
             researchedMessage:
-                "A crab can reach places a squid cannot, and a squid can help a crab get around faster. The squid were right, this is great!",
-            effectDesc: "We may now organize crabs and squid into teams of 2 to expedite crystal extraction.",
+                "Um caranguejo consegue se enfiar em lugares que lulas não conseguem e uma lula consegue levar um caranguejo de um lado pro outro rapidamente. As lulas estavam certíssimas, isso é do balacobaco!",
+            effectDesc: "Nós podemos agora organizar um siri com uma lula para acelerar a coleta de cristais.",
             cost: {
                 science: 650,
                 kelp: 250,
@@ -1434,10 +1434,10 @@ SharkGame.Upgrades = {
             },
         },
         squidBiology: {
-            name: "Squid Biology",
-            desc: "Discover the secrets of squid reproduction.",
-            researchedMessage: "",
-            effectDesc: "Squid are twice as effective. Squid can now be assigned to breed in a collective.",
+            name: "Biologia Lulenta",
+            desc: "Descubra os segredos da reprodução das lulas.",
+            researchedMessage: "Quando várias lulas papai e várias lulas mamãe se amam muito mesmo...",
+            effectDesc: "Lulas têm o dobro da eficiência. Lulas agora podem formar coletivos para criar mais lulinhas.",
             cost: {
                 science: 1500,
             },
@@ -1465,10 +1465,10 @@ SharkGame.Upgrades = {
             },
         },
         urchinBiology: {
-            name: "Urchin Biology",
-            desc: "Discover how these little things get so numerous.",
-            researchedMessage: "Indirectly, as it turns out. Ew.",
-            effectDesc: "Urchins are twice as effective. Urchins can now be assigned to go make more urchins.",
+            name: "Biologia Ouriçária",
+            desc: "Gente, alguém aqui sabe de onde veio tanto bicho assim?",
+            researchedMessage: "Vieram de forma indireta, é o que descobrimos. Eca.",
+            effectDesc: "Ouriços são duas vezes mais eficientes. Podemos alistar ouriços para fazer mais ouriços.",
             cost: {
                 science: 1750,
                 kelp: 750,

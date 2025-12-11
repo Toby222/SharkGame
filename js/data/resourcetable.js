@@ -834,7 +834,7 @@ SharkGame.ResourceTable = {
     mudskipper: {
         name: "mudskippers",
         singleName: "mudskipper",
-        color: /*"#undecided"*/,
+        color: "#4E3900",
         desc: "The liberated prey.",
         income: {
             driftwood: 0.5,
@@ -846,7 +846,7 @@ SharkGame.ResourceTable = {
     burrow: {
         name: "mudskipper burrows",
         singleName: "mudskipper burrow",
-        color: /*"#undecided"*/,
+        color: "#B38300",
         desc: "A tiny hole for tiny allies to flail around in. And make more allies.",
         income: {
             mudskipper: 0.05,
@@ -858,7 +858,7 @@ SharkGame.ResourceTable = {
         name: "driftwood",
         singleName: "driftwood",
         desc: "Buoyant detritus from the beyond.",
-        color: /*"#no idea yet"*/,
+        color: "#342D19",
         value: 1000,
     },
 
@@ -866,7 +866,7 @@ SharkGame.ResourceTable = {
         name: "hardbark",
         singleName: "hardbark",
         desc: "Pistons and mechanisms for the puppets.",
-        color: /*"#smooth criminal"*/,
+        color: "#1F2F45",
         value: 1500,
     },
             

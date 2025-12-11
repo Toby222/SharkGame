@@ -840,18 +840,18 @@ SharkGame.ResourceTable = {
             driftwood: 0.5,
         },
         jobs: ["burrow"],
-        value: /*1000*/, //(what does this mean?)
+        value: 500, //(what does this mean?)
     },
 
     burrow: {
         name: "mudskipper burrows",
         singleName: "mudskipper burrow",
         color: /*"#undecided"*/,
-        desc: "",
+        desc: "A tiny hole for tiny allies to flail around in. And make more allies.",
         income: {
             mudskipper: 0.05,
         },
-        value: /*dunno*/,
+        value: 1000,
     },
 
     driftwood: {
@@ -859,7 +859,7 @@ SharkGame.ResourceTable = {
         singleName: "driftwood",
         desc: "Buoyant detritus from the beyond.",
         color: /*"#no idea yet"*/,
-        value: /*dunno either*/,
+        value: 1000,
     },
 
     hardbark: {
@@ -867,7 +867,7 @@ SharkGame.ResourceTable = {
         singleName: "hardbark",
         desc: "Pistons and mechanisms for the puppets.",
         color: /*"#smooth criminal"*/,
-        value: /*guess what? I still don't know*/,
+        value: 1500,
     },
             
     // SHROUDED

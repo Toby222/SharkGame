@@ -2546,7 +2546,7 @@ SharkGame.HomeActions = {
                 "O caranguejo se agarra na alga em volta da lula para se segurar. Funciona, eu acho.",
             ],
             multiOutcomes: [
-                "A forma que a cooperação toma difere, mas o resultado é sempre o mesmo.",
+                "A forma que a cooperação toma difere entre si, mas o resultado é sempre o mesmo.",
                 "Alguns desdes times têm...estratégias bem originais. Aquele ali fez um cobertorzinho com a alga.",
                 "Os pares voam que nem torpedos pelo oceano.",
                 "As duplas se juntam em um pequeno enxame e, então, movem-se a uma direção geral.",
@@ -2574,6 +2574,7 @@ SharkGame.HomeActions = {
             },
             outcomes: [
                 "As lulas se coletaram.",
+                "Fui convidado pr'uma tal de coletiva, não pude ir Marraria foi no meu lugar",
                 "É até meio parecido com ninhadas de caranguejos.",
                 "O grupo se junta e começam a fazer seja lá o que lhes é de respeito.",
                 "Um coletivo de lulas coletivamente se coletaram.",

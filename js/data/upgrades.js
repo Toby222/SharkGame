@@ -1225,7 +1225,7 @@ SharkGame.Upgrades = {
             name: "Agricultura Anciã",
             desc: "Agora que juntamos tudo, percebemos que muitas dessas páginas de métodos de plantio são parte de um só livro!",
             researchedMessage:
-                "N[s ficamos tanto tempo discutindo com os golfinhos sobre detalhes minúsculos de como proceder que um grupinho de golfinhos e tubarões amadores se juntou e terminou o trabalho antes mesmo de termos algum plano. Oops.",
+                "Nós ficamos tanto tempo discutindo com os golfinhos sobre detalhes minúsculos de como proceder que um grupinho de golfinhos e tubarões amadores se juntou e terminou o trabalho antes mesmo de termos algum plano. Oops.",
             effectDesc:
                 "Planter crabs times 16, kelp cultivators times 2, all coral income times 4. Nobody has talked about the wasteful argument since it happened...we thought the dolphins would rub it in our faces by now, but they seem totally disinterested.",
             cost: {

@@ -1396,6 +1396,8 @@ SharkGame.HomeActions = {
         },
         */
     },
+
+//---------------------------------------------------
     abandoned: {
         catchFish: {},
 
@@ -1866,6 +1868,8 @@ SharkGame.HomeActions = {
             helpText: "This octopus machine imbues sponge with industrial potential. Requires residue for function.",
         },
     },
+
+//---------------------------------------------------
     haven: {
         catchFish: {},
 
@@ -2330,6 +2334,8 @@ SharkGame.HomeActions = {
                 "This dolphin machine creates delphinium. What good that is to us is a mystery. Use it to make their useless machines, I guess?",
         },
     },
+
+//---------------------------------------------------
     frigid: {
         catchFish: {},
 
@@ -2605,6 +2611,8 @@ SharkGame.HomeActions = {
             },
         },
     },
+
+//---------------------------------------------------
     shrouded: {
         catchFish: {},
 
@@ -3201,6 +3209,8 @@ SharkGame.HomeActions = {
 
         getAutoTransmuter: {},
     },
+
+//---------------------------------------------------
     marine: {
         catchFish: {},
 
@@ -3626,6 +3636,8 @@ SharkGame.HomeActions = {
             helpText: "Modify a lobster to fuse calcinium with cool cyborg laser beams.", // This crustacean machine distributes lobster eggs for optimal hatching conditions.
         },
     },
+
+//---------------------------------------------------
     volcanic: {
         // FREEBIES ////////////////////////////////////////////////////////////////////////////////
 
@@ -4284,6 +4296,8 @@ SharkGame.HomeActions = {
             helpText: "Pick a spot and set up a coral farm there.",
         },
     },
+
+//---------------------------------------------------
     tempestuous: {
         catchFish: {},
 
@@ -4589,6 +4603,11 @@ SharkGame.HomeActions = {
             },
         },
     },
+
+    //---------------------------------------------------
+    shore: {
+        /*placeholder my bruvver, placeholder*/
+   },
 };
 
 SharkGame.HomeActionCategories = {
@@ -4618,7 +4637,8 @@ SharkGame.HomeActionCategories = {
             "getOctopus",
             "getSquid",
             "getUrchin",
-            "getBillfish",
+            "getBillfish"
+            "getMudskipper",
         ],
     },
 
@@ -4669,7 +4689,8 @@ SharkGame.HomeActionCategories = {
             "getPit",
             "getCollective",
             "getSpawner",
-            "getBillfishPair",
+            "getBillfishPair"
+            "getBurrow",
         ],
     },
 
@@ -4692,7 +4713,8 @@ SharkGame.HomeActionCategories = {
             "fuseCalcinium",
             "toggleAutoSmelt",
             "smeltPorite",
-            "seagrassToScience",
+            "seagrassToScience"
+            "coatHardbark",
         ],
     },
 

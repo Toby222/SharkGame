@@ -1356,9 +1356,9 @@ SharkGame.Upgrades = {
         },
         civilContact: {
             name: "Contato Civilizacional",
-            desc: "We see a number of strange structures through the gap in the ice. What are we looking at, exactly?",
-            researchedMessage: "We visited the structures, and it turns out it's an entire civilization!",
-            effectDesc: "Found the squids. They can be enlisted to help catch fish. Also moved to a less frozen place.",
+            desc: "Nós vemos algumas estruturas estranhas através de uma falha no gelo. Mas o que exatamente é aquilo?",
+            researchedMessage: "Nós visitamos as estruturas e acabamos descobrindo uma civilização inteira vivendo!",
+            effectDesc: "Achamos as lulas. Elas podem ser alistadas para ajudar a pegar peixe. Também nos mudamos para um lugar menos congelado.",
             cost: {
                 science: 40,
             },

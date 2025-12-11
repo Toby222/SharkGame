@@ -1061,7 +1061,7 @@ SharkGame.Upgrades = {
         },
         sunObservation: {
             effectDesc:
-                "Planter crabs are four times as effective. Is a suns worth many fish? We can see a sun, but where is it really? And what is it made of?",
+                "Plantadores colhem 4 vezes mais alga. Será que um sol vale vários peixes? Nós vemos o Sol, mas onde que está? O que faz um Sol brilhar?",
             cost: {
                 science: 5000,
             },
@@ -1138,7 +1138,7 @@ SharkGame.Upgrades = {
         },
         /* Equivalent of farExploration.. named differently for unlocks or smth I think? */
         farExploration: {
-            name: "Far Exploration",
+            name: "Exploração Longínqua",
             desc: "Explore the vast reaches beyond the home ocean, and look for that portal that keeps popping up in dolphin texts.",
             researchedMessage: "Crystal-rich deposits were found, as well as what appears to be the portal of dolphin legend.",
             effectDesc: "Crabs are 4 times as effective, planters 8 times. Did you know oceans are actually even bigger than big? Remarkable!",
@@ -1225,9 +1225,9 @@ SharkGame.Upgrades = {
             name: "Agricultura Anciã",
             desc: "Agora que juntamos tudo, percebemos que muitas dessas páginas de métodos de plantio são parte de um só livro!",
             researchedMessage:
-                "Nós ficamos tanto tempo discutindo com os golfinhos sobre detalhes minúsculos de como proceder que um grupinho de golfinhos e tubarões amadores se juntou e terminou o trabalho antes mesmo de termos algum plano. Oops.",
+                "Nós ficamos tanto tempo discutindo com os golfinhos sobre detalhes minúsculos de como proceder que um grupinho de golfinhos e tubarões amadores se juntou e terminou o trabalho antes mesmo de termos algum plano. Ops.",
             effectDesc:
-                "Planter crabs times 16, kelp cultivators times 2, all coral income times 4. Nobody has talked about the wasteful argument since it happened...we thought the dolphins would rub it in our faces by now, but they seem totally disinterested.",
+                "Plantadores vezes 16, cultiveiras vezes 2, toda produção de coral vezes 4. Ninguém tocou no assunto daquele argumento idiota que tivemos desde o fim dele...achávamos que os golfinhos iriam estar esfregando na nossa cara, mas eles parecem nem se importar.",
             cost: {
                 science: 50000000,
                 delphinium: 1000000,
@@ -1246,12 +1246,12 @@ SharkGame.Upgrades = {
             },
         },
         crystallineConstruction: {
-            name: "Crystalline Construction",
-            desc: "The dolphins are a bunch of jerks, but maybe we can still learn from one another. Maybe.",
+            name: "Construção Cristalina",
+            desc: "Os golfinhos são um bando de patifes, mas talvez nós possamos ensinar algo uns para os outros. Talvez.",
             researchedMessage:
-                "By integrating shark science with dolphin design, we've managed to create a superior set of machines. Maybe we work better together than we do apart.",
+                "Ao juntar a nossa ciência com os desenhos maquinários dos golfinhos, conseguimos criar aparelhos ainda melhores. Talvez nós trabalhemos melhor juntos do que separados...",
             effectDesc:
-                "All dolphin machines run eight times as fast, except tireless crafters, which are 8 times as efficient. Holy moley! Also, shark science is way more informative now that we have more perspective, so scientists are 16 times faster.",
+                "Todas as máquinas de delfínio produzem 8 vezes mais. Piranhas me mordam! Além disso, ciência tubarônica é muito mais edificante agora que nós temos outras perpectivas, então cientistas são 16 vezes mais eficientes.",
             cost: {
                 science: 500000000,
                 delphinium: 1500000,
@@ -1272,11 +1272,11 @@ SharkGame.Upgrades = {
         },
         eternalSong: {
             name: "O Coro Eterno",
-            desc: "The song of the whales is mentioned in dolphin texts dating back as far as we can find. I think we're onto something.",
+            desc: "O canto das baleias é mencionado nas algas até as mais antigas que nós temos. Acho que nós conseguimos achar algo.",
             researchedMessage:
-                "The song of the whales was only ever half of the composition. The dolphins were the key to completing it. Now we have the pieces.",
+                "O canto das baleias era apenas metade da composição. O canto dos golfinhos era o que estava faltando. Agora temos tudo o necessário.",
             effectDesc:
-                "Whales and dolphins and treasurers times 16, biologists times 4. A chorus of whales and dolphins can be assembled to sing the eternal song, but we have no clue what it will do.",
+                "Baleias, golfinhos e tesoureiros são multiplicados por 16, biólogos por 4. Podemos formar um coro de baleias e golfinhos para cantar a canção eterna, mas não sabemos o que ela fará.",
             cost: {
                 science: 2000000000,
             },
@@ -1304,11 +1304,11 @@ SharkGame.Upgrades = {
             },
         },
         urchinAttraction: {
-            name: "Urchin Attraction",
-            desc: "We can see these little spiny balls moving around on the ocean floor. What are they? Why are they everywhere?!",
-            researchedMessage: "We have made two miraculous discoveries: they're sentient (barely), and they are painful to touch.",
+            name: "Atração Ouriçária",
+            desc: "Podemos ver pequenas bolinhas espetudas andando pelo chão. O que são elas? Por que tem tantos em todo lugar?!",
+            researchedMessage: "Fizemos duas descobertas maravilhosas: elas são sencientes (bem pouco), e elas doem de se encostar.",
             effectDesc:
-                "We've managed to attract the attention of one of the sea urchins, and it's bringing stuff to us. I think it likes us?? Maybe???",
+                "Nós conseguimos chamar a atenção de um desses ouriços e ele está nos trazendo coisas. Acho que ele gostou ne nós?? Provavelmente???",
             cost: {
                 science: 50,
             },
@@ -1355,7 +1355,7 @@ SharkGame.Upgrades = {
             },
         },
         civilContact: {
-            name: "Civil Contact",
+            name: "Contato Civilizacional",
             desc: "We see a number of strange structures through the gap in the ice. What are we looking at, exactly?",
             researchedMessage: "We visited the structures, and it turns out it's an entire civilization!",
             effectDesc: "Found the squids. They can be enlisted to help catch fish. Also moved to a less frozen place.",

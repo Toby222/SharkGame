@@ -1572,7 +1572,7 @@ SharkGame.Upgrades = {
                 "Quando fomos mexer na máquina, achamos uma portinhola secreta. E ela leva para um labirinto enorme debaixo da vila!",
             effectDesc: "Sem querer, nós descobrimos o complexo abaixo da terra. As lulas não sabem ainda o que nós achamos.",
             cost: {
-                science: 35000
+                science: 35000,
             },
             required: {
                 upgrades: ["automation"],
@@ -1671,11 +1671,11 @@ SharkGame.Upgrades = {
             },
         },
         creatureCoalition: {
-            name: "Creature Coalition",
-            desc: "Todos sentem; the cold eats at us all. The squid are right, we have to cooperate to make progress.",
+            name: "Coalizão de Criaturas",
+            desc: "Todos sentem; o frio nos faz cada vez mais fracos. As lulas não passam frio pois estão cobertas de razão, temos que ajudar uns aos outros.",
             researchedMessage:
-                "Had a sort of group huddle to decide our plan. The squid had some sort of motivational speech prepared or something, and it seems to have lifted the frenzy's spirits.",
-            effectDesc: "Sharks and crabs x8. Urchins, squids, extraction teams and scientists x4. Tudo nosso, nada deles!",
+                "Fizemos uma reuniãozinha de equipe para planejar o que vamos fazer. As lulas tinham um discurso motivacional preparado (ou eles só são muito bons improvisar um), isso parece que levantou o astral do cardume.",
+            effectDesc: "Tubarões e caranguejos ×8. Ouriços, lulas, times de extração e cientistas ×4. Tudo nosso, nada deles!",
             cost: {
                 science: 1250000,
             },

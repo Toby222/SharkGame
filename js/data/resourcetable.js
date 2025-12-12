@@ -869,6 +869,14 @@ SharkGame.ResourceTable = {
         color: "#1F2F45",
         value: 1500,
     },
+
+    mentor: {
+        name: "puppet mentors",
+        singleName: "puppet mentor",
+        desc: "Learned mudskippers, teaching the puppets known techniques.",
+        color: "#CC6600",
+        value: 2000,
+    },
             
     // SHROUDED
 
@@ -1582,7 +1590,8 @@ SharkGame.ResourceCategories = {
             // "prospector",
             // "shoveler",
             // "miller",
-            // "rockLobster",
+            // "rockLobster"
+            "mentor",
         ],
     },
     machines: {
@@ -1693,7 +1702,7 @@ SharkGame.InternalCategories = {
     },
     mudskippers: {
         name: "Mudskippers",
-        resources: ["mudskipper", "burrow"],
+        resources: ["mudskipper", "burrow", "mentor"],
     },
     sharkmachines: {
         name: "Shark Machines",
@@ -1713,7 +1722,7 @@ SharkGame.InternalCategories = {
     },
     mudskipperpuppets: {
         name: "Mudskipper Puppets",
-        resources: [/*"no clue yet lol"*/],
+        resources: ["hardbark"],
     },
     basicmaterials: {
         resources: ["fish", "sand", "crystal", "science", "junk"],

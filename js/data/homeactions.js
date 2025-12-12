@@ -4606,8 +4606,123 @@ SharkGame.HomeActions = {
 
     //---------------------------------------------------
     shore: {
-        /*placeholder my bruvver, placeholder*/
+        
+    // MANUAL RESOURCE COLLECTION /////////////////////
+        catchFish: {},
+        debugButton: {},
+
+    // MAKE ADVANCED RESOURCES ///////////////////////
+        transmuteSharkonium: {},
+        coatHardbark: {
+            name: "Coat driftwood to make hardbark",
+            effect: {
+                resource: {
+                    hardbark: 1,
+                },
+            },
+            cost: [
+                {
+                    resource: "crystal",
+                    costFunction: "constant",
+                    get priceIncrease() {
+                        return 5 - SharkGame.Aspects.syntheticTransmutation.level;
+                    },
+                },
+                {
+                    resource: "driftwood",
+                    costFunction: "constant",
+                    get priceIncrease() {
+                        return 10 - 3 * SharkGame.Aspects.syntheticTransmutation.level;
+                    },
+                },
+            ],
+            max: "hardbark",
+            prereq: {
+                upgrade: ["hardbarkCoating"],
+            },
+            outcomes: [
+                "Hardbark made. Yippee.",
+                "It’s just wood. In crystal.",
+                "A simple design, much like their inventors.",
+                "Yes, I suppose the crystal is really hard to coat with…",
+                "It’s… honestly a little impressive. For a fish, of course.",
+                "Gah. I’ve made so many typos trying to spell hardbark.",
+            ],
+            helpText: "Coat sturdy driftwood pieces with crystal to make hardbark.",
+        },
+
+    // BUY ANIMALS /////////////////////////////////
+        getShark: {},
+        getManta: {},
+        getCrab: {},
+        getMudskipper: {
+            name: "Liberate mudskipper",
+            effect: {
+                resource: {
+                    mudskipper: 1,
+                },
+            },
+            cost: [
+                { resource: "fish", costFunction: "linear", priceIncrease: 1 },
+                  ],
+            max: "mudskipper",
+            prereq: {
+                upgrade: ["mudskipperContact"],
+            },
+            outcomes: [
+                "An atlantic mudskipper joins you.",
+                "A barred mudskipper joins you.",
+                "A common mudskipper joins you.",
+                "A Pearse’s mudskipper joins you.",
+                "A great blue spotted mudskipper joins you.",
+            ],
+            multiOutcomes: [
+                "Yessss! More woooodddd!!",
+                "These will certainly be useful...",
+                "Heh. Look at how scared they are.",
+                "Do you think we’re being too hard on them?",
+                "We’re doing them a favour.",
+                "What, they think we’re gonna eat them?",
+            ],
+            helpText: "Liberate a mudskipper from its boring old life and command it to retrieve driftwood for you.",
+        },
+
+        // MUDSKIPPER JOBS ///////////////////////////
+        getBurrow: {
+            name: "Dig mudskipper burrow",
+            effect: {
+                resource: {
+                    burrow: 1,
+                },
+            },
+            cost: [
+                { resource: "mudskipper", costFunction: "constant", priceIncrease: 3 },
+                { resource: "fish", costFunction: "linear", priceIncrease: 15 },
+                { resource: "sand", costFunction: "linear", priceIncrease: 12 },
+            ],
+            max: "burrow",
+            prereq: {
+                resource: {
+                    mudskipper: 1,
+                },
+                upgrade: ["mudskipperBurrowing"],
+            },
+            outcomes: [
+                "//*to be written in future*//",
+              
+            ],
+            multiOutcomes: [
+                "//*to be written in future*//",
+            ],
+            helpText: "Allow a mudskipper to dig a burrow to do some weird flailing or something.",
+        },
+        getMentor: {},
+        
    },
+
+
+
+    
 };
 
 SharkGame.HomeActionCategories = {
@@ -4673,6 +4788,7 @@ SharkGame.HomeActionCategories = {
             "getBillfishExplorer",
             "getBillfishMechanic",
             "getStormgoer",
+            "getMentor",
         ],
     },
 

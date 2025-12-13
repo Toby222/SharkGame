@@ -1494,7 +1494,7 @@ SharkGame.HomeActions = {
         },
 
         breakDownAncientPart: {
-            name: "Desmontar partes antigas",
+            name: "Desmontar componentes antigos",
             effect: {
                 resource: {
                     science: 2500,
@@ -1514,7 +1514,7 @@ SharkGame.HomeActions = {
                 "A rebimboca está conectada à...parafuseta. A parafuseta está...hm... não, isso tá errado.",
                 "Aprendemos muito com tudo isso! Eu acho!",
             ],
-            helpText: "Quebre as partes antigas para análise e ciência.",
+            helpText: "Quebre os componentes antigos para análise e ciência.",
         },
 
         // MAKE ADVANCED RESOURCES  ///////////////////////////////////////////////////////////////////////////////
@@ -1561,7 +1561,7 @@ SharkGame.HomeActions = {
         },
 
         fuseAncientPart: {
-            name: "Fundir coisas em partes antigas",
+            name: "Fundir coisas em componentes",
             effect: {
                 resource: {
                     ancientPart: 1,
@@ -1597,7 +1597,7 @@ SharkGame.HomeActions = {
                 "Os lasers se encontram em um ponto, superaquecendo os mexilhões e fundindo eles.",
                 "Como que isso foi criado sem as partes já feitas??",
             ],
-            helpText: "Converta mexilhões (e cristais) diretamente em partes antigas.",
+            helpText: "Converta mexilhões (e cristais) diretamente em componentes antigos.",
         },
 
         // BUY ANIMALS ////////////////////////////////////////////////////////////////////////////////

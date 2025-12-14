@@ -286,7 +286,7 @@ SharkGame.Upgrades = {
                 upgrades: ["engineering"],
             },
         },
-        iterativeDesign: {[]
+        iterativeDesign: {
             name: "Design Iterado",
             desc: "As máquinas são boas, mas poderiam ser melhores. Vamos refazer nossas máquinas do zero!",
             researchedMessage: "E nós aprendemos que ciência é sobre aprender de erros, é o que diz os cientistas. Sobre seus próprios erros.",
@@ -1640,7 +1640,7 @@ SharkGame.Upgrades = {
                 sharkonium: 75000,
             },
             required: {
-                upgrades: ["engineering"],[]
+                upgrades: ["engineering"],
             },
             effect: {
                 incomeMultiplier: {
@@ -1656,11 +1656,11 @@ SharkGame.Upgrades = {
             },
         },
         superprocessing: {
-            name: "Superprocessing",
-            desc: "The recycler wasn't really meant for millions of fish at once. Seeing as that transaction is fairly common, we should probably do something about it.",
-            researchedMessage: "Eureka! If we make the big things bigger, and the grinders grindier, we can process way more material at once!",
+            name: "Superprocessamento",
+            desc: "A recicladora não foi feita com o dissolução de milhões de peixes em mente. Considerando que isso é uma demanda bem comum, nós provavelmente deveríamos fazer algo sobre isso.",
+            researchedMessage: "Eureka! Se fizermos as coisas grandes ficarem maiores, e os moedores mais moídos, nós poderemos processar muito mais material de uma só vez!",
             effectDesc:
-                "The recycler's efficiency only starts dropping at 10 million material inserted at once, instead of 100 thousand. The base efficiency is now 100%.",
+                "A eficiência da recicladora só começa a cair na casa dos 10 milhões de itens de uma só vez, ao invés de 100 mil. A eficiência máxima também aumentou para 100%.",
             cost: {
                 science: 4e6,
                 sharkonium: 250000,
@@ -1712,12 +1712,12 @@ SharkGame.Upgrades = {
             },
         },
         internalInquiry: {
-            name: "Internal Inquiry",
-            desc: "We haven't spoken to the squid about what happened. Maybe we should say something.",
+            name: "Consulta Interna",
+            desc: "Nós e as lulas não falamos ainda sobre o ocorrido. Talvez nós devêssemos conversar.",
             researchedMessage:
-                "They're not mad, just disappointed. If we wanted to explore it, we could have just asked. They know how to operate it, but not how the technology works.",
+                "Eles não estão zangados, exatamente, apenas desapontados. Se nós queríamos explorar o lugar, nós poderíamos apenas ter pedido. Eles sabem como operar a máquina, mas não como ela funciona.",
             effectDesc:
-                "Squid and collectives x2, extraction teams x4. Reconciled with the squids. They told us what they know about the machine's operation.",
+                "Lulas e coletivos x2, times de extração x4. Fizemos as pazes com as lulas. Elas nos contaram um pouco sobre como manejar a máquina.",
             cost: {
                 science: 250000,
             },

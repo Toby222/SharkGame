@@ -440,7 +440,7 @@ SharkGame.Upgrades = {
             effectDesc:
                 "Plantadores colhem duas vezes mais alga. Será que um sol vale vários peixes? Nós vemos o Sol, mas onde que está? O que faz um Sol brilhar?",
             cost: {
-                science: 7500, 
+                science: 7500,
             },
             required: {
                 upgrades: ["agriculture", "kelpHorticulture"],
@@ -1483,7 +1483,7 @@ SharkGame.Upgrades = {
             },
         },
         sunObservation: {
-            name: "Observação Solar", 
+            name: "Observação Solar",
             desc: "Precisamos entender que brilho maluco é aquele na superfície da água.",
             researchedMessage: "Cientistas acabaram de descobrir o Sol! Eles também descobriram que olhar para sol dói.",
             effectDesc:
@@ -1539,7 +1539,7 @@ SharkGame.Upgrades = {
             },
         },
         transmutation: {
-            name: "Transmutation",
+            name: "Transmutação",
             desc: "Ao esquentar coisas e fazer ciência, novas coisas podem ser feitas!",
             researchedMessage: "Um novo tipo de material foi descoberto! Foi batizado em homenagem de seu criador, Dr. Tubarão.",
             effectDesc: "Permite a transmutação de umas coisas que nós temos jogadas por aí em tubarônio, o material do futuro.",
@@ -1554,7 +1554,7 @@ SharkGame.Upgrades = {
         },
         automation: {
             name: "Automação",
-            desc: "Usando tubaônio, podemos fazer coisas que fazem coisas para que nós não precisemos fazer as coisas!",
+            desc: "Usando tubarônio, podemos fazer coisas que fazem coisas para que nós não precisemos fazer as coisas!",
             researchedMessage: "Agora não precisamos fazer todo o trabalho, já que as máquinas o fazem por nós! FUTUUURO!!",
             effectDesc: "Máquinas podem ser construídas para ajudar na produção do cardume de forma mais eficiente.",
             cost: {
@@ -1694,11 +1694,11 @@ SharkGame.Upgrades = {
             },
         },
         internalExpedition: {
-            name: "Internal Expedition",
-            desc: "We have the resources to launch a secret expedition into the machine. Its secrets must be known.",
-            researchedMessage: "The expedition went well, but on the way out, a squid noticed us leaving the machine. I guess the jig is up.",
+            name: "Apuração Interna",
+            desc: "Temos os recursos para examinar secretamente a máquina. Seus mistérios devem ser desvendados.",
+            researchedMessage: "A apuração foi um sucesso, mas enquanto saíamos da máquina, uma lula nos viu com a boca na butija. Acho que não tem como esconder isso mais.",
             effectDesc:
-                "Scientists are twice as effective. Discovered little more than endless hallways of unrecognizable text and rooms filled with incomprehensible control schemes.",
+                "Cientistas são duas vezes mais eficientes. Descobrimos apenas intermináveis corredores com textos incompreesíveis e salas cheias de painéis de controle inexplicados.",
             cost: {
                 science: 100000,
             },
@@ -1734,10 +1734,10 @@ SharkGame.Upgrades = {
         },
         rapidRecharging: {
             name: "Rapid Recharging",
-            desc: "The squid have provided us with a dead battery. We can reverse-engineer it to create a new one.",
+            desc: "As lulas nos deram a bateria vazia. Nós podemos estudá-la para criar uma nova.",
             researchedMessage:
-                "A wave of heat washes over you as the battery is inserted. The ice around the village quickly vaporizes, and like magic, a giant bubble is carved in the surrounding glaciers.",
-            effectDesc: "Battery has been replaced. All the nearby ice has melted and we can now begin using the gate.",
+                "Uma onda de calor se espalha pela cidade no momento que a bateria nova é inserida. O gelo à sua volta rapidamente some e, como um passe de mágica, a geleira que o continha começa a retroceder.",
+            effectDesc: "A bateria foi trocada. Todo o gelo nos afligindo derrete rapidamente e podemos agora usar o portal.",
             cost: {
                 science: 3250000,
                 sharkonium: 250000,

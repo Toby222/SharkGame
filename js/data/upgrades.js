@@ -1801,7 +1801,7 @@ SharkGame.Upgrades = {
             desc: "Temos águas-vivas aos montes nesse breu, mas, toda vez que tentamos pegá-las, nós terminamos todos doídos. Precisamos de alguma estratégia.",
             researchedMessage: "O truque de caçar água-viva é ter cuidado e não tocar nos tentáculos venenosos, porque eles queimam. Ô, se queimam.",
             effectDesc: "Águas-vivas podem ser caçadas como se fossem peixes. Se nada, então é peixe.",
-            cost:{
+            cost: {
                 science: 750,
             },
             required: {
@@ -1809,10 +1809,10 @@ SharkGame.Upgrades = {
             },
         },
         jellyDiving: {
-            name: "Jelly Diving",
-            desc: "Problema: Você está cansado de caçar água-viva  você mesmo. Soluções: Faça outro o fazer por você.",
-            researchedMessage: "Huzzah, the divers now collect jellyfish! They're- ooh. Oh, boy. That must have hurt.",
-            effectDesc: "Shark divers now sometimes collect jellyfish. Here's hoping it's worth the trouble.",
+            name: "Mergulho d'Água (Viva)",
+            desc: "Problema: Você está cansado de caçar água-viva sozinho. Solução: Faça outros caçarem por você.",
+            researchedMessage: "Eba, os mergulhadores agora caçam águas-vivas! Eles est- Uia. Vixe. Aquilo deve ter doído.",
+            effectDesc: "Tubarões mergulhadores agora ganharam a responsabilidade de caçar águas-vivas. Esperamos que valha a pena.",
             cost: {
                 science: 1000,
                 jellyfish: 20,

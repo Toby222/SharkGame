@@ -1759,11 +1759,11 @@ SharkGame.Upgrades = {
             },
         },
         seabedGeology: {
-            name: "Seabed Geology",
-            desc: "Find the ocean floor once and for all. No more bottomless-sea-diving shenanigans.",
+            name: "Geologia Oceânica",
+            desc: "Ache o solo oceânico de uma vez por todas. Chega de entrar em buracos sem fundo.",
             researchedMessage:
-                "Not only did we actually figure out where the floor is, we met the weird wiggly creatures! They apologized for their earlier hesitence. Something about sharks and eating.",
-            effectDesc: "Rays gather sand twice as fast now that we...know where the sand is, and eels can be recruited into the frenzy.",
+                "Não só finalmente descobrimos onde o solo fica, também achamos bichinhos molengas! Eles se desculparam por se esconder de nós. Deram um motivo haver com comida e tubarão.",
+            effectDesc: "Arraias coletam duas vezes mais areia uma vez que descobrimos...onde a areia está, além disso, enguias podem ser recrutadas ao cardume.",
             cost: {
                 science: 400,
                 sand: 750,
@@ -1784,7 +1784,7 @@ SharkGame.Upgrades = {
             },
         },
         agriculture: {
-            name: "Agriculture",
+            name: "Agricultura",
             desc: "The hunter-gatherer lifestyle will only work so well for us. Maybe we should gather these animals in one place and let them grow.",
             researchedMessage: "It is so much easier to get things when they're all in one place. It's like the ocean is our grotto now!",
             effectDesc: "Advances in agriculture will fuel future endeavors. Who knows what we'll do next!",
@@ -1797,11 +1797,11 @@ SharkGame.Upgrades = {
             },
         },
         jellyfishHunting: {
-            name: "Jellyfish Hunting",
-            desc: "Jellyfish are plenty in these blackened waters, but our attempts to catch them is met only with pain. We need better tactics.",
-            researchedMessage: "The trick to catching jellyfish is caution and avoiding the stinging tendrils. They burn. Oh, they burn.",
-            effectDesc: "Jellyfish can be caught like fish. Hey, a fish is a fish, right?",
-            cost: {
+            name: "Caçar Águas-Vivas",
+            desc: "Temos águas-vivas aos montes nesse breu, mas, toda vez que tentamos pegá-las, nós terminamos todos doídos. Precisamos de alguma estratégia.",
+            researchedMessage: "O truque de caçar água-viva é ter cuidado e não tocar nos tentáculos venenosos, porque eles queimam. Ô, se queimam.",
+            effectDesc: "Águas-vivas podem ser caçadas como se fossem peixes. Se nada, então é peixe.",
+            cost:{
                 science: 750,
             },
             required: {
@@ -1810,7 +1810,7 @@ SharkGame.Upgrades = {
         },
         jellyDiving: {
             name: "Jelly Diving",
-            desc: "It's only natural to get sick of getting jellyfish yourself. Solution: make someone else do it!",
+            desc: "Problema: Você está cansado de caçar água-viva  você mesmo. Soluções: Faça outro o fazer por você.",
             researchedMessage: "Huzzah, the divers now collect jellyfish! They're- ooh. Oh, boy. That must have hurt.",
             effectDesc: "Shark divers now sometimes collect jellyfish. Here's hoping it's worth the trouble.",
             cost: {

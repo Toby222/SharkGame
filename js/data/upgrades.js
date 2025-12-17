@@ -1865,11 +1865,11 @@ SharkGame.Upgrades = {
             },
         },
         eelHabitats: {
-            name: "Eel Habitats",
-            desc: "So we've seen the eels darting in and out of holes in the ground. We're not really sure what's up with that.",
+            name: "Habitats Enguiáticos",
+            desc: "Nós vemos as enguias se enfiando em buracos e surgindo do chão. Não entendemos direito como isso funciona.",
             researchedMessage:
-                "After some somewhat one-sided discussion with the eels on the nature of eel pits and crucial safety and security in the form of seabed holes, we understand...maybe.",
-            effectDesc: "Eels are twice as effective now we know how they prefer to live. Also, they can now breed in pits, or something.",
+                "Depois de uma conversa - que mais parecia uma aula - com as enguias sobre a existência de poços de enguias e a segurança máxima na forma de buraquinhos na areia, nós...ainda não entendemos direito.",
+            effectDesc: "Enguias dobram sua eficiência agora que aprendemos sobre suas moradia favorita. Ademais, elas podem de multiplicar em poços, ou algo assim.",
             cost: {
                 science: 2250,
             },

@@ -364,10 +364,10 @@ SharkGame.WorldTypes = {
              vagueLongDesc: "This place is so shallow.",
              longDesc: "A lapping, sandy ocean, creeping upon the shores.",
              missing: ["kelpstuff"],
-             present: ["mudskipper", "driftwood", "hardbark", "coral"],
+             present: ["mudskipper", "driftwood", "hardbark", "coral", "seagrass"],
              tip: "Not all is as it seems. Respect the brown fish that survive the beyond.",
           },
-            entry: "You enter a low-strung turquoise sea, all your memory a shade.",
+            entry: "You enter a low-strung sandy sea, but the barrage of many grains scraping your lungs distracts you.",
             style: "default",
             includedResources: [
              "basics",
@@ -380,7 +380,7 @@ SharkGame.WorldTypes = {
              "sharkmachines",
              "driftwood",
              "mudskipperpuppets"],
-            absentResources: ["kelp"],
+            absentResources: ["kelp", "seaApple"],
             modifiers: [
              { type: "multiplier", modifier: "planetaryIncomeMultiplier", resource: "crab", amount: 1 }
              { type: "multiplier", modifier: "planetaryResourceBoost", resource: "sand", amount: 2.5 }

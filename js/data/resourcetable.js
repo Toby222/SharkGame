@@ -1354,6 +1354,11 @@ SharkGame.GeneratorIncomeAffectorsOriginal = {
             fishMachine: 0.01,
         },
     },
+   mentor: {
+       multiply: {
+           puppetPlaceholder: 0.05
+       },
+   },
     // cool tooltip test crab
     /*     crab: {
         exponentiate: {

@@ -4611,6 +4611,9 @@ SharkGame.HomeActions = {
         catchFish: {},
         debugButton: {},
 
+    // PROCESSING ////////////////////////////////////
+        seagrasstoScience: {},
+
     // MAKE ADVANCED RESOURCES ///////////////////////
         transmuteSharkonium: {},
         coatHardbark: {
@@ -4652,9 +4655,9 @@ SharkGame.HomeActions = {
         },
 
     // BUY ANIMALS /////////////////////////////////
-        getShark: {},
-        getManta: {},
-        getCrab: {},
+        getShark: {}, //end of creature code
+        getManta: {}, //end of creature code
+        getCrab: {}, //end of creature code
         getMudskipper: {
             name: "Liberate mudskipper",
             effect: {
@@ -4685,7 +4688,7 @@ SharkGame.HomeActions = {
                 "What, they think we’re gonna eat them?",
             ],
             helpText: "Liberate a mudskipper from its boring old life and command it to retrieve driftwood for you.",
-        },
+        }, //end of creature code
 
         // MUDSKIPPER JOBS ///////////////////////////
         getBurrow: {
@@ -4715,8 +4718,35 @@ SharkGame.HomeActions = {
                 "//*to be written in future*//",
             ],
             helpText: "Allow a mudskipper to dig a burrow to do some weird flailing or something.",
+        }, //end of creature code
+        getMentor: {
+            name: "Train mudskipper mentor",
+            effect: {
+                resource: {
+                    mentor: 1,
+                },
+            },
+            cost: [
+                { resource: "mudskipper", costFunction: "constant", priceIncrease: 3 },
+                { resource: "science", costFunction: "linear", priceIncrease: 5 },
+                { resource: "hardbark", costFunction: "linear", priceIncrease: 4 },
+            ],
+            max: "mentor",
+            prereq: {
+                resource: {
+                    mudskipper: 1,
+                },
+                upgrade: ["puppetTeaching"],
+            },
+            outcomes: [
+                "//*to be written in future*//",
+              
+            ],
+            multiOutcomes: [
+                "//*to be written in future*//",
+            ],
+            helpText: "Teach a mudskipper techniques on puppet work, so that it may pass on its knowledge.",
         },
-        getMentor: {},
         
    },
 

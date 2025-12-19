@@ -347,7 +347,7 @@ SharkGame.Upgrades = {
             name: "Agricultura",
             desc: "Não sabemos por quanto tempo uma sociedade caçadora-coletora irá nos servir. Talvez devêssemos juntar nossos animais e deixá-los crescer.",
             researchedMessage: "É tão mais fácil conseguir coisas quando elas estão todas em um lugar. Como se o oceano inteiro estivesse na nossa gruta!",
-            effectDesc: "Advanços na agricultura irão incentivar futuras empreitadas. Quem sabe qual vai ser o nosso próximo passo!",
+            effectDesc: "Avanços na agricultura irão incentivar futuras empreitadas. Quem sabe qual vai ser o nosso próximo passo!",
             cost: {
                 science: 500,
                 sand: 1500,
@@ -372,7 +372,7 @@ SharkGame.Upgrades = {
         },
         xenobiology: {
             name: "Xenobiologia",
-            desc: "Tente explicar oque que são essas frutinhas que ficam sainda da nossa alga.",
+            desc: "Tente explicar oque que são essas frutinhas que ficam saindo da nossa alga.",
             researchedMessage: "Resultados inconclusivos! Mais pesquisa é necessária. Pode ser um grande benefício para a ciência!",
             effectDesc:
                 "Algas produzem holotúrias duas vezes mais rápido. Nós podemos dissecar holotúrias pela ciência. Também, nós descobrimos que holotúrias não são frutas. Que nojo.",
@@ -392,7 +392,7 @@ SharkGame.Upgrades = {
         },
         rayBiology: {
             name: "Biologia Arraiística",
-            desc: "Mesmo sendo primos de nos tubarões, não sabemos quase nada das arraias. Nós podemos consertar isso. Só precisamos de uma armadilha.",
+            desc: "Mesmo sendo primos de nós, tubarões, não sabemos quase nada das arraias. Nós podemos consertar isso. Só precisamos de uma armadilha.",
             researchedMessage:
                 "Aparentemente, poderíamos ter apenas perguntado. Mas conseguimos descobrir como arraias fazem mais arrainhas. É bem parecido como tubarões funcionam, mas com arraias.",
             effectDesc:
@@ -644,7 +644,7 @@ SharkGame.Upgrades = {
         },
         agriculture: {
             researchedMessage:
-                "Enquanto que a graxa torne mais difícil, É tão mais fácil conseguir coisas quando elas estão todas em um lugar. Como se o oceano inteiro estivesse na nossa gruta!",
+                "Enquanto que a graxa torna tudo mais difícil, É tão mais fácil conseguir coisas quando elas estão todas em um lugar. Como se o oceano inteiro estivesse na nossa gruta!",
             effectDesc: "Caranguejos podem ser especializar na colheita de esponja.",
             cost: {
                 science: 2000,
@@ -1389,7 +1389,7 @@ SharkGame.Upgrades = {
         },
         agriculture: {
             name: "Agricultura",
-            desc: "A vida de caçador-coletor parece ser a única possibilidade, mas talvez possamos achar algum jeito mais sustentável?",
+            desc: "A vida de caçador-coletor parece ser nossa única possibilidade, mas talvez possamos achar algum jeito mais sustentável?",
             researchedMessage:
                 "Meio que funcionou. Tivemos que plantar a alga espalhada por todo lugar, senão os ouriços pegam e comem tudo se estiver em um só lugar.",
             effectDesc: "Ouriços coletam alga duas vezes mais rápido. Toda a alga. E apenas alga.",
@@ -1785,9 +1785,9 @@ SharkGame.Upgrades = {
         },
         agriculture: {
             name: "Agricultura",
-            desc: "The hunter-gatherer lifestyle will only work so well for us. Maybe we should gather these animals in one place and let them grow.",
-            researchedMessage: "It is so much easier to get things when they're all in one place. It's like the ocean is our grotto now!",
-            effectDesc: "Advances in agriculture will fuel future endeavors. Who knows what we'll do next!",
+            desc: "Não sabemos por quanto tempo uma sociedade caçadora-coletora irá nos servir. Talvez devêssemos juntar nossos animais e deixá-los crescer.",
+            researchedMessage: "É tão mais fácil conseguir coisas quando elas estão todas em um lugar. Como se o oceano inteiro estivesse na nossa gruta!",
+            effectDesc: "Avanços na agricultura irão incentivar futuras empreitadas. Quem sabe qual vai ser o nosso próximo passo!",
             cost: {
                 science: 700,
                 sand: 1000,
@@ -1828,11 +1828,11 @@ SharkGame.Upgrades = {
             },
         },
         biology: {
-            name: "Biology",
-            desc: "What is a shark? What is inside a shark, except for large amounts of fish?",
-            researchedMessage: "With a new understanding of their own biology, sharks can now specialise in the manufacture of new sharks.",
+            name: "Biologia",
+            desc: "O que é um tubarão? O que tem dentro de um tubarão, além de muitos peixes?",
+            researchedMessage: "Com uma nova compreensão da própria biologia, tubarões agora podem se especializar em montar novos tubarões.",
             effectDesc:
-                "Sharks are twice as effective, and nurse sharks can be bought. Did you know shark eggs don't actually form just because a shark wills them to exist?",
+                "Tubarões produzem duas vezes mais e tubarões enfermeiros podem ser treinados. Você sabia que ovos de tubarão não aparecem apenas porque um tubarão pediu muito a Papai do Céu?",
             cost: {
                 science: 1750,
             },
@@ -1846,12 +1846,12 @@ SharkGame.Upgrades = {
             },
         },
         rayBiology: {
-            name: "Ray Biology",
-            desc: "Though kindred to the sharks, we know so little about the rays. If only we could fix this. We need to bait a sand trap.",
+            name: "Biologia Arraiística",
+            desc: "Mesmo sendo primos de nós, tubarões, não sabemos quase nada das arraias. Nós podemos consertar isso. Só precisamos de uma armadilha.",
             researchedMessage:
-                "Apparently we could have just asked. We learned how rays make more rays. It's kinda similar to sharks, really, but rays.",
+                "Aparentemente, poderíamos ter apenas perguntado. Mas conseguimos descobrir como arraias fazem mais arrainhas. É bem parecido como tubarões funcionam, mas com arraias.",
             effectDesc:
-                "Rays are twice as effective, and ray makers are available. We may never repair the shark-ray relations to their former state after how awkward this whole affair was.",
+                "Arraias são duas vezes mais rápidas e criadores de arraias estão disponíveis. Mas talvez as relações tubarão-arraia nunca voltem ao seu estado original depois de quão vergonhoso isso foi para todos os envolvidos.",
             cost: {
                 science: 2000,
             },
@@ -1885,10 +1885,10 @@ SharkGame.Upgrades = {
             },
         },
         xenobiology: {
-            name: "Xenobiology",
-            desc: "Determine what is with these weird faceless creatures we keep finding.",
-            researchedMessage: "Results inconclusive! Further research required. It could be such a benefit for science!",
-            effectDesc: "We can dissect jellyfish for science. Gross.",
+            name: "Xenobiologia",
+            desc: "Tente explicar oque que são esses bichos sem-rosto nós achamos em todo lugar.",
+            researchedMessage: "Resultados inconclusivos! Mais pesquisa é necessária. Pode ser um grande benefício para a ciência!",
+            effectDesc: "Nós podemos dissecar águas-vivas pela ciência. Também, nós descobrimos onde fica o rosto das águas-vivas, mas decidimos manter isso como segredo.",
             cost: {
                 science: 3250,
                 jellyfish: 500,
@@ -1904,12 +1904,12 @@ SharkGame.Upgrades = {
             },
         },
         creviceContemplation: {
-            name: "Crevice Contemplation",
-            desc: "What's in the holes that the eels dig? Why do they make them? How DOES an eel pit work?",
+            name: "Contemplação de Cavidade",
+            desc: "O que está escondido nesses buracos de enguia? Por que elas o cavam? COMO que um poço de enguias funciona?",
             researchedMessage:
-                "All of our questions and more were answered by the antsy eels. We didn't need to know that much. Thanks, though, I guess??",
+                "Todas as nossas perguntas, e muito mais, foi esclarecido pelas tão ansiosas enguias. E nós não precisávamos saber de tanta coisa assim, mas obrigado, eu acho??",
             effectDesc:
-                "Eels are twice as effective, and so are eel pits. We learned some things we'd rather not have, but I guess they were just trying to help. I guess.",
+                "Enguias e seus poços dobram de eficiência. Nós aprendemos coisas que teria sido melhor não saber, mas eu acho que eles estavam apenas tentando ajudar. Eu acho.",
             cost: {
                 science: 7500,
             },
@@ -1925,10 +1925,10 @@ SharkGame.Upgrades = {
             },
         },
         transmutation: {
-            name: "Transmutation",
-            desc: "By heating things up and doing science things to them, maybe new things can be made!",
-            researchedMessage: "A new form of material has been discovered! It has been named after its discoverer, Dr. Sharkonium.",
-            effectDesc: "Enables transmutation of some random junk we have lying around into sharkonium, material of the future.",
+            name: "Transmutação",
+            desc: "Ao esquentar coisas e fazer ciência, novas coisas podem ser feitas!",
+            researchedMessage: "Um novo tipo de material foi descoberto! Foi batizado em homenagem de seu criador, Dr. Tubarão.",
+            effectDesc: "Permite a transmutação de umas coisas que nós temos jogadas por aí em tubarônio, o material do futuro.",
             cost: {
                 science: 10000,
                 crystal: 1000,
@@ -1939,10 +1939,10 @@ SharkGame.Upgrades = {
             },
         },
         automation: {
-            name: "Automation",
-            desc: "Using sharkonium, we can make things to do things so we don't have to do the things!",
-            researchedMessage: "Now we don't have to do all the work, machines can do it for us! Future!!",
-            effectDesc: "Machines can be built to supplement population duties. This is efficient.",
+            name: "Automação",
+            desc: "Usando tubarônio, podemos fazer coisas que fazem coisas para que nós não precisemos fazer as coisas!",
+            researchedMessage: "Agora não precisamos fazer todo o trabalho, já que as máquinas o fazem por nós! FUTUUURO!!",
+            effectDesc: "Máquinas podem ser construídas para ajudar na produção do cardume de forma mais eficiente.",
             cost: {
                 sharkonium: 1000,
             },
@@ -1951,10 +1951,10 @@ SharkGame.Upgrades = {
             },
         },
         exploration: {
-            name: "Exploration",
-            desc: "Swim beyond the home seas to see what can be found!",
-            researchedMessage: "Found lots of schools of fish, and so much sand! We also stumbled upon some gigantic chasms in the seafloor!",
-            effectDesc: "Sharks and rays and divers are twice as effective. Did you know oceans are big? Fascinating!",
+            name: "Exploração",
+            desc: "Nade além desse mar conhecido para vez o que mais achamos!",
+            researchedMessage: "Achamos um monte de peixes! E tanta areia! E ainda mais, abismos gigantes no fundo do oceano!",
+            effectDesc: "Tubarões, arraias e mergulhadores pegam o dobro de recursos. Você sabia que oceanos eram tão grandes assim? Incrível!",
             cost: {
                 science: 22500,
                 fish: 15000,
@@ -1971,10 +1971,10 @@ SharkGame.Upgrades = {
             },
         },
         engineering: {
-            name: "Engineering",
-            desc: "The machines sort of suck. Let's make them better by learning how!",
-            researchedMessage: "The machines are twice as good now! We've figured out new designs in the process, too!",
-            effectDesc: "Machines are twice as effective.",
+            name: "Engenharia",
+            desc: "Nossas máquinas são meio ruins. Vamos aprender a montá-las melhor!",
+            researchedMessage: "Dobramos a produção das máquinas! Mas não descobrimos como fazer nenhuma outra máquina.",
+            effectDesc: "Produção das máquinas multiplicado por dois.",
             cost: {
                 science: 30000,
                 sharkonium: 10000,
@@ -1992,10 +1992,10 @@ SharkGame.Upgrades = {
             },
         },
         chimaeraReunification: {
-            name: "Chimaera Reunification",
-            desc: "What are those things? Why do they look like sharks? Are they sharks? They're probably sharks. We should go say hi.",
-            researchedMessage: "Yeah, they're sharks alright. Sort of. Like, they're close enough! Most say they're glad to see us.",
-            effectDesc: "Chimaeras can be recruited. We sharks should stick together!",
+            name: "Reunificação Quimérica",
+            desc: "Mas o que são essas coisas? Por que parecem com nós? São tubarões? Eles devem ser tubarões sim. Deveríamos nos apresentar.",
+            researchedMessage: "É...Eles são mais ou menos tubarões. Tipo, eles são próximos os suficiente! A maioria diz que está feliz em nos ver.",
+            effectDesc: "Quimeras podem ser recrutadas. Nós tubarões devemos juntar forças!",
             cost: {
                 science: 45000,
                 jellyfish: 2500,
@@ -2416,11 +2416,11 @@ SharkGame.Upgrades = {
             },
         },
         biology: {
-            name: "Biology",
-            desc: "What is a shark? What is inside a shark, except for large amounts of fish?",
-            researchedMessage: "With a new understanding of their own biology, sharks can now specialise in the manufacture of new sharks.",
+            name: "Biologia",
+            desc: "O que é um tubarão? O que tem dentro de um tubarão, além de muitos peixes?",
+            researchedMessage: "Com uma nova compreensão da própria biologia, tubarões agora podem se especializar em montar novos tubarões.",
             effectDesc:
-                "Sharks are twice as effective, and nurse sharks can be bought. Did you know shark eggs don't actually form just because a shark wills them to exist?",
+                "Tubarões produzem duas vezes mais e tubarões enfermeiros podem ser treinados. Você sabia que ovos de tubarão não aparecem apenas porque um tubarão pediu muito a Papai do Céu?",
             cost: {
                 science: 2500,
             },
@@ -2989,11 +2989,11 @@ SharkGame.Upgrades = {
             },
         },
         biology: {
-            name: "Biology",
-            desc: "What are we? What is inside us? Why do we move, when other things do not?",
-            researchedMessage: "With a better grasp of our own biology, we can better understand our limitations. Maybe we should keep this up.",
+            name: "Biologia",
+            desc: "O que nós somos? Do que somos feitos? Por que nadamos e outros não?",
+            researchedMessage: "Com um conceito melhor da nossa biologia, entendemos melhor nossas limitações. Talvez devêssemos manter essa linha de pensamento.",
             effectDesc:
-                "Rays and crabs are twice as effective at their jobs. Did you know that we have some special thing called fins, and that's why we can swim, but crabs can't??",
+                "Arraias e caranguejos são duas vezes mais eficientes em seus respectivos trabalhos. Você sabia que é porque temos uma coisa chamada barbatanas e por isso conseguimos nadar, mas siris não??",
             cost: {
                 science: 15000,
             },
@@ -3009,9 +3009,9 @@ SharkGame.Upgrades = {
             },
         },
         sociology: {
-            name: "Sociology",
+            name: "Sociologia",
             desc: "What is a frenzy? Why do we obey our orders? Why do we work together?",
-            researchedMessage: "Progress, prosperity, organization, order. We choose to be a part of this society, and that is what creates it.",
+            researchedMessage: "Progresso, prosperidade, organização, ordem. We choose to be a part of this society, and that is what creates it.",
             effectDesc: "Shrimp and sponge farms are twice as effective now that we can grasp the idea of a social system being different than ours.",
             cost: {
                 science: 15000,
@@ -3909,11 +3909,11 @@ SharkGame.Upgrades = {
             },
         },
         biology: {
-            name: "Biology",
-            desc: "What is a shark? What is inside a shark, except for large amounts of fish?",
-            researchedMessage: "With a new understanding of their own biology, sharks can now specialise in the manufacture of new sharks.",
+            name: "Biologia",
+            desc: "O que é um tubarão? O que tem dentro de um tubarão, além de muitos peixes?",
+            researchedMessage: "Com uma nova compreensão da própria biologia, tubarões agora podem se especializar em montar novos tubarões.",
             effectDesc:
-                "Sharks are twice as effective, and nurse sharks can be bought. Did you know shark eggs don't actually form just because a shark wills them to exist?",
+                "Tubarões produzem duas vezes mais e tubarões enfermeiros podem ser treinados. Você sabia que ovos de tubarão não aparecem apenas porque um tubarão pediu muito a Papai do Céu?",
             cost: {
                 science: 3250,
             },

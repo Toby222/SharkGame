@@ -2007,10 +2007,10 @@ SharkGame.Upgrades = {
         },
         shroudedChasmExploration: {
             name: "Chasm Exploration",
-            desc: "The chimaeras say they can help us navigate the chasms. With their help, we could throw together an expedition and see what's down there.",
+            desc: "As quimeras se ofereceram para ajudar a navegar os abismos. Com isso, nós podemos mandar um time de exploração para ver o que tem lá embaixo.",
             researchedMessage:
-                "The dive team is back, and...we have no idea what we have here! Seriously! Even the chimaeras don't know what these are.",
-            effectDesc: "Chimaeras find jellyfish twice as fast. We found some weird artifact thingies, but we don't know what's up with them.",
+                "O grupo que mandamos voltou, e...bem, eles não sabem o que acharam! É sério! Nem mesmo as quimeras sabem o que essas pedras são.",
+            effectDesc: "Quimeras caçam o dobro de água-viva. Nós achamos umas peças estranhas que brilham, mas não temos a menor ideia do que são.",
             cost: {
                 science: 125000,
                 fish: 1500000,
@@ -2027,10 +2027,10 @@ SharkGame.Upgrades = {
             },
         },
         iterativeDesign: {
-            name: "Iterative Design",
-            desc: "The machines are useful, but they could be better. Let's build new ones, from scratch!",
-            researchedMessage: "As it turns out, science is about learning from mistakes, or so the scientists say. About their own mistakes.",
-            effectDesc: "All shark machines run twice as fast. Again! Scientists are 4 times faster as well.",
+            name: "Design Iterado",
+            desc: "As máquinas são boas, mas poderiam ser melhores. Vamos refazer nossas máquinas do zero!",
+            researchedMessage: "E nós aprendemos que ciência é sobre aprender de erros, é o que diz os cientistas. Sobre seus próprios erros.",
+            effectDesc: "Todas as máquinas tubarônicas duplicam sua velocidade. Sim, de novo! Além disso, cientistas quadruplicam sua eficiência.",
             cost: {
                 science: 275000,
                 sharkonium: 27500,
@@ -2048,11 +2048,11 @@ SharkGame.Upgrades = {
             },
         },
         recyclerDiscovery: {
-            name: "Recycler",
-            desc: "Devise a system of pulverising unwanted resources into a component paste, and reusing them as something else.",
+            name: "Recicladora",
+            desc: "Invente um sistema de destruir recursos em uma gosma para ser reutilizada em outra coisa.",
             researchedMessage:
-                "Well this thing is frankly terrifying. I wouldn't swim anywhere near the input holes if I were you. Maybe it'll help though!",
-            effectDesc: "Allows recycling of materials by virtue of a horrifying mechanical maw that consumes all that ventures near it. Future?",
+                "Bem, isso daqui parece que veio de um pesadelo. Eu não atreveria a nadar perto de qualquer buraco dessa máquina. Mas ela certamente pode ser útil para nós!",
+            effectDesc: "Possibilita a reciclagem de materiais por meio de uma boca aterrorizante que consume e destrói tudo que chega perto. Futuro?",
             cost: {
                 science: 500000,
                 sharkonium: 50000,
@@ -2062,12 +2062,12 @@ SharkGame.Upgrades = {
             },
         },
         abyssalEnigmas: {
-            name: "Abyssal Enigmas",
-            desc: "The chimaeras have returned from the deeper oceans with artifacts we can't explain. The chimaera don't seem bothered, but we need to work together to understand them.",
+            name: "Enigmas Abissais",
+            desc: "As quimeras voltaram do fundo do oceano com artefatos misteriosos. Elas não parecem se importar, mas nós precisamos entendê-los.",
             researchedMessage:
-                "From what little we have, we can tell that these all go together somehow; they're all part of something bigger... We need to find more of them!",
+                "Pelo pouco que descobrimos, nós percebemos que todos esses pedaços se encaixam de alguma maneira; formam parte de algo muito, muito maior... Nós precisamos achar mais!",
             effectDesc:
-                "Chimaeras are twice as effective, and can now be assigned to explore the chasms for more of these...you know what, let's call them 'arcana'. If we get enough of them together, maybe we could learn their original purpose?",
+                "Quimeras dobram sua eficiência, além de poderem ser alistados na exploração dos abismos em busca de mais desses...trequinhos, vamos chamá-lo de 'arcana'. Se juntarmos o suficiente, talvez iremos conhecer seu propósito original?",
             cost: {
                 science: 2500000,
                 jellyfish: 100000,
@@ -2082,10 +2082,10 @@ SharkGame.Upgrades = {
             },
         },
         arcaneSifting: {
-            name: "Arcane Sifting",
-            desc: "An eel just came back with a tiny piece of arcana-looking rubble, excitedly yelling about how they found it in the sand. Are we onto something here?",
-            researchedMessage: "Eels tasked with sifting through the sand have come back with even more arcana. We should keep this up!",
-            effectDesc: "Can train eels to sift through sand in search of arcana.",
+            name: "Garimparia Arcana",
+            desc: "Uma enguia acabou de nos mostrar uma pedrinha brilhante como arcana, gritando animada sobre como achou na areia. Isso soa interessante.",
+            researchedMessage: "Enguias postas para garimpar os solos tendem a voltar com ainda mais arcana. Nós deveríamos continuar essa empreitada!",
+            effectDesc: "Pode-se treinar enguias para garimpar a areia em busca de arcana.",
             cost: {
                 sand: 5000000,
                 arcana: 40,
@@ -2096,11 +2096,11 @@ SharkGame.Upgrades = {
             },
         },
         arcaneStudy: {
-            name: "Arcane Study",
-            desc: "We see some rays staring curiously at our collection of arcana. Where have I seen this before?",
-            researchedMessage: "The scientists have helped to teach the rays in the ways of their study. Our understanding grows ever stronger.",
+            name: "Estudo Arcano",
+            desc: "Nós vemos arrais olhando curiosamente para a nossa coleção de arcana. Onde será que eu já vi isso antes?",
+            researchedMessage: "Os cientistas ajudaram a ensinar as arraias o básico de seu estudo. O conhecimento possuido pelo Cardume aumenta.",
             effectDesc:
-                "Rays can be trained in the ways of science, becoming scholars and studying arcana to better our understanding of it. Their sudden interest is rather uncanny to us.",
+                "Arraias podem ser letradas para praticar ciência, se tornando uma estudiosa nas técnicas da arcana para nos ajudar a compreedê-la melhor. O interesse súbito delas é meio estranho.",
             cost: {
                 science: 2000000,
                 arcana: 200,
@@ -2111,12 +2111,12 @@ SharkGame.Upgrades = {
             },
         },
         arcaneCompass: {
-            name: "Arcane Compass",
-            desc: "The thinnest, straightest shards of arcana have been observed to rotate toward a common direction when left undisturbed. What are they pointing to?",
+            name: "Bússola Arcana",
+            desc: "Estilhaços retos de arcana parecem girar e apontar a uma direção fixa quando os deixamos quietos. What are they pointing to?",
             researchedMessage:
-                "We placed some shards in a clear box and let them point us around for a while. They led us straight to a dilapidated gate.",
+                "Nós botamos alguns desses pedaços numa caixa transparente e seguimos para onde eles apontavam. Despois de um tempo nadando, eles nos levaram a um portal dilapidado.",
             effectDesc:
-                "All arcana gains x2. We've since learned to use the arcana for other navigational tasks, which makes exploring for them more efficient.",
+                "Todos os ganhos de arcana ×2. Nós aprendemos a usar a arcana para funções navegacionais, o que faz a exploração muito melhor.",
             cost: {
                 arcana: 750,
             },
@@ -2131,12 +2131,12 @@ SharkGame.Upgrades = {
             },
         },
         chimaeraMysticism: {
-            name: "Chimaera Mysticism",
-            desc: "We know the chimaeras, but we don't know them very well. They keep speaking to us like we never have any questions. We do!",
+            name: "Misticismo Quimérico",
+            desc: "Nós podemos conhecer as quimeras, mas não sabemos tanto assim sobre elas. Elas só ficam falando conosco como se não tivéssemos pergunta alguma. Mas nós temos!",
             researchedMessage:
-                "We finally confronted the chimaeras about our lack of understanding. Right after we said it, there was this awkward silence, and then they started talking pretty clearly. What was that all about?",
+                "Finalmente confrontamos as quimeras sobre como não entendemos nada que elas falam. E depois que reclamamos, houve esse silêncio desconfotável, e então elas começaram a falar feito gente normal. Elas podiam ter feito assim desde o início?",
             effectDesc:
-                "Chimaeras and chimaera explorers are twice as effective now that we can actually talk to them. They've since been a lot less enthusiastic to work with us. What's with them?",
+                "Quimeras e exploradoras são duas vezes mais eficientes, uma vez que conseguimos falar direito com elas. Porém elas parecem menos entusiásticas em trabalha com a gente. O que será que deu nelas?",
             cost: {
                 science: 7500000,
                 jellyfish: 150000,
@@ -2185,11 +2185,11 @@ SharkGame.Upgrades = {
             },
         },
         superprocessing: {
-            name: "Superprocessing",
-            desc: "The recycler wasn't really meant for millions of fish at once. Seeing as that transaction is fairly common, we should probably do something about it.",
-            researchedMessage: "Eureka! If we make the big things bigger, and the grinders grindier, we can process way more material at once!",
+            name: "Superprocessamento",
+            desc: "A recicladora não foi feita com o dissolução de milhões de peixes em mente. Considerando que isso é uma demanda bem comum, nós provavelmente deveríamos fazer algo sobre isso.",
+            researchedMessage: "Eureka! Se fizermos as coisas grandes ficarem maiores, e os moedores mais moídos, nós poderemos processar muito mais material de uma só vez!",
             effectDesc:
-                "The recycler's efficiency only starts dropping at 10 million material inserted at once, instead of 100 thousand. The base efficiency is now 100%.",
+                "A eficiência da recicladora só começa a cair na casa dos 10 milhões de itens de uma só vez, ao invés de 100 mil. A eficiência máxima também aumentou para 100%.",
             cost: {
                 science: 10000000,
                 sharkonium: 2e6,

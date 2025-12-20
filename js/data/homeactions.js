@@ -2574,7 +2574,7 @@ SharkGame.HomeActions = {
             },
             outcomes: [
                 "As lulas se coletaram.",
-                "Fui convidado pr'uma tal de coletiva, não pude ir Marraria foi no meu lugar",
+                "Fui convidado pr'uma tal de coletiva, não pude ir Marraia foi no meu lugar",
                 "É até meio parecido com ninhadas de caranguejos.",
                 "O grupo se junta e começam a fazer seja lá o que lhes é de respeito.",
                 "Um coletivo de lulas coletivamente se coletaram.",

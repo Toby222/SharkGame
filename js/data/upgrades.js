@@ -105,7 +105,7 @@ SharkGame.Upgrades = {
             name: "Chapa de Cristal",
             desc: "Aperte o cristal até produzir uma armadura de cabeça para as raias.",
             researchedMessage: "As arraias conseguem perturbar mais a areia, ou seja, agora coletamos mais areia!",
-            effectDesc: "Efetividade das arraias aumenta por 100% devido a suas novas ferramentas adaptadas ao seus formatos.",
+            effectDesc: "Efetividade das arraias duplica devido a suas novas ferramentas adaptadas ao seus formatos.",
             cost: {
                 science: 50,
                 sand: 500,
@@ -2200,12 +2200,12 @@ SharkGame.Upgrades = {
             },
         },
         ancestralRecall: {
-            name: "Ancestral Recall",
-            desc: "The sharks and rays, and even chimaeras, know we share some features among ourselves. Using the strange tales passed down by chimaeras, let's piece together the puzzle.",
+            name: "Lembrança Ancestral",
+            desc: "Tubarões, arraias e até quimeras, todos temos algo em comum. Pelo folclore oral mantido vivo pelas quimeras, talvez consigamos entender isso.",
             researchedMessage:
-                "These tales speak plainly about a frenzy not unlike our own. It's said that what came of it was glorious, but all of the specifics have been lost to time, it seems.",
+                "Os contos das quimeras falam sobre um cardume, parecido com o nosso. É dito que o que eles fizeram foi glorioso, mas parece que o que especificamente eles fizeram foi perdido ao longo do tempo.",
             effectDesc:
-                "Sharks, rays and chimaeras, and their roles, are all four times as effective. Except divers. They're 16 times as effective. We have had a glorious past. Now, on to a glorious future.",
+                "Tubarões, arraias, quimeras, e suas especializações, produzem quatro vezes mais. Exceto mergulhadores, que produzem 16 vezes mais. Tivemos um passado glorioso. Agora, iremos para um futuro glorioso.",
             cost: {
                 science: 2e7,
             },
@@ -2226,12 +2226,12 @@ SharkGame.Upgrades = {
             },
         },
         arcaneHeart: {
-            name: "Arcane Heart",
-            desc: "The eels aren't really venturing outward like the rest of us; they stick near their holes. If we can show them their own potential, maybe they'll a little act differently.",
+            name: "Bravura Arcana",
+            desc: "As enguias não estão explorando o oceano como todos nós; elas só ficam ao redor de seus buraquinhos. Se pudéssemos ao menos mostrá-las seu potencial, talvez elas ajam diferente.",
             researchedMessage:
-                "Piecing together what little we know from eels and chimaeras, we've managed to locate an undiscovered network of subterranian eel tunnels. Within it are the crumbled remains of an ancient industrial city, one that must have housed millions.",
+                "Juntando tudo que nós sabemos sobre as enguias e as quimera, nós descobrimos uma rede subterrânea de túneis de enguias. No meio de tudo, há restos destruídos de uma cidade industrial das antiga, uma que devia ter abrigado milhões.",
             effectDesc:
-                "Eels and their roles four times as effective. As word of the ancient ruins spread, the eels began to talk and act differently. It wasn't long before they started to join our expeditions en masse.",
+                "Enguias e suas especializações são 4 vezes mais eficientes. Com a notícia das ruínas anciãs se espalhando, as enguias começaram a falar e agir diferentemente. Não demorou muito para eles se juntarem às expedições.",
             cost: {
                 science: 4e7,
             },
@@ -2248,10 +2248,10 @@ SharkGame.Upgrades = {
             },
         },
         arcaneActivation: {
-            name: "Arcane Activation",
-            desc: "The gate beckons.",
+            name: "Ativação Arcana",
+            desc: "O portal aguarda.",
             researchedMessage:
-                "The power of the arcana flashes away in a blinding light as it is smashed. When we opened our eyes again, the gate was finally alive.",
+                "O poder da arcana estoura em uma luz avassaladora ao ser quebrada. Quando conseguimos ver coisas novamente, o portal tinha voltado à vida.",
             effectDesc: "...",
             cost: {
                 science: 2e10,
@@ -2264,10 +2264,10 @@ SharkGame.Upgrades = {
     },
     marine: {
         crystalBite: {
-            name: "Crystal Bite-Gear",
-            desc: "Bite the crystals we have into something to help biting!",
-            researchedMessage: "Weird teeth-wear has been developed, and sharks can now catch fish better as a result.",
-            effectDesc: "Sharks are twice as effective with their new biting gear. Turns out they work better outside the mouth!",
+            name: "Mordedura de Cristal",
+            desc: "Morda os cristais até eles ficarem num formato que nos ajude a morder ainda melhor!",
+            researchedMessage: "Dentaduras estranhas foram feitas, e tubarões conseguem agora caçar peixes melhor.",
+            effectDesc: "Com seus novos mordedores, a efetividade dos tubarões é dobrada. Na verdade, funciona ainda melhor se for usado fora da boca!",
             cost: {
                 science: 50,
                 fish: 10,
@@ -2280,10 +2280,10 @@ SharkGame.Upgrades = {
             },
         },
         crystalSpade: {
-            name: "Crystal Spades",
-            desc: "Fashion strange harness-tools for the rays.",
-            researchedMessage: "The rays can now bother the sand more effectively, and dig up more sand now!",
-            effectDesc: "Rays are twice as effective with their specially adapted digging tools.",
+            name: "Chapa de Cristal",
+            desc: "Aperte o cristal até produzir uma armadura de cabeça para as arraias.",
+            researchedMessage: "As arraias conseguem perturbar mais a areia, ou seja, agora coletamos mais areia!",
+            effectDesc: "Efetividade das arraias duplica devido a suas novas ferramentas adaptadas ao seus formatos.",
             cost: {
                 science: 50,
                 sand: 20,
@@ -2296,10 +2296,10 @@ SharkGame.Upgrades = {
             },
         },
         crystalContainer: {
-            name: "Crystal Containers",
-            desc: "Make weird bottle things from the crystals we have. Maybe useful??",
-            researchedMessage: "Well, things can go into these containers that aren't water. This makes science easier!",
-            effectDesc: "Scientists are twice as effective at making with the science.",
+            name: "Garrafas de Cristal",
+            desc: "Faça uns trecos garrafescos usando os nossos cristais. Talvez seja útil??",
+            researchedMessage: "Bem, coisas que não são água podem ser guardadas nesse vidrinhos. A ciência ficou mais fácil!",
+            effectDesc: "Cientistas têm sua velocidade dobrada ao fazer ciência.",
             cost: {
                 science: 100,
                 crystal: 50,

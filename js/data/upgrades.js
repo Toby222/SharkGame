@@ -2324,10 +2324,10 @@ SharkGame.Upgrades = {
             },
         },
         seabedGeology: {
-            name: "Seabed Geology",
-            desc: "Study the bottom of the ocean to determine the rich, deep, juicy secrets it contains.",
-            researchedMessage: "Not only did we find a whole bunch of weird things, the rays found that there was more sand!",
-            effectDesc: "Rays are twice as effective with their understanding of the seabed and its varieties of sediment.",
+            name: "Geologia Oceânica",
+            desc: "Estude o fundo do oceano para determinar seus ricos e belos segredinhos.",
+            researchedMessage: "Não só descobrimos muitas coisas estranhas, as arraias descobriram que existe mais areia do que apenas areia!",
+            effectDesc: "Com um novo entendimento do solo oceânico e seus sedimentos, eficiência de arraias é dobrada.",
             cost: {
                 science: 300,
                 sand: 250,
@@ -2391,7 +2391,7 @@ SharkGame.Upgrades = {
             researchedMessage:
                 "Bem, conseguimos transmutar o que chamam de 'pérolas' em cristais agora, porém o resto do mexilhão vai junto. (sim, o mexilhão inteiro)",
             effectDesc:
-                "We can turn clams into crystals using the 'pearls' inside them as a focus. Maybe one day we won't need to use the whole clam.",
+                "Nós podemos tranformar mexilhão cristal usando as 'pérolas' dentro deles como um foco. Talvez um dia, não precisaremos do mexilhão todo.",
             cost: {
                 science: 2000,
                 clam: 500,
@@ -2434,11 +2434,11 @@ SharkGame.Upgrades = {
             },
         },
         crustaceanBiology: {
-            name: "Crustacean Biology",
-            desc: "These strange creatures related to crabs require further investigation...what's an exoskeleton?",
-            researchedMessage: "We've figured out how these shellfish function. There's far too many limbs involved.",
+            name: "Biologia Crustácea",
+            desc: "Essas criaturas esquisitas parecem com os siris. Precisamos investigar isso...o que é um exoesqueleto?",
+            researchedMessage: "Compreendemos como que essas cópias de caranguejo funcionam. Com muitos membros.",
             effectDesc:
-                "Lobsters are twice as effective. Lobsters can now gather other things or cover themselves in shiny eggs, also called 'berries'. What's a berry?",
+                "Lagostas trabalham duas vezes mais. Lagostas podem coletar outras coisas ou se cobrir em ovos brilhantes, também chamado de 'caviar'. Você sabe o que é caviar?",
             cost: {
                 science: 2500,
                 clam: 1000,
@@ -2604,11 +2604,11 @@ SharkGame.Upgrades = {
             },
         },
         calciniumStudies: {
-            name: "Calcinium Studies",
-            desc: "The lobsters have seen our transmutation process, and they say that it reminds of something?",
-            researchedMessage: "And there we have it. Calcinium, I guess! Surprisingly strong.",
+            name: "Estudos de Calcinício",
+            desc: "As lagostas viram nosso processo de transmutação, e isso os lembrou de alguma coisa?",
+            researchedMessage: "E aqui estamos. Calcinício, aparentemente! Surpreendentemente forte.",
             effectDesc:
-                "Learned how to manufacture calcinium. I wonder what it's for? The lobsters are currently consolidating their information on it.",
+                "Aprendemos a manufaturar calcinício. Me pergunto para que serve. As lagostas estão analisando as informações que elas têm sobre.",
             cost: {
                 science: 450000,
                 clam: 1000000,
@@ -2620,11 +2620,11 @@ SharkGame.Upgrades = {
             },
         },
         calciniumRobotics: {
-            name: "Calcinium Robotics",
-            desc: "So the lobsters remembered what calcinium is for.",
-            researchedMessage: "With enough effort, we've managed to fashion calcinium tools for the frenzy.",
+            name: "Robótica de Calcinício",
+            desc: "Então. As lagostas lembraram para que o calcinício serve.",
+            researchedMessage: "Com um pouco de dor de cabeça, conseguimos montar ferramentas com o calcinício para o Cardume.",
             effectDesc:
-                "Rays and planter crabs can be trained as clam scavengers and seabed strippers. These tools are designed to work without input from their users. Freaky.",
+                "Arraias e plantadores podem ser treinados como coletores mexílicos e desmatadores oceânicos. As ferramentas foram feitas para funcionar sem nenhum comando de seus usuários. Medonho.",
             cost: {
                 calcinium: 125000,
             },

@@ -2497,12 +2497,12 @@ SharkGame.Upgrades = {
             },
         },
         rayBiology: {
-            name: "Ray Biology",
-            desc: "Though kindred to the sharks, we know so little about the rays. If only we could fix this. We need to bait a sand trap.",
+            name: "Biologia Arraiística",
+            desc: "Mesmo sendo primos de nós, tubarões, não sabemos quase nada das arraias. Nós podemos consertar isso. Só precisamos de uma armadilha.",
             researchedMessage:
-                "Apparently we could have just asked. We learned how rays make more rays. It's kinda similar to sharks, really, but rays.",
+                "Aparentemente, poderíamos ter apenas perguntado. Mas conseguimos descobrir como arraias fazem mais arrainhas. É bem parecido como tubarões funcionam, mas com arraias.",
             effectDesc:
-                "Rays are twice as effective, and ray makers are available. We may never repair the shark-ray relations to their former state after how awkward this whole affair was.",
+                "Arraias e arraias laser são duas vezes mais rápidas e criadores de arraias estão disponíveis. Mas talvez as relações tubarão-arraia nunca voltem ao seu estado original depois de quão vergonhoso isso foi para todos os envolvidos.",
             cost: {
                 science: 12500,
                 sand: 7500,
@@ -2634,12 +2634,12 @@ SharkGame.Upgrades = {
             },
         },
         calciniumCybernetics: {
-            name: "Calcinium Cybernetics",
-            desc: "Robot tools are great and all, but they're pretty dumb on their own. We could do better if we learned to control them.",
+            name: "Cibernética",
+            desc: "Ferramentas roboticas são ótimas e tal, mas sozinhas elas são bem idiotas. Seria muito melhor se aprendessemos a controlá-las.",
             researchedMessage:
-                "A bundle of crumpled blueprints and a few morally dubious experiments later, brains can now interface with calcinium machines. Future!",
+                "Um amontoado de diagramas amassados e alguns experimentos de moralidade duvidosa depois, cérebro agora conseguem interfacear diretamente com máquinas de calcinício. Futuríssimo!",
             effectDesc:
-                "Clam scavengers are twice as effective and seabed strippers are four times as effective. Also, we can make calcinium converters??",
+                "Coletores mexílicos coletam duas vezes mais e desmatadores desmatam quatro vezes mais. Also, we can make calcinium converters??",
             cost: {
                 science: 1250000,
                 calcinium: 500000,

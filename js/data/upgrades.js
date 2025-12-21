@@ -2342,10 +2342,10 @@ SharkGame.Upgrades = {
             },
         },
         underwaterChemistry: {
-            name: "Underwater Chemistry",
-            desc: "With the weird bottles, we can now put things and other things into them and see what happens.",
-            researchedMessage: "Well, nothing useful was determined, but if we keep on doing it we make tremendous leaps for science!",
-            effectDesc: "Scientists are twice as effective with their new chemical insights.",
+            name: "Química Submersa",
+            desc: "Com nossas garrafas estrahas, podemos colocar coisas junto com outras coisas e ver o que acontece.",
+            researchedMessage: "Então, nada de útil foi descoberto, mas se a gente continuar com isso, vamos fazer grandes passos pela ciência!",
+            effectDesc: "Cientistas usam seus novos conhecimentos químicos para dobrar sua eficiência.",
             cost: {
                 science: 450,
                 crystal: 50,

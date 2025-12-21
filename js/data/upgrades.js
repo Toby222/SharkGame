@@ -2465,10 +2465,10 @@ SharkGame.Upgrades = {
             },
         },
         kelpHorticulture: {
-            name: "Kelp Horticulture",
-            desc: "Determine what it takes to plant kelp all over the seabed. Maybe this is useful.",
-            researchedMessage: "Crab-specific gear has been invented to allow for kelp farming! This is possibly useful.",
-            effectDesc: "Crabs can become kelp farmers and grow a living carpet across the bottom of the sea.",
+            name: Horticultura de Alga",
+            desc: "Descubra o que é necessário para encher o solo de alga marinha. Possivelmente será útil.",
+            researchedMessage: "Equipamento caranguêjico foi inventado para eles começarem a plantar alga! Isso é possivelmente útil.",
+            effectDesc: "Caranguejos podem se especializar em fazendeiros de algas e crescer um tapete verde pelo fundo do oceano.",
             cost: {
                 science: 1000,
                 sand: 5000,

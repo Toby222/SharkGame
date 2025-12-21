@@ -2465,7 +2465,7 @@ SharkGame.Upgrades = {
             },
         },
         kelpHorticulture: {
-            name: Horticultura de Alga",
+            name: "Horticultura de Alga",
             desc: "Descubra o que é necessário para encher o solo de alga marinha. Possivelmente será útil.",
             researchedMessage: "Equipamento caranguêjico foi inventado para eles começarem a plantar alga! Isso é possivelmente útil.",
             effectDesc: "Caranguejos podem se especializar em fazendeiros de algas e crescer um tapete verde pelo fundo do oceano.",

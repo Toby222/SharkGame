@@ -240,7 +240,7 @@ SharkGame.Upgrades = {
         },
         automation: {
             name: "Automação",
-            desc: "Usando tubaônio, podemos fazer coisas que fazem coisas para que nós não precisemos fazer as coisas!",
+            desc: "Usando tubarônio, podemos fazer coisas que fazem coisas para que nós não precisemos fazer as coisas!",
             researchedMessage: "Agora não precisamos fazer todo o trabalho, já que as máquinas o fazem por nós! FUTUUURO!!",
             effectDesc: "Máquinas podem ser construídas para ajudar na produção do cardume de forma mais eficiente.",
             cost: {
@@ -2517,12 +2517,12 @@ SharkGame.Upgrades = {
             },
         },
         crabBiology: {
-            name: "Crab Biology",
-            desc: "Crabs are a mystery. They keep to themselves and dig up crystals or put down plants. What is even up with that? What ARE crabs??",
+            name: "Biologia Caranguêsa",
+            desc: "Esse bichos são um mistério. Eles são meio calados e apenas cavam cristais ou plantam coisas. Por que eles fazem isso? E o QUE são siris??",
             researchedMessage:
-                "It turns out crabs are friendly crustaceans that have revealed to the sharks the secrets of crab generation. It involves eggs, or something. Squirmy eggs.",
+                "Parece que caranguejos são crustáceos amigáveis que revelaram aos tubarões os segredos de produção de caraguejo. Envolvendo ovos, ou algo parecido. Ovos que se mexem.",
             effectDesc:
-                "Crabs and planter crabs are four and two times as effective, respectively, and crab brood are available. Crabs are alright but they are also sort of terrifying and weird. Good thing they're on our side!",
+                "Caranguejos e plantadores são, respectivamente, 4 e 2 vezes mais rápidos, e ninhadas de caranguejo podem ser formadas. Siris aparentemente são apenas um tipo de caranguejo, o que é legal, mas um pouco medonho, porque caranguejos são assustadores. Que bom que eles estão do nosso lado!",
             cost: {
                 science: 12500,
                 kelp: 500,
@@ -2572,10 +2572,10 @@ SharkGame.Upgrades = {
             },
         },
         automation: {
-            name: "Automation",
-            desc: "Using sharkonium, we can make things to do things so we don't have to do the things!",
-            researchedMessage: "Now we don't have to do all the work, machines can do it for us! Future!!",
-            effectDesc: "Machines can be built to supplement population duties. This is efficient.",
+            name: "Automação",
+            desc: "Usando tubarônio, podemos fazer coisas que fazem coisas para que nós não precisemos fazer as coisas!",
+            researchedMessage: "Agora não precisamos fazer todo o trabalho, já que as máquinas o fazem por nós! FUTUUURO!!",
+            effectDesc: "Máquinas podem ser construídas para ajudar na produção do cardume de forma mais eficiente.",
             cost: {
                 sharkonium: 25000,
             },
@@ -2639,7 +2639,7 @@ SharkGame.Upgrades = {
             researchedMessage:
                 "Um amontoado de diagramas amassados e alguns experimentos de moralidade duvidosa depois, cérebro agora conseguem interfacear diretamente com máquinas de calcinício. Futuríssimo!",
             effectDesc:
-                "Coletores mexílicos coletam duas vezes mais e desmatadores desmatam quatro vezes mais. Also, we can make calcinium converters??",
+                "Coletores mexílicos coletam duas vezes mais e desmatadores desmatam quatro vezes mais. Também, podemos fazer conversoresde calcinício??",
             cost: {
                 science: 1250000,
                 calcinium: 500000,
@@ -2727,10 +2727,10 @@ SharkGame.Upgrades = {
             },
         },
         bioengineering: {
-            name: "Bioengineering",
-            desc: "The lobsters propose a more thorough distribution of cybernetics.",
-            researchedMessage: "We planted chips in everyone we could find. Efficiency has increased enormously!",
-            effectDesc: "128x efficiency to sharks and planters, 64x to scientists, crabs, and lobsters, 32x to rays. It's about time!",
+            name: "Bioengenharia",
+            desc: "As lagostas propõem uma distribuição cibernética mais extensa.",
+            researchedMessage: "Nós instalamos chipes em todo mundo que achamos. Nossa eficiência aumentou enormemente!",
+            effectDesc: "128× produção de tubarões e plantadores, 64× para cientistas, caranguejos e lagostas, 32× para arraias. Agora sim!",
             cost: {
                 science: 250000000,
                 calcinium: 7500000,

@@ -200,8 +200,8 @@ SharkGame.Upgrades = {
         thermalVents: {
             name: "Fontes Termais",
             desc: "Investigue os buracos ferventes que ficam jogando água quente.",
-            researchedMessage: "Mas que belo! Nós temos uma nascente de calor interminável! Tenho certezza que algo bom virá disso.",
-            effectDesc: "Uma fonte de poder quase infinita foi descoberta. Novas tecnologias são possíveis!",
+            researchedMessage: "Mas que belo! Nós temos uma nascente de calor interminável! Tenho certeza que algo bom virá disso.",
+            effectDesc: "Uma fonte de energia quase infinita foi descoberta. Novas tecnologias são possíveis!",
             cost: {
                 science: 300,
                 sand: 1000,
@@ -255,7 +255,7 @@ SharkGame.Upgrades = {
             name: "Engenharia",
             desc: "Nossas máquinas são meio ruins. Vamos aprender a montá-las melhor!",
             researchedMessage: "Dobramos a produção das máquinas, e ainda aprendemos a fazer outras máquinas! Dois em um!",
-            effectDesc: "Produção de multiplicado por dois. Desnatadoras e transmutadoras automáticas são agora construíveis.",
+            effectDesc: "Produção das nossas máquinas multiplicada por dois. Desnatadoras e transmutadoras automáticas são agora construíveis.",
             cost: {
                 science: 5000,
                 sharkonium: 1750,
@@ -2373,10 +2373,10 @@ SharkGame.Upgrades = {
             },
         },
         thermalVents: {
-            name: "Thermal Vents",
-            desc: "Investigate the boiling vents that just seem to keep on heating things up.",
-            researchedMessage: "This is a wondrous, unending source of heat! Something good must come from this.",
-            effectDesc: "A power source for future technologies has been discovered.",
+            name: "Fontes Termais",
+            desc: "Investigue os buracos ferventes que ficam jogando água quente.",
+            researchedMessage: "Mas que belo! Nós temos uma nascente de calor interminável! Tenho certeza que algo bom virá disso.",
+            effectDesc: "Uma fonte de energia quase infinita foi descoberta. Novas tecnologias são possíveis!",
             cost: {
                 science: 1500,
                 sand: 1000,
@@ -2584,10 +2584,10 @@ SharkGame.Upgrades = {
             },
         },
         engineering: {
-            name: "Engineering",
-            desc: "The machines sort of suck. Let's make them better by learning how!",
-            researchedMessage: "The machines are twice as good now! We've figured out new designs in the process, too!",
-            effectDesc: "Machines are twice as effective. Auto-transmuters are now possible to create.",
+            name: "Engenharia",
+            desc: "Nossas máquinas são meio ruins. Vamos aprender a montá-las melhor!",
+            researchedMessage: "Dobramos a produção das máquinas, e ainda aprendemos a fazer outras máquinas! Dois em um!",
+            effectDesc: "Produção das nossas máquinas multiplicada por dois. Transmutadoras automáticas são agora construíveis.",
             cost: {
                 sharkonium: 100000,
             },

@@ -491,7 +491,7 @@ SharkGame.Upgrades = {
         gateDiscovery: {
             name: "Exploração Abissal",
             desc: "Múltiplas expedições perigosas e audaciosas ao fundo do abismo, para pegar o que acharmos.",
-            researchedMessage: "A strange structure was found from clues within the chasms. The cost was great, but the discovery is greater!",
+            researchedMessage: "Nos achamos uma estrutura estranha pelas pistas achadas no abismo. O custo foi alto, mas a descoberta é maior!",
             effectDesc: "Algo ancestral reside nas profundezas.",
             cost: {
                 science: 1e6,
@@ -2773,7 +2773,7 @@ SharkGame.Upgrades = {
         gateDiscovery: {
             name: "Exploração Abissal",
             desc: "Múltiplas expedições perigosas e audaciosas ao fundo do abismo, para pegar o que acharmos.",
-            researchedMessage: "Nos achamos uma estrutura estranha pelas pistas achadas no abismo. Perdemos muitos camaradas, but the discovery is greater!",
+            researchedMessage: "Nos achamos uma estrutura estranha pelas pistas achadas no abismo. O custo foi alto, mas a descoberta é maior!",
             effectDesc: "Algo ancestral reside nas profundezas.",
             cost: {
                 science: 1e10,

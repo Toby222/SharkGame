@@ -2539,10 +2539,10 @@ SharkGame.Upgrades = {
             },
         },
         exploration: {
-            name: "Exploration",
-            desc: "Swim beyond the home seas to see what can be found!",
-            researchedMessage: "Found lots of schools of fish! So many different schools! And such untapped sand reserves!",
-            effectDesc: "Sharks and rays are twice as effective. Did you know oceans are big? Fascinating!",
+            name: "Exploração",
+            desc: "Nade além desse mar conhecido para vez o que mais achamos!",
+            researchedMessage: "Achamos um monte de peixes! De todo tipo de cardume possível! E tantas reservas de areia não exploradas!",
+            effectDesc: "Tubarões e arraias pegam o dobro de recursos. Você sabia que oceanos eram tão grandes assim? Incrível!",
             cost: {
                 science: 25000,
                 fish: 100000,
@@ -2558,10 +2558,10 @@ SharkGame.Upgrades = {
             },
         },
         transmutation: {
-            name: "Transmutation",
-            desc: "By heating things up and doing science things to them, maybe new things can be made!",
-            researchedMessage: "A new form of material has been discovered! It has been named after its discoverer, Dr. Sharkonium.",
-            effectDesc: "Enables transmutation of some random junk we have lying around into sharkonium, material of the future.",
+            name: "Transmutação",
+            desc: "Ao esquentar coisas e fazer ciência, novas coisas podem ser feitas!",
+            researchedMessage: "Um novo tipo de material foi descoberto! Foi batizado em homenagem de seu criador, Dr. Tubarão.",
+            effectDesc: "Permite a transmutação de umas coisas que nós temos jogadas por aí em tubarônio, o material do futuro.",
             cost: {
                 science: 125000,
                 crystal: 40000,
@@ -2767,13 +2767,13 @@ SharkGame.Upgrades = {
                     false,
                     2,
                     background,
-                )} conversion effectiveness ×25`;
+                )} eficiência de conversão ×25`;
             },
         },
         gateDiscovery: {
             name: "Exploração Abissal",
             desc: "Múltiplas expedições perigosas e audaciosas ao fundo do abismo, para pegar o que acharmos.",
-            researchedMessage: "Nos  was found from clues within the chasms. The cost was great, but the discovery is greater!",
+            researchedMessage: "Nos achamos uma estrutura estranha pelas pistas achadas no abismo. Perdemos muitos camaradas, but the discovery is greater!",
             effectDesc: "Algo ancestral reside nas profundezas.",
             cost: {
                 science: 1e10,
@@ -2810,7 +2810,7 @@ SharkGame.Upgrades = {
             name: "Cascas de Möbius",
             desc: "Nós não entendemos. As lagostas sugeriram algo...Indescritível.",
             researchedMessage:
-                "Elas fizeram. Nem tivemos a chance de dizer não. Agora, quando vemos o que uma vez foram as lagostas, não sabemos para o que estamos olhando. Na verdade, nós preferiríamos parar de olhar agora.",
+                "Elas fizeram. Nem tivemos a chance de argumentar. Agora, quando vemos o que uma vez foram as lagostas, não sabemos para o que estamos olhando. Na verdade, nós preferiríamos parar de olhar agora.",
             effectDesc: "Tentamos perguntar a elas o que aconteceu. Mas elas não nos respondem mais.",
             cost: {
                 calcinium: 5e10,

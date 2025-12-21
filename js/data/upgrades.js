@@ -490,7 +490,7 @@ SharkGame.Upgrades = {
         },
         gateDiscovery: {
             name: "Exploração Abissal",
-            desc: "Muitas expedições perigosas e audaciosas ao fundo do abismo, para pegar o que acharmos.",
+            desc: "Múltiplas expedições perigosas e audaciosas ao fundo do abismo, para pegar o que acharmos.",
             researchedMessage: "A strange structure was found from clues within the chasms. The cost was great, but the discovery is greater!",
             effectDesc: "Algo ancestral reside nas profundezas.",
             cost: {
@@ -2751,10 +2751,10 @@ SharkGame.Upgrades = {
             },
         },
         highEnergyFusion: {
-            name: "High-Energy Fusion",
-            desc: "The lobsters are excited to show us something, but they need a lot of help first.",
-            researchedMessage: "The process is so bright, it could melt out our eyes - but it's so much better than the old fusion.",
-            effectDesc: "Improved clam-crystal fusion ratio from 5-1 to 1-5. Recycler reshmycler, we have FUSION!!",
+            name: "Fusão de Alta Energia",
+            desc: "As lagostas estão excitadas em nos mostrar algo, mas elas vão precisar de muita ajuda antes.",
+            researchedMessage: "O processo faz tanta luz que poderia derreter nossos olhos - mas o resultado é tão melhor que o jeito que fazíamos.",
+            effectDesc: "Melhoramos a proporção mexilhão para cristal de 5-1 para 1-5. Esqueça a recicladora, agora temos FUSÃO!!",
             cost: {
                 science: 1e9,
             },
@@ -2771,10 +2771,10 @@ SharkGame.Upgrades = {
             },
         },
         gateDiscovery: {
-            name: "Chasm Exploration",
-            desc: "A campaign of risky, foolhardy expeditions to the deeps, to find whatever can be found.",
-            researchedMessage: "A strange structure was found from clues within the chasms. The cost was great, but the discovery is greater!",
-            effectDesc: "Something ancient lurked in the depths.",
+            name: "Exploração Abissal",
+            desc: "Múltiplas expedições perigosas e audaciosas ao fundo do abismo, para pegar o que acharmos.",
+            researchedMessage: "Nos  was found from clues within the chasms. The cost was great, but the discovery is greater!",
+            effectDesc: "Algo ancestral reside nas profundezas.",
             cost: {
                 science: 1e10,
                 shark: 100000,
@@ -2785,11 +2785,11 @@ SharkGame.Upgrades = {
             },
         },
         sentientCircuitBoards: {
-            name: "Sentient Circuit Boards",
-            desc: "The lobsters propose a final step.",
-            researchedMessage: "Despite objections, the plan went ahead. Birthgivers now transfer their cybernetics to every single child they bear.",
+            name: "Circuitos Sencientes",
+            desc: "As lagostas propõem um último passo.",
+            researchedMessage: "Mesmo com objeções de múltiplas parcelas do Cardume, seguimos o plano. Reprodutores agora devem instalar suas próteses cibernéticas para cada filhote que criam.",
             effectDesc:
-                "Efficiency of nurses, ray makers, and crab broods up 64 times. Berriers are up 128 times. It's all for the sake of the frenzy. It's better this way.",
+                "Enfermeiros, criadores de arraia e ninhadas produzem ×64 mais. Lagostas caviadas trabalham 128 vezes mais. Isso tudo é em prol do Cardume. Isso é o melhor para nosso futuro.",
             cost: {
                 calcinium: 1e8,
                 science: 2e10,
@@ -2807,11 +2807,11 @@ SharkGame.Upgrades = {
             },
         },
         mobiusShells: {
-            name: "Mobius Shells",
-            desc: "We don't know how to describe what the lobsters are suggesting.",
+            name: "Cascas de Möbius",
+            desc: "Nós não entendemos. As lagostas sugeriram algo...Indescritível.",
             researchedMessage:
-                "They went through with it. We didn't get the chance to tell otherwise. Now when we see them, we're not even sure what we're looking at. In fact, we'd like to stop looking now.",
-            effectDesc: "We tried to ask them what happened. They won't talk to us anymore.",
+                "Elas fizeram. Nem tivemos a chance de dizer não. Agora, quando vemos o que uma vez foram as lagostas, não sabemos para o que estamos olhando. Na verdade, nós preferiríamos parar de olhar agora.",
+            effectDesc: "Tentamos perguntar a elas o que aconteceu. Mas elas não nos respondem mais.",
             cost: {
                 calcinium: 5e10,
                 lobster: 1e8,

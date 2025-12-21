@@ -2386,10 +2386,10 @@ SharkGame.Upgrades = {
             },
         },
         pearlConversion: {
-            name: "Pearl Conversion",
-            desc: "We somtimes find these shiny things inside of clams. The lobsters say they can use them?",
+            name: "Conversão de Pérola",
+            desc: "Algumas vezes nós achamos essas bolinhas brilhantes dentro dos mexilhões. As lagostas dizem que conseguem usá-las? Como??",
             researchedMessage:
-                "Well, we can transmute what are called 'pearls' into crystals now, though we also need the rest of the clam, too. (yes, the entire clam)",
+                "Bem, conseguimos transmutar o que chamam de 'pérolas' em cristais agora, porém o resto do mexilhão vai junto. (sim, o mexilhão inteiro)",
             effectDesc:
                 "We can turn clams into crystals using the 'pearls' inside them as a focus. Maybe one day we won't need to use the whole clam.",
             cost: {

@@ -2311,11 +2311,11 @@ SharkGame.Upgrades = {
             },
         },
         statsDiscovery: {
-            name: "Storage Caverns",
-            desc: "It's about time to start moving the stores we have to a better place. We've found one but it needs setting up.",
+            name: "Caverna Armazém",
+            desc: "Tá na hora de nós termos um lugar de verdade para manter nossos estoques. Achamos um cafofo, mas precisa ser arrumado.",
             researchedMessage:
-                "All the goods we've acquired are now being stored and itemised in a mostly flooded cavern system. We're organized! Sort of!",
-            effectDesc: "By storing things in a centralised location, we now finally have an idea of what we're doing...sort of.",
+                "Todos as nossas coisas foram guardadas, separadas e categorizadas em um sistema de cavernas inundado. Nós estamos todos organizados! Mais ou menos!",
+            effectDesc: "Ao armazenar nossos bens em um local centralizado, finalmente podemos manter controle do que estamos fazendo...em sua maior parte.",
             cost: {
                 science: 150,
             },

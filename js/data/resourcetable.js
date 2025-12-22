@@ -887,6 +887,7 @@ SharkGame.ResourceTable = {
         singleName: "caracara",
         desc: "Prideful denizens of the beyond, harnessing sky like water.",
         color: "#FFFFFF",
+        income: {},
         value: 3000,
     },
 

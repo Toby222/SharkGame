@@ -143,7 +143,7 @@ SharkGame.Settings = {
         name: "Recursos em negrito",
         desc: "O nome dos recursos deveriam ser escritos em negrito?",
         options: [true, false],
-        category: "APPEARANCE",
+        category: "APARÊNCIA",
         onChange() {
             res.rebuildTable = true;
             stats.recreateIncomeTable = true;
@@ -154,7 +154,7 @@ SharkGame.Settings = {
         defaultSetting: false,
         name: "Informações singulares",
         desc: "As informações extras deveriam mostrar a produção de apenas uma unidade do recurso?",
-        category: "APPEARANCE",
+        category: "APARÊNCIA",
         options: [true, false],
     },
 
@@ -171,7 +171,7 @@ SharkGame.Settings = {
         name: "Habilitar estilos customizados",
         desc: "As cores do jogo deveriam ser baseados no mundo em que você está?",
         options: [true, false],
-        category: "APPEARANCE",
+        category: "APARÊNCIA",
         onChange() {
             if (SharkGame.Settings.current.enableThemes) {
                 document.querySelector("body").classList.remove("no-theme");
@@ -185,7 +185,7 @@ SharkGame.Settings = {
         defaultSetting: true,
         name: "Mostrar ícones de ação",
         desc: "Mostrar as imagens nos botões de ação?",
-        category: "APPEARANCE",
+        category: "APARÊNCIA",
         options: [true, false],
     },
 
@@ -193,7 +193,7 @@ SharkGame.Settings = {
         defaultSetting: true,
         name: "Mostar imagens de evento",
         desc: "Mostrar arte dos eventos do mundo?",
-        category: "APPEARANCE",
+        category: "APARÊNCIA",
         options: [true, false],
         onChange() {
             SharkGame.TabHandler.changeTab(SharkGame.Tabs.current);
@@ -206,7 +206,7 @@ SharkGame.Settings = {
         defaultSetting: "árvore",
         name: "Planilha/Árvore de aspectos",
         desc: "Mostrar uma árvore de aspectos, ou uma planilha de aspectos menos acessível?",
-        category: "ACCESSIBILITY",
+        category: "ACESSIBILIDADE",
         options: ["árvore", "planilha"],
     },
 
@@ -214,7 +214,7 @@ SharkGame.Settings = {
         defaultSetting: false,
         name: "Ficha prolixa",
         desc: "Deveria ter um texto apontando onde as fichas estão?",
-        category: "ACCESSIBILITY",
+        category: "ACESSIBILIDADE",
         options: [true, false],
         onChange() {
             res.tokens.updateTokenDescriptions();
@@ -238,7 +238,7 @@ SharkGame.Settings = {
         defaultSetting: true,
         name: "Guardar progresso desligado",
         desc: "O jogo deveria guardar o tempo para uso posterior? (se não, a produção de recursos vai continuar com o jogo desligado e nenhum tempo extra será ganho)",
-        category: "OTHER",
+        category: "OUTROS",
         options: [true, false],
         onChange() {
             res.minuteHand.setup();
@@ -249,7 +249,7 @@ SharkGame.Settings = {
         defaultSetting: true,
         name: "Informações extras",
         desc: "Deveríamos mostrar informações sobre ações, recursos e outras coisas quando seu mouse passa por cima?",
-        category: "OTHER",
+        category: "OUTROS",
         options: [true, false],
     },
 
@@ -257,7 +257,7 @@ SharkGame.Settings = {
         defaultSetting: true,
         name: "Conferir atualizações",
         desc: "Deveríamos te notificar de atualizações?",
-        category: "OTHER",
+        category: "OUTROS",
         options: [true, false],
         onChange() {
             clearInterval(SharkGame.Main.checkForUpdateHandler);
@@ -290,7 +290,7 @@ SharkGame.Settings = {
         defaultSetting: 5,
         name: "Frequência de salvamento automático",
         desc: "Número de minutos entre os salvamentos automáticos.",
-        category: "SAVES",
+        category: "SALVAMENTO",
         options: [1, 2, 5, 10, 30],
         onChange() {
             clearInterval(main.autosaveHandler);

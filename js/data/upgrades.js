@@ -2961,16 +2961,16 @@ SharkGame.Upgrades = {
             },
         }, */
         agriculture: {
-            name: "Agriculture",
-            desc: "Apparently, we're not supposed to be stealing sponge off the seabed. Stealing from who, exactly???",
+            name: "Agricultura",
+            desc: "Aparentemente, nós não deveríamos estar roubando esponja do chão. Mas roubando de quem, exatamente???",
             researchedMessage:
-                "To the shrimps' credit, it's a lot easier to do this when we make more of them ourselves. Clumping them up and letting them grow is an efficient solution.",
-            effectDesc: "Sponge farms are now available.",
+                "Em defesa dos camarões, é bem mais fácil conseguir esponja quando nós mesmos a crescemos. Botar a esponja em um lugar e deixá-la crescer é uma solução boa.",
+            effectDesc: "Fazendas de esponja estão disponíveis para construção.",
             cost: {
                 sand: 80000,
             },
             required: {
-                upgrades: ["spongeCollection"],[]
+                upgrades: ["spongeCollection"],
                 seen: ["sponge"],
             },
         },

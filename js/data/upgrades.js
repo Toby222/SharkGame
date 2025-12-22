@@ -313,7 +313,7 @@ SharkGame.Upgrades = {
         superprocessing: {
             name: "Superprocessamento",
             desc: "A recicladora não foi feita com o dissolução de milhões de peixes em mente. Considerando que isso é uma demanda bem comum, nós provavelmente deveríamos fazer algo sobre isso.",
-            researchedMessage: "Eureka! Se fizermos as coisas grandes ficarem maiores, e os moedores mais moídos, nós poderemos processar muito mais material de uma só vez!",
+            researchedMessage: "Eureca! Se fizermos as coisas grandes ficarem maiores, e os moedores mais moídos, nós poderemos processar muito mais material de uma só vez!",
             effectDesc:
                 "A eficiência da recicladora só começa a cair na casa dos 10 milhões de itens de uma só vez, ao invés de 100 mil. A eficiência máxima também aumentou para 100%.",
             cost: {
@@ -413,7 +413,7 @@ SharkGame.Upgrades = {
         },
         crabBiology: {
             name: "Biologia Caranguêsa",
-            desc: "Esse bichos são um mistério. Eles são meio calados e apenas cavam cristais ou plantam coisas. Por que eles fazem isso? E o QUE são siris??",
+            desc: "Essas criaturinhas são um mistério. Eles são calados e apenas cavam cristais ou plantam coisas. Por que eles fazem isso? E o QUE são siris??",
             researchedMessage:
                 "Parece que caranguejos são crustáceos amigáveis que revelaram aos tubarões os segredos de produção de caraguejo. Envolvendo ovos, ou algo parecido. Ovos que se mexem.",
             effectDesc:
@@ -474,7 +474,7 @@ SharkGame.Upgrades = {
             name: "Exploração Longínqua",
             desc: "Explore as vastas águas além de qualquer expedição já feita.",
             researchedMessage: "Depósitos ricos em cristal foram achados, junto de abismos grandes e profundos.",
-            effectDesc: "Caranguejos quadruplicam sua eficiência. Did you know oceans are actually even bigger than big? Remarkable!",
+            effectDesc: "Caranguejos quadruplicam sua eficiência. Você sabia que os oceanos são maiores do que apenas grande? Fantástico!",
             cost: {
                 science: 12000,
                 fish: 125000,
@@ -491,7 +491,7 @@ SharkGame.Upgrades = {
         gateDiscovery: {
             name: "Exploração Abissal",
             desc: "Múltiplas expedições perigosas e audaciosas ao fundo do abismo, para pegar o que acharmos.",
-            researchedMessage: "Nos achamos uma estrutura estranha pelas pistas achadas no abismo. O custo foi alto, mas a descoberta é maior!",
+            researchedMessage: "Nós achamos uma estrutura estranha pelas pistas achadas no abismo. O custo foi alto, mas a descoberta é maior!",
             effectDesc: "Algo ancestral reside nas profundezas.",
             cost: {
                 science: 1e6,
@@ -1076,8 +1076,8 @@ SharkGame.Upgrades = {
             },
         },
         crabBiology: {
-            name: "Crab Biology",
-            desc: "Crabs are a mystery. They keep to themselves and dig up crystals or put down plants. What is even up with that? What ARE crabs??",
+            name: "Biologia Caranguêsa",
+            desc: "Os caranguejos são um mistério. Eles são calados e apenas cavam cristais ou plantam coisas. Por que eles fazem isso? E o QUE são siris??",
             cost: {
                 science: 10000,
                 kelp: 1000,
@@ -1139,9 +1139,9 @@ SharkGame.Upgrades = {
         /* Equivalent of farExploration.. named differently for unlocks or smth I think? */
         farExploration: {
             name: "Exploração Longínqua",
-            desc: "Explore the vast reaches beyond the home ocean, and look for that portal that keeps popping up in dolphin texts.",
-            researchedMessage: "Crystal-rich deposits were found, as well as what appears to be the portal of dolphin legend.",
-            effectDesc: "Crabs are 4 times as effective, planters 8 times. Did you know oceans are actually even bigger than big? Remarkable!",
+            desc: "Explore águas distantes em busca do portal descrito nos textos dos golfinhos.",
+            researchedMessage: "Depósitos ricos em cristal foram achados, junto do que parece ser o portal das lendas defínicas.",
+            effectDesc: "Caranguejos quadruplicam e plantadores octuplicam suas produções. Você sabia que os oceanos são maiores do que apenas grande? Fantástico!",
             cost: {
                 science: 375000,
                 fish: 10000000,
@@ -1658,7 +1658,7 @@ SharkGame.Upgrades = {
         superprocessing: {
             name: "Superprocessamento",
             desc: "A recicladora não foi feita com o dissolução de milhões de peixes em mente. Considerando que isso é uma demanda bem comum, nós provavelmente deveríamos fazer algo sobre isso.",
-            researchedMessage: "Eureka! Se fizermos as coisas grandes ficarem maiores, e os moedores mais moídos, nós poderemos processar muito mais material de uma só vez!",
+            researchedMessage: "Eureca! Se fizermos as coisas grandes ficarem maiores, e os moedores mais moídos, nós poderemos processar muito mais material de uma só vez!",
             effectDesc:
                 "A eficiência da recicladora só começa a cair na casa dos 10 milhões de itens de uma só vez, ao invés de 100 mil. A eficiência máxima também aumentou para 100%.",
             cost: {
@@ -2187,7 +2187,7 @@ SharkGame.Upgrades = {
         superprocessing: {
             name: "Superprocessamento",
             desc: "A recicladora não foi feita com o dissolução de milhões de peixes em mente. Considerando que isso é uma demanda bem comum, nós provavelmente deveríamos fazer algo sobre isso.",
-            researchedMessage: "Eureka! Se fizermos as coisas grandes ficarem maiores, e os moedores mais moídos, nós poderemos processar muito mais material de uma só vez!",
+            researchedMessage: "Eureca! Se fizermos as coisas grandes ficarem maiores, e os moedores mais moídos, nós poderemos processar muito mais material de uma só vez!",
             effectDesc:
                 "A eficiência da recicladora só começa a cair na casa dos 10 milhões de itens de uma só vez, ao invés de 100 mil. A eficiência máxima também aumentou para 100%.",
             cost: {
@@ -2360,11 +2360,11 @@ SharkGame.Upgrades = {
             },
         },
         clamScooping: {
-            name: "Clam Scooping",
-            desc: "We see these things all over the seabed but we can't tell which are clams and which are rocks.",
+            name: "Coleta de Mexilhão",
+            desc: "Vemos essas coisas por toda parte, mas não conseguimos diferenciar quais são mexilhões e quais são pedras.",
             researchedMessage:
-                "Patient observation has shown that clams and rocks are in fact different and distinct things. Now we won't be scooping up any more rocks!",
-            effectDesc: "Clams can be collected like fish.",
+                "Observação cuidadosa revelou que mexilhões e pedras são realmente coisas diferentes. Agora não vamos mais coletar pedras por acidente!",
+            effectDesc: "Mexilhões podem ser coletados como se fosse peixe.",
             cost: {
                 science: 750,
             },
@@ -2403,10 +2403,10 @@ SharkGame.Upgrades = {
             },
         },
         agriculture: {
-            name: "Agriculture",
-            desc: "The hunter-gatherer lifestyle will only work so well for us. Maybe we should gather these animals in one place and let them grow.",
-            researchedMessage: "It is so much easier to get things when they're all in one place. It's like the ocean is our grotto now!",
-            effectDesc: "Advances in agriculture will fuel future endeavors. Who knows what we'll do next!",
+            name: "Agricultura",
+            desc: "Não sabemos por quanto tempo uma sociedade caçadora-coletora irá nos servir. Talvez devêssemos juntar nossos animais e deixá-los crescer.",
+            researchedMessage: "É tão mais fácil conseguir coisas quando elas estão todas em um lugar. Como se o oceano inteiro estivesse na nossa gruta!",
+            effectDesc: "Avanços na agricultura irão incentivar futuras empreitadas. Quem sabe qual vai ser o nosso próximo passo!",
             cost: {
                 science: 4250,
                 sand: 10000,
@@ -2435,7 +2435,7 @@ SharkGame.Upgrades = {
         },
         crustaceanBiology: {
             name: "Biologia Crustácea",
-            desc: "Essas criaturas esquisitas parecem com os siris. Precisamos investigar isso...o que é um exoesqueleto?",
+            desc: "Essas criaturas esquisitas se parecem com os siris. Precisamos investigar isso...o que é um exoesqueleto?",
             researchedMessage: "Compreendemos como que essas cópias de caranguejo funcionam. Com muitos membros.",
             effectDesc:
                 "Lagostas trabalham duas vezes mais. Lagostas podem coletar outras coisas ou se cobrir em ovos brilhantes, também chamado de 'caviar'. Você sabe o que é caviar?",
@@ -2453,10 +2453,11 @@ SharkGame.Upgrades = {
             },
         },
         sunObservation: {
-            name: "Sun Observation",
-            desc: "We must determine what is with the weird glare on the surface of the water.",
-            researchedMessage: "Shark science has discovered the sun! It has also discovered that looking directly into the sun hurts.",
-            effectDesc: "",
+            name: "Observação Solar",
+            desc: "Precisamos entender que brilho maluco é aquele na superfície da água.",
+            researchedMessage: "Cientistas acabaram de descobrir o Sol! Eles também descobriram que olhar para sol dói.",
+            effectDesc:
+                "Plantadores colhem duas vezes mais alga. Será que um sol vale vários peixes? Nós vemos o Sol, mas onde que está? O que faz um Sol brilhar?",
             cost: {
                 science: 5000,
             },
@@ -2478,11 +2479,11 @@ SharkGame.Upgrades = {
             },
         },
         xenobiology: {
-            name: "Xenobiology",
-            desc: "Determine what is with these weird faceless creatures we keep finding.",
-            researchedMessage: "Results inconclusive! Further research required. It could be such a benefit for science!",
+            name: "Xenobiologia",
+            desc: "Tente explicar oque que são essas frutinhas que ficam saindo da nossa alga.",
+            researchedMessage: "Resultados inconclusivos! Mais pesquisa é necessária. Pode ser um grande benefício para a ciência!",
             effectDesc:
-                "Kelp produces sea apples twice as fast. We can dissect sea apples and jellyfish for science. Also, sea apple isn't a fruit. Gross.",
+                "Algas produzem holotúrias duas vezes mais rápido. Nós podemos dissecar holotúrias pela ciência. Também, nós descobrimos que holotúrias não são frutas. Que nojo.",
             cost: {
                 seaApple: 25,
             },
@@ -2655,11 +2656,10 @@ SharkGame.Upgrades = {
             },
         },
         farExploration: {
-            name: "Far Exploration",
-            desc: "Explore the vast reaches beyond the home ocean.",
-            researchedMessage: "Crystal-rich deposits were found, as well as strange, deep chasms.",
-            effectDesc:
-                "Crabs are eight times as effective, and crystal miners are twice as effective. Did you know oceans are actually even bigger than big? Remarkable!",
+            name: "Exploração Longínqua",
+            desc: "Explore as vastas águas além de qualquer expedição já feita.",
+            researchedMessage: "Depósitos ricos em cristal foram achados, junto de abismos grandes e profundos.",
+            effectDesc: "Caranguejos quadruplicam e mineradores de cristal dobram suas eficiências. Você sabia que os oceanos são maiores do que apenas grande? Fantástico!",
             cost: {
                 science: 5000000,
                 clam: 7500000,
@@ -2675,11 +2675,11 @@ SharkGame.Upgrades = {
             },
         },
         recyclerDiscovery: {
-            name: "Recycler",
-            desc: "Devise a system of pulverising unwanted resources into a component paste, and reusing them as something else.",
+            name: "Recicladora",
+            desc: "Invente um sistema de destruir recursos em uma gosma para ser reutilizada em outra coisa.",
             researchedMessage:
-                "Well this thing is frankly terrifying. I wouldn't swim anywhere near the input holes if I were you. Maybe it'll help though!",
-            effectDesc: "Allows recycling of materials by virtue of a horrifying mechanical maw that consumes all that ventures near it. Future?",
+                "Bem, isso daqui parece que veio de um pesadelo. Eu não atreveria a nadar perto de qualquer buraco dessa máquina. Mas ela certamente pode ser útil para nós!",
+            effectDesc: "Possibilita a reciclagem de materiais por meio de uma boca aterrorizante que consume e destrói tudo que chega perto. Futuro?",
             cost: {
                 science: 7500000,
                 sharkonium: 1000000,
@@ -2689,11 +2689,10 @@ SharkGame.Upgrades = {
             },
         },
         iterativeDesign: {
-            name: "Iterative Design",
-            desc: "The machines are useful, but they could be better. Let's build new ones, from scratch!",
-            researchedMessage: "As it turns out, science is about learning from mistakes, or so the scientists say. About their own mistakes.",
-            effectDesc:
-                "Scientists are 16 times as effective, crystal miners and sand diggers 8 times, fish machines 4 times, and auto transmuters 4 times faster. Finally, some REAL engineering!",
+            name: "Design Iterado",
+            desc: "As máquinas são boas, mas poderiam ser melhores. Vamos refazer nossas máquinas do zero!",
+            researchedMessage: "E nós aprendemos que ciência é sobre aprender de erros, é o que diz os cientistas. Sobre seus próprios erros.",
+            effectDesc: "Todas as máquinas tubarônicas duplicam sua velocidade. Sim, de novo! Além disso, cientistas quadruplicam sua eficiência.",
             cost: {
                 science: 40000000,
                 sharkonium: 5000000,
@@ -2712,11 +2711,11 @@ SharkGame.Upgrades = {
             },
         },
         superprocessing: {
-            name: "Superprocessing",
-            desc: "The recycler wasn't really meant for millions of fish at once. Seeing as that transaction is fairly common, we should probably do something about it.",
-            researchedMessage: "Eureka! If we make the big things bigger, and the grinders grindier, we can process way more material at once!",
+            name: "Superprocessamento",
+            desc: "A recicladora não foi feita com o dissolução de milhões de peixes em mente. Considerando que isso é uma demanda bem comum, nós provavelmente deveríamos fazer algo sobre isso.",
+            researchedMessage: "Eureca! Se fizermos as coisas grandes ficarem maiores, e os moedores mais moídos, nós poderemos processar muito mais material de uma só vez!",
             effectDesc:
-                "The recycler's efficiency only starts dropping at 10 million material inserted at once, instead of 100 thousand. The base efficiency is now 100%.",
+                "A eficiência da recicladora só começa a cair na casa dos 10 milhões de itens de uma só vez, ao invés de 100 mil. A eficiência máxima também aumentou para 100%.",
             cost: {
                 science: 100000000,
                 sharkonium: 1e7,
@@ -2773,7 +2772,7 @@ SharkGame.Upgrades = {
         gateDiscovery: {
             name: "Exploração Abissal",
             desc: "Múltiplas expedições perigosas e audaciosas ao fundo do abismo, para pegar o que acharmos.",
-            researchedMessage: "Nos achamos uma estrutura estranha pelas pistas achadas no abismo. O custo foi alto, mas a descoberta é maior!",
+            researchedMessage: "Nós achamos uma estrutura estranha pelas pistas achadas no abismo. O custo foi alto, mas a descoberta é maior!",
             effectDesc: "Algo ancestral reside nas profundezas.",
             cost: {
                 science: 1e10,
@@ -2831,10 +2830,10 @@ SharkGame.Upgrades = {
     },
     volcanic: {
         packHunting: {
-            name: "Pack Hunting",
-            desc: "Convince rays to hunt in packs for higher catch efficiency.",
-            researchedMessage: "By hunting in groups, rays can now effectively target large schools of fish before they dart away.",
-            effectDesc: "Hunting in groups makes rays twice as effective. Shark strategy is efficient.",
+            name: "Caça em Bando",
+            desc: "Convença as arraias a caçarem juntas em bando para maior sucesso.",
+            researchedMessage: "Ao caçar em grupos, agora as arraias conseguem pegar grandes cardumes de peixe antes que eles consigam fugir.",
+            effectDesc: "Caçar em grupos dobra a eficiência das arraias. A estratégia (do latim strategi) dos tubarões funciona para não tubarões também.",
             cost: {
                 science: 25,
                 fish: 1000,
@@ -2846,12 +2845,12 @@ SharkGame.Upgrades = {
             },
         },
         curiousCollection: {
-            name: "Curious Collection",
-            desc: "We've been collecting all this 'coral' stuff. What actually IS it?",
+            name: "Coleção Curiosa",
+            desc: "Nós temos coletado esse tal de 'coral'. Mas o que que é isso?",
             researchedMessage:
-                "It's an animal of some kind, since it moves. It clearly eats something, but we have no idea what. It just kinda reaches into the water sometimes. Weird.",
+                "É um tipo de animal, já que se mexe. Obviamente, corais comem alguma coisa, mas o que não sei. Ele apenas meio que pega algo da água e come de vez em quando. Esquisito.",
             effectDesc:
-                "We now have the most absolutely rudimentary understanding of coral. Crabs and curious crabs work twice as efficiently because of this.",
+                "Nós temos o conhecimento mais basal do que é o coral. Caranguejos, siris e curiosos produzem duas vezes mais por causa disso.",
             cost: {
                 science: 125,
                 coral: 20,
@@ -2971,7 +2970,7 @@ SharkGame.Upgrades = {
                 sand: 80000,
             },
             required: {
-                upgrades: ["spongeCollection"],
+                upgrades: ["spongeCollection"],[]
                 seen: ["sponge"],
             },
         },
@@ -3106,7 +3105,7 @@ SharkGame.Upgrades = {
         properPractices: {
             name: "Proper Practices",
             desc: "We've just been haphazardly throwing sponges here and there and hoping that they grow. In retrospect, not the greatest idea.",
-            researchedMessage: "By arranging sponges in rows, we can give them all the space they need to grow! Eureka!",
+            researchedMessage: "By arranging sponges in rows, we can give them all the space they need to grow! Eureca!",
             effectDesc: "Spreading out sponges makes them grow four times as fast.",
             cost: {
                 science: 200000,
@@ -4083,7 +4082,7 @@ SharkGame.Upgrades = {
             name: "Powerful Propulsion",
             desc: "We have no idea what's out there. If only we could find a way to fight the storm...",
             researchedMessage:
-                "Eureka! Using our newly-made magic bottles, we've devised a mechanism that can turn billfish into high-speed explorers!",
+                "Eureca! Using our newly-made magic bottles, we've devised a mechanism that can turn billfish into high-speed explorers!",
             effectDesc:
                 "Bottles and an elaborate system of pulleys to operate them can make billfish into explorers. It's time to go see what's out there.",
             cost: {
@@ -4449,7 +4448,7 @@ SharkGame.Upgrades = {
             name: "Iterative Design",
             desc: "Our billfish friends are naturals at this. They have organized a committee to suggest an improved set of designs.",
             researchedMessage:
-                "Eureka! These new designs are brilliant, I think! I can't understand what's going on anymore! Half of what they said has gone over our heads.",
+                "Eureca! These new designs are brilliant, I think! I can't understand what's going on anymore! Half of what they said has gone over our heads.",
             effectDesc: "All shark machines run four times as fast, but now laser rays now run 4 times faster too. Yay!",
             cost: {
                 science: 8e9,
@@ -4470,7 +4469,7 @@ SharkGame.Upgrades = {
         superprocessing: {
             name: "Superprocessing",
             desc: "The recycler wasn't really meant for millions of fish at once. Seeing as that transaction is fairly common, we should probably do something about it.",
-            researchedMessage: "Eureka! If we make the big things bigger, and the grinders grindier, we can process way more material at once!",
+            researchedMessage: "Eureca! If we make the big things bigger, and the grinders grindier, we can process way more material at once!",
             effectDesc:
                 "The recycler's efficiency only starts dropping at 100 million material inserted at once, instead of 100 thousand. The base efficiency is now 100%.",
             cost: {

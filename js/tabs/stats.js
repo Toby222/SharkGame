@@ -3,7 +3,7 @@ SharkGame.Stats = {
     tabId: "stats",
     tabDiscovered: false,
     tabSeen: false,
-    tabName: "Grotto",
+    tabName: "Gruta",
     tabBg: "img/bg/bg-grotto.png",
 
     sceneImage: "img/events/misc/scene-grotto.png",
@@ -69,7 +69,7 @@ SharkGame.Stats = {
         });
 
         SharkGame.Button.makeButton("switchButton", "Alternar produtores e recursos", switchButtonDiv, stats.toggleSwitch).addClass("min-block");
-        if (SharkGame.Settings.current.grottoMode === "simple") {
+        if (SharkGame.Settings.current.grottoMode === "simples") {
             SharkGame.Button.makeButton("modeButton", "Mudar para o modo Avançado", switchButtonDiv, stats.toggleMode).addClass("min-block");
         } else {
             SharkGame.Button.makeButton("modeButton", "Mudar para o modo Simples", switchButtonDiv, stats.toggleMode).addClass("min-block");
@@ -257,7 +257,7 @@ SharkGame.Stats = {
                             cell.html(newValue);
                         }
 
-                        if (SharkGame.Settings.current.grottoMode === "advanced") {
+                        if (SharkGame.Settings.current.grottoMode === "avançado") {
                             cell = $("#network-" + resourceId + "-" + incomeKey)
                                 .on("mouseenter", stats.networkTextEnter)
                                 .on("mouseleave", stats.networkTextLeave);
@@ -498,7 +498,7 @@ SharkGame.Stats = {
                         ? ""
                         : "+";
                 // which mode are we in?
-                if (SharkGame.Settings.current.grottoMode === "advanced") {
+                if (SharkGame.Settings.current.grottoMode === "avançado") {
                     addCell(
                         [
                             res.INCOME_COLOR,
@@ -644,13 +644,13 @@ SharkGame.Stats = {
 
             row.append(
                 $("<td>")
-                    .html("<span><u><b>" + (SharkGame.Settings.current.grottoMode === "advanced" ? "PRODUÇÃO BASE" : "PRODUÇÃO INDV.") + "</b></u></span>")
+                    .html("<span><u><b>" + (SharkGame.Settings.current.grottoMode === "avançado" ? "PRODUÇÃO BASE" : "PRODUÇÃO INDV.") + "</b></u></span>")
                     .addClass("evenRow"),
             );
 
             columns -= 4;
 
-            if (SharkGame.Settings.current.grottoMode === "advanced") {
+            if (SharkGame.Settings.current.grottoMode === "avançado") {
                 function tooltip($elt, html) {
                     return $elt.on("mouseenter", () => $("#tooltipbox").html(html)).on("mouseleave", () => $("#tooltipbox").html(""));
                 }
@@ -754,11 +754,11 @@ SharkGame.Stats = {
     },
 
     toggleMode() {
-        if (SharkGame.Settings.current.grottoMode === "simple") {
-            SharkGame.Settings.current.grottoMode = "advanced";
+        if (SharkGame.Settings.current.grottoMode === "simples") {
+            SharkGame.Settings.current.grottoMode = "avançado";
             document.getElementById("modeButton").innerHTML = "Mudar para o modo Simples";
         } else {
-            SharkGame.Settings.current.grottoMode = "simple";
+            SharkGame.Settings.current.grottoMode = "simples";
             document.getElementById("modeButton").innerHTML = "Mudar para o modo Avançado";
         }
         stats.createIncomeTable();
@@ -766,7 +766,7 @@ SharkGame.Stats = {
     },
 
     updateTableKey() {
-        if (SharkGame.Settings.current.grottoMode !== "advanced" || SharkGame.Stats.incomeTableEmpty) {
+        if (SharkGame.Settings.current.grottoMode !== "avançado" || SharkGame.Stats.incomeTableEmpty) {
             document.getElementById("tableKey").innerHTML = "";
             return;
         }

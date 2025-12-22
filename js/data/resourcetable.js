@@ -23,6 +23,8 @@ SharkGame.ResourceTable = {
             switch (world.worldType) {
                 case "volcanic":
                     return "vents";
+                case "shore":
+                    return "the sandstorm";
                 case "tempestuous":
                     return "the storm";
                 default:
@@ -33,6 +35,8 @@ SharkGame.ResourceTable = {
             switch (world.worldType) {
                 case "volcanic":
                     return "vents";
+                case "shore":
+                    return "the sandstorm";
                 case "tempestuous":
                     return "the storm";
                 default:
@@ -877,6 +881,22 @@ SharkGame.ResourceTable = {
         color: "#CC6600",
         value: 2000,
     },
+
+    caracara: {
+        name: "caracaras",
+        singleName: "caracara",
+        desc: "Prideful denizens of the beyond, harnessing sky like water.",
+        color: "#FFFFFF",
+        value: 3000,
+    },
+
+    roughSand: {
+        name: "rough sand",
+        singleName: "rough sand",
+        desc: "Jagged grains that dig into our flesh.",
+        color: "#FFFFFF",
+        value: -100,
+    },
             
     // SHROUDED
 
@@ -1335,6 +1355,7 @@ SharkGame.GeneratorIncomeAffectorsOriginal = {
             brood: -0.001,
         },
     },
+    roughSand: {},
     tar: {
         exponentiate: {
             fishMachine: 0.99,
@@ -1453,7 +1474,7 @@ SharkGame.ResourceCategories = {
     harmful: {
         name: "Harmful",
         disposeMessage: ["Oh you'd like that, wouldn't you."],
-        resources: ["tar", "ice"],
+        resources: ["tar", "ice", "roughSand"],
     },
     scientific: {
         name: "Science",

@@ -9,13 +9,13 @@ SharkGame.Settings = {
     },
 
     grottoMode: {
-        defaultSetting: "simple",
-        options: ["simple", "advanced"],
+        defaultSetting: "simples",
+        options: ["simples", "avançado"],
     },
 
     showPercentages: {
-        defaultSetting: "absolute",
-        options: ["absolute", "percentage"],
+        defaultSetting: "absoluto",
+        options: ["absoluto", "porcentagem"],
     },
 
     // PERFORMANCE
@@ -118,7 +118,7 @@ SharkGame.Settings = {
         defaultSetting: "default",
         name: "Notação numérica",
         desc: "Como que os números deveriam ser formatados?",
-        category: "APPEARANCE",
+        category: "APARÊNCIA",
         options: ["default", /* "exponen", */ "SI"],
         onChange() {
             res.rebuildTable = true;
@@ -127,10 +127,10 @@ SharkGame.Settings = {
     },
 
     colorCosts: {
-        defaultSetting: "color",
+        defaultSetting: "colorido",
         name: "Cor dos recursos",
         desc: "Como devem ser a cores dos nomes dos recursos?",
-        category: "APPEARANCE",
+        category: "APARÊNCIA",
         options: ["colorido", "brilhante", "sem cor"],
         onChange() {
             res.rebuildTable = true;
@@ -203,11 +203,11 @@ SharkGame.Settings = {
     // ACCESSIBILITY
 
     doAspectTable: {
-        defaultSetting: "tree",
+        defaultSetting: "árvore",
         name: "Planilha/Árvore de aspectos",
         desc: "Mostrar uma árvore de aspectos, ou uma planilha de aspectos menos acessível?",
         category: "ACCESSIBILITY",
-        options: ["tree", "table"],
+        options: ["árvore", "planilha"],
     },
 
     verboseTokenDescriptions: {
@@ -225,7 +225,7 @@ SharkGame.Settings = {
         defaultSetting: true,
         name: "Efeitos especiais do ponteiro dos minutos",
         desc: "O ponteiro dos minutos deveria brilhar muito?",
-        category: "ACCESSIBILITY",
+        category: "ACESSIBILIDADE",
         options: [true, false],
         onChange() {
             res.minuteHand.updatePowers();
@@ -271,7 +271,7 @@ SharkGame.Settings = {
         defaultSetting: false,
         name: "Pausa verdadeira",
         desc: "Ao usar o aspecto do botão de pausa, deveríamos impedir que isso conte como tempo extra?",
-        category: "OTHER",
+        category: "OUTROS",
         options: [true, false],
     },
 
@@ -279,7 +279,7 @@ SharkGame.Settings = {
         defaultSetting: true,
         name: "Progresso desligado",
         desc: "Deveria ter ALGUM tipo de progresso enquanto o jogo está desligado?",
-        category: "OTHER",
+        category: "OUTROS",
         options: [true, false],
     },
 

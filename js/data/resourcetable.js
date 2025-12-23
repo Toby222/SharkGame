@@ -843,7 +843,7 @@ SharkGame.ResourceTable = {
         income: {
             driftwood: 0.5,
         },
-        jobs: ["burrow"],
+        jobs: ["burrow", "mentor"],
         value: 500, //(what does this mean?)
     },
 
@@ -887,8 +887,56 @@ SharkGame.ResourceTable = {
         singleName: "caracara",
         desc: "Prideful denizens of the beyond, harnessing sky like water.",
         color: "#FFFFFF",
-        income: {},
+        income: {
+            crystal: 1,
+        },
         value: 3000,
+    },
+
+    coralCollector: {
+        name: "coral collectors",
+        singleName: "coral collector",
+        desc: "Crablike puppets that saw at the coral with serrated claws.",
+        color: "#FFFFFF",
+        income: {
+            coral: 3
+        },
+        value: 3500,
+    },
+
+    driftwoodSnarer: {
+        name: "driftwood snarers",
+        singleName: "driftwood snarer",
+        desc: "Drifting, raylike puppets collecting driftwood in their seagrass nets.",
+        color: "#FFFFFF",
+        income: {
+            driftwood: 2
+        },
+        value: 3500,
+    },
+
+    hardbarkSmith: {
+        name: "hardbarm smiths",
+        singleName: "hardbark smith",
+        desc: "Clawed, orblike puppets that dip wood in molten crystal.",
+        color: "#FFFFFF",
+        income: {
+            hardbark: 2,
+            crystal: -2
+        },
+        value: 3500,
+    },
+
+    shoreQueller: {
+        name: "coral collectors",
+        singleName: "coral collector",
+        desc: "blanklike puppets that mark shore borders with seagrass.",
+        color: "#FFFFFF",
+        income: {
+            seagrass: 3,
+            crystal: 3,
+        },
+        value: 3500,
     },
 
     roughSand: {
@@ -1378,7 +1426,10 @@ SharkGame.GeneratorIncomeAffectorsOriginal = {
     },
    mentor: {
        multiply: {
-           puppetPlaceholder: 0.05
+           coralCollector: 0.05,
+           hardbarkSmith: 0.05,
+           driftwoodSnarer: 0.05,
+           shoreQueller: 0.05,
        },
    },
     // cool tooltip test crab
@@ -1519,7 +1570,7 @@ SharkGame.ResourceCategories = {
             "Was it something they said?",
             "Are you happy with what you've done?",
         ],
-        resources: ["shark", "ray", "crab", "shrimp", "lobster", "dolphin", "whale", "chimaera", "octopus", "eel", "squid", "urchin", "billfish", "mudskipper"],
+        resources: ["shark", "ray", "crab", "shrimp", "lobster", "dolphin", "whale", "chimaera", "octopus", "eel", "squid", "urchin", "billfish", "mudskipper", "caracara"],
     },
     animals: {
         name: "Animals",
@@ -1650,6 +1701,10 @@ SharkGame.ResourceCategories = {
             // "coalescer",
             // "crusher",
             // "pulverizer",
+            "coralCollector",
+            "hardbarkSmith",
+            "shoreQueller",
+            "driftwoodSnarer",
         ],
     },
     places: {
@@ -1731,6 +1786,10 @@ SharkGame.InternalCategories = {
         name: "Mudskippers",
         resources: ["mudskipper", "burrow", "mentor"],
     },
+    caracaras: {
+        name: "Caracaras",
+        resources: ["caracara"],
+    },
     sharkmachines: {
         name: "Shark Machines",
         resources: ["sharkonium", "fishMachine", "sandDigger", "crystalMiner", "skimmer", "autoTransmuter"],
@@ -1749,7 +1808,7 @@ SharkGame.InternalCategories = {
     },
     mudskipperpuppets: {
         name: "Mudskipper Puppets",
-        resources: ["hardbark"],
+        resources: ["hardbark", "coralCollector", "hardbarkSmith", "driftwoodSnarer", "shoreQueller"],
     },
     basicmaterials: {
         resources: ["fish", "sand", "crystal", "science", "junk"],

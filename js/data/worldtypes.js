@@ -20,11 +20,11 @@ SharkGame.WorldTypes = {
         },
     },
     start: {
-        name: "Home",
+        name: "Lar",
         desc: "...",
-        shortDesc: "strange blue",
+        shortDesc: "estranho azul",
         foresight: {
-            longDesc: "...Home.",
+            longDesc: "...Lar.",
             missing: [],
             present: [],
             tip: "...",

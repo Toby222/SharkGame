@@ -87,7 +87,7 @@ SharkGame.CheatsAndDebug = {
             get name() {
                 const resource = $("#somethingSelector")[0].value;
                 return (
-                    "Remove " +
+                    "Remover " +
                     sharktext.beautify(sharkmath.getBuyAmount(true)) +
                     " " +
                     sharktext.getResourceName(resource, false, sharkmath.getBuyAmount(true), sharkcolor.getVariableColor("--color-light"))
@@ -511,7 +511,7 @@ SharkGame.CheatsAndDebug = {
 
     togglePausePlease() {
         if (cad.stop) {
-            log.addError("O jogo parou. Você não consegue pausá-lo.");
+            log.addError("O jogo está parado. Você não consegue pausá-lo.");
             return;
         }
         if (!cad.pause) {

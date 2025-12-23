@@ -546,7 +546,7 @@ SharkGame.Upgrades = {
         },
         spongeCollection: {
             name: "Coleta de Esponja",
-            desc: "Nós vemos esses troços em meio aos recifes, mas apenas os polvos sabem como pegá-los sem os destruir.",
+            desc: "Nós vemos essas massas em meio aos recifes, mas apenas os polvos sabem como pegá-las sem as destruir.",
             researchedMessage:
                 "Ao entender a natureza frágil das esponjas e sua estranha estrutura porosa, descobrimos que podemos coletá-las se mordermos bem de leve apenas.",
             effectDesc: "Esponja pode ser coletada como se fosse peixe.",
@@ -2863,11 +2863,10 @@ SharkGame.Upgrades = {
             },
         },
         seabedGeology: {
-            name: "Seabed Geology",
-            desc: "Study the bottom of the ocean to determine the rich, deep, juicy secrets it contains.",
-            researchedMessage: "Not only did we find a whole bunch of weird things, the rays found that there was more sand!",
-            effectDesc:
-                "Rays are twice as effective with their understanding of the seabed and its varieties of sediment, and crabs are twice as effective at finding coral.",
+            name: "Geologia Oceânica",
+            desc: "Estude o fundo do oceano para determinar seus ricos e belos segredinhos.",
+            researchedMessage: "Não só descobrimos muitas coisas estranhas, as arraias descobriram que existe mais areia do que apenas areia!",
+            effectDesc: "Com um novo entendimento do solo oceânico e seus sedimentos, eficiência de arraias é dobrada e caranguejos pegam coral em dobro.",
             cost: {
                 science: 600,
                 sand: 5000,
@@ -2881,10 +2880,10 @@ SharkGame.Upgrades = {
             },
         },
         thermalVents: {
-            name: "Thermal Vents",
-            desc: "Investigate the boiling vents that just seem to keep on heating things up.",
-            researchedMessage: "As it turns out, they're constantly spewing out resources! So that's where all this sand is coming from...",
-            effectDesc: "A power source for future technologies has been discovered, but more importantly, we can begin taking stuff from the vents.",
+            name: "Fontes Termais",
+            desc: "Investigue os buracos ferventes que ficam jogando água fervente.",
+            researchedMessage: "Além de água, as fontes também estão cuspindo recursos que nos interessa! Então é daqui que toda essa areia vem.",
+            effectDesc: "Uma fonte de energia foi descoberta. Mas o mais importante é que agora podemos pegar as coisas que saem delas!",
             cost: {
                 science: 1500,
                 sand: 5000,
@@ -2903,11 +2902,11 @@ SharkGame.Upgrades = {
             },
         },
         spongeCollection: {
-            name: "Sponge Collection",
-            desc: "We can see these things littering the reefs and beds, but we don't know how to collect them without breaking them.",
+            name: "Coleta de Esponja",
+            desc: "Nós vemos essas massas em meio aos recifes, mas não temos ideia de como pegá-las sem as destruir.",
             researchedMessage:
-                "Understanding the fragile nature of sponges and their weird porous texture, we can now collect sponges by snipping or just not biting so hard.",
-            effectDesc: "Sponge can be collected in the same way fish can be.",
+                "Ao entender a natureza frágil das esponjas e sua estranha estrutura porosa, descobrimos que podemos coletá-las se mordermos bem de leve apenas.",
+            effectDesc: "Esponja pode ser coletada como se fosse peixe.",
             cost: {
                 science: 2500,
             },
@@ -2964,7 +2963,7 @@ SharkGame.Upgrades = {
             name: "Agricultura",
             desc: "Aparentemente, nós não deveríamos estar roubando esponja do chão. Mas roubando de quem, exatamente???",
             researchedMessage:
-                "Em defesa dos camarões, é bem mais fácil conseguir esponja quando nós mesmos a crescemos. Botar a esponja em um lugar e deixá-la crescer é uma solução boa.",
+                "Em defesa dos camarões, realmente é bem mais fácil conseguir esponja quando nós mesmos a crescemos. Botar a esponja em um lugar e deixá-la crescer é uma solução boa.",
             effectDesc: "Fazendas de esponja estão disponíveis para construção.",
             cost: {
                 sand: 80000,

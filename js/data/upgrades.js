@@ -2974,10 +2974,10 @@ SharkGame.Upgrades = {
             },
         },
         consistentCommunication: {
-            name: "Consistent Communication",
-            desc: "Okay shrimps, look! We have algae to make food for sponges! We don't need your sponges anymore!",
-            researchedMessage: "With ample demonstration of what we've gathered through farming, a few shrimp are convinced of our good intentions.",
-            effectDesc: "Can now hire shrimp, though they're kinda mean. How were we supposed to know that sponge needs algae for some reason?",
+            name: "Comunicação Consistente",
+            desc: "Camarões, olhem! Nós temos alga para alimentar as esponjas! Não precisamos mais das suas esponjas!",
+            researchedMessage: "Com uma ampla demonstração de que conseguimos fazer esponja mais do que o suficiente com as fazendas, alguns camarões se convenceram das nossas intenções serem boas.",
+            effectDesc: "Camarões podem ser recrutados, mas eles foram meio grossos. Como que iríamos sabe que esponjas precisam de alga para crescer por algum motivo?",
             cost: {
                 sponge: 250,
             },

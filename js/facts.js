@@ -93,6 +93,9 @@ SharkGame.FunFacts = {
         tempestuous: {
             messages: ["'Tempestuous' does not mean stormy. It means emotionally turbulent. But it's close enough."],
         },
+        shore: {
+            messages: [],
+        },
     },
 
     resourceBased: {
@@ -185,6 +188,12 @@ SharkGame.FunFacts = {
             "Swordfish are not a group of fish, they are a single species: Xiphias gladius.",
             "Swordfish, spearfish, and marlins are part of a larger group of fish called billfish (the group featured in this game), of which there are only 12 species.",
         ],
+        mudskipper: [],
+        caracara: [
+            "Yes, I know they're birds. It was suggested that they could be replaced with starfish, but people didn't like that.",
+            "There are multiple species of caracara in real life, but the only one here is the striated caracara, because it's the smartest.",
+            "It is is pronounced <i>KA-ruh-KAH-ruh</i>, not <i>KA-ruh-KA-ruh</i>.",
+        ],
         seaApple: [
             "Sea apples are a type of sea cucumber. They feed on debris and detritus.",
             "Sea apples are in no way actually attracted to kelp. The apples in this game are weird.",
@@ -218,6 +227,13 @@ SharkGame.FunFacts = {
             "It take a lot of heat to make, and once formed, calcinium doesn't melt easily. Every batch needs to be molded quickly, or it will go to waste.",
             "Calcinium is a very versatile material. Cooled quickly, it is a brittle ceramic - but cooled slowly, it's a rigid plastic. The lobsters make use of both methods.",
             "While calcinium looks like meringue, it most probably doesn't taste anything like.",
+        ],
+        hardbark: [
+            "To a human, hardbark looks like a dark blue stick covered in a thick layer of light-blue-tinted resin or glass. To the frenzy, it looks like a shiny rod of wood.",
+            "Hardbark is actually quite strong, courtesy of the crystal it's coated in. It clinks like glass.",
+            "No, hardbark does not taste like a blue raspberry lollipop, and NO, YOU CANNOT EAT IT--",
+            "You. Do. Not. Know. HOW MANY TYPOS. I have made. Trying to spell. <i>Hardbark.</i>",
+            "You might be wondering why the stick doesn't appear brown. That's because its developer couldn't find a mix between brown and light blue.",
         ],
         laser: [
             "Sharks with lasers were overdone, okay? 'Laser ray' is a pun, so it's obviously superior.",
@@ -262,6 +278,7 @@ SharkGame.FunFacts = {
             "In the real world, the ocean floor is not always sand. The deep ocean usually has much finer sediment.",
             "Sand gets transported very long distances by ocean currents. The longer it takes to travel to its destination beach, the finer the sand will be.",
         ],
+        driftwood: [],
         ancientPart: [
             "What do they do? We still aren't sure.",
             "These parts would probably remind a person of train parts. To a shark, they just look like nothing.",

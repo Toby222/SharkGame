@@ -489,7 +489,7 @@ SharkGame.PaneHandler = {
             row.append(
                 $("<td>").append(
                     $("<button>")
-                        .html("show")
+                        .html("não")
                         .addClass("option-button")
                         .on("click", () => {
                             cad.debug();

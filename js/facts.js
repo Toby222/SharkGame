@@ -278,7 +278,10 @@ SharkGame.FunFacts = {
             "In the real world, the ocean floor is not always sand. The deep ocean usually has much finer sediment.",
             "Sand gets transported very long distances by ocean currents. The longer it takes to travel to its destination beach, the finer the sand will be.",
         ],
-        driftwood: [],
+        driftwood: [
+            "According to Norse mythology, the first two humans were made out of driftwood. Whatever Norse is. And humans.",
+            "The frenzy never burns driftwood as fuel, as the combustion releases toxic and long-lasting substances into the air.",
+        ],
         ancientPart: [
             "What do they do? We still aren't sure.",
             "These parts would probably remind a person of train parts. To a shark, they just look like nothing.",

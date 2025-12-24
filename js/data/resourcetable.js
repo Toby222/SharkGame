@@ -3,7 +3,7 @@ SharkGame.ResourceTable = {
 
     // SAVED FOR LATER
 
-    coralglass: { //machine-making material
+    coralglass: { //machine-making material; archived from original game -- ThreeCrabs
         name: "coralglass",
         singleName: "coralglass",
         desc: "null",
@@ -11,7 +11,7 @@ SharkGame.ResourceTable = {
         value: 70,
     },
 
-    starfish: { //frenzy member
+    starfish: { //frenzy member; courtesy of my great irl friend -- ThreeCrabs
         name: "starfish",
         singleName: "starfish",
         desc: "Obliviously cute - as long as you don't see their mouths.",

@@ -3008,9 +3008,9 @@ SharkGame.Upgrades = {
         },
         sociology: {
             name: "Sociologia",
-            desc: "What is a frenzy? Why do we obey our orders? Why do we work together?",
-            researchedMessage: "Progresso, prosperidade, organização, ordem. We choose to be a part of this society, and that is what creates it.",
-            effectDesc: "Shrimp and sponge farms are twice as effective now that we can grasp the idea of a social system being different than ours.",
+            desc: "O que é um cardume? Por que obedecemos ordens? Por que trabalhamos juntos?",
+            researchedMessage: "Progresso, prosperidade, organização, ordem. Nós escolhemos ser parte desta sociedade e é assim que ela é criada.",
+            effectDesc: "Camarões e fazendas de esponja são duas vezes mais eficientes agora que conseguimos compreender o conceito de um grupo social estruturado diferentemente do nosso.",
             cost: {
                 science: 15000,
                 sponge: 1000,

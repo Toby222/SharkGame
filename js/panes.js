@@ -7,7 +7,7 @@ SharkGame.Panes = {
         "<p>Ajuda adicional com código e créditos foram vindo de Dylan e Sam Red.<br/>" +
         "<span class='smallDesc'>Dylan também está graciosamente mantendo o jogo original no ar.</span></p>" +
         "<br><p><a href='https://github.com/spencers145/SharkGame'>NEW FRONTIERS</a> created by base4/spencers145.<br/>" +
-        "Arte e contribuições de íncones por Jay, <a href='https://www.imdb.com/name/nm12683932/'>Noah Deibler,</a> e <a href='https://twitter.com/vhs_static'>@vhs_static</a> e amigões.<br/>" +
+        "Arte e contribuições de ícones por Jay, <a href='https://www.imdb.com/name/nm12683932/'>Noah Deibler,</a> e <a href='https://twitter.com/vhs_static'>@vhs_static</a> e amigões.<br/>" +
         "Ajuda adicional de <a href='https://github.com/stampyzfanz'>Ixbixbam</a>.<br/>" +
         "<span class='smallDesc'>Jogos do Ixbix estão dinsponíveis </span><a href='https://stampyzfanz.github.io/'>neste cantinho da internet</a><span class='smallDesc'>.</span><br/>" +
         '<span>Com ajuda de <a href="https://github.com/Toby222">Toby</a></span><br/>',

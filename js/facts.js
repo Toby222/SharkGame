@@ -188,7 +188,13 @@ SharkGame.FunFacts = {
             "Swordfish are not a group of fish, they are a single species: Xiphias gladius.",
             "Swordfish, spearfish, and marlins are part of a larger group of fish called billfish (the group featured in this game), of which there are only 12 species.",
         ],
-        mudskipper: [],
+        mudskipper: [
+            "Unlike sharks and rays, mudskippers have bones.",
+            "The mudskipper species <i>Periophthalmus Modestus</i> takes care of their eggs in air pockets inside mud burrows, and floods the burrow to hatch them.",
+            "Some species of muskipper eat debris, making them detritivores, while other species are carnivores.",
+            "After a mudskipper lays their eggs, the mother normally leaves them to be guarded by the father.",
+            "Much like amphibians, mudskippers can breathe through their skin when wet.",
+        ],
         caracara: [
             "Yes, I know they're birds. It was suggested that they could be replaced with starfish, but people didn't like that.",
             "There are multiple species of caracara in real life, but the only one here is the striated caracara, because it's the smartest.",
@@ -281,6 +287,8 @@ SharkGame.FunFacts = {
         driftwood: [
             "According to Norse mythology, the first two humans were made out of driftwood. Whatever Norse is. And humans.",
             "The frenzy never burns driftwood as fuel, as the combustion releases toxic and long-lasting substances into the air.",
+            "Driftwood is often used by several animals, both aquatic and terrestrial, as shelter and food.",
+            "In the beyond, driftwood can be found in abundance as simple 'wood', but only driftwood has the right composition for hardbark.", //according to the caracaras.
         ],
         ancientPart: [
             "What do they do? We still aren't sure.",

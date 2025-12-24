@@ -1,5 +1,24 @@
 "use strict";
 SharkGame.ResourceTable = {
+
+    // SAVED FOR LATER
+
+    coralglass: { //machine-making material
+        name: "coralglass",
+        singleName: "coralglass",
+        desc: "null",
+        color: "#FDD5B4",
+        value: 70,
+    },
+
+    starfish: { //frenzy member
+        name: "starfish",
+        singleName: "starfish",
+        desc: "Obliviously cute - as long as you don't see their mouths.",
+        color: "#C2754A",
+        value: 3000 
+    },
+    
     // SPECIAL
 
     numen: {
@@ -536,16 +555,6 @@ SharkGame.ResourceTable = {
             calcinium: 120,
         },
         value: 1500,
-    },
-
-    // SAVED FOR LATER
-
-    coralglass: {
-        name: "coralglass",
-        singleName: "coralglass",
-        desc: "null",
-        color: "#FDD5B4",
-        value: 70,
     },
 
     // volcanic

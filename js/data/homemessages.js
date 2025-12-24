@@ -516,10 +516,11 @@ SharkGame.HomeMessages = {
             },
         ],
         /*
-        {
+        stone: [
+           {
             message:
                 "The jagged seafloor looks ancient, yet pristine.<br>Sponges thrive in great numbers on the rocks.",
-        },
-        */
+           },
+        ],*/
     },
 };

@@ -15,22 +15,22 @@ SharkGame.Panes = {
     ending:
         "<p>Parabéns! Você conseguiu.<br/>Você salvou os tubarões!</p>" +
         "<p>O portal te leva desse oceano estranho...</p>" +
-        "<p>De volta para oBack home to the oceans you came from!</p>" +
-        "<h3>Or are they?</h3>",
+        "<p>De volta para os oceanos que você nasceu e cresceu!</p>" +
+        "<h3>...Será mesmo?</h3>",
     cheats:
         "<p>Tu irrompe no entre-mundos.</p>" +
         "<p><strong>1000 de essência.</strong> Teu corpo brilha. O éter flui dentro de tu como sangue.</p>" +
         "<p>Essa longa jornada te fez forte, rápido, esperto; poderoso. Tua força cresce a cada mundo visitado.</p>" +
         "<p>Tua energia radiante reluz desde os abismos mais profundos até os sorrisos mais esnobes; dos frios mais congelantes até as cidades mais mortas. És algo além de um tubarão.</p>" +
         "<p>Ainda assim...não achaste teu lar.</p>" +
-        "<p>You stop to ponder this conundrum.</p>" +
-        "<p>Se tua casa realmente se foi, então para que continuas?</p>" +
-        "<p>A jornada é ? Or is it perhaps the power? In truth, it was always your decision. No-one can make it for you.</p>" +
-        "<p>But regardless, your adventure has come to an end...for now. You can always come back again. Perhaps when there are more places to visit, and things to see, you will find what you seek.</p>" +
+        "<p><italic>Você toma um momento para ponderar este enigma.</italic></p>" +
+        "<p>Se tua casa realmente se foi, então por que continuas?</p>" +
+        "<p>A jornada é o que importa? Ou talvez o poder? Na verdade, não sou eu que posso dizer, esta é a tua decisão. Ninguém pode tomá-la por você.</p>" +
+        "<p>De qualquer forma, sua aventura acaba aqui...por enquanto. Podes sempre voltar novamente. Talvez haverá mais lugares a visitar, eventos a presenciar, coisas a descorbrir. Talvez o que procuras seja achado.</p>" +
         "<hr>" +
-        "<p><strong>Cheats unlocked.</strong></p>" +
-        "<p>Visit a world to engage in ridiculous hijinks.</p>" +
-        "<p>Thank you for playing New Frontiers! I hope to see you back again next update.</p>",
+        "<p><strong>Trapaças desbloqueadas.</strong></p>" +
+        "<p>Visite um mundo para fazer dele a cada da Mãe Joana.</p>" +
+        "<p>Muito obrigado por jogar Novas Fronteiras! Esperamos ver você na próxima atualização.</p>",
     help:
         "<p>This game is a game about resources and discovery, and does not demand your full attention. " +
         "It will happily run in the background, and works even while closed.</p>" +
@@ -39,19 +39,19 @@ SharkGame.Panes = {
         "<p>If you are still stuck, or if you think it's a bug, you can always ask for help on the <a href='https://discord.gg/nN7BQDJR2G' target='blank_'>discord server</a>.</p>",
 
     donate:
-        "<h2>You can donate to various projects and organizations below to help support sea life:</h2>" +
-        "<span class='smallDescAllowClicks'>(seems only fitting, given the original game was made for a charity event)</span>" +
-        "<p><strong>The Shark Trust</strong> is an organization that exists solely to advocate for research into, education about, and fair treatment of sharks. You can <a href='https://www.sharktrust.org/Listing/Category/donate' target='_blank'>donate to the Shark Trust here</a>.</p>" +
-        "<p><span class='smallDescAllowClicks'>(But if you'd rather, you can also " +
+        "<h2>Você pode doar para os vários projetos e organizações abaixo para apoiar vida marinha:</h2>" +
+        "<span class='smallDescAllowClicks'>(parece justo, já que o jogo original foi feito para um evento de caridade)</span>" +
+        "<p>O<strong> Shark Trust</strong> é uma organização que existe para apoiar pesquisa em, educação sobre e proteção de tubarões. Você pode <a href='https://www.sharktrust.org/Listing/Category/donate' target='_blank'>doe para o Shark Trust aqui</a>.</p>" +
+        "<p><span class='smallDescAllowClicks'>(Mas se você quiser, você também pode " +
         "<a href='https://www.paypal.com/cgi-bin/" +
         "webscr?cmd=_donations&business=G3WPPAYAWTJCJ&lc=GB&" +
         "item_name=Shark%20Game%20Developer%20Support&" +
         "item_number=Shark%20Game%20Support&no_note=1&" +
         "no_shipping=1&currency_code=USD&" +
         "bn=PP%2dDonationsBF%3adonate%2epng%3aNonHosted' " +
-        "target='_blank'>support the developer of the original shark game,</a>" +
-        " if you'd like.)</span></p>" +
-        "<p>The developers of the mod are not currently taking donations.</p>",
+        "target='_blank'>apoiar o desenvolvedor do Jogo do Tubarão original,</a>" +
+        " se você quiser, claro.)</span></p>" +
+        "<p>Os desenvolvedores deste mod não estão aceitando doações por enquanto.</p>",
 
     notice:
         "<p>Welcome to the open <b>alpha</b> of v0.2 for New Frontiers.</p>" +
@@ -60,10 +60,10 @@ SharkGame.Panes = {
         "<p>To play the stable (OUTDATED) version (with all planets), visit <a href='https://spencers145.github.io/SharkGame/'>this link</a>.</p>",
 
     safariNotice:
-        "It seems you are using Safari.<br />This browser is currently not well-tested due to lack of corresponding hardware.<br />" +
-        "If you are willing to help us test it, please join us on <a href='https://discord.gg/s4tTj7y72z'>Discord</a>, or message" +
-        " <a target='_blank' href='https://www.reddit.com/user/toby_prime'>Toby</a> or" +
-        " <a target='_blank' href='https://www.reddit.com/user/SpencerS145/'>Base</a> on Reddit.",
+        "Parece que você está usando Safari.<br />Esse navegador ainda não foi muito testado devido à falta de equipamento do time.<br />" +
+        "Se estiver disposto a nos ajudar a testar, por favor se junte a nós em <a href='https://discord.gg/s4tTj7y72z'>Discord</a>, ou mande uma mensagem a" +
+        " <a target='_blank' href='https://www.reddit.com/user/toby_prime'>Toby</a> ou a" +
+        " <a target='_blank' href='https://www.reddit.com/user/SpencerS145/'>Base</a> no Reddit.",
 };
 
 SharkGame.PaneHandler = {

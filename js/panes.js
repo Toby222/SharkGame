@@ -1,31 +1,31 @@
 SharkGame.Panes = {
     credits:
-        "<p>This game was originally created in 3 days for Seamergency 2014.<br/>" +
-        "<span class='smallDesc'>(Technically it was 4 days, but sometimes plans go awry.)</span></p>" +
-        "<p>It was made by <a href='http://cirri.al'>Cirr</a> who needs to update his website.<br/>" +
-        "He has a rarely updated <a href='https://twitter.com/Cirrial'>Twitter</a> though.</p>" +
-        "<p>Additional code and credit help provided by Dylan and Sam Red.<br/>" +
-        "<span class='smallDesc'>Dylan is also graciously hosting the original game.</span></p>" +
+        "<p>Este jogo foi originalmente criado em 3 dias para o Seamergency 2014.<br/>" +
+        "<span class='smallDesc'>(Tecnicamente foram em 4 dias, mas algumas vezes planos molham.)</span></p>" +
+        "<p>Feito por <a href='http://cirri.al'>Cirr</a> que precisa atualizar o site.<br/>" +
+        "Ele também tem um <a href='https://twitter.com/Cirrial'>Twitter</a> onde ele quase não posta.</p>" +
+        "<p>Ajuda adicional com código e créditos foram vindo de Dylan e Sam Red.<br/>" +
+        "<span class='smallDesc'>Dylan também está graciosamente mantendo o jogo original no ar.</span></p>" +
         "<br><p><a href='https://github.com/spencers145/SharkGame'>NEW FRONTIERS</a> created by base4/spencers145.<br/>" +
-        "Art and sprite contributions by Jay, <a href='https://www.imdb.com/name/nm12683932/'>Noah Deibler,</a> and <a href='https://twitter.com/vhs_static'>@vhs_static</a> and friends.<br/>" +
-        "Additional help from <a href='https://github.com/stampyzfanz'>Ixbixbam</a>.<br/>" +
-        "<span class='smallDesc'>Ixbix's games at his little corner of the internet are </span><a href='https://stampyzfanz.github.io/'>here</a><span class='smallDesc'>.</span><br/>" +
-        '<span>With help by <a href="https://github.com/Toby222">Toby</a></span><br/>',
+        "Arte e contribuições de íncones por Jay, <a href='https://www.imdb.com/name/nm12683932/'>Noah Deibler,</a> e <a href='https://twitter.com/vhs_static'>@vhs_static</a> e amigões.<br/>" +
+        "Ajuda adicional de <a href='https://github.com/stampyzfanz'>Ixbixbam</a>.<br/>" +
+        "<span class='smallDesc'>Jogos do Ixbix estão dinsponíveis </span><a href='https://stampyzfanz.github.io/'>neste cantinho da internet</a><span class='smallDesc'>.</span><br/>" +
+        '<span>Com ajuda de <a href="https://github.com/Toby222">Toby</a></span><br/>',
 
     ending:
-        "<p>Congratulations! You did it.<br/>You saved the sharks!</p>" +
-        "<p>The gate leads away from this strange ocean...</p>" +
-        "<p>Back home to the oceans you came from!</p>" +
+        "<p>Parabéns! Você conseguiu.<br/>Você salvou os tubarões!</p>" +
+        "<p>O portal te leva desse oceano estranho...</p>" +
+        "<p>De volta para oBack home to the oceans you came from!</p>" +
         "<h3>Or are they?</h3>",
     cheats:
-        "<p>You enter the space between worlds.</p>" +
-        "<p><strong>1000 essence.</strong> You glow. The ether flows through you like blood.</p>" +
-        "<p>Your long journey has made you strong, fast, and clever. Your power grows with every world you visit.</p>" +
-        "<p>Your radiant energy shines through the deepest chasms and the smuggest grins; the iciest cold and the bleakest cities. You are something much more than a shark now.</p>" +
-        "<p>And yet...your home is nowhere in sight.</p>" +
+        "<p>Tu irrompe no entre-mundos.</p>" +
+        "<p><strong>1000 de essência.</strong> Teu corpo brilha. O éter flui dentro de tu como sangue.</p>" +
+        "<p>Essa longa jornada te fez forte, rápido, esperto; poderoso. Tua força cresce a cada mundo visitado.</p>" +
+        "<p>Tua energia radiante reluz desde os abismos mais profundos até os sorrisos mais esnobes; dos frios mais congelantes até as cidades mais mortas. És algo além de um tubarão.</p>" +
+        "<p>Ainda assim...não achaste teu lar.</p>" +
         "<p>You stop to ponder this conundrum.</p>" +
-        "<p>If your home is truly lost, then what is the point?</p>" +
-        "<p>Is the journey the point? Or is it perhaps the power? In truth, it was always your decision. No-one can make it for you.</p>" +
+        "<p>Se tua casa realmente se foi, então para que continuas?</p>" +
+        "<p>A jornada é ? Or is it perhaps the power? In truth, it was always your decision. No-one can make it for you.</p>" +
         "<p>But regardless, your adventure has come to an end...for now. You can always come back again. Perhaps when there are more places to visit, and things to see, you will find what you seek.</p>" +
         "<hr>" +
         "<p><strong>Cheats unlocked.</strong></p>" +
@@ -499,7 +499,7 @@ SharkGame.PaneHandler = {
             row.append(
                 $("<td>").append(
                     $("<button>")
-                        .html("esconder")
+                        .html("ocultar")
                         .addClass("option-button")
                         .on("click", () => {
                             cad.hideDebug();

@@ -63,10 +63,10 @@ SharkGame.Save = {
         saveString = ascii85.encode(pako.deflate(JSON.stringify(saveData), { to: "string" }));
 
         try {
-            if (saveString === undefined || saveString === "<~~>") throw new Error("Something went wrong while saving");
+            if (saveString === undefined || saveString === "<~~>") throw new Error("Algo deu errado durante o salvamento");
             localStorage.setItem(SharkGame.Save.saveFileName, saveString);
         } catch (err) {
-            throw new Error("Couldn't save to local storage. Reason: " + err.message);
+            throw new Error("Não conseguiste salvar para armazenamento local. Razão: " + err.message);
         }
 
         return saveString;
@@ -79,7 +79,7 @@ SharkGame.Save = {
                 saveDataString = ascii85.decode(saveDataString);
             } catch {
                 throw new Error(
-                    "Saved data looked like it was encoded in ascii85, but it couldn't be decoded. Can't load. Your save: " + saveDataString,
+                    "Teu salvamento se encontra em ascii85, mas não pôde ser decodificado. Não consigo carregá-lo. Teu salvamento: " + saveDataString,
                 );
             }
         }
@@ -90,7 +90,7 @@ SharkGame.Save = {
             try {
                 saveDataString = pako.inflate(saveDataString, { to: "string" });
             } catch (err) {
-                throw new Error("Saved data is compressed, but it can't be decompressed. Can't load. Your save: " + saveDataString + "\n", err);
+                throw new Error("Teu salvamento está compactado, mas não pôde ser descompactar. Não consigo carregá-lo. Teu salvamento: " + saveDataString + "\n", err);
             }
         }
 
@@ -99,7 +99,7 @@ SharkGame.Save = {
             try {
                 return JSON.parse(saveDataString);
             } catch {
-                throw new Error("Couldn't load save data. It didn't parse correctly. Your save: " + saveDataString);
+                throw new Error("Não pude carregar teu salvamento. A sintaxe não está correta. Teu salvamento: " + saveDataString);
             }
         }
     },
@@ -109,9 +109,9 @@ SharkGame.Save = {
         const saveDataString = importSaveData || localStorage.getItem(SharkGame.Save.saveFileName);
 
         if (!saveDataString) {
-            throw new Error("Tried to load game, but no game to load.");
+            throw new Error("Tentei carregar jogo, mas não há nenhum a carregar.");
         } else if (typeof saveDataString !== "string") {
-            throw new Error("Tried to load game, but save wasn't a string.");
+            throw new Error("Tentei carregar jogo, mas o salvamento não é uma cadeia de caracteres.");
         }
 
         saveData = this.decodeSave(saveDataString);
@@ -123,7 +123,7 @@ SharkGame.Save = {
                 saveData = SharkGame.Save.saveUpdaters[0](saveData);
             } else if (typeof saveData.saveVersion !== "number" || saveData.saveVersion <= 12) {
                 // After save version 12, packing support was removed; Backwards compatibility is not maintained because gameplay changed significantly after this point.
-                throw new Error("This is a save from before New Frontiers 0.2, after which the save system was changed.");
+                throw new Error("Teu salvamento vêm de antes da versão 0.2 de Novas Fronteiras, desde então o sistema de salvamento foi mudade.");
             } else if (saveData.saveVersion === 15 || saveData.saveVersion === 16) {
                 // gonna reset aspects, need to inform player
                 SharkGame.missingAspects = true;
@@ -136,7 +136,7 @@ SharkGame.Save = {
                     saveData.saveVersion = i;
                 }
                 // let player know update went fine
-                log.addMessage("Updated save data from v " + saveData.version + " to " + SharkGame.VERSION + ".", true);
+                log.addMessage("Teu jogo foi atualizado da versão " + saveData.version + " para " + SharkGame.VERSION + ".", true);
             }
 
             // we're going to assume that everything has already been reset; we assume that we're just loading values into a blank slate
@@ -280,7 +280,7 @@ SharkGame.Save = {
             }
         } else {
             throw new Error(
-                "Couldn't load saved game. I don't know how to break this to you, but I think your save is corrupted. Your save: " + saveDataString,
+                "Não pude carregar teu salvamento. E eu não sei como te falar, mas o teu salvamento foi corrompido. Teu salvamento: " + saveDataString,
             );
         }
     },

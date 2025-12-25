@@ -720,7 +720,7 @@ Mod of v ${SharkGame.ORIGINAL_VERSION}`,
             if (data.sha !== SharkGame.COMMIT_SHA) {
                 $("#updateGameBox")
                     .html(
-                        `Vocêvê uma atualização nadando até você.<br> Nela, vocêsó consegue decifrar as palavras <br>"${
+                        `Você vê uma atualização nadando até você.<br> Nela, você só consegue decifrar as palavras <br>"${
                             data.commit.message.split("\n")[0]
                         }". <br>Clique para atualizar.`,
                     )

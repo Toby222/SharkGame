@@ -114,10 +114,10 @@ SharkGame.TitleBarHandler = {
 
     correctTitleBar() {
         if (main.isFirstTime()) {
-            SharkGame.TitleBar.skipLink.name = "reset";
+            SharkGame.TitleBar.skipLink.name = "reiniciar";
         } else {
             // and then remember to actually set it back once it's not
-            SharkGame.TitleBar.skipLink.name = "skip";
+            SharkGame.TitleBar.skipLink.name = "pular";
         }
         this.setUpTitleBar();
     },

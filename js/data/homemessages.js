@@ -515,6 +515,29 @@ SharkGame.HomeMessages = {
                 message: "A wave of heat washes over you, and the dingy complex comes back to life. The gate turns on.",
             },
         ],
+
+        shore: [
+            {
+                name: "shore-default",
+                message: "The surface of the water is painfully close, yet it stretches vast.<br>Looking into the distance, that seems the least of your problems.",
+            },
+            {
+                name: "shore-sandstorm-entry",
+                unlock: { upgrade: ["murkAssessment"] },
+                message: "The sandstorm sends thousands of grains of rough sand digging into your flesh. This was a bad idea.",
+            },
+            {
+                name: "shore-sandstorm-escape-attempt",
+                unlock: { upgrade: ["fleeBarrage"] },
+                message: "The sandstorm has stretched out endlessly. No matter how far you backtrack, it is there."
+            },
+            {
+                name: "shore-sandstorm-escape-attempt-the-sequel",
+                unlock: { upgrade: ["justPushFurtherLol"] },
+                message: "At last, by going further into the sandstorm, you burst into a clear space of calm. But a wall of sand blocks your path.",
+            },
+        ],
+        
         /*
         stone: [
            {

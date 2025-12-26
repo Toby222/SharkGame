@@ -334,7 +334,7 @@ SharkGame.ResourceTable = {
             crystal: 0.02,
             coral: 0.01,
         },
-        jobs: ["planter", "brood", "collector", "researcher", "curiousCrab", "seabedStripper"],
+        jobs: ["planter", "brood", "collector", "researcher", "curiousCrab", "seabedStripper", "gardener"],
         value: 1000,
     },
 
@@ -843,6 +843,8 @@ SharkGame.ResourceTable = {
     },
 
     // SHORE
+
+    gardener: {},
     
     mudskipper: {
         name: "mudskippers",
@@ -946,7 +948,7 @@ SharkGame.ResourceTable = {
     },
 
     hardbarkSmith: {
-        name: "hardbarm smiths",
+        name: "hardbark smiths",
         singleName: "hardbark smith",
         desc: "Clawed, orblike puppets that dip wood in molten crystal.",
         color: "#FFFFFF",
@@ -960,7 +962,7 @@ SharkGame.ResourceTable = {
     shoreQueller: {
         name: "coral collectors",
         singleName: "coral collector",
-        desc: "Long puppets that mark shore borders with seagrass.",
+        desc: "Wormlike puppets marking shore borders with seagrass - and crystallisng the rest.",
         color: "#FFFFFF",
         income: {
             seagrass: 3,
@@ -1703,6 +1705,9 @@ SharkGame.ResourceCategories = {
             // "miller",
             // "rockLobster"
             "mentor",
+            "retrievalDuo",
+            "connoisseur",
+            "gardener",
         ],
     },
     machines: {

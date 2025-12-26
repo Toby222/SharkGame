@@ -150,7 +150,7 @@ SharkGame.Upgrades = {
         },
         statsDiscovery: {
             name: "Caverna Armazém",
-            desc: "Tá na hora de nós termos um lugar de verdade para manter nossos estoques. Achamos um cafofo, mas precisa ser arrumado.",
+            desc: "Tá na hora de nós acharmos um lugar de verdade para manter nossos estoques. Achamos um cafofo, mas precisa ser arrumado.",
             researchedMessage:
                 "Todos as nossas coisas foram guardadas, separadas e categorizadas em um sistema de cavernas inundado. Nós estamos todos organizados! Mais ou menos!",
             effectDesc: "Ao armazenar nossos bens em um local centralizado, finalmente podemos manter controle do que estamos fazendo...em sua maior parte.",
@@ -2915,11 +2915,11 @@ SharkGame.Upgrades = {
             },
         },
         statsDiscovery: {
-            name: "Storage Caverns",
-            desc: "It's about time to start moving the stores we have to a better place. We've found one but it needs setting up.",
+            name: "Caverna Armazém",
+            desc: "Tá na hora de nós acharmos um lugar de verdade para manter nossos estoques. Achamos um cafofo, mas precisa ser arrumado.",
             researchedMessage:
-                "All the goods we've acquired are now being stored and itemised in a mostly flooded cavern system. We're organized! Sort of!",
-            effectDesc: "By storing things in a centralised location, we now finally have an idea of what we're doing...sort of.",
+                "Todos as nossas coisas foram guardadas, separadas e categorizadas em um sistema de cavernas inundado. Nós estamos todos organizados! Mais ou menos!",
+            effectDesc: "Ao armazenar nossos bens em um local centralizado, finalmente podemos manter controle do que estamos fazendo...em sua maior parte.",
             cost: {
                 science: 4000,
             },
@@ -3027,12 +3027,12 @@ SharkGame.Upgrades = {
             },
         },
         rayBiology: {
-            name: "Ray Biology",
-            desc: "Though kindred to the sharks, we know so little about the rays. If only we could fix this. We need to bait a sand trap.",
+            name: "Biologia Arraiística",
+            desc: "Mesmo sendo meus primos, não sei quase nada das arraias. Posso consertar isso. Eu só preciso de uma armadilha.",
             researchedMessage:
-                "Apparently we could have just asked. We learned how rays make more rays. It's kinda similar to sharks, really, but rays.",
+                "Aparentemente, eu poderia ter apenas perguntado. Mas consegui descobrir como arraias fazem mais arrainhas. É bem parecido como eu funciono, mas com arraias.",
             effectDesc:
-                "Rays are twice as effective, and ray makers are available. We may never repair the shark-ray relations to their former state after how awkward this whole affair was.",
+                "Arraias são duas vezes mais rápidas e criadores de arraias estão disponíveis. Mas talvez as relações tubarão-arraia nunca voltem ao seu estado original depois de quão vergonhoso isso foi para todos os envolvidos.",
             cost: {
                 science: 25000,
                 sand: 100000,
@@ -3064,13 +3064,12 @@ SharkGame.Upgrades = {
             },
         },
         crabBiology: {
-            name: "Crab Biology",
-            desc: "Crabs are a mystery. They keep to themselves and dig up coral or think about stuff. What is even up with that? What ARE crabs??",
+            name: "Biologia Caranguêsa",
+            desc: "Esse bichos são um mistério. Eles são meio calados e apenas cavam cristais ou plantam coisas. Por que eles fazem isso? E o QUE são siris??",
             researchedMessage:
-                "It turns out crabs are friendly crustaceans that have revealed to the sharks the secrets of crab generation. It involves eggs, or something. Squirmy eggs.",
+                "Parece que caranguejos são crustáceos amigáveis que revelaram aos tubarões os segredos de produção de caraguejo. Envolvendo ovos, ou algo parecido. Ovos que se mexem.",
             effectDesc:
-                "Crabs and curious crabs are twice as effective and crab broods are available. Crabs are alright but they are also sort of terrifying and weird. Good thing they're on our side!",
-            cost: {
+                "Caranguejos e caranguejos curiosos dobram sua velocidade, e ninhadas de caranguejo podem ser formadas. Siris aparentemente são apenas um tipo de caranguejo, o que é legal, mas um pouco medonho, porque caranguejos são assustadores. Que bom que eles estão do nosso lado!",
                 science: 35000,
                 coral: 750,
             },
@@ -3085,10 +3084,10 @@ SharkGame.Upgrades = {
             },
         },
         xenobiology: {
-            name: "Xenobiology",
-            desc: "Okay...so rays, crabs, shrimp, we all have biology. But what about these faceless things?",
-            researchedMessage: "Yes, they are alive! They live, but not like us. They sit still for some reason!",
-            effectDesc: "Unlocked the secrets of sponge. Sorta. Sponge farms produce twice as many now.",
+            name: "Xenobiologia",
+            desc: "Tá...arraias, caranguejos, camarões, todos nós temos biologia. Mas e essas massas sem rosto?",
+            researchedMessage: "Sim, elas estão vivas! Elas vivem! Mas não como nós. Por algum motivo, elas não saem do lugar!",
+            effectDesc: "Após desvendar os secredos poríferos da esponja, nossas fazendas produzem o dobro de esponja agora.",
             cost: {
                 science: 100000,
             },
@@ -3120,10 +3119,10 @@ SharkGame.Upgrades = {
             },
         },
         wormWarriors: {
-            name: "Worm Warriors",
-            desc: "Shrimp sponge hives are under constant threat from outside invaders that aren't us. A collaboration effort might help them out.",
-            researchedMessage: "Our efforts have lead to the establishment of a new shrimp caste - the worm warrior.",
-            effectDesc: "Shrimp queens are twice as efficient now that they don't need to worry about worms eating them.",
+            name: "Caça Aos Vermes",
+            desc: "As colônias de esponja dos camarões estão sendo atacadas o tempo inteiro por invasores externos (que não somos nós!). Uma colaboração seria ótimo para eles.",
+            researchedMessage: "Nossos esforços levaram à formação de uma nova casta de camarões - os exterminadores de vermes.",
+            effectDesc: "Camarões rainhas são duas vezes mais eficientes, uma vez que elas não precisam se preocupar mais com minhocas enormes as devorando.",
             cost: {
                 sponge: 75000,
                 shrimp: 5000,
@@ -3138,10 +3137,10 @@ SharkGame.Upgrades = {
             },
         },
         coralCloning: {
-            name: "Coral Cloning",
-            desc: "This other stuff. Coral. It also has no face. It also doesn't move. Is it alive too?",
-            researchedMessage: "Wow! This is alive too! The world is so incredible. Let's farm them.",
-            effectDesc: "Unlocked coral farms. I wonder what else is alive! Are the vents alive? What about these rocks?",
+            name: "Clonagem de Coral",
+            desc: "Essa outra massa. Coral. Também não tem rosto. Também não nada. Será que está viva também?",
+            researchedMessage: "Cacete! Isso também está vivo! Que mundo incrível, que bichos fantásticos. Vamos multiplicá-los.",
+            effectDesc: "Desbloqueamos fazendas de corais. Eu me pergunto o que mais está vivo! Será que as fontes termais estão vivas? Que tal essas pedras?",
             cost: {
                 science: 250000,
                 coral: 2500,
@@ -3151,12 +3150,12 @@ SharkGame.Upgrades = {
             },
         },
         sustainableSolutions: {
-            name: "Sustainable Solutions",
-            desc: "As in, find solutions that the shrimp prefer.",
+            name: "Soluções Sustentáveis",
+            desc: "Que dizer, soluções que os camarões preferem.",
             researchedMessage:
-                "So, as it turns out, the shrimp preference is merely to farm for sponge and coral instead of gathering them. That sounds about right.",
+                "Pelo visto, a preferência dos camarões é plantar safras de esponja e coral ao invés de coletá-los por aí. Justo.",
             effectDesc:
-                "Sponge farms are thirty-two times as effective, coral farms are twice as effective. We are diverting a lot of attention to the farms now. Maybe too much? Nah.",
+                "Fazendas de esponja são 32 vezes mais eficiêntes, fazendas de coral dobram a produção. Estamos dando muita atenção para as fazendas agora. Será que é demais? Ha! Nem perto.",
             cost: {
                 science: 1250000,
                 sponge: 500000,
@@ -3172,10 +3171,10 @@ SharkGame.Upgrades = {
             },
         },
         broodingBiology: {
-            name: "Brooding Biology",
-            desc: "Crab broods take up...a lot of crabs.",
-            researchedMessage: "With enough careful study, we were able to discern that less than 20 crabs are actually needed to make more.",
-            effectDesc: "Only 5 crabs are needed per brood. Still gross.",
+            name: "Biologia Ninhadesa",
+            desc: "Ninhadas de caranguejo ocupam...muitos caranguejos.",
+            researchedMessage: "Após uma pesquisa extremamente minuciosa, parece que na verdade nós precisamos de menos de 20 caranguejos para formar uma ninhada.",
+            effectDesc: "Apenas 5 caranguejos são necessários por cada ninhada. Ainda é nojento.",
             cost: {
                 science: 2500000,
             },
@@ -3192,12 +3191,12 @@ SharkGame.Upgrades = {
             },
         },
         feedingTechniques: {
-            name: "Feeding Techniques",
-            desc: "Alright, so the algae feeds these sponges. How???",
+            name: "Técnicas de Alimentação",
+            desc: "Certo, então as esponjas se alimentam das microalgas. Mas como???",
             researchedMessage:
-                "The shrimps are baffled by our lack of understanding. They tried explaining it to us, but we don't really get it. Something about 'photosynthesis???'",
+                "Os camarões estão estupefatos com a nossa ignorância. Eles tentaram explicar até desenhando, mas nós ainda não entendemos. Algo sobre 'fotosintése'???'",
             effectDesc:
-                "Sponges require a fourth as much algae to live. Shrimp said to move the farms to places where more sun reaches them. What's a sun?",
+                "A esponja precisa de apenas um quarto de microalga para sobreviver. Os camarões falaram para mudar as fazendas para locais onde pega mais sol. O que que é sol?",
             cost: {
                 science: 3500000,
                 sponge: 10000000,
@@ -3229,11 +3228,11 @@ SharkGame.Upgrades = {
             },
         },
         antipestPatrols: {
-            name: "Antipest Patrols",
-            desc: "Woah, hey, this farm's coral is gone! And look - oh, for goodness' sake...it's more worms.",
-            researchedMessage: "Banished the worms. For good. Get out of here!",
+            name: "Patrulhas Anti-Peste",
+            desc: "Eita, todo o coral da nossa fazenda sumiu! Hmm... droga. Droga, droga! Vermes! Mais vermes!.",
+            researchedMessage: "Acabamos com as minhocas. Para sempre. Sai daqui!",
             effectDesc:
-                "Coral farms are four times as productive without worms secretly eating everything. The worm warrior shrimp made sure of that.",
+                "Fazendas de coral são 4 vezes mais produtivas sem as minhocas comendo tudo. Os camarões exterminadores se asseguraram disso.",
             cost: {
                 science: 4500000,
             },

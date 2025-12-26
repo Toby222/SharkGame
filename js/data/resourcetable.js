@@ -899,7 +899,28 @@ SharkGame.ResourceTable = {
         income: {
             crystal: 1,
         },
+        jobs: ["retrievalDuo", "connoisseur"],
         value: 3000,
+    },
+
+    retrievalDuo: {
+        name: "retrieval duos",
+        singleName: "retrieval duo",
+        desc: "A huffy pair of searchers, venturing further than ever before.",
+        color: "#FFFFFF",
+        value: 2000
+    },
+
+    connoisseur: {
+        name: "caracara connoisseurs",
+        singleName: "caracara connoisseur",
+        desc: "Uppity collectors of washed-up seagrass and coral.",
+        color: "#FFFFFF",
+        income: {
+            seagrass: 0.5,
+            coral: 0.5,
+        },
+        value: 2000
     },
 
     coralCollector: {
@@ -939,7 +960,7 @@ SharkGame.ResourceTable = {
     shoreQueller: {
         name: "coral collectors",
         singleName: "coral collector",
-        desc: "blanklike puppets that mark shore borders with seagrass.",
+        desc: "Long puppets that mark shore borders with seagrass.",
         color: "#FFFFFF",
         income: {
             seagrass: 3,
@@ -1499,6 +1520,9 @@ SharkGame.ResourceIncomeAffectorsOriginal = {
             algae: 0.02,
         },
     },
+    retrievalDuo: {
+        multiply: {
+            driftwood: 0.05,
     /*     shoveler: {
         multiply: {
             sand: 0.05,
@@ -1797,7 +1821,7 @@ SharkGame.InternalCategories = {
     },
     caracaras: {
         name: "Caracaras",
-        resources: ["caracara"],
+        resources: ["caracara", "retrievalDuo", "connoisseur"],
     },
     sharkmachines: {
         name: "Shark Machines",

@@ -334,7 +334,7 @@ SharkGame.ResourceTable = {
             crystal: 0.02,
             coral: 0.01,
         },
-        jobs: ["planter", "brood", "collector", "researcher", "curiousCrab", "seabedStripper", "gardener"],
+        jobs: ["planter", "brood", "collector", "researcher", "curiousCrab", "seabedStripper"],
         value: 1000,
     },
 
@@ -844,7 +844,17 @@ SharkGame.ResourceTable = {
 
     // SHORE
 
-    gardener: {},
+    gardener: {
+        name: "crab gardeners",
+        singleName: "crab gardener",
+        color: "#FFFFFF",
+        desc: "Devotion and solace.",
+        income: {
+            coral: 0.5,
+            seagrass: 0.5,
+        },
+        value: 1000,
+    },
     
     mudskipper: {
         name: "mudskippers",
@@ -1525,6 +1535,8 @@ SharkGame.ResourceIncomeAffectorsOriginal = {
     retrievalDuo: {
         multiply: {
             driftwood: 0.05,
+        },
+    },
     /*     shoveler: {
         multiply: {
             sand: 0.05,

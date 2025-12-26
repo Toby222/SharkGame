@@ -3047,10 +3047,10 @@ SharkGame.Upgrades = {
             },
         },
         eusociality: {
-            name: "Eusociality",
-            desc: "The shrimp are weird. They have some advanced social system beyond our comprehension. What's their deal?",
-            researchedMessage: "We have learned far more than we needed to about the duties of egg bearing queens in eusocial colonies.",
-            effectDesc: "Shrimp queens are available, sponge farms are twice as fast, and we'll never sleep soundly again.",
+            name: "Eusocialidade",
+            desc: "Os camarões são estranhíssimos. A sociedade deles é incompreensível. Qual é a deles?",
+            researchedMessage: "Nós aprendemos muito mais do que nós queríamos sobre o dever de rainhas em estágio reprodutivo nas colônias eusociais.",
+            effectDesc: "Rainha camarões estão disponíveis, fazendas de esponja produzem duas vezes mais e nossos pesadelos nunca mais serão os mesmos.",
             cost: {
                 sponge: 7500,
             },
@@ -3102,10 +3102,10 @@ SharkGame.Upgrades = {
             },
         },
         properPractices: {
-            name: "Proper Practices",
-            desc: "We've just been haphazardly throwing sponges here and there and hoping that they grow. In retrospect, not the greatest idea.",
-            researchedMessage: "By arranging sponges in rows, we can give them all the space they need to grow! Eureca!",
-            effectDesc: "Spreading out sponges makes them grow four times as fast.",
+            name: "Normas de Conduta",
+            desc: "Nós só temos jogado esponjas pela areia esperando que elas crescessem. O que, pensando melhor, não foi a melhor ideia.",
+            researchedMessage: "Ao organizar as esponjas em fileiras, nós podemos dar o espaço necessário para elas crescerem direito! Um viva para a ciência!",
+            effectDesc: "Semear as esponjas com um método certo faz elas crescerem 4 vezes mais rápido.",
             cost: {
                 science: 200000,
                 sponge: 25000,

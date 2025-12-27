@@ -3070,6 +3070,7 @@ SharkGame.Upgrades = {
                 "Parece que caranguejos são crustáceos amigáveis que revelaram aos tubarões os segredos de produção de caraguejo. Envolvendo ovos, ou algo parecido. Ovos que se mexem.",
             effectDesc:
                 "Caranguejos e caranguejos curiosos dobram sua velocidade, e ninhadas de caranguejo podem ser formadas. Siris aparentemente são apenas um tipo de caranguejo, o que é legal, mas um pouco medonho, porque caranguejos são assustadores. Que bom que eles estão do nosso lado!",
+            cost: {
                 science: 35000,
                 coral: 750,
             },
@@ -3171,7 +3172,7 @@ SharkGame.Upgrades = {
             },
         },
         broodingBiology: {
-            name: "Biologia Ninhadesa",
+            name: "Biologia de Ninhada",
             desc: "Ninhadas de caranguejo ocupam...muitos caranguejos.",
             researchedMessage: "Após uma pesquisa extremamente minuciosa, parece que na verdade nós precisamos de menos de 20 caranguejos para formar uma ninhada.",
             effectDesc: "Apenas 5 caranguejos são necessários por cada ninhada. Ainda é nojento.",
@@ -3196,7 +3197,7 @@ SharkGame.Upgrades = {
             researchedMessage:
                 "Os camarões estão estupefatos com a nossa ignorância. Eles tentaram explicar até desenhando, mas nós ainda não entendemos. Algo sobre 'fotosintése'???'",
             effectDesc:
-                "A esponja precisa de apenas um quarto de microalga para sobreviver. Os camarões falaram para mudar as fazendas para locais onde pega mais sol. O que que é sol?",
+                "A esponja precisa de apenas um quarto de microalga para sobreviver. Os camarões falaram para mudar as fazendas para locais onde pega mais luz solar. O que que é um solar?",
             cost: {
                 science: 3500000,
                 sponge: 10000000,
@@ -3214,11 +3215,11 @@ SharkGame.Upgrades = {
             },
         },
         secretSmelting: {
-            name: "Secret Smelting",
-            desc: "The shrimps in our frenzy have a secret recipe...",
+            name: "Fundição Secreta",
+            desc: "Os camarões do nosso Cardume têm uma receita secreta...",
             researchedMessage:
-                "It's called porite, and it's made with sand and sponges. Unfortunately, it's a lot of sand. Fortunately, this is the ocean.",
-            effectDesc: "Learned the secret of porite from the shrimp. Glass has never been so useful, probably.",
+                "Se chama porita e é feito com areia e esponjas. Infelizmente, consome muita, mas <strong>muita</strong> areia. Felizmente, você está no oceano.",
+            effectDesc: "Descobrimos o segredo da <strikethrough>receita do hambuguer de siri</strikethrough> porita. Vidro nunca foi tão útil quanto agora, provavelmente.",
             cost: {
                 sponge: 40000000,
                 sand: 8000000,
@@ -3246,8 +3247,8 @@ SharkGame.Upgrades = {
             },
         },
         secretSmithing: {
-            name: "Secret Smithing",
-            desc: "With the power of porite, we can finally...uh...wait, what CAN we do with it?",
+            name: "Modelagem Secreta",
+            desc: "Com a força da porita, nós podemos finalmente...não...pera, o QUE nós podemos fazer com isso?",
             researchedMessage: "After consulting our shrimp informants about it, they have suggested that we use the glass to forge tools.",
             effectDesc: "Farmer shrimp, researcher crabs, and shoveler rays are now available. ",
             cost: {

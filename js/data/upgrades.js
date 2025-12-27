@@ -3249,8 +3249,8 @@ SharkGame.Upgrades = {
         secretSmithing: {
             name: "Modelagem Secreta",
             desc: "Com a força da porita, nós podemos finalmente...não...pera, o QUE nós podemos fazer com isso?",
-            researchedMessage: "After consulting our shrimp informants about it, they have suggested that we use the glass to forge tools.",
-            effectDesc: "Farmer shrimp, researcher crabs, and shoveler rays are now available. ",
+            researchedMessage: "Depois de consultar nossos informantes camarões e eles sugeriram que usassemos o vidro para fazer ferramentas.",
+            effectDesc: "Camarões fazendeiros, caranguejos pesquisadores e arraias com pá estão agora disponíveis. ",
             cost: {
                 science: 6500000,
                 porite: 1500000,
@@ -3261,8 +3261,8 @@ SharkGame.Upgrades = {
             },
         },
         medicallyAssistedReproduction: {
-            name: "Medically Assisted Reproduction",
-            desc: "For all the rays and crabs and shrimp that we DO make, there's a lot that don't make it to adulthood in these boiling waters.",
+            name: "Reprodução Medicamente Assistida",
+            desc: "Para For all the rays and crabs and shrimp that we DO make, there's a lot that don't make it to adulthood in these boiling waters.",
             researchedMessage:
                 "We have given breeders the necessary medical knowledge to address common problems at birth, greatly increasing survival rates.",
             effectDesc: "All breeders are 4 times more effective because a lot more children are making it through to adulthood.",

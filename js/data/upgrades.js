@@ -3297,12 +3297,12 @@ SharkGame.Upgrades = {
             },
             events: ["volcanicGlassTempering"],
             customEffect(background) {
-                return `${sharktext.getResourceName("farmer", false, 2, background)} impact ×2, ${sharktext.getResourceName(
+                return `${sharktext.getResourceName("farmer", false, 2, background)} efeito ×2, ${sharktext.getResourceName(
                     "shoveler",
                     false,
                     2,
                     background,
-                )} impact ×2, ${sharktext.getResourceName("researcher", false, 2, background)} impact ×2`;
+                )} efeito ×2, ${sharktext.getResourceName("researcher", false, 2, background)} efeito ×2`;
             },
         },
         superSmelting: {
@@ -3339,14 +3339,14 @@ SharkGame.Upgrades = {
                 },
             },
             customEffect(background) {
-                return `${sharktext.getResourceName("shoveler", false, 2, background)} impact ×2`;
+                return `${sharktext.getResourceName("shoveler", false, 2, background)} efeito ×2`;
             },
         },
         superShovels: {
-            name: "Super Shovels",
-            desc: "We're running out of sand. We need more sand. Time to get more sand.",
-            researchedMessage: "With enough thinking, we agreed on an amazing solution: we simply make the shovels bigger.",
-            effectDesc: "Rays and their professions are four times as effective and impactful thanks to huge tools. These things are big, so it's good that the sea has basically infinite sand.",
+            name: "Pás Superiores",
+            desc: "Não temos areia o suficiente. Precisamos de mais areia. E vamos consegui-la.",
+            researchedMessage: "Depois de pensar bastante, nós combinamos em uma idea genial: fizemos pás maiores.",
+            effectDesc: "Arraias e suas profissões são 4 vezes mais eficientes por causa de sua ferramentas gigantes. Essas pás são tão grandes que eu teria medo de acabar a areia do oceano, se ela não fosse praticamente infinita.",
             cost: {
                 science: 1.75e10,
                 porite: 2.5e9,
@@ -3362,14 +3362,14 @@ SharkGame.Upgrades = {
                 },
             },
             customEffect(background) {
-                return `${sharktext.getResourceName("shoveler", false, 2, background)} impact ×4`;
+                return `${sharktext.getResourceName("shoveler", false, 2, background)} efeito ×4`;
             },
         },
         massProduction: {
-            name: "Mass Production",
-            desc: "Bigger. Better. More. We can't defend ourselves without more of everything. We need to ramp up production, NOW!",
-            researchedMessage: "Production increased. Factories constructed.",
-            effectDesc: "Our ability to mass-produce tools makes farmers, shovelers, and researchers cost a fifth as much porite.",
+            name: "Produção Em Massa",
+            desc: "Maior. Melhor. Mais! Não podemos nos defender se não produzirmos mais de tudo! Precisamos aumentar nossa produção, AGORA!",
+            researchedMessage: "Produção ampliada. Fábricas construídas.",
+            effectDesc: "Nossa capacidade de produzir ferramentas industrialmente faz com que profissões que mexam com ferramentas custem um quinto da porita de antes.",
             cost: {
                 porite: 2e11,
             },
@@ -3382,7 +3382,7 @@ SharkGame.Upgrades = {
                     false,
                     2,
                     background,
-                )} and ${sharktext.getResourceName("researcher", false, 2, background)} cost 80% less ${sharktext.getResourceName(
+                )} e ${sharktext.getResourceName("researcher", false, 2, background)} cost 80% less ${sharktext.getResourceName(
                     "porite",
                     false,
                     2,
@@ -3391,11 +3391,11 @@ SharkGame.Upgrades = {
             },
         },
         secondDraft: {
-            name: "Second Draft",
-            desc: "Though we have bolstered our production, we realize that the shrimp still outnumber us. We have to try again.",
-            researchedMessage: "We tried again, this time sending a group of shrimp. Only one returned.",
+            name: "Segundo Rascunho",
+            desc: "Mesmo com nossa produção impulsionada, a força militar dos camarões ainda nos supera de lavada. Temos que tentar de novo.",
+            researchedMessage: "Nós mandamos de novo uma carta, dessa vez carregada por um grupo de camarões. Apenas um voltou para o Cardume.",
             effectDesc:
-                "The shrimp were traitors, so said the king. All but one was locked in the dungeons below his castle. Shrimp and their professions are working twice as hard now. They hope to prove that they are still loyal to him.",
+                "Os camarões eram traidores, diz o Rei. Todos exceto um foram presos nas catacumbas abaixo de seu castelo. Camarões e suas profissões começaram a trabalhar o dobro. Eles ainda esperam provar que continuam leais ao Rei.",
             cost: {
                 science: 1e12,
             },
@@ -3411,10 +3411,10 @@ SharkGame.Upgrades = {
             events: ["volcanicSecondDraft"],
         },
         algaeAcolytes: {
-            name: "Algae Acolytes",
-            desc: "More algae. Feed the sponges. Feed them.",
-            researchedMessage: "We may have accidentally created a bit of a cult.",
-            effectDesc: "There is now a cult. Of algae. Algae worship and total dedication. I'm not sure if this is a good thing.",
+            name: "Acólitos da Alga",
+            desc: "Mais alga. Alimentar as esponjas. Alimentar.",
+            researchedMessage: "Talvez, possivelmente, sem querer querendo criamos um seita.",
+            effectDesc: "Agora temos umas seita. Sobre microalgas. Veneração à alga com dedicação total. Eu não tenho certeza se isso é bom.",
             cost: {
                 algae: 2e9,
                 sponge: 5e12,
@@ -3424,11 +3424,11 @@ SharkGame.Upgrades = {
             },
         },
         centralCollection: {
-            name: "Central Collection",
-            desc: "By taking out the middleshrimps, we can speed up production of sponge.",
+            name: "Coleção Central",
+            desc: "Ao tirar os gerenciadores intermediários, podemos coletar esponja mais rápido.",
             researchedMessage:
-                "The haphazard spread of people bringing in sponge has finally come to an end as the Central Collection Agency (CCA) gets to work.",
-            effectDesc: "A more organized system of sponge collection has quadrupled sponge profits.",
+                "A montueira de fazendeiros trazendo esponja sem planejamento para, com o novo Braço Administrativo de Poríferos Organizado (BAPO) começando seu trabalho.",
+            effectDesc: "Um sistema muito mais organizado de coleção de esponja quadruplicou a sua produção.",
             cost: {
                 sponge: 5e15,
             },
@@ -3442,11 +3442,11 @@ SharkGame.Upgrades = {
             },
         },
         rumoredRecollections: {
-            name: "Rumored Recollections",
-            desc: "Help the acolytes properly investigate all the rumors about the king so that we stand the best chance of averting this war.",
-            researchedMessage: "Rumors say the king has a secret, otherworldly portal in his castle. They also say he thinks you aim to replace him.",
+            name: "Recoleção Fofocada",
+            desc: "Ajude os seguidores investigar os rumores de como o Rei vê o Cardume para uma melhor oportunidade de evitar uma guerra.",
+            researchedMessage: "De acordo com o que se fala, o Rei tem um portal de outro mundo escondido com ele. Fofocas também dizem que ele acha que você quer tomar seu lugar.",
             effectDesc:
-                "Researchers are four times as impactful. Also, rumors say the king knows you personally. What??? That's clearly not true! Then again, not every rumor is a winner.",
+                "Pesquisadores são 4 vezes mais pesquisentos. Também, estão falando que o Rei te conhece pessoalmente. Como assim??? Isso é claramente errado! Mas também, não se pode confiar em tudo que se ouve por aí.",
             cost: {
                 science: 1e13,
                 sponge: 2e16,
@@ -3456,16 +3456,16 @@ SharkGame.Upgrades = {
             },
             events: ["volcanicCrabReform"],
             customEffect(background) {
-                return `${sharktext.getResourceName("researcher", false, 2, background)} impact ×4`;
+                return `${sharktext.getResourceName("researcher", false, 2, background)} efeito ×4`;
             },
         },
         sandReform: {
-            name: "Sand Reform",
-            desc: "We have too many rays collecting sand willy-nilly when we could get more sand if only we were more organized.",
+            name: "Reforma Arária",
+            desc: "Nós temos arraias demais coletando areia desordenadamente quando poderiamos fazer coletar muito mais se tivéssemos um pingo de ordem.",
             researchedMessage:
-                "Delegated the task of chopping up sand duties to a central agency. Rays have been grouped up and things are back on track.",
+                "O trabalho de organizar os trabalhos de cavação foi delegado para uma agência central. Arraias foram agrupadas e tudo está correndo bem melhor.",
             effectDesc:
-                "Rays and their professions are four times as effective and impactful. We really have a bad habit of being disorganized, don't we?",
+                "Arraias e suas profissões são quatro vezes mais eficientes. Realmente temos um problema constante de desorganização, não é?",
             cost: {
                 science: 3e13,
                 sand: 1e16,
@@ -3482,16 +3482,16 @@ SharkGame.Upgrades = {
                 },
             },
             customEffect(background) {
-                return `${sharktext.getResourceName("shoveler", false, 2, background)} impact ×4`;
+                return `${sharktext.getResourceName("shoveler", false, 2, background)} efeito ×4`;
             },
         },
         crabReform: {
-            name: "Crab Reform",
-            desc: "Okay, these reforms are getting a little ridiculous.",
+            name: "Reforma Sirária",
+            desc: "Essas reformas estão ficando um pouco ridículas.",
             researchedMessage:
-                "Honestly I'm not sure what the crabs did here, we just let them do their thing. They'll figure it out, they're smart.",
+                "Eu não sei o que exatamente o que os siris fazem por aqui, mas nós deixamos eles se reorganizarem. Eles são espertos, vão inventar alguma coisa.",
             effectDesc:
-                "Crabs and their professions are four times as effective and impactful. Reason is unknown because we don't feel like asking the researchers. If it works, it works.",
+                "Caranguejos e suas profissões são 4 vezes mais eficientes. Motivos desconhecidos porque não queremos perguntar os pesquisadores. Desde que funcione, tá bom pra mim.",
             cost: {
                 science: 4e13,
                 coral: 1e16,
@@ -3509,14 +3509,14 @@ SharkGame.Upgrades = {
                 },
             },
             customEffect(background) {
-                return `${sharktext.getResourceName("researcher", false, 2, background)} impact ×4`;
+                return `${sharktext.getResourceName("researcher", false, 2, background)} efeito ×4`;
             },
         },
         landReform: {
-            name: "Land Reform",
-            desc: "We have too many farms placed willy-nilly when we could use less space if only we were more organized.",
-            researchedMessage: "Delegated the task of chopping up land to a central agency. Farms have been moved and things are back on track.",
-            effectDesc: "Farms cost a fifth of the sand. We really have a bad habit of being disorganized, don't we?",
+            name: "Reforma Agrária",
+            desc: "Temos muitos latinfúndios monoculturistas que não servem propósito social algum e só tomam espaço.",
+            researchedMessage: "Fizemos um instituto central para dividir áreas de cultivo entre fazendeiros de forma justa. Fronteiras foram redefinidas e a produção está de volta.",
+            effectDesc: "Fazendas custam um quinto da areia de antes, agora que terras improdutivas foram dados para populações sem terras.",
             cost: {
                 science: 5e15,
                 sponge: 5e18,
@@ -3530,15 +3530,15 @@ SharkGame.Upgrades = {
                     false,
                     2,
                     background,
-                )} cost 80% less ${sharktext.getResourceName("sand", false, 2, background)}`;
+                )} custarão 80% menos ${sharktext.getResourceName("sand", false, 2, background)}`;
             },
         },
         finalDraft: {
-            name: "Final Draft",
-            desc: "Third time's the charm. We're out of options here.",
+            name: "Último Rascunho",
+            desc: "Três é o número da sorte. Se isso não der certo... nem quero pensar no que vai acontecer.",
             researchedMessage:
-                "You went personally. The king's guard captured you and brought you to him, but as he started to speak, he stopped suddenly. Confusion replaced the hostility in his voice as he examined you from afar, and he asked you to speak instead.",
-            effectDesc: "You expressed that you didn't mean to replace him. He agreed to follow you to the city to see that for himself.",
+                "Você foi pessoalmente. O guarda do Rei te pegou e te levou até Vossa Alteza, mas antes dele falar qualquer coisa, ele parou. Toda hostilidade que tinha se transformou em espanto ao te olhar do trono, então ele te ordenou a falar primeiro.",
+            effectDesc: "Você falou que em momento algum você quis substitui-lo. O Rei aceitou ir até a sua cidade para ver isso com os próprios olhos.",
             cost: {
                 science: 2e16,
             },
@@ -3547,11 +3547,11 @@ SharkGame.Upgrades = {
             },
         },
         apologeticAmnesty: {
-            name: "Apologetic Amnesty",
-            desc: "The king is willing to show some mercy. Give him what he wants - repayment for what we stole, apparently.",
-            researchedMessage: "The king has decided to open the gate for us, on the condition that he takes control of the frenzy. A deal's a deal.",
+            name: "Perdão Comprado",
+            desc: "O Rei está disposto a demonstrar piedade. Dê a ele o que deseja - compensação pelo que nós roubamos, de acordo com ele.",
+            researchedMessage: "O Rei decidiu abrir o portal para nós, na condição que o Cardume se torne propriedade dele. Para você, aceitável.",
             effectDesc:
-                "The king took us into an old, secret room behind the throne. His assistants flipped the right levers and switches, and the gate opened.",
+                "O Rei nos levou a uma salinha secreta e empoeirada atrás de seu trono. O conselheiro dele virou uma alavanca, e o portal se abriu.",
             cost: {
                 sponge: 1e21,
             },
@@ -3739,11 +3739,11 @@ SharkGame.Upgrades = {
     },
     tempestuous: {
         statsDiscovery: {
-            name: "A Cave",
-            desc: "You spot a cave.",
-            researchedMessage: "Finally, some rest.",
+            name: "Uma Caverna",
+            desc: "Você vê uma caverna.",
+            researchedMessage: "Aleluia. Algum descanso",
             effectDesc:
-                "Found a place to stay that's not being assaulted by horrible wind. The frenzy can make short trips outside without much risk.",
+                "Achamos um lugar para não ser bulido pelo vento terrível. O Cardume consegue sair em pequenas excursões sem risco de se perder para sempre, mas ainda é perigoso.",
             cost: {
                 fish: 500,
             },
@@ -4136,10 +4136,10 @@ SharkGame.Upgrades = {
             },
         },
         crystalClippers: {
-            name: "Crystal Clippers",
-            desc: "How did we not think of this sooner?",
-            researchedMessage: "Crystal clippers deployed. The stormgoers rejoice.",
-            effectDesc: "Stormgoers are three times as effective at picking up seagrass thanks to actual tools.",
+            name: "Tesoura de Cristal",
+            desc: "Como que ninguém pensou nisso antes?",
+            researchedMessage: "Tesouras de cristal distribuídas. Os desbravadores celebram.",
+            effectDesc: "Desbravadores coletam três vezes mais grama graças a ferramentas de verdade.",
             cost: {
                 science: 1000000,
                 crystal: 50000,
@@ -4426,7 +4426,7 @@ SharkGame.Upgrades = {
             },
             events: ["tempestuousInternalExploration"],
             customEffect(background) {
-                return `${sharktext.getResourceName("billfishMechanic", false, 1, background)} impact ×5`;
+                return `${sharktext.getResourceName("billfishMechanic", false, 1, background)} efeito ×5`;
             },
         },
         recyclerDiscovery: {

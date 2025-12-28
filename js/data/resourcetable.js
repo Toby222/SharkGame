@@ -844,11 +844,11 @@ SharkGame.ResourceTable = {
 
     // SHORE
 
-    gardener: {
-        name: "crab gardeners",
-        singleName: "crab gardener",
-        color: "#FFFFFF",
-        desc: "Devotion and solace.",
+    stabilizer: { //my inner british english speaker is screaming blue murder --ThreeCrabs
+        name: "stabilizer crabs",
+        singleName: "stabilizer crab",
+        color: "#339966",
+        desc: "Devotion and dedication.",
         income: {
             coral: 0.5,
             seagrass: 0.5,
@@ -865,7 +865,7 @@ SharkGame.ResourceTable = {
             driftwood: 0.5,
         },
         jobs: ["burrow", "mentor"],
-        value: 500, //(what does this mean?)
+        value: 500, //(what does this mean?) --ThreeCrabs
     },
 
     burrow: {

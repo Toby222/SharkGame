@@ -907,7 +907,7 @@ SharkGame.ResourceTable = {
         name: "caracaras",
         singleName: "caracara",
         desc: "Prideful denizens of the beyond, harnessing sky like water.",
-        color: "#FFFFFF",
+        color: "#604020",
         income: {
             crystal: 1,
         },
@@ -919,7 +919,7 @@ SharkGame.ResourceTable = {
         name: "retrieval duos",
         singleName: "retrieval duo",
         desc: "A huffy pair of searchers, venturing further than ever before.",
-        color: "#FFFFFF",
+        color: "#cc9966",
         value: 2000
     },
 
@@ -927,7 +927,7 @@ SharkGame.ResourceTable = {
         name: "caracara connoisseurs",
         singleName: "caracara connoisseur",
         desc: "Uppity collectors of washed-up seagrass and coral.",
-        color: "#FFFFFF",
+        color: "#669900",
         income: {
             seagrass: 0.5,
             coral: 0.5,
@@ -939,7 +939,7 @@ SharkGame.ResourceTable = {
         name: "coral collectors",
         singleName: "coral collector",
         desc: "Crablike puppets that saw at the coral with serrated claws.",
-        color: "#FFFFFF",
+        color: "#99004D",
         income: {
             coral: 3
         },
@@ -950,7 +950,7 @@ SharkGame.ResourceTable = {
         name: "driftwood snarers",
         singleName: "driftwood snarer",
         desc: "Drifting, raylike puppets collecting driftwood in their seagrass nets.",
-        color: "#FFFFFF",
+        color: "#333300",
         income: {
             driftwood: 2
         },
@@ -961,7 +961,7 @@ SharkGame.ResourceTable = {
         name: "hardbark smiths",
         singleName: "hardbark smith",
         desc: "Clawed, orblike puppets that dip wood in molten crystal.",
-        color: "#FFFFFF",
+        color: "#00004D",
         income: {
             hardbark: 2,
             crystal: -2
@@ -970,10 +970,10 @@ SharkGame.ResourceTable = {
     },
 
     shoreQueller: {
-        name: "coral collectors",
-        singleName: "coral collector",
+        name: "shore quellers",
+        singleName: "shore queller",
         desc: "Wormlike puppets marking shore borders with seagrass - and crystallisng the rest.",
-        color: "#FFFFFF",
+        color: "#CCCC00",
         income: {
             seagrass: 3,
             crystal: 3,
@@ -985,7 +985,7 @@ SharkGame.ResourceTable = {
         name: "rough sand",
         singleName: "rough sand",
         desc: "Jagged grains that dig into our flesh.",
-        color: "#FFFFFF",
+        color: "#CC9900",
         value: -100,
     },
             
@@ -1716,6 +1716,7 @@ SharkGame.ResourceCategories = {
             // "shoveler",
             // "miller",
             // "rockLobster"
+            "stabilizer",
             "mentor",
             "retrievalDuo",
             "connoisseur",

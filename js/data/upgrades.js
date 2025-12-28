@@ -3262,10 +3262,10 @@ SharkGame.Upgrades = {
         },
         medicallyAssistedReproduction: {
             name: "Reprodução Medicamente Assistida",
-            desc: "Para For all the rays and crabs and shrimp that we DO make, there's a lot that don't make it to adulthood in these boiling waters.",
+            desc: "Para cada arraia, caranguejo ou camarão que sobrevive, muitos outros não passam da infância nessas impiedosas águas ferventes.",
             researchedMessage:
-                "We have given breeders the necessary medical knowledge to address common problems at birth, greatly increasing survival rates.",
-            effectDesc: "All breeders are 4 times more effective because a lot more children are making it through to adulthood.",
+                "Nós provemos os criadores com a formação necessária para lidar com problemas comuns entre os recém-chocados, aumentando e muito a chance deles crescerem.",
+            effectDesc: "Todos os reprodutores são 4 vezes mais eficientes agora que mais filhotes chegam à idade adulta.",
             cost: {
                 science: 1.75e8,
             },
@@ -3281,12 +3281,12 @@ SharkGame.Upgrades = {
             },
         },
         glassTempering: {
-            name: "Glass Tempering",
-            desc: "Glass hardening techniques can improve the usefulness of our tools.",
+            name: "Temperagem de Vidro",
+            desc: "Técnicas de temperagem de vidro podem fazê-lo mais resistente e, com isso, tornar nossas ferramentas melhores.",
             researchedMessage:
-                "The shrimp have taught us all they know about the properties of glass, and by rapidly heating and cooling it, we can make it stronger!",
+                "Os camarões nos ensinaram tudo que eles sabem sobre o vidro e suas propriedades, ao fazer vários de ciclos de esquentar e esfriar, nós podemos fazer um vidro mais forte!",
             effectDesc:
-                "Hardened tools make farmers, shovelers, and researchers twice as impactful. No more comedically timed shattering of vials during important experiments!",
+                "Ferramentas mais resistentes fazem fazendeiros, pázudos e pesquisadores duas vezes mais fortes. Chega das nossas coisas quebrando em momentos comicamente inoportunos!",
             cost: {
                 science: 1e9,
                 porite: 2.5e7,
@@ -3306,11 +3306,11 @@ SharkGame.Upgrades = {
             },
         },
         superSmelting: {
-            name: "Super Smelting",
-            desc: "Vents make heat. Glass needs heat. ...this gives me an idea!",
-            researchedMessage: "Using the giant geothermal vents as supersized forges, we can mass-produce porite!",
+            name: "Super Derretimento",
+            desc: "Fontes fazem calor. Vidro precisa de calor. ...eu acho que tive uma ideia!",
+            researchedMessage: "Ao usar as fontes hidrotermais gigantes como fornalhas em proporções labubônicas, nos conseguimos produzir porita em escala indústrial!",
             effectDesc:
-                "Gained the ability to skim sand and sponge production to auto-smelt porite! See, I told you those vents would be a source for future technology!",
+                "Gainhou a habilidade de desviar a sua produção de areia e esponja para fundir porita automaticamente! Tá vendo, eu disse que essas fontes iam prover tecnologia futura!",
             cost: {
                 science: 2e9,
                 porite: 1e8,
@@ -3321,7 +3321,7 @@ SharkGame.Upgrades = {
             },
         },
         firstDraft: {
-            name: "First Draft",
+            name: "Primeiro Rascunho",
             desc: "We need to convince the king not to kill us. Diplomacy seems like the only good option.",
             researchedMessage: "We sent a letter with a ray. The ray came back in a panic, holding another note. The king is not impressed by our \"vapid flattery.\"",
             effectDesc:

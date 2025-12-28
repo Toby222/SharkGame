@@ -3322,10 +3322,10 @@ SharkGame.Upgrades = {
         },
         firstDraft: {
             name: "Primeiro Rascunho",
-            desc: "We need to convince the king not to kill us. Diplomacy seems like the only good option.",
-            researchedMessage: "We sent a letter with a ray. The ray came back in a panic, holding another note. The king is not impressed by our \"vapid flattery.\"",
+            desc: "Precisamos convencer o Rei a não nos matar. Diplomacia parece a única opção viável.",
+            researchedMessage: "Mandamos uma arraia para entregar a carta. Ela voltou apavorada e com uma outra carta. O Rei não se impressionou com a nossa \"bajulação vazia.\"",
             effectDesc:
-                "Tried and failed to resolve this issue via diplomacy. Our messenger has been inconsolable. They won't tell us what happened. This has stressed out the rays and shovelers, who are both working twice as hard.",
+                "Tentamos e falhamos em resolver isso na base da conversa. Nosso mensageiro está inconsolável, mas não vai nos contar o que aconteceu. Isso estressou as arraias do Cardume, que estão trabalhando em dobro por medo.",
             cost: {
                 science: 7.5e9,
             },

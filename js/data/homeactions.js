@@ -4604,7 +4604,7 @@ SharkGame.HomeActions = {
         },
     },
 
-    //---------------------------------------------------
+//---------------------------------------------------
     shore: {
         
     // MANUAL RESOURCE COLLECTION /////////////////////
@@ -4689,6 +4689,36 @@ SharkGame.HomeActions = {
             ],
             helpText: "Liberate a mudskipper from its boring old life and command it to retrieve driftwood for you.",
         }, //end of creature code
+        getCaracara: {
+            name: "Procure caracara",
+            effect: {
+                resource: {
+                    caracara: 1,
+                },
+            },
+            cost: [
+                { resource: "driftwood", costFunction: "linear", priceIncrease: 5 },
+                  ],
+            max: "caracara",
+            prereq: {
+                upgrade: ["raiderTruce"],
+            },
+            outcomes: [
+                "A striated caracara joins you.",
+                "A caracara awaits your command. Haughtily.",
+                "The caracara flies off with a task.",
+                "It gives you a strange look before it leaves.",
+                "The caracara accidentally sheds a feather as it lifts off.",
+            ],
+            multiOutcomes: [
+                "They await you in flocks.",
+                "They blot out the sun.",
+                "They cast a shadow upon all as they fly.",
+                "Their presence commands respect from all but us.",
+                "You know what, they're kinda like sharks when you think about it."
+            ],
+            helpText: "Convince a caracara from the surface to retrieve crystals.",
+        }, //end of creature code
 
         // MUDSKIPPER JOBS ///////////////////////////
         getBurrow: {
@@ -4718,7 +4748,7 @@ SharkGame.HomeActions = {
                 "//*to be written in future*//",
             ],
             helpText: "Allow a mudskipper to dig a burrow to do some weird flailing or something.",
-        }, //end of creature code
+        }, //end of job code
         getMentor: {
             name: "Train mudskipper mentor",
             effect: {
@@ -4746,6 +4776,10 @@ SharkGame.HomeActions = {
                 "//*to be written in future*//",
             ],
             helpText: "Teach a mudskipper techniques on puppet work, so that it may pass on its knowledge.",
+            
+        // CARACARA JOBS ///////////////////////////
+        getRetrievalDuo: {},
+        getConnoisseur: {},
         },
         
    },

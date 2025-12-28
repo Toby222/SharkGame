@@ -363,8 +363,8 @@ SharkGame.WorldTypes = {
          foresight: {
              vagueLongDesc: "This place is so shallow.",
              longDesc: "A lapping, sandy ocean, creeping upon the shores.",
-             missing: ["kelpstuff", "planter"],
-             present: ["mudskipper", "driftwood", "hardbark", "coral", "seagrass", "caracaras"],
+             missing: ["kelp", "seaApple", "planter"],
+             present: ["mudskipper", "driftwood", "hardbark", "coral", "seagrass", "caracara"],
              tip: "Not all is as it seems. Respect the brown fish that survive the beyond.",
           },
             entry: "You enter a low-strung sandy sea, just over tall enough for you to fit. It's clear water on all sides, except for behind you...",
@@ -377,6 +377,7 @@ SharkGame.WorldTypes = {
              "rays",
              "crab",
              "brood",
+             "stabilizer",
              "mudskippers",
              "caracaras",
              "basicmaterials",

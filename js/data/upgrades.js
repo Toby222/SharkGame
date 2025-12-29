@@ -3751,10 +3751,10 @@ SharkGame.Upgrades = {
             events: ["tempestuousFindCave"],
         },
         crystalBite: {
-            name: "Crystal Bite-Gear",
-            desc: "Bite the crystals we have into something to help biting!",
-            researchedMessage: "Weird teeth-wear has been developed, and sharks can now catch fish better as a result.",
-            effectDesc: "Sharks are twice as effective with their new biting gear. Turns out they work better outside the mouth!",
+            name: "Mordedura de Cristal",
+            desc: "Morda os cristais até eles ficarem num formato que nos ajude a morder ainda melhor!",
+            researchedMessage: "Dentaduras estranhas foram feitas, e tubarões conseguem agora caçar peixes melhor.",
+            effectDesc: "Com seus novos mordedores, a efetividade dos tubarões é dobrada. Na verdade, funciona ainda melhor se for usado fora da boca!",
             cost: {
                 science: 50,
                 fish: 10,
@@ -3770,10 +3770,10 @@ SharkGame.Upgrades = {
             },
         },
         cavernousContact: {
-            name: "Cavernous Contact",
-            desc: "The scientists have reported noises from the dark backside of the cave.",
-            researchedMessage: "Found weird long-nose fish. Long, pointy noses... It was an awkward first encounter.",
-            effectDesc: "Billfish can be recruited to brave the storm for more fish.",
+            name: "Contato Cavernoso",
+            desc: "Os cietistas avisam sobre barulhos misteriosos no fundo da caverna.",
+            researchedMessage: "Achamos peixes com narizes enormes, longos e pontudos... Foi um primeiro encontro esquisito.",
+            effectDesc: "Espadas podem ser recrutados para desbravar a tempestade por mais peixes.",
             cost: {
                 science: 50,
                 fish: 250,
@@ -3783,10 +3783,10 @@ SharkGame.Upgrades = {
             },
         },
         crystalSpade: {
-            name: "Crystal Spades",
-            desc: "Fashion strange harness-tools for the rays.",
-            researchedMessage: "The rays can now bother the sand more effectively, and dig up more sand now!",
-            effectDesc: "Rays are twice as effective with their specially adapted digging tools.",
+            name: "Chapa de Cristal",
+            desc: "Aperte o cristal até produzir uma armadura de cabeça para as raias.",
+            researchedMessage: "As arraias conseguem perturbar mais a areia, ou seja, agora coletamos mais areia!",
+            effectDesc: "Efetividade das arraias duplica devido a suas novas ferramentas adaptadas ao seus formatos.",
             cost: {
                 science: 50,
                 sand: 500,
@@ -3802,10 +3802,10 @@ SharkGame.Upgrades = {
             },
         },
         crystalContainer: {
-            name: "Crystal Containers",
-            desc: "Make weird bottle things from the crystals we have. Maybe useful??",
-            researchedMessage: "Well, things can go into these containers that aren't water. This makes science easier!",
-            effectDesc: "Scientists are twice as effective at making with the science.",
+            name: "Garrafas de Cristal",
+            desc: "Faça uns trecos garrafescos usando os nossos cristais. Talvez seja útil??",
+            researchedMessage: "Bem, coisas que não são água podem ser guardadas nesse vidrinhos. A ciência ficou mais fácil!",
+            effectDesc: "Cientistas têm sua velocidade dobrada ao fazer ciência.",
             cost: {
                 science: 100,
                 crystal: 50,
@@ -3820,9 +3820,9 @@ SharkGame.Upgrades = {
             },
         },
         crystalSpear: {
-            name: "Crystal Spear",
-            desc: "Our spear-wielding friends could use an upgrade.",
-            researchedMessage: "We've designed various pointy implements for billfish to use. A sharper slash is a better slash.",
+            name: "Lança de Cristal",
+            desc: "Nossos amigos narigudos poderiam ter uma melhoria.",
+            researchedMessage: "Fizemos ferramentas variadas para cada tipo de bico dos espadas. Um corte mais afiado é um corte melhor.",
             effectDesc: "Billfish catch fish two and a half times faster thanks to a diversified toolset.",
             cost: {
                 science: 125,
@@ -3840,11 +3840,10 @@ SharkGame.Upgrades = {
             },
         },
         seabedGeology: {
-            name: "Seabed Geology",
-            desc: "The billfish have volunteered to survey the seafloor for us. It's a risky mission, but it's a necessary one.",
-            researchedMessage:
-                "They came back with a bunch of weird stuff, but were particularly happy about 'seagrass'. They say it will come in handy.",
-            effectDesc: "Rays are twice as effective with their understanding of the seabed and its varieties of sediment. Also got seagrass. Yay?",
+            name: "Geologia Oceânica",
+            desc: "Os espadas se voluntariaram para examinar a areia lá fora. Uma missão perigosa, mas necessária.",
+            researchedMessage: "Eles voltaram com um monte de coisas estranhas, mas estavam especialmente interessados em algo que eles chamaram 'grama'. Eles dizem que é útil.",
+            effectDesc: "Com um novo entendimento do solo oceânico e seus sedimentos, eficiência de arraias é dobrada. Também descobrimos grama marinha. Eba?",
             cost: {
                 science: 250,
                 sand: 750,
@@ -3861,10 +3860,10 @@ SharkGame.Upgrades = {
             events: ["tempestuousGiveSeagrass"],
         },
         underwaterChemistry: {
-            name: "Underwater Chemistry",
-            desc: "With the weird bottles, we can now put things and other things into them and see what happens.",
-            researchedMessage: "Well, nothing useful was determined, but if we keep on doing it we make tremendous leaps for science!",
-            effectDesc: "Scientists are twice as effective with their new chemical insights.",
+            name: "Química Submersa",
+            desc: "Com nossas garrafas estrahas, podemos colocar coisas junto com outras coisas e ver o que acontece.",
+            researchedMessage: "Então, nada de útil foi descoberto, mas se a gente continuar com isso, vamos fazer grandes passos pela ciência!",
+            effectDesc: "Cientistas usam seus novos conhecimentos químicos para dobrar sua eficiência.",
             cost: {
                 science: 250,
                 crystal: 50,
@@ -3879,10 +3878,10 @@ SharkGame.Upgrades = {
             },
         },
         sandbagging: {
-            name: "Sandbagging",
-            desc: "If crabs venture out too far, they risk getting lost. The billfish have a suggestion.",
-            researchedMessage: "The billfish showed us how to tie seagrass into bundles. By filling them with sand, we can weigh down crabs!",
-            effectDesc: "We can equip crabs with sandbags to make them into stormgoers. They can venture much farther from the cave.",
+            name: "Ensacamento de Areia",
+            desc: "Se caranguejos forem longe demais, eles correm o perigo de serem levados. Os espadas têm uma sugestão.",
+            researchedMessage: "Os espadas nos mostraram como fazer sacos com as fibras da grama. E enchendo-as de areia, os caranguejos podem ser ancorados no chão!",
+            effectDesc: "Podemos equipar caranguejos com bolsas areia para torná-los em desbrvadores. Eles conseguem ir muito mais longe da caverna agora.",
             cost: {
                 science: 500,
                 sand: 5000,
@@ -3893,10 +3892,10 @@ SharkGame.Upgrades = {
             },
         },
         xenobiology: {
-            name: "Xenobiology",
-            desc: "This seagrass stuff is mostly just green or whatever, but what are these THINGS growing on it?",
-            researchedMessage: "Flowers! What does that even mean!? Further research required. It could be such a benefit for science!",
-            effectDesc: "We can now dissect seagrass flowers to further the cause of science.",
+            name: "Xenobiologia",
+            desc: "Essa tal de grama é majoritariamente verde, mas que budegas coloridas são essas?",
+            researchedMessage: "Flores! O que isso significa!? Precisamos de mais pesquisa nisso. Pode ser um grande avanço à ciência!",
+            effectDesc: "Nós podemos dissecar grama pela ciência. Também, nós descobrimos que grama são definitivamente plantas. Que agradável.",
             cost: {
                 science: 1250,
                 seagrass: 500,
@@ -3925,12 +3924,12 @@ SharkGame.Upgrades = {
             },
         },
         crabBiology: {
-            name: "Crab Biology",
-            desc: "Crabs are a mystery. They keep to themselves and dig up crystals or tear up grass. What is even up with that? What ARE crabs??",
+            name: "Biologia Caranguêsa",
+            desc: "Essas criaturinhas são um mistério. Eles são calados e apenas cavam cristais ou arrancam plantas. Por que eles fazem isso? E o QUE são siris??",
             researchedMessage:
-                "It turns out crabs are friendly crustaceans that have revealed to the sharks the secrets of crab generation. It involves eggs, or something. Squirmy eggs.",
+                "Parece que caranguejos são crustáceos amigáveis que revelaram aos tubarões os segredos de produção de caraguejo. Envolvendo ovos, ou algo parecido. Ovos que se mexem.",
             effectDesc:
-                "Crabs and crab stormgoers are four and two times as effective, respectively, and crab broods are available. Crabs are alright but they are also sort of terrifying and weird. Good thing they're on our side!",
+                "Caranguejos e desbravadores são, respectivamente, 4 e 2 vezes mais rápido, e ninhadas de caranguejo podem ser formadas. Siris aparentemente são apenas um tipo de caranguejo, o que é legal, mas um pouco assustador, porque caranguejos são assustadores. Que bom que eles estão do nosso lado!",
             cost: {
                 science: 3500,
                 seagrass: 1750,
@@ -3946,12 +3945,12 @@ SharkGame.Upgrades = {
             },
         },
         billfishBiology: {
-            name: "Billfish Biology",
-            desc: "We still don't know much about our lance-wielding friends. They zip around in the water and slash at stuff, but what are they REALLY?",
+            name: "Biologia Espadenta",
+            desc: "Ainda não We still don't know much about our lance-wielding friends. They zip around in the water and slash at stuff, but what are they REALLY?",
             researchedMessage:
-                "We refuse to accept the narrative the billfish are pushing on us, but the scientists are adamant. They say they are literally just fish with big noses.",
+                "Não, de forma alguma isso pode estar certo! Mas ambos os cientistas e os espadas falam a mesma coisa. Que eles são realmente apenas peixes com narizes grandes.",
             effectDesc:
-                "Billfish are four times more effective, and billfish pairs are available. I swear, our scientists must be losing it - these things are not fish, surely.",
+                "Os 'peixes-espadas' são quatro vezes mais eficientes e pares de espadas podem ser formados. Nossos cientistas devem estar viajando - esses pe... esses animais não são peixes, de forma alguma.",
             cost: {
                 science: 4000,
                 fish: 20000,
@@ -4014,12 +4013,12 @@ SharkGame.Upgrades = {
             },
         },
         heavySifting: {
-            name: "Heavy Sifting",
-            desc: "The billfish have pointed out that our method of sandbagging could still use a little work.",
+            name: "Peneiração Pesada",
+            desc: "Os espadas nos mostraram que poderíamos melhorar o processo de ensacamento.",
             researchedMessage:
-                "The billfish showed us their seagrass sifters, and we helped them build more. Now we filter the heaviest sand for sandbagging, and leave the rest for smelting!",
+                "Eles nos mostraram os filtros de grama que inventaram e nós ajudamos a construir mais. Agora nós separamos a areia mais pesada para os caranguejos, e o resto é fundido!",
             effectDesc:
-                "Stormgoers cost 75% less sand, rays are 4 times as effective at picking up sand, and laser rays are 8 times better at fusing it. We have so, so much to learn about sand...",
+                "Desbravadores custam um quarto da areia de antes, arraias coletam 4 vezes mais areia e arraias laser produzem 8 vezes mais cristais. Ainda temos tanta coisa para aprender sobre areia...",
             cost: {
                 science: 35000,
                 seagrass: 15000,

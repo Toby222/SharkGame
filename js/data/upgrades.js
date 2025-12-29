@@ -212,7 +212,7 @@ SharkGame.Upgrades = {
         },
         laserRays: {
             name: "Raia LASER",
-            desc: "Usa ciência tubarão super mágica e maneira para pegar o calor das fontes para uso.",
+            desc: "Use ciência tubarão super mágica e legalzona para pegar o calor das fontes para uso.",
             researchedMessage: "As arraias agora podem ser equipadas com um laser para fundir areia em cristal! Bem vindos ao futuro! Tudo no futuro é cromado!",
             effectDesc: "Podemos treinar arraias laser para derreter areia em cristal vítreo.",
             cost: {
@@ -3999,10 +3999,10 @@ SharkGame.Upgrades = {
             },
         },
         laserRays: {
-            name: "Laser Rays",
-            desc: "Using arcane shark mystery science, capture the heat of the vents for use by rays.",
-            researchedMessage: "The rays can now be granted gear that will let them fuse sand into crystal! Future!",
-            effectDesc: "Laser rays can now be geared up to burn the very sand to glassy crystal.",
+            name: "Raia LASER",
+            desc: "Use ciência tubarão super mágica e legalzona para pegar o calor das fontes para uso.",
+            researchedMessage: "As arraias agora podem ser equipadas com um laser para fundir areia em cristal! Bem vindos ao futuro! Tudo no futuro é cromado!",
+            effectDesc: "Podemos treinar arraias laser para derreter areia em cristal vítreo.",
             cost: {
                 science: 1000,
                 sand: 20000,
@@ -4035,7 +4035,7 @@ SharkGame.Upgrades = {
                 },
             },
             customEffect(background) {
-                return `${sharktext.getResourceName("stormgoer", false, 2, background)} cost 75% less ${sharktext.getResourceName(
+                return `${sharktext.getResourceName("stormgoer", false, 2, background)} custam 75% menos ${sharktext.getResourceName(
                     "sand",
                     false,
                     2,
@@ -4064,10 +4064,10 @@ SharkGame.Upgrades = {
             },
         },
         magicBottles: {
-            name: "Magic Bottles",
-            desc: "The billfish have found something very, very strange outside: bottles full of wind!",
-            researchedMessage: "With enough study, we were finally able to reproduce them. Now the question is, what to do with them?",
-            effectDesc: "We can now make magic bottles that spew endless wind. Further study is DEFINITELY required.",
+            name: "Garrafas Mágicas",
+            desc: "Os espadas trouxeram algo muito estranho lá de fora: garrafas cheias de vento!",
+            researchedMessage: "Depois de muita tentativa e erro, finalmente conseguimos replicá-las. A pergunta que fica agora é: O que fazer com elas?",
+            effectDesc: "Podemos fazer garrafas mágicas que cospem ar sozinhas. Mais pesquisa é COM CERTEZA necessária.",
             cost: {
                 science: 250000,
                 crystal: 20000,
@@ -4076,13 +4076,9 @@ SharkGame.Upgrades = {
                 upgrades: ["xenobiology", "crystalSpear"],
             },
         },
-        powerfulPropulsion: {
-            name: "Powerful Propulsion",
-            desc: "We have no idea what's out there. If only we could find a way to fight the storm...",
-            researchedMessage:
-                "Eureca! Using our newly-made magic bottles, we've devised a mechanism that can turn billfish into high-speed explorers!",
-            effectDesc:
-                "Bottles and an elaborate system of pulleys to operate them can make billfish into explorers. It's time to go see what's out there.",
+        powerfulPropulsion: {             name: "Propulsão Poderosa",             desc: "Não conhecemos o mundo lá fora. Se pelo menos houvesse um jeito de nadar nessa tempestade...",
+            researchedMessage: "Eureca! Usando nossas recém criadas garrafas, inventamos um mecanismo que que pode ser vestido que possibilita espadas nadarem em altíssima velocidade.",
+            effectDesc: "Com as garrafas e um sistema complexo de roldanas e alavancas, espadas podem ser treinados para explorar o oceano. Está na hora de vermos o que tem lá fora.",
             cost: {
                 seagrass: 300000,
                 crystal: 2500,

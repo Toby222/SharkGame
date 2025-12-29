@@ -3966,12 +3966,12 @@ SharkGame.Upgrades = {
             },
         },
         rayBiology: {
-            name: "Ray Biology",
-            desc: "Though kindred to the sharks, we know so little about the rays. If only we could fix this. We need to bait a sand trap.",
+            name: "Biologia Arraiística",
+            desc: "Mesmo sendo primos de nós, tubarões, não sabemos quase nada das arraias. Nós podemos consertar isso. Só precisamos de uma armadilha.",
             researchedMessage:
-                "Apparently we could have just asked. We learned how rays make more rays. It's kinda similar to sharks, really, but rays.",
+                "Aparentemente, poderíamos ter apenas perguntado. Mas conseguimos descobrir como arraias fazem mais arrainhas. É bem parecido como tubarões funcionam, mas com arraias.",
             effectDesc:
-                "Rays are four times as effective, and ray makers are available. We may never repair the shark-ray relations to their former state after how awkward this whole affair was.",
+                "Arraias são quatro vezes mais produtivs e criadores de arraias estão disponíveis. Mas talvez as relações tubarão-arraia nunca voltem ao seu estado original depois de quão vergonhoso isso foi para todos os envolvidos.",
             cost: {
                 science: 8000,
                 sand: 25000,
@@ -3986,10 +3986,10 @@ SharkGame.Upgrades = {
             },
         },
         thermalVents: {
-            name: "Thermal Vents",
-            desc: "Investigate the boiling vents that just seem to keep on heating things up.",
-            researchedMessage: "This is a wondrous, unending source of heat! Something good must come from this.",
-            effectDesc: "A power source for future technologies has been discovered.",
+            name: "Fontes Termais",
+            desc: "Investigue os buracos ferventes que ficam jogando água quente.",
+            researchedMessage: "Mas que belo! Nós temos uma nascente de calor interminável! Tenho certeza que algo bom virá disso.",
+            effectDesc: "Uma fonte de energia quase infinita foi descoberta. Novas tecnologias são possíveis!",
             cost: {
                 science: 10000,
                 sand: 40000,
@@ -4076,7 +4076,9 @@ SharkGame.Upgrades = {
                 upgrades: ["xenobiology", "crystalSpear"],
             },
         },
-        powerfulPropulsion: {             name: "Propulsão Poderosa",             desc: "Não conhecemos o mundo lá fora. Se pelo menos houvesse um jeito de nadar nessa tempestade...",
+        powerfulPropulsion: {
+            name: "Propulsão Poderosa",
+            desc: "Não conhecemos o mundo lá fora. Se pelo menos houvesse um jeito de nadar nessa tempestade...",
             researchedMessage: "Eureca! Usando nossas recém criadas garrafas, inventamos um mecanismo que que pode ser vestido que possibilita espadas nadarem em altíssima velocidade.",
             effectDesc: "Com as garrafas e um sistema complexo de roldanas e alavancas, espadas podem ser treinados para explorar o oceano. Está na hora de vermos o que tem lá fora.",
             cost: {
@@ -4088,11 +4090,11 @@ SharkGame.Upgrades = {
             },
         },
         senseOfDirection: {
-            name: "Sense of Direction",
-            desc: "Just because we can move in the storm does not mean we can get anything done in it.",
-            researchedMessage: "Our scientists have devised a method of charting that should help us stay oriented. No more getting lost! Maybe!",
+            name: "Senso de Direção",
+            desc: "Não é porque a gente consegue navegar na tempestade que conseguimos fazer qualquer coisa nela.",
+            researchedMessage: "Our scientists have devised a method of charting that should help us stay oriented. Não nos perdermos mais! Na maior parte das vezes...",
             effectDesc:
-                "Explorers are five times as effective and scientists are 32 times as effective - and as a bonus, we can actually read the maps now!",
+                "Exploradores mapeiam 5 vezes mais rápido e cientistas são 32 vezes mais produtivos - como um extra, os mapas são legíveis agora!",
             cost: {
                 science: 500000,
                 chart: 80,

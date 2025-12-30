@@ -4044,12 +4044,11 @@ SharkGame.Upgrades = {
             },
         },
         sunObservation: {
-            name: "Sun Observation",
-            desc: "We must determine what is with the weird glare on the surface of the water.",
-            researchedMessage:
-                "Shark science has discovered the sun! It has also discovered that looking directly into the sun hurts. But the plants seem to like it.",
+            name: "Observação Solar",
+            desc: "Precisamos entender que brilho maluco é aquele na superfície da água.",
+            researchedMessage: "Cientistas acabaram de descobrir o Sol! Eles também descobriram que olhar para sol dói. Mas que plantas parecem gostar.",
             effectDesc:
-                "Stormgoers and scientists are four times as effective. Is a suns worth many fish? We can see a sun, but where is it really? And what is it made of?",
+                "Plantadores colhem duas vezes mais alga. Será que um sol vale vários peixes? Nós vemos o Sol, mas onde que está? O que faz um Sol brilhar?",
             cost: {
                 science: 50000,
             },
@@ -4111,11 +4110,11 @@ SharkGame.Upgrades = {
             },
         },
         laserLenses: {
-            name: "Laser Lenses",
-            desc: "Alguma arraia 'acidentalmente' atirou um laser numa garrafa, e a linha se distorceu... Talvez isso seja útil.",
-            researchedMessage: "Parece que um laser distorcido consegue focá-lo e deixá-lo mais quente. E mais quente probably equals better.",
+            name: "Lentes Laser",
+            desc: "Alguma arraia 'acidentalmente' atirou um laser numa garrafa e o laser ficou distorcido... Talvez isso seja útil.",
+            researchedMessage: "Parece que distorcer um laser do jeito correto pode focá-lo e deixá-lo mais quente. E mais quente provavelmente é melhor.",
             effectDesc:
-                "Thanks to more focused beams, laser rays need a lot less equipment to start smelting. We shall call this new field of science 'sharkoptics!' Okay, no, we won't.",
+                "Graças a feixes mais focados, arraias laser precisam de muito menos equipamento para começar a derreter coisas. Vamos chamar esse novo estudo da física de 'tubarótica!' Tá, tá, não vamos não.",
             cost: {
                 science: 1000000,
                 crystal: 25000,

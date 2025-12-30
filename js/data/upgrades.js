@@ -4170,12 +4170,12 @@ SharkGame.Upgrades = {
             },
         },
         routing: {
-            name: "Routing",
-            desc: "We can't see a complete picture yet, be we have just enough that we can see all the best paths to take.",
+            name: "Roteamento",
+            desc: "Ainda não temos um mapa inteiro, mas sabemos o suficiente para determinar os melhores caminhos.",
             researchedMessage:
-                "Using the charts we currently have, we've developed a system for moving explorers around with optimal pacing and distribution.",
+                "Usando os mapas que nós já fizemos, desenvolvemos um sistema para otimizar a distribuição de exploradores para mapeamento.",
             effectDesc:
-                "Explorers are twice as effective and scientists are four times as effective. So long as everyone follows their instructions. (we can hope)",
+                "Exploradores dobram e cientistas quadruplicam suas efetividades. Desde que todos sigam suas ordens. (podemos sonhar)",
             cost: {
                 science: 5000000,
                 chart: 2500,

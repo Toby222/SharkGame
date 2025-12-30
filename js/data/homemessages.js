@@ -10,7 +10,7 @@ SharkGame.HomeMessages = {
             {
                 name: "start-shark",
                 unlock: { totalResource: { fish: 5 } },
-                message: "You attract the attention of a shark. Maybe they can help you catch fish!",
+                message: "You attract the attention of a shark. Maybe it can help you catch the fish!",
             },
             {
                 name: "start-sharks",

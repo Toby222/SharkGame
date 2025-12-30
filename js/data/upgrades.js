@@ -4112,8 +4112,8 @@ SharkGame.Upgrades = {
         },
         laserLenses: {
             name: "Laser Lenses",
-            desc: "Some ray 'accidentally' shot through a bottle with a laser, and we noticed that the point of impact was distorted... Maybe this is useful.",
-            researchedMessage: "It turns out that a more focused beam is also a hotter beam. And hotter probably equals better.",
+            desc: "Alguma arraia 'acidentalmente' atirou um laser numa garrafa, e a linha se distorceu... Talvez isso seja útil.",
+            researchedMessage: "Parece que um laser distorcido consegue focá-lo e deixá-lo mais quente. E mais quente probably equals better.",
             effectDesc:
                 "Thanks to more focused beams, laser rays need a lot less equipment to start smelting. We shall call this new field of science 'sharkoptics!' Okay, no, we won't.",
             cost: {

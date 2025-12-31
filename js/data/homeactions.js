@@ -4607,7 +4607,7 @@ SharkGame.HomeActions = {
 //---------------------------------------------------
     shore: {
         
-    // MANUAL RESOURCE COLLECTION /////////////////////
+    // FREEBIES /////////////////////
         catchFish: {},
         debugButton: {},
 
@@ -4757,8 +4757,8 @@ SharkGame.HomeActions = {
                 },
             },
             cost: [
-                { resource: "mudskipper", costFunction: "constant", priceIncrease: 3 },
-                { resource: "science", costFunction: "linear", priceIncrease: 5 },
+                { resource: "mudskipper", costFunction: "constant", priceIncrease: 1 },
+                { resource: "science", costFunction: "linear", priceIncrease: 15 },
                 { resource: "hardbark", costFunction: "linear", priceIncrease: 4 },
             ],
             max: "mentor",
@@ -4776,12 +4776,171 @@ SharkGame.HomeActions = {
                 "//*to be written in future*//",
             ],
             helpText: "Teach a mudskipper techniques on puppet work, so that it may pass on its knowledge.",
+        }, //end of job code
             
         // CARACARA JOBS ///////////////////////////
-        getRetrievalDuo: {},
-        getConnoisseur: {},
-        },
-        
+        getRetrievalDuo: {
+            name: "Pair retrieval duo",
+            effect: {
+                resource: {
+                    retrievalDuo: 1,
+                },
+            },
+            cost: [
+                { resource: "mudskipper", costFunction: "constant", priceIncrease: 1 },
+                { resource: "caracara", costFunction: "linear", priceIncrease: 1 },
+                { resource: "crystal", costFunction: "linear", priceIncrease: 5 },
+            ],
+            max: "retrievalDuo",
+            prereq: {
+                resource: {
+                    caracara: 1,
+                    mudskipper: 1
+                },
+                upgrade: ["beyondwalkerPairing"],
+            },
+            outcomes: [
+                "//*to be written in future*//",
+              
+            ],
+            multiOutcomes: [
+                "//*to be written in future*//",
+            ],
+            helpText: "Leave an armoured mudskipper on a platform for a caracara to take and search for driftwood.",
+        }, //end of job code
+        getConnoisseur: {
+            name: "Employ connoisseur",
+            effect: {
+                resource: {
+                    connoisseur: 1,
+                },
+            },
+            cost: [
+                { resource: "caracara", costFunction: "constant", priceIncrease: 1 },
+                { resource: "seagrass", costFunction: "linear", priceIncrease: 5 },
+            ],
+            max: "connoisseur",
+            prereq: {
+                resource: {
+                    caracara: 1,
+                    seagrass: 5,
+                },
+                upgrade: ["seagrassAttention"],
+            },
+            outcomes: [
+                "//*to be written in future*//",
+              
+            ],
+            multiOutcomes: [
+                "//*to be written in future*//",
+            ],
+            helpText: "Get a caracara interested in seagrass to walk along shores laden with it.",
+        }, //end of job code
+
+        // MUDSKIPPER PUPPETS //////////////////////
+        getCoralCollector: {
+            name: "Assemble coral collector",
+            effect: {
+                resource: {
+                    coralCollector: 1,
+                },
+            },
+            cost: [{ resource: "hardbark", costFunction: "linear", priceIncrease: 50 }],
+            max: "coralCollector",
+            prereq: {
+                resource: {
+                    hardbark: 50,
+                },
+                upgrade: ["puppetAssembly"],
+            },
+            outcomes: [
+                "//*to be written in future*//",
+            ],
+            multiOutcomes: [
+                "//*to be written in future*//",
+            ],
+            helpText: "Put together a crablike puppet to harvest coral with serrated claws.",
+        }, //end of machine code
+        getShoreQueller: {
+            name: "Assemble shore queller",
+            effect: {
+                resource: {
+                    shoreQueller: 1,
+                },
+            },
+            cost: [
+                { resource: "hardbark", costFunction: "linear", priceIncrease: 75 },
+                { resource: "crystal", costFunction: "linear", priceIncrease: 50 },
+            ],
+            max: "shoreQueller",
+            prereq: {
+                resource: {
+                    hardbark: 75,
+                },
+                upgrade: ["puppetAssembly"],
+            },
+            outcomes: [
+                "//*to be written in future*//",
+            ],
+            multiOutcomes: [
+                "//*to be written in future*//",
+            ],
+            helpText: "Put together a wormlike puppet to plant seagrass and laser up rough sand.",
+        }, // end of machine code
+        getDriftwoodSnarer: {
+            name: "Assemble driftwood snarer",
+            effect: {
+                resource: {
+                    driftwoodSnarer: 1,
+                },
+            },
+            cost: [
+                { resource: "hardbark", costFunction: "linear", priceIncrease: 25 },
+                { resource: "seagrass", costFunction: "linear", priceIncrease: 15 },
+            ],
+            max: "driftwoodSnarer",
+            prereq: {
+                resource: {
+                    hardbark: 25,
+                    seagrass: 15,
+                },
+                upgrade: ["puppetAssembly"],
+            },
+            outcomes: [
+                "//*to be written in future*//",
+            ],
+            multiOutcomes: [
+                "//*to be written in future*//",
+            ],
+            helpText: "Put together a raylike puppet to catch driftwood in a seagrass net.",
+        }, //end of machine code
+        getHardbarkSmith: {
+            name: "Assemble hardbark smith",
+            effect: {
+                resource: {
+                    hardbarkSmith: 1,
+                },
+            },
+            cost: [
+                { resource: "hardbark", costFunction: "linear", priceIncrease: 50 },
+                { resource: "sharkonium", costFunction: "linear", priceIncrease: 25 },
+            ],
+            max: "hardbarkSmith",
+            prereq: {
+                resource: {
+                    hardbark: 50,
+                    sharkonium: 25,
+                },
+                upgrade: ["puppetAssembly"],
+            },
+            outcomes: [
+                "//*to be written in future*//",
+            ],
+            multiOutcomes: [
+                "//*to be written in future*//",
+            ],
+            helpText: "Put together a clawed, orblike puppet to coat hardbark in a dish.",
+        }, //end of machine code
    },
 
 
@@ -4818,6 +4977,7 @@ SharkGame.HomeActionCategories = {
             "getUrchin",
             "getBillfish"
             "getMudskipper",
+            "getCaracara",
         ],
     },
 
@@ -4853,6 +5013,9 @@ SharkGame.HomeActionCategories = {
             "getBillfishMechanic",
             "getStormgoer",
             "getMentor",
+            "getConnoisseur",
+            "getStabilizer",
+            "getRetrievalDuo",
         ],
     },
 
@@ -4928,6 +5091,10 @@ SharkGame.HomeActionCategories = {
             "getSeabedStripper",
             "getCalciniumConverter",
             "getClamScavenger",
+            "geCoralCollector",
+            "getShoreQueller",
+            "getDriftwoodSnarer",
+            "getHardbarkSmith",
         ],
     },
 

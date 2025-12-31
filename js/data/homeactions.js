@@ -4878,6 +4878,7 @@ SharkGame.HomeActions = {
                     hardbark: 75,
                 },
                 upgrade: ["puppetAssembly"],
+                upgrade: ["laserRays"],
             },
             outcomes: [
                 "//*to be written in future*//",

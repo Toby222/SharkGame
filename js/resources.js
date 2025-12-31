@@ -425,7 +425,7 @@ SharkGame.Resources = {
 
     isCategoryVisible(category) {
         return (
-            category.name !== "Hidden" &&
+            category.name !== "Escondido" &&
             _.some(category.resources, (resourceName) => {
                 const resource = SharkGame.PlayerResources.get(resourceName);
                 return resource && (resource.totalAmount > 0 || resource.discovered) && world.doesResourceExist(resourceName);

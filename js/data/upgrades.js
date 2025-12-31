@@ -453,7 +453,7 @@ SharkGame.Upgrades = {
         },
         exploration: {
             name: "Exploração",
-            desc: "Nade além desse mar conhecido para vez o que mais achamos!",
+            desc: "Nade além desse mar conhecido para ver o que mais achamos!",
             researchedMessage: "Achamos um monte de peixes! De todo tipo de cardume possível! E tantas reservas de areia não exploradas!",
             effectDesc: "Tubarões e arraias pegam o dobro de recursos. Você sabia que oceanos eram tão grandes assim? Incrível!",
             cost: {
@@ -1952,7 +1952,7 @@ SharkGame.Upgrades = {
         },
         exploration: {
             name: "Exploração",
-            desc: "Nade além desse mar conhecido para vez o que mais achamos!",
+            desc: "Nade além desse mar conhecido para ver o que mais achamos!",
             researchedMessage: "Achamos um monte de peixes! E tanta areia! E ainda mais, abismos gigantes no fundo do oceano!",
             effectDesc: "Tubarões, arraias e mergulhadores pegam o dobro de recursos. Você sabia que oceanos eram tão grandes assim? Incrível!",
             cost: {
@@ -2541,7 +2541,7 @@ SharkGame.Upgrades = {
         },
         exploration: {
             name: "Exploração",
-            desc: "Nade além desse mar conhecido para vez o que mais achamos!",
+            desc: "Nade além desse mar conhecido para ver o que mais achamos!",
             researchedMessage: "Achamos um monte de peixes! De todo tipo de cardume possível! E tantas reservas de areia não exploradas!",
             effectDesc: "Tubarões e arraias pegam o dobro de recursos. Você sabia que oceanos eram tão grandes assim? Incrível!",
             cost: {
@@ -4150,10 +4150,10 @@ SharkGame.Upgrades = {
             },
         },
         exploration: {
-            name: "Exploration",
-            desc: "Swim beyond the home seas to see what can be found!",
-            researchedMessage: "Found lots of vents, grass, and more empty space! There's really not much out here.",
-            effectDesc: "Explorers are four times as effective and scientists are twice as effective. Did you know oceans are big? Fascinating!",
+            name: "Exploração",
+            desc: "Nade além desse mar conhecido para ver o que mais achamos!",
+            researchedMessage: "Achamos fontes termais, grama e mais espaço vazio. Realmente não tem muita coisa lá fora.",
+            effectDesc: "Exploradoes são 4 vezes e cienstistas são 2 vezes mais produtivos. Você sabia que oceanos eram tão grandes assim?",
             cost: {
                 science: 5000000,
                 fish: 2000000,
@@ -4174,7 +4174,7 @@ SharkGame.Upgrades = {
             researchedMessage:
                 "Usando os mapas que nós já fizemos, desenvolvemos um sistema para otimizar a distribuição de exploradores para mapeamento.",
             effectDesc:
-                "Exploradores dobram e cientistas quadruplicam suas efetividades. Desde que todos sigam suas ordens. (podemos sonhar)",
+                "Exploradores dobram e cientistas quadruplicam suas efetividades. Desde que todos sigam suas ordens, claro. (podemos sonhar)",
             cost: {
                 science: 5000000,
                 chart: 2500,
@@ -4190,11 +4190,12 @@ SharkGame.Upgrades = {
             },
         },
         heatHarnesses: {
-            name: "Heat Harnesses",
-            desc: "We've found a lot of vents, but we can't really use them since they're so far away. The billfish point out that crystals retain heat.",
-            researchedMessage: "Crystal vests! Remarkable! If we can't go to the heat, we'll just bring the heat to us!",
+            name: "Armação Térmica",
+            desc: "Nós achamos um monte de fontes termais, mas não conseguimos usá-las por estarem longe demais. Os espadas nos lembram que cristais mantêm calor...",
+            researchedMessage: "Coletes de cristal! Genial! Se não conseguimos ir ao calor, o calor vai ter de vir até nós!",
             effectDesc:
-                "Laser rays operate eight times as fast. The heat harnesses will harness heat. Then we will harness heat harness heat to heat things.",
+                "Arraias laser trabalham 8 vezes mais rápido. As armações de calor vão armar calor. Então armaremos calor da armação de calor para armar calor em coisas.",
+            // Essa tradução não faz o menor sentido.
             cost: {
                 science: 25000000,
                 crystal: 175000,
@@ -4209,11 +4210,11 @@ SharkGame.Upgrades = {
             },
         },
         superclippers: {
-            name: "Superclippers",
-            desc: "Bigger.",
+            name: "Supertesouras",
+            desc: "Maior.",
             researchedMessage:
-                "After a few failed designs (too small), we have landed on a comically sized pair of scissors that will surely increase productivity.",
-            effectDesc: "Stormgoers clip eight times as much seagrass. You should have seen the look on their faces.",
+                "Depois de alguns modelos que não funcionaram (pequenos demais), nossa pesquisa fez uma tesoura comicamente grande que vai aumentar nossa produtividade como nunca antes.",
+            effectDesc: "Desbravadores cortam 8 vezes mais grama. Você deveria ter visto a cara deles quando viram a ferramenta pela primeira vez!",
             cost: {
                 science: 75000000,
                 crystal: 1000000,
@@ -4228,10 +4229,10 @@ SharkGame.Upgrades = {
             },
         },
         farExploration: {
-            name: "Far Exploration",
-            desc: "Explore the vast reaches beyond the home ocean.",
-            researchedMessage: "Mostly nothing still. But we're not done yet.",
-            effectDesc: "Explorers are eight times as effective. Did you know oceans are actually even bigger than big? Remarkable!",
+            name: "Exploração Longínqua",
+            desc: "Explore as vastas águas além de qualquer expedição já feita.",
+            researchedMessage: "Mais grandes nadas. Mas ainda há lugares que não fomos.",
+            effectDesc: "Exploradores octuplicam sua eficiência. Você sabia que os oceanos são maiores do que apenas grande?",
             cost: {
                 science: 125000000,
                 fish: 2500000,
@@ -4246,10 +4247,10 @@ SharkGame.Upgrades = {
             },
         },
         universalNavigation: {
-            name: "Universal Navigation",
-            desc: "With an even bigger view of the world, we need to re-examine our routing techniques.",
-            researchedMessage: "This is getting complicated, though we doubt the billfish will struggle with these new instructions.",
-            effectDesc: "Explorers are eight times as effective. One way or another, we will uncover the secrets of this world.",
+            name: "Navegação Universal",
+            desc: "Com uma visão completa do mundo, devemos re-examinar nossas técnicas de navegação.",
+            researchedMessage: "Isso tudo está ficando complicado, porém duvido que os espadas vão falhar nas novas instruções.",
+            effectDesc: "Exploradores são 8 vezes mais eficientes. Inevitavelmente, iremos desvendar todos os segredos deste mundo.",
             cost: {
                 chart: 50000,
             },
@@ -4263,11 +4264,11 @@ SharkGame.Upgrades = {
             },
         },
         cartographicCompleteness: {
-            name: "Cartographic Completeness",
-            desc: "Once we've charted enough of the world, we can assemble the pieces into a map.",
-            researchedMessage: "We've done it! The grand map is assembled, and...what's that? You found something?",
+            name: "Completude Cartográfica",
+            desc: "Agora que cartografamos o suficiente, podemos juntar tudo em um super ultra mega mapa.",
+            researchedMessage: "Nós conseguimos! Você nem consegue acreditar, o mundo está todo mapeado! O que foi? Achou algo?",
             effectDesc:
-                "All explorers have been dismissed and all charts have been assembled into a single super-map. Nothing else to find, I guess.",
+                "Todos os exploradores foram dispensados e todos os mapas foram juntos em um Mapa Mundi. Não temos mais nada para mapear, eu acho.",
             cost: {
                 chart: 1000000,
             },
@@ -4280,12 +4281,12 @@ SharkGame.Upgrades = {
             },
         },
         theExpedition: {
-            name: "The Expedition",
-            desc: "This is it. That door is the key to everything, I just know it.",
+            name: "A Expedição",
+            desc: "É isso. Aquela porta vai fazer tudo fazer sentido, eu tenho certeza.",
             researchedMessage:
-                "We've discovered the giant weather machine making the superstorm. If we want to stop the storm, we'll need to start by understanding this facility.",
+                "Nós descobrimos que uma máquina gigante de clima é o que está causando essa super tempestade. Se quisermos pará-la, temos que entender essa fábrica.",
             effectDesc:
-                "Moved our base of operations to the inside of the weather machine. We'll have to find a way to shut it down from the inside.",
+                "Movemos a base de operações do Cardume para dentro da máquina climática. Temos que achar um jeito de desligá-la por dentro.",
             cost: {
                 science: 2e8,
                 fish: 5000000,
@@ -4295,10 +4296,10 @@ SharkGame.Upgrades = {
             },
         },
         supernaturalSeagrass: {
-            name: "Supernatural Seagrass",
-            desc: "The stormgoer crabs have adjourned a meeting discussing the new seagrass in this area. They tell us there's something off about it.",
-            researchedMessage: "Indeed, something's strange; this seagrass is immune to undersea currents! MUCH more study is required.",
-            effectDesc: "Studying seagrass now gives 10 times the science that it used to. MAGIC SUPER SCIENCE, GO!",
+            name: "Grama Sobrenatural",
+            desc: "Os desbravadores demandaram uma reunião para discutir sobre a grama deese lugar. Eles dizem que tem algo diferente nela.",
+            researchedMessage: "Realmente, algo está diferente; essa grama marinha é imune aos efeitos das correntes d'água! Nós precisamos estudar isso MUITO mais.",
+            effectDesc: "Estudar grama marinha agora provê 10 vezes a ciência de antes. SUPER CIÊNCIA MÁGICA, VAI!",
             cost: {
                 seagrass: 50000000,
             },
@@ -4306,7 +4307,7 @@ SharkGame.Upgrades = {
                 upgrades: ["theExpedition"],
             },
             customEffect(background) {
-                return `${sharktext.getResourceName("science", false, 1, background)} from ${sharktext.getResourceName(
+                return `${sharktext.getResourceName("science", false, 1, background)} de ${sharktext.getResourceName(
                     "seagrass",
                     false,
                     1,
@@ -4315,11 +4316,11 @@ SharkGame.Upgrades = {
             },
         },
         secretStudies: {
-            name: "Secret Studies",
-            desc: "This place is BRIMMING with the weirdest stuff. The scientists seem especially interested in 'documents.' What?",
+            name: "Estudos Secretos",
+            desc: "Esse lugar está LOTADO de coisas malucas. Os cientistas parecem interessados no estão chamando de 'documentos.' Hã?",
             researchedMessage:
-                "Our scientists, with the help of the billfish, have learned to interpret these strange things. Perhaps we can learn something?",
-            effectDesc: "Learned to read these so-called 'documents.' What are the scientists so riled up about? Are they magic or something?",
+                "Nossos cientistas, com apoio dos 'peixes' espadas, aprenderam interpretação esses papéis. Talvez isso possa ajudar em algo?",
+            effectDesc: "Aprendemos a ler esses 'documentos'. Para que que os cientistas se importam tanto com isso? Eles são papéis mágicos?",
             cost: {
                 science: 3.5e8,
             },
@@ -4328,10 +4329,10 @@ SharkGame.Upgrades = {
             },
         },
         transmutation: {
-            name: "Transmutation",
+            name: "Transmutação",
             desc: "The documents in this place contain the recipe for a strange, new material. If we want to understand the machine, we should probably start here.",
-            researchedMessage: "Huzzah! We've replicated this strange material, and named after the first synthesizer, Dr. Sharkonium!",
-            effectDesc: "Enables transmutation of some random junk we have lying around into sharkonium, material of the future.",
+            researchedMessage: "Uhul! Replicamos esse material estranho e o nomeamos em homenagem ao primeiro sintetizador, Dr. Tubarão!",
+            effectDesc: "Possibilita transmutação de coisas que temos por aí em tubarônio, o material do futuro.",
             cost: {
                 science: 4e8,
                 crystal: 5000000,

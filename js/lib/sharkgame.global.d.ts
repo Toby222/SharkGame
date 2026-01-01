@@ -37,18 +37,18 @@ declare global {
     type OptionCategory = "PERFORMANCE" | "LAYOUT" | "APPEARANCE" | "ACCESSIBILITY" | "OTHER" | "SAVES";
     type OptionName = string;
     type ResourceCategory =
-        | "animais"
-        | "reprodutores"
-        | "amigos"
-        | "nocivos"
-        | "shhhhhh"
-        | "máquinas"
-        | "mágico"
-        | "processado"
-        | "científico"
-        | "especial"
-        | "especialistas"
-        | "coisas";
+        | "animals"
+        | "breeders"
+        | "frenzy"
+        | "harmful"
+        | "hidden"
+        | "machines"
+        | "magical"
+        | "processed"
+        | "scientific"
+        | "special"
+        | "specialists"
+        | "stuff";
     type ResourceName = string;
     type SaveString = `<~${string}~>` | `x${string}` | `{${string}}`;
     type SpriteName = string;

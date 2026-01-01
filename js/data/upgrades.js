@@ -242,7 +242,7 @@ SharkGame.Upgrades = {
             name: "Automação",
             desc: "Usando tubarônio, podemos fazer coisas que fazem coisas para que nós não precisemos fazer as coisas!",
             researchedMessage: "Agora não precisamos fazer todo o trabalho, já que as máquinas o fazem por nós! FUTUUURO!!",
-            effectDesc: "Máquinas podem ser construídas para ajudar na produção do cardume de forma mais eficiente.",
+            effectDesc: "Máquinas podem ser construídas para ajudar na produção do Cardume de forma mais eficiente.",
             cost: {
                 science: 3500,
                 sharkonium: 250,
@@ -712,7 +712,7 @@ SharkGame.Upgrades = {
         },
         octalEfficiency: {
             name: "Eficiência Octal",
-            desc: "Os polvos querem aumentar ainda mais a própria eficiência pelo cardume.",
+            desc: "Os polvos querem aumentar ainda mais a própria eficiência pelo Cardume.",
             researchedMessage:
                 "As instruções feitas e disseminadas pelos polvos são complexas e compreendidas apenas por outros polvos. Cabeça dói. Alguma coisa sobre o número oito.",
             effectDesc: "Polvos, investigadores e máquinas de espronja são 2 vezes mais eficientes. Ache união na eficiência.",
@@ -1556,7 +1556,7 @@ SharkGame.Upgrades = {
             name: "Automação",
             desc: "Usando tubarônio, podemos fazer coisas que fazem coisas para que nós não precisemos fazer as coisas!",
             researchedMessage: "Agora não precisamos fazer todo o trabalho, já que as máquinas o fazem por nós! FUTUUURO!!",
-            effectDesc: "Máquinas podem ser construídas para ajudar na produção do cardume de forma mais eficiente.",
+            effectDesc: "Máquinas podem ser construídas para ajudar na produção do Cardume de forma mais eficiente.",
             cost: {
                 science: 10000,
                 sharkonium: 4000,
@@ -1674,7 +1674,7 @@ SharkGame.Upgrades = {
             name: "Coalizão de Criaturas",
             desc: "Todos sentem; o frio nos faz cada vez mais fracos. As lulas não passam frio pois estão cobertas de razão, temos que ajudar uns aos outros.",
             researchedMessage:
-                "Fizemos uma reuniãozinha de equipe para planejar o que vamos fazer. As lulas tinham um discurso motivacional preparado (ou eles só são muito bons improvisar um), isso parece que levantou o astral do cardume.",
+                "Fizemos uma reuniãozinha de equipe para planejar o que vamos fazer. As lulas tinham um discurso motivacional preparado (ou eles só são muito bons improvisar um), isso parece que levantou o astral do Cardume.",
             effectDesc: "Tubarões e caranguejos ×8. Ouriços, lulas, times de extração e cientistas ×4. Tudo nosso, nada deles!",
             cost: {
                 science: 1250000,
@@ -1763,7 +1763,7 @@ SharkGame.Upgrades = {
             desc: "Ache o solo oceânico de uma vez por todas. Chega de entrar em buracos sem fundo.",
             researchedMessage:
                 "Não só finalmente descobrimos onde o solo fica, também achamos bichinhos molengas! Eles se desculparam por se esconder de nós. Deram um motivo haver com comida e tubarão.",
-            effectDesc: "Arraias coletam duas vezes mais areia uma vez que descobrimos...onde a areia está, além disso, enguias podem ser recrutadas ao cardume.",
+            effectDesc: "Arraias coletam duas vezes mais areia uma vez que descobrimos...onde a areia está, além disso, enguias podem ser recrutadas ao Cardume.",
             cost: {
                 science: 400,
                 sand: 750,
@@ -1942,7 +1942,7 @@ SharkGame.Upgrades = {
             name: "Automação",
             desc: "Usando tubarônio, podemos fazer coisas que fazem coisas para que nós não precisemos fazer as coisas!",
             researchedMessage: "Agora não precisamos fazer todo o trabalho, já que as máquinas o fazem por nós! FUTUUURO!!",
-            effectDesc: "Máquinas podem ser construídas para ajudar na produção do cardume de forma mais eficiente.",
+            effectDesc: "Máquinas podem ser construídas para ajudar na produção do Cardume de forma mais eficiente.",
             cost: {
                 sharkonium: 1000,
             },
@@ -2203,7 +2203,7 @@ SharkGame.Upgrades = {
             name: "Lembrança Ancestral",
             desc: "Tubarões, arraias e até quimeras, todos temos algo em comum. Pelo folclore oral mantido vivo pelas quimeras, talvez consigamos entender isso.",
             researchedMessage:
-                "Os contos das quimeras falam sobre um cardume, parecido com o nosso. É dito que o que eles fizeram foi glorioso, mas parece que o que especificamente eles fizeram foi perdido ao longo do tempo.",
+                "Os contos das quimeras falam sobre um Cardume, parecido com o nosso. É dito que o que eles fizeram foi glorioso, mas parece que o que especificamente eles fizeram foi perdido ao longo do tempo.",
             effectDesc:
                 "Tubarões, arraias, quimeras, e suas especializações, produzem quatro vezes mais. Exceto mergulhadores, que produzem 16 vezes mais. Tivemos um passado glorioso. Agora, iremos para um futuro glorioso.",
             cost: {
@@ -2576,7 +2576,7 @@ SharkGame.Upgrades = {
             name: "Automação",
             desc: "Usando tubarônio, podemos fazer coisas que fazem coisas para que nós não precisemos fazer as coisas!",
             researchedMessage: "Agora não precisamos fazer todo o trabalho, já que as máquinas o fazem por nós! FUTUUURO!!",
-            effectDesc: "Máquinas podem ser construídas para ajudar na produção do cardume de forma mais eficiente.",
+            effectDesc: "Máquinas podem ser construídas para ajudar na produção do Cardume de forma mais eficiente.",
             cost: {
                 sharkonium: 25000,
             },
@@ -4343,11 +4343,11 @@ SharkGame.Upgrades = {
             },
         },
         automation: {
-            name: "Automation",
-            desc: "Our documents say we can use sharkonium to do things so we dont have to do the things!",
+            name: "Automação",
+            desc: "Nossos 'documentos' dizem que tubarônio pode se usado para fazer coisas por nós!",
             researchedMessage:
-                "Now we don't have to do all the work - well, mostly. One of these schematics doesn't work because of the winds... Otherwise, FUTURE!!",
-            effectDesc: "Machines can be built to supplement population duties. This is efficient.",
+                "Agora não precisamos mais trabalhar com as máquinas - mais ou menos. Uma desses esquemas não funciona direito por causa da ventania... Tirando isso, FUTUUURO!!",
+            effectDesc: "Máquinas podem ser construídas para ajudar na produção do Cardume de forma mais eficiente.",
             cost: {
                 sharkonium: 750000,
             },
@@ -4356,11 +4356,11 @@ SharkGame.Upgrades = {
             },
         },
         sharkoniumReceptors: {
-            name: "Sharkonium Receptors",
-            desc: "Using our new miracle material, we believe we can enhance the lasers that our rays work with.",
+            name: "Receptores de Tubarônio",
+            desc: "Com nosso material milagroso, acho que podemos melhorar os lasers das arraias do Cardume.",
             researchedMessage:
-                "Upgraded laser containers can withstand a higher temperature with a more intense beam. Powering up, please stand by...",
-            effectDesc: "Laser rays are twice as efficient. It's that whole 'hotter equals better' thing again.",
+                "A casca melhorada do laser aguenta uma temperatura maior, com um feixe mais forte. Todos os civis, por favor se afastem... e olhem para o outro lado",
+            effectDesc: "Arraias laser dobram sua eficiência. É a regrinha do 'mais quente é mais melhor' de novo.",
             cost: {
                 science: 7.5e8,
                 sharkonium: 1e6,
@@ -4375,10 +4375,10 @@ SharkGame.Upgrades = {
             },
         },
         engineering: {
-            name: "Engineering",
-            desc: "The machines suck, but we're not sure how to make them much better.",
-            researchedMessage: "After some intense studying, the billfish have volunteered to help us run the machines!",
-            effectDesc: "Billfish mechanics can now tinker with machines to keep them running optimally! Auto-transmuters are also possible now.",
+            name: "Engenharia",
+            desc: "Nossas máquinas são ruins que só o inferno, mais não sabemos como melhorá-las!",
+            researchedMessage: "Depois de estudar muito, mas muito mesmo, os espadas se elegeram para ajudar a operar as máquinas!",
+            effectDesc: "Mêcanicos agora podem dar umas mexidinhas nas máquinas para fazê-las rodar melhor! transmutadoras automáticas também se tornam construtíveis.",
             cost: {
                 science: 1e9,
                 sharkonium: 5e6,
@@ -4390,12 +4390,12 @@ SharkGame.Upgrades = {
             effect: {},
         },
         heatCoils: {
-            name: "Heat Coils",
-            desc: "The bowels of the machine contain numerous parts that act like hydrothermal vents.",
+            name: "Bobina Térmica",
+            desc: "No interior da máquina climática, há umas partes que agem estranhamente semelhante às fontes termais lá fora.",
             researchedMessage:
-                "Specialized coupling instruments have given us a method for extracting heat - and maybe this does something to the weather machine, who knows!",
+                "Instrumentos especializados de encaixe nos deram uma forma de tirar o calor das peças e, sei lá, talvez isso faça algo com a máquina também. Não precisamos mais ficar saindo o tempo inteiro para aquecer os lasers.",
             effectDesc:
-                "Laser rays transmute four times as fast, and let me tell you, having the heat right next to us is sooooooo much better than across the ocean.",
+                "Arraias laser arraiam 16 vezes mais rápido, e eu posso dizer sem dúvidas: Abobina AAAOOOOOO bobina - pode rodar.",
             cost: {
                 science: 1.25e9,
                 sand: 1.5e8,
@@ -4410,11 +4410,11 @@ SharkGame.Upgrades = {
             },
         },
         internalExploration: {
-            name: "Internal Exploration",
-            desc: "Our documents tell us an important piece of the puzzle lies deep inside the facility.",
+            name: "Exploração Interna",
+            desc: "Nossos documentos falam de um componente importante no coração deste prédio, e até agora eles não nos falharam.",
             researchedMessage:
-                "The maps led us to a massive generator that's been completely destroyed, and a strange, malfunctioning gate. We don't yet know what this means for us.",
-            effectDesc: "Mechanics are five times as effective at tinkering. We now also know that the facility has no power.",
+                "A planta baixa nos levou até um gerador enorme, completamente destruído. Do lado, um grande portal estranho que não parece servir para nada. O que isso significa? Nenhuma ideia.",
+            effectDesc: "Mecânicos são 5 vezes mais eficientes em eficiência maquinária. Nós também discobrimos esse lugar não tá sem energia alguma.",
             cost: {
                 science: 2e9,
             },
@@ -4427,11 +4427,11 @@ SharkGame.Upgrades = {
             },
         },
         recyclerDiscovery: {
-            name: "Recycler",
-            desc: "Devise a system of pulverising unwanted resources into a component paste, and reusing them as something else.",
+            name: "Recicladora",
+            desc: "Invente um sistema de destruir recursos em uma gosma para ser reutilizada em outra coisa.",
             researchedMessage:
-                "Well this thing is frankly terrifying. I wouldn't swim anywhere near the input holes if I were you. Maybe it'll help though!",
-            effectDesc: "Allows recycling of materials by virtue of a horrifying mechanical maw that consumes all that ventures near it. Future?",
+                "Bem, isso daqui parece que veio de um pesadelo. Eu não atreveria a nadar perto de qualquer buraco dessa máquina. Mas ela certamente pode ser útil para nós!",
+            effectDesc: "Possibilita a reciclagem de materiais por meio de uma boca aterrorizante que consume e destrói tudo que chega perto. Futuro?",
             cost: {
                 science: 4e9,
                 sharkonium: 2.5e7,
@@ -4441,11 +4441,11 @@ SharkGame.Upgrades = {
             },
         },
         iterativeDesign: {
-            name: "Iterative Design",
-            desc: "Our billfish friends are naturals at this. They have organized a committee to suggest an improved set of designs.",
+            name: "Design Iterado",
+            desc: "Nossos colegas espadas são craques nisso. Eles até fizeram uma assembleia para sugestão de designs melhores.",
             researchedMessage:
-                "Eureca! These new designs are brilliant, I think! I can't understand what's going on anymore! Half of what they said has gone over our heads.",
-            effectDesc: "All shark machines run four times as fast, but now laser rays now run 4 times faster too. Yay!",
+                "Eureca! Esses novos planos estão uma belezura! Eu acho. Eu não consigo acompanhar mais quase nada do que eles dizem sobre engenharia, mas os desenhos estavam bonitos.",
+            effectDesc: "Todas as máquinas tubarônicas funcionam 4 vezes mais rápido, isso se alastrou para as arraias laser, que também estão 4 vezes mais rápidas. Boa!",
             cost: {
                 science: 8e9,
                 sharkonium: 4e8,
@@ -4463,11 +4463,11 @@ SharkGame.Upgrades = {
             },
         },
         superprocessing: {
-            name: "Superprocessing",
-            desc: "The recycler wasn't really meant for millions of fish at once. Seeing as that transaction is fairly common, we should probably do something about it.",
-            researchedMessage: "Eureca! If we make the big things bigger, and the grinders grindier, we can process way more material at once!",
+            name: "Superprocessamento",
+            desc: "A recicladora não foi feita com o dissolução de milhões de peixes em mente. Considerando que isso é uma demanda bem comum, nós provavelmente deveríamos fazer algo sobre isso.",
+            researchedMessage: "Eureca! Se fizermos as coisas grandes ficarem maiores, e os moedores mais moídos, nós poderemos processar muito mais material de uma só vez!",
             effectDesc:
-                "The recycler's efficiency only starts dropping at 100 million material inserted at once, instead of 100 thousand. The base efficiency is now 100%.",
+                "A eficiência da recicladora só começa a cair na casa dos 10 milhões de itens de uma só vez, ao invés de 100 mil. A eficiência máxima também aumentou para 100%.",
             cost: {
                 science: 12e9,
                 junk: 1e9,
@@ -4477,12 +4477,12 @@ SharkGame.Upgrades = {
             },
         },
         schematicSalvaging: {
-            name: "Schematic Salvaging",
-            desc: "Among the documents we found in the generator room is the disorganized, scattered operator's manual. It's in our best interest to put it back together.",
+            name: "Recuperação Esquemática",
+            desc: "Entre os documentos na sala do gerador, há um manual de operação. Está disorganizado, com suas páginas espalhadas por todo canto, e é bom que a gente junte tudo.",
             researchedMessage:
-                "The manual, right here, it says that the machine goes haywire when it runs out of power! So we don't need to shut it down, we need to <i>turn it on!</i>",
+                "O manual, bem aqui, ele fala que a máquina fica maluca quando tem a energia cortada! Então não é que precisamos desligar a máquina, nós precisamos <i>ligá-la!</i>",
             effectDesc:
-                "With the power off, everything's caught in a magical feedback loop. We fix this place, we fix the world. Who would build such a dangerous machine?",
+                "Sem energia, uma retroalimentação de magia fez tudo ficar assim. Se consertarmos aqui, nós consertamos o mundo. Quem que teria uma ideia de jirico de contruir algo tão perigoso?",
             cost: {
                 science: 17.5e9,
             },
@@ -4491,10 +4491,10 @@ SharkGame.Upgrades = {
             },
         },
         supernaturalHarvest: {
-            name: "Supernatural Harvest",
-            desc: "There's magic inside this grass, surely.",
-            researchedMessage: "Indeed, there is! But we have no idea how to use it. So we'll just wrap stuff in it and hope for the best.",
-            effectDesc: "New, magic sandbags make stormgoers 99 times better at harvesting stuff. We genuinely have no idea! It just works.",
+            name: "Colheita Sobrenatural",
+            desc: "Isso na grama é mágica mesmo?",
+            researchedMessage: "Sim, é sim! E não temos a menor ideia de como usá-la. Então vamos apenas enrolar coisas com a grama e rezar que tudo dê certo.",
+            effectDesc: "Novos sacos de areia, agora com magia, fazem desbravadores 99 vezes mais rápidos. Nem me pergunte, apenas aceita que é assim.",
             cost: {
                 seagrass: 4e9,
             },
@@ -4508,12 +4508,12 @@ SharkGame.Upgrades = {
             },
         },
         cumulusControl: {
-            name: "Cumulus Control",
-            desc: "Let's put an end to this madness. If we power up the facility, it should finally stop the storm.",
+            name: "Cumulus Controlado",
+            desc: "Vamos acabar com essa loucura. Se ligarmos esse prédio, a tempestade finalmente acabará.",
             researchedMessage:
-                "As the lights flicker on, an intense feeling of relief washes over you. You can sense it. The storm has stopped...and the gate is open.",
+                "Com as luzes acendendo, um alívio tremendo te atinge. Dá para sentir no ar. A tempestade acabou...e o portal abriu.",
             effectDesc:
-                "The billfish are swimming wildly outside. Their frenzied cheering makes anything you try to say inaudible. From one storm, and into the next...",
+                "Os espadas estão quase fazendo um carnaval lá fora. Todo o barulho da celebração deles faz a sua voz inaudível. De uma tempestade, direto para outra...",
             cost: {
                 science: 4e12,
             },

@@ -1,3 +1,4 @@
+
 "use strict";
 SharkGame.ResourceTable = {
     // SPECIAL
@@ -1397,7 +1398,7 @@ SharkGame.ResourceSpecialProperties = {
 
 SharkGame.ResourceCategories = {
     harmful: {
-        name: "Nocivo",
+        name: "Nocivos",
         disposeMessage: [
             "Boa tentativa, campeão.",
             "Tente outra vez.",
@@ -1408,7 +1409,7 @@ SharkGame.ResourceCategories = {
         ],
         resources: ["tar", "ice"],
     },
-    científico: {
+    scientific: {
         name: "Científico",
         disposeMessage: [
             "Cientistas gastaram tanto tempo e esforço para depois ser TUDO JOGADO FORA COMO LIXO. AAAAAAA QUE RAIVA!",
@@ -1429,7 +1430,7 @@ SharkGame.ResourceCategories = {
             // "knowledge",
         ],
     },
-    mágico: {
+    magical: {
         name: "Mágico",
         disposeMessage: [
             "Pff, mágica nem é tanta coisa assim.",
@@ -1442,7 +1443,7 @@ SharkGame.ResourceCategories = {
         ],
         resources: ["arcana"],
     },
-    cardume: {
+    test: {
         name: "Cardume",
         disposeMessage: [
             "Você se despede, encolhendo a sua comunidade no processo.",
@@ -1457,7 +1458,7 @@ SharkGame.ResourceCategories = {
         ],
         resources: ["shark", "ray", "crab", "shrimp", "lobster", "dolphin", "whale", "chimaera", "octopus", "eel", "squid", "urchin", "billfish"],
     },
-    animais: {
+    animals: {
         name: "Animais",
         disposeMessage: [
             "Libertem-se, criaturas lindas!",
@@ -1471,7 +1472,7 @@ SharkGame.ResourceCategories = {
         ],
         resources: ["fish", "seaApple", "sponge", "jellyfish", "clam"],
     },
-    materiais: {
+    stuff: {
         name: "Materiais",
         disposeMessage: [
             "As coisas foram jogadas num buraco em algum lugar.",
@@ -1494,7 +1495,7 @@ SharkGame.ResourceCategories = {
             // "gravel",
         ],
     },
-    processado: {
+    processed: {
         name: "Processado",
         disposeMessage: [
             "Jogado fora, com muito cuidado, em um lugar bem longe da gruta.",
@@ -1509,7 +1510,7 @@ SharkGame.ResourceCategories = {
         ],
         resources: ["sharkonium", "coralglass", "delphinium", "spronge", "calcinium", "porite", "ancientPart", "junk", "filter"],
     },
-    reprodutores: {
+    breeders: {
         name: "Reprodutores",
         disposeMessage: [
             "Cuidar de filhos é um trabalho árduo mesmo.",
@@ -1521,7 +1522,7 @@ SharkGame.ResourceCategories = {
         ],
         resources: ["nurse", "maker", "brood", "queen", "berrier", "biologist", "pit", "collective", "spawner", "billfishPair"],
     },
-    especialistas: {
+    specialists: {
         name: "Especialistas",
         disposeMessage: [
             "Passou por treinamento apenas para ser demitido. É uma pena mesmo.",
@@ -1563,7 +1564,7 @@ SharkGame.ResourceCategories = {
             // "rockLobster",
         ],
     },
-    máquinas: {
+    machines: {
         name: "Máquinas",
         disposeMessage: [
             "As máquinas desligadas vão servir de casinha para pequenos seres.",
@@ -1597,7 +1598,7 @@ SharkGame.ResourceCategories = {
             // "pulverizer",
         ],
     },
-    lugares: {
+    places: {
         name: "Lugares",
         disposeMessage: [
             "Enterramos o local em areia. Apenas os arqueólogos conseguirão acessá-lo agora.",

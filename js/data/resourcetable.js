@@ -1442,7 +1442,7 @@ SharkGame.ResourceCategories = {
         ],
         resources: ["arcana"],
     },
-    frenzy: {
+    test: {
         name: "Cardume",
         disposeMessage: [
             "Você se despede, encolhendo a sua comunidade no processo.",

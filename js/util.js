@@ -229,10 +229,10 @@ SharkGame.TextUtil = {
             let suffixes;
             switch (SharkGame.Settings.current.notation) {
                 case "SI":
-                    suffixes = ["", "k", "M", "G", "T", "P", "E", "Z", "Y"];
+                    suffixes = ["", "k", "M", "G", "T", "P", "E", "Z", "Y", "R", "Q"];
                     break;
                 default:
-                    suffixes = ["", "K", "M", "B", "T", "Qa", "Qi", "Sx", "Sp"];
+                    suffixes = ["", "mil", "M", "B", "T", "Qa", "Qi", "Sx", "Sp", "Oc", "No"];
             }
             const digits = Math.floor(Math.log10(number));
             // Max for a case where the supported suffix is not specified
@@ -330,9 +330,9 @@ SharkGame.TextUtil = {
 
         if (SharkGame.flags.egg) {
             if (amount > 1) {
-                name = "eggs";
+                name = "ovos";
             } else {
-                name = "egg";
+                name = "ovo";
             }
         }
 
@@ -345,8 +345,8 @@ SharkGame.TextUtil = {
             name = name.bold();
         }
 
-        if (SharkGame.Settings.current.colorCosts !== "none") {
-            let color = SharkGame.Settings.current.colorCosts === "color" ? resource.color : sharkcolor.getBrightColor(resource.color);
+        if (SharkGame.Settings.current.colorCosts !== "sem cor") {
+            let color = SharkGame.Settings.current.colorCosts === "colorido" ? resource.color : sharkcolor.getBrightColor(resource.color);
             if (darken) {
                 color = sharkcolor.colorLum(resource.color, -0.5);
             } else if (background) {
@@ -578,7 +578,7 @@ SharkGame.MiscUtil = {
 
                                 default:
                                     throw new Error(
-                                        `Cannot clone object of type ${typeof descriptor.value} (This should never happen, why must you do this to me, JavaScript?)`,
+                                        `Não é possível clonar objeto ${typeof descriptor.value} (Isso nunca deveria acontecer, por favor reportar)`,
                                     );
                             }
                         }

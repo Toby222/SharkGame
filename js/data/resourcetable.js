@@ -1396,7 +1396,7 @@ SharkGame.ResourceSpecialProperties = {
 };
 
 SharkGame.ResourceCategories = {
-    nocivo: {
+    harmful: {
         name: "Nocivo",
         disposeMessage: [
             "Boa tentativa, campeão.",

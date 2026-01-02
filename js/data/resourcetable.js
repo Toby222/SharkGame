@@ -1471,7 +1471,7 @@ SharkGame.ResourceCategories = {
         ],
         resources: ["fish", "seaApple", "sponge", "jellyfish", "clam"],
     },
-    materiais: {
+    stuff: {
         name: "Materiais",
         disposeMessage: [
             "As coisas foram jogadas num buraco em algum lugar.",

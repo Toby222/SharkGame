@@ -1429,7 +1429,7 @@ SharkGame.ResourceCategories = {
             // "knowledge",
         ],
     },
-    magical: {
+    mágico: {
         name: "Mágico",
         disposeMessage: [
             "Pelamor, mágica nem é tanta coisa assim.",

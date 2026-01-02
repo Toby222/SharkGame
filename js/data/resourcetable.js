@@ -1494,7 +1494,7 @@ SharkGame.ResourceCategories = {
             // "gravel",
         ],
     },
-    processed: {
+    processado: {
         name: "Processado",
         disposeMessage: [
             "Jogado fora, com muito cuidado, em um lugar bem longe da gruta.",

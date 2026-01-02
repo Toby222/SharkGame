@@ -1408,7 +1408,7 @@ SharkGame.ResourceCategories = {
         ],
         resources: ["tar", "ice"],
     },
-    scientific: {
+    científico: {
         name: "Científico",
         disposeMessage: [
             "Cientistas gastaram tanto tempo e esforço para depois ser TUDO JOGADO FORA COMO LIXO. AAAAAAA QUE RAIVA!",

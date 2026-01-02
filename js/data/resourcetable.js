@@ -1609,7 +1609,7 @@ SharkGame.ResourceCategories = {
         ],
         resources: ["spongeFarm", "coralFarm"],
     },
-    especial: {
+    special: {
         name: "Especial",
         disposeMessage: ["O que você fez??"],
         resources: ["numen", "essence"],

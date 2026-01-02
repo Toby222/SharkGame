@@ -1442,7 +1442,7 @@ SharkGame.ResourceCategories = {
         ],
         resources: ["arcana"],
     },
-    test: {
+    cardume: {
         name: "Cardume",
         disposeMessage: [
             "Você se despede, encolhendo a sua comunidade no processo.",
@@ -1521,7 +1521,7 @@ SharkGame.ResourceCategories = {
         ],
         resources: ["nurse", "maker", "brood", "queen", "berrier", "biologist", "pit", "collective", "spawner", "billfishPair"],
     },
-    specialists: {
+    especialistas: {
         name: "Especialistas",
         disposeMessage: [
             "Passou por treinamento apenas para ser demitido. É uma pena mesmo.",

@@ -1432,7 +1432,7 @@ SharkGame.ResourceCategories = {
     magical: {
         name: "Mágico",
         disposeMessage: [
-            "Pff, mágica nem é tanta coisa assim.",
+            "Pelamor, mágica nem é tanta coisa assim.",
             "Mágica não existe!",
             "Se mágica era real, agora ela deixou de ser.",
             "Abra cadabra! Seus recursos sumiram!",
@@ -1471,7 +1471,7 @@ SharkGame.ResourceCategories = {
         ],
         resources: ["fish", "seaApple", "sponge", "jellyfish", "clam"],
     },
-    stuff: {
+    materiais: {
         name: "Materiais",
         disposeMessage: [
             "As coisas foram jogadas num buraco em algum lugar.",
@@ -1597,7 +1597,7 @@ SharkGame.ResourceCategories = {
             // "pulverizer",
         ],
     },
-    places: {
+    lugares: {
         name: "Lugares",
         disposeMessage: [
             "Enterramos o local em areia. Apenas os arqueólogos conseguirão acessá-lo agora.",

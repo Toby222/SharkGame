@@ -1,4 +1,3 @@
-
 "use strict";
 SharkGame.ResourceTable = {
     // SPECIAL
@@ -1397,8 +1396,8 @@ SharkGame.ResourceSpecialProperties = {
 };
 
 SharkGame.ResourceCategories = {
-    harmful: {
-        name: "Nocivos",
+    nocivo: {
+        name: "Nocivo",
         disposeMessage: [
             "Boa tentativa, campeão.",
             "Tente outra vez.",

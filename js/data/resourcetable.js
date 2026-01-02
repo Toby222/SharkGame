@@ -1563,7 +1563,7 @@ SharkGame.ResourceCategories = {
             // "rockLobster",
         ],
     },
-    machines: {
+    máquinas: {
         name: "Máquinas",
         disposeMessage: [
             "As máquinas desligadas vão servir de casinha para pequenos seres.",

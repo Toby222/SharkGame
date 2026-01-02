@@ -1396,7 +1396,7 @@ SharkGame.ResourceSpecialProperties = {
 };
 
 SharkGame.ResourceCategories = {
-    nocivo: {
+    harmful: {
         name: "Nocivo",
         disposeMessage: [
             "Boa tentativa, campeão.",
@@ -1408,7 +1408,7 @@ SharkGame.ResourceCategories = {
         ],
         resources: ["tar", "ice"],
     },
-    científico: {
+    scientific: {
         name: "Científico",
         disposeMessage: [
             "Cientistas gastaram tanto tempo e esforço para depois ser TUDO JOGADO FORA COMO LIXO. AAAAAAA QUE RAIVA!",
@@ -1442,7 +1442,7 @@ SharkGame.ResourceCategories = {
         ],
         resources: ["arcana"],
     },
-    cardume: {
+    frenzy: {
         name: "Cardume",
         disposeMessage: [
             "Você se despede, encolhendo a sua comunidade no processo.",
@@ -1494,7 +1494,7 @@ SharkGame.ResourceCategories = {
             // "gravel",
         ],
     },
-    processado: {
+    processed: {
         name: "Processado",
         disposeMessage: [
             "Jogado fora, com muito cuidado, em um lugar bem longe da gruta.",
@@ -1521,7 +1521,7 @@ SharkGame.ResourceCategories = {
         ],
         resources: ["nurse", "maker", "brood", "queen", "berrier", "biologist", "pit", "collective", "spawner", "billfishPair"],
     },
-    especialistas: {
+    specialists: {
         name: "Especialistas",
         disposeMessage: [
             "Passou por treinamento apenas para ser demitido. É uma pena mesmo.",
@@ -1563,7 +1563,7 @@ SharkGame.ResourceCategories = {
             // "rockLobster",
         ],
     },
-    máquinas: {
+    machines: {
         name: "Máquinas",
         disposeMessage: [
             "As máquinas desligadas vão servir de casinha para pequenos seres.",
@@ -1597,7 +1597,7 @@ SharkGame.ResourceCategories = {
             // "pulverizer",
         ],
     },
-    lugares: {
+    places: {
         name: "Lugares",
         disposeMessage: [
             "Enterramos o local em areia. Apenas os arqueólogos conseguirão acessá-lo agora.",

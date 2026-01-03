@@ -4942,6 +4942,11 @@ SharkGame.HomeActions = {
             ],
             helpText: "Put together a clawed, orblike puppet to coat hardbark in a dish.",
         }, //end of machine code
+
+        // UNIQUE //////////////////////
+        getSafeholdSentinel: {},
+        getBarrageBraver: {},
+        getGatemasterPuppet: {},
    },
 
 
@@ -5106,6 +5111,11 @@ SharkGame.HomeActionCategories = {
 
     unique: {
         name: "Unique",
-        actions: ["getChorus"],
+        actions: [
+            "getChorus",
+            "getSafeholdSentinel",
+            "getBarrageBraver",
+            "getGatemasterPuppet",
+        ],
     },
 };

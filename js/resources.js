@@ -1198,7 +1198,7 @@ SharkGame.Resources = {
                             $("<td>")
                                 .attr("colSpan", 3)
                                 .append(
-                                    $("<h3>").html(`<span class="collapser">${icon}</span><span>${categoryName}</span>`).css("text-align", "left"),
+                                    $("<h3>").html(`<span class="collapser">${icon}</span><span>${category.name}</span>`).css("text-align", "left"),
                                 ),
                         )
                         .on("click", () => SharkGame.Resources.collapseResourceTableRow(categoryName));

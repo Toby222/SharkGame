@@ -1762,6 +1762,9 @@ SharkGame.ResourceCategories = {
             "hardbarkSmith",
             "shoreQueller",
             "driftwoodSnarer",
+            "safeholdSentinel",
+            "barrageBraver",
+            "gatemasterPuppet",
         ],
     },
     places: {
@@ -1865,7 +1868,7 @@ SharkGame.InternalCategories = {
     },
     mudskipperpuppets: {
         name: "Mudskipper Puppets",
-        resources: ["hardbark", "coralCollector", "hardbarkSmith", "driftwoodSnarer", "shoreQueller"],
+        resources: ["hardbark", "coralCollector", "hardbarkSmith", "driftwoodSnarer", "shoreQueller", "safeholdSentinel", "barrageBraver", "gatemasterPuppet"],
     },
     basicmaterials: {
         resources: ["fish", "sand", "crystal", "science", "junk"],

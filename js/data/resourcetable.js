@@ -981,6 +981,12 @@ SharkGame.ResourceTable = {
         value: 3500,
     },
 
+    safeholdSentinel: {},
+    
+    barrageBraver: {},
+
+    gatemasterPuppet: {},
+    
     roughSand: {
         name: "rough sand",
         singleName: "rough sand",
@@ -1720,7 +1726,7 @@ SharkGame.ResourceCategories = {
             "mentor",
             "retrievalDuo",
             "connoisseur",
-            "gardener",
+            "stabilizer",
         ],
     },
     machines: {

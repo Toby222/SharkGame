@@ -1452,7 +1452,15 @@ SharkGame.GeneratorIncomeAffectorsOriginal = {
             brood: -0.001,
         },
     },
-    roughSand: {},
+    roughSand: {
+        multiply: {
+            stuff: -0.005,
+        },
+        exponentiate: {
+            coral: -0.05,
+            seagrass: -0.05,
+        },
+    },
     tar: {
         exponentiate: {
             fishMachine: 0.99,

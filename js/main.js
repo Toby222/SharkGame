@@ -106,13 +106,13 @@ $.extend(SharkGame, {
         "Hollow Shark: Shark Song",
         "Last Shark Standing",
         "Sharkjago: Masters of Sharkjitsu",
-        "Shark: Galactic Ad-shark-tures", //this was a bad spin on 'Spore: Galactic Adventures' --ThreeCrabs
+        "Shark: Galactic Ad-shark-tures", //this was a bad spin on 'Spore: Galactic Adventures' --ThreeEels
     ],
     GAME_NAME: null,
     ACTUAL_GAME_NAME: "Shark Game",
     VERSION: "20250127a",
     ORIGINAL_VERSION: 0.71,
-    VERSION_NAME: "The Shore Update", //Put "The Chaotic Shore Update" if both oceans come out at around the same time - ThreeCrabs
+    VERSION_NAME: "The Shore Update", //Put "The Chaotic Shore Update" if both oceans come out at around the same time - ThreeEels
     EPSILON: 1e-6, // floating point comparison is a joy
     BIGGEST_SAFE_NUMBER: 1000000000000,
     MAX: 1e300,

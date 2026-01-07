@@ -3,7 +3,7 @@ SharkGame.ResourceTable = {
 
     // SAVED FOR LATER
 
-    coralglass: { //machine-making material; archived from original game -- ThreeCrabs
+    coralglass: { //machine-making material; archived from original game -- ThreeEels
         name: "coralglass",
         singleName: "coralglass",
         desc: "null",
@@ -11,7 +11,7 @@ SharkGame.ResourceTable = {
         value: 70,
     },
 
-    starfish: { //frenzy member; courtesy of my great irl friend -- ThreeCrabs
+    starfish: { //frenzy member; courtesy of my great irl friend -- ThreeEels
         name: "starfish",
         singleName: "starfish",
         desc: "Obliviously cute - as long as you don't see their mouths.",
@@ -1454,7 +1454,18 @@ SharkGame.GeneratorIncomeAffectorsOriginal = {
     },
     roughSand: {
         multiply: {
-            stuff: -0.005,
+            shark: -0.005,
+            ray: -0.005,
+            crab: -0.005,
+            mudskipper: -0.005,
+            nurse: -0.005,
+            scientist: -0.005,
+            maker: -0.005,
+            laser: -0.005,
+            brood: -0.005,
+            stabilizer: -0.005,
+            burrow: -0.005,
+            mentor: -0.005,
         },
         exponentiate: {
             coral: -0.05,

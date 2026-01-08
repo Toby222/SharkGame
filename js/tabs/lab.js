@@ -48,22 +48,22 @@ SharkGame.Lab = {
                 }
                 return "Num canto da caverna, os tubarões cientistas se juntam e discutem usando palavras que você nunca ouviu antes.";
             case "volcanic":
-                return "Num canto do cardume, um grupinho de caranguejos curioso se juntam para discutir coisas que não entendemos.";
+                return "Num canto do Cardume, um grupinho de caranguejos curioso se juntam para discutir coisas que não entendemos.";
             default:
-                return "Num canto do cardume, os tubarões cientistas se juntam e discutem usando palavras que você nunca ouviu antes.";
+                return "Num canto do Cardume, os tubarões cientistas se juntam e discutem usando palavras que você nunca ouviu antes.";
         }
     },
     get messageDone() {
         switch (world.worldType) {
             case "volcanic":
                 return (
-                    "Sort of just off to the side, the researchers are compiling their work and filing it away.<br/>" +
-                    "Looks like that's it! No more things to figure out."
+                    "Num canto do Cardume, os pesquisadores passaram à 'pesquisa' de festas e celebrações.<br/>" +
+                    "Parece que é isso! Descobrimos tudo que havia de importante."
                 );
             default:
                 return (
-                    "Sort of just off to the side, the science sharks quietly wrap up their badly disguised party and pretend to work.<br/>" +
-                    "Looks like that's it! No more things to figure out."
+                    "Num canto do Cardume, os cientistas dão um pausa em sua festa mal escondida e fingem que estão trabalhando.<br/>" +
+                    "Parece que é isso! Descobrimos tudo que havia de importante."
                 );
         }
     },
@@ -185,7 +185,7 @@ SharkGame.Lab = {
                     $("<p>").html(
                         "Sua intuição diz que " +
                             sharktext.getResourceName(hintResource, false, 2, sharkcolor.getElementColor("buttonList")) +
-                            " pode dar algumas ideias.",
+                            " pode render algumas ideias.",
                     ),
                 );
             } else {

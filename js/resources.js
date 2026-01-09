@@ -893,7 +893,7 @@ SharkGame.Resources = {
                 res.minuteHand.showTooltip,
                 res.tableTextLeave,
             );
-            $("#minute-hand-toggle").html("<strong>TOGGLE</strong>");
+            $("#minute-hand-toggle").html("<strong>ATIVE-ME</strong>");
             $("#minute-hand-div").append($("<div>").attr("id", "minute-row-two"));
             $("#minute-row-two").append($("<span>").attr("id", "minute-multiplier"));
             $("#minute-hand-div").append(
@@ -916,7 +916,7 @@ SharkGame.Resources = {
 
             if (SharkGame.Aspects.meditation.level) {
                 SharkGame.Button.makeHoverscriptButton(
-                    "pause-toggle",
+                    "pausar",
                     "||",
                     $("#minute-pause"),
                     res.pause.togglePause,

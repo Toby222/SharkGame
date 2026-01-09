@@ -312,7 +312,7 @@ SharkGame.PaneHandler = {
                             $("<button>")
                                 .attr("id", "optionButton-" + settingName + "-" + index)
                                 .addClass("option-button" + (isSelectedOption ? " disabled" : ""))
-                                .html(typeof optionValue === "boolean" ? (optionValue ? "on" : "off") : optionValue)
+                                .html(typeof optionValue === "boolean" ? (optionValue ? "sim" : "não") : optionValue)
                                 .on("click", SharkGame.PaneHandler.onOptionClick),
                         ),
                     );

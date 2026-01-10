@@ -99,226 +99,88 @@ SharkGame.Puns = {
     },
 
     resourceBased: {
-        fish: ["What did the fish detective say on the scene of crime? 'Somethinh smells fishy!"],
+        fish: [
+            "What did the fish detective say on the scene of crime? 'Somethinh smells fishy!"
+        ],
+        crystal: [
+            "Placeholder :D"
+        ],
+        sand: [
+            "Placeholder :D"
+        ],
+        kelp: [
+            "Placeholder :D"
+        ],
+        driftwood: [
+            "Placeholder :D"
+        ],
+        seagrass: [
+            "Placeholder :D"
+        ],
+        coral: [
+            "Placeholder :D"
+        ],
+        sponge: [
+            "Placeholder :D"
+        ],
+        tar: [
+            "Placeholder :D"
+        ],
+        ice: [
+            "Placeholder :D"
+        ],
+        roughSand: [
+            "Placeholder :D"
+        ],
         shark: [
             "Placeholder :D",
         ],
-        crystal: ["Magic crystals are probably not real."],
         ray: [
-            "Rays can be thought of as flattened sharks. The two are very closely related evolutionarily.",
-            "Rays are pancakes of the sea. (note: probably not true)",
-            "Rays do not have bones. Neither do sharks.",
-            "Some rays have a venomous stinger. So despite how much we may want to, we shouldn't hug them.",
+            "Placeholder :D",
         ],
         crab: [
-            "Throughout history, many species of crustaceans have independently evovled into crabs for no discernable reason. The phenomenon is called carcinisation.",
-            "Some species of crab exhibit a kind of claw asymmetry. Called the crusher and cutter, they have different shapes that give their claws more specialized purposes.",
+            "Placeholder :D",
         ],
         octopus: [
-            "It's octopuses, not octopi.",
-            "Octopuses are capable of extremely advanced camoflague. They can change color, pattern, and texture to match their surroundings, enough to easily fool anything, even humans.",
-            "In novel circumstances, octopuses are capable of simple problem-solving. They show visible confusion when confronted with difficult problems, and take time to contemplate possible solutions.",
-            "Octopuses can get bored in captivity. They may fiddle with toys or interact with humans for entertainment.",
-            "Octopuses have great dexterity. They can use their tentacles in a surprising variety of ways to manipulate objects.",
-            "Octopuses have no bones whatsoever.",
-            "Each limb of an octopus is considered to individually have a brain to itself. They can be thought of as soldiers (the little brains) being commanded by a general in the center (a big brain).",
+            "Placeholder :D",
         ],
         dolphin: [
-            "Dolphins are considered some of the most intelligent animal problem-solvers, next to monkeys, elephants and parrots as examples.",
-            "Dolphins are not smug in real life. Probably. Maybe.",
-            "Dolphins are creative and capable of abstract thought. In captivity, they can be asked to invent new tricks, and will often succeed.",
-            "Dolphins have been seen directly communicating with each other. In fact, it is believed that they can hold full, coherent conversations.",
+            "Placeholder :D",
         ],
         whale: [
-            "The top 10 largest animal species are all whales.",
-            "While some whales are active hunters, others are merely supersized filter feeders. This game's whales are of unspecified type.",
-            "Most whales are very social creatures. Most whales travel in small groups called pods, which might make up clans, and then communities. (some, however, are solitary)",
-            "It is not completely understood why whales sing, but scientists agree it serves some kind of social purpose." /* Whales are observed to react to each other's songs and come to */,
+            "Placeholder :D",
         ],
         urchin: [
-            "Sea urchins primarily eat kelp. A lot of kelp.",
-            "Sea urchins have been observed to wear various items on top of themselves, such as rocks. If you give them little hats, they will wear those too. It is not agreed upon why they do this.",
-            "Most sea urchins are not venomous.",
-            "The spines on most sea urchins are not very sharp. Many species of urchin can be held in the palm.",
+            "Placeholder :D",
         ],
         squid: [
-            "Squid eat crabs. They're not eating yours out of politeness.",
-            "Giant squid are real. They live incredibly deep in the ocean.",
-            "Squid have no bones whatsoever.",
-            "Squids have tiny ink sacs on their skin which expand when pulled by certain skin muscles, making it possible for them to camouflage themselves.",
-            // Based on https://www.youtube.com/watch?v=0wtLrlIKvJE
+            "Placeholder :D",
         ],
         lobster: [
-            "Lobsters really do eat clams. They instinctively know how to crack them open.",
-            "Due to a biological quirk, lobsters are highly resistant to aging and can live for an extremely long time. Some will live longer than humans.",
-            "Lobsters have teeth in their stomach, not in their mouth, and they chew with those teeth.",
-            "Lobsters have asymmetric claws. One of them, called the crusher, is used for...crushing. The other, called the pincer, is used for...pincing. Marine biologists were feeling creative, clearly.",
+            "Placeholder :D",
         ],
         shrimp: [
-            "There are real eusocial shrimps that live in communities in sponges on reefs, complete with queens.",
-            "Shrimp are close relatives of lobsters. They have a lot of similarities, and in some ways are just smaller, narrower lobsters.",
+            "Placeholder :D",
         ],
         eel: [
-            "Eels come in a wide range of sizes, from just a few inches to multiple meters.",
-            "The highest shock ever produced by an eel was 860 volts, more then any other animal!",
-            "Eels migrate a distance of 5,000 to 10,000 km across the Atlantic Ocean to the Sargasso Sea.",
+            "Placeholder :D ...do I really have to do all these?",
         ],
         chimaera: [
-            "Chimaera are closely related to sharks and rays.",
-            "Chimaera are deep-sea animals, usually found more than 500 meters (~1500 feet) below the surface of the ocean.",
-            "Chimaera have a venomous spine in front of their dorsal fin.",
-            "Chimaera are not purple, they are completely pale. They don't bother with colors because deep-sea animals like chimaera cannot be seen anyways.",
-            "Chimaera do not have bones. Neither do sharks or rays.",
+            "Placeholder :D",
         ],
         billfish: [
-            "Billfish do indeed have bones, unlike sharks and rays.",
-            "Swordfish and marlins are large, predatory fish. At adulthood, their only natural predators are sharks (oh no) and whales.",
-            "The top speed of marlins is commonly reported to be 60 mph, but this is not accurate. It's actually closer to 30 mph.",
-            "The bill of a billfish is used to slash like a sword, not stab like a spear.",
-            "Swordfish are not a group of fish, they are a single species: Xiphias gladius.",
-            "Swordfish, spearfish, and marlins are part of a larger group of fish called billfish (the group featured in this game), of which there are only 12 species.",
+            "Placeholder :D"
         ],
         mudskipper: [
-            "Unlike sharks and rays, mudskippers have bones.",
-            "The mudskipper species <i>Periophthalmus Modestus</i> takes care of their eggs in air pockets inside mud burrows, and floods the burrow to hatch them.",
-            "Some species of muskipper eat debris, making them detritivores, while other species are carnivores.",
-            "After a mudskipper lays their eggs, the mother normally leaves them to be guarded by the father.",
-            "Much like amphibians, mudskippers can breathe through their skin when wet.",
+            "Placeholder :D"
         ],
         caracara: [
-            "Yes, I know they're birds. It was suggested that they could be replaced with starfish, but people didn't like that.",
-            "There are multiple species of caracara in real life, but the only one here is the striated caracara, because it's the smartest.",
-            "It is is pronounced <i>KA-ruh-KAH-ruh</i>, not <i>KA-ruh-KA-ruh</i>.",
-        ],
-        seaApple: [
-            "Sea apples are a type of sea cucumber. They feed on debris and detritus.",
-            "Sea apples are in no way actually attracted to kelp. The apples in this game are weird.",
-        ],
-        jellyfish: [
-            // "Sharks would definitely not have a way of acquiring most kinds of jellyfish in real life.",
-            "Jellyfish can be extremely dangerous. Some kinds of box jellyfish have fatal stings.",
-            "Turritopsis dohrnii is a species of jellyfish that can restart its lifecycle at will. In theory, this grants it an infinite lifespan.",
-            "Jellyfish are very old, evolutionarily speaking. A few jellyfish fossils have been dated to approximately 500 million years ago.",
-            "The gastric system of jellyfish has only one hole, which means that food comes out from the same place as it goes in. Ewwww.",
-            "Jellyfish are from the 'cnidaria' phylum, the same phylum of sea anemones.",
-            "Despite its name and looking like a jellyfish, comb jellies are not related to jellyfish. They are ctenophores.",
-            // do more research into jellies
-            // On it, boss -Biggest Brian
-        ],
-        sharkonium: [
-            "There is nothing suspicious about the machines.",
-            "Small and medium-scale sharkonium machines do not require a power source. This is because sharkonium is made with crystals, which contain latent magic.",
-            "Sharkonium would remind a person of steel tinted purple. To a shark, it looks like shiny nothing.",
-            "Sharkonium does not taste like grapes. No, I will not let you taste it for yourself.",
-        ],
-        // I just decided to put something in to complete the sentence, it was driving me nuts -Biggest Brian
-        porite: [
-            "The idea for porite comes from the structure of bones, which have spongey insides that reduce their weight while retaining their strength.",
-            "Porite is stronger than glass, but brittle under pressure, so it's only appropriate to make tools, not machines.",
-            "Porite is a kind of glass. It melts at a low temperature and sets nicely, so broken tools are easily recycled.",
-            "No, you can't eat it.",
-        ],
-        calcinium: [
-            "Calcinium was inspired by the appearance and texture of limestone and seashells.",
-            "It take a lot of heat to make, and once formed, calcinium doesn't melt easily. Every batch needs to be molded quickly, or it will go to waste.",
-            "Calcinium is a very versatile material. Cooled quickly, it is a brittle ceramic - but cooled slowly, it's a rigid plastic. The lobsters make use of both methods.",
-            "While calcinium looks like meringue, it most probably doesn't taste anything like.",
-        ],
-        hardbark: [
-            "To a human, hardbark looks like a dark blue stick covered in a thick layer of light-blue-tinted resin or glass. To the frenzy, it looks like a shiny rod of wood.",
-            "Hardbark is actually quite strong, courtesy of the crystal it's coated in. It clinks like glass.",
-            "No, hardbark does not taste like a blue raspberry lollipop, and NO, YOU CANNOT EAT IT--",
-            "You. Do. Not. Know. HOW MANY TYPOS. I have made. Trying to spell. <i>Hardbark.</i>",
-            "You might be wondering why the stick doesn't appear brown. That's because its developer couldn't find a mix between brown and light blue.",
-        ],
-        laser: [
-            "Sharks with lasers were overdone, okay? 'Laser ray' is a pun, so it's obviously superior.",
-            "Sand probably does not actually fuse into magic crystals. Unless you count glass.",
-            "We do not know how the rays strap lasers to themselves. It is known only to the sharks.",
-            "Laser rays take power directly from the heat of hydrothermal vents, so they are each tethered to a small operating area.",
-            "By default, the laser ray's laser is quite low-temperature. It takes quite a bit of effort (and sand) to properly fuse anything.",
-        ],
-        coral: [
-            "Some coral can actually catch small fish.",
-            "Coral is not a plant, it is an animal. A weird, stationary animal.",
-            "Coral are primarily carnivores. They eat plankton (teeny tiny things that can't swim), grabbing them with little tentacles and pulling them into their mouths.",
-            "Many kinds of coral have a mutualistic relationship with species of algae, who produce nutrients in exchange for carbon dioxide and shelter.",
-            "Despite being as stationary as a sponge, coral is more closely related to jellyfishes.",
-        ],
-        sponge: [
-            "Sponges are incredibly distinct from all other animals. They are asymmetric, have no organs, and their cells can change specialization at will.",
-            "Sponges are incredibly, incredibly old, evolutionarily speaking. They probably date back at least 600 million years.",
-            "Sponge is not a plant, it is an animal. A weird, amorphous animal.",
-            "The pores in sponges are designed to help them filter water for food at maximum efficiency.",
-            "Many species of sponge have a mualistic realitionship with species of algae. The algaes use photosynthesis to produce food for the sponges.",
-            "Sponges have bacteria inside their own cells that help with the metabolism of many substances. This is called 'endosymbiosis'.",
-            "The first animal formed, the 'urmetazoa', was something akin to a sponge.",
-        ],
-        algae: [
-            "Algae comes in many different shapes, sizes, and forms. A very notable one is 'valonia ventricosa,' a species where every individual cell can grow larger than a grape.",
-            "Algae is neither plant nor animal. It is something else entirely (a 'protist').",
-            "Kelp is a kind of algae. In fact, all seaweed is algae. The sea has very few true plants.",
-        ],
-        kelp: ["Kelp is not a plant, it's a kind of algae. Algae is also not a plant."],
-        seagrass: [
-            "Unlike kelp, seagrass is a true plant. It is one of very few under the sea.",
-            "Seagrass flowers don't exactly look like the kind we are used to.",
-        ],
-        arcana: [
-            "Arcane, super-charged energy crystals are definitely not real.",
-            "These things snap like fireworks when you break them. It's pretty cool.",
-        ],
-        sacrifice: ["Nobody knows how the energy of the crystals gets into the frenzy."],
-        science: ["Real sharks do not know how to do science. Probably."],
-        sand: [
-            "In the real world, the ocean floor is not always sand. The deep ocean usually has much finer sediment.",
-            "Sand gets transported very long distances by ocean currents. The longer it takes to travel to its destination beach, the finer the sand will be.",
-        ],
-        driftwood: [
-            "According to Norse mythology, the first two humans were made out of driftwood. Whatever Norse is. And humans.",
-            "The frenzy never burns driftwood as fuel, as the combustion releases toxic and long-lasting substances into the air.",
-            "Driftwood is often used by several animals, both aquatic and terrestrial, as shelter and food.",
-            "In the beyond, driftwood can be found in abundance as simple 'wood', but only driftwood has the right composition for hardbark.", //according to the caracaras.
-        ],
-        ancientPart: [
-            "What do they do? We still aren't sure.",
-            "These parts would probably remind a person of train parts. To a shark, they just look like nothing.",
-            "What are they made of? I don't know, you tell me!",
-            "The ancient parts have a texture like painted-over concrete. They clink together with a sound like ceramic.",
-        ],
-        investigator: ["We are not sure where the octopuses get their funny hats. Presumably they just find them."],
-        eggBrooder: ["This is gross."],
-        collector: [
-            "The Dromia personata is a species of crab that take sponges and attach them to their backs as a method of camouflage.",
-            "Don't touch the sponge on their backs. They're very protective about it.",
-        ],
-        delphinium: [
-            "To a person, delphinium is glitter on blue gold. To a shark, it's headache-inducing.",
-            "The dolphin recipe for delphinium is ancient. It took them many generations to perfect the process, or so they say.",
-            "The dolphins are rather fond of delphinium. They appreciate the practicality of sharkonium, however.",
-            "Delphinium is rather heavy, and doesn't do well under stress - but soft enough to be crafted into complex shapes.",
-        ],
-        ice: ["In the original shark game, ice used to eat away your resources instead of slowing their production."],
-        tar: ["In the original shark game, tar was gained passively. Machines produced basically none of it."],
-        calciniumConverter: [
-            "Machine-brain interfaces, such as the ones used by lobsters, actually already exist.",
-            "While the first machine-brain interface was created by the science shark team, in the real world, it was developed by brazilian scientist 'Miguel Niconelis'.",
-            "Machine-brain interfaces are normally done without any surgery, but the lobsters thought it looked cooler to jam the wires in their skulls.",
+            "Placeholder :D"
         ],
 
     },
 
     default: [
-        "Shark Game's initial bare minimum code came from an abandoned idle game about bees. Almost no trace of bees remains!",
-        "The existence of resources that create resources that create resources in this game were inspired by Derivative Clicker!",
-        "Kitten Game was an inspiration for this game! This surprises probably no one. The very first message the game gives you is a nod of sorts.",
-        "There is a surprising deficit of cookie in this game.",
-        "Remoras were banished from the oceans in the long bygone eras. The sharks hope they never come back.",
-        "Fun facts will only talk about things you have already seen in-game.",
-        "Fun facts have always been in the game's code, but have never been exposed until this system for displaying them was added.",
-        "New Frontiers, this Shark Game mod, was inspired by the unfolding nature of the Candy Box games and A Dark Room.",
-        "Any timewalls in this game can be completely bypassed with good strategy.",
-        "This game has keybinds. They are more useful than you might think. Check the options menu.",
-        "Shark Game: New Frontiers is a mod of Cirrial's Untitled Shark Game. It started as a refurbishment, but quickly evolved into a total remake.",
+        "Placeholder :D",
     ],
 };

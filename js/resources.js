@@ -916,7 +916,7 @@ SharkGame.Resources = {
 
             if (SharkGame.Aspects.meditation.level) {
                 SharkGame.Button.makeHoverscriptButton(
-                    "pausar",
+                    "pause-toggle",
                     "||",
                     $("#minute-pause"),
                     res.pause.togglePause,

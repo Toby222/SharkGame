@@ -4332,6 +4332,7 @@ SharkGame.HomeActions = {
                 "At least it's not gross.",
                 "We would learn a lot more from these if they weren't so absolutely tiny.",
             ],
+            
             helpText: "Dissect seagrass flowers to further the cause of science. This is research, probably!",
         },
 
@@ -4944,9 +4945,50 @@ SharkGame.HomeActions = {
         }, //end of machine code
 
         // UNIQUE //////////////////////
-        getSafeholdSentinel: {},
-        getBarrageBraver: {},
-        getGatemasterPuppet: {},
+        getSafeholdSentinel: {}, //end of unique code
+        getBarrageBraver: {}, //end of unique code
+        getGatemasterPuppet: {}, //end of unique code
+
+        // PLACES /////////////////////
+        getSeagrassFarm: {
+            name: "Construct seagrass farm",
+            effect: {
+                resource: {
+                    seagrassFarm: 1,
+                },
+            },
+            cost: [
+                { resource: "seagrass", costFunction: "constant", priceIncrease: 1 },
+                {
+                    resource: "sand",
+                    costFunction: "linear",
+                    get priceIncrease() {
+                        return SharkGame.Upgrades.purchased.includes("landReform") ? 50 : 250;
+                    },
+                },
+            ],
+            max: "seagrassFarm",
+            prereq: {
+                upgrade: ["Agriculture"],
+            },
+            outcomes: [
+                "Seagrass farm constructed, seagrass barn raised.",
+                "Now growing seagrass in this general location.",
+                "Sand tilled. Seagrass planted.",
+                "'Right here, this will be a farm!' And so it was.",
+                "Stabilising the seabed one farm at a time!",
+            ],
+            multiOutcomes: [
+                "Do we really need to till the sand to grow seagrass?",
+                "Grow, seagrass! Grow!",
+                "The connoisseurs are pleased.",
+                "Is anybody staffing these?",
+                "Farms are a-go.",
+                "Designated growing spots.",
+                "Imagine how much science must be in this place.
+            ],
+            helpText: "Pick a spot and set up a seagrass farm there.",
+        },
    },
 
 
@@ -5106,7 +5148,7 @@ SharkGame.HomeActionCategories = {
 
     places: {
         name: "Places",
-        actions: ["getSpongeFarm", "getCoralFarm"],
+        actions: ["getSpongeFarm", "getCoralFarm", "getSeagrassFarm"],
     },
 
     unique: {

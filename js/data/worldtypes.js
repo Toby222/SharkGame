@@ -383,7 +383,10 @@ SharkGame.WorldTypes = {
              "basicmaterials",
              "sharkmachines",
              "driftwood",
-             "mudskipperpuppets"],
+             "mudskipperpuppets",
+             "coralFarm",
+             "seagrassFarm",
+            ],
             absentResources: ["kelp", "seaApple"],
             modifiers: [
              { type: "multiplier", modifier: "planetaryIncomeMultiplier", resource: "crab", amount: 1 }

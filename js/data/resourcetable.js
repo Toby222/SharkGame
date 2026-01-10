@@ -844,7 +844,7 @@ SharkGame.ResourceTable = {
 
     // SHORE
 
-    stabilizer: { //my inner british english speaker is screaming blue murder --ThreeCrabs
+    stabilizer: { //my inner british english speaker is screaming blue murder --ThreeEels
         name: "stabilizer crabs",
         singleName: "stabilizer crab",
         color: "#339966",
@@ -893,6 +893,14 @@ SharkGame.ResourceTable = {
         desc: "Pistons and mechanisms for the puppets.",
         color: "#1F2F45",
         value: 1500,
+    },
+
+    intel: {
+        name: "intel",
+        singleName: "intel",
+        desc: "What the Braver knows.",
+        color: "#FFFFFF",
+        value: 150,
     },
 
     mentor: {
@@ -981,11 +989,46 @@ SharkGame.ResourceTable = {
         value: 3500,
     },
 
-    safeholdSentinel: {},
+    safeholdSentinel: {
+        name: "Safehold Sentinel", //it's special. that's why it has caps. --ThreeEels
+        singleName: "Safehold Sentinel",
+        desc: "The warden of many arms.",
+        color: "#FFFFFF",
+        income: {
+            roughSand: -5.5,
+        },
+        value: 1000,
+    },
     
-    barrageBraver: {},
+    barrageBraver: {
+        name: "Barrage Braver",
+        singleName: "Barrage Braver",
+        desc: "The courageous one.",
+        color: "#FFFFFF",
+        income: {
+            intel: 0.0001
+        },
+        value: 1000,
+    },
 
-    gatemasterPuppet: {},
+    gatemasterPuppet: {
+        name: "Gatemaster",
+        singleName: "Gatemaster",
+        desc: "It oversees its children and its home.",
+        color: "#FFFFFF",
+        value: 2000,
+    },
+
+    seagrassFarm: {
+        name: "seagrass farms",
+        singleName: "seagrass farm",
+        desc: "Flowing crops of many blades.",
+        color: "#FFFFFF",
+        income: {
+            seagrass: 1.5,
+        },
+        value: 770,
+    },
     
     roughSand: {
         name: "rough sand",
@@ -1499,6 +1542,14 @@ SharkGame.GeneratorIncomeAffectorsOriginal = {
            shoreQueller: 0.05,
        },
    },
+   gatemasterPuppet: {
+       multiply: {
+           coralCollector: 15,
+           hardbarkSmith: 15,
+           driftwoodSnarer: 15,
+           shoreQueller: 15,
+       },
+   },
     // cool tooltip test crab
     /*     crab: {
         exponentiate: {
@@ -1616,6 +1667,7 @@ SharkGame.ResourceCategories = {
             "chart",
             "map",
             // "knowledge",
+            "intel",
         ],
     },
     magical: {
@@ -1794,7 +1846,7 @@ SharkGame.ResourceCategories = {
             "The location has been barred.",
             "Alright everyone, pack it up! Get outta here!",
         ],
-        resources: ["spongeFarm", "coralFarm"],
+        resources: ["spongeFarm", "coralFarm", "seagrassFarm"],
     },
     special: {
         name: "Special",

@@ -41,7 +41,7 @@ SharkGame.CheatsAndDebug = {
             },
             type: "numeric",
             updates: true,
-            category: "stuff",
+            category: "recursos",
             click() {
                 log.addMessage(cad.giveEverything(sharkmath.getBuyAmount(true)));
             },
@@ -51,7 +51,7 @@ SharkGame.CheatsAndDebug = {
                 return "Perder " + sharktext.beautify(sharkmath.getBuyAmount(true)) + " de Tudo";
             },
             updates: true,
-            category: "stuff",
+            category: "recursos",
             click() {
                 log.addMessage(cad.giveEverything(-sharkmath.getBuyAmount(true)));
             },
@@ -78,7 +78,7 @@ SharkGame.CheatsAndDebug = {
                 return existingStuff;
             },
             updates: true,
-            category: "stuff",
+            category: "recursos",
             click() {
                 log.addMessage(cad.giveSomething($("#somethingSelector")[0].value, sharkmath.getBuyAmount(true)));
             },
@@ -94,7 +94,7 @@ SharkGame.CheatsAndDebug = {
                 );
             },
             updates: true,
-            category: "stuff",
+            category: "recursos",
             click() {
                 log.addMessage(cad.giveSomething($("#somethingSelector")[0].value, -sharkmath.getBuyAmount(true)));
             },
@@ -122,7 +122,7 @@ SharkGame.CheatsAndDebug = {
         changeSpeed: {
             name: "Velocidade do Jogo",
             type: "up-down",
-            category: "modifiers",
+            category: "modificadores",
             clickUp() {
                 const msg = cad.goFasterPlease();
                 if (msg) log.addMessage(msg);
@@ -135,7 +135,7 @@ SharkGame.CheatsAndDebug = {
         changeUpgradePrices: {
             name: "Custo de Melhorias",
             type: "up-down",
-            category: "modifiers",
+            category: "modificadores",
             clickUp() {
                 const msg = cad.expensiveUpgradesPlease();
                 if (msg) log.addMessage(msg);
@@ -148,7 +148,7 @@ SharkGame.CheatsAndDebug = {
         changeStuffPrices: {
             name: "Preço de Coisas",
             type: "up-down",
-            category: "modifiers",
+            category: "modificadores",
             clickUp() {
                 const msg = cad.expensiveStuffPlease();
                 if (msg) log.addMessage(msg);
@@ -162,7 +162,7 @@ SharkGame.CheatsAndDebug = {
             get name() {
                 return cad.actionPriceModifier ? "Habilitar coisas grátis" : "Disabilitar coisas grátis";
             },
-            category: "modifiers",
+            category: "modificadores",
             updates: true,
             click() {
                 const msg = cad.toggleFreeStuff();
@@ -173,7 +173,7 @@ SharkGame.CheatsAndDebug = {
             get name() {
                 return cad.upgradePriceModifier ? "Habilitar melhorias grátis" : "Desativar melhorias grátis";
             },
-            category: "modifiers",
+            category: "modificadores",
             updates: true,
             click() {
                 const msg = cad.toggleFreeUpgrades();
@@ -210,21 +210,21 @@ SharkGame.CheatsAndDebug = {
         },
         beatWorld: {
             name: "Vencer este mundo imediatamante",
-            category: "misc",
+            category: "miscelâneo",
             click() {
                 log.addMessage(cad.beatWorldPlease());
             },
         },
         addUpgrades: {
             name: "Conseguir todas as melhorias",
-            category: "misc",
+            category: "miscelâneo",
             click() {
                 cad.addUpgradesPlease();
             },
         },
         addIdleTime: {
             name: "Adicionar tempo extra",
-            category: "misc",
+            category: "miscelâneo",
             click() {
                 cad.addIdleTimePlease();
             },
@@ -232,7 +232,7 @@ SharkGame.CheatsAndDebug = {
         rollDice: {
             name: "Role um dado, efeitos malucos",
             location: "right",
-            category: "nonsense",
+            category: "maluquice",
             click() {
                 log.addMessage(cad.rollTheDicePlease());
             },
@@ -242,7 +242,7 @@ SharkGame.CheatsAndDebug = {
                 return cad.frozen ? "Descongelar recursos" : "Congelar recursos";
             },
             updates: true,
-            category: "nonsense",
+            category: "maluquice",
             click() {
                 log.addMessage(cad.toggleFreezePlease());
             },
@@ -250,7 +250,7 @@ SharkGame.CheatsAndDebug = {
         forceExistence: {
             name: "Fazer todas as coisas existirem",
             location: "right",
-            category: "nonsense",
+            category: "maluquice",
             click() {
                 log.addMessage(cad.forceAllExist());
             },
@@ -263,8 +263,8 @@ SharkGame.CheatsAndDebug = {
         //     },
         // },
         egg: {
-            name: "egg",
-            category: "nonsense",
+            name: "vugnaes sreo",
+            category: "maluquice",
             click() {
                 log.addMessage(cad.doEgg());
             },
@@ -897,7 +897,7 @@ SharkGame.CheatsAndDebug = {
                 log.addError("Não dá para mudar o preço das melhorias porque elas estão grátis.");
                 break;
             case 1 / 2:
-                msg = "Melhorias custam a metado do normal.";
+                msg = "Melhorias custam a metade do normal.";
                 break;
             case 1 / 512:
                 msg = "Melhorias a preço de banana.";
@@ -997,6 +997,6 @@ SharkGame.CheatsAndDebug = {
             SharkGame.flags.egg = true;
         }
         res.reconstructResourcesTable();
-        return "egg";
+        return "vugnaes sreo";
     },
 };

@@ -330,9 +330,9 @@ SharkGame.TextUtil = {
 
         if (SharkGame.flags.egg) {
             if (amount > 1) {
-                name = "ovos";
+                name = "'-'";
             } else {
-                name = "ovo";
+                name = "'-'";
             }
         }
 

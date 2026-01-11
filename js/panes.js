@@ -365,8 +365,8 @@ SharkGame.PaneHandler = {
         // BACKUP MANAGEMENT
         row = $("<tr>");
         const row2 = $("<tr>");
-        row.append($("<td>").html("Save Backups:<br/><span class='smallDesc'>(Criar uma cópia de segurança.)</span>"));
-        row2.append($("<td>").html("Load Backups:<br/><span class='smallDesc'>(Carregar uma cópia de segurança.)</span>"));
+        row.append($("<td>").html("Salvar cópia de segurança:<br/><span class='smallDesc'>(Criar uma cópia de segurança.)</span>"));
+        row2.append($("<td>").html("Carregar cópia de segurança:<br/><span class='smallDesc'>(Carregar uma cópia de segurança.)</span>"));
 
         _.each(["1", "2", "3"], (tag) => {
             row.append(

@@ -581,7 +581,7 @@ SharkGame.Gateway = {
             );
             aspectTreeContent.append($("<strong>").html(" ESSÊNCIA"));
             aspectTreeContent.append($("<p>").html("Sua vontade flui sobre coisas sólidas além do seu controle.<br>Tenha foco."));
-            aspectTreeContent.append(tree.drawTree(SharkGame.Settings.current.doAspectTable === "table"));
+            aspectTreeContent.append(tree.drawTree(SharkGame.Settings.current.doAspectTable === "planilha"));
 
             const buttonDiv = $("<div>").attr("id", "aspectTreeNavButtons").addClass("gatewayButtonList");
 
@@ -591,7 +591,7 @@ SharkGame.Gateway = {
                 $("#tooltipbox").empty().removeClass("forAspectTree forAspectTreeUnpurchased");
             });
 
-            if (SharkGame.Settings.current.doAspectTable === "table") {
+            if (SharkGame.Settings.current.doAspectTable === "planilha") {
                 if (SharkGame.Aspects.cleanSlate.level) {
                     SharkGame.Button.makeButton("respecModeButton", "modo reembolso", buttonDiv, tree.toggleRefundMode);
                     SharkGame.Button.makeButton("respecButton", "reembolsar tudo", buttonDiv, () => {
@@ -613,7 +613,7 @@ SharkGame.Gateway = {
 
             SharkGame.PaneHandler.swapCurrentPane("ASPECT TREE", aspectTreeContent, true, 500, true);
 
-            if (SharkGame.Settings.current.doAspectTable === "tree") {
+            if (SharkGame.Settings.current.doAspectTable === "árvore") {
                 tree.initTree();
             }
 

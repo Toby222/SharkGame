@@ -4846,7 +4846,11 @@ SharkGame.HomeActions = {
                     coralCollector: 1,
                 },
             },
-            cost: [{ resource: "hardbark", costFunction: "linear", priceIncrease: 50 }],
+            cost: [
+                { resource: "hardbark", costFunction: "linear", priceIncrease: 50 },
+                { resource: "seagrass", costFunction: "linear", priceIncrease: 10 },
+                { resource: "crab", costFunction: "linear", priceIncrease: 1 },
+            ],
             max: "coralCollector",
             prereq: {
                 resource: {
@@ -4872,6 +4876,8 @@ SharkGame.HomeActions = {
             cost: [
                 { resource: "hardbark", costFunction: "linear", priceIncrease: 75 },
                 { resource: "crystal", costFunction: "linear", priceIncrease: 50 },
+                { resource: "seagrass", costFunction: "linear", priceIncrease: 15 },
+                { resource: "shark", costFunction: "linear", priceIncrease: 1 },
             ],
             max: "shoreQueller",
             prereq: {
@@ -4898,7 +4904,8 @@ SharkGame.HomeActions = {
             },
             cost: [
                 { resource: "hardbark", costFunction: "linear", priceIncrease: 25 },
-                { resource: "seagrass", costFunction: "linear", priceIncrease: 15 },
+                { resource: "seagrass", costFunction: "linear", priceIncrease: 25 },
+                { resource: "ray", costFunction: "linear", priceIncrease: 1 },
             ],
             max: "driftwoodSnarer",
             prereq: {
@@ -4926,6 +4933,8 @@ SharkGame.HomeActions = {
             cost: [
                 { resource: "hardbark", costFunction: "linear", priceIncrease: 50 },
                 { resource: "sharkonium", costFunction: "linear", priceIncrease: 25 },
+                { resource: "seagrass", costFunction: "linear", priceIncrease: 15 },
+                { resource: "mudskipper", costFunction: "linear", priceIncrease: 1 },
             ],
             max: "hardbarkSmith",
             prereq: {
@@ -4988,7 +4997,9 @@ SharkGame.HomeActions = {
                 "Imagine how much science must be in this place.
             ],
             helpText: "Pick a spot and set up a seagrass farm there.",
-        },
+        }, //end of place code
+        getExchangeStation: {}, //end of place code
+        getReceiverNode: {}, //end of place code
    },
 
 
@@ -5148,7 +5159,7 @@ SharkGame.HomeActionCategories = {
 
     places: {
         name: "Places",
-        actions: ["getSpongeFarm", "getCoralFarm", "getSeagrassFarm"],
+        actions: ["getSpongeFarm", "getCoralFarm", "getSeagrassFarm", "getExchangeStation", "getReceiverNode"],
     },
 
     unique: {

@@ -1029,6 +1029,10 @@ SharkGame.ResourceTable = {
         },
         value: 770,
     },
+
+    exchangeStation: {},
+
+    receiverNode: {},
     
     roughSand: {
         name: "rough sand",
@@ -1550,6 +1554,11 @@ SharkGame.GeneratorIncomeAffectorsOriginal = {
            shoreQueller: 15,
        },
    },
+   exchangeStation: {
+       multiply: {
+           placeholder: 0.75,
+       },
+   },
     // cool tooltip test crab
     /*     crab: {
         exponentiate: {
@@ -1846,7 +1855,7 @@ SharkGame.ResourceCategories = {
             "The location has been barred.",
             "Alright everyone, pack it up! Get outta here!",
         ],
-        resources: ["spongeFarm", "coralFarm", "seagrassFarm"],
+        resources: ["spongeFarm", "coralFarm", "seagrassFarm", "exchangeStation", "receiverNode"],
     },
     special: {
         name: "Special",

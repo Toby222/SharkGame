@@ -681,7 +681,7 @@ SharkGame.AspectTree = {
             });
         }
         tree.updateRequirementReference();
-        if (SharkGame.Settings.current.doAspectTable === "table") {
+        if (SharkGame.Settings.current.doAspectTable === "planilha") {
             this.drawTable(document.getElementById("aspectTable"));
             this.updateEssenceCounter();
         } else {

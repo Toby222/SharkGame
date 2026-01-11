@@ -567,10 +567,10 @@ SharkGame.PaneHandler = {
         row.append(
             $("<td>").append(
                 $("<button>")
-                    .html("new bind")
+                    .html("novo atalho")
                     .attr("id", "new-bind-button")
                     .on("click", function () {
-                        $(this).html("press some keys...");
+                        $(this).html("aperta alguma coisa...");
                         SharkGame.Keybinds.waitForKey = true;
                     }),
             ),
@@ -588,7 +588,7 @@ SharkGame.PaneHandler = {
                 });
                 _.each(SharkGame.Keybinds.actions, (potentialBoundAction, i) => {
                     selector.append(
-                        `<option${i % 2 === 0 ? ' class="evenMessage"' : ""} ${boundAction === potentialBoundAction ? " selected" : ""}>` +
+                        `<option${i % 2 === 0 ? ' class="evenMessage"' : ""} ${boundAction === potentialBoundAction ? " selecionado" : ""}>` +
                             potentialBoundAction +
                             "</option>",
                     );

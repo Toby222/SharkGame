@@ -372,6 +372,8 @@ SharkGame.WorldTypes = {
             includedResources: [
              "basics",
              "coral",
+             "driftwood",
+             "intel",
              "seagrass",
              "sharks",
              "rays",
@@ -382,10 +384,11 @@ SharkGame.WorldTypes = {
              "caracaras",
              "basicmaterials",
              "sharkmachines",
-             "driftwood",
              "mudskipperpuppets",
              "coralFarm",
-             "seagrassFarm",
+             "seagrassFarm"
+             "exchangeStation",
+             "recieverNode",
             ],
             absentResources: ["kelp", "seaApple"],
             modifiers: [

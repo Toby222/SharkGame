@@ -4721,6 +4721,9 @@ SharkGame.HomeActions = {
             helpText: "Convince a caracara from the surface to retrieve crystals.",
         }, //end of creature code
 
+        // CRAB JOBS /////////////////////////////////
+        getStabilizer: { },
+
         // MUDSKIPPER JOBS ///////////////////////////
         getBurrow: {
             name: "Dig mudskipper burrow",
@@ -4985,7 +4988,7 @@ SharkGame.HomeActions = {
                 "Now growing seagrass in this general location.",
                 "Sand tilled. Seagrass planted.",
                 "'Right here, this will be a farm!' And so it was.",
-                "Stabilising the seabed one farm at a time!",
+                "Stabilizing the seabed one farm at a time!",
             ],
             multiOutcomes: [
                 "Do we really need to till the sand to grow seagrass?",

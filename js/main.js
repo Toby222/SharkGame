@@ -48,7 +48,7 @@ $(document).on("keydown", (event) => {
 $.extend(SharkGame, {
     GAME_NAMES: [
         "Domingão do Cação",
-        "Tubarão. Jogo. Preciso falar mais?",
+        "Tubarão. Jogo. Quer que desenhe?",
         "Chega De Mariscos, De Negar o Meu Desejo",
         "Oceano Clicker",
         "Como Treinar o Seu Salmão",
@@ -61,7 +61,8 @@ $.extend(SharkGame, {
         "Siri-dade Alerta",
         "A Divina Co-mar-dia",
         "Todo Mundo Odeia o Siris",
-        "O Tubarão de Mar Street",
+        "O Lobo de Mar Street",
+        "O Atum da Compadecida",
         "Uma Família da Caçada",
         "Clube da Lula",
         "Smells Like Tubarão Spirit",
@@ -69,7 +70,7 @@ $.extend(SharkGame, {
         "PT: Partido dos Trarraiadores",
         "PCO: Partido da Causa Ouriçária",
         "PCB: Partido Cardumista Brasileiro",
-        "PSOL: Partido Socialista de Luliberdade",
+        "PSOL: Partido Socialista da Luliberdade",
         "UP: Unidade Polvular",
         "Novas Fronteiras",
         "Guelra Mundial T",

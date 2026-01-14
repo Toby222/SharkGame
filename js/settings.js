@@ -202,6 +202,16 @@ SharkGame.Settings = {
 
     // ACCESSIBILITY
 
+    language: {
+        defaultSetting: "Português",
+        name: "Língua",
+        desc: "Qual é o idioma do jogo.",
+        category: "ACESSIBILIDADE",
+        options: ["Português", "English"],
+        onChange() {
+        },
+    },
+
     doAspectTable: {
         defaultSetting: "árvore",
         name: "Planilha/Árvore de aspectos",

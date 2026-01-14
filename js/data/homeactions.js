@@ -4625,20 +4625,8 @@ SharkGame.HomeActions = {
                 },
             },
             cost: [
-                {
-                    resource: "crystal",
-                    costFunction: "constant",
-                    get priceIncrease() {
-                        return 5 - SharkGame.Aspects.syntheticTransmutation.level;
-                    },
-                },
-                {
-                    resource: "driftwood",
-                    costFunction: "constant",
-                    get priceIncrease() {
-                        return 10 - 3 * SharkGame.Aspects.syntheticTransmutation.level;
-                    },
-                },
+                { resource: "crystal", costFunction: "constant", priceIncrease: 5},
+                { resource: "driftwood", costFunction: "constant", priceIncrease: 1},
             ],
             max: "hardbark",
             prereq: {

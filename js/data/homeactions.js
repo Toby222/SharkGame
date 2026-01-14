@@ -4710,7 +4710,35 @@ SharkGame.HomeActions = {
         }, //end of creature code
 
         // CRAB JOBS /////////////////////////////////
-        getStabilizer: { },
+        getStabilizer: {
+            name: "Provide crab stabilizer",
+            effect: {
+                resource: {
+                    stabilizer: 1,
+                },
+            },
+            cost: [
+                { resource: "crab", costFunction: "linear", priceIncrease: 1 },
+                { resource: "seagrass", costFunction: "linear", priceIncrease: 2 },
+                { resource: "coral", costFunction: "linear", priceIncrease: 4 },
+            ],
+            max: "stabilizer",
+            prereq: {
+                resource: {
+                    crab: 1,
+                    coral: 4,
+                    seagrass: 2,
+                },
+                upgrade: ["stabilization"],
+            },
+            outcomes: [
+                "/*to be written in future*/",
+            ],
+            multiOutcomes: [
+                "/*to be written in future*/",
+            ],
+            helpText: "Provide a crab with coral and seagrass to plant.",
+        },
 
         // MUDSKIPPER JOBS ///////////////////////////
         getBurrow: {

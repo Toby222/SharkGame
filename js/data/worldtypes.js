@@ -388,7 +388,7 @@ SharkGame.WorldTypes = {
              "coralFarm",
              "seagrassFarm"
              "exchangeStation",
-             "recieverNode",
+             "receiverNode",
             ],
             absentResources: ["kelp", "seaApple"],
             modifiers: [

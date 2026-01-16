@@ -4679,7 +4679,7 @@ SharkGame.HomeActions = {
             helpText: "Liberate a mudskipper from its boring old life and command it to retrieve driftwood for you.",
         }, //end of creature code
         getCaracara: {
-            name: "Procure caracara",
+            name: "Convince caracara",
             effect: {
                 resource: {
                     caracara: 1,

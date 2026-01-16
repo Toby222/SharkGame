@@ -202,6 +202,16 @@ SharkGame.Settings = {
 
     // ACCESSIBILITY
 
+    language: {
+        defaultSetting: "english",
+        name: "Language",
+        desc: "Which way western man.",
+        category: "ACCESSIBILITY",
+        options: ["english", "português"],
+        onChange() {
+        },
+    },
+    
     doAspectTable: {
         defaultSetting: "tree",
         name: "Aspect Table or Tree",

@@ -211,7 +211,7 @@ SharkGame.Settings = {
         onChange() {
         },
     },
-    
+
     doAspectTable: {
         defaultSetting: "tree",
         name: "Aspect Table or Tree",

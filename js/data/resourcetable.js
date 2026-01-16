@@ -26,7 +26,6 @@ SharkGame.ResourceTable = {
         singleName: "numen",
         desc: "You think as a deity. You act as a deity. You are a deity.",
         color: "#FFFFFF",
-        value: -1,
     },
 
     essence: {
@@ -34,7 +33,6 @@ SharkGame.ResourceTable = {
         singleName: "essence",
         desc: "Etheric force, raw and dangerous.",
         color: "#ACE3D1",
-        value: -1,
     },
 
     world: {
@@ -64,7 +62,6 @@ SharkGame.ResourceTable = {
         },
         desc: "how are you seeing this",
         color: "#FFFFFF",
-        value: 123456789,
         forceIncome: true,
     },
 
@@ -87,7 +84,6 @@ SharkGame.ResourceTable = {
         },
         desc: "how are you seeing this",
         color: "#FFFFFF",
-        value: 123456789,
         forceIncome: true,
     },
 
@@ -106,7 +102,6 @@ SharkGame.ResourceTable = {
         },
         desc: "how are you seeing this",
         color: "#FFFFFF",
-        value: 123456789,
         forceIncome: false,
     },
 
@@ -143,7 +138,6 @@ SharkGame.ResourceTable = {
         singleName: "sacrifice",
         desc: "The cost of progress.",
         color: "#FFD6FC",
-        value: 1,
     },
 
     arcana: {
@@ -151,7 +145,6 @@ SharkGame.ResourceTable = {
         singleName: "arcana",
         desc: "Inscrutable mysteries.",
         color: "#E791FF",
-        value: 1,
     },
 
     // SCIENCE
@@ -161,7 +154,6 @@ SharkGame.ResourceTable = {
         singleName: "science",
         desc: "Lifeblood of progress.",
         color: "#BBA4E0",
-        value: 100,
     },
 
     // ANIMALS
@@ -171,7 +163,6 @@ SharkGame.ResourceTable = {
         singleName: "fish",
         desc: "The hunted.",
         color: "#E3D85B",
-        value: 2,
     },
 
     seaApple: {
@@ -179,7 +170,6 @@ SharkGame.ResourceTable = {
         singleName: "sea apple",
         desc: "Rooted filters.",
         color: "#F0C2C2",
-        value: 3,
     },
 
     sponge: {
@@ -194,7 +184,6 @@ SharkGame.ResourceTable = {
             }
         },
         color: "#ED9847",
-        value: 18,
     },
 
     jellyfish: {
@@ -202,7 +191,6 @@ SharkGame.ResourceTable = {
         singleName: "jellyfish",
         desc: "Squishy. Painful.",
         color: "#E3B8FF",
-        value: 110,
     },
 
     clam: {
@@ -210,7 +198,6 @@ SharkGame.ResourceTable = {
         singleName: "clam",
         desc: "An acquired taste.",
         color: "#828FB5",
-        value: 10,
     },
 
     // MATERIALS
@@ -220,7 +207,6 @@ SharkGame.ResourceTable = {
         singleName: "sand",
         desc: "Flesh of the ocean floor.",
         color: "#C7BD75",
-        value: 3,
     },
 
     crystal: {
@@ -228,7 +214,6 @@ SharkGame.ResourceTable = {
         singleName: "crystal",
         desc: "A strange, glowing material.",
         color: "#6FD9CC",
-        value: 10,
     },
 
     kelp: {
@@ -239,7 +224,6 @@ SharkGame.ResourceTable = {
         income: {
             seaApple: 0.001,
         },
-        value: 9,
     },
 
     coral: {
@@ -247,7 +231,6 @@ SharkGame.ResourceTable = {
         singleName: "coral",
         desc: "Colorful carnivores.",
         color: "#CA354F",
-        value: 3,
     },
 
     algae: {
@@ -270,14 +253,12 @@ SharkGame.ResourceTable = {
         name: "gravel",
         singleName: "gravel",
         color: "#ABABAB",
-        value: 2,
     },
 
     stone: {
         name: "stones",
         singleName: "stone",
         color: "#6B6B6B",
-        value: 3,
     }, */
 
     // PROCESSED
@@ -287,7 +268,6 @@ SharkGame.ResourceTable = {
         singleName: "sharkonium",
         desc: "Progress incarnate.",
         color: "#8D70CC",
-        value: 70,
     },
 
     junk: {
@@ -295,7 +275,6 @@ SharkGame.ResourceTable = {
         singleName: "residue",
         desc: "Industrial potential.",
         color: "#ABABAB",
-        value: 1,
     },
 
     // FRENZY
@@ -309,7 +288,6 @@ SharkGame.ResourceTable = {
             fish: 1,
         },
         jobs: ["scientist", "nurse", "diver"],
-        value: 1000,
     },
 
     ray: {
@@ -322,7 +300,6 @@ SharkGame.ResourceTable = {
             sand: 1,
         },
         jobs: ["laser", "maker", "scholar", "shoveler", "clamScavenger"],
-        value: 1000,
     },
 
     crab: {
@@ -335,7 +312,6 @@ SharkGame.ResourceTable = {
             coral: 0.01,
         },
         jobs: ["planter", "brood", "collector", "researcher", "curiousCrab", "seabedStripper"],
-        value: 1000,
     },
 
     nurse: {
@@ -346,7 +322,6 @@ SharkGame.ResourceTable = {
         income: {
             shark: 0.01,
         },
-        value: 4000,
     },
 
     maker: {
@@ -357,7 +332,6 @@ SharkGame.ResourceTable = {
         income: {
             ray: 0.05,
         },
-        value: 4000,
     },
 
     brood: {
@@ -368,7 +342,6 @@ SharkGame.ResourceTable = {
         income: {
             crab: 0.2,
         },
-        value: 4000,
     },
 
     scientist: {
@@ -379,7 +352,6 @@ SharkGame.ResourceTable = {
         income: {
             science: 0.5,
         },
-        value: 3000,
     },
 
     laser: {
@@ -391,7 +363,6 @@ SharkGame.ResourceTable = {
             sand: -50,
             crystal: 1,
         },
-        value: 3500,
     },
 
     planter: {
@@ -402,7 +373,6 @@ SharkGame.ResourceTable = {
         income: {
             kelp: 0.3,
         },
-        value: 4000,
     },
 
     crystalMiner: {
@@ -474,7 +444,6 @@ SharkGame.ResourceTable = {
             },
             tar: 0.02,
         },
-        value: 50000,
     },
 
     // MARINE
@@ -488,7 +457,6 @@ SharkGame.ResourceTable = {
             clam: 2,
         },
         jobs: ["berrier", "calciniumConverter"],
-        value: 1000,
     },
 
     berrier: {
@@ -499,7 +467,6 @@ SharkGame.ResourceTable = {
         income: {
             lobster: 0.05,
         },
-        value: 4000,
     },
 
     harvester: {
@@ -507,7 +474,6 @@ SharkGame.ResourceTable = {
         singleName: "harvester lobster",
         desc: "null",
         color: "#718493",
-        value: 3000,
     },
 
     calcinium: {
@@ -515,7 +481,6 @@ SharkGame.ResourceTable = {
         singleName: "calcinium",
         desc: "Lobster-invented, clam-derived ceramic.",
         color: "#F5F5DB",
-        value: 75,
     },
 
     clamScavenger: {
@@ -526,7 +491,6 @@ SharkGame.ResourceTable = {
         income: {
             clam: 250,
         },
-        value: 3250,
     },
 
     seabedStripper: {
@@ -537,7 +501,6 @@ SharkGame.ResourceTable = {
         income: {
             kelp: 100,
         },
-        value: 2250,
     },
 
     calciniumConverter: {
@@ -554,7 +517,6 @@ SharkGame.ResourceTable = {
             },
             calcinium: 120,
         },
-        value: 1500,
     },
 
     // volcanic
@@ -568,7 +530,6 @@ SharkGame.ResourceTable = {
             algae: 0.5,
         },
         jobs: ["queen", "farmer", "acolyte"],
-        value: 500,
     },
 
     queen: {
@@ -579,7 +540,6 @@ SharkGame.ResourceTable = {
         income: {
             shrimp: 1,
         },
-        value: 2000,
     },
 
     curiousCrab: {
@@ -591,7 +551,6 @@ SharkGame.ResourceTable = {
             science: 0.25,
         },
         jobs: ["researcher"],
-        value: 1030,
     },
 
     shoveler: {
@@ -599,7 +558,6 @@ SharkGame.ResourceTable = {
         singleName: "shoveler ray",
         desc: "Let's get shoveling!",
         color: "#C49E45",
-        value: 7500,
     },
 
     farmer: {
@@ -607,7 +565,6 @@ SharkGame.ResourceTable = {
         singleName: "shrimp farmer",
         desc: "It's honest work.",
         color: "#DD7A49",
-        value: 1500,
     },
 
     porite: {
@@ -615,7 +572,6 @@ SharkGame.ResourceTable = {
         singleName: "porite",
         desc: "Shiny glass with holes inside.",
         color: "#FDD5B4",
-        value: 150,
     },
 
     researcher: {
@@ -623,7 +579,6 @@ SharkGame.ResourceTable = {
         singleName: "researcher crab",
         desc: "Don't you find this all rather fascinating?",
         color: "#EEEEEE",
-        value: 3750,
     },
 
     acolyte: {
@@ -631,7 +586,6 @@ SharkGame.ResourceTable = {
         singleName: "algae acolyte",
         desc: "Praise be to algae.",
         color: "#1D3D1A",
-        value: 500,
     },
 
     spongeFarm: {
@@ -642,7 +596,6 @@ SharkGame.ResourceTable = {
         income: {
             sponge: 0.5,
         },
-        value: 768,
     },
 
     coralFarm: {
@@ -653,7 +606,6 @@ SharkGame.ResourceTable = {
         income: {
             coral: 2,
         },
-        value: 753,
     },
 
     // TEMPESTUOUS
@@ -670,7 +622,6 @@ SharkGame.ResourceTable = {
             fish: 2,
         },
         jobs: ["billfishExplorer", "billfishMechanic"], // set this
-        value: 1000,
     },
 
     stormgoer: {
@@ -681,7 +632,6 @@ SharkGame.ResourceTable = {
         income: {
             seagrass: 1,
         },
-        value: 1000,
     },
 
     billfishExplorer: {
@@ -692,7 +642,6 @@ SharkGame.ResourceTable = {
         income: {
             chart: 0.01,
         },
-        value: 1000,
     },
 
     chart: {
@@ -700,7 +649,6 @@ SharkGame.ResourceTable = {
         singleName: "chart",
         desc: "It's what we've found.",
         color: "#D9D1B6",
-        value: 100,
     },
 
     map: {
@@ -708,7 +656,6 @@ SharkGame.ResourceTable = {
         singleName: "map",
         desc: "It's what we've been looking for.",
         color: "#7A7254", // set this
-        value: 100,
     },
 
     billfishMechanic: {
@@ -716,7 +663,6 @@ SharkGame.ResourceTable = {
         singleName: "billfish mechanic",
         desc: "The great inventors.",
         color: "#CCCCCC", // set this
-        value: 1000,
     },
 
     billfishPair: {
@@ -727,7 +673,6 @@ SharkGame.ResourceTable = {
         income: {
             billfish: 0.02,
         },
-        value: 1000,
     },
 
     // HAVEN
@@ -741,7 +686,6 @@ SharkGame.ResourceTable = {
             coral: 0.2,
         },
         jobs: ["treasurer", "biologist", "historian"],
-        value: 1000,
     },
 
     whale: {
@@ -753,7 +697,6 @@ SharkGame.ResourceTable = {
             fish: 10000,
         },
         jobs: ["chorus"],
-        value: 5000,
     },
 
     biologist: {
@@ -764,7 +707,6 @@ SharkGame.ResourceTable = {
         income: {
             dolphin: 0.005,
         },
-        value: 4000,
     },
 
     treasurer: {
@@ -776,7 +718,6 @@ SharkGame.ResourceTable = {
             crystal: 1,
             coral: 2,
         },
-        value: 3000,
     },
 
     historian: {
@@ -784,7 +725,6 @@ SharkGame.ResourceTable = {
         singleName: "dolphin historian",
         desc: "The only real scholars around here.",
         color: "#9FBCBF",
-        value: 3000,
     },
 
     chorus: {
@@ -792,7 +732,6 @@ SharkGame.ResourceTable = {
         singleName: "great chorus",
         desc: "A grand ensemble, singing to the tune of life itself.",
         color: "#85BBA9",
-        value: 100000,
     },
 
     crimsonCombine: {
@@ -803,7 +742,6 @@ SharkGame.ResourceTable = {
         income: {
             coral: 250,
         },
-        value: 50000,
     },
 
     kelpCultivator: {
@@ -814,7 +752,6 @@ SharkGame.ResourceTable = {
         income: {
             kelp: 200,
         },
-        value: 50000,
     },
 
     tirelessCrafter: {
@@ -831,7 +768,6 @@ SharkGame.ResourceTable = {
                 return -50 + 25 * SharkGame.Aspects.mechanicalManifestation.level;
             },
         },
-        value: 50000,
     },
 
     delphinium: {
@@ -839,7 +775,6 @@ SharkGame.ResourceTable = {
         singleName: "delphinium",
         desc: "Shiny, but probably worthless.",
         color: "#5BD1A8",
-        value: 70,
     },
 
     // SHORE
@@ -1068,7 +1003,6 @@ SharkGame.ResourceTable = {
             jellyfish: 2.5,
         },
         jobs: ["explorer"],
-        value: 3000,
     },
 
     eel: {
@@ -1081,7 +1015,6 @@ SharkGame.ResourceTable = {
             sand: 0.3,
         },
         jobs: ["pit", "sifter"],
-        value: 3000,
     },
 
     pit: {
@@ -1092,7 +1025,6 @@ SharkGame.ResourceTable = {
         income: {
             eel: 0.02,
         },
-        value: 4000,
     },
 
     diver: {
@@ -1103,7 +1035,6 @@ SharkGame.ResourceTable = {
         income: {
             crystal: 0.5,
         },
-        value: 3000,
     },
 
     scholar: {
@@ -1111,7 +1042,6 @@ SharkGame.ResourceTable = {
         singleName: "ray scholar",
         desc: "Even the arcane unfolds at the hands of study.",
         color: "#C3C4FF",
-        value: 3500,
     },
 
     explorer: {
@@ -1122,7 +1052,6 @@ SharkGame.ResourceTable = {
         income: {
             arcana: 0.004,
         },
-        value: 3000,
     },
 
     sifter: {
@@ -1134,7 +1063,6 @@ SharkGame.ResourceTable = {
             sand: 100,
             arcana: 0.001,
         },
-        value: 3000,
     },
 
     // ABANDONED
@@ -1154,7 +1082,6 @@ SharkGame.ResourceTable = {
             clam: 2,
         },
         jobs: ["investigator", "scavenger"],
-        value: 3000,
     },
 
     investigator: {
@@ -1165,7 +1092,6 @@ SharkGame.ResourceTable = {
         income: {
             science: 2,
         },
-        value: 3000,
     },
 
     scavenger: {
@@ -1176,7 +1102,6 @@ SharkGame.ResourceTable = {
         income: {
             ancientPart: 0.01,
         },
-        value: 3000,
     },
 
     collector: {
@@ -1187,7 +1112,6 @@ SharkGame.ResourceTable = {
         income: {
             sponge: 0.5,
         },
-        value: 4000,
     },
 
     clamCollector: {
@@ -1199,7 +1123,6 @@ SharkGame.ResourceTable = {
             clam: 300,
             tar: 0.2,
         },
-        value: 50000,
     },
 
     sprongeSmelter: {
@@ -1217,7 +1140,6 @@ SharkGame.ResourceTable = {
             },
             tar: 0.04,
         },
-        value: 50000,
     },
 
     eggBrooder: {
@@ -1229,7 +1151,6 @@ SharkGame.ResourceTable = {
             octopus: 1,
             tar: 0.2,
         },
-        value: 50000,
     },
 
     spronge: {
@@ -1237,7 +1158,6 @@ SharkGame.ResourceTable = {
         singleName: "spronge",
         desc: "The mutated.",
         color: "#A97D53",
-        value: 70,
     },
 
     tar: {
@@ -1286,7 +1206,6 @@ SharkGame.ResourceTable = {
             spawner: -0.001,
             burrow: -0.01,
         },
-        value: -100,
         forceIncome: true,
     },
 
@@ -1295,7 +1214,6 @@ SharkGame.ResourceTable = {
         singleName: "ancient part",
         desc: "The mistakes of our predecessors.",
         color: "#8a6853",
-        value: 500,
     },
 
     filter: {
@@ -1306,7 +1224,6 @@ SharkGame.ResourceTable = {
         income: {
             tar: -0.01,
         },
-        value: 1000,
         forceIncome: true,
     },
 
@@ -1326,7 +1243,6 @@ SharkGame.ResourceTable = {
             fish: 4,
         },
         jobs: ["collective", "extractionTeam"],
-        value: 3000,
     },
 
     urchin: {
@@ -1338,7 +1254,6 @@ SharkGame.ResourceTable = {
             sand: 0.1,
             kelp: 0.1,
         },
-        value: 3000,
     },
 
     spawner: {
@@ -1349,7 +1264,6 @@ SharkGame.ResourceTable = {
         income: {
             urchin: 0.05,
         },
-        value: 4000,
     },
 
     collective: {
@@ -1360,7 +1274,6 @@ SharkGame.ResourceTable = {
         income: {
             squid: 0.05,
         },
-        value: 4000,
     },
 
     extractionTeam: {
@@ -1371,7 +1284,6 @@ SharkGame.ResourceTable = {
         income: {
             crystal: 1,
         },
-        value: 4000,
     },
 
     heater: {
@@ -1383,7 +1295,6 @@ SharkGame.ResourceTable = {
             kelp: -500,
             ice: -0.02,
         },
-        value: 50000,
     },
 
     ice: {
@@ -1391,7 +1302,6 @@ SharkGame.ResourceTable = {
         singleName: "ice",
         desc: "Impending doom. Slows down some of the frenzy.",
         color: "#E4F1FB",
-        value: -100,
         forceIncome: true,
     },
 
@@ -1405,7 +1315,6 @@ SharkGame.ResourceTable = {
             crystal: 0.5,
             stone: 0.5,
         },
-        value: 2500,
     }, */
     /* shoveler: {
         name: "shoveler rays",
@@ -1414,7 +1323,6 @@ SharkGame.ResourceTable = {
         income: {
             gravel: 1,
         },
-        value: 3500,
     }, */
     /* miller: {
         name: "miller crabs",
@@ -1424,7 +1332,6 @@ SharkGame.ResourceTable = {
             gravel: -0.6,
             sand: 0.2,
         },
-        value: 2000,
     }, */
     /* rockLobster: {
         name: "rock lobsters",
@@ -1434,7 +1341,6 @@ SharkGame.ResourceTable = {
             stone: -0.5,
             gravel: 1.5,
         },
-        value: 2000,
     }, */
 
     // MACHINES
@@ -1446,7 +1352,6 @@ SharkGame.ResourceTable = {
         income: {
             knowledge: 0.001,
         },
-        value: 200000,
         forceIncome: true,
     },
 

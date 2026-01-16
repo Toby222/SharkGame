@@ -5017,8 +5017,64 @@ SharkGame.HomeActions = {
             ],
             helpText: "Pick a spot and set up a seagrass farm there.",
         }, //end of place code
-        getExchangeStation: {}, //end of place code
-        getReceiverNode: {}, //end of place code
+        getExchangeStation: {
+            name: "Set up exchange station",
+            effect: {
+                resource: {
+                    exchangeStation: 1,
+                },
+            },
+            cost: [
+                { resource: "driftwood", costFunction: "linear", priceIncrease: 50 },
+                { resource: "sharkonium", costFunction: "linear", priceIncrease: 25 },
+                { resource: "coral", costFunction: "linear", priceIncrease: 15 },
+            ],
+            max: "exchangeStation",
+            prereq: {
+                resource: {
+                    driftwood: 50,
+                    sharkonium: 25,
+                    coral: 15,
+                },
+                upgrade: ["platformExpansion"],
+            },
+            outcomes: [
+                "//*to be written in future*//",
+            ],
+            multiOutcomes: [
+                "//*to be written in future*//",
+            ],
+            helpText: "Build an abovewater-extending station for the frenzy to use.",
+        }, //end of place code
+        getReceiverNode: {
+            name: "Construct receiver node",
+            effect: {
+                resource: {
+                    receiverNode: 1,
+                },
+            },
+            cost: [
+                { resource: "hardbark", costFunction: "linear", priceIncrease: 50 },
+                { resource: "sharkonium", costFunction: "linear", priceIncrease: 25 },
+                { resource: "crystal", costFunction: "linear", priceIncrease: 5 },
+            ],
+            max: "receiverNode",
+            prereq: {
+                resource: {
+                    hardbark: 50,
+                    sharkonium: 25,
+                    crystal: 5,
+                },
+                upgrade: ["intelTowers"],
+            },
+            outcomes: [
+                "//*to be written in future*//",
+            ],
+            multiOutcomes: [
+                "//*to be written in future*//",
+            ],
+            helpText: "Build a tall spire for extra collection of intel.",
+        }, //end of place code
    },
 
 

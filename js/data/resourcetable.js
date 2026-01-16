@@ -865,14 +865,14 @@ SharkGame.ResourceTable = {
             driftwood: 0.5,
         },
         jobs: ["burrow", "mentor"],
-        value: 500, //(what does this mean?) --ThreeCrabs
+        value: 500, //(what does this mean?) --ThreeEels
     },
 
     burrow: {
         name: "mudskipper burrows",
         singleName: "mudskipper burrow",
         color: "#B38300",
-        desc: "A tiny hole for tiny allies to flail around in. And make more allies.",
+        desc: "A tiny hole for tiny allies to flail around in.",
         income: {
             mudskipper: 0.05,
         },
@@ -1030,9 +1030,24 @@ SharkGame.ResourceTable = {
         value: 770,
     },
 
-    exchangeStation: {},
+    exchangeStation: {
+        name: "exchange stations",
+        singleName: "exchange station",
+        desc: "A bustling hub of beyonderwalkers and seaborn.",
+        color: "#FFFFFF",
+        value: 1500
+    },
 
-    receiverNode: {},
+    receiverNode: {
+        name: "receiver nodes",
+        singleName: "receiver node",
+        desc: "Spires to catch the intel.",
+        color: "#FFFFFF",
+        income: {
+            intel: 1.5,
+        },
+        value: 1500,
+    },
     
     roughSand: {
         name: "rough sand",

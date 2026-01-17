@@ -212,7 +212,7 @@ SharkGame.Settings = {
             if (SharkGame.Settings.current.language === "português") {
                 window.open("https://pt.wikipedia.org/wiki/Português_brasileiro");
             }
-            if (SharkGame.Settings.current.language === 'english') {
+            if (SharkGame.Settings.current.language === "english") {
                 window.open("https://en.wikipedia.org/wiki/English_language");
             }
         },

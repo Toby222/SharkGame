@@ -9,21 +9,21 @@ SharkGame.Settings = {
     },
 
     grottoMode: {
-        defaultSetting: "simple",
-        options: ["simple", "advanced"],
+        defaultSetting: "simples",
+        options: ["simples", "avançado"],
     },
 
     showPercentages: {
-        defaultSetting: "absolute",
-        options: ["absolute", "percentage"],
+        defaultSetting: "absoluto",
+        options: ["absoluto", "porcentagem"],
     },
 
     // PERFORMANCE
 
     framerate: {
         defaultSetting: 20,
-        name: "Framerate/TPS",
-        desc: "How fast to update the game.",
+        name: "Taxa de quadros",
+        desc: "O quão rápido o jogo é atualizado.",
         category: "PERFORMANCE",
         options: [1, 2, 5, 10, 20, 30],
         onChange() {
@@ -33,8 +33,8 @@ SharkGame.Settings = {
 
     showAnimations: {
         defaultSetting: true,
-        name: "Show Animations",
-        desc: "Whether to show animated transitions.",
+        name: "Mostrar animações",
+        desc: "Deveríamos ter transições animadas?",
         category: "PERFORMANCE",
         options: [true, false], // might remove this option? could be a pain to continue supporting it
     },
@@ -43,8 +43,8 @@ SharkGame.Settings = {
 
     minimizedTopbar: {
         defaultSetting: true,
-        name: "Minimized Title Bar",
-        desc: "Whether to minimize the title bar at the top.",
+        name: "Minimizar título",
+        desc: "Deveríamos minimizar a barra superior com o título?",
         category: "LAYOUT",
         options: [true, false],
         onChange() {
@@ -54,10 +54,10 @@ SharkGame.Settings = {
 
     logLocation: {
         defaultSetting: "right",
-        name: "Log Location",
-        desc: "Where to put the log.",
+        name: "Local dos registros",
+        desc: "Onde deveríamos botar os registros?",
         category: "LAYOUT",
-        options: ["right", "left", "top"],
+        options: ["direita", "esquerda", "em cima"],
         onChange() {
             log.moveLog();
         },
@@ -65,8 +65,8 @@ SharkGame.Settings = {
 
     groupResources: {
         defaultSetting: true,
-        name: "Group Resources",
-        desc: "Whether to categorize resources in the table.",
+        name: "Agrupar recursos",
+        desc: "Deveríamos categorizar os recursos em grupinhos?",
         category: "LAYOUT",
         options: [true, false],
         onChange() {
@@ -76,8 +76,8 @@ SharkGame.Settings = {
 
     smallTable: {
         defaultSetting: false,
-        name: "Smaller Table",
-        desc: "Whether to make the stuff table smaller.",
+        name: "Tabela menor",
+        desc: "Deveríamos fazer a tabela de recursos menor?",
         category: "LAYOUT",
         options: [true, false],
         onChange() {
@@ -87,8 +87,8 @@ SharkGame.Settings = {
 
     logMessageMax: {
         defaultSetting: 30,
-        name: "Max Log Messages",
-        desc: "Max number of messages kept in the log.",
+        name: "Registros máximos",
+        desc: "Qual é a quantidade máxima de registros ao mesmo tempo?",
         category: "LAYOUT",
         options: [5, 10, 15, 20, 30, 60],
         onChange() {
@@ -98,8 +98,8 @@ SharkGame.Settings = {
 
     sidebarWidth: {
         defaultSetting: "30%",
-        name: "Sidebar Width",
-        desc: "How much screen space the sidebar should take.",
+        name: "Largura da barra lateral",
+        desc: "Quanto espaço a barra lateral deveria tomar?",
         category: "LAYOUT",
         options: ["25%", "30%", "35%"],
         onChange() {
@@ -116,9 +116,9 @@ SharkGame.Settings = {
 
     notation: {
         defaultSetting: "default",
-        name: "Number Notation",
-        desc: "How numbers should be formatted.",
-        category: "APPEARANCE",
+        name: "Notação numérica",
+        desc: "Como que os números deveriam ser formatados?",
+        category: "APARÊNCIA",
         options: ["default", /* "exponen", */ "SI"],
         onChange() {
             res.rebuildTable = true;
@@ -127,11 +127,11 @@ SharkGame.Settings = {
     },
 
     colorCosts: {
-        defaultSetting: "color",
-        name: "Color Resource Names",
-        desc: "How to color names of resources.",
-        category: "APPEARANCE",
-        options: ["color", "bright", "none"],
+        defaultSetting: "colorido",
+        name: "Cor dos recursos",
+        desc: "Como devem ser a cores dos nomes dos recursos?",
+        category: "APARÊNCIA",
+        options: ["colorido", "brilhante", "sem cor"],
         onChange() {
             res.rebuildTable = true;
             stats.recreateIncomeTable = true;
@@ -140,10 +140,10 @@ SharkGame.Settings = {
 
     boldCosts: {
         defaultSetting: true,
-        name: "Bold Resource Names",
-        desc: "Should resource names be bolded?",
+        name: "Recursos em negrito",
+        desc: "O nome dos recursos deveriam ser escritos em negrito?",
         options: [true, false],
-        category: "APPEARANCE",
+        category: "APARÊNCIA",
         onChange() {
             res.rebuildTable = true;
             stats.recreateIncomeTable = true;
@@ -152,26 +152,26 @@ SharkGame.Settings = {
 
     alwaysSingularTooltip: {
         defaultSetting: false,
-        name: "Tooltip Always Singular",
-        desc: "Should the tooltip only show what one of each thing produces?",
-        category: "APPEARANCE",
+        name: "Informações singulares",
+        desc: "As informações extras deveriam mostrar a produção de apenas uma unidade do recurso?",
+        category: "APARÊNCIA",
         options: [true, false],
     },
 
     tooltipQuantityReminders: {
         defaultSetting: true,
-        name: "Tooltip Amount Reminder",
-        desc: "Should tooltips tell you much you own of stuff?",
+        name: "Informações de quantidade",
+        desc: "As informações extras deveriam te mostrar o quanto que você tem de cada coisa?",
         category: "APPEARANCE",
         options: [true, false],
     },
 
     enableThemes: {
         defaultSetting: true,
-        name: "Enable Planet-dependent Styles",
-        desc: "Should page colors change for different planets?",
+        name: "Habilitar estilos customizados",
+        desc: "As cores do jogo deveriam ser baseados no mundo em que você está?",
         options: [true, false],
-        category: "APPEARANCE",
+        category: "APARÊNCIA",
         onChange() {
             if (SharkGame.Settings.current.enableThemes) {
                 document.querySelector("body").classList.remove("no-theme");
@@ -183,17 +183,17 @@ SharkGame.Settings = {
 
     showIcons: {
         defaultSetting: true,
-        name: "Show Action Button icons",
-        desc: "Show button icons?",
-        category: "APPEARANCE",
+        name: "Mostrar ícones de ação",
+        desc: "Mostrar as imagens nos botões de ação?",
+        category: "APARÊNCIA",
         options: [true, false],
     },
 
     showTabImages: {
         defaultSetting: true,
-        name: "Show Tab Header Images",
-        desc: "Show art?",
-        category: "APPEARANCE",
+        name: "Mostar imagens de evento",
+        desc: "Mostrar arte dos eventos do mundo?",
+        category: "APARÊNCIA",
         options: [true, false],
         onChange() {
             SharkGame.TabHandler.changeTab(SharkGame.Tabs.current);
@@ -203,28 +203,28 @@ SharkGame.Settings = {
     // ACCESSIBILITY
 
     language: {
-        defaultSetting: "english",
-        name: "Language",
-        desc: "Which way western man.",
-        category: "ACCESSIBILITY",
-        options: ["english", "português"],
+        defaultSetting: "Português",
+        name: "Língua",
+        desc: "Qual é o idioma do jogo.",
+        category: "ACESSIBILIDADE",
+        options: ["Português", "English"],
         onChange() {
         },
     },
 
     doAspectTable: {
-        defaultSetting: "tree",
-        name: "Aspect Table or Tree",
-        desc: "Draw a visual aspect tree or a more accessible aspect table?",
-        category: "ACCESSIBILITY",
-        options: ["tree", "table"],
+        defaultSetting: "árvore",
+        name: "Planilha/Árvore de aspectos",
+        desc: "Mostrar uma árvore de aspectos, ou uma planilha de aspectos menos acessível?",
+        category: "ACESSIBILIDADE",
+        options: ["árvore", "planilha"],
     },
 
     verboseTokenDescriptions: {
         defaultSetting: false,
-        name: "Verbose Token",
-        desc: "Should tokens display text saying where they are?",
-        category: "ACCESSIBILITY",
+        name: "Ficha prolixa",
+        desc: "Deveria ter um texto apontando onde as fichas estão?",
+        category: "ACESSIBILIDADE",
         options: [true, false],
         onChange() {
             res.tokens.updateTokenDescriptions();
@@ -233,9 +233,9 @@ SharkGame.Settings = {
 
     minuteHandEffects: {
         defaultSetting: true,
-        name: "Minute Hand Special Effects",
-        desc: "Should the minute hand glow a ton?",
-        category: "ACCESSIBILITY",
+        name: "Efeitos especiais do ponteiro dos minutos",
+        desc: "O ponteiro dos minutos deveria brilhar muito?",
+        category: "ACESSIBILIDADE",
         options: [true, false],
         onChange() {
             res.minuteHand.updatePowers();
@@ -246,9 +246,9 @@ SharkGame.Settings = {
 
     idleEnabled: {
         defaultSetting: true,
-        name: "Stored Offline Progress",
-        desc: "Should the game store idle progress for later use? (otherwise, it will not go idle and will have real offline progress)",
-        category: "OTHER",
+        name: "Guardar progresso desligado",
+        desc: "O jogo deveria guardar o tempo para uso posterior? (se não, a produção de recursos vai continuar com o jogo desligado e nenhum tempo extra será ganho)",
+        category: "OUTROS",
         options: [true, false],
         onChange() {
             res.minuteHand.setup();
@@ -257,17 +257,17 @@ SharkGame.Settings = {
 
     showTooltips: {
         defaultSetting: true,
-        name: "Tooltips",
-        desc: "Whether to show informational tooltips when hovering over certain stuff.",
-        category: "OTHER",
+        name: "Informações extras",
+        desc: "Deveríamos mostrar informações sobre ações, recursos e outras coisas quando seu mouse passa por cima?",
+        category: "OUTROS",
         options: [true, false],
     },
 
     updateCheck: {
         defaultSetting: true,
-        name: "Check for updates",
-        desc: "Whether to notify you of new updates.",
-        category: "OTHER",
+        name: "Conferir atualizações",
+        desc: "Deveríamos te notificar de atualizações?",
+        category: "OUTROS",
         options: [true, false],
         onChange() {
             clearInterval(SharkGame.Main.checkForUpdateHandler);
@@ -279,17 +279,17 @@ SharkGame.Settings = {
 
     truePause: {
         defaultSetting: false,
-        name: "True Pause",
-        desc: "When using the pause button aspect, should the game not build up idle time?",
-        category: "OTHER",
+        name: "Pausa verdadeira",
+        desc: "Ao usar o aspecto do botão de pausa, deveríamos impedir que isso conte como tempo extra?",
+        category: "OUTROS",
         options: [true, false],
     },
 
     offlineModeActive: {
         defaultSetting: true,
-        name: "Offline Progress",
-        desc: "Should there be ANY offline progress?",
-        category: "OTHER",
+        name: "Progresso desligado",
+        desc: "Deveria ter ALGUM tipo de progresso enquanto o jogo está desligado?",
+        category: "OUTROS",
         options: [true, false],
     },
 
@@ -298,17 +298,17 @@ SharkGame.Settings = {
     autosaveFrequency: {
         // times given in minutes
         defaultSetting: 5,
-        name: "Autosave Frequency",
-        desc: "Number of minutes between autosaves.",
-        category: "SAVES",
+        name: "Frequência de salvamento automático",
+        desc: "Número de minutos entre os salvamentos automáticos.",
+        category: "SALVAMENTO",
         options: [1, 2, 5, 10, 30],
         onChange() {
             clearInterval(main.autosaveHandler);
             main.autosaveHandler = setInterval(main.autosave, SharkGame.Settings.current.autosaveFrequency * 60000);
             log.addMessage(
-                "Now autosaving every " +
+                "Salvando agora a cada " +
                     SharkGame.Settings.current.autosaveFrequency +
-                    " minute" +
+                    " minuto" +
                     sharktext.plural(SharkGame.Settings.current.autosaveFrequency) +
                     ".",
             );

@@ -47,69 +47,87 @@ $(document).on("keydown", (event) => {
 // CORE VARIABLES AND HELPER FUNCTIONS
 $.extend(SharkGame, {
     GAME_NAMES: [
-            "Five Seconds A Shark",
-            "Next Shark Game",
-            "Next Shark Game: Barkfest",
-            "Sharky Clicker",
-            "Weird Oceans",
-            "You Have To Name The Shark Game",
-            "Shark A Lark",
-            "Bark Shark",
-            "Fin Idle",
-            "Ray of Dreams",
-            "Shark Saver",
-            "Shoal Sharker",
-            "Shark Souls",
-            "Saucy Sharks",
-            "Sharkfall",
-            "Heart of Sharkness",
-            "Sharks and Recreation",
-            "Alone in the Shark",
-            "Sharkpocalypse",
-            "Shark of Darkness",
-            "Strange Oceans",
-            "A New Frontier",
-            "Lobster's Paradise",
-            "Revenge of the Crabs",
-            "Shark Box",
-            "Dolphin Heroes",
-            "MAWS",
-            "Part 6, Stone Ocean",
-            "Sailor Crab",
-            "League of Lobsters",
-            "Eel Team Six",
-            "Dungeons And Dolphins",
-            "Gameshark",
-            "Five Nights in Frigid",
-            "The Shark of Wall Street",
-            ":the shark game:",
-            "Sharkware Edition",
-            "Help Wanted",
-            "NOT FINISHED",
-            "Deluxe",
-            "doo doo do-do do-do",
-            "DUNGEONS",
-            "The Adventure Continues",
-            "To Be Continued",
-            "Sharks of Rage",
-            "Bedrock? Edition",
-            "Java(script) Edition",
-            "You are a Shark",
-            "Mystery of Shark City",
-            "Seas of Loathing",
-            "Raiders of the Lost Shark",
-            "Dead Sharks Tell No Tales",
-            "At Sharks End",
-            "On Sharker Tides",
-            "Curse of the Shark",
-            "Have I Played These Sharks Before?",
-            "Hollow Shark: Shark Song",
+        "Domingão do Cação",
+        "Tubarão. Jogo. Quer que desenhe?",
+        "Chega De Mariscos, De Negar o Meu Desejo",
+        "Oceano Clicker",
+        "KND: A Truta do Bairro",
+        "Psicobagre Americano",
+        "Como Treinar o Seu Salmão",
+        "Cação e Planeta",
+        "Os Oceanos Vêm de Marte e É Pra Lá Que Eu Vou",
+        "'Você Precisa Dar Um Nome Para o Jogo",
+        "/Tubarão/",
+        "Tubarão do Faustão",
+        "Tubarão Idle",
+        "Siri-dade Alerta",
+        "A Divina Co-mar-dia",
+        "Capitão Pacueca",
+        "Todo Mundo Odeia o Siris",
+        "O Lobo de Mar Street",
+        "O Atum da Compadecida",
+        "Uma Família da Caçada",
+        "Clube da Lula",
+        "Smells Like Tubarão Spirit",
+        "Jogo Sem Título de Tubarão",
+        "PT: Partido dos Arraiadores",
+        "PCO: Partido da Causa Ouriçária",
+        "PCB: Partido Cardumista Brasileiro",
+        "PSOL: Partido Socialista da Luliberdade",
+        "UP: Unidade Polvular",
+        "Novas Fronteiras",
+        "Guelra Mundial T",
+        "Fuga das Tainhas",
+        "Golfinho Pooh e a Árvore de Mar",
+        "Golfinho Impact",
+        "Tubarão",
+        "Cardumão do Huck",
+        "Two and Arraia Men",
+        "Coral of Duty",
+        "Uma História de Amor e Holotúria",
+        "Polverwatch",
+        "Atum Fortress 2",
+        "Diário de um Barbatana",
+        "Os Peixinhos Mágicos",
+        ":jogo do tubarão:",
+        "Kick Tubarovski",
+        "Contratando",
+        "A TERMINAR",
+        "Deluxe",
+        "doo doo do-do do-do",
+        "DUNGEONS",
+        "A Aventura Continua",
+        "Guelra Nas Estrelas",
+        "Camarêncio: O Otimista",
+        "Bedrock? Edition",
+        "Edição Java(script)",
+        "Você é um Tubarão",
+        "O Códigolfinho da Vinci",
+        "Tubarões-Anjos e Demônios",
+        "A Culpa é das Enguias",
+        "Um Dia de Holotúria",
+        "Tudarão Em Todo Lugar Ao Mesmo Tempo",
+        "A Viagem de Siri-ro",
+        "Vale a Pena Ver de Polvo",
+        "Deltubarune",
+        "Mansão Foster de Arraias Imaginárias",
+        "O Cranguejo e a Rosa",
+        "Hollow Náutico: Siri Song",
+        "Viva a Sociedade Água-viva",
+        "Marmonas Arraiassinas",
+        "Até Que a Sorte Nos Siri-pare",
+        "Meu Peixado Me Condena",
+        "Que História É Essa, Peichat?",
+        "Camarães de Areia",
+        "Ouriço de Tolo",
+        "O Jamantalista",
+        "Lagosta dos Cisnes",
     ],
     GAME_NAME: null,
     ACTUAL_GAME_NAME: "Shark Game",
     VERSION: "20250127a",
     ORIGINAL_VERSION: 0.71,
-    VERSION_NAME: "The Tempetuous Update",
+    VERSION_NAME: "A Atualização Tempestuosa",
     EPSILON: 1e-6, // floating point comparison is a joy
     BIGGEST_SAFE_NUMBER: 1000000000000,
     MAX: 1e300,
@@ -331,7 +349,7 @@ Mod of v ${SharkGame.ORIGINAL_VERSION}`,
                 if (SharkGame.Save.savedGameExists()) {
                     try {
                         SharkGame.Save.loadGame();
-                        log.addMessage("Loaded game.");
+                        log.addMessage("Jogo carregado.");
                     } catch (err) {
                         log.addError(err);
                     }
@@ -446,7 +464,7 @@ Mod of v ${SharkGame.ORIGINAL_VERSION}`,
             // acknowledge long time gaps
             // (update these messages some time later)
             if (secondsElapsed > 3600) {
-                let notification = "Welcome back! It's been ";
+                let notification = "Bem vindo de volta! Há ";
                 const numHours = Math.floor(secondsElapsed / 3600);
                 if (numHours > 24) {
                     const numDays = Math.floor(numHours / 24);
@@ -457,29 +475,27 @@ Mod of v ${SharkGame.ORIGINAL_VERSION}`,
                             if (numMonths > 12) {
                                 const numYears = Math.floor(numMonths / 12);
                                 notification +=
-                                    "almost " +
-                                    (numYears === 1 ? "a" : numYears) +
-                                    " year" +
+                                    "quase " +
+                                    (numYears === 1 ? "um" : numYears) +
+                                    " ano" +
                                     sharktext.plural(numYears) +
-                                    ", thanks for remembering this exists!";
+                                    ", obrigado por lembrar de nós!";
                             } else {
                                 notification +=
-                                    "like " +
-                                    (numMonths === 1 ? "a" : numMonths) +
-                                    " month" +
-                                    sharktext.plural(numMonths) +
-                                    ", it's getting kinda crowded.";
+                                    "mais ou menos " +
+                                    (numMonths === 1 ? "um mês" : numMonths + " meses") +
+                                    ", está ficando meio apertado aqui.";
                             }
                         } else {
                             notification +=
-                                "about " + (numWeeks === 1 ? "a" : numWeeks) + " week" + sharktext.plural(numWeeks) + ", you were gone a while!";
+                                "já " + (numWeeks === 1 ? "uma" : numWeeks) + " semana" + sharktext.plural(numWeeks) + ", você ficou um tempinho fora!";
                         }
                     } else {
                         notification +=
-                            (numDays === 1 ? "a" : numDays) + " day" + sharktext.plural(numDays) + ", and look at all the stuff you have now!";
+                            (numDays === 1 ? "um" : numDays) + " dia" + sharktext.plural(numDays) + ", olha só tudo que foi produzido até agora!";
                     }
                 } else {
-                    notification += (numHours === 1 ? "an" : numHours) + " hour" + sharktext.plural(numHours) + " since you were seen around here!";
+                    notification += (numHours === 1 ? "uma" : numHours) + " hora" + sharktext.plural(numHours) + " desde a última vez que te vimos!";
                 }
                 log.addMessage(notification);
             }
@@ -702,7 +718,7 @@ Mod of v ${SharkGame.ORIGINAL_VERSION}`,
     autosave() {
         try {
             SharkGame.Save.saveGame();
-            log.addMessage("Autosaved.");
+            log.addMessage("Salvamento automático.");
         } catch (err) {
             log.addError(err);
         }
@@ -713,9 +729,9 @@ Mod of v ${SharkGame.ORIGINAL_VERSION}`,
             if (data.sha !== SharkGame.COMMIT_SHA) {
                 $("#updateGameBox")
                     .html(
-                        `You see a new update swimming towards you.<br> On it you can just make out the words <br>"${
+                        `Você vê uma atualização nadando até você.<br> Nela, você só consegue decifrar as palavras <br>"${
                             data.commit.message.split("\n")[0]
-                        }". <br>Click to update.`,
+                        }". <br>Clique para atualizar.`,
                     )
                     .on("click", () => {
                         try {
@@ -724,7 +740,7 @@ Mod of v ${SharkGame.ORIGINAL_VERSION}`,
                         } catch (err) {
                             log.addError(err);
                             console.error(err);
-                            log.addMessage("Something went wrong while saving.");
+                            log.addMessage("Algo deu errado ao salvar.");
                         }
                     });
             }
@@ -871,21 +887,21 @@ Mod of v ${SharkGame.ORIGINAL_VERSION}`,
     checkForCategorizationOversights() {
         $.each(SharkGame.ResourceTable, (resourceName, resourceObj) => {
             if (!res.getCategoryOfResource(resourceName)) {
-                log.addError(new Error(`${resourceName} does not have a category.`));
+                log.addError(new Error(`${resourceName} não tem categoria.`));
             }
 
             if (!resourceObj.desc) {
-                log.addError(new Error(`${resourceName} does not have a description.`));
+                log.addError(new Error(`${resourceName} não tem descrição.`));
             }
 
             if (!resourceObj.name || !resourceObj.singleName) {
-                log.addError(new Error(`${resourceName} does not have a name.`));
+                log.addError(new Error(`${resourceName} não tem nome.`));
             }
         });
         _.each(SharkGame.Gateway.allowedWorlds, (worldName) => {
             $.each(SharkGame.HomeActions[worldName], (actionName) => {
                 if (!home.getActionCategory(actionName)) {
-                    log.addError(new Error(`${actionName} does not have a category.`));
+                    log.addError(new Error(`${actionName} não tem categoria.`));
                 }
             });
         });
@@ -911,348 +927,351 @@ SharkGame.Button = {
 
 SharkGame.Changelog = {
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20250630a": [
-        "Fix broken progression of Abandoned Ocean",
+        "Consertar progressão quebrada do Oceano Abandonado",
     ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20250629a": [
-        "Added a lot of missing sprites courtesy of <a href='https://github.com/glowkate'>Glowkate</a> and <a href='https://www.youtube.com/@biggestbrian'>BiggestBrian</a>",
+        "Um monte de imagens pendentes foram adicionadas, cortesia de <a href='https://github.com/glowkate'>Glowkate</a> e <a href='https://www.youtube.com/@biggestbrian'>BiggestBrian</a>",
     ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20250127a": [
-        "Added a new home message sprite courtesy of <a href='https://github.com/glowkate'>Glowkate</a>.",
+        "Uma nova imagem de progressão de mundo foi adicionada, cortesia de <a href='https://github.com/glowkate'>Glowkate</a>.",
     ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20241214a": [
-        "Added another 2 new sprites courtesy of <a href='https://github.com/glowkate'>Glowkate</a>.",
+        "2 novas imagens foram adicionadas, cortesia de <a href='https://github.com/glowkate'>Glowkate</a>.",
     ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20241128a": [
-        "Added another another new sprite courtesy of <a href='https://www.youtube.com/@WorkerDroneMainBattleTrain'>Main Battle Train</a>.",
-        "Added another 2 new sprites courtesy of <a href='https://github.com/glowkate'>Glowkate</a>.",
+        "Adicionamos mais uma nova imagem, cortesia de <a href='https://www.youtube.com/@WorkerDroneMainBattleTrain'>Main Battle Train</a>.",
+        "Adicionamos mais duas novas imagens, cortesia de <a href='https://github.com/glowkate'>Glowkate</a>.",
     ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20241119a": [
-        "Added another new sprite courtesy of <a href='https://www.youtube.com/@WorkerDroneMainBattleTrain'>Main Battle Train</a>.",
-        "Added another new sprite courtesy of <a href='https://github.com/glowkate'>Glowkate</a>.",
+        "Adicionamos mais uma nova imagem, cortesia de <a href='https://www.youtube.com/@WorkerDroneMainBattleTrain'>Main Battle Train</a>.",
+        "Adicionamos mais uma nova imagem, cortesia de <a href='https://github.com/glowkate'>Glowkate</a>.",
     ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20241106a": [
-        "Added a new sprite courtesy of <a href='https://www.youtube.com/@WorkerDroneMainBattleTrain'>Main Battle Train</a>.",
+        "Adicionamos uma nova imagem, cortesia de <a href='https://www.youtube.com/@WorkerDroneMainBattleTrain'>Main Battle Train</a>.",
     ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20240909a": [
-        "Added another one new sprite courtesy of <a href='https://github.com/glowkate'>Glowkate</a>!",
-        "Added a heap of new fun facts.",
+        "Adicionamos mais uma nova imagem, cortesia de <a href='https://github.com/glowkate'>Glowkate</a>!",
+        "Muitos fatos interessantes foram adicionados.",
     ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20240906a": [
-        "Added another 4 new sprites courtesy of <a href='https://github.com/glowkate'>Glowkate</a>!",
+        "Adicionamos mais 4 novas imagens, cortesia de <a href='https://github.com/glowkate'>Glowkate</a>!",
     ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20240819a": [
-        "Added another new sprite courtesy of <a href='https://github.com/glowkate'>Glowkate</a>.",
+        "Adicionamos mais uma nova imagem, cortesia de <a href='https://github.com/glowkate'>Glowkate</a>.",
     ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20240818a": [
-        "Added another new home message image, courtesy of <a href='https://x.com/stormwalker124'>stormwalker</a>.",
-        "Added a sprite for billfish pairs courtesy of <a href='https://github.com/glowkate'>Glowkate</a>.",
+        "Adicionamos mais uma imagem de progressão de mundo, cortesia de <a href='https://x.com/stormwalker124'>stormwalker</a>.",
+        "Adicionamos uma imagem para os pares de espadas, courtesia de <a href='https://github.com/glowkate'>Glowkate</a>.",
     ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20240805a": [
-        "Added a new home message image, courtesy of <a href='https://x.com/stormwalker124'>stormwalker</a>.",
-        "Fixed a bug where a home message image in Haven wasn't appearing.",
+        "Adicionamos uma nova imagem de progressão de mundo, cortesia de <a href='https://x.com/stormwalker124'>stormwalker</a>.",
+        "Consertamos um problema em que a imagem no Paradiso não estava aparecendo.",
     ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20240803a": [
-        "Added a new upgrade to the starter world: Crystal Scoops, to increase the speed of that world dramatically and make for slightly more interesting crab-to-laser-ray competition.",
-        "Added 4 new home message images, courtesy of <a href='https://x.com/stormwalker124'>stormwalker</a>.",
-        "This happened silently in January, but: fixed the negative world time bug.",
-        "Made a few changes to older ones.",
-        "Fixed the shrimp home message image not appearing.",
-        "Fixed the lobster home message image not appearing.",
-        "Fixed the sponge filter sprite not appearing.",
-        "Fixed the pry sponge sprite disappearing in Volcanic.",
-        "Edited some home message requirements.",
-        "Edited the home message text at the end of Shrouded and Abandoned.",
-        "Edited some of the random game tab names.",
+        "Adicionamos uma nova melhoria ao mundo inicial: Pá de Cristal, para acelerar bastante a progressão e fomentar uma competição entre caranguejos e arraias laser mais interessante.",
+        "Adicionamos mais 4 novas imagens, cortesia de <a href='https://x.com/stormwalker124'>stormwalker</a>.",
+        "Fizemos algumas mudanças para imagens antigas.",
+        "Isso aconteceu em janeiro e não falamos nada, mas: consertamos os problema do tempo negativo.",
+        "Consertamos um problema em que as imagens no Oceano Vulcânico não apareciam.",
+        "Consertamos um problema em que as imagens no Oceano Marinho não apareciam.",
+        "Consertamos o ícone dos filtros de esponja não aparecer.",
+        "Consertamos o ícone de arrancar esponja desaparecendo no Mundo Vulcânico.",
+        "Editamos os pré-requisitos de algumas mensagens de progressão",
+        "Editamos o texto do final dos mundos Escuro e Abandonado.",
+        "Editamos alguns nomes de aba que estavam meio aleatórios.",
     ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20230618a": [
-        "Added Tempestuous worldtype.",
-        "Added home message history. You may now freely scroll back and forth between previously seen home messages while in a world.",
-        "For the millionth time, attempted to fix negative world time bugs (and failed).",
-        "Many new sprites.",
-        "New fun facts.",
-        "Fixed issues with uncategorized home actions.",
-        "Fixed issue with verbose token displaying internal names.",
-        "Fixed a bug where disabling offline progress did absolutely nothing.",
-        "Fixed bugs related to pausing and the recycler UI.",
-        "Edited a bunch of text.",
+        "Adicionamos os Oceano Tempestuoso.",
+        "Adicionamos o histórico de progressão. Você consegue voltar e desvoltar livremente na história de cada mundo.",
+        "Pela milionésima vez, tentamos arrumar o problema do tempo negativo (e falhamos).",
+        "Muitas imagens novas.",
+        "Novos fatos.",
+        "Consertamos problemas devido a ações sem categoria.",
+        "Consertamos a ficha mostrar nomes internos.",
+        "Desabilitar progresso desligado agora desabilita progresso quando o jogo está desligado.",
+        "Consertamos erros relacionados com pausa e o reciclador.",
+        "Editamos vários textos.",
     ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20220712a": [
-        "Time in the minute hand can now persist between worlds, with a few caveats.",
-        "Added 3 new aspects that complement the changes to minute hand time.",
-        "Changed the pricing and location of aspects on the tree.",
-        "Disabling idle time accruing in the minute hand no longer completely removes it from the UI.",
-        "Added a choice to use SI units.",
-        "Fixed a bug where tooltips would persist when changing tabs via hotkey.",
-        "Fixed a bug where the game throws errors when trying to disable buttons while paused.",
-        "Greatly improved aspect tree on touchscreen devices.",
+        "Tempo extra pode persistir entre os mundos, mas com algumas ressalvas.",
+        "Adicionamos 3 aspectos novos para complementar as mudanças ao ponteiro dos minutos.",
+        "Mudamos o preço e o local de aspectos na árvore.",
+        "Disabilitar tempo ocioso contando no ponteiro dos minutos não remove o ele da existência mais.",
+        "Adicionamos a opção de usar Notação Científica.",
+        "Informações extras não ficam presas na tela ao trocar de aba com atalhos do teclado.",
+        "Consertamos um problema em que o registro mostra erros ao tentar desabilitar enquanto pausado.",
+        "Melhoramos a árvore de aspectos em dispositivos com tela sensível ao toque.",
     ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20220630a": [
-        "Added a setting to disable idle time from the pause button.",
+        "Adicionamos a opção de não ganhar tempo extra ao pausar pelo botão.",
     ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20220629a": [
-        "Fixed a bug with a certain sponge button not appearing.",
-        "Fixed a bug with pressing buttons that don't exist anymore.",
-        "Updated the pause button, which now activates idle mode at will.",
+        "Arrumamos o problema de um certo botão de esponja não aparecendo.",
+        "Consertamos um problema relacionado a apertar botões que não existem.",
+        "Mexemos no botão de pausa, que agora ativa o modo ocioso a qualquer momento.",
     ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20220625a": [
-        "Added Volcanic worldtype.",
-        "Added FUN FACTS! Press to receive a random fun fact! You get different ones based on where you are and what you own!",
-        "World-time doesn't increase when you are offline or idle. That time is added only if you use it through the minute hand (time from the hour hand aspect is excluded).",
-        "Stuff table tooltips now show how a resource slows or speeds up others.",
-        "Began adding placeholder art to temporarily supplement actually completed art.",
-        "Removed alpha notice.",
-        "Added a link to the hub on the titlebar.",
-        "New credits (see bottom of page).",
-        "Fixed a bunch of miscellaneous bugs.",
-        "Did other assorted tasks.",
+        "Adicionamoso Oceano Vulcânico.",
+        "Adicionamos FATOS! Aperte para ganhar um fato interessante aleatório! Diferentes fatos vão aparecer dependendode onde você está e o que você tem!",
+        "Tempo com o jogo desligado ou ocioso não conta mais como tempo gasto num mundo. Esse tempo extra só é contado se usado pelo ponteiro dos minutos (tempo extra ganho pelo aspecto 'ponteiro das horas' é excluído da conta).",
+        "Informações extras na tabela de recursos agora mostram como outros recursos influenciam sua produção.",
+        "Começamos a (mas nunca terminamos de) adicionar arte temporária para suplementar arte completa.",
+        "Tiramos o aviso de alfa.",
+        "Adicionamos o link para o menu principal na barra de título.",
+        "Novos créditos (olha lá embaixo da tela).",
+        "Consertamos vários erros que precisavam de conserto.",
+        "Terminamos muitos outros afazeres.",
     ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20220603a": [
-        "Added Marine worldtype.",
-        "Planet descriptions are now much more vague until you've visited them.",
-        "Distant Foresight greatly decreases vagueness of planet descriptions now.",
-        "Swapped the order of some aspects on the tree.",
-        "Revised the ending of the Abandoned world.",
-        "Revised bits of the Shrouded world's story.",
-        "Abandoned world gives one bonus essence, bumping its scouting reward to 5 and non-scouting reward to 3.",
-        "By popular demand, added auto-transmuter to Shrouded.",
-        "Fixed some miscellaneous bugs.",
+        "Adicionamos o Oceano Marinho.",
+        "Descrições rias são muito mais vagas até você visitá-las.",
+        "Previsão Profunda agora especifica as descrições dos planetas.",
+        "Mudamos a ordem de alguns aspectos na árvore.",
+        "Mexemos no final da história do Oceano Abandonado.",
+        "Revisamos em partes da história do Oceano Escuro.",
+        "O Oceano Abandonado dá uma essência extra, aumtenando sua recompensa de exploração para 5 e de não-exploração para 3.",
+        "Por demanda popular, nós botamos a transmutadora automática no Escuro.",
+        "Arrumamos vários probleminhas miscelâneos.",
         "Ixbix - tweaked text visibility system",
     ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> 0.2 patch 20220125a": [
-        "Added keybinds. You can now bind a large array of actions to different key combinations.",
-        "Added backup saves. You can now back up your saves as you wish, with three slots!",
-        "Added real species/family names when recruiting urchins and squid, instead of weird placeholder messages.",
+        "Adicionamos atalhos de teclado. Você pode ligar um monte de ações diferentes para combinações de teclas customizadas.",
+        "Adicionamos salvamentos de segurança. Você pode copiar seu jogo a qualquer momento em um de três espaços de salvamento!",
+        "Adicionamos nomes de espécies/famílias reais ao recrutar ouriços e lulas, ao invés de apenas ter mensagens estranhas no lugar.",
         "When first unlocking cheats at 1000 lifetime essence, a special backup is automatically created.",
-        "Added toggle for cheats; you don't have to see them if you don't want to.",
-        "Made some more UI changes.",
-        "Removed aspect: Anything and Everything",
+        "Fizemos uma opção para esconder trapaças; você não precisa vê-los se não quiser.",
+        "Mudamos algumas coisas na interface.",
+        "Aspecto removido: 'Anything and Everything' (não traduzido)",
         "Ixbix - fixed issues with gateway time spent in last world",
         "Ixbix - stopped minute hand slider from flopping around",
         "Ixbix - added touchscreen support for the aspect tree",
     ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> 0.2 patch 20211201a": [
-        "Added something special at 1000 total essence.",
-        "Changed the aspect tree UI to remove unnecessary buttons from below the tree.",
-        "Fixed some bugs related to the patience and gumption aspects.",
+        "Algo especial acontece ao chegar em 1000 de essence total.",
+        "Tiramos botões desnecessários da árvore de aspectos.",
+        "Consertamos alguns problemas causados pelos aspectos Paciência e Culhões.",
     ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> 0.2 patch 20211109a": [
-        "Final revamp of the aspect tree. Not the final addition to it, though.",
-        "Added idle mode. The game will pause and accumulate idle time after 2 minutes of inactivity.",
-        "The minute hand now stores offline progress and idle time. You can use your stored time in the form of a multiplier.",
-        "Removed the playstyle choice because the new idle system does its job better.",
-        "Implemented scouting. You get more essence when you first play a world, but SOME aspects can't be used.",
-        "Implemented par times. If you beat a world faster than par, you get extra essence. Go even faster for even more.",
-        "Added and changed sprites.",
-        "Updated UI.",
-        "Fixed some out-of-place flavor text.",
+        "Última reforma da árvore de aspectos. Porém não a última adição, não confunda.",
+        "Adicionamos o modo ocioso. O jogo vai pausar e acumular tempo extra após 2 minutos sem atividade.",
+        "O ponteiro dos minutos agora guarda tempo extra quando o jogo está desligado ou ocioso. Você pode usar esse tempo como um multiplicador de produção.",
+        "Removemos a escolha de modo de jogo porque o sistema de tempo ocioso funciona melhor para isso",
+        "Implementamos exploração. Você ganha mais essência ao completar um mundo pela primeira vez, mas ALGUNS aspectos não podem ser usados.",
+        "Implementamos tempo a par. Se você sair do mundo antes do par, você é recompensado com essência extra. Quanto mais rápido, maior recompensa.",
+        "Adicionamos e mudamos imagens.",
+        "Atualizamos interface.",
+        "Arrumamos textinhos que não encaixavam direito.",
     ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> 0.2 patch 20210814a": [
-        "Added Shrouded worldtype.",
-        "Changed the aspect tree and its aspects significantly. All essence must be refunded and all aspects must be reset because of this. Sorry!",
-        "Implemented a basic 'playstyle' choice. The game will adjust pacing to suit your choice.",
-        "You can now access the options menu in the gateway.",
-        "'Wipe Save' now doesn't reset any settings. Added a separate button to reset settings.",
-        "Added sprites.",
-        "Greatly improved game stability when dealing with large numbers (above a quadrillion).",
-        "Fixed bugs with save wiping and resetting.",
-        "Fixed bugs with grotto.",
-        "Fixed bugs with tooltips in the aspect tree.",
+        "Botamos o Oceano Escuro.",
+        "Significantemente melhoramos os aspectos e sua árvore. Porém tivemos que reembolsar a essência de todos os aspectos já comprados. Deculpinha!",
+        "Você pode escolher um 'modo de jogo'. O jogo vai ajustar seu ritmo baseado na sua escolha.",
+        "Agora você pode acessar as configurações no entre-mundos.",
+        "'Limpar Jogo' agora não reinicia sua configurações. Fizemos um botão diferente para redefinir as configurações.",
+        "Adicionamos imagens.",
+        "Arrumamos estabilidade do jogo ao lidar com números grandes (acima de quadrilhão).",
+        "Arrumamos problemas com limpeza do jogo e reinícios.",
+        "Arrumamos problemas com a gruta.",
+        "Arrumamos problemas com informações extras na árvore de aspectos.",
     ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> 0.2 patch 20210728a": [
         "The log can now be in one of 3 spots. Change which one in options. Default is now right side.",
-        "Added Resource Affect tooltips; mouse over the multipliers in the R column in the advanced grotto table and you can see what is causing them.",
-        "Added work-in-progress (but functional) aspect table as an alternative to the tree, specifically for accessibility.",
-        "Added extraction team sprite.",
-        "Added historian sprite; decided to repurpose the old philosopher sprite from OG shark game.",
-        "Updated tooltip formatting.",
-        "Updated Recycler UI to eliminate quirkiness.",
-        "Fixed a bug where costs disappear in no-icons mode.",
-        "Fixed incorrect description of an aspect.",
-        "Fixed bugs with importing saves.",
+        "Adicionamos informações extras na influência de recursos na produção; aponte o seu rato na coluna R da tabela da gruta (no modo avançado) e você poderá ver o que está a afetando.",
+        "Adicionamos uma tabela de aspectos funcional (porém ainda não terminada) como alternativa à árvore, especificamente por acessibilidade.",
+        "Adicionamos ícone para o time de extração.",
+        "Adicionamos ícone para historiador; estamos reutilizando o ícone velho do filósofo do jogo original.",
+        "Atualizamos a formatação das informações extras.",
+        "Atualizamos a interface do reciclador para acabar com estranhezas.",
+        "Consertamos o problema de custos sumires no modo sem ícones.",
+        "Consertamos a descrição errada de um aspecto.",
+        "Consertamos problemas com a importação de jogos.",
     ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> 0.2 patch 20210713a": [
-        "Tooltips show you how much you already own of what you're buying. Can be turned off in options.",
-        "Tooltips have their numbers scale based on how much of something you're buying. Can be turned off in options.",
-        "The key for advanced mode grotto has been enhanced.",
-        "Tabs you haven't visited yet will glow. This is on a per-world basis.",
-        "Gave scroll bars to some stuff.",
-        "Changed the order of categories in the resource table to make more sense.",
-        "You can close windows by clicking outside of them.",
-        "Options menu is less wordy.",
-        "Corrected a bunch of upgrade effect descriptions.",
-        "Minor bugfixes.",
+        "Informações extras agora mostram quanto você já tem do que você está comprando. Pode ser desligado nas configurações.",
+        "Informações extras tem seus números escalarem baseado no quanto você comprou. Pode ser desligado nas configurações.",
+        "O botão para modo avançado da gruta foi melhorado... Seja lá o que isso significa.",
+        "Abas que você ainda não viu vão brilhar. Isso ocorre por mundo.",
+        "Fizemos algo com as barras de deslizamento.",
+        "Mudamos a ordem de categorias na tabela de recursos de forma a fazer mais sentido.",
+        "Você pode fechar janelas ao clicar fora delas.",
+        "Menu de opções é menos prolixo.",
+        "Corrigimos um monte de descrições de melhorias.",
+        "Consertamos alguns probleminhas, nada de mais.",
     ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> 0.2 patch 20210709a": [
-        "Added the Frigid worldtype.",
-        "Replaced the Artifacts system with the Aspects system.",
-        "Tweaked Haven.",
-        "Tweaked UI colors.",
-        "Grotto now shows how the world affects resources.",
-        "Moved UI elements around to make the game not freak out on smaller screens.",
+        "Adicionamos o Oceano Gélido.",
+        "Substituimos o sistema de Artefatos com o sistema de Aspectos.",
+        "Arrumamos Oceano Paradisíaco.",
+        "Arrumamos cores de interface.",
+        "A gruta agora mostra como o mundo afeta seus recursos.",
+        "Movemos algumas coisas da interface para fazer com que o jogo pare de enfelismente se espindure em telas menores.",
         "Moved buy amount buttons closer to the places you'll need them, they're not in the tab list anymore!",
-        "Added 'bright' text color mode, screws up some colors but makes colored text easier to read.",
-        "Added auto color-visibility adjuster. Tries to change the color of text if it would be hard to read on a certain background.",
+        "Adicionamos o modo 'claro' ao texto, algumas cores vão a merda mas faz o texto colorido em si mais fácil de ler.",
+        "Adicionamos o ajustador de cor visível automático-inator. Serve para mudar ligeiramente a cor de um texto se a cor de fundo torná-lo difícil de ler.",
     ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> 0.2 patch 20210610a": [
-        "Fixed bug where haven had no essence. Oops.",
-        "Changed home messages a little.",
-        "Retconned some previous patch notes.",
-        "Added sprite for octopus investigator.",
-        "Internal stuff.",
+        "Oceano Paradisíaco agora dá essência.",
+        "Mudamos um pouco alguns textos da história.",
+        "Sumimos com algumas notas de atualização.",
+        "Adicionamos ícone para polvo investigador.",
+        "Coisas internas.",
     ],
-    "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> 0.2 patch 20210515a": ["Added missing flavor text.", "Internal stuff."],
+    "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> 0.2 patch 20210515a": ["Adicionamos texto faltante.", "Fizemos coisas internas."],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> 0.2 patch 20210422a": [
-        "Implemented reworked gameplay for the Haven worldtype.",
-        "Made sweeping changes to the UI.",
-        "Improved grotto formatting.",
-        "Changed the colors for Haven worlds.",
-        "In the grotto, amounts for each producer now update live.",
-        "Both kinds of tooltips update live.",
-        "Tooltips can tell you more things: for example, it now says how much science you get from sea apples.",
-        "Added minimized titlebar. You can switch it back to the old one in the options menu.",
-        "Added categories to options menu. Now it's readable!",
+        "Refizemos a jogabilidade do Oceano Paradisíaco.",
+        "Mudanças enormes foram feitas à interface gráfica.",
+        "Melhoramos a formatação da gruta.",
+        "Mudamos as cores do Oceano Paradisíaco.",
+        "Quantia de produtores atualizam na gruta em tempo real.",
+        "Ambos tipos de informações extras atualizam em tempo real.",
+        "Informações extras estão mais infomativas: por exemplo, agora mostra quanta ciência se consegue por holotúria.",
+        "Adicionamos barra de título minimizada. Dá para mudar para título antigo nas configurações.",
+        "Adicionamos categorias para o menu de configurações. Agora está legível!",
     ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> 0.2 patch 20210314a": [
-        "Fixed bug related to how artifacts display in the grotto.",
-        "Fixed bug related to artifact affects not applying properly.",
-        "Fixed bug where the grotto would show an upgrade multiplier for everything, even if it was x1.",
-        "Fixed bug where artifact effects would not reset when importing.",
-        "Added 'INCOME PER' statistic to Simple grotto. Shows absolutely how much of a resource you get per generator.",
+        "Consertamos erro relacionado a como artefatos são mostrados na gruta.",
+        "Consertamos erro de efeitos de artefatos não sendo aplicados direito.",
+        "Consertamos o erro em que a gruta mostrava um multiplicador de melhoria permanentemente para tudo, mesmo que fosse x1.",
+        "Consertamos erro que poderes de artefatos não iriam sumir ao importar um jogo.",
+        "Adicionamos o 'GANHO POR' à gruta simples. Mostra quanto de um recurso você ganha por gerador.",
     ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> 0.2 patch 20210312a": [
-        "Added simplified grotto.",
-        "Made grotto way easier to understand.",
-        "Added tooltips to income table.",
-        "Did internal rework of the multiplier system, created the modifier system.",
+        "Adicionamos a gruta simplificada.",
+        "Fizemos a gruta muito mais inteligível.",
+        "Adicionamos informações extras à tabela de produção.",
+        "Trabalho interno sobre o sistema de multiplicadores, criamos o sistema de modificadores.",
     ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> 0.2 - New Perspectives (2021/??/??)": [
-        "Scrapped Chaotic worldtype. Completely.",
-        "Implemented gameplay for 1 out of 7 necessary planet reworks.",
-        "Implemented new assets.",
+        "Apagamos o Oceano Caótico. Completamente.",
+        "Refizemos a jogabilidade de 1 dos 7 planetas que precisam.",
+        "Implementamos novos 'assets' (o tradutor também não faz ideia do que eles estão falando).",
     ],
     "<a href='https://github.com/spencers145/SharkGame'>New Frontiers</a> 0.11 - New Foundations (2021/1/27)": [
-        "New, greatly improved UI for everything.",
-        "Rebalanced stuff.",
-        "Added world themes, so the page now changes color depending on what world you're in.",
-        "Added a TPS/FPS setting, to make the game smoother and nicer to look at, or chunkier and easier on performance.",
-        "Custom purchase amounts.",
-        "Added a 'grace period'. Ice doesn't build up if you have no income for anything.",
-        "Artifact descriptions and distant foresight planet properties are useful.",
-        "See 5 artifact choices instead of 3. On that note, buffed base essence to 4 per world.",
+        "Melhoramos a interface de tudo.",
+        "Rebalanceamos coisas.",
+        "Adicionamos fundos temáticos, a página agora muda de cor baseado no mundo que você está jogando.",
+        "Adicionamos opção de FPS/TPS, para fazer o jogo mais liso e bonito, ou mais grosseiro, mas performar melhor.",
+        "Quantias de compra customizáveis.",
+        "Adicionamos um tempo de vantagem. Gelo não acumula se vocé não tiver produção alguma.",
+        "Descrições de artefatos e previsão profunda são úteis agora.",
+        "Veja 5 escolhas de artefatos ao invés de apenas 3. Ao mesmo tempo, essência base de todos os oceanos subiu para 4.",
     ],
     "<a href='https://github.com/spencers145/SharkGame'>New Frontiers</a> 0.1 - New is Old (2021/1/7)": [
-        "22 NEW SPRITES! More are coming but we couldn't finish all the sprites in time!",
-        "TRUE OFFLINE PROGRESS! Days are compressed to mere seconds with RK4 calculation.",
-        "Attempted to rebalance worlds, especially frigid and abandoned, by making hazardous materials more threatening and meaningful.",
-        "Halved the effectiveness of the 3 basic shark machines (except sand digger, which is 2/3 as productive), but added a new upgrade to counterbalance it.",
-        "Added recycler efficiency system. The more you recycle at once, the more you lose in the process. Added an upgrade which makes the mechanic less harsh.",
-        "Added new UI elements to the Recycler to make it less of a guessing game and more of a cost-benefit analysis.",
-        "Increased the effectiveness of many machines.",
-        "Greatly improved number formatting.",
-        "World shaper has been disabled because it will probably break plans for future game balance.",
-        "Distant foresight now has a max level of 5, and reveals 20% of world properties per level, up to 100% at level 5.",
-        "Fixed exploits, bugs, and buggy exploits and exploitable bugs. No more crystals -> clams & sponges -> science & clams -> crystals loop.",
-        "No more science from sponges.",
-        "Removed jellyfish from a bunch of worlds where the resource was a dead end.",
+        "22 IMAGENS NOVAS! Mais estão sendo feitas, mas não conseguimos terminar todas a tempo!",
+        "PROGRESSO DESCONECTADO DE VERDADE! Dias inteiros comprimidos a segundos com o cálculo RK4.",
+        "Tentamos rebalancear mundos, especialmente Gélido e Abandonado, ao fazer materiais perigosos ainda mais perigosos e importantes.",
+        "Efetividade das três máquinas tubarônicas cortada pela metade (exceto o comedor de areia, cuja produção foi multiplicada por 2/3), mas adicionamos uma melhoria para contrabalancear.",
+        "Adicionamos um sistema de eficiência da recicladora. Quanto mais você recicla, mais você perde no processo. Adicionamos uma melhoria que faz a mecânica menos brutal.",
+        "Addicionamos nova interface à Recicladora para que seja menos chute e mais uma análise de custo-benefício.",
+        "Aumentamos a efetividade de muitas máquinas.",
+        "Melhoramos a formatação numérica.",
+        "Criador de mundo foi desabilitado porque vai quebrar planos futuros de balanceamento.",
+        "Distant foresight now has a max level of 5, and reveals 20% of world properties per level, até 100% no nível 5.",
+        "Arrumamos mecânicas com abuso, erros, and e erros abusados and abusos errôneos. Nada mais do ciclo de cristais -> mexilhões & esponjas -> ciência & mexilhões -> cristais.",
+        "Não existe mais dissecação de esponjas.",
+        "Removemos águas-vivas de planeta em que o recurso não fazia nada.",
     ],
     "0.71 (2014/12/20)": [
-        "Fixed and introduced and fixed a whole bunch of horrible game breaking bugs. If your save was lost, I'm sorry.",
-        "Made the recycler stop lying about what could be made.",
-        "Made the recycler not pay out so much for animals.",
-        "Options are no longer reset after completing a run for real this time.",
-        "Bunch of tweaked gate costs.",
-        "One new machine, and one new job.",
-        "Ten new post-chasm-exploration technologies to invest copious amounts of science into.",
+        "Consertamos, criamos e consertamos problemas que quebravam o jogo. Se o seu jogo foi apagado no processo, peço desculpas.",
+        "Recicladora não mente mais sobre o que pode ser feito.",
+        "Recicladora não paga mais tanto por animais.",
+        "Configurações não são redefinidas após completar um mundo, mas agora de verdade",
+        "Arrumamos um monte de custos do portal.",
+        "Uma nova máquina, uma nova especialização.",
+        "Dez novas tecnologias para gastar quantias imensas de ciência após exploração de abismo.",
     ],
     "0.7 - Stranger Oceans (2014/12/19)": [
-        "WHOLE BUNCH OF NEW STUFF ADDED.",
-        "Resource system slightly restructured for something in the future.",
-        "New worlds with some slight changes to availabilities, gate demands, and some other stuff.",
-        "Categories added to Home Sea tab for the benefit of trying to make sense of all the buttons.",
-        "Newly added actions show up in highlights for your convenience.",
-        "The way progress continues beyond the gate is now... a little tweaked.",
-        "Options are no longer reset after completing a run.",
-        "Artifacts exist.",
-        "Images are a work in progress. Apologies for the placeholder graphics in these trying times.",
-        "Partial production when there's insufficient resources for things that take costs. Enjoy watching your incomes slow to a trickle!",
+        "UMA CACETADA DE COISAS NOVAS ADICIONADAS.",
+        "Sistema de recursos levemente mudado para algo legal no futuro.",
+        "Novos mundos com algumas diferenças em disponibilidade de recursos, demandas de portal, e outras coisas.",
+        "Categorias adicionadas às ações na aba de Mar para ajudar quem estiver tentando entender todos os botões.",
+        "Ações recentemente descobertas aparecem brilhando para sua conveniência.",
+        "O jeito que o progresso muda após o portal está... um pouco diferente.",
+        // o que caralhos isso significa?
+        "Configurações não são redefinidas após completar um mundo.",
+        "Artefatos existem.",
+        "Imagens são um trabalho em progresso. Perdão pelo gráficos temporários nesses tempos ardilosos.",
+        "Produção parcial na falta de recursos suficinetes para coisas que consomem coisas. Se divirta vendo sua produção à conta-gotas!",
     ],
     "0.62 (2014/12/12)": [
-        "Fixed infinity resource requirement for gate.",
-        "Attempted to fix resource table breaking in some browsers for some sidebar widths.",
+        "Portal não pede mais infinitos recursos para abrir.",
+        "Tentamos arrumar a tabela de recursos quebrando em alguns navegadores e largura debarra lateral.",
     ],
     "0.61 (2014/12/12)": [
-        "Added categories for buttons in the home sea, because there are going to be so many buttons.",
-        "Miscellaneous shuffling of files.",
-        "Some groundwork laid for v0.7, which will be the actual official release.",
+        "Adicionamos categorias para botões na aba de Mar, porque terão muitos botões.",
+        // Eu tenho certeza que eu já traduzi isto
+        "Mexemos em arquivos miscelâneos.",
+        // tar???
+        "Uma base foi feita para a versão 0.7, que vai ser o lançamento oficial.",
     ],
     "0.6 - Return of Shark (2014/12/8)": [
-        "Major graphical update!",
-        "Now features graphics sort of!",
-        "Some UI rearrangements:" +
-            "<ul><li>Researched techs now show in lab instead of grotto.</li>" +
-            "<li>General stats now on right of grotto instead of left.</li>" +
-            "<li>Large empty space in grotto right column reserved for future use!</li></ul>",
-        "Pointless version subtitle!",
-        "<span class='medDesc'>Added a donate link. Hey, sharks gotta eat.</span>",
+        "Atualização de gráficos grandona!",
+        "Agora temos gráficos! ...Mais ou menos.",
+        "Algumas mudanças de interface:" +
+            "<ul><li>Tecnologias pesquisadas agora aparecem no laboratório, ao invés da gruta.</li>" +
+            "<li>Estatísticas gerais agora na direita da gruta, ao invés da esquerda now on right.</li>" +
+            "<li>Espaço vazio grande na coluna direita da gruta, que está reservado para algo legal no futuro!</li></ul>",
+        "Subtítulo de versão!",
+        "<span class='medDesc'>Adicionamos um link para doações. Ei! Tubarões também precisam comer ;-;</span>",
     ],
     "0.59 (2014/09/30)": [
-        "Bunch of small fixes and tweaks!",
-        "End of run time now shown at the end of a run.",
-        "A couple of fixes for issues only found in IE11.",
-        "Fixed a bug that could let people buy hundreds of things for cheap by overwhelming the game's capacity for input. Hopefully fixed, anyway.",
-        "Gaudy social media share menu shoehorned in below the game title. Enjoy!",
+        "Vários probleminhas sendo consertados!",
+        "Tempo do final de uma jogatina agora é mostrado no final da jogatina.",
+        "Consertamos problemas que só achamos em IE11.",
+        "Arrumamos o problema de conseguir comprar centenas de coisas pelo preço de um por ultrapassar a capacidade do jogo de processar comandos. Espero que esteja consertado.",
+        "Mídias sociais enfiadas debaixo do título do jogo. Aproveite!",
     ],
     "0.531 (2014/08/20)": [
-        "Banned sea apples from the recycler because the feedback loop is actually far more crazy powerful than I was expecting. Whoops!",
+        "Banimos holotúrias de entrar na recicladora porque o ciclo holotúria <--> alga é muito mais forte que eu imaginava. Ops!",
     ],
-    "0.53 (2014/08/18)": ["Changed Recycler so that residue into new machines is linear, but into new resources is constant."],
+    "0.53 (2014/08/18)": ["Recicladora agora consegue produzir recursos de nata com custo constante, mas máquinas com custo linear."],
     "0.52 (2014/08/18)": [
-        "Emergency bug-fixes.",
-        "Cost to assemble residue into new things is now LINEAR (gets more expensive as you have more things) instead of CONSTANT.",
+        "Conserto de emergência.",
+        "Custo de produzir coisas por meio de nata é agora LINEAR (fica mais caro quando você tem mais de algo) ao invés de CONSTANTE.",
     ],
     "0.51 (2014/08/18)": [
-        "Edited the wording of import/export saving.",
-        "Made machine recycling less HORRIBLY BROKEN in terms of how much a machine is worth.",
+        "Mudamos nomeclatura de exportação/importação de jogos.",
+        "Tornamos a reciclagem de máquinas menos TERRIVELMENTE FORTES em termos de quanto vale uma máquina.",
     ],
     "0.5 (2014/08/18)": [
-        "Added the Grotto - a way to better understand what you've accomplished so far.",
-        "Added the Recycler. Enjoy discovering its function!",
-        "Added sand machines for more machine sand goodness.",
-        "Fixed oscillation/flickering of resources when at zero with anything providing a negative income.",
-        "Added 'support' for people stumbling across the page with scripts turned off.",
-        "Upped the gate kelp requirement by 10x, due to request.",
-        "Added time tracking. Enjoy seeing how much of your life you've invested in this game.",
-        "Added grouping for displaying resources on the left.",
-        "Added some help and action descriptions.",
-        "Added some text to the home tab to let people have an idea of where they should be heading in the very early game.",
-        "Thanks to assistance from others, the saves are now much, much smaller than before.",
-        "Made crab broods less ridiculously explosive.",
-        "Adjusted some resource colours.",
-        "Added a favicon, probably.",
-        "<span class='medDesc'>Added an overdue copyright notice I guess.</span>",
+        "Adicionamos a gruta- um jeito melgor de ver o que você conseguiu fazer até agora.",
+        "Adicionamos a Recicladora. Se divirta descobrindo para que serve!",
+        "Adicionamos comedores de areia para começão de areia.",
+        "Consertamos recursos piscando quando algo está os consumindo e não se tem mais estoque.",
+        "Adicionamos 'suporte' para pessoas caindo de paraquedas no site com os scripts desligados.",
+        "Se é para o bem de todos e felicidade geral da nação, digo ao povo que aumentamos a quantidade de alga para abrir o portal em 10x.",
+        "Adicionamos um cronômetro para você ver quanto tempo da sua vida você investiu neste jogo.",
+        "Agrupamos os recursos ao mostrá-los na tabela à esquerda.",
+        "Fizemos umas descrições de ação e de ajuda.",
+        "Adicionamos um texto à aba de Mar para dar uma ideia para os jogadores o que eles deveriam estar fazendo bem no comecinho do jogo.",
+        "Devido à ajuda de outras pessoas, jogos salvos são muito, mas muito menores que antes.",
+        "Ninhadas de caranguejo são menos estupidamente explosivos.",
+        "Ajustamos as cores de alguns recursos.",
+        "Fizemos um favicon... seja lá o que seja isso",
+        "<span class='medDesc'>Botamos um aviso de direitos autorais que nós deveríamos já ter feito antes.</span>",
     ],
     "0.48 (2014/08-ish)": [
-        "Saves are now compressed both in local storage and in exported strings.",
-        "Big costs significantly reduced.",
-        "Buy 10, Buy 1/3 max and Buy 1/2 max buttons added.",
-        "Research impact now displayed on research buttons.",
-        "Resource effectiveness multipliers now displayed in table." +
-            "<ul><li>These are not multipliers for how much of that resource you are getting.</li></ul>",
-        "Some dumb behind the scenes things to make the code look nicer.",
-        "Added this changelog!",
-        "Removed upgrades list on the left. It'll come back in a future version.",
-        "Added ray and crab generating resources, and unlocking techs.",
+        "Salvamento de jogos foram comprimidos ambos em armazenamento local e jogos exportados.",
+        "Custos altos agora diminuiram bastante.",
+        "Botões de comprar 10, 1/3 do max e 1/2 do max foram adicionados.",
+        "Impacto das pesquisas agora é mostrado no botão das pesquisas.",
+        "Efetividade de multiplicadores de recursos são mostrados na tabela." +
+            "<ul><li>Não são multiplicadores de quanto daquele recurso você está produzindo.</li></ul>",
+        "Trabalho bobo no código para ele ficar menos espaguetado.",
+        "Fizemos esse registro de atualizações!",
+        "Removemos a lista de melhorias da esquerda. Não chore, ela vai voltar numa versão futura.",
+        "Adicionamos recursos que fazem arraias e caranguejos, e suas respectivas tecnologias.",
     ],
-    "0.47 (2014/08-ish)": ["Bulk of game content added.", "Last update for Seamergency 2014!"],
-    "0.4 (2014/08-ish)": ["Added Laboratory tab.", "Added the end of the game tab."],
-    "0.3 (2014/08-ish)": ["Added description to options.", "Added save import/export.", "Added the ending panel."],
-    "0.23 (2014/08-ish)": ["Added autosave.", "Income system overhauled.", "Added options panel."],
+    "0.47 (2014/08-ish)": ["O grosso do jogo foi adicionado.", "Última atualização para 'Seamergency 2014!'"],
+    "0.4 (2014/08-ish)": ["Aba de laboratório adicionada.", "Aba de fim de jogo adicionada."],
+    "0.3 (2014/08-ish)": ["Adicionamos descrição às configurações.", "Importação e exportação de jogos agora é possível.", "Adicionamos uma tela final."],
+    "0.23 (2014/08-ish)": ["Adicionamos salvamento automático.", "Sistema de produção mudado.", "Fizemos menu de configurações."],
     "0.22 (2014/08-ish)": [
-        "Offline mode added. Resources will increase even with the game off!",
-        "(Resource income not guaranteed to be 100% accurate.)",
+        "Modo desconectado criado. Recursos vão ser produzidos mesmo com o jogo desligado!",
+        "(Não garantimos que ganho de recursos vai ser 100% acurado.)",
     ],
-    "0.21 (2014/08-ish)": ["Save and load added."],
-    "<0.21 (2014/08-ish)": ["A whole bunch of stuff.", "Resource table, log, initial buttons, the works."],
+    "0.21 (2014/08-ish)": ["Salvamemto e carregamento adicionado."],
+    "<0.21 (2014/08-ish)": ["Um monte de coisa.", "Tabela de recursos, registros, butões iniciais, ossos do ofício."],
 };
 
 $(() => {

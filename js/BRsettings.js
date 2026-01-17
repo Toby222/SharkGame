@@ -209,6 +209,12 @@ SharkGame.Settings = {
         category: "ACESSIBILIDADE",
         options: ["português", "english"],
         onChange() {
+            if (SharkGame.Settings.current.language === "português") {
+                window.open(“file:C:/Users/Fernando/Desktop/SharkGame-Super-portugu-s/BRindex.html”)
+            }
+            if (SharkGame.Settings.current.language === "english") {
+                window.open(“file:C:/Users/Fernando/Desktop/SharkGame-Super-portugu-s/index.html”)
+            }
         },
     },
 

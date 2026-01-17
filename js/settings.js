@@ -210,7 +210,7 @@ SharkGame.Settings = {
         options: ["english", "português"],
         onChange() {
             if (SharkGame.Settings.current.language === "português") {
-                return "it works";
+                log.addMessage("it works");
             }
         },
     },

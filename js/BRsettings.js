@@ -210,10 +210,10 @@ SharkGame.Settings = {
         options: ["português", "english"],
         onChange() {
             if (SharkGame.Settings.current.language === "português") {
-                window.open('https://pt.wikipedia.org/wiki/Português_brasileiro')
+                window.open("https://pt.wikipedia.org/wiki/Português_brasileiro");
             }
             if (SharkGame.Settings.current.language === 'english') {
-                window.open('https://en.wikipedia.org/wiki/English_language')
+                window.open("https://en.wikipedia.org/wiki/English_language");
             }
         },
     },

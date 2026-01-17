@@ -142,11 +142,11 @@ if (SharkGame.Settings.current.language === "english") {
         spriteIconPath: "img/sprites.png",
         spriteHomeEventPath: "img/homemessagesprites.png",
 
-    /**
-     *
-     * @param {any[]} choices
-     * @returns {any} A random element of choices
-     */
+        /**
+         *
+         * @param {any[]} choices
+         * @returns {any} A random element of choices
+         */
         choose(choices) {
             return choices[Math.floor(Math.random() * choices.length)];
         },
@@ -174,7 +174,7 @@ if (SharkGame.Settings.current.language === "english") {
                 imageDiv = $("<div>");
             }
 
-        // if the original sprite data is undefined, try loading the backup
+            // if the original sprite data is undefined, try loading the backup
             if (!spriteData) {
                 spriteData = spritesData[backupImageName];
             }
@@ -191,8 +191,8 @@ if (SharkGame.Settings.current.language === "english") {
             }
             return imageDiv;
         },
-    })
-};
+    });
+}
 
 SharkGame.Main = {
     tickHandler: -1,

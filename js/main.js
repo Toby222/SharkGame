@@ -45,154 +45,152 @@ $(document).on("keydown", (event) => {
 });
 
 // CORE VARIABLES AND HELPER FUNCTIONS
-if (SharkGame.Settings.current.language === "english") {
-    $.extend(SharkGame, {
-        GAME_NAMES: [
-            "Five Seconds A Shark",
-            "Next Shark Game",
-            "Next Shark Game: Barkfest",
-            "Sharky Clicker",
-            "Weird Oceans",
-            "You Have To Name The Shark Game",
-            "Shark A Lark",
-            "Bark Shark",
-            "Fin Idle",
-            "Ray of Dreams",
-            "Shark Saver",
-            "Shoal Sharker",
-            "Shark Souls",
-            "Saucy Sharks",
-            "Sharkfall",
-            "Heart of Sharkness",
-            "Sharks and Recreation",
-            "Alone in the Shark",
-            "Sharkpocalypse",
-            "Shark of Darkness",
-            "Strange Oceans",
-            "A New Frontier",
-            "Lobster's Paradise",
-            "Revenge of the Crabs",
-            "Shark Box",
-            "Dolphin Heroes",
-            "MAWS",
-            "Part 6, Stone Ocean",
-            "Sailor Crab",
-            "League of Lobsters",
-            "Eel Team Six",
-            "Dungeons And Dolphins",
-            "Gameshark",
-            "Five Nights in Frigid",
-            "The Shark of Wall Street",
-            ":the shark game:",
-            "Sharkware Edition",
-            "Help Wanted",
-            "NOT FINISHED",
-            "Deluxe",
-            "doo doo do-do do-do",
-            "DUNGEONS",
-            "The Adventure Continues",
-            "To Be Continued",
-            "Sharks of Rage",
-            "Bedrock? Edition",
-            "Java(script) Edition",
-            "You are a Shark",
-            "Mystery of Shark City",
-            "Seas of Loathing",
-            "Raiders of the Lost Shark",
-            "Dead Sharks Tell No Tales",
-            "At Sharks End",
-            "On Sharker Tides",
-            "Curse of the Shark",
-            "Have I Played These Sharks Before?",
-            "Hollow Shark: Shark Song",
-        ],
-        GAME_NAME: null,
-        ACTUAL_GAME_NAME: "Shark Game",
-        VERSION: "20250127a",
-        ORIGINAL_VERSION: 0.71,
-        VERSION_NAME: "The Tempetuous Update",
-        EPSILON: 1e-6, // floating point comparison is a joy
-        BIGGEST_SAFE_NUMBER: 1000000000000,
-        MAX: 1e300,
+$.extend(SharkGame, {
+    GAME_NAMES: [
+    "Five Seconds A Shark",
+    "Next Shark Game",
+    "Next Shark Game: Barkfest",
+    "Sharky Clicker",
+    "Weird Oceans",
+    "You Have To Name The Shark Game",
+    "Shark A Lark",
+    "Bark Shark",
+    "Fin Idle",
+    "Ray of Dreams",
+    "Shark Saver",
+    "Shoal Sharker",
+    "Shark Souls",
+    "Saucy Sharks",
+    "Sharkfall",
+    "Heart of Sharkness",
+    "Sharks and Recreation",
+    "Alone in the Shark",
+    "Sharkpocalypse",
+    "Shark of Darkness",
+    "Strange Oceans",
+    "A New Frontier",
+    "Lobster's Paradise",
+    "Revenge of the Crabs",
+    "Shark Box",
+    "Dolphin Heroes",
+    "MAWS",
+    "Part 6, Stone Ocean",
+    "Sailor Crab",
+    "League of Lobsters",
+    "Eel Team Six",
+    "Dungeons And Dolphins",
+    "Gameshark",
+    "Five Nights in Frigid",
+    "The Shark of Wall Street",
+    ":the shark game:",
+    "Sharkware Edition",
+    "Help Wanted",
+    "NOT FINISHED",
+    "Deluxe",
+    "doo doo do-do do-do",
+    "DUNGEONS",
+    "The Adventure Continues",
+    "To Be Continued",
+    "Sharks of Rage",
+    "Bedrock? Edition",
+    "Java(script) Edition",
+    "You are a Shark",
+    "Mystery of Shark City",
+    "Seas of Loathing",
+    "Raiders of the Lost Shark",
+    "Dead Sharks Tell No Tales",
+    "At Sharks End",
+    "On Sharker Tides",
+    "Curse of the Shark",
+    "Have I Played These Sharks Before?",
+    "Hollow Shark: Shark Song",
+    ],
+    GAME_NAME: null,
+    ACTUAL_GAME_NAME: "Shark Game",
+    VERSION: "20250127a",
+    ORIGINAL_VERSION: 0.71,
+    VERSION_NAME: "The Tempetuous Update",
+    EPSILON: 1e-6, // floating point comparison is a joy
+    BIGGEST_SAFE_NUMBER: 1000000000000,
+    MAX: 1e300,
 
-        IDLE_THRESHOLD: 120000,
-        IDLE_FADE_TIME: 5000,
+    IDLE_THRESHOLD: 120000,
+    IDLE_FADE_TIME: 5000,
 
-        INTERVAL: 1000 / 10, // 20 FPS // I'm pretty sure 1000 / 10 comes out to 10 FPS
-        dt: 1 / 10,
-        before: _.now(),
-        lastMouseActivity: _.now(),
-        savedMouseActivity: _.now(),
+    INTERVAL: 1000 / 10, // 20 FPS // I'm pretty sure 1000 / 10 comes out to 10 FPS
+    dt: 1 / 10,
+    before: _.now(),
+    lastMouseActivity: _.now(),
+    savedMouseActivity: _.now(),
 
-        timestampLastSave: false,
-        timestampGameStart: false,
-        timestampRunStart: false,
-        timestampRunEnd: false,
-        timestampSimulated: false,
+    timestampLastSave: false,
+    timestampGameStart: false,
+    timestampRunStart: false,
+    timestampRunEnd: false,
+    timestampSimulated: false,
 
-        sidebarHidden: true,
-        paneGenerated: false,
+    sidebarHidden: true,
+    paneGenerated: false,
 
-        gameOver: false,
-        wonGame: false,
+    gameOver: false,
+    wonGame: false,
 
-        flags: {},
-        persistentFlags: {},
+    flags: {},
+    persistentFlags: {},
 
-        spriteIconPath: "img/sprites.png",
-        spriteHomeEventPath: "img/homemessagesprites.png",
+    spriteIconPath: "img/sprites.png",
+    spriteHomeEventPath: "img/homemessagesprites.png",
 
-        /**
-         *
-         * @param {any[]} choices
-         * @returns {any} A random element of choices
-         */
-        choose(choices) {
-            return choices[Math.floor(Math.random() * choices.length)];
-        },
-        getImageIconHTML(imagePath, width, height) {
-            if (!imagePath) {
-                imagePath = "http://placekitten.com/g/" + Math.floor(width) + "/" + Math.floor(height);
-            }
-            let imageHtml = "";
-            if (SharkGame.Settings.current.iconPositions !== "off") {
-                imageHtml += "<img width=" + width + " height=" + height + " src='" + imagePath + "' class='button-icon'>";
-            }
-            return imageHtml;
-        },
-        changeSprite(spritePath, imageName, imageDiv, backupImageName) {
-            let spritesData;
+    /**
+     *
+     * @param {any[]} choices
+     * @returns {any} A random element of choices
+     */
+    choose(choices) {
+        return choices[Math.floor(Math.random() * choices.length)];
+    },
+    getImageIconHTML(imagePath, width, height) {
+        if (!imagePath) {
+            imagePath = "http://placekitten.com/g/" + Math.floor(width) + "/" + Math.floor(height);
+        }
+        let imageHtml = "";
+        if (SharkGame.Settings.current.iconPositions !== "off") {
+            imageHtml += "<img width=" + width + " height=" + height + " src='" + imagePath + "' class='button-icon'>";
+        }
+        return imageHtml;
+    },
+    changeSprite(spritePath, imageName, imageDiv, backupImageName) {
+        let spritesData;
 
-            if (spritePath === SharkGame.spriteIconPath) {
-                spritesData = SharkGame.Sprites;
-            } else if (spritePath === SharkGame.spriteHomeEventPath) {
-                spritesData = SharkGame.HomeMessageSprites;
-            }
+        if (spritePath === SharkGame.spriteIconPath) {
+            spritesData = SharkGame.Sprites;
+        } else if (spritePath === SharkGame.spriteHomeEventPath) {
+            spritesData = SharkGame.HomeMessageSprites;
+        }
 
-            let spriteData = spritesData[imageName];
-            if (!imageDiv) {
-                imageDiv = $("<div>");
-            }
+        let spriteData = spritesData[imageName];
+        if (!imageDiv) {
+            imageDiv = $("<div>");
+        }
 
-            // if the original sprite data is undefined, try loading the backup
-            if (!spriteData) {
-                spriteData = spritesData[backupImageName];
-            }
+        // if the original sprite data is undefined, try loading the backup
+        if (!spriteData) {
+            spriteData = spritesData[backupImageName];
+        }
 
-            if (spriteData) {
-                imageDiv.css("background-image", "url(" + spritePath + ")");
-                imageDiv.css("background-position", "-" + spriteData.frame.x + "px -" + spriteData.frame.y + "px");
-                imageDiv.width(spriteData.frame.w);
-                imageDiv.height(spriteData.frame.h);
-            } else {
-                imageDiv.css("background-image", 'url("//placehold.it/50x50")');
-                imageDiv.width(50);
-                imageDiv.height(50);
-            }
-            return imageDiv;
-        },
-    });
-}
+        if (spriteData) {
+            imageDiv.css("background-image", "url(" + spritePath + ")");
+            imageDiv.css("background-position", "-" + spriteData.frame.x + "px -" + spriteData.frame.y + "px");
+            imageDiv.width(spriteData.frame.w);
+            imageDiv.height(spriteData.frame.h);
+        } else {
+            imageDiv.css("background-image", 'url("//placehold.it/50x50")');
+            imageDiv.width(50);
+            imageDiv.height(50);
+        }
+        return imageDiv;
+    },
+});
 
 SharkGame.Main = {
     tickHandler: -1,

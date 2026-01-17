@@ -788,7 +788,6 @@ SharkGame.ResourceTable = {
             coral: 0.5,
             seagrass: 0.5,
         },
-        value: 1000,
     },
     
     mudskipper: {
@@ -800,7 +799,6 @@ SharkGame.ResourceTable = {
             driftwood: 0.5,
         },
         jobs: ["burrow", "mentor"],
-        value: 500, //(what does this mean?) --ThreeEels
     },
 
     burrow: {
@@ -811,7 +809,6 @@ SharkGame.ResourceTable = {
         income: {
             mudskipper: 0.05,
         },
-        value: 1000,
     },
 
     driftwood: {
@@ -819,7 +816,6 @@ SharkGame.ResourceTable = {
         singleName: "driftwood",
         desc: "Buoyant detritus from the beyond.",
         color: "#342D19",
-        value: 1000,
     },
 
     hardbark: {
@@ -827,7 +823,6 @@ SharkGame.ResourceTable = {
         singleName: "hardbark",
         desc: "Pistons and mechanisms for the puppets.",
         color: "#1F2F45",
-        value: 1500,
     },
 
     intel: {
@@ -835,7 +830,6 @@ SharkGame.ResourceTable = {
         singleName: "intel",
         desc: "What the Braver knows.",
         color: "#FFFFFF",
-        value: 150,
     },
 
     mentor: {
@@ -843,7 +837,6 @@ SharkGame.ResourceTable = {
         singleName: "puppet mentor",
         desc: "Learned mudskippers, teaching the puppets known techniques.",
         color: "#CC6600",
-        value: 2000,
     },
 
     caracara: {
@@ -855,7 +848,6 @@ SharkGame.ResourceTable = {
             crystal: 1,
         },
         jobs: ["retrievalDuo", "connoisseur"],
-        value: 3000,
     },
 
     retrievalDuo: {
@@ -863,7 +855,6 @@ SharkGame.ResourceTable = {
         singleName: "retrieval duo",
         desc: "A huffy pair of searchers, venturing further than ever before.",
         color: "#cc9966",
-        value: 2000
     },
 
     connoisseur: {
@@ -875,7 +866,6 @@ SharkGame.ResourceTable = {
             seagrass: 0.5,
             coral: 0.5,
         },
-        value: 2000
     },
 
     coralCollector: {
@@ -886,7 +876,6 @@ SharkGame.ResourceTable = {
         income: {
             coral: 3
         },
-        value: 3500,
     },
 
     driftwoodSnarer: {
@@ -897,7 +886,6 @@ SharkGame.ResourceTable = {
         income: {
             driftwood: 2
         },
-        value: 3500,
     },
 
     hardbarkSmith: {
@@ -909,7 +897,6 @@ SharkGame.ResourceTable = {
             hardbark: 2,
             crystal: -2
         },
-        value: 3500,
     },
 
     shoreQueller: {
@@ -921,7 +908,6 @@ SharkGame.ResourceTable = {
             seagrass: 3,
             crystal: 3,
         },
-        value: 3500,
     },
 
     safeholdSentinel: {
@@ -932,7 +918,6 @@ SharkGame.ResourceTable = {
         income: {
             roughSand: -5.5,
         },
-        value: 1000,
     },
     
     barrageBraver: {
@@ -943,7 +928,6 @@ SharkGame.ResourceTable = {
         income: {
             intel: 0.0001
         },
-        value: 1000,
     },
 
     gatemasterPuppet: {
@@ -951,7 +935,6 @@ SharkGame.ResourceTable = {
         singleName: "Gatemaster",
         desc: "It oversees its children and its home.",
         color: "#FFFFFF",
-        value: 2000,
     },
 
     seagrassFarm: {
@@ -962,7 +945,6 @@ SharkGame.ResourceTable = {
         income: {
             seagrass: 1.5,
         },
-        value: 770,
     },
 
     exchangeStation: {
@@ -970,7 +952,6 @@ SharkGame.ResourceTable = {
         singleName: "exchange station",
         desc: "A bustling hub of beyonderwalkers and seaborn.",
         color: "#FFFFFF",
-        value: 1500
     },
 
     receiverNode: {
@@ -981,7 +962,6 @@ SharkGame.ResourceTable = {
         income: {
             intel: 1.5,
         },
-        value: 1500,
     },
     
     roughSand: {
@@ -989,7 +969,6 @@ SharkGame.ResourceTable = {
         singleName: "rough sand",
         desc: "Jagged grains that dig into our flesh.",
         color: "#CC9900",
-        value: -100,
     },
             
     // SHROUDED

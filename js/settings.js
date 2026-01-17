@@ -209,6 +209,9 @@ SharkGame.Settings = {
         category: "ACCESSIBILITY",
         options: ["english", "português"],
         onChange() {
+            if (SharkGame.Settings.current.language === "português") {
+                return "it works"
+            }
         },
     },
 

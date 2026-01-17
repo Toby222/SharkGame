@@ -203,11 +203,11 @@ SharkGame.Settings = {
     // ACCESSIBILITY
 
     language: {
-        defaultSetting: "Português",
+        defaultSetting: "português",
         name: "Língua",
         desc: "Qual é o idioma do jogo.",
         category: "ACESSIBILIDADE",
-        options: ["Português", "English"],
+        options: ["português", "english"],
         onChange() {
         },
     },

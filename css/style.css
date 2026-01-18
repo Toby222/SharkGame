@@ -93,12 +93,12 @@
   --color-title: rgba(104, 30, 30, 0.2);
 }
 :root :not(.no-theme).shore {
-  --color-lighter: #ffffff;
-  --color-light: #ffffff;
-  --color-med: #ffffff;
-  --color-dark: #ffffff;
-  --color-darker: #ffffff;
-  --color-title: rgba(47, 93, 124, 0.2);
+  --color-lighter: #ffdf80;
+  --color-light: #ffd24d;
+  --color-med: #ffbf00;
+  --color-dark: #cc9900;
+  --color-darker: #997300;
+  --color-title: rgba(255, 238, 52, 0.2);
 }
 
 /*------------------------------------------------------

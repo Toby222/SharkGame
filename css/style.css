@@ -92,6 +92,14 @@
   --color-darker: #2b0707;
   --color-title: rgba(104, 30, 30, 0.2);
 }
+:root :not(.no-theme).shore {
+  --color-lighter: #ffffff;
+  --color-light: #ffffff;
+  --color-med: #ffffff;
+  --color-dark: #ffffff;
+  --color-darker: #ffffff;
+  --color-title: rgba(47, 93, 124, 0.2);
+}
 
 /*------------------------------------------------------
   ACTUAL CSS RULES SORTA

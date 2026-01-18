@@ -62,6 +62,7 @@ $.extend(SharkGame, {
         "Tubarão do Faustão",
         "Um Peixoleiro Chamado Papacu",
         "Tubarão Idle",
+        "Marzão Foster Para Amêijoas Imaginárias",
         "Siri-dade Alerta",
         "A Divina Co-mar-dia",
         "Capitão Pacueca",

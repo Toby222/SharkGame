@@ -64,6 +64,7 @@ $.extend(SharkGame, {
         "Tubarão Idle",
         "Marzão Foster Para Amêijoas Imaginárias",
         "Siri-dade Alerta",
+        "O Astronauta de Mar",
         "A Divina Co-mar-dia",
         "Capitão Pacueca",
         "Todo Mundo Odeia o Siris",

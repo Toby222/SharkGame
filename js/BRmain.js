@@ -60,6 +60,7 @@ $.extend(SharkGame, {
         "'Você Precisa Dar Um Nome Para o Jogo",
         "/tubarão/",
         "Tubarão do Faustão",
+        "Um Peixoleiro Chamado Papacu",
         "Tubarão Idle",
         "Siri-dade Alerta",
         "A Divina Co-mar-dia",

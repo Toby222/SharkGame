@@ -111,7 +111,7 @@ $.extend(SharkGame, {
         "A Viagem de Siri-ro",
         "Vale a Pena Ver de Polvo",
         "Deltubarune",
-        "Mansão Foster de Arraias Imaginárias",
+        "Uma Tainha da Pesada",
         "O Cranguejo e a Rosa",
         "Hollow Náutico: Siri Song",
         "Viva a Sociedade Água-viva",

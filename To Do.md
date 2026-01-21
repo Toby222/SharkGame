@@ -67,7 +67,7 @@
 ~~Inudstrial-Grade Sponge        understand how to make spronge,~~
 ~~Environmentalism        unlock filters,~~
 ~~Octal Efficieny        increase octal productivity,~~
-Superior Search Algorithms        learn how to search better,
+~~Superior Search Algorithms        learn how to search better,~~
 High-Energy Fusion        learn to fuse ancient parts (somewhat shared with marine),
 ~~Investi-gate-tions        dedicate an investigation team to understanding the gate,~~
 Mechanised Alchemy         refine the machines,
@@ -158,7 +158,7 @@ Mass Production        mass produce porite parts to cheapen their creation,
 Second Draft        draft another letter,
 Algae Acolytes        cult of algae,
 Central Collection        cut out the middleman in sponge collection,
-Land Reform        use less sand while designating farms due to better land management,
+~~Land Reform        use less sand while designating farms due to better land management,~~
 Rumored Recollections        investigate rumors about the king,
 Sand Reform        organize sand collection patrols,
 Crab Reform        reform the crabs! i guess?,

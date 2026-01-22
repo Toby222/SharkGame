@@ -4528,7 +4528,7 @@ SharkGame.Upgrades = {
         },
     },
     shore: {
-        template: {
+      template: {
             name: "Upgrade Template",
             desc: "This is the text in the lab button thingy...",
             researchedMessage: "...and this is the text that goes next to the buttons!",
@@ -4536,20 +4536,21 @@ SharkGame.Upgrades = {
             cost: { },
             required: { },
             effect: { },
+        },
         murkAssessment: {},
         fleeBarrage: {},
         justPushFurtherLol: {},
         crabDisappearance: {},
+        driftwoodAnalysis: {},
         mudskipperContact: {},
         crystalBite: { required: { upgrades: ["justPushFurtherLol"] } },
-        crystalSpade: {},
-        crystalArmour: {}, //gosh that's a lot of crystals eh --ThreeEels
-        crystalContainer: {},
+        crystalSpade: { required: { upgrades: ["justPushFurtherLol"] } },
+        crystalArmour: { required: { upgrades: ["justPushFurtherLol", "mudskipperContact"] } }, //gosh that's a lot of crystals eh --ThreeEels
+        crystalContainer: { required: { upgrades: ["justPushFurtherLol"] } },
         seabedGeology: {},
         underwaterChemistry: {},
         thermalVents: {},
         stabilization: {},
-        driftwoodAnalysis: {},
         hardbarkCoating: {},
         puppetAssembly: {},
         fixModels: {},

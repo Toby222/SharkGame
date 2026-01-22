@@ -4594,12 +4594,78 @@ SharkGame.Upgrades = {
                 },
             },
         },
-        crabDisappearance: {},
-        driftwoodAnalysis: {},
-        mudskipperContact: {},
+        crabDisappearance: {
+            name: "Crab Disappearance",
+            desc: "The crabs keep on disappearing from sight, only to seemingly come back safe with more crystals. What's going on?",
+            researchedMessage: "We… we, uh… what’s the ‘beyond’?",
+            effectDesc:
+                "Crabs are now twice as effective at finding crystals - and they retrieve lots anyway.",
+            cost: {
+                science: 115,
+                crab: 5,
+            },
+            required: {
+                upgrades: ["crystalContainer", "seabedGeology"],
+                seen: ["crab", "crystal"],
+            },
+            effect: {
+                incomeMultiplier: {
+                    crab: 2,
+                    },
+                },
+        },
+        driftwoodAnalysis: {
+            name: "Driftwood Analysis",
+            desc: "These brittle brown things keep floating in the water above us. What are they?",
+            researchedMessage: "Apparently this ‘driftwood’ comes from ABOVE THE OCEAN. Is that even a place?? Is that why it’s so flaky???",
+            effectDesc: "Crabs can now retrieve driftwood on their excursions to the beyond.",
+            cost: {
+                science: 25,
+            },
+            required: {
+                upgrades: ["crabDisappearance"],
+            },
+            effect: {
+                addDriftwoodIncome: {
+                    crab: 0.5,
+                },
+            },
+        },
+        mudskipperContact: {
+            name: "Mudskipper Contact",
+            desc: "So, they’re fish, but the one thing that stops us from eating them is that they can SURVIVE ABOVE WATER.",
+            researchedMessage: "After stating our business, the mudskippers hesitated for a while, before saying… we still don’t know what they mean.",
+            effectDesc:
+                "Mudskippers can now be recruited to retrieve objects from above the surface, as long as they stay moist.",
+            cost: {
+                science: 150,
+                driftwood: 10,
+            },
+            required: {
+                upgrades: ["driftwoodAnalysis"],
+            },
+            events: ["shoreAddMudskipper"],
+        },
         crystalBite: { required: { upgrades: ["justPushFurtherLol"] } },
         crystalSpade: { required: { upgrades: ["justPushFurtherLol"] } },
-        crystalArmour: { required: { upgrades: ["justPushFurtherLol", "mudskipperContact"] } }, //gosh that's a lot of crystals eh --ThreeEels
+        crystalArmour: {
+            name: "Crystal Armour",
+            desc: "Forge some armour for the useful fish.",
+            researchedMessage: "Mudskippers can work for us five times faster.",
+            effectDesc: "With the new moisture-restraining armour, mudskippers work five times faster.",
+            cost: {
+                science: 250,
+                crystal: 75,
+            },
+            required: {
+                upgrades: ["justPushFurtherLol", "mudskipperContact"],
+            },
+            effect: {
+                incomeMultiplier: {
+                   mudskipper: 5,
+                },
+            },
+        }, //gosh that's a lot of crystals eh --ThreeEels
         crystalContainer: { required: { upgrades: ["justPushFurtherLol"] } },
         seabedGeology: {},
         underwaterChemistry: {},

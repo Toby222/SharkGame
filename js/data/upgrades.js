@@ -4537,9 +4537,63 @@ SharkGame.Upgrades = {
             required: { },
             effect: { },
         },
-        murkAssessment: {},
-        fleeBarrage: {},
-        justPushFurtherLol: {},
+        murkAssessment: {
+            name: "Murk Assessment",
+            desc: "What is that sandy cloud? What does it do? We should go inside it.",
+            researchedMessage: "It's a sandstorm. The one where the rough grains of sand come from. To say it's torture is an understatement.",
+            effectDesc: "If we ever escape this... this barrage, we'll never go near it again.",
+            cost: {
+                science: 50,
+                fish: 250,
+                crystal: 15,
+                shark: 10,
+                ray: 10,
+                crab: 5,
+            },
+            required: {
+                seen: ["sand", "roughSand"],
+            },
+            effect: {
+                resourceBoost: {
+                    roughSand: 100,
+                },
+            },
+        },
+        fleeBarrage: {
+            name: "Flee Barrage",
+            desc: "We need to go back. This hurts.",
+            researchedMessage: "No. No, no, no, no, no. It's gone. It's covered.",
+            effectDesc: "Our previous location has been consumed by the sandstorm.",
+            cost: {
+                shark: 3,
+                roughSand: 15,
+                ray: 3,
+                scientist: 3,
+            },
+            required: {
+                upgrades: ["murkAssessment"],
+            },
+            effect: {},
+        },
+        justPushFurtherLol: {
+            name: "Our Only Choice...",
+            desc: "...is to move forward.",
+            researchedMessage: "It worked. It worked. I can't believe it.",
+            effectDesc: "We burst into a clear space. It's wide, but disappointingly narrow.",
+            cost: {
+                scientist: 1,
+                shark: 1,
+                ray: 1,
+            },
+            required: {
+                upgrades: ["fleeBarrage"],
+            },
+            effect: {
+                resourceBoost: {
+                    roughSand: -100,
+                },
+            },
+        },
         crabDisappearance: {},
         driftwoodAnalysis: {},
         mudskipperContact: {},
@@ -4550,6 +4604,7 @@ SharkGame.Upgrades = {
         seabedGeology: {},
         underwaterChemistry: {},
         thermalVents: {},
+        laserRays: {},
         stabilization: {},
         hardbarkCoating: {},
         puppetAssembly: {},

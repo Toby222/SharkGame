@@ -84,7 +84,7 @@ Internal Investigation        uncover the inside of the great machine,
 Internal Expedition        explore the complex inside of the great machine,
 Internal Inquiry        explain to the squid why we went behind their backs,
 Creature Coalition        we have to work together to make progress...,
-Rapid Recharging        reverse-engineer an old battery to make a new one!
+~~Rapid Recharging        reverse-engineer an old battery to make a new one!~~
 
 ### HAVEN
 ~~Dolphin Technology        learn to build dolphin tech,~~

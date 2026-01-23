@@ -100,7 +100,8 @@ SharkGame.Puns = {
 
     resourceBased: {
         fish: [
-            "What did the fish detective say on the scene of crime? 'Somethinh smells fishy!"
+            "What did the fish detective say on the scene of crime? 'Somethinh smells fishy!",
+            "After one of your sharks ate a clownfish, do you know what he said?<br>'This tastes like it’s depressed and tired of constantly being seen as a joke!'",
         ],
         crystal: [
             "Placeholder :D"
@@ -160,10 +161,11 @@ SharkGame.Puns = {
             "Placeholder :D",
         ],
         shrimp: [
-            "Placeholder :D",
+            "The shrimp traitor was surrounded. He couldn’t scampi away this time.",
+            "An eel went to a restaurant and ordered some rice. He was confused. A <i>shrimp</i> had fried this rice?<br>He then remembered that shrimp are actually decent cooks.",
         ],
         eel: [
-            "Placeholder :D ...do I really have to do all these?",
+            "An eel went to a restaurant and ordered some rice. He was confused. A shrimp had fried this rice?<br>He then remembered that shrimp are actually decent cooks.",
         ],
         chimaera: [
             "Placeholder :D",

@@ -14,6 +14,7 @@ SharkGame.HomeMessages = {
             },
             {
                 name: "start-sharks",
+            
                 unlock: { resource: { shark: 2 } },
                 message: "More sharks swim over, curious and watchful.",
             },
@@ -535,6 +536,16 @@ SharkGame.HomeMessages = {
                 name: "shore-sandstorm-escape-attempt-the-sequel",
                 unlock: { upgrade: ["justPushFurtherLol"] },
                 message: "At last, by going further into the sandstorm, you burst into a clear space of calm. But a wall of sand blocks your path.",
+            },
+            {
+                name: "shore-discover-driftwood",
+                unlock: { upgrade: ["crabDisappearance"] },
+                message: "You notice some long, branching brown things bobbing on the surface. Some sharks say it's flaky.",
+            },
+            {
+                name: "shore-add-mudskipper",
+                unlock: { upgrade: ["mudskipperContact"] },
+                message: "These tiny fish aren't very remarkable - but what they (skittishly) bring back is another matter.",
             },
         ],
         

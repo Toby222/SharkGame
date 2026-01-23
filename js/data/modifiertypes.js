@@ -382,6 +382,35 @@ SharkGame.ModifierTypes = {
                     // this applies to base income so it should never be reapplied
                     return input;
                 },
+             },
+             addDriftwoodIncome: {
+                defaultValue: 0,
+                apply(current, degree, resource) {
+                    if (!SharkGame.ResourceMap.get(resource).baseIncome) {
+                        SharkGame.ResourceMap.get(resource).baseIncome = {};
+                    }
+                    if (!SharkGame.ResourceMap.get(resource).income) {
+                        SharkGame.ResourceMap.get(resource).income = {};
+                    }
+                    const baseIncomes = SharkGame.ResourceMap.get(resource).baseIncome;
+                    baseIncomes.driftwood = (baseIncomes.driftwood ? baseIncomes.driftwood : 0) + degree;
+                    res.reapplyModifiers(resource, "driftwood");
+                    return current + degree;
+                },
+                effectDescription(degree, resource, background) {
+                    return `Add ${degree} ${sharktext.getResourceName("driftwood", false, false, background)}/s to ${sharktext.getResourceName(
+                        resource,
+                        false,
+                        69,
+                        background,
+                    )}`;
+                },
+                getEffect(_genDegree, _outDegree, _gen, _out) {
+                    return 1;
+                },
+                applyToInput(input, _genDegree, _outDegree, _gen, _out) {
+                    return input;
+                },
             },
         },
     },

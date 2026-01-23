@@ -4543,9 +4543,6 @@ SharkGame.Upgrades = {
             researchedMessage: "It's a sandstorm. The one where the rough grains of sand come from. To say it's torture is an understatement.",
             effectDesc: "If we ever escape this... this barrage, we'll never go near it again.",
             cost: {
-                science: 50,
-                fish: 250,
-                crystal: 15,
                 shark: 10,
                 ray: 10,
                 crab: 5,
@@ -4566,7 +4563,6 @@ SharkGame.Upgrades = {
             effectDesc: "Our previous location has been consumed by the sandstorm.",
             cost: {
                 shark: 3,
-                roughSand: 15,
                 ray: 3,
                 scientist: 3,
             },
@@ -4627,7 +4623,7 @@ SharkGame.Upgrades = {
             },
             effect: {
                 addDriftwoodIncome: {
-                    crab: 0.5,
+                    crab: 2,
                 },
             },
         },
@@ -4652,7 +4648,7 @@ SharkGame.Upgrades = {
             name: "Crystal Armour",
             desc: "Forge some armour for the useful fish.",
             researchedMessage: "Mudskippers can work for us five times faster.",
-            effectDesc: "With the new moisture-restraining armour, mudskippers work five times faster.",
+            effectDesc: "With the new moisture-retaining armour, mudskippers work five times faster.",
             cost: {
                 science: 250,
                 crystal: 75,
@@ -4676,7 +4672,15 @@ SharkGame.Upgrades = {
         puppetAssembly: {},
         fixModels: {},
         puppetTeaching: {},
-        
+        tunnelExpedition: {},
+        thingyRepairing: {},
+        raiderTruce: {},
+        crystalTalons: {},
+        beyondwalkerPairing: {},
+        platformExpansion: {},
+        seagrassAttention: {},
+        taleHeeding: {},
+        intelTowers: {},
         },
     },
 };

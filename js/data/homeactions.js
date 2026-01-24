@@ -4973,9 +4973,93 @@ SharkGame.HomeActions = {
         }, //end of machine code
 
         // UNIQUE //////////////////////
-        getSafeholdSentinel: {}, //end of unique code
-        getBarrageBraver: {}, //end of unique code
-        getGatemasterPuppet: {}, //end of unique code
+        getSafeholdSentinel: {
+            name: "Repair Safehold Sentinel",
+            effect: {
+                resource: {
+                    safeholdSentinel: 1,
+                },
+            },
+            cost: [
+                { resource: "hardbark", costFunction: "unique", priceIncrease: 250 },
+                { resource: "sharkonium", costFunction: "unique", priceIncrease: 25 },
+                { resource: "crystal", costFunction: "unique", priceIncrease: 5 },
+            ],
+            max: "safeholdSentinel",
+            prereq: {
+                resource: {
+                    hardbark: 250,
+                    sharkonium: 25,
+                    crystal: 5,
+                },
+                upgrade: ["farExploration"],
+            },
+            outcomes: [
+                "//*to be written in future*//",
+            ],
+            multiOutcomes: [
+                "//*to be written in future*//",
+            ],
+            helpText: "Repair the multi-armed thing above the big latch.",
+        }, //end of unique code
+        getBarrageBraver: {
+            ame: "Reconstruct Barrage Braver",
+            effect: {
+                resource: {
+                    barrageBraver: 1,
+                },
+            },
+            cost: [
+                { resource: "hardbark", costFunction: "unique", priceIncrease: 125 },
+                { resource: "sharkonium", costFunction: "unique", priceIncrease: 125 },
+                { resource: "crystal", costFunction: "unique", priceIncrease: 15 },
+            ],
+            max: "barrageBraver",
+            prereq: {
+                resource: {
+                    hardbark: 125,
+                    sharkonium: 125,
+                    crystal: 15,
+                },
+                upgrade: ["taleHeeding"],
+            },
+            outcomes: [
+                "//*to be written in future*//",
+            ],
+            multiOutcomes: [
+                "//*to be written in future*//",
+            ],
+            helpText: "Reconstruct the Barrage Braver of beyondwalker legend.",
+        }, //end of unique code
+        getGatemasterPuppet: {
+            ame: "Scavenge Gatemaster",
+            effect: {
+                resource: {
+                    gatemasterPuppet: 1,
+                },
+            },
+            cost: [
+                { resource: "hardbark", costFunction: "unique", priceIncrease: 250 },
+                { resource: "sharkonium", costFunction: "unique", priceIncrease: 25 },
+                { resource: "crystal", costFunction: "unique", priceIncrease: 5 },
+            ],
+            max: "gatemasterPuppet",
+            prereq: {
+                resource: {
+                    hardbark: 250,
+                    sharkonium: 25,
+                    crystal: 5,
+                },
+                upgrade: ["gatemasterScavenging"],
+            },
+            outcomes: [
+                "//*to be written in future*//",
+            ],
+            multiOutcomes: [
+                "//*to be written in future*//",
+            ],
+            helpText: "Collect the scattered pieces of... whatever this is...",
+        }, //end of unique code
 
         // PLACES /////////////////////
         getSeagrassFarm: {
@@ -4987,13 +5071,7 @@ SharkGame.HomeActions = {
             },
             cost: [
                 { resource: "seagrass", costFunction: "constant", priceIncrease: 1 },
-                {
-                    resource: "sand",
-                    costFunction: "linear",
-                    get priceIncrease() {
-                        return SharkGame.Upgrades.purchased.includes("landReform") ? 50 : 250;
-                    },
-                },
+                { resource: "sand", costFunction: "linear", priceIncrease: 50 },
             ],
             max: "seagrassFarm",
             prereq: {

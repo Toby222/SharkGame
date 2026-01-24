@@ -4640,7 +4640,6 @@ SharkGame.Upgrades = {
             required: {
                 upgrades: ["driftwoodAnalysis"],
             },
-            events: ["shoreAddMudskipper"],
         },
         crystalBite: { required: { upgrades: ["justPushFurtherLol"] } },
         crystalSpade: { required: { upgrades: ["justPushFurtherLol"] } },
@@ -4668,8 +4667,34 @@ SharkGame.Upgrades = {
         thermalVents: {},
         laserRays: {},
         agriculture: {}, //prev name: stabilization
-        hardbarkCoating: {},
-        puppetAssembly: {},
+        hardbarkCoating: {
+            name: "Hardbark Coating",
+            desc: "Apparently, our sharkonium may have been mentioned in mudskipper tale.",
+            researchedMessage: "Hardbark can now be made... it has a use, but the 'models' aren't 'ready'.",
+            effectDesc: "Hardbark coating is now possible. Their use... not yet.",
+            cost: {
+                science: 1500,
+                hardbark: 25,
+            },
+            required: {
+                upgrades: ["driftwoodAnalysis"],
+                seen: ["driftwood", "crystal"]
+            },
+        },
+        puppetAssembly: {
+            name: "Puppet Assembly",
+            desc: "The mudskippers say they've refined their models.",
+            researchedMessage: "Mudskipper puppets can be piloted! They insist on calling them 'puppets', though...",
+            effectDesc: "Mudskipper puppets can be constructed and piloted.",
+            cost: {
+                science: 1500,
+                hardbark: 25,
+            },
+            required: {
+                upgrades: ["driftwoodAnalysis", "hardbarkCoating"],
+                seen: ["laser"]
+            },
+        },
         fixModels: {},
         puppetTeaching: {},
         exploration: {}, //prev name: tunnelExpedition

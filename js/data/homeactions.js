@@ -4729,7 +4729,7 @@ SharkGame.HomeActions = {
                     coral: 4,
                     seagrass: 2,
                 },
-                upgrade: ["stabilization"],
+                upgrade: ["agriculture"],
             },
             outcomes: [
                 "/*to be written in future*/",
@@ -4997,7 +4997,7 @@ SharkGame.HomeActions = {
             ],
             max: "seagrassFarm",
             prereq: {
-                upgrade: ["Agriculture"],
+                upgrade: ["agriculture"],
             },
             outcomes: [
                 "Seagrass farm constructed, seagrass barn raised.",

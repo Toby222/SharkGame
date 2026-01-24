@@ -4666,7 +4666,20 @@ SharkGame.Upgrades = {
         underwaterChemistry: {},
         thermalVents: {},
         laserRays: {},
-        agriculture: {}, //prev name: stabilization
+        agriculture: {
+            name: "Agriculture",
+            desc: "Apparently, we're not supposed to be stealing sponge off the seabed. Stealing from who, exactly???",
+            researchedMessage:
+                "To the shrimps' credit, it's a lot easier to do this when we make more of them ourselves. Clumping them up and letting them grow is an efficient solution.",
+            effectDesc: "Sponge farms are now available.",
+            cost: {
+                sand: 5000,
+            },
+            required: {
+                upgrades: ["seabedGeology"],
+                seen: ["sand", "roughSand"],
+            },
+        }, //prev name: stabilization
         hardbarkCoating: {
             name: "Hardbark Coating",
             desc: "Apparently, our sharkonium may have been mentioned in mudskipper tale.",

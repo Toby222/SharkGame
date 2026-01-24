@@ -4681,6 +4681,11 @@ SharkGame.Upgrades = {
         seagrassAttention: {},
         taleHeeding: {},
         intelTowers: {},
+        firstLog: {},
+        secondLog: {},
+        thirdLog: {},
+        gatemasterScavenging: {},
+        fullStability: {},
         },
     },
 };

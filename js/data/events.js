@@ -542,4 +542,30 @@ SharkGame.Events = {
             res.buildIncomeNetwork();
         },
     },
+    shoreGiveCoral: {
+        handlingTime: "beforeTick",
+        priority: 0,
+        getAction() {
+            return "remove";
+        },
+        trigger() {
+            if (!SharkGame.flags.gaveCoral) {
+                SharkGame.flags.gaveCoral = true;
+                res.changeResource("coral", 50);
+            }
+        },
+    },
+    shoreGiveSeagrass: {
+                handlingTime: "beforeTick",
+        priority: 0,
+        getAction() {
+            return "remove";
+        },
+        trigger() {
+            if (!SharkGame.flags.gaveSeagrass) {
+                SharkGame.flags.gaveSeagrass = true;
+                res.changeResource("seagrass", 50);
+            }
+        },
+    },
 };

@@ -4672,8 +4672,8 @@ SharkGame.Upgrades = {
         puppetAssembly: {},
         fixModels: {},
         puppetTeaching: {},
-        exploration: {},
-        farExploration: {},
+        exploration: {}, //prev name: tunnelExpedition
+        farExploration: {}, //prev name: thingyRepairing
         raiderTruce: {},
         crystalTalons: {},
         beyondwalkerPairing: {},

@@ -1829,6 +1829,10 @@ SharkGame.InternalCategories = {
         name: "Caracaras",
         resources: ["caracara", "retrievalDuo", "connoisseur"],
     },
+    starfishes: {
+        name: "Starfish",
+        resources: ["starfish"],
+    },
     sharkmachines: {
         name: "Shark Machines",
         resources: ["sharkonium", "fishMachine", "sandDigger", "crystalMiner", "skimmer", "autoTransmuter"],

@@ -2612,6 +2612,558 @@ SharkGame.HomeActions = {
         },
     },
 
+    
+//---------------------------------------------------
+    shore: {
+        
+    // FREEBIES /////////////////////
+        catchFish: {},
+        debugButton: {},
+
+    // PROCESSING ////////////////////////////////////
+        seagrasstoScience: {},
+
+    // MAKE ADVANCED RESOURCES ///////////////////////
+        transmuteSharkonium: {},
+        coatHardbark: {
+            name: "Coat driftwood to make hardbark",
+            effect: {
+                resource: {
+                    hardbark: 1,
+                },
+            },
+            cost: [
+                { resource: "crystal", costFunction: "constant", priceIncrease: 5},
+                { resource: "driftwood", costFunction: "constant", priceIncrease: 1},
+            ],
+            max: "hardbark",
+            prereq: {
+                upgrade: ["hardbarkCoating"],
+            },
+            outcomes: [
+                "Hardbark made. Yippee.",
+                "It’s just wood. In crystal.",
+                "A simple design, much like their inventors.",
+                "Yes, I suppose the crystal is really hard to coat with…",
+                "It’s… honestly a little impressive. For a fish, of course.",
+                "Gah. I’ve made so many typos trying to spell hardbark.",
+            ],
+            helpText: "Coat sturdy driftwood pieces with crystal to make hardbark.",
+        },
+
+    // BUY ANIMALS /////////////////////////////////
+        getShark: {}, //end of creature code
+        getManta: {}, //end of creature code
+        getCrab: {}, //end of creature code
+        getMudskipper: {
+            name: "Liberate mudskipper",
+            effect: {
+                resource: {
+                    mudskipper: 1,
+                },
+            },
+            cost: [
+                { resource: "fish", costFunction: "linear", priceIncrease: 1 },
+                  ],
+            max: "mudskipper",
+            prereq: {
+                upgrade: ["mudskipperContact"],
+            },
+            outcomes: [
+                "An atlantic mudskipper joins you.",
+                "A barred mudskipper joins you.",
+                "A common mudskipper joins you.",
+                "A Pearse’s mudskipper joins you.",
+                "A great blue spotted mudskipper joins you.",
+            ],
+            multiOutcomes: [
+                "Yessss! More woooodddd!!",
+                "These will certainly be useful...",
+                "Heh. Look at how scared they are.",
+                "Do you think we’re being too hard on them?",
+                "We’re doing them a favour.",
+                "What, they think we’re gonna eat them?",
+            ],
+            helpText: "Liberate a mudskipper from its boring old life and command it to retrieve driftwood for you.",
+        }, //end of creature code
+        getCaracara: {
+            name: "Convince caracara",
+            effect: {
+                resource: {
+                    caracara: 1,
+                },
+            },
+            cost: [
+                { resource: "driftwood", costFunction: "linear", priceIncrease: 5 },
+                  ],
+            max: "caracara",
+            prereq: {
+                upgrade: ["raiderTruce"],
+            },
+            outcomes: [
+                "A striated caracara joins you.",
+                "A caracara awaits your command. Haughtily.",
+                "The caracara flies off with a task.",
+                "It gives you a strange look before it leaves.",
+                "The caracara accidentally sheds a feather as it lifts off.",
+            ],
+            multiOutcomes: [
+                "They await you in flocks.",
+                "They blot out the sun.",
+                "They cast a shadow upon all as they fly.",
+                "Their presence commands respect from all but us.",
+                "You know what, they're kinda like sharks when you think about it."
+            ],
+            helpText: "Convince a caracara from the surface to retrieve crystals.",
+        }, //end of creature code
+
+        // CRAB JOBS /////////////////////////////////
+        getStabilizer: {
+            name: "Provide crab stabilizer",
+            effect: {
+                resource: {
+                    stabilizer: 1,
+                },
+            },
+            cost: [
+                { resource: "crab", costFunction: "linear", priceIncrease: 1 },
+                { resource: "seagrass", costFunction: "linear", priceIncrease: 2 },
+                { resource: "coral", costFunction: "linear", priceIncrease: 4 },
+            ],
+            max: "stabilizer",
+            prereq: {
+                resource: {
+                    crab: 1,
+                    coral: 4,
+                    seagrass: 2,
+                },
+                upgrade: ["agriculture"],
+            },
+            outcomes: [
+                "/*to be written in future*/",
+            ],
+            multiOutcomes: [
+                "/*to be written in future*/",
+            ],
+            helpText: "Provide a crab with coral and seagrass to plant.",
+        },
+
+        // MUDSKIPPER JOBS ///////////////////////////
+        getBurrow: {
+            name: "Dig mudskipper burrow",
+            effect: {
+                resource: {
+                    burrow: 1,
+                },
+            },
+            cost: [
+                { resource: "mudskipper", costFunction: "constant", priceIncrease: 3 },
+                { resource: "fish", costFunction: "linear", priceIncrease: 15 },
+                { resource: "sand", costFunction: "linear", priceIncrease: 12 },
+            ],
+            max: "burrow",
+            prereq: {
+                resource: {
+                    mudskipper: 1,
+                },
+                upgrade: ["mudskipperBurrowing"],
+            },
+            outcomes: [
+                "//*to be written in future*//",
+              
+            ],
+            multiOutcomes: [
+                "//*to be written in future*//",
+            ],
+            helpText: "Allow a mudskipper to dig a burrow to do some weird flailing or something.",
+        }, //end of job code
+        getMentor: {
+            name: "Train mudskipper mentor",
+            effect: {
+                resource: {
+                    mentor: 1,
+                },
+            },
+            cost: [
+                { resource: "mudskipper", costFunction: "constant", priceIncrease: 1 },
+                { resource: "science", costFunction: "linear", priceIncrease: 15 },
+                { resource: "hardbark", costFunction: "linear", priceIncrease: 4 },
+            ],
+            max: "mentor",
+            prereq: {
+                resource: {
+                    mudskipper: 1,
+                },
+                upgrade: ["puppetTeaching"],
+            },
+            outcomes: [
+                "//*to be written in future*//",
+              
+            ],
+            multiOutcomes: [
+                "//*to be written in future*//",
+            ],
+            helpText: "Teach a mudskipper techniques on puppet work, so that it may pass on its knowledge.",
+        }, //end of job code
+            
+        // CARACARA JOBS ///////////////////////////
+        getRetrievalDuo: {
+            name: "Pair retrieval duo",
+            effect: {
+                resource: {
+                    retrievalDuo: 1,
+                },
+            },
+            cost: [
+                { resource: "mudskipper", costFunction: "constant", priceIncrease: 1 },
+                { resource: "caracara", costFunction: "linear", priceIncrease: 1 },
+                { resource: "crystal", costFunction: "linear", priceIncrease: 5 },
+            ],
+            max: "retrievalDuo",
+            prereq: {
+                resource: {
+                    caracara: 1,
+                    mudskipper: 1
+                },
+                upgrade: ["beyondwalkerPairing"],
+            },
+            outcomes: [
+                "//*to be written in future*//",
+              
+            ],
+            multiOutcomes: [
+                "//*to be written in future*//",
+            ],
+            helpText: "Leave an armoured mudskipper on a platform for a caracara to take and search for driftwood.",
+        }, //end of job code
+        getConnoisseur: {
+            name: "Employ connoisseur",
+            effect: {
+                resource: {
+                    connoisseur: 1,
+                },
+            },
+            cost: [
+                { resource: "caracara", costFunction: "constant", priceIncrease: 1 },
+                { resource: "seagrass", costFunction: "linear", priceIncrease: 5 },
+            ],
+            max: "connoisseur",
+            prereq: {
+                resource: {
+                    caracara: 1,
+                    seagrass: 5,
+                },
+                upgrade: ["seagrassAttention"],
+            },
+            outcomes: [
+                "//*to be written in future*//",
+              
+            ],
+            multiOutcomes: [
+                "//*to be written in future*//",
+            ],
+            helpText: "Get a caracara interested in seagrass to walk along shores laden with it.",
+        }, //end of job code
+
+        // MUDSKIPPER PUPPETS //////////////////////
+        getCoralCollector: {
+            name: "Assemble coral collector",
+            effect: {
+                resource: {
+                    coralCollector: 1,
+                },
+            },
+            cost: [
+                { resource: "hardbark", costFunction: "linear", priceIncrease: 50 },
+                { resource: "seagrass", costFunction: "linear", priceIncrease: 10 },
+                { resource: "crab", costFunction: "linear", priceIncrease: 1 },
+            ],
+            max: "coralCollector",
+            prereq: {
+                resource: {
+                    hardbark: 50,
+                },
+                upgrade: ["puppetAssembly"],
+            },
+            outcomes: [
+                "//*to be written in future*//",
+            ],
+            multiOutcomes: [
+                "//*to be written in future*//",
+            ],
+            helpText: "Put together a crablike puppet to harvest coral with serrated claws.",
+        }, //end of machine code
+        getShoreQueller: {
+            name: "Assemble shore queller",
+            effect: {
+                resource: {
+                    shoreQueller: 1,
+                },
+            },
+            cost: [
+                { resource: "hardbark", costFunction: "linear", priceIncrease: 75 },
+                { resource: "crystal", costFunction: "linear", priceIncrease: 50 },
+                { resource: "seagrass", costFunction: "linear", priceIncrease: 15 },
+                { resource: "shark", costFunction: "linear", priceIncrease: 1 },
+            ],
+            max: "shoreQueller",
+            prereq: {
+                resource: {
+                    hardbark: 75,
+                },
+                upgrade: ["puppetAssembly"],
+                upgrade: ["laserRays"],
+            },
+            outcomes: [
+                "//*to be written in future*//",
+            ],
+            multiOutcomes: [
+                "//*to be written in future*//",
+            ],
+            helpText: "Put together a wormlike puppet to plant seagrass and laser up rough sand.",
+        }, // end of machine code
+        getDriftwoodSnarer: {
+            name: "Assemble driftwood snarer",
+            effect: {
+                resource: {
+                    driftwoodSnarer: 1,
+                },
+            },
+            cost: [
+                { resource: "hardbark", costFunction: "linear", priceIncrease: 25 },
+                { resource: "seagrass", costFunction: "linear", priceIncrease: 25 },
+                { resource: "ray", costFunction: "linear", priceIncrease: 1 },
+            ],
+            max: "driftwoodSnarer",
+            prereq: {
+                resource: {
+                    hardbark: 25,
+                    seagrass: 15,
+                },
+                upgrade: ["puppetAssembly"],
+            },
+            outcomes: [
+                "//*to be written in future*//",
+            ],
+            multiOutcomes: [
+                "//*to be written in future*//",
+            ],
+            helpText: "Put together a raylike puppet to catch driftwood in a seagrass net.",
+        }, //end of machine code
+        getHardbarkSmith: {
+            name: "Assemble hardbark smith",
+            effect: {
+                resource: {
+                    hardbarkSmith: 1,
+                },
+            },
+            cost: [
+                { resource: "hardbark", costFunction: "linear", priceIncrease: 50 },
+                { resource: "sharkonium", costFunction: "linear", priceIncrease: 25 },
+                { resource: "seagrass", costFunction: "linear", priceIncrease: 15 },
+                { resource: "mudskipper", costFunction: "linear", priceIncrease: 1 },
+            ],
+            max: "hardbarkSmith",
+            prereq: {
+                resource: {
+                    hardbark: 50,
+                    sharkonium: 25,
+                },
+                upgrade: ["puppetAssembly"],
+            },
+            outcomes: [
+                "//*to be written in future*//",
+            ],
+            multiOutcomes: [
+                "//*to be written in future*//",
+            ],
+            helpText: "Put together a clawed, orblike puppet to coat hardbark in a dish.",
+        }, //end of machine code
+
+        // UNIQUE //////////////////////
+        getSafeholdSentinel: {
+            name: "Repair Safehold Sentinel",
+            effect: {
+                resource: {
+                    safeholdSentinel: 1,
+                },
+            },
+            cost: [
+                { resource: "hardbark", costFunction: "unique", priceIncrease: 250 },
+                { resource: "sharkonium", costFunction: "unique", priceIncrease: 25 },
+                { resource: "crystal", costFunction: "unique", priceIncrease: 5 },
+            ],
+            max: "safeholdSentinel",
+            prereq: {
+                resource: {
+                    hardbark: 250,
+                    sharkonium: 25,
+                    crystal: 5,
+                },
+                upgrade: ["farExploration"],
+            },
+            outcomes: [
+                "//*to be written in future*//",
+            ],
+            multiOutcomes: [
+                "//*to be written in future*//",
+            ],
+            helpText: "Repair the multi-armed thing above the big latch.",
+        }, //end of unique code
+        getBarrageBraver: {
+            ame: "Reconstruct Barrage Braver",
+            effect: {
+                resource: {
+                    barrageBraver: 1,
+                },
+            },
+            cost: [
+                { resource: "hardbark", costFunction: "unique", priceIncrease: 125 },
+                { resource: "sharkonium", costFunction: "unique", priceIncrease: 125 },
+                { resource: "crystal", costFunction: "unique", priceIncrease: 15 },
+            ],
+            max: "barrageBraver",
+            prereq: {
+                resource: {
+                    hardbark: 125,
+                    sharkonium: 125,
+                    crystal: 15,
+                },
+                upgrade: ["taleHeeding"],
+            },
+            outcomes: [
+                "//*to be written in future*//",
+            ],
+            multiOutcomes: [
+                "//*to be written in future*//",
+            ],
+            helpText: "Reconstruct the Barrage Braver of beyondwalker legend.",
+        }, //end of unique code
+        getGatemasterPuppet: {
+            ame: "Scavenge Gatemaster",
+            effect: {
+                resource: {
+                    gatemasterPuppet: 1,
+                },
+            },
+            cost: [
+                { resource: "hardbark", costFunction: "unique", priceIncrease: 250 },
+                { resource: "sharkonium", costFunction: "unique", priceIncrease: 25 },
+                { resource: "crystal", costFunction: "unique", priceIncrease: 5 },
+            ],
+            max: "gatemasterPuppet",
+            prereq: {
+                resource: {
+                    hardbark: 250,
+                    sharkonium: 25,
+                    crystal: 5,
+                },
+                upgrade: ["gatemasterScavenging"],
+            },
+            outcomes: [
+                "//*to be written in future*//",
+            ],
+            multiOutcomes: [
+                "//*to be written in future*//",
+            ],
+            helpText: "Collect the scattered pieces of... whatever this is...",
+        }, //end of unique code
+
+        // PLACES /////////////////////
+        getSeagrassFarm: {
+            name: "Construct seagrass farm",
+            effect: {
+                resource: {
+                    seagrassFarm: 1,
+                },
+            },
+            cost: [
+                { resource: "seagrass", costFunction: "constant", priceIncrease: 1 },
+                { resource: "sand", costFunction: "linear", priceIncrease: 50 },
+            ],
+            max: "seagrassFarm",
+            prereq: {
+                upgrade: ["agriculture"],
+            },
+            outcomes: [
+                "Seagrass farm constructed, seagrass barn raised.",
+                "Now growing seagrass in this general location.",
+                "Sand tilled. Seagrass planted.",
+                "'Right here, this will be a farm!' And so it was.",
+                "Stabilizing the seabed one farm at a time!",
+            ],
+            multiOutcomes: [
+                "Do we really need to till the sand to grow seagrass?",
+                "Grow, seagrass! Grow!",
+                "The connoisseurs are pleased.",
+                "Is anybody staffing these?",
+                "Farms are a-go.",
+                "Designated growing spots.",
+                "Imagine how much science must be in this place.
+            ],
+            helpText: "Pick a spot and set up a seagrass farm there.",
+        }, //end of place code
+        getExchangeStation: {
+            name: "Set up exchange station",
+            effect: {
+                resource: {
+                    exchangeStation: 1,
+                },
+            },
+            cost: [
+                { resource: "driftwood", costFunction: "linear", priceIncrease: 50 },
+                { resource: "sharkonium", costFunction: "linear", priceIncrease: 25 },
+                { resource: "coral", costFunction: "linear", priceIncrease: 15 },
+            ],
+            max: "exchangeStation",
+            prereq: {
+                resource: {
+                    driftwood: 50,
+                    sharkonium: 25,
+                    coral: 15,
+                },
+                upgrade: ["platformExpansion"],
+            },
+            outcomes: [
+                "//*to be written in future*//",
+            ],
+            multiOutcomes: [
+                "//*to be written in future*//",
+            ],
+            helpText: "Build an abovewater-extending station for the frenzy to use.",
+        }, //end of place code
+        getReceiverNode: {
+            name: "Construct receiver node",
+            effect: {
+                resource: {
+                    receiverNode: 1,
+                },
+            },
+            cost: [
+                { resource: "hardbark", costFunction: "linear", priceIncrease: 50 },
+                { resource: "sharkonium", costFunction: "linear", priceIncrease: 25 },
+                { resource: "crystal", costFunction: "linear", priceIncrease: 5 },
+            ],
+            max: "receiverNode",
+            prereq: {
+                resource: {
+                    hardbark: 50,
+                    sharkonium: 25,
+                    crystal: 5,
+                },
+                upgrade: ["intelTowers"],
+            },
+            outcomes: [
+                "//*to be written in future*//",
+            ],
+            multiOutcomes: [
+                "//*to be written in future*//",
+            ],
+            helpText: "Build a tall spire for extra collection of intel.",
+        }, //end of place code
+   },
+
+
 //---------------------------------------------------
     shrouded: {
         catchFish: {},
@@ -4604,560 +5156,6 @@ SharkGame.HomeActions = {
             },
         },
     },
-
-//---------------------------------------------------
-    shore: {
-        
-    // FREEBIES /////////////////////
-        catchFish: {},
-        debugButton: {},
-
-    // PROCESSING ////////////////////////////////////
-        seagrasstoScience: {},
-
-    // MAKE ADVANCED RESOURCES ///////////////////////
-        transmuteSharkonium: {},
-        coatHardbark: {
-            name: "Coat driftwood to make hardbark",
-            effect: {
-                resource: {
-                    hardbark: 1,
-                },
-            },
-            cost: [
-                { resource: "crystal", costFunction: "constant", priceIncrease: 5},
-                { resource: "driftwood", costFunction: "constant", priceIncrease: 1},
-            ],
-            max: "hardbark",
-            prereq: {
-                upgrade: ["hardbarkCoating"],
-            },
-            outcomes: [
-                "Hardbark made. Yippee.",
-                "It’s just wood. In crystal.",
-                "A simple design, much like their inventors.",
-                "Yes, I suppose the crystal is really hard to coat with…",
-                "It’s… honestly a little impressive. For a fish, of course.",
-                "Gah. I’ve made so many typos trying to spell hardbark.",
-            ],
-            helpText: "Coat sturdy driftwood pieces with crystal to make hardbark.",
-        },
-
-    // BUY ANIMALS /////////////////////////////////
-        getShark: {}, //end of creature code
-        getManta: {}, //end of creature code
-        getCrab: {}, //end of creature code
-        getMudskipper: {
-            name: "Liberate mudskipper",
-            effect: {
-                resource: {
-                    mudskipper: 1,
-                },
-            },
-            cost: [
-                { resource: "fish", costFunction: "linear", priceIncrease: 1 },
-                  ],
-            max: "mudskipper",
-            prereq: {
-                upgrade: ["mudskipperContact"],
-            },
-            outcomes: [
-                "An atlantic mudskipper joins you.",
-                "A barred mudskipper joins you.",
-                "A common mudskipper joins you.",
-                "A Pearse’s mudskipper joins you.",
-                "A great blue spotted mudskipper joins you.",
-            ],
-            multiOutcomes: [
-                "Yessss! More woooodddd!!",
-                "These will certainly be useful...",
-                "Heh. Look at how scared they are.",
-                "Do you think we’re being too hard on them?",
-                "We’re doing them a favour.",
-                "What, they think we’re gonna eat them?",
-            ],
-            helpText: "Liberate a mudskipper from its boring old life and command it to retrieve driftwood for you.",
-        }, //end of creature code
-        getCaracara: {
-            name: "Convince caracara",
-            effect: {
-                resource: {
-                    caracara: 1,
-                },
-            },
-            cost: [
-                { resource: "driftwood", costFunction: "linear", priceIncrease: 5 },
-                  ],
-            max: "caracara",
-            prereq: {
-                upgrade: ["raiderTruce"],
-            },
-            outcomes: [
-                "A striated caracara joins you.",
-                "A caracara awaits your command. Haughtily.",
-                "The caracara flies off with a task.",
-                "It gives you a strange look before it leaves.",
-                "The caracara accidentally sheds a feather as it lifts off.",
-            ],
-            multiOutcomes: [
-                "They await you in flocks.",
-                "They blot out the sun.",
-                "They cast a shadow upon all as they fly.",
-                "Their presence commands respect from all but us.",
-                "You know what, they're kinda like sharks when you think about it."
-            ],
-            helpText: "Convince a caracara from the surface to retrieve crystals.",
-        }, //end of creature code
-
-        // CRAB JOBS /////////////////////////////////
-        getStabilizer: {
-            name: "Provide crab stabilizer",
-            effect: {
-                resource: {
-                    stabilizer: 1,
-                },
-            },
-            cost: [
-                { resource: "crab", costFunction: "linear", priceIncrease: 1 },
-                { resource: "seagrass", costFunction: "linear", priceIncrease: 2 },
-                { resource: "coral", costFunction: "linear", priceIncrease: 4 },
-            ],
-            max: "stabilizer",
-            prereq: {
-                resource: {
-                    crab: 1,
-                    coral: 4,
-                    seagrass: 2,
-                },
-                upgrade: ["agriculture"],
-            },
-            outcomes: [
-                "/*to be written in future*/",
-            ],
-            multiOutcomes: [
-                "/*to be written in future*/",
-            ],
-            helpText: "Provide a crab with coral and seagrass to plant.",
-        },
-
-        // MUDSKIPPER JOBS ///////////////////////////
-        getBurrow: {
-            name: "Dig mudskipper burrow",
-            effect: {
-                resource: {
-                    burrow: 1,
-                },
-            },
-            cost: [
-                { resource: "mudskipper", costFunction: "constant", priceIncrease: 3 },
-                { resource: "fish", costFunction: "linear", priceIncrease: 15 },
-                { resource: "sand", costFunction: "linear", priceIncrease: 12 },
-            ],
-            max: "burrow",
-            prereq: {
-                resource: {
-                    mudskipper: 1,
-                },
-                upgrade: ["mudskipperBurrowing"],
-            },
-            outcomes: [
-                "//*to be written in future*//",
-              
-            ],
-            multiOutcomes: [
-                "//*to be written in future*//",
-            ],
-            helpText: "Allow a mudskipper to dig a burrow to do some weird flailing or something.",
-        }, //end of job code
-        getMentor: {
-            name: "Train mudskipper mentor",
-            effect: {
-                resource: {
-                    mentor: 1,
-                },
-            },
-            cost: [
-                { resource: "mudskipper", costFunction: "constant", priceIncrease: 1 },
-                { resource: "science", costFunction: "linear", priceIncrease: 15 },
-                { resource: "hardbark", costFunction: "linear", priceIncrease: 4 },
-            ],
-            max: "mentor",
-            prereq: {
-                resource: {
-                    mudskipper: 1,
-                },
-                upgrade: ["puppetTeaching"],
-            },
-            outcomes: [
-                "//*to be written in future*//",
-              
-            ],
-            multiOutcomes: [
-                "//*to be written in future*//",
-            ],
-            helpText: "Teach a mudskipper techniques on puppet work, so that it may pass on its knowledge.",
-        }, //end of job code
-            
-        // CARACARA JOBS ///////////////////////////
-        getRetrievalDuo: {
-            name: "Pair retrieval duo",
-            effect: {
-                resource: {
-                    retrievalDuo: 1,
-                },
-            },
-            cost: [
-                { resource: "mudskipper", costFunction: "constant", priceIncrease: 1 },
-                { resource: "caracara", costFunction: "linear", priceIncrease: 1 },
-                { resource: "crystal", costFunction: "linear", priceIncrease: 5 },
-            ],
-            max: "retrievalDuo",
-            prereq: {
-                resource: {
-                    caracara: 1,
-                    mudskipper: 1
-                },
-                upgrade: ["beyondwalkerPairing"],
-            },
-            outcomes: [
-                "//*to be written in future*//",
-              
-            ],
-            multiOutcomes: [
-                "//*to be written in future*//",
-            ],
-            helpText: "Leave an armoured mudskipper on a platform for a caracara to take and search for driftwood.",
-        }, //end of job code
-        getConnoisseur: {
-            name: "Employ connoisseur",
-            effect: {
-                resource: {
-                    connoisseur: 1,
-                },
-            },
-            cost: [
-                { resource: "caracara", costFunction: "constant", priceIncrease: 1 },
-                { resource: "seagrass", costFunction: "linear", priceIncrease: 5 },
-            ],
-            max: "connoisseur",
-            prereq: {
-                resource: {
-                    caracara: 1,
-                    seagrass: 5,
-                },
-                upgrade: ["seagrassAttention"],
-            },
-            outcomes: [
-                "//*to be written in future*//",
-              
-            ],
-            multiOutcomes: [
-                "//*to be written in future*//",
-            ],
-            helpText: "Get a caracara interested in seagrass to walk along shores laden with it.",
-        }, //end of job code
-
-        // MUDSKIPPER PUPPETS //////////////////////
-        getCoralCollector: {
-            name: "Assemble coral collector",
-            effect: {
-                resource: {
-                    coralCollector: 1,
-                },
-            },
-            cost: [
-                { resource: "hardbark", costFunction: "linear", priceIncrease: 50 },
-                { resource: "seagrass", costFunction: "linear", priceIncrease: 10 },
-                { resource: "crab", costFunction: "linear", priceIncrease: 1 },
-            ],
-            max: "coralCollector",
-            prereq: {
-                resource: {
-                    hardbark: 50,
-                },
-                upgrade: ["puppetAssembly"],
-            },
-            outcomes: [
-                "//*to be written in future*//",
-            ],
-            multiOutcomes: [
-                "//*to be written in future*//",
-            ],
-            helpText: "Put together a crablike puppet to harvest coral with serrated claws.",
-        }, //end of machine code
-        getShoreQueller: {
-            name: "Assemble shore queller",
-            effect: {
-                resource: {
-                    shoreQueller: 1,
-                },
-            },
-            cost: [
-                { resource: "hardbark", costFunction: "linear", priceIncrease: 75 },
-                { resource: "crystal", costFunction: "linear", priceIncrease: 50 },
-                { resource: "seagrass", costFunction: "linear", priceIncrease: 15 },
-                { resource: "shark", costFunction: "linear", priceIncrease: 1 },
-            ],
-            max: "shoreQueller",
-            prereq: {
-                resource: {
-                    hardbark: 75,
-                },
-                upgrade: ["puppetAssembly"],
-                upgrade: ["laserRays"],
-            },
-            outcomes: [
-                "//*to be written in future*//",
-            ],
-            multiOutcomes: [
-                "//*to be written in future*//",
-            ],
-            helpText: "Put together a wormlike puppet to plant seagrass and laser up rough sand.",
-        }, // end of machine code
-        getDriftwoodSnarer: {
-            name: "Assemble driftwood snarer",
-            effect: {
-                resource: {
-                    driftwoodSnarer: 1,
-                },
-            },
-            cost: [
-                { resource: "hardbark", costFunction: "linear", priceIncrease: 25 },
-                { resource: "seagrass", costFunction: "linear", priceIncrease: 25 },
-                { resource: "ray", costFunction: "linear", priceIncrease: 1 },
-            ],
-            max: "driftwoodSnarer",
-            prereq: {
-                resource: {
-                    hardbark: 25,
-                    seagrass: 15,
-                },
-                upgrade: ["puppetAssembly"],
-            },
-            outcomes: [
-                "//*to be written in future*//",
-            ],
-            multiOutcomes: [
-                "//*to be written in future*//",
-            ],
-            helpText: "Put together a raylike puppet to catch driftwood in a seagrass net.",
-        }, //end of machine code
-        getHardbarkSmith: {
-            name: "Assemble hardbark smith",
-            effect: {
-                resource: {
-                    hardbarkSmith: 1,
-                },
-            },
-            cost: [
-                { resource: "hardbark", costFunction: "linear", priceIncrease: 50 },
-                { resource: "sharkonium", costFunction: "linear", priceIncrease: 25 },
-                { resource: "seagrass", costFunction: "linear", priceIncrease: 15 },
-                { resource: "mudskipper", costFunction: "linear", priceIncrease: 1 },
-            ],
-            max: "hardbarkSmith",
-            prereq: {
-                resource: {
-                    hardbark: 50,
-                    sharkonium: 25,
-                },
-                upgrade: ["puppetAssembly"],
-            },
-            outcomes: [
-                "//*to be written in future*//",
-            ],
-            multiOutcomes: [
-                "//*to be written in future*//",
-            ],
-            helpText: "Put together a clawed, orblike puppet to coat hardbark in a dish.",
-        }, //end of machine code
-
-        // UNIQUE //////////////////////
-        getSafeholdSentinel: {
-            name: "Repair Safehold Sentinel",
-            effect: {
-                resource: {
-                    safeholdSentinel: 1,
-                },
-            },
-            cost: [
-                { resource: "hardbark", costFunction: "unique", priceIncrease: 250 },
-                { resource: "sharkonium", costFunction: "unique", priceIncrease: 25 },
-                { resource: "crystal", costFunction: "unique", priceIncrease: 5 },
-            ],
-            max: "safeholdSentinel",
-            prereq: {
-                resource: {
-                    hardbark: 250,
-                    sharkonium: 25,
-                    crystal: 5,
-                },
-                upgrade: ["farExploration"],
-            },
-            outcomes: [
-                "//*to be written in future*//",
-            ],
-            multiOutcomes: [
-                "//*to be written in future*//",
-            ],
-            helpText: "Repair the multi-armed thing above the big latch.",
-        }, //end of unique code
-        getBarrageBraver: {
-            ame: "Reconstruct Barrage Braver",
-            effect: {
-                resource: {
-                    barrageBraver: 1,
-                },
-            },
-            cost: [
-                { resource: "hardbark", costFunction: "unique", priceIncrease: 125 },
-                { resource: "sharkonium", costFunction: "unique", priceIncrease: 125 },
-                { resource: "crystal", costFunction: "unique", priceIncrease: 15 },
-            ],
-            max: "barrageBraver",
-            prereq: {
-                resource: {
-                    hardbark: 125,
-                    sharkonium: 125,
-                    crystal: 15,
-                },
-                upgrade: ["taleHeeding"],
-            },
-            outcomes: [
-                "//*to be written in future*//",
-            ],
-            multiOutcomes: [
-                "//*to be written in future*//",
-            ],
-            helpText: "Reconstruct the Barrage Braver of beyondwalker legend.",
-        }, //end of unique code
-        getGatemasterPuppet: {
-            ame: "Scavenge Gatemaster",
-            effect: {
-                resource: {
-                    gatemasterPuppet: 1,
-                },
-            },
-            cost: [
-                { resource: "hardbark", costFunction: "unique", priceIncrease: 250 },
-                { resource: "sharkonium", costFunction: "unique", priceIncrease: 25 },
-                { resource: "crystal", costFunction: "unique", priceIncrease: 5 },
-            ],
-            max: "gatemasterPuppet",
-            prereq: {
-                resource: {
-                    hardbark: 250,
-                    sharkonium: 25,
-                    crystal: 5,
-                },
-                upgrade: ["gatemasterScavenging"],
-            },
-            outcomes: [
-                "//*to be written in future*//",
-            ],
-            multiOutcomes: [
-                "//*to be written in future*//",
-            ],
-            helpText: "Collect the scattered pieces of... whatever this is...",
-        }, //end of unique code
-
-        // PLACES /////////////////////
-        getSeagrassFarm: {
-            name: "Construct seagrass farm",
-            effect: {
-                resource: {
-                    seagrassFarm: 1,
-                },
-            },
-            cost: [
-                { resource: "seagrass", costFunction: "constant", priceIncrease: 1 },
-                { resource: "sand", costFunction: "linear", priceIncrease: 50 },
-            ],
-            max: "seagrassFarm",
-            prereq: {
-                upgrade: ["agriculture"],
-            },
-            outcomes: [
-                "Seagrass farm constructed, seagrass barn raised.",
-                "Now growing seagrass in this general location.",
-                "Sand tilled. Seagrass planted.",
-                "'Right here, this will be a farm!' And so it was.",
-                "Stabilizing the seabed one farm at a time!",
-            ],
-            multiOutcomes: [
-                "Do we really need to till the sand to grow seagrass?",
-                "Grow, seagrass! Grow!",
-                "The connoisseurs are pleased.",
-                "Is anybody staffing these?",
-                "Farms are a-go.",
-                "Designated growing spots.",
-                "Imagine how much science must be in this place.
-            ],
-            helpText: "Pick a spot and set up a seagrass farm there.",
-        }, //end of place code
-        getExchangeStation: {
-            name: "Set up exchange station",
-            effect: {
-                resource: {
-                    exchangeStation: 1,
-                },
-            },
-            cost: [
-                { resource: "driftwood", costFunction: "linear", priceIncrease: 50 },
-                { resource: "sharkonium", costFunction: "linear", priceIncrease: 25 },
-                { resource: "coral", costFunction: "linear", priceIncrease: 15 },
-            ],
-            max: "exchangeStation",
-            prereq: {
-                resource: {
-                    driftwood: 50,
-                    sharkonium: 25,
-                    coral: 15,
-                },
-                upgrade: ["platformExpansion"],
-            },
-            outcomes: [
-                "//*to be written in future*//",
-            ],
-            multiOutcomes: [
-                "//*to be written in future*//",
-            ],
-            helpText: "Build an abovewater-extending station for the frenzy to use.",
-        }, //end of place code
-        getReceiverNode: {
-            name: "Construct receiver node",
-            effect: {
-                resource: {
-                    receiverNode: 1,
-                },
-            },
-            cost: [
-                { resource: "hardbark", costFunction: "linear", priceIncrease: 50 },
-                { resource: "sharkonium", costFunction: "linear", priceIncrease: 25 },
-                { resource: "crystal", costFunction: "linear", priceIncrease: 5 },
-            ],
-            max: "receiverNode",
-            prereq: {
-                resource: {
-                    hardbark: 50,
-                    sharkonium: 25,
-                    crystal: 5,
-                },
-                upgrade: ["intelTowers"],
-            },
-            outcomes: [
-                "//*to be written in future*//",
-            ],
-            multiOutcomes: [
-                "//*to be written in future*//",
-            ],
-            helpText: "Build a tall spire for extra collection of intel.",
-        }, //end of place code
-   },
-
-
-
-    
 };
 
 SharkGame.HomeActionCategories = {

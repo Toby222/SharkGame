@@ -3103,6 +3103,37 @@ SharkGame.HomeActions = {
             ],
             helpText: "Pick a spot and set up a seagrass farm there.",
         }, //end of place code
+        getShoreCoralFarm: {
+            name: "Construct coral farm",
+            effect: {
+                resource: {
+                    coralFarm: 1,
+                },
+            },
+            cost: [
+                { resource: "coral", costFunction: "constant", priceIncrease: 1 },
+                { resource: "sand", costFunction: "linear", priceIncrease: 50 },
+            ],
+            max: "coralFarm",
+            prereq: {
+                upgrade: ["agriculture"],
+            },
+            outcomes: [
+                "Coral farm constructed, coral barn raised.",
+                "Now growing coral in this general location.",
+                "Sand tilled. Coral planted.",
+                "'Right here, this will be a farm!' And so it was.",
+            ],
+            multiOutcomes: [
+                "Do we really need to till the sand to grow coral?",
+                "Grow, coral! Grow!",
+                "The stabilizers are pleased.",
+                "Is anybody staffing these?",
+                "Farms are a-go.",
+                "Designated growing spots.",
+            ],
+            helpText: "Pick a spot and set up a coral farm there.",
+        }, //end of place code
         getExchangeStation: {
             name: "Set up exchange station",
             effect: {
@@ -5310,7 +5341,7 @@ SharkGame.HomeActionCategories = {
 
     places: {
         name: "Places",
-        actions: ["getSpongeFarm", "getCoralFarm", "getSeagrassFarm", "getExchangeStation", "getReceiverNode"],
+        actions: ["getSpongeFarm", "getCoralFarm", "getShoreCoralFarm", "getSeagrassFarm", "getExchangeStation", "getReceiverNode"],
     },
 
     unique: {

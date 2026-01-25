@@ -386,7 +386,7 @@ SharkGame.WorldTypes = {
              "sharkmachines",
              "mudskipperpuppets",
              "coralFarm",
-             "seagrassFarm"
+             "seagrassFarm",
              "exchangeStation",
              "receiverNode",
             ],

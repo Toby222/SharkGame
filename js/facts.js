@@ -1,5 +1,5 @@
 SharkGame.FunFacts = {
-    dilutedResources: ["shark", "ray", "crab", "fish"], // dilute these while not in starter to keep the fun facts fresher
+    dilutedResources: ["shark", "ray", "crab", "fish"], //dilute these while not in starter to keep the fun facts fresher
 
     showFact() {
         log.addMessage(this.getFact());

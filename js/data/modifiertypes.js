@@ -382,8 +382,8 @@ SharkGame.ModifierTypes = {
                     // this applies to base income so it should never be reapplied
                     return input;
                 },
-             },
-             addDriftwoodIncome: {
+            },
+            addDriftwoodIncome: {
                 defaultValue: 0,
                 apply(current, degree, resource) {
                     if (!SharkGame.ResourceMap.get(resource).baseIncome) {

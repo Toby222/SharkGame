@@ -790,7 +790,7 @@ SharkGame.CheatsAndDebug = {
                         delete SharkGame.HomeActions.generated[world.worldType].getCollector;
                         delete SharkGame.HomeActions.generated[world.worldType].getExtractionTeam;
                         delete SharkGame.HomeActions.generated[world.worldType].getStormgoer;
-                        delete SharkGame.HomeActions.generated[world.worldType].getStabilizer
+                        delete SharkGame.HomeActions.generated[world.worldType].getStabilizer;
                     }
                     SharkGame.TabHandler.setUpTab();
                     return "Rolled a fourteen. What are you talking about? Crabs aren't real. There were never crabs to begin with.";

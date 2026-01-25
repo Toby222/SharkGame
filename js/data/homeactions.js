@@ -3099,7 +3099,7 @@ SharkGame.HomeActions = {
                 "Is anybody staffing these?",
                 "Farms are a-go.",
                 "Designated growing spots.",
-                "Imagine how much science must be in this place.
+                "Imagine how much science must be in this place.",
             ],
             helpText: "Pick a spot and set up a seagrass farm there.",
         }, //end of place code

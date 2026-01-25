@@ -1,5 +1,5 @@
-//this puns.js is a wip. it runs on the facts.js code so there's most likely going to be bugs. --ThreeEels
-//suggested by base4 (spencers145) in 2021, initiated by ThreeEels in Jan 2026.
+// this puns.js is a wip. it runs on the facts.js code so there's most likely going to be bugs. --ThreeEels
+// suggested by base4 (spencers145) in 2021, initiated by ThreeEels in Jan 2026.
 
 SharkGame.Puns = {
     dilutedResources: ["shark", "ray", "crab", "fish"], // dilute these while not in starter to keep the bad puns fresher
@@ -20,8 +20,8 @@ SharkGame.Puns = {
             this.worldBased[currentWorld] &&
             (!this.worldBased[currentWorld].areRequirementsMet || this.worldBased[currentWorld].areRequirementsMet())
         ) {
-            _.each(this.worldBased[currentWorld].messages, (fact) => {
-                pool.push(sharktext.boldString("Pun: ") + `<i>${fact}</i>`);
+            _.each(this.worldBased[currentWorld].messages, (pun) => {
+                pool.push(sharktext.boldString("Pun: ") + `<i>${pun}</i>`);
             });
         }
 
@@ -32,7 +32,7 @@ SharkGame.Puns = {
             if (world.doesResourceExist(resource) && res.getTotalResource(resource)) {
                 anyAvailableResource = true;
                 if (!this.dilutedResources.includes(resource) || currentWorld === "start" || Math.random() < 0.25) {
-                    _.each(facts, (fact) => {
+                    _.each(puns, (pun) => {
                         pool.push(
                             sharktext.boldString(
                                 `${sharktext.getResourceName(
@@ -57,7 +57,7 @@ SharkGame.Puns = {
             //
             // also acts as a failsafe in case there are no other facts to display
             if (Math.random() < 0.1 || pool.length === 0) {
-                _.each(this.default, (fact) => {
+                _.each(this.default, (pun) => {
                     pool.push(sharktext.boldString("Pun: ") + `<i>${pun}</i>`);
                 });
             }
@@ -104,34 +104,34 @@ SharkGame.Puns = {
             "After one of your sharks ate a clownfish, do you know what he said?<br>'This tastes like it’s depressed and tired of constantly being seen as a joke!'",
         ],
         crystal: [
-            "Placeholder :D"
+            "Placeholder :D",
         ],
         sand: [
-            "Placeholder :D"
+            "Placeholder :D",
         ],
         kelp: [
-            "Placeholder :D"
+            "Placeholder :D",
         ],
         driftwood: [
-            "Placeholder :D"
+            "Placeholder :D",
         ],
         seagrass: [
-            "Placeholder :D"
+            "Placeholder :D",
         ],
         coral: [
-            "Placeholder :D"
+            "Placeholder :D",
         ],
         sponge: [
-            "Placeholder :D"
+            "Placeholder :D",
         ],
         tar: [
-            "Placeholder :D"
+            "Placeholder :D",
         ],
         ice: [
-            "Placeholder :D"
+            "Placeholder :D",
         ],
         roughSand: [
-            "Placeholder :D"
+            "Placeholder :D",
         ],
         shark: [
             "Placeholder :D",
@@ -171,13 +171,13 @@ SharkGame.Puns = {
             "Placeholder :D",
         ],
         billfish: [
-            "Placeholder :D"
+            "Placeholder :D",
         ],
         mudskipper: [
-            "Placeholder :D"
+            "Placeholder :D",
         ],
         caracara: [
-            "Placeholder :D"
+            "Placeholder :D",
         ],
 
     },

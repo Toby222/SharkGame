@@ -1,5 +1,5 @@
 SharkGame.FunFacts = {
-    dilutedResources: ["shark", "ray", "crab", "fish"], //dilute these while not in starter to keep the fun facts fresher
+    dilutedResources: ["shark", "ray", "crab", "fish"], // dilute these while not in starter to keep the fun facts fresher
 
     showFact() {
         log.addMessage(this.getFact());
@@ -288,7 +288,7 @@ SharkGame.FunFacts = {
             "According to Norse mythology, the first two humans were made out of driftwood. Whatever Norse is. And humans.",
             "The frenzy never burns driftwood as fuel, as the combustion releases toxic and long-lasting substances into the air.",
             "Driftwood is often used by several animals, both aquatic and terrestrial, as shelter and food.",
-            "In the beyond, driftwood can be found in abundance as simple 'wood', but only driftwood has the right composition for hardbark.", //according to the caracaras.
+            "In the beyond, driftwood can be found in abundance as simple 'wood', but only driftwood has the right composition for hardbark.", // according to the caracaras.
         ],
         ancientPart: [
             "What do they do? We still aren't sure.",

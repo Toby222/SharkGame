@@ -556,7 +556,7 @@ SharkGame.Events = {
         },
     },
     shoreGiveSeagrass: {
-                handlingTime: "beforeTick",
+        handlingTime: "beforeTick",
         priority: 0,
         getAction() {
             return "remove";

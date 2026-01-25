@@ -14,7 +14,6 @@ SharkGame.HomeMessages = {
             },
             {
                 name: "start-sharks",
-            
                 unlock: { resource: { shark: 2 } },
                 message: "More sharks swim over, curious and watchful.",
             },
@@ -530,7 +529,7 @@ SharkGame.HomeMessages = {
             {
                 name: "shore-sandstorm-escape-attempt",
                 unlock: { upgrade: ["fleeBarrage"] },
-                message: "The sandstorm has stretched out endlessly. No matter how far you backtrack, it is there."
+                message: "The sandstorm has stretched out endlessly. No matter how far you backtrack, it is there.",
             },
             {
                 name: "shore-sandstorm-escape-attempt-the-sequel",
@@ -549,8 +548,7 @@ SharkGame.HomeMessages = {
             },
         ],
         
-        /*
-        stone: [
+        /* stone: [
            {
             message:
                 "The jagged seafloor looks ancient, yet pristine.<br>Sponges thrive in great numbers on the rocks.",

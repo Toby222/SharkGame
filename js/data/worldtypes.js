@@ -392,8 +392,8 @@ SharkGame.WorldTypes = {
             ],
             absentResources: ["kelp", "seaApple"],
             modifiers: [
-             { type: "multiplier", modifier: "planetaryIncomeMultiplier", resource: "crab", amount: 1 }
-             { type: "multiplier", modifier: "planetaryResourceBoost", resource: "sand", amount: 2.5 }
+             { type: "multiplier", modifier: "planetaryIncomeMultiplier", resource: "crab", amount: 1 },
+             { type: "multiplier", modifier: "planetaryResourceBoost", resource: "sand", amount: 2.5 },
              { type: "multiplier", modifier: "planetaryIncome", resource: "roughSand", amount: 1 },
             ],
             gateType: "slots",

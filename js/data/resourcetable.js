@@ -3,7 +3,7 @@ SharkGame.ResourceTable = {
 
     // SAVED FOR LATER
 
-    coralglass: { //machine-making material; archived from original game -- ThreeEels
+    coralglass: { // machine-making material; archived from original game -- ThreeEels
         name: "coralglass",
         singleName: "coralglass",
         desc: "null",
@@ -11,14 +11,14 @@ SharkGame.ResourceTable = {
         value: 70,
     },
 
-    starfish: { //frenzy member; courtesy of my great irl friend -- ThreeEels
+    starfish: { // frenzy member; courtesy of my great irl friend -- ThreeEels
         name: "starfish",
         singleName: "starfish",
         desc: "Obliviously cute - as long as you don't see their mouths.",
         color: "#C2754A",
-        value: 3000 
+        value: 3000,
     },
-    
+
     // SPECIAL
 
     numen: {
@@ -779,7 +779,7 @@ SharkGame.ResourceTable = {
 
     // SHORE
 
-    stabilizer: { //my inner british english speaker is screaming blue murder --ThreeEels
+    stabilizer: { // my inner british english speaker is screaming blue murder --ThreeEels
         name: "stabilizer crabs",
         singleName: "stabilizer crab",
         color: "#339966",
@@ -789,7 +789,7 @@ SharkGame.ResourceTable = {
             seagrass: 0.5,
         },
     },
-    
+
     mudskipper: {
         name: "mudskippers",
         singleName: "mudskipper",
@@ -874,7 +874,7 @@ SharkGame.ResourceTable = {
         desc: "Crablike puppets that saw at the coral with serrated claws.",
         color: "#99004D",
         income: {
-            coral: 3
+            coral: 3,
         },
     },
 
@@ -884,7 +884,7 @@ SharkGame.ResourceTable = {
         desc: "Drifting, raylike puppets collecting driftwood in their seagrass nets.",
         color: "#333300",
         income: {
-            driftwood: 2
+            driftwood: 2,
         },
     },
 
@@ -895,7 +895,7 @@ SharkGame.ResourceTable = {
         color: "#00004D",
         income: {
             hardbark: 2,
-            crystal: -2
+            crystal: -2,
         },
     },
 
@@ -911,7 +911,7 @@ SharkGame.ResourceTable = {
     },
 
     safeholdSentinel: {
-        name: "Safehold Sentinel", //it's special. that's why it has caps. --ThreeEels
+        name: "Safehold Sentinel", // it's special. that's why it has caps. --ThreeEels
         singleName: "Safehold Sentinel",
         desc: "The warden of many arms.",
         color: "#FFFFFF",
@@ -919,14 +919,14 @@ SharkGame.ResourceTable = {
             roughSand: -5.5,
         },
     },
-    
+
     barrageBraver: {
         name: "Barrage Braver",
         singleName: "Barrage Braver",
         desc: "The courageous one.",
         color: "#FFFFFF",
         income: {
-            intel: 0.0001
+            intel: 0.001,
         },
     },
 
@@ -963,14 +963,14 @@ SharkGame.ResourceTable = {
             intel: 1.5,
         },
     },
-    
+
     roughSand: {
         name: "rough sand",
         singleName: "rough sand",
         desc: "Jagged grains that dig into our flesh.",
         color: "#CC9900",
     },
-            
+
     // SHROUDED
 
     chimaera: {
@@ -1437,27 +1437,32 @@ SharkGame.GeneratorIncomeAffectorsOriginal = {
             fishMachine: 0.01,
         },
     },
-   mentor: {
-       multiply: {
-           coralCollector: 0.05,
-           hardbarkSmith: 0.05,
-           driftwoodSnarer: 0.05,
-           shoreQueller: 0.05,
-       },
-   },
-   gatemasterPuppet: {
-       multiply: {
-           coralCollector: 15,
-           hardbarkSmith: 15,
-           driftwoodSnarer: 15,
-           shoreQueller: 15,
-       },
-   },
-   exchangeStation: {
-       multiply: {
-           placeholder: 0.75,
-       },
-   },
+    mentor: {
+        multiply: {
+            coralCollector: 0.05,
+            hardbarkSmith: 0.05,
+            driftwoodSnarer: 0.05,
+            shoreQueller: 0.05,
+        },
+     },
+    gatemasterPuppet: {
+        multiply: {
+            coralCollector: 15,
+            hardbarkSmith: 15,
+            driftwoodSnarer: 15,
+            shoreQueller: 15,
+        },
+    },
+    exchangeStation: {
+        multiply: {
+            mudskipper: 0.75,
+            caracara: 0.75,
+            shark: 0.75,
+            ray: 0.75,
+            crab: 0.75,
+            retrievalDuo: 1.75,
+        },
+    },
     // cool tooltip test crab
     /*     crab: {
         exponentiate: {

@@ -4528,7 +4528,7 @@ SharkGame.Upgrades = {
         },
     },
     shore: {
-      template: {
+        template: {
             name: "Upgrade Template",
             desc: "This is the text in the lab button thingy...",
             researchedMessage: "...and this is the text that goes next to the buttons!",
@@ -4536,8 +4536,8 @@ SharkGame.Upgrades = {
             cost: { },
             required: { },
             effect: { },
-        },
-        murkAssessment: {
+         },
+         murkAssessment: {
             name: "Murk Assessment",
             desc: "What is that sandy cloud? What does it do? We should go inside it.",
             researchedMessage: "It's a sandstorm. The one where the rough grains of sand come from. To say it's torture is an understatement.",
@@ -4588,7 +4588,7 @@ SharkGame.Upgrades = {
                 resourceBoost: {
                     roughSand: -100,
                 },
-                events: ["shoreGiveCoral", "shoreGiveSeagrass"]
+                events: ["shoreGiveCoral", "shoreGiveSeagrass"],
             },
         },
         crabDisappearance: {
@@ -4608,8 +4608,8 @@ SharkGame.Upgrades = {
             effect: {
                 incomeMultiplier: {
                     crab: 2,
-                    },
                 },
+            },
         },
         driftwoodAnalysis: {
             name: "Driftwood Analysis",
@@ -4658,10 +4658,10 @@ SharkGame.Upgrades = {
             },
             effect: {
                 incomeMultiplier: {
-                   mudskipper: 5,
+                    mudskipper: 5,
                 },
             },
-        }, //gosh that's a lot of crystals eh --ThreeEels
+        }, // gosh that's a lot of crystals eh --ThreeEels
         crystalContainer: { required: { upgrades: ["justPushFurtherLol"] } },
         seabedGeology: {},
         underwaterChemistry: {},
@@ -4681,7 +4681,7 @@ SharkGame.Upgrades = {
                 upgrades: ["seabedGeology"],
                 seen: ["sand", "roughSand"],
             },
-        }, //prev name: stabilization
+        }, // prev name: stabilization
         hardbarkCoating: {
             name: "Hardbark Coating",
             desc: "Apparently, our sharkonium may have been mentioned in mudskipper tale.",
@@ -4693,7 +4693,7 @@ SharkGame.Upgrades = {
             },
             required: {
                 upgrades: ["driftwoodAnalysis"],
-                seen: ["driftwood", "crystal"]
+                seen: ["driftwood", "crystal"],
             },
         },
         puppetAssembly: {
@@ -4707,7 +4707,7 @@ SharkGame.Upgrades = {
             },
             required: {
                 upgrades: ["driftwoodAnalysis", "hardbarkCoating"],
-                seen: ["laser"]
+                seen: ["laser"],
             },
         },
         fixModels: {
@@ -4720,7 +4720,7 @@ SharkGame.Upgrades = {
                 science: 15000,
             },
             required: {
-                upgrades: ["puppetAssembly"]
+                upgrades: ["puppetAssembly"],
             },
             effect: {
                 incomeMultiplier: {
@@ -4731,124 +4731,124 @@ SharkGame.Upgrades = {
                 },
             },
         },
-        puppetTeaching: {
-            name: "Puppet Teaching",
-            desc: "This is the text in the lab button thingy...",
-            researchedMessage: "...and this is the text that goes next to the buttons!",
-            effectDesc: "This one, however, appears in the log.",
-            cost: {
-                mudskipper: 500,
-                science: 15000,
-            },
-            required: {
-                upgrades: ["fixModels"],
-            },
-            effect: {
-                incomeMultiplier: {
-                    coralCollector: 5,
-                    seagrassSnarer: 5,
-                    shoreQueller: 5,
-                    hardbarkSmith: 5,
-            },
-        },
-        exploration: {
-            name: "Tunnel Expedition",
-            desc: "This is the text in the lab button thingy...",
-            researchedMessage: "...and this is the text that goes next to the buttons!",
-            effectDesc: "This one, however, appears in the log.",
-            cost: { fish: 5 },
-            required: { upgrades: ["puppetTeaching"] },
-            effect: { },
-        }, //prev name: tunnelExpedition
-        farExploration: {
-            name: "Sentinel Repairing",
-            desc: "This is the text in the lab button thingy...",
-            researchedMessage: "...and this is the text that goes next to the buttons!",
-            effectDesc: "This one, however, appears in the log.",
-            cost: { fish: 5 },
-            required: { upgrades: ["exploration"] },
-            effect: { },
-        }, //prev name: thingyRepairing
-        raiderTruce: {
-            name: "Raider Truce",
-            desc: "This is the text in the lab button thingy...",
-            researchedMessage: "...and this is the text that goes next to the buttons!",
-            effectDesc: "This one, however, appears in the log.",
-            cost: { fish: 5 },
-            required: { upgrades: ["farExploration"] },
-            effect: { },
-        },
-        crystalTalons: {
-            name: "Crystal Talons",
-            desc: "This is the text in the lab button thingy...",
-            researchedMessage: "...and this is the text that goes next to the buttons!",
-            effectDesc: "This one, however, appears in the log.",
-            cost: { fish: 5 },
-            required: { upgrades: ["raiderTruce"] },
-            effect: {
-                incomeBoost: {
-                    caracara: 5,
-                },
-            },
-        },
-        beyondwalkerPairing: {
-            name: "Beyondwalker Pairing",
-            desc: "This is the text in the lab button thingy...",
-            researchedMessage: "...and this is the text that goes next to the buttons!",
-            effectDesc: "This one, however, appears in the log.",
-            cost: { fish: 5 },
-            required: { upgrades: ["crystalTalons"] },
-            effect: { },
-        },
-        platformExpansion: {
-            name: "Platform Expansion",
-            desc: "The frenzy that gathers around the retrieval teams' platforms do rather well...",
-            researchedMessage: "...and this is the text that goes next to the buttons!",
-            effectDesc: "This one, however, appears in the log.",
-            cost: { fish: 5 },
-            required: { upgrades: ["beyondwalkerPairing"] },
-            effect: { },
-        },
-        seagrassAttention: {
-            name: "Seagrass Attention",
-            desc: "This is the text in the lab button thingy...",
-            researchedMessage: "...and this is the text that goes next to the buttons!",
-            effectDesc: "This one, however, appears in the log.",
-            cost: { fish: 5, seagrass: 5 },
-            required: { upgrades: ["raiderTruce"] },
-            effect: { },
-        },
-        taleHeeding: {
-            name: "Tale Heeding",
-            desc: "This is the text in the lab button thingy...",
-            researchedMessage: "...and this is the text that goes next to the buttons!",
-            effectDesc: "This one, however, appears in the log.",
-            cost: { fish: 5 },
-            required: { upgrades: ["platformExpansion"] },
-            effect: { },
-        },
-        intelTowers: {
-            name: "Intel Towers",
-            desc: "This is the text in the lab button thingy...",
-            researchedMessage: "...and this is the text that goes next to the buttons!",
-            effectDesc: "This one, however, appears in the log.",
-            cost: { fish: 5 },
-            required: { upgrades: ["taleHeeding"] },
-            effect: { },
-        },
-        //firstLog: {},
-        //secondLog: {},
-        //thirdLog: {},
-        gatemasterScavenging: {
-            name: "Gatemaster Scavenging",
-            desc: "This is the text in the lab button thingy...",
-            researchedMessage: "...and this is the text that goes next to the buttons!",
-            effectDesc: "This one, however, appears in the log.",
-            cost: { fish: 5 },
-            required: { upgrades: ["intelTowers"] },
-            effect: { },
-        },
-        //fullStability: {},
-        },
+         puppetTeaching: {
+             name: "Puppet Teaching",
+             desc: "This is the text in the lab button thingy...",
+             researchedMessage: "...and this is the text that goes next to the buttons!",
+             effectDesc: "This one, however, appears in the log.",
+             cost: {
+                 mudskipper: 500,
+                 science: 15000,
+             },
+             required: {
+                 upgrades: ["fixModels"],
+             },
+             effect: {
+                 incomeMultiplier: {
+                     coralCollector: 5,
+                     seagrassSnarer: 5,
+                     shoreQueller: 5,
+                     hardbarkSmith: 5,
+                 },
+             },
+         },
+         exploration: {
+             name: "Tunnel Expedition",
+             desc: "This is the text in the lab button thingy...",
+             researchedMessage: "...and this is the text that goes next to the buttons!",
+             effectDesc: "This one, however, appears in the log.",
+             cost: { fish: 5 },
+             required: { upgrades: ["puppetTeaching"] },
+             effect: { },
+         }, // prev name: tunnelExpedition
+         farExploration: {
+             name: "Sentinel Repairing",
+             desc: "This is the text in the lab button thingy...",
+             researchedMessage: "...and this is the text that goes next to the buttons!",
+             effectDesc: "This one, however, appears in the log.",
+             cost: { fish: 5 },
+             required: { upgrades: ["exploration"] },
+             effect: { },
+         }, // prev name: thingyRepairing
+         raiderTruce: {
+             name: "Raider Truce",
+             desc: "This is the text in the lab button thingy...",
+             researchedMessage: "...and this is the text that goes next to the buttons!",
+             effectDesc: "This one, however, appears in the log.",
+             cost: { fish: 5 },
+             required: { upgrades: ["farExploration"] },
+             effect: { },
+         },
+         crystalTalons: {
+             name: "Crystal Talons",
+             desc: "This is the text in the lab button thingy...",
+             researchedMessage: "...and this is the text that goes next to the buttons!",
+             effectDesc: "This one, however, appears in the log.",
+             cost: { fish: 5 },
+             required: { upgrades: ["raiderTruce"] },
+             effect: {
+                 incomeBoost: {
+                     caracara: 5,
+                 },
+             },
+         },
+         beyondwalkerPairing: {
+             name: "Beyondwalker Pairing",
+             desc: "This is the text in the lab button thingy...",
+             researchedMessage: "...and this is the text that goes next to the buttons!",
+             effectDesc: "This one, however, appears in the log.",
+             cost: { fish: 5 },
+             required: { upgrades: ["crystalTalons"] },
+             effect: { },
+         },
+         platformExpansion: {
+             name: "Platform Expansion",
+             desc: "The frenzy that gathers around the retrieval teams' platforms do rather well...",
+             researchedMessage: "...and this is the text that goes next to the buttons!",
+             effectDesc: "This one, however, appears in the log.",
+             cost: { fish: 5 },
+             required: { upgrades: ["beyondwalkerPairing"] },
+             effect: { },
+         },
+         seagrassAttention: {
+             name: "Seagrass Attention",
+             desc: "This is the text in the lab button thingy...",
+             researchedMessage: "...and this is the text that goes next to the buttons!",
+             effectDesc: "This one, however, appears in the log.",
+             cost: { fish: 5, seagrass: 5 },
+             required: { upgrades: ["raiderTruce"] },
+             effect: { },
+         },
+         taleHeeding: {
+             name: "Tale Heeding",
+             desc: "This is the text in the lab button thingy...",
+             researchedMessage: "...and this is the text that goes next to the buttons!",
+             effectDesc: "This one, however, appears in the log.",
+             cost: { fish: 5 },
+             required: { upgrades: ["platformExpansion"] },
+             effect: { },
+         },
+         intelTowers: {
+             name: "Intel Towers",
+             desc: "This is the text in the lab button thingy...",
+             researchedMessage: "...and this is the text that goes next to the buttons!",
+             effectDesc: "This one, however, appears in the log.",
+             cost: { fish: 5 },
+             required: { upgrades: ["taleHeeding"] },
+             effect: { },
+         },
+         // firstLog: {},
+         // secondLog: {},
+         // thirdLog: {},
+         gatemasterScavenging: {
+              name: "Gatemaster Scavenging",
+              desc: "This is the text in the lab button thingy...",
+              researchedMessage: "...and this is the text that goes next to the buttons!",
+              effectDesc: "This one, however, appears in the log.",
+              cost: { fish: 5 },
+              required: { upgrades: ["intelTowers"] },
+              effect: { },
+         },
+         // fullStability: {},
     },
 };

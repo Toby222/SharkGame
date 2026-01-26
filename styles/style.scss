@@ -237,6 +237,14 @@ $sidebar-width: 25%;
             --color-darker: #{$color-darker-haven};
             --color-title: #{rgba(color.channel($color-med-haven, 'red', $space: rgb), color.channel($color-med-haven, 'green', $space: rgb), color.channel($color-med-haven, 'blue', $space: rgb), 0.2)};
         }
+        &.shore {
+            --color-lighter: #{$color-lighter-shore};
+            --color-light: #{$color-light-shore};
+            --color-med: #{$color-med-shore};
+            --color-dark: #{$color-dark-shore};
+            --color-darker: #{$color-darker-shore};
+            --color-title: #{rgba(color.channel($color-med-shore, 'red', $space: rgb), color.channel($color-med-shore, 'green', $space: rgb), color.channel($color-med-shore, 'blue', $space: rgb), 0.2)};
+        }
         &.shrouded {
             --color-lighter: #{$color-lighter-shrouded};
             --color-light: #{$color-light-shrouded};

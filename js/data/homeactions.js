@@ -5216,7 +5216,7 @@ SharkGame.HomeActionCategories = {
             "getOctopus",
             "getSquid",
             "getUrchin",
-            "getBillfish"
+            "getBillfish",
             "getMudskipper",
             "getCaracara",
         ],

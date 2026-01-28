@@ -11,13 +11,13 @@ SharkGame.ResourceTable = {
         value: 70,
     },
 
-    starfish: { // frenzy member; courtesy of my great irl friend -- ThreeEels
+    /* starfish: { // frenzy member; courtesy of my great irl friend -- ThreeEels
         name: "starfish",
         singleName: "starfish",
         desc: "Obliviously cute - as long as you don't see their mouths.",
         color: "#C2754A",
         value: 3000,
-    },
+    }, */
 
     // SPECIAL
 
@@ -1834,10 +1834,10 @@ SharkGame.InternalCategories = {
         name: "Caracaras",
         resources: ["caracara", "retrievalDuo", "connoisseur"],
     },
-    starfishes: {
+    /* starfishes: {
         name: "Starfish",
         resources: ["starfish"],
-    },
+    }, */
     sharkmachines: {
         name: "Shark Machines",
         resources: ["sharkonium", "fishMachine", "sandDigger", "crystalMiner", "skimmer", "autoTransmuter"],

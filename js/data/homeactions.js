@@ -2747,7 +2747,7 @@ SharkGame.HomeActions = {
             ],
             helpText: "Provide a crab with coral and seagrass to plant.",
         },
-
+        
         // MUDSKIPPER JOBS ///////////////////////////
         getBurrow: {
             name: "Dig mudskipper burrow",
@@ -5273,7 +5273,7 @@ SharkGame.HomeActionCategories = {
             "getPit",
             "getCollective",
             "getSpawner",
-            "getBillfishPair"
+            "getBillfishPair",
             "getBurrow",
         ],
     },

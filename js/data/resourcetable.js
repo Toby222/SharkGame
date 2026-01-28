@@ -914,7 +914,7 @@ SharkGame.ResourceTable = {
         name: "Safehold Sentinel", // it's special. that's why it has caps. --ThreeEels
         singleName: "Safehold Sentinel",
         desc: "The warden of many arms.",
-        color: "#FFFFFF",
+        color: "#664D80",
         income: {
             roughSand: -5.5,
         },
@@ -924,7 +924,7 @@ SharkGame.ResourceTable = {
         name: "Barrage Braver",
         singleName: "Barrage Braver",
         desc: "The courageous one.",
-        color: "#FFFFFF",
+        color: "#773E22",
         income: {
             intel: 0.001,
         },
@@ -934,14 +934,14 @@ SharkGame.ResourceTable = {
         name: "Gatemaster",
         singleName: "Gatemaster",
         desc: "It oversees its children and its home.",
-        color: "#FFFFFF",
+        color: "#99FFCC",
     },
 
     seagrassFarm: {
         name: "seagrass farms",
         singleName: "seagrass farm",
         desc: "Flowing crops of many blades.",
-        color: "#FFFFFF",
+        color: "#00661A",
         income: {
             seagrass: 1.5,
         },
@@ -951,14 +951,14 @@ SharkGame.ResourceTable = {
         name: "exchange stations",
         singleName: "exchange station",
         desc: "A bustling hub of beyonderwalkers and seaborn.",
-        color: "#FFFFFF",
+        color: "#4D2600",
     },
 
     receiverNode: {
         name: "receiver nodes",
         singleName: "receiver node",
         desc: "Spires to catch the intel.",
-        color: "#FFFFFF",
+        color: "#73568F",
         income: {
             intel: 1.5,
         },

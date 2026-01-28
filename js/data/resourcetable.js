@@ -1444,7 +1444,7 @@ SharkGame.GeneratorIncomeAffectorsOriginal = {
             driftwoodSnarer: 0.05,
             shoreQueller: 0.05,
         },
-     },
+    },
     gatemasterPuppet: {
         multiply: {
             coralCollector: 15,

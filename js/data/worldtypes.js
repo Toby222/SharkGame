@@ -356,7 +356,7 @@ SharkGame.WorldTypes = {
         },
     },
     shore: { // please note this worldtype code is very much WIP
-        name: "Shore", 
+        name: "Shore",
         vagueDesc: "Feels shallow.",
         desc: "A shallow, lapping beachfront.",
         shortDesc: "small sandy",

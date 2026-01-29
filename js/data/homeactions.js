@@ -2650,10 +2650,15 @@ SharkGame.HomeActions = {
             helpText: "Coat sturdy driftwood pieces with crystal to make hardbark.",
         },
 
-        // BUY ANIMALS /////////////////////////////////
+        // BUY ANIMALS (and jobs) /////////////////////////////////
         getShark: {}, // end of creature code
+        getScientist: {}, // end of job code
+        getNurse: {}, // end of breeder code
         getManta: {}, // end of creature code
+        getLaser: {}, // end of job code
+        getMaker: {}, // end of breeder code
         getCrab: {}, // end of creature code
+        getBrood: {}, // end of breeder code
         getMudskipper: {
             name: "Liberate mudskipper",
             effect: {

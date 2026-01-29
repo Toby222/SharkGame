@@ -5297,7 +5297,7 @@ SharkGame.HomeActionCategories = {
             "fuseCalcinium",
             "toggleAutoSmelt",
             "smeltPorite",
-            "seagrassToScience"
+            "seagrassToScience",
             "coatHardbark",
         ],
     },

@@ -2820,7 +2820,7 @@ SharkGame.HomeActions = {
             prereq: {
                 resource: {
                     caracara: 1,
-                    mudskipper: 1
+                    mudskipper: 1,
                 },
                 upgrade: ["beyondwalkerPairing"],
             },
@@ -2906,8 +2906,7 @@ SharkGame.HomeActions = {
                 resource: {
                     hardbark: 75,
                 },
-                upgrade: ["puppetAssembly"],
-                upgrade: ["laserRays"],
+                upgrade: ["puppetAssembly", "laserRays"],
             },
             outcomes: [
                 "//*to be written in future*//",
@@ -2944,7 +2943,7 @@ SharkGame.HomeActions = {
                 "//*to be written in future*//",
             ],
             helpText: "Put together a raylike puppet to catch driftwood in a seagrass net.",
-        }, //end of machine code
+        }, // end of machine code
         getHardbarkSmith: {
             name: "Assemble hardbark smith",
             effect: {
@@ -3097,7 +3096,7 @@ SharkGame.HomeActions = {
                 "Imagine how much science must be in this place.",
             ],
             helpText: "Pick a spot and set up a seagrass farm there.",
-        }, //end of place code
+        }, // end of place code
         getShoreCoralFarm: {
             name: "Construct coral farm",
             effect: {
@@ -3187,7 +3186,7 @@ SharkGame.HomeActions = {
             ],
             helpText: "Build a tall spire for extra collection of intel.",
         }, // end of place code
-   },
+    },
 
     // ---------------------------------------------------
     shrouded: {
@@ -3787,7 +3786,7 @@ SharkGame.HomeActions = {
         getAutoTransmuter: {},
     },
 
-//---------------------------------------------------
+    // ---------------------------------------------------
     marine: {
         catchFish: {},
 
@@ -4214,7 +4213,7 @@ SharkGame.HomeActions = {
         },
     },
 
-//---------------------------------------------------
+    // ---------------------------------------------------
     volcanic: {
         // FREEBIES ////////////////////////////////////////////////////////////////////////////////
 
@@ -4874,7 +4873,7 @@ SharkGame.HomeActions = {
         },
     },
 
-//---------------------------------------------------
+    // ---------------------------------------------------
     tempestuous: {
         catchFish: {},
 

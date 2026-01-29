@@ -4536,7 +4536,7 @@ SharkGame.Upgrades = {
             cost: { },
             required: { },
             effect: { },
-         },
+        },
         murkAssessment: {
             name: "Murk Assessment",
             desc: "What is that sandy cloud? What does it do? We should go inside it.",
@@ -4760,7 +4760,7 @@ SharkGame.Upgrades = {
             cost: { fish: 5 },
             required: { upgrades: ["puppetTeaching"] },
             effect: { },
-         }, // prev name: tunnelExpedition
+        }, // prev name: tunnelExpedition
         farExploration: {
             name: "Sentinel Repairing",
             desc: "This is the text in the lab button thingy...",

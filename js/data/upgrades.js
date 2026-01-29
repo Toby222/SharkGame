@@ -4531,8 +4531,8 @@ SharkGame.Upgrades = {
         template: {
             name: "Upgrade Template",
             desc: "This is the text in the lab button thingy...",
-            researchedMessage: "...and this is the text that goes next to the buttons!",
-            effectDesc: "This one, however, appears in the log.",
+            researchedMessage: "...and this is the one that appears in the log!",
+            effectDesc: "This one, however, is the text that goes next to the buttons.",
             cost: { },
             required: { },
             effect: { },
@@ -4681,7 +4681,7 @@ SharkGame.Upgrades = {
         agriculture: {
             name: "Stabilization",
             desc: "The rays and crabs have noticed something strange about the sand around these colourful growths...",
-            researchedMessage: "bla bla bla don't have time rn",
+            researchedMessage: "The mudskippers suggested something from their oral tales called a 'farm'. It's... surprisingly useful.",
             effectDesc: "Seagrass farms and coral farms are now available.",
             cost: {
                 sand: 5000,
@@ -4739,8 +4739,8 @@ SharkGame.Upgrades = {
         fixModels: {
             name: "Fix Models",
             desc: "They're not done???",
-            researchedMessage: "Well... they're 'refined'.",
-            effectDesc: "aabbabababa",
+            researchedMessage: "Well... they've been 'refined'.",
+            effectDesc: "Mudskipper puppets are five times as effective.",
             cost: {
                 hardbark: 500,
                 science: 15000,
@@ -4759,9 +4759,9 @@ SharkGame.Upgrades = {
         },
         puppetTeaching: {
             name: "Puppet Teaching",
-            desc: "This is the text in the lab button thingy...",
-            researchedMessage: "...and this is the text that goes next to the buttons!",
-            effectDesc: "This one, however, appears in the log.",
+            desc: "The mudskippers (again) have something from their tales that could help with the puppets.",
+            researchedMessage: "Mudskippers can now be trained (for some reason) and become 'mentors'. Seems like a waste of science to me.",
+            effectDesc: "Puppet mentors can be trained.",
             cost: {
                 mudskipper: 500,
                 science: 15000,

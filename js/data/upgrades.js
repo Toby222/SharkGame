@@ -3953,7 +3953,7 @@ SharkGame.Upgrades = {
             researchedMessage:
                 "We refuse to accept the narrative the billfish are pushing on us, but the scientists are adamant. They say they are literally just fish with big noses.",
             effectDesc:
-                "Billfish are four times more effective, and billfish pairs are available. I swear, our scientists must be losing it - these things are not fish, surely.",
+                "Billfish are four times more effective, and billfish pairs are available. I swear, our scientists must be losing it - these things are not fish, surely.", // says the also large fish
             cost: {
                 science: 4000,
                 fish: 20000,
@@ -4667,6 +4667,9 @@ SharkGame.Upgrades = {
         seabedGeology: {},
         underwaterChemistry: {},
         thermalVents: {},
+        biology: {},
+        rayBiology: {},
+        crabBiology: {},
         laserRays: {},
         sunObservation: {},
         transmutation: {},

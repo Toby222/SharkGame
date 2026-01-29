@@ -4682,6 +4682,21 @@ SharkGame.Upgrades = {
                 seen: ["sand", "roughSand"],
             },
         }, // prev name: stabilization
+        mudskipperBurrowing: {
+            name: "Mudskipper Burrowing",
+            desc: "The mudskippers want to tell us something. We will, of course, heed.",
+            researchedMessage: "Mudskipper burrows are now a thing. They do a lot of flailing in it. But they're happier now.",
+            effectDesc: "Mudskipper burrows can be dug. Now happier, mudskippers work two times faster.",
+            cost: { fish: 5 },
+            required: {
+                upgrades: ["mudskipperContact", "seabedGeology"],
+            },
+            effect: {
+                incomeMultiplier: {
+                    mudskipper: 2,
+                },
+            },
+        },
         hardbarkCoating: {
             name: "Hardbark Coating",
             desc: "Apparently, our sharkonium may have been mentioned in mudskipper tale.",

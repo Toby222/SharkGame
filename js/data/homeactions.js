@@ -2611,18 +2611,18 @@ SharkGame.HomeActions = {
             },
         },
     },
- 
+
     // ---------------------------------------------------
     shore: {
-        
-    // FREEBIES //////////////////////////////////////
+
+        // FREEBIES //////////////////////////////////////
         catchFish: {},
         debugButton: {},
 
-    // PROCESSING ////////////////////////////////////
+        // PROCESSING ////////////////////////////////////
         seagrasstoScience: {},
 
-    // MAKE ADVANCED RESOURCES ///////////////////////
+        // MAKE ADVANCED RESOURCES ///////////////////////
         transmuteSharkonium: {},
         coatHardbark: {
             name: "Coat driftwood to make hardbark",
@@ -2650,7 +2650,7 @@ SharkGame.HomeActions = {
             helpText: "Coat sturdy driftwood pieces with crystal to make hardbark.",
         },
 
-    // BUY ANIMALS /////////////////////////////////
+        // BUY ANIMALS /////////////////////////////////
         getShark: {}, // end of creature code
         getManta: {}, // end of creature code
         getCrab: {}, // end of creature code
@@ -2663,7 +2663,7 @@ SharkGame.HomeActions = {
             },
             cost: [
                 { resource: "fish", costFunction: "linear", priceIncrease: 1 },
-                  ],
+            ],
             max: "mudskipper",
             prereq: {
                 upgrade: ["mudskipperContact"],
@@ -2694,7 +2694,7 @@ SharkGame.HomeActions = {
             },
             cost: [
                 { resource: "driftwood", costFunction: "linear", priceIncrease: 5 },
-                  ],
+            ],
             max: "caracara",
             prereq: {
                 upgrade: ["raiderTruce"],
@@ -2711,7 +2711,7 @@ SharkGame.HomeActions = {
                 "They blot out the sun.",
                 "They cast a shadow upon all as they fly.",
                 "Their presence commands respect from all but us.",
-                "You know what, they're kinda like sharks when you think about it."
+                "You know what, they're kinda like sharks when you think about it.",
             ],
             helpText: "Convince a caracara from the surface to retrieve crystals.",
         }, // end of creature code
@@ -2746,7 +2746,7 @@ SharkGame.HomeActions = {
             ],
             helpText: "Provide a crab with coral and seagrass to plant.",
         },
-        
+
         // MUDSKIPPER JOBS ///////////////////////////
         getBurrow: {
             name: "Dig mudskipper burrow",
@@ -2769,13 +2769,12 @@ SharkGame.HomeActions = {
             },
             outcomes: [
                 "//*to be written in future*//",
-              
             ],
             multiOutcomes: [
                 "//*to be written in future*//",
             ],
             helpText: "Allow a mudskipper to dig a burrow to do some weird flailing or something.",
-        }, //end of job code
+        }, // end of job code
         getMentor: {
             name: "Train mudskipper mentor",
             effect: {
@@ -2797,14 +2796,13 @@ SharkGame.HomeActions = {
             },
             outcomes: [
                 "//*to be written in future*//",
-              
             ],
             multiOutcomes: [
                 "//*to be written in future*//",
             ],
             helpText: "Teach a mudskipper techniques on puppet work, so that it may pass on its knowledge.",
         }, // end of job code
-            
+
         // CARACARA JOBS ///////////////////////////
         getRetrievalDuo: {
             name: "Pair retrieval duo",
@@ -2828,13 +2826,12 @@ SharkGame.HomeActions = {
             },
             outcomes: [
                 "//*to be written in future*//",
-              
             ],
             multiOutcomes: [
                 "//*to be written in future*//",
             ],
             helpText: "Leave an armoured mudskipper on a platform for a caracara to take and search for driftwood.",
-        }, //end of job code
+        }, // end of job code
         getConnoisseur: {
             name: "Employ connoisseur",
             effect: {
@@ -2856,7 +2853,6 @@ SharkGame.HomeActions = {
             },
             outcomes: [
                 "//*to be written in future*//",
-              
             ],
             multiOutcomes: [
                 "//*to be written in future*//",
@@ -3192,7 +3188,6 @@ SharkGame.HomeActions = {
             helpText: "Build a tall spire for extra collection of intel.",
         }, // end of place code
    },
-
 
     // ---------------------------------------------------
     shrouded: {
@@ -4914,7 +4909,6 @@ SharkGame.HomeActions = {
                 "At least it's not gross.",
                 "We would learn a lot more from these if they weren't so absolutely tiny.",
             ],
-            
             helpText: "Dissect seagrass flowers to further the cause of science. This is research, probably!",
         },
 

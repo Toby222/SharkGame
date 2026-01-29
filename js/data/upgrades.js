@@ -4663,10 +4663,18 @@ SharkGame.Upgrades = {
             },
         }, // gosh that's a lot of crystals eh --ThreeEels
         crystalContainer: { required: { upgrades: ["justPushFurtherLol"] } },
+        statsDiscovery: {},
         seabedGeology: {},
         underwaterChemistry: {},
         thermalVents: {},
         laserRays: {},
+        sunObservation: {},
+        transmutation: {},
+        automation: {},
+        recyclerDiscovery: { required: { upgrades: ["farExploration"] } },
+        engineering: {},
+        iterativeDesign: {},
+        superprocessing: {},
         agriculture: {
             name: "Stabilization",
             desc: "The rays and crabs have noticed something strange about the sand around these colourful growths...",
@@ -4707,7 +4715,7 @@ SharkGame.Upgrades = {
                 hardbark: 25,
             },
             required: {
-                upgrades: ["driftwoodAnalysis"],
+                upgrades: ["driftwoodAnalysis", "automation"],
                 seen: ["driftwood", "crystal"],
             },
         },

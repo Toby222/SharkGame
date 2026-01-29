@@ -1397,7 +1397,7 @@ SharkGame.HomeActions = {
         */
     },
 
-//---------------------------------------------------
+    // ---------------------------------------------------
     abandoned: {
         catchFish: {},
 
@@ -1869,7 +1869,7 @@ SharkGame.HomeActions = {
         },
     },
 
-//---------------------------------------------------
+    // ---------------------------------------------------
     haven: {
         catchFish: {},
 
@@ -2335,7 +2335,7 @@ SharkGame.HomeActions = {
         },
     },
 
-//---------------------------------------------------
+    // ---------------------------------------------------
     frigid: {
         catchFish: {},
 
@@ -2611,12 +2611,11 @@ SharkGame.HomeActions = {
             },
         },
     },
-
-    
-//---------------------------------------------------
+ 
+    // ---------------------------------------------------
     shore: {
         
-    // FREEBIES /////////////////////
+    // FREEBIES //////////////////////////////////////
         catchFish: {},
         debugButton: {},
 
@@ -2633,8 +2632,8 @@ SharkGame.HomeActions = {
                 },
             },
             cost: [
-                { resource: "crystal", costFunction: "constant", priceIncrease: 5},
-                { resource: "driftwood", costFunction: "constant", priceIncrease: 1},
+                { resource: "crystal", costFunction: "constant", priceIncrease: 5 },
+                { resource: "driftwood", costFunction: "constant", priceIncrease: 1 },
             ],
             max: "hardbark",
             prereq: {
@@ -2652,9 +2651,9 @@ SharkGame.HomeActions = {
         },
 
     // BUY ANIMALS /////////////////////////////////
-        getShark: {}, //end of creature code
-        getManta: {}, //end of creature code
-        getCrab: {}, //end of creature code
+        getShark: {}, // end of creature code
+        getManta: {}, // end of creature code
+        getCrab: {}, // end of creature code
         getMudskipper: {
             name: "Liberate mudskipper",
             effect: {
@@ -2685,7 +2684,7 @@ SharkGame.HomeActions = {
                 "What, they think we’re gonna eat them?",
             ],
             helpText: "Liberate a mudskipper from its boring old life and command it to retrieve driftwood for you.",
-        }, //end of creature code
+        }, // end of creature code
         getCaracara: {
             name: "Convince caracara",
             effect: {
@@ -2715,7 +2714,7 @@ SharkGame.HomeActions = {
                 "You know what, they're kinda like sharks when you think about it."
             ],
             helpText: "Convince a caracara from the surface to retrieve crystals.",
-        }, //end of creature code
+        }, // end of creature code
 
         // CRAB JOBS /////////////////////////////////
         getStabilizer: {
@@ -2804,7 +2803,7 @@ SharkGame.HomeActions = {
                 "//*to be written in future*//",
             ],
             helpText: "Teach a mudskipper techniques on puppet work, so that it may pass on its knowledge.",
-        }, //end of job code
+        }, // end of job code
             
         // CARACARA JOBS ///////////////////////////
         getRetrievalDuo: {
@@ -2863,7 +2862,7 @@ SharkGame.HomeActions = {
                 "//*to be written in future*//",
             ],
             helpText: "Get a caracara interested in seagrass to walk along shores laden with it.",
-        }, //end of job code
+        }, // end of job code
 
         // MUDSKIPPER PUPPETS //////////////////////
         getCoralCollector: {
@@ -2892,7 +2891,7 @@ SharkGame.HomeActions = {
                 "//*to be written in future*//",
             ],
             helpText: "Put together a crablike puppet to harvest coral with serrated claws.",
-        }, //end of machine code
+        }, // end of machine code
         getShoreQueller: {
             name: "Assemble shore queller",
             effect: {
@@ -2978,7 +2977,7 @@ SharkGame.HomeActions = {
                 "//*to be written in future*//",
             ],
             helpText: "Put together a clawed, orblike puppet to coat hardbark in a dish.",
-        }, //end of machine code
+        }, // end of machine code
 
         // UNIQUE //////////////////////
         getSafeholdSentinel: {
@@ -3009,7 +3008,7 @@ SharkGame.HomeActions = {
                 "//*to be written in future*//",
             ],
             helpText: "Repair the multi-armed thing above the big latch.",
-        }, //end of unique code
+        }, // end of unique code
         getBarrageBraver: {
             ame: "Reconstruct Barrage Braver",
             effect: {
@@ -3038,7 +3037,7 @@ SharkGame.HomeActions = {
                 "//*to be written in future*//",
             ],
             helpText: "Reconstruct the Barrage Braver of beyondwalker legend.",
-        }, //end of unique code
+        }, // end of unique code
         getGatemasterPuppet: {
             ame: "Scavenge Gatemaster",
             effect: {
@@ -3067,7 +3066,7 @@ SharkGame.HomeActions = {
                 "//*to be written in future*//",
             ],
             helpText: "Collect the scattered pieces of... whatever this is...",
-        }, //end of unique code
+        }, // end of unique code
 
         // PLACES /////////////////////
         getSeagrassFarm: {
@@ -3133,7 +3132,7 @@ SharkGame.HomeActions = {
                 "Designated growing spots.",
             ],
             helpText: "Pick a spot and set up a coral farm there.",
-        }, //end of place code
+        }, // end of place code
         getExchangeStation: {
             name: "Set up exchange station",
             effect: {
@@ -3162,7 +3161,7 @@ SharkGame.HomeActions = {
                 "//*to be written in future*//",
             ],
             helpText: "Build an abovewater-extending station for the frenzy to use.",
-        }, //end of place code
+        }, // end of place code
         getReceiverNode: {
             name: "Construct receiver node",
             effect: {
@@ -3191,11 +3190,11 @@ SharkGame.HomeActions = {
                 "//*to be written in future*//",
             ],
             helpText: "Build a tall spire for extra collection of intel.",
-        }, //end of place code
+        }, // end of place code
    },
 
 
-//---------------------------------------------------
+    // ---------------------------------------------------
     shrouded: {
         catchFish: {},
 

@@ -548,7 +548,7 @@ SharkGame.HomeMessages = {
             },
             {
                 name: "shore-flaily-flail",
-                unlock: { totalResource: { burrow: 5 }, },
+                unlock: { totalResource: { burrow: 5 } },
                 message: "The mudskippers flail in their newly-dug burrows. They say their dance is traditional, as are their oral tales.",
             },
             {

@@ -2620,7 +2620,35 @@ SharkGame.HomeActions = {
         debugButton: {},
 
         // PROCESSING ////////////////////////////////////
-        seagrasstoScience: {},
+        seagrassToScience: {
+            name: "Study seagrass flowers",
+            effect: {
+                resource: {
+                    get science() {
+                        return SharkGame.Upgrades.purchased.includes("supernaturalSeagrass") ? 10 : 1;
+                    },
+                },
+            },
+            cost: [{ resource: "seagrass", costFunction: "constant", priceIncrease: 2 }],
+            max: "seagrass",
+            prereq: {
+                resource: {
+                    seagrass: 1,
+                },
+                upgrade: ["xenobiology"],
+            },
+            outcomes: [
+                "There's science inside these things, surely!",
+                "The cause of science is advanced!",
+                "This is perhaps maybe insightful!",
+                "Why are we even doing this? Who knows! Science!",
+                "Results still inconclusive! Unsurpsingly...",
+                "Quick question. What's a flower?",
+                "At least it's not gross.",
+                "We would learn a lot more from these if they weren't so absolutely tiny.",
+            ],
+            helpText: "Dissect seagrass flowers to further the cause of science. This is research, probably!",
+        }, // end of processing code
 
         // MAKE ADVANCED RESOURCES ///////////////////////
         transmuteSharkonium: {
@@ -3263,6 +3291,167 @@ SharkGame.HomeActions = {
             ],
             helpText: "Get a caracara interested in seagrass to walk along shores laden with it.",
         }, // end of job code
+
+        // SHARK MACHINES //////////////////////////
+        getCrystalMiner: {
+            name: "Build crystal miner",
+            effect: {
+                resource: {
+                    crystalMiner: 1,
+                },
+            },
+            cost: [
+                {
+                    resource: "crystal",
+                    costFunction: "linear",
+                    get priceIncrease() {
+                        return 100 - 50 * SharkGame.Aspects.amorphousAssembly.level;
+                    },
+                },
+                {
+                    resource: "sand",
+                    costFunction: "linear",
+                    get priceIncrease() {
+                        return 200 - 100 * SharkGame.Aspects.amorphousAssembly.level;
+                    },
+                },
+                { resource: "sharkonium", costFunction: "linear", priceIncrease: 25 },
+            ],
+            max: "crystalMiner",
+            prereq: {
+                resource: {
+                    sharkonium: 25,
+                },
+                upgrade: ["automation"],
+            },
+            outcomes: [
+                "Crystal miner activated.",
+                "Crystal miner constructed.",
+                "Mining machine online.",
+                "Construction complete.",
+                "Carve rock. Remove sand. Retrieve target.",
+            ],
+            multiOutcomes: [
+                "The machines rise.",
+                "The miners dig.",
+                "The crystal shall be harvested.",
+                "Crystal miners are complete.",
+            ],
+            helpText: "Construct a machine to automatically harvest crystals efficiently.",
+        }, // end of machine code
+        getSandDigger: {
+            name: "Build sand digger",
+            effect: {
+                resource: {
+                    sandDigger: 1,
+                },
+            },
+            cost: [
+                {
+                    resource: "sand",
+                    costFunction: "linear",
+                    get priceIncrease() {
+                        return 500 - 250 * SharkGame.Aspects.amorphousAssembly.level;
+                    },
+                },
+                { resource: "sharkonium", costFunction: "linear", priceIncrease: 150 },
+            ],
+            max: "sandDigger",
+            prereq: {
+                resource: {
+                    sharkonium: 150,
+                },
+                upgrade: ["automation"],
+            },
+            outcomes: [
+                "Sand digger constructed.",
+                "Sand digger reaches into the seabed.",
+                "The digger begins to shuffle sand into its machine maw. Rays dart away.",
+                "The machine is online.",
+                "The machine acts immediately, shovelling sand.",
+            ],
+            multiOutcomes: [
+                "The machines increase in number.",
+                "The diggers devour.",
+                "All sand must be gathered.",
+                "The rays are concerned.",
+                "Devour the sands. Consume.",
+                "Giant machines blot out our sun.",
+            ],
+            helpText: "Construct a machine to automatically dig up sand efficiently.",
+        }, // end of machine code
+        getFishMachine: {
+            name: "Build fish machine",
+            effect: {
+                resource: {
+                    fishMachine: 1,
+                },
+            },
+            cost: [{ resource: "sharkonium", costFunction: "linear", priceIncrease: 100 }],
+            max: "fishMachine",
+            prereq: {
+                resource: {
+                    sharkonium: 100,
+                },
+                upgrade: ["automation"],
+            },
+            outcomes: [
+                "Fish machine activated.",
+                "Fish machine constructed.",
+                "Fishing machine online.",
+                "Construction complete.",
+                "The quarry moves. But the machine is faster.",
+            ],
+            multiOutcomes: [
+                "One day there will be no fish left. Only the machines.",
+                "Today the shark is flesh. Tomorrow, machine.",
+                "Your metal servants can sate the hunger. The hunger for fish.",
+                "The fishing machines are more efficient than the sharks. But they aren't very smart.",
+                "Automated fishing.",
+                "The power of many, many sharks, in many, many devices.",
+            ],
+            helpText: "Construct a machine to automatically gather fish efficiently.",
+        }, // end of machine code
+        getAutoTransmuter: {
+            name: "Build auto-transmuter",
+            effect: {
+                resource: {
+                    autoTransmuter: 1,
+                },
+            },
+            cost: [
+                {
+                    resource: "crystal",
+                    costFunction: "linear",
+                    get priceIncrease() {
+                        return 100 - 50 * SharkGame.Aspects.amorphousAssembly.level;
+                    },
+                },
+                { resource: "sharkonium", costFunction: "linear", priceIncrease: 100 },
+            ],
+            max: "autoTransmuter",
+            prereq: {
+                resource: {
+                    sharkonium: 100,
+                },
+                upgrade: ["engineering"],
+            },
+            outcomes: [
+                "Auto-transmuter activated.",
+                "Auto-transmuter constructed.",
+                "Transmutation machine online.",
+                "Construction complete.",
+                "Provide inputs. Only the output matters.",
+            ],
+            multiOutcomes: [
+                "Auto-transmuters are prepared.",
+                "The difference between science and magic is reliable application.",
+                "All is change.",
+                "Change is all.",
+                "The machines know many secrets, yet cannot speak of them.",
+            ],
+            helpText: "Construct a machine to automatically and efficiently transmute sand and crystal to sharkonium.",
+        }, // end of machine code
 
         // MUDSKIPPER PUPPETS //////////////////////
         getCoralPicker: {

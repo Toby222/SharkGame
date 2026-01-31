@@ -868,9 +868,9 @@ SharkGame.ResourceTable = {
         },
     },
 
-    coralCollector: {
-        name: "coral collectors",
-        singleName: "coral collector",
+    coralPicker: {
+        name: "coral pickers",
+        singleName: "coral picker",
         desc: "Crablike puppets that saw at the coral with serrated claws.",
         color: "#99004D",
         income: {
@@ -1856,7 +1856,7 @@ SharkGame.InternalCategories = {
     },
     mudskipperpuppets: {
         name: "Mudskipper Puppets",
-        resources: ["hardbark", "coralCollector", "hardbarkSmith", "driftwoodSnarer", "shoreQueller", "safeholdSentinel", "barrageBraver", "gatemasterPuppet"],
+        resources: ["hardbark", "coralPicker", "hardbarkSmith", "driftwoodSnarer", "shoreQueller", "safeholdSentinel", "barrageBraver", "gatemasterPuppet"],
     },
     basicmaterials: {
         resources: ["fish", "sand", "crystal", "science", "junk"],

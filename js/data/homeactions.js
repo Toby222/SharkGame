@@ -2624,9 +2624,7 @@ SharkGame.HomeActions = {
             name: "Study seagrass flowers",
             effect: {
                 resource: {
-                    get science() {
-                        return SharkGame.Upgrades.purchased.includes("supernaturalSeagrass") ? 10 : 1;
-                    },
+                    science: 5,
                 },
             },
             cost: [{ resource: "seagrass", costFunction: "constant", priceIncrease: 2 }],

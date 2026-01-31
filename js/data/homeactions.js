@@ -3265,11 +3265,11 @@ SharkGame.HomeActions = {
         }, // end of job code
 
         // MUDSKIPPER PUPPETS //////////////////////
-        getCoralCollector: {
-            name: "Assemble coral collector",
+        getCoralPicker: {
+            name: "Assemble coral picker",
             effect: {
                 resource: {
-                    coralCollector: 1,
+                    coralPicker: 1,
                 },
             },
             cost: [
@@ -5728,7 +5728,7 @@ SharkGame.HomeActionCategories = {
             "getSeabedStripper",
             "getCalciniumConverter",
             "getClamScavenger",
-            "geCoralCollector",
+            "getCoralPicker",
             "getShoreQueller",
             "getDriftwoodSnarer",
             "getHardbarkSmith",

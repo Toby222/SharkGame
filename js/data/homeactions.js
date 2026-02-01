@@ -5073,7 +5073,7 @@ SharkGame.HomeActions = {
         },
 
         getShoveler: {
-            name: "Instruct shoveler ray",
+            name: "Instruct a shoveler ray",
             effect: {
                 resource: {
                     shoveler: 1,

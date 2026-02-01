@@ -2617,7 +2617,7 @@ SharkGame.HomeActions = {
 
         // FREEBIES //////////////////////////////////////
         catchFish: {},
-        debugButton: {},
+        debugbutton: {},
 
         // PROCESSING ////////////////////////////////////
         seagrassToScience: {

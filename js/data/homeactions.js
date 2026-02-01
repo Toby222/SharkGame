@@ -3643,7 +3643,7 @@ SharkGame.HomeActions = {
                     sharkonium: 25,
                     crystal: 5,
                 },
-                upgrade: ["gatemasterScavenging"],
+                upgrade: ["gateDiscovery"],
             },
             outcomes: [
                 "//*to be written in future*//",

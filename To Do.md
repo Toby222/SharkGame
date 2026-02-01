@@ -150,7 +150,7 @@ Coral Cloning        discover coral farming,
 Secret Smelting        unlock porite,
 Antipest Patrols        take care of coral pests,
 Medically Assisted Reproduction        increase survival rate of children,
-Glass Tempering        improve the durability of porite tools,
+~~Glass Tempering        improve the durability of porite tools,~~
 Super Smelting        smelt porite directly at the vents,
 ~~First Draft        draft a letter to try to get the shrimp king not to kill us,~~
 ~~Super Shovels        big shovel,~~

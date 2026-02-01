@@ -552,6 +552,11 @@ SharkGame.HomeMessages = {
                 message: "The mudskippers flail in their newly-dug burrows. They say their dance is traditional, as are their oral tales.",
             },
             {
+                name: "shore-stability-found",
+                unlock: { upgrade: ["agriculture"] },
+                message: "The stabilizers work diligently, eager to support a loose-laid world. Perhaps there is hope.",
+            },
+            {
                 name: "shore-hardbark-coated",
                 unlock: { upgrade: ["hardbarkCoating"] },
                 message: "The wood of the simple (yet strong) hardbark looks a dark blue under the crystal. It's a wonder how it ended up with weird brown fish.",
@@ -559,7 +564,12 @@ SharkGame.HomeMessages = {
             {
                 name: "shore-puppets-piloted",
                 unlock: { upgrade: ["puppetAssembly"] },
-                message: "The frenzy move the puppets from within. It is nothing like our shark machines.",
+                message: "The frenzy move the puppets from within. It is nothing like our shark machines. It is lifelike. Glitchless. But primitive.",
+            },
+            {
+                name: "shore-puppets-taught",
+                unlock: { upgrade: ["puppetTeaching"] },
+                message: "So many tricks. So many techniques. The puppets have become versatile tools fast.",
             },
         ],
         /* stone: [

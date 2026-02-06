@@ -1742,7 +1742,7 @@ SharkGame.ResourceCategories = {
             // "coalescer",
             // "crusher",
             // "pulverizer",
-            "coralCollector",
+            "coralPicker",
             "hardbarkSmith",
             "shoreQueller",
             "driftwoodSnarer",

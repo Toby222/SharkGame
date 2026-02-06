@@ -196,6 +196,9 @@ SharkGame.FunFacts = {
             "Some species of muskipper eat debris, making them detritivores, while other species are carnivores.",
             "After a mudskipper lays their eggs, the mother normally leaves them to be guarded by the father.",
             "Much like amphibians, mudskippers can breathe through their skin when wet.",
+            "Mudskipper eyes can move independently from each other, giving them an incredibly wide field of vision.",
+            "When a mudskipper seems to blink, they're actually retracting them into a fluid-filled dermal cup to keep them moist.",
+            "Mudskippers flail - or 'skip' - to attract mates or to show dominance.",
         ],
         caracara: [
             "Yes, I know they're birds. It was suggested that they could be replaced with starfish, but people didn't like that.",

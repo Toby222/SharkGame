@@ -9,11 +9,11 @@ SharkGame.Puns = {
     },
 
     getPun() {
-        const pool = this.getPool();
+        const pool = this.getPunPool();
         return SharkGame.choose(pool);
     },
 
-    getPool() {
+    getPunPool() {
         const pool = [];
         const currentWorld = world.worldType;
         if (
@@ -27,8 +27,7 @@ SharkGame.Puns = {
 
         let anyAvailableResource = false;
         $.each(this.resourceBased, (resource, puns) => {
-            // purposefully dilute some puns if we are not on the starter world
-            // I want these facts to be more likely relevant than not
+            // purposefully dilute some puns if we are not on the starter world just like with the facts
             if (world.doesResourceExist(resource) && res.getTotalResource(resource)) {
                 anyAvailableResource = true;
                 if (!this.dilutedResources.includes(resource) || currentWorld === "start" || Math.random() < 0.25) {
@@ -51,11 +50,11 @@ SharkGame.Puns = {
         });
 
         if (anyAvailableResource) {
-            // only 10% chance to include the 'default' facts
-            // this is because those facts are seen all over the place
-            // they would end up diluting the world-specific and resource-specific facts
+            // only 10% chance to include the 'default' puns
+            // this is because those puns are seen all over the place
+            // they would end up diluting the world-specific and resource-specific puns
             //
-            // also acts as a failsafe in case there are no other facts to display
+            // also acts as a failsafe in case there are no other puns to display
             if (Math.random() < 0.1 || pool.length === 0) {
                 _.each(this.default, (pun) => {
                     pool.push(sharktext.boldString("Pun: ") + `<i>${pun}</i>`);
@@ -100,7 +99,7 @@ SharkGame.Puns = {
 
     resourceBased: {
         fish: [
-            "What did the fish detective say on the scene of crime? 'Somethinh smells fishy!",
+            "What did the fish detective say on the scene of crime? 'Something smells fishy!",
             "After one of your sharks ate a clownfish, do you know what he said?<br>'This tastes like it’s depressed and tired of constantly being seen as a joke!'",
         ],
         crystal: [
@@ -183,6 +182,6 @@ SharkGame.Puns = {
     },
 
     default: [
-        "Placeholder :D",
+        "This puns system was based off of the facts system.<br>That's it. There's no punchline to this.",
     ],
 };

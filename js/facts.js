@@ -94,7 +94,9 @@ SharkGame.FunFacts = {
             messages: ["'Tempestuous' does not mean stormy. It means emotionally turbulent. But it's close enough."],
         },
         shore: {
-            messages: [],
+            messages: [
+                "Do you like the sandy-beige backgrounds? In case you didn't know, it was originally <i>very</i> yellow.<br>From lightest to darkest, its hex codes were ffdf80, ffd24d, #ffbf00, cc9900, and 997300.",
+            ],
         },
     },
 
@@ -198,7 +200,11 @@ SharkGame.FunFacts = {
         caracara: [
             "Yes, I know they're birds. It was suggested that they could be replaced with starfish, but people didn't like that.",
             "There are multiple species of caracara in real life, but the only one here is the striated caracara, because it's the smartest.",
-            "It is is pronounced <i>KA-ruh-KAH-ruh</i>, not <i>KA-ruh-KA-ruh</i>.",
+            "It's pronounced <i>KA-ruh-KAH-ruh</i>, not <i>KA-ruh-KA-ruh</i>.",
+            "Striated caracaras are oppurtunistic feeders, which means they eat a lot - small/baby seabirds, entrails, eggs, and human trash.",
+            "Striated caracaras have been known to turn over rocks to look for food underneath them, which is very intelligent for a bird.",
+            "The striated caracara can fly up to 60 km per hour - in excess.",
+            "Caracaras are a subspecies of falcon, although they don't look much like it.",
         ],
         seaApple: [
             "Sea apples are a type of sea cucumber. They feed on debris and detritus.",

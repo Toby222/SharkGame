@@ -123,7 +123,7 @@ Sense of Direction        actually navigate the storm properly,
 ~~Crystal Clippers        tool for stormgoers,~~
 Routing        use charts we have to make efficient routes,
 Heat Harnesses        move heat using special crystal harnesses,
-Superclippers        BIG CLIPPER,
+~~Superclippers        BIG CLIPPER,~~
 Universal Navigation        use charts we have for even more efficient routing,
 Cartographic Completeness        make a map,
 The Expedition        plan an expedition to the weather machine,

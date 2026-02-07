@@ -86,10 +86,10 @@ Internal Inquiry        explain to the squid why we went behind their backs,
 Creature Coalition        we have to work together to make progress...,
 ~~Rapid Recharging        reverse-engineer an old battery to make a new one!~~
 
-### HAVEN
+### ~~HAVEN~~
 ~~Dolphin Technology        learn to build dolphin tech,~~
 ~~Retroactive Recordkeeping        organize the papyrus, unlock historians,~~ (courtesy of Glowkate)
-The Whale Song        piece together the whale's portion of the song,
+~~The Whale Song        piece together the whale's portion of the song,~~
 ~~Imperial Designs        employ the original designs for dolphin machines,~~
 ~~Ancient Agriculture        use our records to understand how the dolphins used to farm,~~
 ~~Crystalline Construction        learn even more about the dolphin machines or whatever~~

@@ -910,6 +910,13 @@ SharkGame.ResourceTable = {
         },
     },
 
+    /* younglingSlayer: {
+        name: "youngling slayers",
+        singleName: "youngling slayer",
+        desc: "OH MY GOODNESS OH THE HORROR SOMEONE HELP US- <i>OH NO-</i>",
+        color: "#DC143C",
+    }, */
+
     safeholdSentinel: {
         name: "Safehold Sentinel", // it's special. that's why it has caps. --ThreeEels
         singleName: "Safehold Sentinel",
@@ -1463,6 +1470,21 @@ SharkGame.GeneratorIncomeAffectorsOriginal = {
             retrievalDuo: 1.75,
         },
     },
+    /* younglingSlayer: {
+        multiply: {
+            nurse: -0.5,
+            maker: -0.5,
+            brood: -0.5,
+            queen: -0.5,
+            berrier: -0.5,
+            biologist: -0.5,
+            pit: -0.5,
+            collective: -0.5,
+            spawner: -0.5,
+            billfishPair: -0.5,
+            burrow: -0.5,
+        },
+    }, */
     // cool tooltip test crab
     /*     crab: {
         exponentiate: {
@@ -1746,6 +1768,7 @@ SharkGame.ResourceCategories = {
             "hardbarkSmith",
             "shoreQueller",
             "driftwoodSnarer",
+            // "younglingSlayer",
             "safeholdSentinel",
             "barrageBraver",
             "gatemasterPuppet",
@@ -1856,7 +1879,7 @@ SharkGame.InternalCategories = {
     },
     mudskipperpuppets: {
         name: "Mudskipper Puppets",
-        resources: ["hardbark", "coralPicker", "hardbarkSmith", "driftwoodSnarer", "shoreQueller", "safeholdSentinel", "barrageBraver", "gatemasterPuppet"],
+        resources: ["hardbark", "coralPicker", "hardbarkSmith", "driftwoodSnarer", "shoreQueller", /* "younglingSlayer", */ "safeholdSentinel", "barrageBraver", "gatemasterPuppet"],
     },
     basicmaterials: {
         resources: ["fish", "sand", "crystal", "science", "junk"],

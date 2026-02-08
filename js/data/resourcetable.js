@@ -805,7 +805,7 @@ SharkGame.ResourceTable = {
         name: "mudskipper burrows",
         singleName: "mudskipper burrow",
         color: "#B38300",
-        desc: "A tiny hole for tiny allies to flail around in.",
+        desc: "A tiny hole for tiny allies.",
         income: {
             mudskipper: 0.05,
         },
@@ -835,14 +835,14 @@ SharkGame.ResourceTable = {
     mentor: {
         name: "puppet mentors",
         singleName: "puppet mentor",
-        desc: "Learned mudskippers, teaching the puppets known techniques.",
+        desc: "Those who make adequates better.",
         color: "#CC6600",
     },
 
     caracara: {
         name: "caracaras",
         singleName: "caracara",
-        desc: "Prideful denizens of the beyond, harnessing sky like water.",
+        desc: "Prideful denizens of the beyond.",
         color: "#604020",
         income: {
             crystal: 1,
@@ -853,14 +853,14 @@ SharkGame.ResourceTable = {
     retrievalDuo: {
         name: "retrieval duos",
         singleName: "retrieval duo",
-        desc: "A huffy pair of searchers, venturing further than ever before.",
+        desc: "A use and a boost.",
         color: "#cc9966",
     },
 
     connoisseur: {
         name: "caracara connoisseurs",
         singleName: "caracara connoisseur",
-        desc: "Uppity collectors of washed-up seagrass and coral.",
+        desc: "Uppity collectors of coral and grass.",
         color: "#669900",
         income: {
             seagrass: 0.5,
@@ -871,7 +871,7 @@ SharkGame.ResourceTable = {
     coralPicker: {
         name: "coral pickers",
         singleName: "coral picker",
-        desc: "Crablike puppets that saw at the coral with serrated claws.",
+        desc: "Crablike puppets sawing coral.",
         color: "#99004D",
         income: {
             coral: 3,
@@ -881,7 +881,7 @@ SharkGame.ResourceTable = {
     driftwoodSnarer: {
         name: "driftwood snarers",
         singleName: "driftwood snarer",
-        desc: "Drifting, raylike puppets collecting driftwood in their seagrass nets.",
+        desc: "Raylike puppets gathering wood.",
         color: "#333300",
         income: {
             driftwood: 2,
@@ -891,7 +891,7 @@ SharkGame.ResourceTable = {
     hardbarkSmith: {
         name: "hardbark smiths",
         singleName: "hardbark smith",
-        desc: "Clawed, orblike puppets that dip wood in molten crystal.",
+        desc: "Orblike puppets of a simple craft.",
         color: "#00004D",
         income: {
             hardbark: 2,
@@ -902,7 +902,7 @@ SharkGame.ResourceTable = {
     shoreQueller: {
         name: "shore quellers",
         singleName: "shore queller",
-        desc: "Wormlike puppets marking shore borders with seagrass - and crystallisng the rest.",
+        desc: "Flowing puppets bringing stability and heat.",
         color: "#CCCC00",
         income: {
             seagrass: 3,

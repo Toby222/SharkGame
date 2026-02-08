@@ -4528,7 +4528,7 @@ SharkGame.Upgrades = {
         },
     },
     shore: {
-        template: {
+        /* template: {
             name: "Upgrade Template",
             desc: "This is the text in the lab button thingy...",
             researchedMessage: "...and this is the one that appears in the log!",
@@ -4536,7 +4536,7 @@ SharkGame.Upgrades = {
             cost: { },
             required: { },
             effect: { },
-        },
+        }, */
         murkAssessment: {
             name: "Murk Assessment",
             desc: "What is that sandy cloud? What does it do? We should go inside it.",
@@ -4548,6 +4548,7 @@ SharkGame.Upgrades = {
                 crab: 5,
             },
             required: {
+                upgrades: [],
                 seen: ["sand", "roughSand"],
             },
             effect: {
@@ -4652,9 +4653,7 @@ SharkGame.Upgrades = {
                 fish: 100,
                 crystal: 5,
             },
-            required: {
-                upgrades: ["justPushFurtherLol"],
-            },
+            required: {},
             effect: {
                 incomeMultiplier: {
                     shark: 2,
@@ -4671,9 +4670,7 @@ SharkGame.Upgrades = {
                 sand: 500,
                 crystal: 5,
             },
-            required: {
-                upgrades: ["justPushFurtherLol"],
-            },
+            required: {},
             effect: {
                 incomeMultiplier: {
                     ray: 2,
@@ -4690,9 +4687,7 @@ SharkGame.Upgrades = {
                 science: 50,
                 crystal: 10,
             },
-            required: {
-                upgrades: ["justPushFurtherLol"],
-            },
+            required: {},
             effect: {
                 incomeMultiplier: {
                     crab: 2,
@@ -4708,9 +4703,7 @@ SharkGame.Upgrades = {
                 science: 100,
                 crystal: 50,
             },
-            required: {
-                upgrades: ["justPushFurtherLol"],
-            },
+            required: {},
             effect: {
                 incomeMultiplier: {
                     scientist: 2,

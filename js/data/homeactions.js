@@ -3098,7 +3098,8 @@ SharkGame.HomeActions = {
                 "A caracara awaits your command. Haughtily.",
                 "The caracara flies off with a task.",
                 "It gives you a strange look before it leaves.",
-                "The caracara accidentally sheds a feather as it lifts off.",
+                "The caracara sheds a feather as it lifts off.",
+                "The caracara takes off, having agreed to work with you.",
             ],
             multiOutcomes: [
                 "They await you in flocks.",
@@ -3106,6 +3107,7 @@ SharkGame.HomeActions = {
                 "They cast a shadow upon all as they fly.",
                 "Their presence commands respect from all but us.",
                 "You know what, they're kinda like sharks when you think about it.",
+                "The air is their water. Or is the water their air?",
             ],
             helpText: "Convince a caracara from the surface to retrieve crystals.",
         }, // end of creature code
@@ -3133,10 +3135,14 @@ SharkGame.HomeActions = {
                 upgrade: ["agriculture"],
             },
             outcomes: [
-                "/*to be written in future*/",
+                "Stabilizer provided!",
+                "Provided stabilizer!",
+                "A stabilizer at work, saving the seabed!",
             ],
             multiOutcomes: [
-                "/*to be written in future*/",
+                "Consider your seabeds stabilized!",
+                "No more rough sand with these guys around!",
+                "Area One's status: on the job!",
             ],
             helpText: "Provide a crab with coral and seagrass to plant.",
         },
@@ -3186,7 +3192,7 @@ SharkGame.HomeActions = {
                 },
             },
             cost: [
-                { resource: "mudskipper", costFunction: "constant", priceIncrease: 3 },
+                { resource: "mudskipper", costFunction: "constant", priceIncrease: 1 },
                 { resource: "fish", costFunction: "linear", priceIncrease: 15 },
                 { resource: "sand", costFunction: "linear", priceIncrease: 12 },
             ],
@@ -3198,10 +3204,18 @@ SharkGame.HomeActions = {
                 upgrade: ["mudskipperBurrowing"],
             },
             outcomes: [
-                "//*to be written in future*//",
+                "We never actually do this. The crabs dig it for us.",
+                "These burrows are L or J shaped - Loser or Joke!",
+                "That one flailed really high. Will it come back...?",
+                "Ha! That one failed to get a- never mind. That's a success."
+                "Up it goes. Frontflip. Down again."
             ],
             multiOutcomes: [
-                "//*to be written in future*//",
+                "Get your fish, fellas, we're in for a good show tonight!",
+                "I put all my fish on that one winning first!",
+                "What do you <i>mean</i> you could do that? You have the flailing skills of a rock.",
+                "Wow, they're really hitting some moves.",
+                "Oooh, that one lost. That can't feel good.",
             ],
             helpText: "Allow a mudskipper to dig a burrow to do some weird flailing or something.",
         }, // end of job code
@@ -3225,10 +3239,12 @@ SharkGame.HomeActions = {
                 upgrade: ["puppetTeaching"],
             },
             outcomes: [
-                "//*to be written in future*//",
+                "The claw stick's connected to the - pincer stick!",
+                "And that is how you perform a full 360 in a Shore Queller.",
             ],
             multiOutcomes: [
-                "//*to be written in future*//",
+                "Brandon! Do NOT amputate your fellow shark- PATRICIA!!! DO NOT LASER THE CRABS-",
+                "Pop quiz! Name the four puppet models and their respective fields.",
             ],
             helpText: "Teach a mudskipper techniques on puppetwork, so that it may pass on its knowledge.",
         }, // end of job code
@@ -3255,10 +3271,14 @@ SharkGame.HomeActions = {
                 upgrade: ["beyondwalkerPairing"],
             },
             outcomes: [
-                "//*to be written in future*//",
+                "Wow. They're... pretty friendly with each other...",
+                "This one lets the fish rest on her head. How does it not fall off?",
+                "Oops, that one nearly dropped its mudskipper."
             ],
             multiOutcomes: [
-                "//*to be written in future*//",
+                "a",
+                "a",
+                "a",
             ],
             helpText: "Leave an armoured mudskipper on a platform for a caracara to take and search for driftwood.",
         }, // end of job code

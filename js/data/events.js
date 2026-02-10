@@ -542,6 +542,43 @@ SharkGame.Events = {
             res.buildIncomeNetwork();
         },
     },
+    tempestuousHandleStorm: {
+        handlingTime: "beforeTick",
+        priority: 0,
+        getAction() {
+            if (SharkGame.World.worldType !== "shore") {
+                return "remove";
+            }
+            return "trigger";
+        },
+        trigger() {
+            if (!SharkGame.flags.sandstorm) {
+                SharkGame.flags.sandstorm = {
+                    roughSand: 0.03,
+                };
+            }
+
+            const sandstorm = SharkGame.ResourceMap.get("world");
+            const predictedTimeUntilNextTick = res.getGameSpeedModifier();
+            if (!sandstorm.baseIncome) {
+                sandstorm.baseIncome = {};
+                sandstorm.income = {};
+            }
+            $.each(SharkGame.flags.sandstorm, (resourceName, removalRatio) => {
+                if (world.doesResourceExist(resourceName)) {
+                    sandstorm.baseIncome[resourceName] =
+                        (predictedTimeUntilNextTick * res.getResource(resourceName) * removalRatio) / (1 - predictedTimeUntilNextTick * removalRatio);
+                }
+                res.reapplyModifiers("world", resourceName);
+            });
+            $.each(SharkGame.flags.sandstorm, (name, ratio) => {
+                if (ratio === 0) {
+                    delete SharkGame.flags.sandstorm[name];
+                }
+            });
+            return true;
+        },
+    },
     shoreGiveCoral: {
         handlingTime: "beforeTick",
         priority: 0,

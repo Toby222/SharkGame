@@ -542,7 +542,7 @@ SharkGame.Events = {
             res.buildIncomeNetwork();
         },
     },
-    tempestuousHandleStorm: {
+    shoreHandleSandstorm: {
         handlingTime: "beforeTick",
         priority: 0,
         getAction() {

@@ -3207,8 +3207,8 @@ SharkGame.HomeActions = {
                 "We never actually do this. The crabs dig it for us.",
                 "These burrows are L or J shaped - Loser or Joke!",
                 "That one flailed really high. Will it come back...?",
-                "Ha! That one failed to get a- never mind. That's a success."
-                "Up it goes. Frontflip. Down again."
+                "Ha! That one failed to get a- never mind. That's a success.",
+                "Up it goes. Frontflip. Down again.",
             ],
             multiOutcomes: [
                 "Get your fish, fellas, we're in for a good show tonight!",

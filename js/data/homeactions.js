@@ -3273,7 +3273,7 @@ SharkGame.HomeActions = {
             outcomes: [
                 "Wow. They're... pretty friendly with each other...",
                 "This one lets the fish rest on her head. How does it not fall off?",
-                "Oops, that one nearly dropped its mudskipper."
+                "Oops, that one nearly dropped its mudskipper.",
             ],
             multiOutcomes: [
                 "a",

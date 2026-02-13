@@ -542,6 +542,11 @@ SharkGame.HomeMessages = {
                 message: "You notice some long, branching brown things bobbing on the surface. Some sharks say it's flaky.",
             },
             {
+                name: "shore-mudskippers-spotted",
+                unlock: { totalResource: { driftwood: 2 } },
+                message: "The frenzy is talking about some unusual prey - fish that escape and survive beyond the water, they say...",
+            },
+            {
                 name: "shore-add-mudskipper",
                 unlock: { upgrade: ["mudskipperContact"] },
                 message: "These tiny fish aren't very remarkable - but what they (skittishly) bring back is another matter.",

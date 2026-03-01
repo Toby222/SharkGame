@@ -29,7 +29,7 @@
 "Stories"        "The billfish tell stories of life before the storm and an ancient visitor who brought them prosperity. They ask if you can bring them prosperity, too.",
 "Expeditions"        "The billfish line up in droves to volunteer for expeditions, danger or otherwise. They don't need convincing, just equipment.",
 ~~"Map"        "A grand map lays stretched out against the cavern wall. In the top right corner is a strange shape with a door.",~~
-"Machine"        "The hallways of the facility echo with sounds of turning cogs. Billfish swim rapidly up and down the halls.",
+~~"Machine"        "The hallways of the facility echo with sounds of turning cogs. Billfish swim rapidly up and down the halls.",~~
 "Generator"        "The generator is completely disabled, yet the facility is still running. The wind howls outside as mechanics tinker excitedly with our machines.",
 "Legends"        "As the storm draws its final breath, you overhear two billfish talking. One asks the other why the visitor never returned."
 

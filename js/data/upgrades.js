@@ -4548,7 +4548,7 @@ SharkGame.Upgrades = {
                 crab: 5,
             },
             required: {
-                upgrades: [],
+                upgrades: ["crystalContainer"],
                 seen: ["sand", "roughSand"],
             },
             effect: {
@@ -4603,7 +4603,7 @@ SharkGame.Upgrades = {
                 crab: 5,
             },
             required: {
-                upgrades: ["crystalContainer", "seabedGeology"],
+                upgrades: ["crystalContainer", "seabedGeology", "justPushFurtherLol"],
                 seen: ["crab", "crystal"],
             },
             effect: {
@@ -4730,10 +4730,10 @@ SharkGame.Upgrades = {
         }, // gosh that's a lot of crystals eh --ThreeEels
         statsDiscovery: {
             name: "Storage Caverns",
-            desc: "It's about time to start moving the stores we have to a better place. We've found one but it needs setting up.",
+            desc: "It's about time we move our stores to a better place. We've found one, but it needs setting up.",
             researchedMessage:
-                "All the goods we've acquired are now being stored and itemised in a mostly flooded cavern system. We're organized! Sort of!",
-            effectDesc: "By storing things in a centralised location, we now finally have an idea of what we're doing...sort of.",
+                "All our goods are now being stored and itemised in a mostly flooded cavern system. We're organized! Sort of!",
+            effectDesc: "By storing things in a centralised location, we now finally have an idea of what we're doing... sort of.",
             cost: {
                 science: 150,
             },
@@ -4794,7 +4794,7 @@ SharkGame.Upgrades = {
             name: "Laser Rays",
             desc: "Using arcane shark mystery science, capture the heat of the vents for use by rays.",
             researchedMessage: "The rays can now be granted gear that will let them fuse sand into crystal! Future!",
-            effectDesc: "Laser rays can now be geared up to burn the very sand to glassy crystal.",
+            effectDesc: "Laser rays can now be geared up to burn the very sand to glassy crystal!",
             cost: {
                 science: 100,
                 sand: 5000,
@@ -4856,7 +4856,7 @@ SharkGame.Upgrades = {
             name: "Recycler",
             desc: "Check out the huge structure that consumed some of our fish and spat out some goo.",
             researchedMessage:
-                "Well this thing is frankly terrifying. I wouldn't swim anywhere near the input holes if I were you. Maybe it'll help though!",
+                "Well, this thing is frankly terrifying. I wouldn't swim anywhere near the input holes if I were you. Maybe it'll help though!",
             effectDesc: "The machine allows recycling of materials by virtue of a horrifying mechanical maw that consumes all that ventures near it. Future?",
             cost: {
                 science: 75000,
@@ -4884,8 +4884,6 @@ SharkGame.Upgrades = {
                     fishMachine: 2,
                     sandDigger: 2,
                     autoTransmuter: 2,
-                    skimmer: 2,
-                    heater: 2,
                     scientist: 4,
                 },
             },
@@ -4945,9 +4943,9 @@ SharkGame.Upgrades = {
             name: "Crab Biology",
             desc: "Crabs are a mystery. They keep to themselves and dig up crystals or tear up grass. What is even up with that? What ARE crabs??",
             researchedMessage:
-                "It turns out crabs are friendly crustaceans that have revealed to the sharks the secrets of crab generation. It involves eggs, or something. Squirmy eggs.",
+                "Turns out crabs are friendly crustaceans that have revealed to the sharks the secrets of crab generation. It involves eggs, or something. Squirmy eggs.",
             effectDesc:
-                "Crabs and stabilizer crabs are four and two times as effective, respectively, and crab broods are available. Crabs are alright but they are also sort of terrifying and weird. Good thing they're on our side!",
+                "Crabs and stabilizer crabs are four and two times as effective, respectively, and crab broods are available. Crabs are alright but they're also kinda terrifying and weird. Good thing they're on our side!",
             cost: {
                 science: 3500,
                 seagrass: 1750,
@@ -5015,7 +5013,7 @@ SharkGame.Upgrades = {
             name: "Mudskipper Burrowing",
             desc: "The mudskippers want to tell us something. We will, of course, heed.",
             researchedMessage: "Mudskipper burrows are now a thing. They do a lot of flailing in it. But they're happier now.",
-            effectDesc: "Mudskipper burrows can be dug. Now happier, mudskippers work two times faster.",
+            effectDesc: "Mudskipper burrows can be dug. Now happier, mudskippers work twice as faster.",
             cost: { fish: 5 },
             required: {
                 upgrades: ["mudskipperContact", "seabedGeology"],
@@ -5028,7 +5026,7 @@ SharkGame.Upgrades = {
         },
         hardbarkCoating: {
             name: "Hardbark Coating",
-            desc: "Apparently, our sharkonium may have been mentioned in mudskipper tale.",
+            desc: "The mudskippers say our sharkonium vaguely resembles something from their oral tales.",
             researchedMessage: "Hardbark can now be made... it has a use, but the 'models' aren't 'ready'.",
             effectDesc: "Hardbark coating is now possible. Their use... not yet.",
             cost: {
@@ -5043,7 +5041,7 @@ SharkGame.Upgrades = {
         puppetAssembly: {
             name: "Puppet Assembly",
             desc: "The mudskippers say they've refined their models.",
-            researchedMessage: "Mudskipper puppets can be piloted! They insist on calling them 'puppets', though...",
+            researchedMessage: "Mudskipper machines can be piloted! They insist on calling them 'puppets', though...",
             effectDesc: "Mudskipper puppets can be constructed and piloted.",
             cost: {
                 science: 1500,
@@ -5099,8 +5097,8 @@ SharkGame.Upgrades = {
         exploration: {
             name: "Tunnel Expedition",
             desc: "Some of the frenzy has noticed something strange in the eastern regions.",
-            researchedMessage: "It's a tunnel in the sand wall. And it led to a massive latch at the end of it.",
-            effectDesc: "We have found a place where we can finally not get bombarded with rough sand. But what's beyond it?",
+            researchedMessage: "It's a tunnel system in the sand wall. And its end bore a massive latch.",
+            effectDesc: "We've found a place where we can finally not get bombarded with rough sand. But what's beyond it?",
             cost: { fish: 5 },
             required: { upgrades: ["puppetTeaching"] },
             effect: { },
@@ -5109,23 +5107,42 @@ SharkGame.Upgrades = {
             name: "Sentinel Repairing",
             desc: "So, the thing above the latch. You know how its parts are scattered across the tunnel...?",
             researchedMessage: "We managed to repair the sentinel. As soon as it started, it opened the latch for us.",
-            effectDesc: "The latch is open. We surged forth into the safehold.",
+            effectDesc: "The latch is open. We surged forth into the safehold, but a storm of claws came raining down, and...",
             cost: { fish: 5 },
             required: { upgrades: ["exploration"] },
             effect: { },
         }, // prev name: thingyRepairing
         raiderTruce: {
             name: "Raider Truce",
-            desc: "Someone keeps raiding us!!!",
+            desc: "A mystery troupe of beyond bandits raided us from above!!!",
             researchedMessage: "We held up some fish as an offering. They were snatched from us, and... they came.",
             effectDesc: "The mudskippers (and crabs) told us the 'raiders' are named caracaras, and are apparently very prideful.",
             cost: { fish: 5 },
             required: { upgrades: ["farExploration"] },
             effect: { },
         },
+        discoveryRelay: {
+            name: "Discovery Relay",
+            desc: "We should get back to the frontline about our new science.",
+            researchedMessage: "Apparently they've done a lot as well back outside the safehold. Leaps in agriculture!",
+            effectDesc: "With our exchanged advances in research, scientists and stabilizers work 5 times as fast.",
+            cost: {
+                fish: 5,
+                science: 15,
+                seagrass: 15,
+                crystal: 10,
+            },
+            required: { upgrades: ["raiderTruce"] },
+            effect: {
+                incomeBoost: {
+                    scientist: 5,
+                    stabilizer: 5,
+                },
+            },
+        },
         crystalTalons: {
             name: "Crystal Talons",
-            desc: "The caracaras say that our 'seaborn' crystals are very good at breaking abovewater crystals.",
+            desc: "The caracaras say that our 'seaborn' crystals are very good at breaking beyond crystals.",
             researchedMessage: "With their crystal talons, caracaras work way more efficiently now.",
             effectDesc: "Their faces seemed expressionless. But their eyes were the same the sharks' with their bite-gear.",
             cost: { fish: 5 },
@@ -5136,13 +5153,27 @@ SharkGame.Upgrades = {
                 },
             },
         },
+        biologyTrade: {
+            name: "Biology Trade",
+            desc: "Now they want sharks as... specimens. They did agree to give dead caracaras in exchange, though.",
+            researchedMessage: "It was... gruesome. They really got into it. But at least we understand each other...?",
+            effectDesc: "With our new 'inside knowledge' of caracaras and sharks, we work together fives times as fast.",
+            cost: { fish: 5 },
+            required: { upgrades: ["crystalTalons"] },
+            effect: {
+                incomeBoost: {
+                    caracara: 5,
+                    shark: 5,
+                },
+            },
+        },
         beyondwalkerPairing: {
             name: "Beyondwalker Pairing",
             desc: "This is the text in the lab button thingy...",
             researchedMessage: "...and this is the text that goes next to the buttons!",
             effectDesc: "This one, however, appears in the log.",
             cost: { fish: 5 },
-            required: { upgrades: ["crystalTalons"] },
+            required: { upgrades: ["biologyTrade"] },
             effect: { },
         },
         platformExpansion: {

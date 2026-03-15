@@ -902,7 +902,7 @@ SharkGame.ResourceTable = {
     shoreQueller: {
         name: "shore quellers",
         singleName: "shore queller",
-        desc: "Flowing puppets bringing stability and heat.",
+        desc: "Flowing puppets bringing heated stability.",
         color: "#CCCC00",
         income: {
             seagrass: 3,
@@ -1446,7 +1446,7 @@ SharkGame.GeneratorIncomeAffectorsOriginal = {
     },
     mentor: {
         multiply: {
-            coralCollector: 0.05,
+            coralPicker: 0.05,
             hardbarkSmith: 0.05,
             driftwoodSnarer: 0.05,
             shoreQueller: 0.05,
@@ -1454,7 +1454,7 @@ SharkGame.GeneratorIncomeAffectorsOriginal = {
     },
     gatemasterPuppet: {
         multiply: {
-            coralCollector: 15,
+            coralPicker: 15,
             hardbarkSmith: 15,
             driftwoodSnarer: 15,
             shoreQueller: 15,

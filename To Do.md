@@ -154,7 +154,7 @@ Medically Assisted Reproduction        increase survival rate of children,
 Super Smelting        smelt porite directly at the vents,
 ~~First Draft        draft a letter to try to get the shrimp king not to kill us,~~
 ~~Super Shovels        big shovel,~~
-Mass Production        mass produce porite parts to cheapen their creation,
+~~Mass Production        mass produce porite parts to cheapen their creation,~~
 Second Draft        draft another letter,
 Algae Acolytes        cult of algae,
 Central Collection        cut out the middleman in sponge collection,

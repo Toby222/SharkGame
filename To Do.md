@@ -125,7 +125,7 @@ Routing        use charts we have to make efficient routes,
 Heat Harnesses        move heat using special crystal harnesses,
 ~~Superclippers        BIG CLIPPER,~~
 Universal Navigation        use charts we have for even more efficient routing,
-Cartographic Completeness        make a map,
+~~Cartographic Completeness        make a map,~~
 The Expedition        plan an expedition to the weather machine,
 Supernatural Seagrass        mysterious grass gives big science from seagrass buff,
 Secret Studies        study documents in the weather machine,

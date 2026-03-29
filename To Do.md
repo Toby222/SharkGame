@@ -161,6 +161,6 @@ Central Collection        cut out the middleman in sponge collection,
 ~~Land Reform        use less sand while designating farms due to better land management,~~
 Rumored Recollections        investigate rumors about the king,
 Sand Reform        organize sand collection patrols,
-Crab Reform        reform the crabs! i guess?,
+~~Crab Reform        reform the crabs! i guess?,~~
 ~~Final Draft        go see the king personally,~~
 ~~Apologetic Amnesty        repay the king for damages~~

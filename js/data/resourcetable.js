@@ -397,7 +397,7 @@ SharkGame.ResourceTable = {
     fishMachine: {
         name: "fish machines",
         singleName: "fish machine",
-        desc: "Indiscriminate hunter.",
+        desc: "Indiscriminate hunters.",
         color: "#C9C7A7",
         income: {
             fish: 400,
@@ -858,7 +858,7 @@ SharkGame.ResourceTable = {
     investigator: {
         name: "octopus investigators",
         singleName: "octopus investigator",
-        desc: "Curiousity is the seed of progress.",
+        desc: "Curiosity is the seed of progress.",
         color: "#4c5cad",
         income: {
             science: 2,

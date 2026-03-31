@@ -2039,4 +2039,4 @@ SharkGame.Sprites = {
             h: 50,
         },
     },
-}
+};

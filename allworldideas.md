@@ -1,4 +1,4 @@
-# A LIST OF EVERY NEW OCEAN PROPOSED BY VARIOUS PEOPLE
+# A LIST OF EVERY OCEAN IDEA PROPOSED BY VARIOUS PEOPLE
 **SOURCES:** Cirrial's Untitled Shark Server (Discord), my brain (for my ideas)
 
 blah blah blah body text here

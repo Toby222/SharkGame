@@ -4539,8 +4539,8 @@ SharkGame.Upgrades = {
         }, */
         murkAssessment: {
             name: "Murk Assessment",
-            desc: "What is that sandy cloud? What does it do? We should go inside it.",
-            researchedMessage: "It's a sandstorm. The one where the rough grains of sand come from. To say it's torture is an understatement.",
+            desc: "What is that sandy cloud around us? What does it do? We should check it out.",
+            researchedMessage: "It's a sandstorm. To say it's torture is an understatement.",
             effectDesc: "If we ever escape this... this barrage, we'll never go near it again.",
             cost: {
                 shark: 10,
@@ -4574,7 +4574,7 @@ SharkGame.Upgrades = {
         },
         justPushFurtherLol: {
             name: "Our Only Choice...",
-            desc: "...is to move forward.",
+            desc: "...is to move outward.",
             researchedMessage: "It worked. It worked. I can't believe it.",
             effectDesc: "We burst into a clear space. It's wide, but disappointingly narrow.",
             cost: {
@@ -4981,7 +4981,7 @@ SharkGame.Upgrades = {
             },
         },
         agriculture: {
-            name: "Stabilization",
+            name: "Agriculture",
             desc: "The rays and crabs have noticed something strange about the sand around these colourful growths...",
             researchedMessage: "The mudskippers suggested something from their oral tales called a 'farm'. It's... surprisingly useful.",
             effectDesc: "Seagrass farms and coral farms are now available.",

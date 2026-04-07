@@ -13,7 +13,7 @@ blah blah blah body text here
 ## Three Eels in a Jellyfish Coat's Ideas
 Directly quoted from Three Eels, hence the quotation marks.
 
-__**The Overgrown Ocean:**__ *"A very dense kelp forest. The sea otters become curious of you very fast, and start collecting clams for you. Perhaps the world's machines and their base material could be made of oysters and clams?"* <br>
+<ins>**The Overgrown Ocean:**</ins> *"A very dense kelp forest. The sea otters become curious of you very fast, and start collecting clams for you. Perhaps the world's machines and their base material could be made of oysters and clams?"* <br>
 **The Predatory Ocean:** *"MY MAGNUM OPUS; MY GRAND MASTERPIECE. My idea of including literally every frenzy member in here to fight the orcas, however, will probably not last. The orcas and the war are a keep, and the machines are replaced by weapons. The gateway is guarded by the orcas, and once you dethrone their emperor, they're still entrusted by them for protection."* <br>
 **The River Ocean:** *"The title is... an oxymoron. But you and the frenzy are stuck in a river, accompanied by perhaps river dolphins, crocodiles, or anacondas. I should note, this is a jungle river."* <br>
 **The Serene Ocean:** *"A silent, peaceful ocean that might just possibly drive you insane. It's populated by very simple-minded creatures, such as starfish, slugs, and jellyfish. Machines are a bit of a wonky idea here, considering the inhabitants, but this is a fresh idea at most."* <br>

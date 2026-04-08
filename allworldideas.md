@@ -17,6 +17,17 @@ A fan who proposed these on the Discord server - not a dev. DC username is @blaz
 
 <ins>**The Polluted/Diseased World:**</ins> *"This world is plauged by disease and polluted waters make it hard to see or swim. All production starts at .25x. All animals at the start begin to slowly die off (including already captured fish and other live recources). You can create bubbles with the help of science to store resources or producers. Create cleanup machines to help clear out the ocean and slowly increase production."* (Note by Three Eels - has the potential to be merged with Brian's Fungal.)
 
+## Glowkate's Ideas
+Glowkate is an artist and dev for the Shark Game. She's made multiple sprites for it, and at the time of writing is developing a new rendition of the Chaotic ocean. The unnamed ocean was quoted from her.
+
+<ins>**Unnamed Trying-to-Talk-to-You Ocean:**</ins> *"Maybe there could be a plot of there being some mysterious force acting upon the frenzy, and the whole world has a "trying to communicate with aliens" feel to it as you try to understand that living beings can be smaller then what you can see."* (Note by Three Eels - I suggested plankton.)
+
+## Happerry's Ideas
+Proposed by @happerry on Discord, also not a dev. Directly quoted like mine.
+
+<ins>**The Mangrove Ocean:**</ins> *"maybe a mangrove/swamp ocean someday, where the entire 'sea' is more inland, in shallow waters under the mangrove trees and the sharks must hide under the roots from larger creatures that stalk from the mysterious dry beyond places. And/or sea turtles, which are cool even if I can't think of a specific ocean they'd specifically fit offhand with an 'oh god why am I not in bed yet' brain."* <br>
+<ins>**The Turtleship Ocean:**</ins> *"Random idea of the 'before I fall over and sleep' night. Dolphin space ships are actually giant turtles, ala the idea of 'island turtles', that keep oceans inside their shells that other creatures live in, and one ocean should be inside such a turtle that the dolphins abandoned when they abandoned their space empire. The sharks, of course, do not start out knowing this, but only know (or at least find out sooner then later) that the ocean they have found themselves in is old and sick and needs help and its parasites cleaned out, and may or may not be directly told that this used to be a dolphin space ship. They also may or may not have to clear out an infestation of parasite space kraken spawn or something. They may or may not actually find out this is all the dolphins fault for forgetting to turn on the anti-parasite machines on their way out as they finish up. [...] Because turtles are cool, and giant turtles that people mistake for islands (until they annoy the turtle enough into sinking and then either drown or hastily have to get back on their boat before they drown) are also cool, so therefore even gianter turtles that are space ships and living oceans are cooler."*
+
 ## Three Eels in a Jellyfish Coat's Ideas
 Directly quoted from Three Eels, hence the quotation marks.
 
@@ -27,12 +38,6 @@ Directly quoted from Three Eels, hence the quotation marks.
 <ins>**The Serene Ocean:**</ins> *"A silent, peaceful ocean that might just possibly drive you insane. It's populated by very simple-minded creatures, such as starfish, slugs, and jellyfish. Machines are a bit of a wonky idea here, considering the inhabitants, but this is a fresh idea at most."* <br>
 <ins>**The Shore Ocean:**</ins> *"A sandy, low-slung world ravaged by a sandstorm on one side, and barred by a high wall of sand on the other. The other two sides are fine, though! This is actually being worked on in my GitHub repo."* <br>
 <ins>**UNNAMED MAGIC SEAGRASS OCEAN:**</ins> *"Exactly what the title says. I found the sudden 'oh, this seagrass is magic' thing in Tempestuous fascinating, and I think it should be expanded on. There's already a link between Marine and Abandoned, so why not this? The machine material would be derived from said seagrass."*
-
-## Happerry's Ideas
-Proposed by @happerry on Discord, also not a dev. Directly quoted like mine.
-
-<ins>**The Mangrove Ocean:**</ins> *"maybe a mangrove/swamp ocean someday, where the entire 'sea' is more inland, in shallow waters under the mangrove trees and the sharks must hide under the roots from larger creatures that stalk from the mysterious dry beyond places. And/or sea turtles, which are cool even if I can't think of a specific ocean they'd specifically fit offhand with an 'oh god why am I not in bed yet' brain."* <br>
-<ins>**The Turtleship Ocean:**</ins> *"Random idea of the 'before I fall over and sleep' night. Dolphin space ships are actually giant turtles, ala the idea of 'island turtles', that keep oceans inside their shells that other creatures live in, and one ocean should be inside such a turtle that the dolphins abandoned when they abandoned their space empire. The sharks, of course, do not start out knowing this, but only know (or at least find out sooner then later) that the ocean they have found themselves in is old and sick and needs help and its parasites cleaned out, and may or may not be directly told that this used to be a dolphin space ship. They also may or may not have to clear out an infestation of parasite space kraken spawn or something. They may or may not actually find out this is all the dolphins fault for forgetting to turn on the anti-parasite machines on their way out as they finish up. [...] Because turtles are cool, and giant turtles that people mistake for islands (until they annoy the turtle enough into sinking and then either drown or hastily have to get back on their boat before they drown) are also cool, so therefore even gianter turtles that are space ships and living oceans are cooler."*
 
 ## Merged Ideas
 Separate similar deas I sort of fused together into one - the conceptor of each part is credited by their Discord username.

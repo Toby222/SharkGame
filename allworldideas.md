@@ -39,6 +39,15 @@ Directly quoted from Three Eels, hence the quotation marks.
 <ins>**The Shore Ocean:**</ins> *"A sandy, low-slung world ravaged by a sandstorm on one side, and barred by a high wall of sand on the other. The other two sides are fine, though! This is actually being worked on in my GitHub repo."* <br>
 <ins>**UNNAMED MAGIC SEAGRASS OCEAN:**</ins> *"Exactly what the title says. I found the sudden 'oh, this seagrass is magic' thing in Tempestuous fascinating, and I think it should be expanded on. There's already a link between Marine and Abandoned, so why not this? The machine material would be derived from said seagrass."*
 
+## Umbra Animo's Ideas
+Umbra Animo is a fan on the Discord server whose username is @umbraanimo. These ideas are quoted directly.
+
+<ins>**The Gas World:**</ins> *"a twist of the perspective of what is a "sea" this sea is a gas giant with the fish being adapted to flying through the thick gas like swimming in water."* <br>
+<ins>**The Lifeless Ocean:**</ins> *"a  world where nearly all organic life is gone. getting fish and buying frenzy members is much harder so breeders and needed but non organic materials and unique finds are everywhere."* <br>
+<ins>**The Machine Ocean:**</ins> *"a world where the shark machines have progressed to far. styled similar to the terminator series, you have to carefully develop your frenzy because to much activity will attract the Deadly ai's attention needing to counter by developing fighters and taking down the machine infostructure. could add some very advanced tech as you go."* <br>
+<ins>**The Disconnected Ocean:**</ins> *"the gravity of this world is strange, instead of one solid ocean multiple ocean spheres float around the core, all in different sizes. the challenge here is the player has only so much space and has to bridge the gaps between ocean spheres to gain more space."* <br>
+<ins>**The Haunted Ocean:**</ins> *"styled similar to the lifeless Ocean but with a heavier leaning to Ghosts and supernatural. can't recruit living frenzy members or at least much harder to do so but can construct undead versions of them so less fish catching more bone collecting."*
+
 ## Merged Ideas
 Separate similar deas I sort of fused together into one - the conceptor of each part is credited by their Discord username.
 

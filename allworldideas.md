@@ -9,7 +9,13 @@ blah blah blah body text here
 [**The Drying Ocean:**](https://docs.google.com/document/d/1Z-9j3wNZ3Km-8FRWumNJWsZJboM3yjhm6vctUkw9pZ8/edit?tab=t.0) a planet whose oceans are vanishing;<br>
 [**The Forgotten Ocean:**](https://docs.google.com/document/d/1118b-IXzeIPMy51x0-kHO0uNMaJka-FDM0-aP7Q5Ov0/edit?tab=t.0) a planet that doesn't exist outside your narrow window of attention;<br>
 [**The Fungal Ocean:**](https://docs.google.com/document/d/1xYcom9XaQvODOAYtV20NNA4Svvz4p6rkdPm8DtZ0AwI/edit?tab=t.0) a planet that has been swallowed by rotting fungus.<br>
+*Brian stated that they've thought of an 'ocean in space' idea a lot, but scrapped it each time because 'tardigrades are too small to be seen by sharks with naked eye'.* <br>
 *Please note that BiggestBrian has stated on the Discord server that most of their ideas are 'spur-of-the-moment'.*
+
+## BlazingPhonex's Ideas
+A fan who proposed these on the Discord server - not a dev. DC username is @blazingphonex. These are quoted directly.
+
+<ins>**The Polluted/Diseased World:**</ins> *"This world is plauged by disease and polluted waters make it hard to see or swim. All production starts at .25x. All animals at the start begin to slowly die off (including already captured fish and other live recources). You can create bubbles with the help of science to store resources or producers. Create cleanup machines to help clear out the ocean and slowly increase production."* (Note by Three Eels - has the potential to be merged with Brian's Fungal.)
 
 ## Three Eels in a Jellyfish Coat's Ideas
 Directly quoted from Three Eels, hence the quotation marks.

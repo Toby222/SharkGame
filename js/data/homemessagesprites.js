@@ -1,4 +1,4 @@
-SharkGame.Sprites = {
+SharkGame.HomeMessageSprites = {
     "home/abandoned-default": {
         frame: {
             x: 0,

@@ -148,7 +148,7 @@ Coral Cloning        discover coral farming,
 ~~Brooding Biology        make crab breeding more efficient,~~
 ~~Feeding Techniques        understand how sponge eat algae,~~
 Secret Smelting        unlock porite,
-Antipest Patrols        take care of coral pests,
+~~Antipest Patrols        take care of coral pests,~~
 Medically Assisted Reproduction        increase survival rate of children,
 ~~Glass Tempering        improve the durability of porite tools,~~
 Super Smelting        smelt porite directly at the vents,

@@ -140,6 +140,7 @@ SharkGame.ResourceTable = {
         singleName: "fish",
         desc: "The hunted.",
         color: "#E3D85B",
+        value: 2,
     },
 
     seaApple: {
@@ -147,6 +148,7 @@ SharkGame.ResourceTable = {
         singleName: "sea apple",
         desc: "Rooted filters.",
         color: "#F0C2C2",
+        value: 3,
     },
 
     sponge: {
@@ -161,6 +163,7 @@ SharkGame.ResourceTable = {
             }
         },
         color: "#ED9847",
+        value: 18,
     },
 
     jellyfish: {
@@ -168,6 +171,7 @@ SharkGame.ResourceTable = {
         singleName: "jellyfish",
         desc: "Squishy. Painful.",
         color: "#E3B8FF",
+        value: 110,
     },
 
     clam: {
@@ -175,6 +179,7 @@ SharkGame.ResourceTable = {
         singleName: "clam",
         desc: "An acquired taste.",
         color: "#828FB5",
+        value: 10,
     },
 
     // MATERIALS
@@ -184,6 +189,7 @@ SharkGame.ResourceTable = {
         singleName: "sand",
         desc: "Flesh of the ocean floor.",
         color: "#C7BD75",
+        value: 3,
     },
 
     crystal: {
@@ -191,6 +197,7 @@ SharkGame.ResourceTable = {
         singleName: "crystal",
         desc: "A strange, glowing material.",
         color: "#6FD9CC",
+        value: 10, 
     },
 
     kelp: {
@@ -201,6 +208,7 @@ SharkGame.ResourceTable = {
         income: {
             seaApple: 0.001,
         },
+        value: 9,
     },
 
     coral: {
@@ -208,6 +216,7 @@ SharkGame.ResourceTable = {
         singleName: "coral",
         desc: "Colorful carnivores.",
         color: "#CA354F",
+        value: 3,
     },
 
     algae: {
@@ -245,6 +254,7 @@ SharkGame.ResourceTable = {
         singleName: "sharkonium",
         desc: "Progress incarnate.",
         color: "#8D70CC",
+        value: 70,
     },
 
     junk: {
@@ -252,6 +262,7 @@ SharkGame.ResourceTable = {
         singleName: "residue",
         desc: "Industrial potential.",
         color: "#ABABAB",
+        value: 1,
     },
 
     // FRENZY
@@ -421,6 +432,7 @@ SharkGame.ResourceTable = {
             },
             tar: 0.02,
         },
+        value: 150000,
     },
 
     // MARINE
@@ -458,6 +470,7 @@ SharkGame.ResourceTable = {
         singleName: "calcinium",
         desc: "Lobster-invented, clam-derived ceramic.",
         color: "#F5F5DB",
+        value: 75,
     },
 
     clamScavenger: {
@@ -468,6 +481,7 @@ SharkGame.ResourceTable = {
         income: {
             clam: 250,
         },
+        value: 3250,
     },
 
     seabedStripper: {
@@ -478,6 +492,7 @@ SharkGame.ResourceTable = {
         income: {
             kelp: 100,
         },
+        value: 2250,
     },
 
     calciniumConverter: {
@@ -494,6 +509,7 @@ SharkGame.ResourceTable = {
             },
             calcinium: 120,
         },
+        value: 1500,
     },
 
     // SAVED FOR LATER
@@ -506,6 +522,7 @@ SharkGame.ResourceTable = {
     },
 
     // volcanic
+    // no values because of no recycler
 
     shrimp: {
         name: "shrimp",
@@ -728,6 +745,7 @@ SharkGame.ResourceTable = {
         income: {
             coral: 250,
         },
+        value: 50000,
     },
 
     kelpCultivator: {
@@ -738,6 +756,7 @@ SharkGame.ResourceTable = {
         income: {
             kelp: 200,
         },
+        value: 50000,
     },
 
     tirelessCrafter: {
@@ -754,6 +773,7 @@ SharkGame.ResourceTable = {
                 return -50 + 25 * SharkGame.Aspects.mechanicalManifestation.level;
             },
         },
+        value: 50000,
     },
 
     delphinium: {
@@ -761,6 +781,7 @@ SharkGame.ResourceTable = {
         singleName: "delphinium",
         desc: "Shiny, but probably worthless.",
         color: "#5BD1A8",
+        value: 70,
     },
 
     // SHROUDED
@@ -894,6 +915,7 @@ SharkGame.ResourceTable = {
             clam: 300,
             tar: 0.2,
         },
+        value: 50000,
     },
 
     sprongeSmelter: {
@@ -911,6 +933,7 @@ SharkGame.ResourceTable = {
             },
             tar: 0.04,
         },
+        value: 50000,
     },
 
     eggBrooder: {
@@ -922,6 +945,7 @@ SharkGame.ResourceTable = {
             octopus: 1,
             tar: 0.2,
         },
+        value: 50000,
     },
 
     spronge: {
@@ -929,6 +953,7 @@ SharkGame.ResourceTable = {
         singleName: "spronge",
         desc: "The mutated.",
         color: "#A97D53",
+        value: 70,
     },
 
     tar: {

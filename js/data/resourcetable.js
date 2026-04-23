@@ -197,7 +197,7 @@ SharkGame.ResourceTable = {
         singleName: "crystal",
         desc: "A strange, glowing material.",
         color: "#6FD9CC",
-        value: 10, 
+        value: 10,
     },
 
     kelp: {

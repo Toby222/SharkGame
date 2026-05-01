@@ -8,7 +8,7 @@
 "Teamwork"        The squid champion the value of teamwork and the necessity of cooperation. They say they follow by example.,
 "Squid"        The squid speak of an ancient visitor who saved their world. They ask if you too, have seen this visitor.,
 "Suspicion"        The squid describe the machine with fascination. They ask if we feel the same. They see something we do not.,
-"Battery"        Buried deep within the complex lies a massive, dimly glowing battery. The squid say replacing it will get the machine running at full power.,
+~~"Battery"        Buried deep within the complex lies a massive, dimly glowing battery. The squid say replacing it will get the machine running at full power.,~~ (courtesy of Glowkate)
 "Heat Returns"        A wave of heat washes over you, and the dingy complex comes back to life. The gate turns on.
 
 ### HAVEN
@@ -18,7 +18,8 @@
 "Sentience"        All of us have boards now. Children are born half-machine. The lobsters call it effective.
 
 ### SHROUDED
-"Power"        Every broken shard disintegrates in a blinding flash of light. That familiar feeling washes over you with every sacrifice. The sharp snap of broken arcana echoes in your mind.,
+"Eel Onlookers"        Divers have reported sightings of wiggly things on the ocean floor. They dart into their holes when approached.
+~~"Power"        Every broken shard disintegrates in a blinding flash of light. That familiar feeling washes over you with every sacrifice. The sharp snap of broken arcana echoes in your mind.,~~
 "City"        The sounds of explorers echo endlessly through the tunnels of the broken city. The eels say they are filled with hope.,
 "Truth"        A team of eels get your attention. They have something from the caverns: it's a book. You can't read a thing inside it, but...that looks like arcana...and that looks like...a warning.
 
@@ -33,17 +34,18 @@
 "Legends"        "As the storm draws its final breath, you overhear two billfish talking. One asks the other why the visitor never returned."
 
 ### Volcanic
-"Shrimp Threat"        You are approached by an army of shrimp. They relay a very clear message to you: cooperate, or be destroyed. You decide to stop harvesting sponges.,
+~~"Shrimp Threat"        You are approached by an army of shrimp. They relay a very clear message to you: cooperate, or be destroyed. You decide to stop harvesting sponges.,~~
 "Shrimp Communication"         The homes (sponges) left behind by shrimp joining the frenzy may now be taken for ourselves.,
-"Monarchy"        The shrimps follow a caste system with the king of shrimps on top. They ask who your king is.,
+~~"Monarchy"        The shrimps follow a caste system with the king of shrimps on top. They ask who your king is.,~~
 "Smithing"        Porite: glassy hunks sealed on the outside but porous on the inside: it's lightweight, yet it stays strong.,
 "Acolytes"        The acolytes gather. They pray for their king. They pray for their world. They pray for you.,
 "Beauty"        The king is speechless. As he views the great industrial city, his subjects gather and cheer, celebrating his arrival.,
-"Curious Crabs"        Sort of just off to the side, a group of curious crabs congregate and discuss stuff that we don't understand.,
-"No More Curiosity"        Sort of just off to the side, the researchers are compiling their work and filing it away. Looks like that's it! No more things to figure out.
+~~"Curious Crabs"        Sort of just off to the side, a group of curious crabs congregate and discuss stuff that we don't understand.,~~
+~~"No More Curiosity"        Sort of just off to the side, the researchers are compiling their work and filing it away. Looks like that's it! No more things to figure out.~~
 
 ## Actions
-I don't actually think there are any missing anymore. Glowkate has made Squid Collective and Dolphin Historian sprites.
+~~breakDownAncientPart          Break down ancient parts to advance science.~~
+~~getHeater~~ (courtesy of Glowkate)
 
 ## ~~Aspects~~
 ~~Token of Industry,~~
@@ -62,22 +64,22 @@ I don't actually think there are any missing anymore. Glowkate has made Squid Co
 ## Technologies
 
 ### ABANDONED
-Inudstrial-Grade Sponge        understand how to make spronge,
+~~Inudstrial-Grade Sponge        understand how to make spronge,~~
 ~~Environmentalism        unlock filters,~~
 ~~Octal Efficieny        increase octal productivity,~~
 Superior Search Algorithms        learn how to search better,
 High-Energy Fusion        learn to fuse ancient parts (somewhat shared with marine),
 ~~Investi-gate-tions        dedicate an investigation team to understanding the gate,~~
 Mechanised Alchemy         refine the machines,
-Eightfold Optimisation        optimize. improve.,
+~~Eightfold Optimisation        optimize. improve.,~~
 Artifact Assembly        assemble a thing that opens the gate
 ~~Reverse Engineering~~ (kind of)        there's already a sprite in the "old" folder, but it's not implemented.
 
 ### FRIGID
-Civil Contact        discover the squid village,
+~~Civil Contact        discover the squid village,~~
 ~~Assissted Extraction        unlock extraction teams, 1 squid + 1 crab,~~
 Glacial Navigation        extraction teams explore icy areas outside the heat dome,
-Team Spirit        squid lecture us on team spirit,
+~~Team Spirit        squid lecture us on team spirit,~~ (courtesy of Glowkate)
 Internal Investigation        uncover the inside of the great machine,
 Internal Expedition        explore the complex inside of the great machine,
 Internal Inquiry        explain to the squid why we went behind their backs,
@@ -85,7 +87,7 @@ Creature Coalition        we have to work together to make progress...,
 Rapid Recharging        reverse-engineer an old battery to make a new one!
 
 ### HAVEN
-Dolphin Technology        learn to build dolphin tech,
+~~Dolphin Technology        learn to build dolphin tech,~~
 ~~Retroactive Recordkeeping        organize the papyrus, unlock historians,~~ (courtesy of Glowkate)
 The Whale Song        piece together the whale's portion of the song,
 ~~Imperial Designs        employ the original designs for dolphin machines,~~
@@ -115,7 +117,7 @@ Chasm Exploration
 Crystal Spear        tool for billfish to catch fish,
 Sandbagging        unlock crab stormgoers,
 Billfish Biology        unlock billfish pairs,~~
-Heavy Sifting        seperate light and heavier sand to make all uses of sand cheaper,
+~~Heavy Sifting        seperate light and heavier sand to make all uses of sand cheaper,~~ (courtesy of Glowkate)
 Sense of Direction        actually navigate the storm properly,
 ~~Laser Lenses        use glass bottles to focus lasers to make laser rays cheaper,~~
 Crystal Clippers        tool for stormgoers,
@@ -139,19 +141,19 @@ Cumulus Control        fix the generator, turn back on the machine, save the wor
 ~~Curious Collection        understand coral, kinda,~~ (better version made by Glowkate, is the one found in the sprite sheet)
 ~~Consistent Communication        let shrimps know you wont steal from them,~~
 ~~Sociology        what are social structures???,~~
-Proper Practices        grow sponges in rows,
-Worm Warriors        fight shrimp parasites,
+~~Proper Practices        grow sponges in rows,~~
+~~Worm Warriors        fight shrimp parasites,~~
 Coral Cloning        discover coral farming,
-Sustainable Solutions        completely stop gathering: only farming now,
-Brooding Biology        make crab breeding more efficient,
-Feeding Techniques        understand how sponge eat algae,
+~~Sustainable Solutions        completely stop gathering: only farming now,~~
+~~Brooding Biology        make crab breeding more efficient,~~
+~~Feeding Techniques        understand how sponge eat algae,~~
 Secret Smelting        unlock porite,
 Antipest Patrols        take care of coral pests,
 Medically Assisted Reproduction        increase survival rate of children,
 Glass Tempering        improve the durability of porite tools,
 Super Smelting        smelt porite directly at the vents,
 First Draft        draft a letter to try to get the shrimp king not to kill us,
-Super Shovels        big shovel,
+~~Super Shovels        big shovel,~~
 Mass Production        mass produce porite parts to cheapen their creation,
 Second Draft        draft another letter,
 Algae Acolytes        cult of algae,
@@ -160,5 +162,5 @@ Land Reform        use less sand while designating farms due to better land mana
 Rumored Recollections        investigate rumors about the king,
 Sand Reform        organize sand collection patrols,
 Crab Reform        reform the crabs! i guess?,
-Final Draft        go see the king personally,
-Apologetic Amnesty        repay the king for damages
+~~Final Draft        go see the king personally,~~
+~~Apologetic Amnesty        repay the king for damages~~

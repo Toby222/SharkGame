@@ -230,7 +230,7 @@ SharkGame.FunFacts = {
             "Some coral can actually catch small fish.",
             "Coral is not a plant, it is an animal. A weird, stationary animal.",
             "Coral are primarily carnivores. They eat plankton (teeny tiny things that can't swim), grabbing them with little tentacles and pulling them into their mouths.",
-            "Many kinds of coral have a mutualistic relationship with species of alage, who produce nutrients in exchange for carbon dioxide and shelter.",
+            "Many kinds of coral have a mutualistic relationship with species of algae, who produce nutrients in exchange for carbon dioxide and shelter.",
             "Despite being as stationary as a sponge, coral is more closely related to jellyfishes.",
         ],
         sponge: [
@@ -270,7 +270,7 @@ SharkGame.FunFacts = {
         ],
         investigator: ["We are not sure where the octopuses get their funny hats. Presumably they just find them."],
         eggBrooder: ["This is gross."],
-        collectorCrab: [
+        collector: [
             "The Dromia personata is a species of crab that take sponges and attach them to their backs as a method of camouflage.",
             "Don't touch the sponge on their backs. They're very protective about it.",
         ],

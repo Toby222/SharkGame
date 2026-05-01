@@ -138,8 +138,8 @@ $.extend(SharkGame, {
     flags: {},
     persistentFlags: {},
 
-    spriteIconPath: "https://github.com/Toby222/SharkGame/blob/alpha/img/sprites.png?raw=true",
-    spriteHomeEventPath: "https://github.com/Toby222/SharkGame/blob/alpha/img/homemessagesprites.png?raw=true",
+    spriteIconPath: "./img/sprites.png",
+    spriteHomeEventPath: "./img/homemessagesprites.png",
 
     /**
      *
@@ -713,8 +713,7 @@ Mod of v ${SharkGame.ORIGINAL_VERSION}`,
             if (data.sha !== SharkGame.COMMIT_SHA) {
                 $("#updateGameBox")
                     .html(
-                        `You see a new update swimming towards you.<br> On it you can just make out the words <br>"${
-                            data.commit.message.split("\n")[0]
+                        `You see a new update swimming towards you.<br> On it you can just make out the words <br>"${data.commit.message.split("\n")[0]
                         }". <br>Click to update.`,
                     )
                     .on("click", () => {
@@ -1191,9 +1190,9 @@ SharkGame.Changelog = {
         "Major graphical update!",
         "Now features graphics sort of!",
         "Some UI rearrangements:" +
-            "<ul><li>Researched techs now show in lab instead of grotto.</li>" +
-            "<li>General stats now on right of grotto instead of left.</li>" +
-            "<li>Large empty space in grotto right column reserved for future use!</li></ul>",
+        "<ul><li>Researched techs now show in lab instead of grotto.</li>" +
+        "<li>General stats now on right of grotto instead of left.</li>" +
+        "<li>Large empty space in grotto right column reserved for future use!</li></ul>",
         "Pointless version subtitle!",
         "<span class='medDesc'>Added a donate link. Hey, sharks gotta eat.</span>",
     ],
@@ -1239,7 +1238,7 @@ SharkGame.Changelog = {
         "Buy 10, Buy 1/3 max and Buy 1/2 max buttons added.",
         "Research impact now displayed on research buttons.",
         "Resource effectiveness multipliers now displayed in table." +
-            "<ul><li>These are not multipliers for how much of that resource you are getting.</li></ul>",
+        "<ul><li>These are not multipliers for how much of that resource you are getting.</li></ul>",
         "Some dumb behind the scenes things to make the code look nicer.",
         "Added this changelog!",
         "Removed upgrades list on the left. It'll come back in a future version.",

@@ -20,14 +20,14 @@
         "scss:w:big": "npm run scss:big --watch"
     },
     "devDependencies": {
-        "@eslint/js": "^9.26.0",
-        "@types/jquery": "^3.5.32",
-        "@types/lodash": "^4.17.16",
-        "@types/pako": "^2.0.3",
-        "eslint": "^9.26.0",
-        "neostandard": "^0.12.1",
-        "sass": "^1.88.0",
-        "simple-git-hooks": "^2.13.0"
+        "@eslint/js": "^9.39.2",
+        "@types/jquery": "^3.5.33",
+        "@types/lodash": "^4.17.23",
+        "@types/pako": "^2.0.4",
+        "eslint": "^9.39.2",
+        "neostandard": "^0.12.2",
+        "sass": "^1.97.2",
+        "simple-git-hooks": "^2.13.1"
     },
     "simple-git-hooks": {
         "pre-commit": "npm test"

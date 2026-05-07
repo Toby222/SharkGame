@@ -4,7 +4,15 @@
 
 blah blah blah body text here
 
+## Spencers145's Ideas
+Spencers145 was a big fan of the original Shark Game in his childhood - he grew up to code the New Frontiers mod that these ideas are being compiled for.
+
+<ins>**The Stone Ocean:**</ins>  a world with no natural sand - just hard, solid plateaus and stone as far as the eye can see. And your aim is to break it all down to sand.
+<ins>**The Scrapyard Ocean:**</ins> an ocean where heaps of metal parts litter the world, and the machines take center stage. Scavenging takes place of hunting, and the frenzy is a crowd of your own creation, composed of scraps and parts. A food scarcity mechanic was proposed.
+
 ## BiggestBrian's Ideas
+Brian is a spriter (pixel artist) for the Shark Game, and has contributed to many of the home message panels and upgrade sprites.
+
 [**The Ravenous Ocean:**](https://docs.google.com/document/d/1K8ub7krWady7gA1d9AKR_y5cvt38EvOLGhwJaqdX530/edit?tab=t.0) a violent planet where co-operation is rare and people are out to fill their bellies;<br>
 [**The Drying Ocean:**](https://docs.google.com/document/d/1Z-9j3wNZ3Km-8FRWumNJWsZJboM3yjhm6vctUkw9pZ8/edit?tab=t.0) a planet whose oceans are vanishing;<br>
 [**The Forgotten Ocean:**](https://docs.google.com/document/d/1118b-IXzeIPMy51x0-kHO0uNMaJka-FDM0-aP7Q5Ov0/edit?tab=t.0) a planet that doesn't exist outside your narrow window of attention;<br>

@@ -7,8 +7,9 @@ blah blah blah body text here
 ## Spencers145's Ideas
 Spencers145 was a big fan of the original Shark Game in his childhood - he grew up to code the New Frontiers mod that these ideas are being compiled for.
 
-<ins>**The Stone Ocean:**</ins>  a world with no natural sand - just hard, solid plateaus and stone as far as the eye can see. And your aim is to break it all down to sand.<br>
-<ins>**The Scrapyard Ocean:**</ins> an ocean where heaps of metal parts litter the world, and the machines take center stage. Scavenging takes place of hunting, and the frenzy is a crowd of your own creation, composed of scraps and parts. A food scarcity mechanic was proposed.
+<ins>**The Stone Ocean:**</ins>  a world with no natural sand nor undersea currents - just hard, solid slate and stone as far as the eye can see. And your aim is to break it all down to sand.<br>
+<ins>**The Scrapyard Ocean:**</ins> an ocean where heaps of metal parts litter the world, and the machines take center stage. Scavenging takes place of hunting, and the frenzy is a crowd of your own creation, composed of scraps and parts. A food scarcity mechanic was proposed.<br>
+<ins>**The Ethereal Ocean (scrapped):**</ins> an ocean of surrealness in that thought escapes into reality. I haven't gathered much about it, but it seems to be slightly similar to Brian's Forgotten Ocean.
 
 ## BiggestBrian's Ideas
 Brian is a spriter (pixel artist) for the Shark Game, and has contributed to many of the home message panels and upgrade sprites.

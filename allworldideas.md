@@ -7,7 +7,7 @@ blah blah blah body text here
 ## Spencers145's Ideas
 Spencers145 was a big fan of the original Shark Game in his childhood - he grew up to code the New Frontiers mod that these ideas are being compiled for.
 
-<ins>**The Stone Ocean:**</ins>  a world with no natural sand - just hard, solid plateaus and stone as far as the eye can see. And your aim is to break it all down to sand.
+<ins>**The Stone Ocean:**</ins>  a world with no natural sand - just hard, solid plateaus and stone as far as the eye can see. And your aim is to break it all down to sand.<br>
 <ins>**The Scrapyard Ocean:**</ins> an ocean where heaps of metal parts litter the world, and the machines take center stage. Scavenging takes place of hunting, and the frenzy is a crowd of your own creation, composed of scraps and parts. A food scarcity mechanic was proposed.
 
 ## BiggestBrian's Ideas

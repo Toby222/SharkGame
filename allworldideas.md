@@ -9,7 +9,8 @@ Spencers145 was a big fan of the original Shark Game in his childhood - he grew 
 
 <ins>**The Stone Ocean:**</ins>  a world with no natural sand nor undersea currents - just hard, solid slate and stone as far as the eye can see. And your aim is to break it all down to sand.<br>
 <ins>**The Scrapyard Ocean:**</ins> an ocean where heaps of metal parts litter the world, and the machines take center stage. Scavenging takes place of hunting, and the frenzy is a crowd of your own creation, composed of scraps and parts. A food scarcity mechanic was proposed.<br>
-<ins>**The Ethereal Ocean (scrapped):**</ins> an ocean of surrealness in that thought escapes into reality. I haven't gathered much about it, but it seems to be slightly similar to Brian's Forgotten Ocean.
+<ins>**The Ethereal Ocean (scrapped):**</ins> an ocean of surrealness in that thought escapes into reality. I haven't gathered much about it, but it seems to be slightly similar to Brian's Forgotten Ocean.<br>
+<ins>**The Arcane Ocean:**</ins> a scienceless world of arcana. You take rituals in place of experimentation.
 
 ## BiggestBrian's Ideas
 Brian is a spriter (pixel artist) for the Shark Game, and has contributed to many of the home message panels and upgrade sprites.

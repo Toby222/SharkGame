@@ -138,8 +138,8 @@ $.extend(SharkGame, {
     flags: {},
     persistentFlags: {},
 
-    spriteIconPath: "img/sprites.png",
-    spriteHomeEventPath: "img/homemessagesprites.png",
+    spriteIconPath: "./img/sprites.png",
+    spriteHomeEventPath: "./img/homemessagesprites.png",
 
     /**
      *
@@ -608,13 +608,13 @@ Mod of v ${SharkGame.ORIGINAL_VERSION}`,
                 SharkGame.persistentFlags.currentPausedTime = 0;
             }
 
+            if (res.idleMultiplier < 1) {
+                main.continueIdle(now, elapsedTime);
+            }
+
             // tick main game stuff
             if (now - SharkGame.lastActivity > SharkGame.IDLE_THRESHOLD && res.idleMultiplier === 1 && SharkGame.Settings.current.idleEnabled) {
                 main.startIdle(now, elapsedTime);
-            }
-
-            if (res.idleMultiplier < 1) {
-                main.continueIdle(now, elapsedTime);
             }
 
             if (res.minuteHand.active) {
@@ -713,8 +713,7 @@ Mod of v ${SharkGame.ORIGINAL_VERSION}`,
             if (data.sha !== SharkGame.COMMIT_SHA) {
                 $("#updateGameBox")
                     .html(
-                        `You see a new update swimming towards you.<br> On it you can just make out the words <br>"${
-                            data.commit.message.split("\n")[0]
+                        `You see a new update swimming towards you.<br> On it you can just make out the words <br>"${data.commit.message.split("\n")[0]
                         }". <br>Click to update.`,
                     )
                     .on("click", () => {
@@ -1048,8 +1047,10 @@ SharkGame.Changelog = {
     ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> 0.2 patch 20210814a": [
         "Added Shrouded worldtype.",
+        "Retooled Haven worldtype.",
         "Changed the aspect tree and its aspects significantly. All essence must be refunded and all aspects must be reset because of this. Sorry!",
         "Implemented a basic 'playstyle' choice. The game will adjust pacing to suit your choice.",
+        "Improved resource table tooltips.",
         "You can now access the options menu in the gateway.",
         "'Wipe Save' now doesn't reset any settings. Added a separate button to reset settings.",
         "Added sprites.",
@@ -1189,9 +1190,9 @@ SharkGame.Changelog = {
         "Major graphical update!",
         "Now features graphics sort of!",
         "Some UI rearrangements:" +
-            "<ul><li>Researched techs now show in lab instead of grotto.</li>" +
-            "<li>General stats now on right of grotto instead of left.</li>" +
-            "<li>Large empty space in grotto right column reserved for future use!</li></ul>",
+        "<ul><li>Researched techs now show in lab instead of grotto.</li>" +
+        "<li>General stats now on right of grotto instead of left.</li>" +
+        "<li>Large empty space in grotto right column reserved for future use!</li></ul>",
         "Pointless version subtitle!",
         "<span class='medDesc'>Added a donate link. Hey, sharks gotta eat.</span>",
     ],
@@ -1237,7 +1238,7 @@ SharkGame.Changelog = {
         "Buy 10, Buy 1/3 max and Buy 1/2 max buttons added.",
         "Research impact now displayed on research buttons.",
         "Resource effectiveness multipliers now displayed in table." +
-            "<ul><li>These are not multipliers for how much of that resource you are getting.</li></ul>",
+        "<ul><li>These are not multipliers for how much of that resource you are getting.</li></ul>",
         "Some dumb behind the scenes things to make the code look nicer.",
         "Added this changelog!",
         "Removed upgrades list on the left. It'll come back in a future version.",

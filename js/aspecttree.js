@@ -26,8 +26,8 @@ const BOTTOM_EDGE = -150;
 const SPRITE_SHEET = new Image();
 const EVENT_SPRITE_SHEET = new Image();
 
-SPRITE_SHEET.src = "img/sprites.png";
-EVENT_SPRITE_SHEET.src = "img/homemessagesprites.png";
+SPRITE_SHEET.src = "./img/sprites.png";
+EVENT_SPRITE_SHEET.src = "./img/homemessagesprites.png";
 
 SharkGame.AspectTree = {
     /** @type {CanvasRenderingContext2D} */

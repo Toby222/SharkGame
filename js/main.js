@@ -909,6 +909,9 @@ SharkGame.Button = {
 };
 
 SharkGame.Changelog = {
+    "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20260623a": [
+        "Fix some sprites having the wrong size and rotation",
+    ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20250630a": [
         "Fix broken progression of Abandoned Ocean",
     ],

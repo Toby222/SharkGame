@@ -71,7 +71,7 @@ SharkGame.Sprites = {
             h: 100,
         },
     },
-    "actions/fuseAncientPart": {
+    "actions/breakDownAncientPart": {
         frame: {
             x: 300,
             y: 0,
@@ -79,7 +79,7 @@ SharkGame.Sprites = {
             h: 50,
         },
     },
-    "actions/getBillfishExplorer": {
+    "actions/catchFish": {
         frame: {
             x: 300,
             y: 50,
@@ -87,10 +87,82 @@ SharkGame.Sprites = {
             h: 50,
         },
     },
-    "actions/getBillfishMechanic": {
+    "actions/forgeSpronge": {
         frame: {
             x: 300,
             y: 100,
+            w: 50,
+            h: 50,
+        },
+    },
+    "actions/fuseAncientPart": {
+        frame: {
+            x: 300,
+            y: 150,
+            w: 50,
+            h: 50,
+        },
+    },
+    "actions/fuseCalcinium": {
+        frame: {
+            x: 300,
+            y: 200,
+            w: 50,
+            h: 50,
+        },
+    },
+    "actions/fuseDelphinium": {
+        frame: {
+            x: 300,
+            y: 250,
+            w: 50,
+            h: 50,
+        },
+    },
+    "actions/getAcolyte": {
+        frame: {
+            x: 0,
+            y: 300,
+            w: 50,
+            h: 50,
+        },
+    },
+    "actions/getAutoTransmuter": {
+        frame: {
+            x: 50,
+            y: 300,
+            w: 50,
+            h: 50,
+        },
+    },
+    "actions/getBerrier": {
+        frame: {
+            x: 100,
+            y: 300,
+            w: 50,
+            h: 50,
+        },
+    },
+    "actions/getBillfish": {
+        frame: {
+            x: 150,
+            y: 300,
+            w: 50,
+            h: 50,
+        },
+    },
+    "actions/getBillfishExplorer": {
+        frame: {
+            x: 200,
+            y: 300,
+            w: 50,
+            h: 50,
+        },
+    },
+    "actions/getBillfishMechanic": {
+        frame: {
+            x: 250,
+            y: 300,
             w: 50,
             h: 50,
         },
@@ -98,84 +170,12 @@ SharkGame.Sprites = {
     "actions/getBillfishPair": {
         frame: {
             x: 300,
-            y: 150,
-            w: 50,
-            h: 50,
-        },
-    },
-    "actions/getSpawner": {
-        frame: {
-            x: 300,
-            y: 200,
-            w: 50,
-            h: 50,
-        },
-    },
-    "actions/getSpawnerHatted": {
-        frame: {
-            x: 300,
-            y: 250,
-            w: 50,
-            h: 50,
-        },
-    },
-    "technologies/bioengineering": {
-        frame: {
-            x: 0,
             y: 300,
             w: 50,
             h: 50,
         },
     },
-    "technologies/cavernousContact": {
-        frame: {
-            x: 50,
-            y: 300,
-            w: 50,
-            h: 50,
-        },
-    },
-    "technologies/civilContact": {
-        frame: {
-            x: 100,
-            y: 300,
-            w: 50,
-            h: 50,
-        },
-    },
-    "technologies/creviceContemplation": {
-        frame: {
-            x: 150,
-            y: 300,
-            w: 50,
-            h: 50,
-        },
-    },
-    "technologies/crystallineConstruction": {
-        frame: {
-            x: 200,
-            y: 300,
-            w: 50,
-            h: 50,
-        },
-    },
-    "technologies/dolphinTechnology": {
-        frame: {
-            x: 250,
-            y: 300,
-            w: 50,
-            h: 50,
-        },
-    },
-    "technologies/eightfoldOptimisation": {
-        frame: {
-            x: 300,
-            y: 300,
-            w: 50,
-            h: 50,
-        },
-    },
-    "technologies/feedingTechniques": {
+    "actions/getBiologist": {
         frame: {
             x: 350,
             y: 0,
@@ -183,7 +183,7 @@ SharkGame.Sprites = {
             h: 50,
         },
     },
-    "technologies/highEnergyFusion": {
+    "actions/getBrood": {
         frame: {
             x: 350,
             y: 50,
@@ -191,7 +191,7 @@ SharkGame.Sprites = {
             h: 50,
         },
     },
-    "technologies/laserLenses": {
+    "actions/getCalciniumConverter": {
         frame: {
             x: 350,
             y: 100,
@@ -199,7 +199,7 @@ SharkGame.Sprites = {
             h: 50,
         },
     },
-    "technologies/packHunting": {
+    "actions/getChimaera": {
         frame: {
             x: 350,
             y: 150,
@@ -207,7 +207,7 @@ SharkGame.Sprites = {
             h: 50,
         },
     },
-    "technologies/powerfulPropulsion": {
+    "actions/getChorus": {
         frame: {
             x: 350,
             y: 200,
@@ -215,7 +215,7 @@ SharkGame.Sprites = {
             h: 50,
         },
     },
-    "technologies/sandbagging": {
+    "actions/getClam": {
         frame: {
             x: 350,
             y: 250,
@@ -223,7 +223,7 @@ SharkGame.Sprites = {
             h: 50,
         },
     },
-    "technologies/superprocessing": {
+    "actions/getClamCollector": {
         frame: {
             x: 350,
             y: 300,
@@ -231,25 +231,9 @@ SharkGame.Sprites = {
             h: 50,
         },
     },
-    "technologies/teamSpirit": {
+    "actions/getClamScavenger": {
         frame: {
             x: 0,
-            y: 350,
-            w: 50,
-            h: 50,
-        },
-    },
-    "technologies/thermalConditioning": {
-        frame: {
-            x: 50,
-            y: 350,
-            w: 50,
-            h: 50,
-        },
-    },
-    "technologies/wormWarriors": {
-        frame: {
-            x: 100,
             y: 350,
             w: 50,
             h: 50,
@@ -257,1666 +241,1682 @@ SharkGame.Sprites = {
     },
     "actions/getCollective": {
         frame: {
+            x: 50,
+            y: 350,
+            w: 50,
+            h: 50,
+        },
+    },
+    "actions/getCollector": {
+        frame: {
+            x: 100,
+            y: 350,
+            w: 50,
+            h: 50,
+        },
+    },
+    "actions/getCoralFarm": {
+        frame: {
             x: 150,
             y: 350,
             w: 50,
-            h: 49,
+            h: 50,
         },
     },
-    "actions/getEggBrooder": {
+    "actions/getCrab": {
         frame: {
             x: 200,
             y: 350,
             w: 50,
-            h: 49,
+            h: 50,
         },
     },
-    "actions/getSeaApple": {
+    "actions/getCrimsonCombine": {
         frame: {
             x: 250,
             y: 350,
             w: 50,
-            h: 49,
+            h: 50,
         },
     },
-    "actions/getJellyfish": {
+    "actions/getCrystalMiner": {
         frame: {
             x: 300,
             y: 350,
-            w: 49,
-            h: 49,
+            w: 50,
+            h: 50,
         },
     },
-    "actions/getSifter": {
+    "actions/getCuriousCrab": {
         frame: {
-            x: 349,
+            x: 350,
             y: 350,
-            w: 49,
-            h: 49,
+            w: 50,
+            h: 50,
         },
     },
-    "actions/pearlConversion": {
-        frame: {
-            x: 398,
-            y: 350,
-            w: 49,
-            h: 49,
-        },
-    },
-    "technologies/mobiusShells": {
+    "actions/getDiver": {
         frame: {
             x: 400,
             y: 0,
-            w: 49,
-            h: 49,
-        },
-    },
-    "actions/seaApplesToScience": {
-        frame: {
-            x: 400,
-            y: 49,
-            w: 48,
+            w: 50,
             h: 50,
         },
     },
-    "technologies/arcaneSacrifice": {
+    "actions/getDolphin": {
         frame: {
             x: 400,
-            y: 99,
-            w: 48,
+            y: 50,
+            w: 50,
             h: 50,
         },
     },
-    "technologies/curiousCollection": {
-        frame: {
-            x: 150,
-            y: 399,
-            w: 50,
-            h: 48,
-        },
-    },
-    "technologies/imperialDesigns": {
-        frame: {
-            x: 0,
-            y: 400,
-            w: 50,
-            h: 48,
-        },
-    },
-    "technologies/retroactiveRecordkeeping": {
+    "actions/getEel": {
         frame: {
             x: 400,
-            y: 149,
-            w: 48,
+            y: 100,
+            w: 50,
             h: 50,
         },
     },
-    "actions/getChorus": {
-        frame: {
-            x: 50,
-            y: 400,
-            w: 49,
-            h: 48,
-        },
-    },
-    "technologies/consistentCommunication": {
-        frame: {
-            x: 99,
-            y: 400,
-            w: 49,
-            h: 48,
-        },
-    },
-    "technologies/delphineHistory": {
+    "actions/getEggBrooder": {
         frame: {
             x: 400,
-            y: 199,
-            w: 49,
-            h: 48,
-        },
-    },
-    "technologies/investi-gate-tions": {
-        frame: {
-            x: 400,
-            y: 247,
-            w: 49,
-            h: 48,
-        },
-    },
-    "technologies/superShovels": {
-        frame: {
-            x: 200,
-            y: 399,
+            y: 150,
             w: 50,
-            h: 47,
+            h: 50,
+        },
+    },
+    "actions/getExplorer": {
+        frame: {
+            x: 400,
+            y: 200,
+            w: 50,
+            h: 50,
         },
     },
     "actions/getExtractionTeam": {
         frame: {
             x: 400,
-            y: 295,
-            w: 48,
-            h: 48,
-        },
-    },
-    "technologies/bioelectricity": {
-        frame: {
-            x: 250,
-            y: 399,
-            w: 48,
-            h: 48,
-        },
-    },
-    "technologies/industrialGradeSponge": {
-        frame: {
-            x: 298,
-            y: 399,
-            w: 48,
-            h: 48,
-        },
-    },
-    "technologies/sociology": {
-        frame: {
-            x: 346,
-            y: 399,
-            w: 48,
-            h: 48,
-        },
-    },
-    "technologies/sustainableSolutions": {
-        frame: {
-            x: 394,
-            y: 399,
-            w: 48,
-            h: 48,
-        },
-    },
-    "actions/getLobster": {
-        frame: {
-            x: 200,
-            y: 446,
-            w: 49,
-            h: 47,
-        },
-    },
-    "actions/jellyfishToScience": {
-        frame: {
-            x: 148,
-            y: 447,
-            w: 49,
-            h: 47,
-        },
-    },
-    "actions/spongeToScience": {
-        frame: {
-            x: 442,
-            y: 399,
-            w: 47,
-            h: 49,
-        },
-    },
-    "technologies/chimaeraMysticism": {
-        frame: {
-            x: 447,
-            y: 343,
-            w: 49,
-            h: 47,
-        },
-    },
-    "technologies/crystalSpear": {
-        frame: {
-            x: 0,
-            y: 448,
-            w: 49,
-            h: 47,
-        },
-    },
-    "technologies/pearlConversion": {
-        frame: {
-            x: 49,
-            y: 448,
-            w: 49,
-            h: 47,
-        },
-    },
-    "actions/getScholar": {
-        frame: {
-            x: 98,
-            y: 448,
+            y: 250,
             w: 50,
-            h: 46,
-        },
-    },
-    "actions/getShoveler": {
-        frame: {
-            x: 249,
-            y: 447,
-            w: 50,
-            h: 46,
-        },
-    },
-    "actions/makeSacrifice": {
-        frame: {
-            x: 299,
-            y: 447,
-            w: 50,
-            h: 46,
-        },
-    },
-    "actions/toggleAutoSmelt": {
-        frame: {
-            x: 349,
-            y: 447,
-            w: 50,
-            h: 46,
-        },
-    },
-    "technologies/calciniumCybernetics": {
-        frame: {
-            x: 448,
-            y: 49,
-            w: 46,
             h: 50,
         },
     },
-    "technologies/eternalSong": {
+    "actions/getFarmer": {
         frame: {
-            x: 448,
-            y: 99,
-            w: 46,
+            x: 400,
+            y: 300,
+            w: 50,
             h: 50,
         },
     },
-    "actions/seagrassToScience": {
+    "actions/getFishMachine": {
         frame: {
-            x: 448,
-            y: 295,
-            w: 48,
-            h: 47,
-        },
-    },
-    "general/pieceofpaper": {
-        frame: {
-            x: 448,
-            y: 149,
-            w: 48,
-            h: 47,
-        },
-    },
-    "technologies/underwaterChemistry": {
-        frame: {
-            x: 399,
-            y: 448,
-            w: 48,
-            h: 47,
-        },
-    },
-    "actions/forgeSpronge": {
-        frame: {
-            x: 447,
-            y: 448,
-            w: 49,
-            h: 46,
+            x: 400,
+            y: 350,
+            w: 50,
+            h: 50,
         },
     },
     "actions/getHarvester": {
         frame: {
-            x: 449,
-            y: 0,
-            w: 46,
-            h: 49,
-        },
-    },
-    "technologies/assistedExtraction": {
-        frame: {
-            x: 449,
-            y: 196,
-            w: 46,
-            h: 49,
-        },
-    },
-    "technologies/crystalBite": {
-        frame: {
-            x: 447,
-            y: 494,
-            w: 49,
-            h: 46,
-        },
-    },
-    "actions/getTirelessCrafter": {
-        frame: {
-            x: 449,
-            y: 245,
-            w: 45,
-            h: 50,
-        },
-    },
-    "technologies/heavySifting": {
-        frame: {
-            x: 494,
-            y: 245,
-            w: 45,
-            h: 50,
-        },
-    },
-    "technologies/magicBottles": {
-        frame: {
-            x: 489,
-            y: 390,
-            w: 45,
-            h: 50,
-        },
-    },
-    "actions/getQueen": {
-        frame: {
-            x: 197,
-            y: 493,
-            w: 48,
-            h: 46,
-        },
-    },
-    "actions/getScientist": {
-        frame: {
-            x: 495,
-            y: 196,
-            w: 46,
-            h: 48,
-        },
-    },
-    "technologies/whaleCommunication": {
-        frame: {
-            x: 98,
-            y: 494,
-            w: 48,
-            h: 46,
-        },
-    },
-    "actions/getPit": {
-        frame: {
-            x: 146,
-            y: 494,
-            w: 50,
-            h: 44,
-        },
-    },
-    "technologies/environmentalism": {
-        frame: {
             x: 0,
-            y: 495,
+            y: 400,
             w: 50,
-            h: 44,
+            h: 50,
         },
     },
-    "actions/getBillfish": {
-        frame: {
-            x: 494,
-            y: 49,
-            w: 46,
-            h: 47,
-        },
-    },
-    "actions/getCollector": {
-        frame: {
-            x: 495,
-            y: 0,
-            w: 46,
-            h: 47,
-        },
-    },
-    "actions/getMaker": {
+    "actions/getHeater": {
         frame: {
             x: 50,
-            y: 495,
-            w: 47,
-            h: 46,
+            y: 400,
+            w: 50,
+            h: 50,
         },
     },
-    "actions/getPlanter": {
+    "actions/getHistorian": {
         frame: {
-            x: 494,
-            y: 96,
-            w: 46,
-            h: 47,
-        },
-    },
-    "actions/getSquid": {
-        frame: {
-            x: 245,
-            y: 493,
-            w: 47,
-            h: 46,
-        },
-    },
-    "actions/breakDownAncientPart": {
-        frame: {
-            x: 496,
-            y: 143,
-            w: 45,
-            h: 48,
-        },
-    },
-    "actions/getSeabedStripper": {
-        frame: {
-            x: 292,
-            y: 493,
-            w: 48,
-            h: 45,
-        },
-    },
-    "technologies/agriculture": {
-        frame: {
-            x: 340,
-            y: 493,
-            w: 48,
-            h: 45,
-        },
-    },
-    "technologies/crystalScoop": {
-        frame: {
-            x: 388,
-            y: 495,
-            w: 48,
-            h: 45,
-        },
-    },
-    "actions/getWorker": {
-        frame: {
-            x: 540,
-            y: 47,
-            w: 49,
-            h: 44,
-        },
-    },
-    "technologies/octalEfficiency": {
-        frame: {
-            x: 540,
-            y: 91,
-            w: 43,
+            x: 100,
+            y: 400,
+            w: 50,
             h: 50,
         },
     },
     "actions/getInvestigator": {
         frame: {
-            x: 541,
-            y: 0,
-            w: 46,
-            h: 46,
-        },
-    },
-    "technologies/secretSmithing": {
-        frame: {
-            x: 496,
-            y: 295,
-            w: 46,
-            h: 46,
-        },
-    },
-    "technologies/sentientCircuitBoards": {
-        frame: {
-            x: 539,
-            y: 244,
-            w: 46,
-            h: 46,
-        },
-    },
-    "technologies/thermalVents": {
-        frame: {
-            x: 496,
-            y: 341,
-            w: 46,
-            h: 46,
-        },
-    },
-    "actions/getHistorian": {
-        frame: {
-            x: 541,
-            y: 141,
-            w: 45,
-            h: 47,
-        },
-    },
-    "actions/getAutoTransmuter": {
-        frame: {
-            x: 541,
-            y: 188,
-            w: 44,
-            h: 48,
-        },
-    },
-    "technologies/kelpHorticulture": {
-        frame: {
-            x: 534,
-            y: 387,
-            w: 48,
-            h: 44,
-        },
-    },
-    "actions/getUrchin": {
-        frame: {
-            x: 534,
-            y: 431,
-            w: 49,
-            h: 43,
-        },
-    },
-    "technologies/apologeticAmnesty": {
-        frame: {
-            x: 542,
-            y: 290,
-            w: 43,
-            h: 49,
-        },
-    },
-    "actions/getClamScavenger": {
-        frame: {
-            x: 496,
-            y: 474,
+            x: 150,
+            y: 400,
             w: 50,
-            h: 42,
-        },
-    },
-    "actions/getHeater": {
-        frame: {
-            x: 546,
-            y: 474,
-            w: 42,
             h: 50,
         },
     },
-    "general/missing-action": {
+    "actions/getJellyfish": {
         frame: {
-            x: 0,
-            y: 539,
+            x: 200,
+            y: 400,
             w: 50,
-            h: 42,
-        },
-    },
-    "technologies/ancientAgriculture": {
-        frame: {
-            x: 496,
-            y: 516,
-            w: 42,
             h: 50,
         },
     },
-    "technologies/calciniumRobotics": {
+    "actions/getKelpCultivator": {
         frame: {
-            x: 146,
-            y: 538,
+            x: 250,
+            y: 400,
             w: 50,
-            h: 42,
-        },
-    },
-    "actions/getSkimmer": {
-        frame: {
-            x: 542,
-            y: 339,
-            w: 44,
-            h: 47,
-        },
-    },
-    "technologies/sunObservation": {
-        frame: {
-            x: 538,
-            y: 524,
-            w: 47,
-            h: 44,
-        },
-    },
-    "actions/getBerrier": {
-        frame: {
-            x: 97,
-            y: 540,
-            w: 43,
-            h: 48,
-        },
-    },
-    "actions/getStormgoer": {
-        frame: {
-            x: 0,
-            y: 581,
-            w: 48,
-            h: 43,
-        },
-    },
-    "general/missing-artifact": {
-        frame: {
-            x: 48,
-            y: 581,
-            w: 43,
-            h: 48,
-        },
-    },
-    "general/missing-technology": {
-        frame: {
-            x: 292,
-            y: 538,
-            w: 45,
-            h: 45,
-        },
-    },
-    "technologies/billfishBiology": {
-        frame: {
-            x: 337,
-            y: 538,
-            w: 45,
-            h: 45,
-        },
-    },
-    "technologies/biology": {
-        frame: {
-            x: 140,
-            y: 580,
-            w: 45,
-            h: 45,
-        },
-    },
-    "technologies/broodingBiology": {
-        frame: {
-            x: 185,
-            y: 580,
-            w: 45,
-            h: 45,
-        },
-    },
-    "technologies/cetaceanAwareness": {
-        frame: {
-            x: 230,
-            y: 539,
-            w: 45,
-            h: 45,
-        },
-    },
-    "technologies/chimaeraReunification": {
-        frame: {
-            x: 382,
-            y: 566,
-            w: 45,
-            h: 45,
-        },
-    },
-    "technologies/coralCollection": {
-        frame: {
-            x: 275,
-            y: 583,
-            w: 45,
-            h: 45,
-        },
-    },
-    "technologies/crabBiology": {
-        frame: {
-            x: 230,
-            y: 584,
-            w: 45,
-            h: 45,
-        },
-    },
-    "technologies/crustaceanBiology": {
-        frame: {
-            x: 320,
-            y: 583,
-            w: 45,
-            h: 45,
-        },
-    },
-    "technologies/dolphinBiology": {
-        frame: {
-            x: 427,
-            y: 540,
-            w: 45,
-            h: 45,
-        },
-    },
-    "technologies/eelHabitats": {
-        frame: {
-            x: 472,
-            y: 566,
-            w: 45,
-            h: 45,
-        },
-    },
-    "technologies/eusociality": {
-        frame: {
-            x: 427,
-            y: 585,
-            w: 45,
-            h: 45,
-        },
-    },
-    "technologies/exploration": {
-        frame: {
-            x: 517,
-            y: 568,
-            w: 45,
-            h: 45,
-        },
-    },
-    "technologies/farExploration": {
-        frame: {
-            x: 587,
-            y: 0,
-            w: 45,
-            h: 45,
-        },
-    },
-    "technologies/gateDiscovery": {
-        frame: {
-            x: 582,
-            y: 386,
-            w: 45,
-            h: 45,
-        },
-    },
-    "technologies/rayBiology": {
-        frame: {
-            x: 583,
-            y: 91,
-            w: 45,
-            h: 45,
-        },
-    },
-    "technologies/spongeCollection": {
-        frame: {
-            x: 589,
-            y: 45,
-            w: 45,
-            h: 45,
-        },
-    },
-    "technologies/squidBiology": {
-        frame: {
-            x: 562,
-            y: 568,
-            w: 45,
-            h: 45,
-        },
-    },
-    "technologies/statsDiscovery": {
-        frame: {
-            x: 588,
-            y: 431,
-            w: 45,
-            h: 45,
-        },
-    },
-    "technologies/urchinBiology": {
-        frame: {
-            x: 588,
-            y: 476,
-            w: 45,
-            h: 45,
-        },
-    },
-    "technologies/xenobiology": {
-        frame: {
-            x: 588,
-            y: 521,
-            w: 45,
-            h: 45,
-        },
-    },
-    "actions/getOctopus": {
-        frame: {
-            x: 585,
-            y: 188,
-            w: 46,
-            h: 44,
-        },
-    },
-    "actions/getScavenger": {
-        frame: {
-            x: 586,
-            y: 136,
-            w: 44,
-            h: 46,
-        },
-    },
-    "technologies/engineering": {
-        frame: {
-            x: 585,
-            y: 232,
-            w: 44,
-            h: 46,
-        },
-    },
-    "technologies/iterativeDesign": {
-        frame: {
-            x: 585,
-            y: 278,
-            w: 42,
-            h: 48,
-        },
-    },
-    "technologies/jellyDiving": {
-        frame: {
-            x: 91,
-            y: 588,
-            w: 48,
-            h: 42,
+            h: 50,
         },
     },
     "actions/getLaser": {
         frame: {
-            x: 586,
-            y: 326,
-            w: 49,
-            h: 41,
-        },
-    },
-    "technologies/sprongeBiomimicry": {
-        frame: {
-            x: 365,
-            y: 611,
-            w: 49,
-            h: 41,
-        },
-    },
-    "technologies/ancestralRecall": {
-        frame: {
-            x: 472,
-            y: 611,
-            w: 40,
+            x: 300,
+            y: 400,
+            w: 50,
             h: 50,
         },
     },
-    "technologies/crystalSpade": {
+    "actions/getLobster": {
         frame: {
-            x: 0,
-            y: 624,
-            w: 45,
-            h: 44,
+            x: 350,
+            y: 400,
+            w: 50,
+            h: 50,
         },
     },
-    "actions/getCrab": {
+    "actions/getLobter": {
         frame: {
-            x: 45,
-            y: 629,
-            w: 46,
-            h: 43,
+            x: 400,
+            y: 400,
+            w: 50,
+            h: 50,
         },
     },
-    "actions/getCuriousCrab": {
+    "actions/getMaker": {
         frame: {
-            x: 275,
-            y: 628,
-            w: 46,
-            h: 43,
-        },
-    },
-    "actions/getResearcher": {
-        frame: {
-            x: 139,
-            y: 625,
-            w: 46,
-            h: 43,
-        },
-    },
-    "technologies/aquamarineFusion": {
-        frame: {
-            x: 185,
-            y: 625,
-            w: 43,
-            h: 46,
-        },
-    },
-    "actions/getCalciniumConverter": {
-        frame: {
-            x: 91,
-            y: 630,
-            w: 47,
-            h: 42,
-        },
-    },
-    "actions/getCrystalMiner": {
-        frame: {
-            x: 512,
-            y: 613,
-            w: 41,
-            h: 48,
-        },
-    },
-    "technologies/finalDraft": {
-        frame: {
-            x: 414,
-            y: 630,
-            w: 48,
-            h: 41,
-        },
-    },
-    "technologies/reverseEngineering": {
-        frame: {
-            x: 553,
-            y: 613,
-            w: 41,
-            h: 48,
-        },
-    },
-    "actions/getCrimsonCombine": {
-        frame: {
-            x: 632,
+            x: 450,
             y: 0,
-            w: 49,
-            h: 40,
+            w: 50,
+            h: 50,
         },
     },
     "actions/getManta": {
         frame: {
-            x: 628,
-            y: 90,
-            w: 49,
-            h: 40,
+            x: 450,
+            y: 50,
+            w: 50,
+            h: 50,
         },
     },
-    "technologies/octopusMethodology": {
+    "actions/getNurse": {
         frame: {
-            x: 634,
-            y: 40,
-            w: 39,
+            x: 450,
+            y: 100,
+            w: 50,
+            h: 50,
+        },
+    },
+    "actions/getOctopus": {
+        frame: {
+            x: 450,
+            y: 150,
+            w: 50,
+            h: 50,
+        },
+    },
+    "actions/getPhilosopher": {
+        frame: {
+            x: 450,
+            y: 200,
+            w: 50,
+            h: 50,
+        },
+    },
+    "actions/getPit": {
+        frame: {
+            x: 450,
+            y: 250,
+            w: 50,
+            h: 50,
+        },
+    },
+    "actions/getPlanter": {
+        frame: {
+            x: 450,
+            y: 300,
+            w: 50,
+            h: 50,
+        },
+    },
+    "actions/getQueen": {
+        frame: {
+            x: 450,
+            y: 350,
+            w: 50,
+            h: 50,
+        },
+    },
+    "actions/getResearcher": {
+        frame: {
+            x: 450,
+            y: 400,
+            w: 50,
+            h: 50,
+        },
+    },
+    "actions/getSandDigger": {
+        frame: {
+            x: 0,
+            y: 450,
+            w: 50,
+            h: 50,
+        },
+    },
+    "actions/getScavenger": {
+        frame: {
+            x: 50,
+            y: 450,
+            w: 50,
+            h: 50,
+        },
+    },
+    "actions/getScholar": {
+        frame: {
+            x: 100,
+            y: 450,
+            w: 50,
+            h: 50,
+        },
+    },
+    "actions/getScientist": {
+        frame: {
+            x: 150,
+            y: 450,
+            w: 50,
+            h: 50,
+        },
+    },
+    "actions/getSeaApple": {
+        frame: {
+            x: 200,
+            y: 450,
+            w: 50,
+            h: 50,
+        },
+    },
+    "actions/getShark": {
+        frame: {
+            x: 250,
+            y: 450,
+            w: 50,
+            h: 50,
+        },
+    },
+    "actions/getShoveler": {
+        frame: {
+            x: 300,
+            y: 450,
+            w: 50,
+            h: 50,
+        },
+    },
+    "actions/getShrimp": {
+        frame: {
+            x: 350,
+            y: 450,
+            w: 50,
+            h: 50,
+        },
+    },
+    "actions/getSifter": {
+        frame: {
+            x: 400,
+            y: 450,
+            w: 50,
+            h: 50,
+        },
+    },
+    "actions/getSkimmer": {
+        frame: {
+            x: 450,
+            y: 450,
+            w: 50,
+            h: 50,
+        },
+    },
+    "actions/getSpawner": {
+        frame: {
+            x: 500,
+            y: 0,
+            w: 50,
+            h: 50,
+        },
+    },
+    "actions/getSpawnerHatted": {
+        frame: {
+            x: 500,
+            y: 50,
+            w: 50,
+            h: 50,
+        },
+    },
+    "actions/getSpongeFarm": {
+        frame: {
+            x: 500,
+            y: 100,
+            w: 50,
+            h: 50,
+        },
+    },
+    "actions/getSprongeSmelter": {
+        frame: {
+            x: 500,
+            y: 150,
+            w: 50,
+            h: 50,
+        },
+    },
+    "actions/getSquid": {
+        frame: {
+            x: 500,
+            y: 200,
+            w: 50,
+            h: 50,
+        },
+    },
+    "actions/getStormgoer": {
+        frame: {
+            x: 500,
+            y: 250,
+            w: 50,
+            h: 50,
+        },
+    },
+    "actions/getTechnician": {
+        frame: {
+            x: 500,
+            y: 300,
+            w: 50,
+            h: 50,
+        },
+    },
+    "actions/getTirelessCrafter": {
+        frame: {
+            x: 500,
+            y: 350,
+            w: 50,
+            h: 50,
+        },
+    },
+    "actions/getTreasurer": {
+        frame: {
+            x: 500,
+            y: 400,
+            w: 50,
+            h: 50,
+        },
+    },
+    "actions/getUrchin": {
+        frame: {
+            x: 500,
+            y: 450,
+            w: 50,
+            h: 50,
+        },
+    },
+    "actions/getWhale": {
+        frame: {
+            x: 0,
+            y: 500,
+            w: 50,
+            h: 50,
+        },
+    },
+    "actions/getWorker": {
+        frame: {
+            x: 50,
+            y: 500,
+            w: 50,
+            h: 50,
+        },
+    },
+    "actions/jellyfishToScience": {
+        frame: {
+            x: 100,
+            y: 500,
+            w: 50,
+            h: 50,
+        },
+    },
+    "actions/makeSacrifice": {
+        frame: {
+            x: 150,
+            y: 500,
+            w: 50,
+            h: 50,
+        },
+    },
+    "actions/pearlConversion": {
+        frame: {
+            x: 200,
+            y: 500,
+            w: 50,
             h: 50,
         },
     },
     "actions/prySponge": {
         frame: {
-            x: 321,
-            y: 628,
-            w: 44,
-            h: 44,
+            x: 250,
+            y: 500,
+            w: 50,
+            h: 50,
         },
     },
-    "technologies/transmutation": {
+    "actions/seaApplesToScience": {
         frame: {
-            x: 627,
-            y: 278,
-            w: 44,
-            h: 44,
+            x: 300,
+            y: 500,
+            w: 50,
+            h: 50,
         },
     },
-    "actions/getLobter": {
+    "actions/seagrassToScience": {
         frame: {
-            x: 228,
-            y: 629,
-            w: 45,
-            h: 43,
+            x: 350,
+            y: 500,
+            w: 50,
+            h: 50,
         },
     },
-    "actions/getAcolyte": {
+    "actions/smeltCoralglass": {
         frame: {
-            x: 630,
-            y: 130,
-            w: 40,
-            h: 48,
+            x: 400,
+            y: 500,
+            w: 50,
+            h: 50,
         },
     },
-    "technologies/laserRays": {
+    "actions/smeltPorite": {
         frame: {
-            x: 629,
-            y: 232,
-            w: 42,
-            h: 45,
+            x: 450,
+            y: 500,
+            w: 50,
+            h: 50,
         },
     },
-    "technologies/seabedGeology": {
+    "actions/spongeFiltration": {
         frame: {
-            x: 631,
-            y: 178,
-            w: 45,
-            h: 42,
+            x: 500,
+            y: 500,
+            w: 50,
+            h: 50,
         },
     },
-    "technologies/jellyfishHunting": {
+    "actions/spongeToScience": {
         frame: {
-            x: 627,
-            y: 367,
-            w: 39,
-            h: 48,
+            x: 550,
+            y: 0,
+            w: 50,
+            h: 50,
         },
     },
-    "actions/fuseCalcinium": {
+    "actions/toggleAutoSmelt": {
         frame: {
-            x: 635,
-            y: 322,
-            w: 49,
-            h: 38,
+            x: 550,
+            y: 50,
+            w: 50,
+            h: 50,
         },
     },
-    "actions/getSprongeSmelter": {
+    "actions/transmuteSharkonium": {
         frame: {
-            x: 594,
-            y: 613,
-            w: 42,
-            h: 44,
+            x: 550,
+            y: 100,
+            w: 50,
+            h: 50,
         },
     },
-    "actions/getNurse": {
+    "general/missing-action-old": {
         frame: {
-            x: 607,
-            y: 566,
-            w: 48,
-            h: 38,
+            x: 550,
+            y: 150,
+            w: 50,
+            h: 50,
         },
     },
-    "technologies/clamScooping": {
+    "general/missing-action": {
         frame: {
-            x: 636,
-            y: 604,
-            w: 42,
-            h: 43,
+            x: 550,
+            y: 200,
+            w: 50,
+            h: 50,
         },
     },
-    "actions/getKelpCultivator": {
+    "general/missing-artifact": {
         frame: {
-            x: 633,
-            y: 415,
-            w: 36,
+            x: 550,
+            y: 250,
+            w: 50,
+            h: 50,
+        },
+    },
+    "general/missing-technology": {
+        frame: {
+            x: 550,
+            y: 300,
+            w: 50,
+            h: 50,
+        },
+    },
+    "general/pieceofpaper": {
+        frame: {
+            x: 550,
+            y: 350,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/abyssalEnigmas": {
+        frame: {
+            x: 550,
+            y: 400,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/agriculture": {
+        frame: {
+            x: 550,
+            y: 450,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/ancestralRecall": {
+        frame: {
+            x: 550,
+            y: 500,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/ancientAgriculture": {
+        frame: {
+            x: 0,
+            y: 550,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/apologeticAmnesty": {
+        frame: {
+            x: 50,
+            y: 550,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/aquamarineFusion": {
+        frame: {
+            x: 100,
+            y: 550,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/arcaneCompass": {
+        frame: {
+            x: 150,
+            y: 550,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/arcaneSacrifice": {
+        frame: {
+            x: 200,
+            y: 550,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/arcaneSifting": {
+        frame: {
+            x: 250,
+            y: 550,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/assistedExtraction": {
+        frame: {
+            x: 300,
+            y: 550,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/automation": {
+        frame: {
+            x: 350,
+            y: 550,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/billfishBiology": {
+        frame: {
+            x: 400,
+            y: 550,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/bioelectricity": {
+        frame: {
+            x: 450,
+            y: 550,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/bioengineering": {
+        frame: {
+            x: 500,
+            y: 550,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/biology": {
+        frame: {
+            x: 550,
+            y: 550,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/broodingBiology": {
+        frame: {
+            x: 600,
+            y: 0,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/calciniumCybernetics": {
+        frame: {
+            x: 600,
+            y: 50,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/calciniumRobotics": {
+        frame: {
+            x: 600,
+            y: 100,
+            w: 50,
             h: 50,
         },
     },
     "technologies/calciniumStudies": {
         frame: {
-            x: 633,
-            y: 465,
-            w: 40,
-            h: 45,
+            x: 600,
+            y: 150,
+            w: 50,
+            h: 50,
         },
     },
-    "actions/getCoralFarm": {
+    "technologies/cavernousContact": {
         frame: {
-            x: 633,
-            y: 510,
-            w: 48,
-            h: 37,
+            x: 600,
+            y: 200,
+            w: 50,
+            h: 50,
         },
     },
-    "technologies/urchinAttraction": {
+    "technologies/cetaceanAwareness": {
         frame: {
-            x: 273,
-            y: 671,
-            w: 48,
-            h: 37,
+            x: 600,
+            y: 250,
+            w: 50,
+            h: 50,
         },
     },
-    "actions/getFarmer": {
+    "technologies/chimaeraMysticism": {
         frame: {
-            x: 365,
-            y: 652,
-            w: 41,
-            h: 43,
+            x: 600,
+            y: 300,
+            w: 50,
+            h: 50,
         },
     },
-    "actions/getBrood": {
+    "technologies/chimaeraReunification": {
+        frame: {
+            x: 600,
+            y: 350,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/civilContact": {
+        frame: {
+            x: 600,
+            y: 400,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/clamScooping": {
+        frame: {
+            x: 600,
+            y: 450,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/consistentCommunication": {
+        frame: {
+            x: 600,
+            y: 500,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/coralCollection": {
+        frame: {
+            x: 600,
+            y: 550,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/crabBiology": {
         frame: {
             x: 0,
-            y: 668,
-            w: 45,
-            h: 39,
+            y: 600,
+            w: 50,
+            h: 50,
         },
     },
-    "actions/getExplorer": {
+    "technologies/creviceContemplation": {
         frame: {
             x: 50,
-            y: 541,
-            w: 47,
-            h: 37,
-        },
-    },
-    "actions/getSpongeFarm": {
-        frame: {
-            x: 636,
-            y: 647,
-            w: 48,
-            h: 36,
-        },
-    },
-    "actions/getClamCollector": {
-        frame: {
-            x: 594,
-            y: 657,
-            w: 39,
-            h: 44,
-        },
-    },
-    "actions/getPhilosopher": {
-        frame: {
-            x: 462,
-            y: 661,
-            w: 38,
-            h: 45,
-        },
-    },
-    "actions/getShark": {
-        frame: {
-            x: 500,
-            y: 661,
-            w: 40,
-            h: 42,
-        },
-    },
-    "general/missing-action-old": {
-        frame: {
-            x: 540,
-            y: 661,
-            w: 40,
-            h: 42,
-        },
-    },
-    "actions/getChimaera": {
-        frame: {
-            x: 406,
-            y: 671,
+            y: 600,
             w: 50,
-            h: 33,
+            h: 50,
         },
     },
-    "actions/catchFish": {
+    "technologies/crustaceanBiology": {
         frame: {
-            x: 673,
-            y: 40,
-            w: 39,
-            h: 42,
+            x: 100,
+            y: 600,
+            w: 50,
+            h: 50,
         },
     },
-    "actions/getBiologist": {
+    "technologies/crystalBite": {
         frame: {
-            x: 670,
-            y: 130,
-            w: 48,
-            h: 34,
-        },
-    },
-    "actions/transmuteSharkonium": {
-        frame: {
-            x: 138,
-            y: 668,
-            w: 47,
-            h: 34,
-        },
-    },
-    "technologies/superiorSearchAlgorithms": {
-        frame: {
-            x: 677,
-            y: 82,
-            w: 37,
-            h: 43,
-        },
-    },
-    "actions/fuseDelphinium": {
-        frame: {
-            x: 666,
-            y: 360,
-            w: 48,
-            h: 33,
-        },
-    },
-    "technologies/automation": {
-        frame: {
-            x: 655,
-            y: 547,
-            w: 38,
-            h: 41,
+            x: 150,
+            y: 600,
+            w: 50,
+            h: 50,
         },
     },
     "technologies/crystalContainer": {
         frame: {
-            x: 678,
-            y: 588,
-            w: 36,
-            h: 43,
-        },
-    },
-    "technologies/abyssalEnigmas": {
-        frame: {
-            x: 185,
-            y: 671,
-            w: 40,
-            h: 38,
-        },
-    },
-    "actions/getEel": {
-        frame: {
-            x: 225,
-            y: 672,
-            w: 46,
-            h: 33,
-        },
-    },
-    "actions/getShrimp": {
-        frame: {
-            x: 684,
-            y: 631,
-            w: 36,
-            h: 42,
-        },
-    },
-    "technologies/recyclerDiscovery": {
-        frame: {
-            x: 669,
-            y: 393,
-            w: 36,
-            h: 42,
-        },
-    },
-    "actions/getTreasurer": {
-        frame: {
-            x: 673,
-            y: 435,
-            w: 35,
-            h: 43,
-        },
-    },
-    "actions/getWhale": {
-        frame: {
-            x: 673,
-            y: 478,
-            w: 48,
-            h: 31,
-        },
-    },
-    "actions/smeltCoralglass": {
-        frame: {
-            x: 671,
-            y: 220,
-            w: 33,
-            h: 45,
-        },
-    },
-    "technologies/arcaneCompass": {
-        frame: {
-            x: 681,
-            y: 509,
-            w: 39,
-            h: 38,
-        },
-    },
-    "technologies/arcaneSifting": {
-        frame: {
-            x: 671,
-            y: 265,
+            x: 200,
+            y: 600,
             w: 50,
-            h: 29,
+            h: 50,
         },
     },
-    "actions/getFishMachine": {
+    "technologies/crystalScoop": {
         frame: {
-            x: 321,
-            y: 672,
-            w: 39,
-            h: 37,
+            x: 250,
+            y: 600,
+            w: 50,
+            h: 50,
         },
     },
-    "actions/getDolphin": {
+    "technologies/crystalSpade": {
         frame: {
-            x: 676,
-            y: 164,
-            w: 45,
-            h: 31,
+            x: 300,
+            y: 600,
+            w: 50,
+            h: 50,
         },
     },
-    "actions/getSandDigger": {
+    "technologies/crystalSpear": {
         frame: {
-            x: 681,
+            x: 350,
+            y: 600,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/crystallineConstruction": {
+        frame: {
+            x: 400,
+            y: 600,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/curiousCollection": {
+        frame: {
+            x: 450,
+            y: 600,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/delphineHistory": {
+        frame: {
+            x: 500,
+            y: 600,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/dolphinBiology": {
+        frame: {
+            x: 550,
+            y: 600,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/dolphinTechnology": {
+        frame: {
+            x: 600,
+            y: 600,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/eelHabitats": {
+        frame: {
+            x: 650,
             y: 0,
-            w: 40,
-            h: 34,
+            w: 50,
+            h: 50,
         },
     },
-    "actions/smeltPorite": {
+    "technologies/eightfoldOptimisation": {
         frame: {
-            x: 45,
-            y: 672,
-            w: 42,
-            h: 32,
+            x: 650,
+            y: 50,
+            w: 50,
+            h: 50,
         },
     },
-    "actions/getClam": {
+    "technologies/engineering": {
         frame: {
-            x: 684,
-            y: 673,
-            w: 39,
-            h: 33,
+            x: 650,
+            y: 100,
+            w: 50,
+            h: 50,
         },
     },
-    "actions/spongeFiltration": {
+    "technologies/environmentalism": {
         frame: {
-            x: 684,
-            y: 294,
-            w: 30,
-            h: 42,
+            x: 650,
+            y: 150,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/eternalSong": {
+        frame: {
+            x: 650,
+            y: 200,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/eusociality": {
+        frame: {
+            x: 650,
+            y: 250,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/exploration": {
+        frame: {
+            x: 650,
+            y: 300,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/farExploration": {
+        frame: {
+            x: 650,
+            y: 350,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/feedingTechniques": {
+        frame: {
+            x: 650,
+            y: 400,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/finalDraft": {
+        frame: {
+            x: 650,
+            y: 450,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/gateDiscovery": {
+        frame: {
+            x: 650,
+            y: 500,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/heavySifting": {
+        frame: {
+            x: 650,
+            y: 550,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/highEnergyFusion": {
+        frame: {
+            x: 650,
+            y: 600,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/imperialDesigns": {
+        frame: {
+            x: 0,
+            y: 650,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/industrialGradeSponge": {
+        frame: {
+            x: 50,
+            y: 650,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/investi-gate-tions": {
+        frame: {
+            x: 100,
+            y: 650,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/iterativeDesign": {
+        frame: {
+            x: 150,
+            y: 650,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/jellyDiving": {
+        frame: {
+            x: 200,
+            y: 650,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/kelpHorticulture": {
+        frame: {
+            x: 250,
+            y: 650,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/laserLenses": {
+        frame: {
+            x: 300,
+            y: 650,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/laserRays": {
+        frame: {
+            x: 350,
+            y: 650,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/magicBottles": {
+        frame: {
+            x: 400,
+            y: 650,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/mobiusShells": {
+        frame: {
+            x: 450,
+            y: 650,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/octalEfficiency": {
+        frame: {
+            x: 500,
+            y: 650,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/octopusMethodology": {
+        frame: {
+            x: 550,
+            y: 650,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/packHunting": {
+        frame: {
+            x: 600,
+            y: 650,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/pearlConversion": {
+        frame: {
+            x: 650,
+            y: 650,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/powerfulPropulsion": {
+        frame: {
+            x: 700,
+            y: 0,
+            w: 50,
+            h: 50,
         },
     },
     "technologies/properPractices": {
         frame: {
-            x: 633,
-            y: 683,
+            x: 700,
+            y: 50,
             w: 50,
-            h: 25,
+            h: 50,
         },
     },
-    "actions/getDiver": {
+    "technologies/rayBiology": {
         frame: {
-            x: 87,
-            y: 672,
-            w: 35,
-            h: 35,
+            x: 700,
+            y: 100,
+            w: 50,
+            h: 50,
         },
     },
-    "actions/getTechnician": {
+    "technologies/recyclerDiscovery": {
         frame: {
-            x: 580,
-            y: 701,
+            x: 700,
+            y: 150,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/retroactiveRecordkeeping": {
+        frame: {
+            x: 700,
+            y: 200,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/reverseEngineering": {
+        frame: {
+            x: 700,
+            y: 250,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/sandbagging": {
+        frame: {
+            x: 700,
+            y: 300,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/seabedGeology": {
+        frame: {
+            x: 700,
+            y: 350,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/secretSmithing": {
+        frame: {
+            x: 700,
+            y: 400,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/sociology": {
+        frame: {
+            x: 700,
+            y: 450,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/spongeCollection": {
+        frame: {
+            x: 700,
+            y: 500,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/sprongeBiomimicry": {
+        frame: {
+            x: 700,
+            y: 550,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/squidBiology": {
+        frame: {
+            x: 700,
+            y: 600,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/statsDiscovery": {
+        frame: {
+            x: 700,
+            y: 650,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/sunObservation": {
+        frame: {
+            x: 0,
+            y: 700,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/superShovels": {
+        frame: {
+            x: 50,
+            y: 700,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/superiorSearchAlgorithms": {
+        frame: {
+            x: 100,
+            y: 700,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/superprocessing": {
+        frame: {
+            x: 150,
+            y: 700,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/sustainableSolutions": {
+        frame: {
+            x: 200,
+            y: 700,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/teamSpirit": {
+        frame: {
+            x: 250,
+            y: 700,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/thermalConditioning": {
+        frame: {
+            x: 300,
+            y: 700,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/thermalVents": {
+        frame: {
+            x: 350,
+            y: 700,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/transmutation": {
+        frame: {
+            x: 400,
+            y: 700,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/underwaterChemistry": {
+        frame: {
+            x: 450,
+            y: 700,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/urchinAttraction": {
+        frame: {
+            x: 500,
+            y: 700,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/urchinBiology": {
+        frame: {
+            x: 550,
+            y: 700,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/whaleCommunication": {
+        frame: {
+            x: 600,
+            y: 700,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/wormWarriors": {
+        frame: {
+            x: 650,
+            y: 700,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/xenobiology": {
+        frame: {
+            x: 700,
+            y: 700,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/jellyfishHunting": {
+        frame: {
+            x: 750,
+            y: 0,
             w: 49,
-            h: 23,
+            h: 49,
+        },
+    },
+    "actions/getSeabedStripper": {
+        frame: {
+            x: 750,
+            y: 49,
+            w: 48,
+            h: 45,
+        },
+    },
+    "technologies/sentientCircuitBoards": {
+        frame: {
+            x: 750,
+            y: 94,
+            w: 46,
+            h: 46,
         },
     },
     "aspects/amorphousAssembly": {
         frame: {
-            x: 496,
-            y: 440,
+            x: 750,
+            y: 140,
             w: 32,
             h: 32,
         },
     },
     "aspects/apotheosis": {
         frame: {
-            x: 196,
-            y: 539,
+            x: 750,
+            y: 172,
+            w: 32,
+            h: 32,
+        },
+    },
+    "aspects/clawSharpening": {
+        frame: {
+            x: 750,
+            y: 204,
             w: 32,
             h: 32,
         },
     },
     "aspects/cleanSlate": {
         frame: {
-            x: 360,
-            y: 695,
+            x: 750,
+            y: 236,
             w: 32,
             h: 32,
         },
     },
     "aspects/collectiveCooperation": {
         frame: {
-            x: 712,
-            y: 34,
+            x: 750,
+            y: 268,
             w: 32,
             h: 32,
         },
     },
     "aspects/constructedConception": {
         frame: {
-            x: 721,
-            y: 0,
+            x: 750,
+            y: 300,
             w: 32,
             h: 32,
         },
     },
     "aspects/coordinatedCooperation": {
         frame: {
-            x: 705,
-            y: 393,
+            x: 750,
+            y: 332,
+            w: 32,
+            h: 32,
+        },
+    },
+    "aspects/crustaceanAptitude": {
+        frame: {
+            x: 750,
+            y: 364,
             w: 32,
             h: 32,
         },
     },
     "aspects/crystallineSkin": {
         frame: {
-            x: 708,
-            y: 425,
+            x: 750,
+            y: 396,
             w: 32,
             h: 32,
         },
     },
     "aspects/destinyGamble": {
         frame: {
-            x: 693,
-            y: 547,
+            x: 750,
+            y: 428,
             w: 32,
             h: 32,
         },
     },
     "aspects/distantForesight": {
         frame: {
-            x: 720,
-            y: 509,
-            w: 32,
-            h: 32,
-        },
-    },
-    "aspects/extensiveOrganization": {
-        frame: {
-            x: 721,
-            y: 457,
-            w: 32,
-            h: 32,
-        },
-    },
-    "aspects/meditation": {
-        frame: {
-            x: 714,
-            y: 579,
-            w: 32,
-            h: 32,
-        },
-    },
-    "aspects/overtime": {
-        frame: {
-            x: 720,
-            y: 611,
-            w: 32,
-            h: 32,
-        },
-    },
-    "aspects/pathOfTime": {
-        frame: {
-            x: 714,
-            y: 66,
-            w: 32,
-            h: 32,
-        },
-    },
-    "aspects/patience": {
-        frame: {
-            x: 714,
-            y: 98,
-            w: 32,
-            h: 32,
-        },
-    },
-    "aspects/theDial": {
-        frame: {
-            x: 718,
-            y: 130,
-            w: 32,
-            h: 32,
-        },
-    },
-    "aspects/theMinuteHand": {
-        frame: {
-            x: 723,
-            y: 643,
-            w: 32,
-            h: 32,
-        },
-    },
-    "aspects/thePlan": {
-        frame: {
-            x: 723,
-            y: 675,
-            w: 32,
-            h: 32,
-        },
-    },
-    "aspects/theSecondHand": {
-        frame: {
-            x: 704,
-            y: 195,
-            w: 32,
-            h: 32,
-        },
-    },
-    "aspects/tokenOfIndustry": {
-        frame: {
-            x: 721,
-            y: 162,
+            x: 750,
+            y: 460,
             w: 32,
             h: 32,
         },
     },
     "aspects/doubleTime": {
         frame: {
-            x: 704,
-            y: 227,
+            x: 750,
+            y: 492,
             w: 32,
-            h: 31,
+            h: 32,
         },
     },
-    "aspects/mechanicalManifestation": {
+    "aspects/extensiveOrganization": {
         frame: {
-            x: 714,
-            y: 294,
+            x: 750,
+            y: 524,
             w: 32,
-            h: 31,
-        },
-    },
-    "aspects/theHourHand": {
-        frame: {
-            x: 721,
-            y: 258,
-            w: 32,
-            h: 31,
-        },
-    },
-    "aspects/crustaceanAptitude": {
-        frame: {
-            x: 714,
-            y: 325,
-            w: 31,
-            h: 31,
+            h: 32,
         },
     },
     "aspects/gumption": {
         frame: {
-            x: 714,
-            y: 356,
-            w: 31,
-            h: 31,
+            x: 750,
+            y: 556,
+            w: 32,
+            h: 32,
+        },
+    },
+    "aspects/infinityVision": {
+        frame: {
+            x: 750,
+            y: 588,
+            w: 32,
+            h: 32,
         },
     },
     "aspects/internalCalculator": {
         frame: {
-            x: 725,
-            y: 541,
-            w: 30,
+            x: 750,
+            y: 620,
+            w: 32,
             h: 32,
         },
     },
-    "aspects/clawSharpening": {
+    "aspects/mechanicalManifestation": {
         frame: {
-            x: 683,
-            y: 706,
-            w: 30,
-            h: 31,
+            x: 750,
+            y: 652,
+            w: 32,
+            h: 32,
+        },
+    },
+    "aspects/meditation": {
+        frame: {
+            x: 750,
+            y: 684,
+            w: 32,
+            h: 32,
+        },
+    },
+    "aspects/overtime": {
+        frame: {
+            x: 750,
+            y: 716,
+            w: 32,
+            h: 32,
         },
     },
     "aspects/pathOfEnlightenment": {
         frame: {
-            x: 713,
-            y: 707,
-            w: 29,
-            h: 32,
-        },
-    },
-    "aspects/syntheticTransmutation": {
-        frame: {
-            x: 45,
-            y: 704,
-            w: 28,
+            x: 0,
+            y: 750,
+            w: 32,
             h: 32,
         },
     },
     "aspects/pathOfIndustry": {
         frame: {
-            x: 0,
-            y: 707,
-            w: 27,
-            h: 31,
-        },
-    },
-    "aspects/infinityVision": {
-        frame: {
-            x: 382,
-            y: 540,
+            x: 32,
+            y: 750,
             w: 32,
-            h: 26,
+            h: 32,
         },
     },
-    "aspects/static/zoom": {
+    "aspects/pathOfTime": {
         frame: {
-            x: 225,
-            y: 705,
-            w: 27,
-            h: 26,
+            x: 64,
+            y: 750,
+            w: 32,
+            h: 32,
         },
     },
-    "general/holeoverlay": {
+    "aspects/patience": {
         frame: {
-            x: 472,
-            y: 540,
-            w: 24,
-            h: 24,
+            x: 96,
+            y: 750,
+            w: 32,
+            h: 32,
+        },
+    },
+    "aspects/syntheticTransmutation": {
+        frame: {
+            x: 128,
+            y: 750,
+            w: 32,
+            h: 32,
+        },
+    },
+    "aspects/theDial": {
+        frame: {
+            x: 160,
+            y: 750,
+            w: 32,
+            h: 32,
+        },
+    },
+    "aspects/theHourHand": {
+        frame: {
+            x: 192,
+            y: 750,
+            w: 32,
+            h: 32,
+        },
+    },
+    "aspects/theMinuteHand": {
+        frame: {
+            x: 224,
+            y: 750,
+            w: 32,
+            h: 32,
         },
     },
     "aspects/theMinuteHandCentered": {
         frame: {
-            x: 676,
-            y: 195,
-            w: 23,
-            h: 24,
+            x: 256,
+            y: 750,
+            w: 32,
+            h: 32,
         },
     },
-    "general/theToken": {
+    "aspects/thePlan": {
         frame: {
-            x: 684,
-            y: 336,
-            w: 24,
-            h: 21,
+            x: 288,
+            y: 750,
+            w: 32,
+            h: 32,
         },
     },
-    "general/hole": {
+    "aspects/theSecondHand": {
         frame: {
-            x: 721,
-            y: 489,
-            w: 24,
-            h: 18,
+            x: 320,
+            y: 750,
+            w: 32,
+            h: 32,
         },
     },
-    "general/slottedmarker": {
+    "aspects/tokenOfIndustry": {
         frame: {
-            x: 586,
-            y: 367,
-            w: 24,
-            h: 18,
-        },
-    },
-    "aspects/static/respecAll": {
-        frame: {
-            x: 737,
-            y: 387,
-            w: 18,
-            h: 23,
+            x: 352,
+            y: 750,
+            w: 32,
+            h: 32,
         },
     },
     "aspects/static/respec": {
         frame: {
-            x: 27,
-            y: 707,
-            w: 18,
-            h: 22,
+            x: 384,
+            y: 750,
+            w: 30,
+            h: 30,
+        },
+    },
+    "aspects/static/respecAll": {
+        frame: {
+            x: 414,
+            y: 750,
+            w: 30,
+            h: 30,
+        },
+    },
+    "aspects/static/zoom": {
+        frame: {
+            x: 444,
+            y: 750,
+            w: 30,
+            h: 30,
+        },
+    },
+    "general/hole": {
+        frame: {
+            x: 474,
+            y: 750,
+            w: 28,
+            h: 28,
+        },
+    },
+    "general/slottedmarker": {
+        frame: {
+            x: 502,
+            y: 750,
+            w: 28,
+            h: 28,
+        },
+    },
+    "general/theToken": {
+        frame: {
+            x: 530,
+            y: 750,
+            w: 28,
+            h: 21,
+        },
+    },
+    "general/holeoverlay": {
+        frame: {
+            x: 558,
+            y: 750,
+            w: 24,
+            h: 24,
         },
     },
     "actions/prySponge2": {
         frame: {
-            x: 321,
-            y: 628,
-            w: 44,
-            h: 44,
+            x: 250,
+            y: 500,
+            w: 50,
+            h: 50,
         },
     },
 };

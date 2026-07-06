@@ -271,7 +271,7 @@ SharkGame.Main = {
             `New Frontiers v ${SharkGame.VERSION} - ${SharkGame.VERSION_NAME}<br/>\
 Mod of v ${SharkGame.ORIGINAL_VERSION}`,
         );
-        $.getJSON("https://api.github.com/repos/Toby222/SharkGame/commits/dev", (data) => {
+        $.getJSON("https://api.github.com/repos/Toby222/SharkGame/commits/alpha", (data) => {
             SharkGame.COMMIT_SHA = data.sha;
         });
         log.clearMessages(false);
@@ -709,7 +709,7 @@ Mod of v ${SharkGame.ORIGINAL_VERSION}`,
     },
 
     checkForUpdate() {
-        $.getJSON("https://api.github.com/repos/Toby222/SharkGame/commits/dev", (data) => {
+        $.getJSON("https://api.github.com/repos/Toby222/SharkGame/commits/alpha", (data) => {
             if (data.sha !== SharkGame.COMMIT_SHA) {
                 $("#updateGameBox")
                     .html(
@@ -909,6 +909,9 @@ SharkGame.Button = {
 };
 
 SharkGame.Changelog = {
+    "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20260623a": [
+        "Fix some sprites having the wrong size and rotation",
+    ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20250630a": [
         "Fix broken progression of Abandoned Ocean",
     ],
@@ -1048,10 +1051,10 @@ SharkGame.Changelog = {
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> 0.2 patch 20210814a": [
         "Added Shrouded worldtype.",
         "Retooled Haven worldtype.",
-        "Changed the aspect tree and its aspects significantly. All essence must be refunded and all aspects must be reset because of this. Sorry!",
+        "Changed the aspect tree and its aspects significantly. All aspects must be refunded because of this. Sorry!",
         "Implemented a basic 'playstyle' choice. The game will adjust pacing to suit your choice.",
         "Improved resource table tooltips.",
-        "You can now access the options menu in the gateway.",
+        "You can now access the options menu in the gateway. (this took a surprising amount of work)",
         "'Wipe Save' now doesn't reset any settings. Added a separate button to reset settings.",
         "Added sprites.",
         "Greatly improved game stability when dealing with large numbers (above a quadrillion).",

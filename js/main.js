@@ -504,7 +504,6 @@ Mod of v ${SharkGame.ORIGINAL_VERSION}`,
             SharkGame.persistentFlags.currentPausedTime = 0;
 
             // populate save data object
-            let saveString = "";
             const saveData = {
                 version: SharkGame.VERSION,
                 resources: {},
@@ -538,7 +537,7 @@ Mod of v ${SharkGame.ORIGINAL_VERSION}`,
             saveData.keybinds = _.cloneDeep(SharkGame.Keybinds.keybinds);
 
             saveData.saveVersion = SharkGame.Save.saveUpdaters.length - 1;
-            saveString = ascii85.encode(pako.deflate(JSON.stringify(saveData), { to: "string" }));
+            const saveString = ascii85.encode(pako.deflate(JSON.stringify(saveData), { to: "string" }));
 
             SharkGame.Save.importData(saveString);
 

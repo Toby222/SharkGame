@@ -219,7 +219,6 @@ SharkGame.AspectTree = {
             const reqref = tree.requirementReference[aspectId];
             if (!reqref.revealed) return;
 
-            let basicText = "";
             let cantBuyText = "";
             if (!reqref.prereqsMet && aspectData.level === 0) {
                 cantBuyText = "With your infinite vision, you can see this aspect, but cannot buy it.";
@@ -228,7 +227,7 @@ SharkGame.AspectTree = {
             } else if (reqref.isolated) {
                 cantBuyText = "This aspect's prerequisites aren't met, even though you have levels in it.";
             }
-            basicText =
+            const basicText =
                 " A" +
                 (aspectData.level ? " level " + aspectData.level : "") +
                 (aspectData.core ? " core aspect" : aspectData.level ? " aspect" : "n aspect") +
@@ -691,7 +690,7 @@ SharkGame.AspectTree = {
     },
 
     refundLevels(aspectData) {
-        let cost = 0;
+        let cost;
         while (aspectData.level) {
             cost = aspectData.getCost(aspectData.level - 1);
             if (_.isUndefined(cost)) cost = 0;
@@ -799,7 +798,7 @@ SharkGame.AspectTree = {
                 tooltipBox.addClass("forAspectTreeAffordable");
             }
 
-            let tooltipText = "";
+            let tooltipText;
             if (button.level === 0) {
                 let costText = "";
                 if (tree.refundMode) {
@@ -821,7 +820,7 @@ SharkGame.AspectTree = {
                     (tree.debugMode ? "" : "<hr class='hrForTooltipJuxtapositionInGateway'>" + `<span class='bold'>${costText}</span>`);
                 tooltipBox.addClass("forAspectTreeUnpurchased");
             } else if (button.level < button.max) {
-                let costText = "";
+                let costText;
                 if (tree.refundMode) {
                     if (button.noRefunds) {
                         costText = "NO REFUNDS";
@@ -857,7 +856,7 @@ SharkGame.AspectTree = {
                     `<br />${button.getEffect(button.level)}` +
                     `<br /><span class='littleTooltipText'>${button.description}</span>`;
             } else {
-                let costText = "";
+                let costText;
                 if (tree.refundMode) {
                     if (button.noRefunds) {
                         costText = "NO REFUNDS";

@@ -986,7 +986,7 @@ SharkGame.Resources = {
         },
 
         changeSelectedMultiplier(_event, arbitrary) {
-            let multiplier = SharkGame.persistentFlags.selectedMultiplier;
+            let multiplier;
             if (arbitrary) {
                 multiplier = arbitrary;
             } else {

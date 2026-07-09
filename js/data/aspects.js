@@ -65,8 +65,8 @@ SharkGame.Aspects = {
         clicked(_event) {
             tree.handleClickedAspect(this);
         },
-        apply(when) {
-            if (when === "init") {
+        apply(whenEvent) {
+            if (whenEvent === "init") {
                 res.applyModifier("pathOfIndustry", "shark", this.level + 1);
                 res.applyModifier("pathOfIndustry", "diver", this.level + 1);
                 res.applyModifier("pathOfIndustry", "scientist", this.level + 1);
@@ -265,8 +265,8 @@ SharkGame.Aspects = {
         clicked(_event) {
             tree.handleClickedAspect(this);
         },
-        apply(when) {
-            if (when === "init" && res.getResource("crab") === 0 && !SharkGame.flags.pathOfTimeApplied) {
+        apply(whenEvent) {
+            if (whenEvent === "init" && res.getResource("crab") === 0 && !SharkGame.flags.pathOfTimeApplied) {
                 const base = 25 * 2 ** this.level;
                 switch (world.worldType) {
                     case "shrouded":
@@ -435,8 +435,8 @@ SharkGame.Aspects = {
         clicked(_event) {
             tree.handleClickedAspect(this);
         },
-        apply(when) {
-            if (when === "init") {
+        apply(whenEvent) {
+            if (whenEvent === "init") {
                 _.each(SharkGame.ResourceCategories.breeders.resources, (breeder) => {
                     res.applyModifier("constructedConception", breeder, this.level + 1);
                 });
@@ -472,8 +472,8 @@ SharkGame.Aspects = {
         clicked(_event) {
             tree.handleClickedAspect(this);
         },
-        apply(when) {
-            if (when === "levelUp") {
+        apply(whenEvent) {
+            if (whenEvent === "levelUp") {
                 if (_.isUndefined(SharkGame.persistentFlags.destinyRolls)) {
                     SharkGame.persistentFlags.destinyRolls = this.level;
                 } else {
@@ -509,8 +509,8 @@ SharkGame.Aspects = {
         clicked(_event) {
             tree.handleClickedAspect(this);
         },
-        apply(when) {
-            if (when === "levelUp" && SharkGame.Settings.current.doAspectTable === "table") {
+        apply(whenEvent) {
+            if (whenEvent === "levelUp" && SharkGame.Settings.current.doAspectTable === "table") {
                 SharkGame.Button.makeButton("respecModeButton", "respec mode", $("#aspectTreeNavButtons"), tree.toggleRefundMode);
                 SharkGame.Button.makeButton("respecButton", "respec all", $("#aspectTreeNavButtons"), () => {
                     if (confirm("Are you sure you want to respec all refundable aspects?")) {
@@ -648,8 +648,8 @@ SharkGame.Aspects = {
         clicked(_event) {
             tree.handleClickedAspect(this);
         },
-        apply(when) {
-            if (when === "init") {
+        apply(whenEvent) {
+            if (whenEvent === "init") {
                 SharkGame.Lab.addUpgrade("statsDiscovery");
                 if (this.level > 1) {
                     SharkGame.TabHandler.discoverTab("lab");

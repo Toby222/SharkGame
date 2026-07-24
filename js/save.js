@@ -4,7 +4,6 @@ SharkGame.Save = {
 
     saveGame() {
         // populate save data object
-        let saveString = "";
         const saveData = {
             version: SharkGame.VERSION,
             resources: {},
@@ -60,13 +59,13 @@ SharkGame.Save = {
         saveData.timestampRunEnd = SharkGame.timestampRunEnd;
 
         saveData.saveVersion = SharkGame.Save.saveUpdaters.length - 1;
-        saveString = ascii85.encode(pako.deflate(JSON.stringify(saveData), { to: "string" }));
+        const saveString = ascii85.encode(pako.deflate(JSON.stringify(saveData), { to: "string" }));
 
         try {
             if (saveString === undefined || saveString === "<~~>") throw new Error("Something went wrong while saving");
             localStorage.setItem(SharkGame.Save.saveFileName, saveString);
         } catch (err) {
-            throw new Error("Couldn't save to local storage. Reason: " + err.message);
+            throw new Error("Couldn't save to local storage. Reason: " + err.message, { cause: err });
         }
 
         return saveString;
@@ -270,9 +269,8 @@ SharkGame.Save = {
                 if (secondsElapsed < 0) {
                     // something went hideously wrong or someone abused a system clock somewhere
                     secondsElapsed = 0;
-                } else {
-                    SharkGame.flags.needOfflineProgress = secondsElapsed;
                 }
+                SharkGame.flags.needOfflineProgress = secondsElapsed;
             }
 
             if (saveData.keybinds) {

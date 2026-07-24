@@ -254,7 +254,7 @@ SharkGame.Gate = {
         const gate = SharkGame.Gate;
         const resourceId = $(this).attr("id").split("-")[1];
 
-        let message = "";
+        let message;
         const cost = gate.requirements.slots[resourceId] * (res.getResource("numen") + 1);
         if (res.getResource(resourceId) >= cost) {
             gate.completedRequirements.slots[resourceId] = true;

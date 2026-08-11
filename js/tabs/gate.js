@@ -15,6 +15,7 @@ SharkGame.Gate = {
             "arcaneCompass",
             "apologeticAmnesty",
             "internalExploration",
+            "fullGatemaster",
         ],
     },
 

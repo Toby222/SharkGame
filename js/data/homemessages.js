@@ -515,11 +515,73 @@ SharkGame.HomeMessages = {
                 message: "A wave of heat washes over you, and the dingy complex comes back to life. The gate turns on.",
             },
         ],
-        /*
-        {
+
+        shore: [
+            {
+                name: "shore-default",
+                message: "The surface of the water is painfully close, yet it stretches vast.<br>Looking into the distance, that seems the least of your problems.",
+            },
+            {
+                name: "shore-sandstorm-entry",
+                unlock: { upgrade: ["murkAssessment"] },
+                message: "The sandstorm sends thousands of grains of rough sand digging into your flesh. This was a bad idea.",
+            },
+            {
+                name: "shore-sandstorm-escape-attempt",
+                unlock: { upgrade: ["fleeBarrage"] },
+                message: "The sandstorm has stretched out endlessly. No matter how far you backtrack, it is there.",
+            },
+            {
+                name: "shore-sandstorm-escape-attempt-the-sequel",
+                unlock: { upgrade: ["justPushFurtherLol"] },
+                message: "At last, by going further into the sandstorm, you burst into a clear space of calm. But a wall of sand blocks your path.",
+            },
+            {
+                name: "shore-discover-driftwood",
+                unlock: { upgrade: ["crabDisappearance"] },
+                message: "You notice some long, branching brown things bobbing on the surface. Some sharks say it's flaky.",
+            },
+            {
+                name: "shore-mudskippers-spotted",
+                unlock: { totalResource: { driftwood: 2 } },
+                message: "The frenzy is talking about some unusual prey - fish that escape and survive beyond the water, they say...",
+            },
+            {
+                name: "shore-add-mudskipper",
+                unlock: { upgrade: ["mudskipperContact"] },
+                message: "These tiny fish aren't very remarkable - but what they (skittishly) bring back is another matter.",
+            },
+            {
+                name: "shore-flaily-flail",
+                unlock: { totalResource: { burrow: 5 } },
+                message: "The mudskippers flail in their newly-dug burrows. They say their dance is traditional, as are their oral tales.",
+            },
+            {
+                name: "shore-stability-found",
+                unlock: { upgrade: ["agriculture"] },
+                message: "The stabilizers work diligently, eager to support a loose-laid world. Perhaps there is hope.",
+            },
+            {
+                name: "shore-hardbark-coated",
+                unlock: { upgrade: ["hardbarkCoating"] },
+                message: "The wood of the simple (yet strong) hardbark looks a dark blue under the crystal. It's a wonder how it ended up with weird brown fish.",
+            },
+            {
+                name: "shore-puppets-piloted",
+                unlock: { upgrade: ["puppetAssembly"] },
+                message: "The frenzy move the puppets from within. It is nothing like our shark machines. It is lifelike. Glitchless. But primitive.",
+            },
+            {
+                name: "shore-puppets-taught",
+                unlock: { upgrade: ["puppetTeaching"] },
+                message: "So many tricks. So many techniques. The puppets have become versatile tools fast.",
+            },
+        ],
+        /* stone: [
+           {
             message:
                 "The jagged seafloor looks ancient, yet pristine.<br>Sponges thrive in great numbers on the rocks.",
-        },
-        */
+           },
+        ], */
     },
 };

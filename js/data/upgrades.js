@@ -3953,7 +3953,7 @@ SharkGame.Upgrades = {
             researchedMessage:
                 "We refuse to accept the narrative the billfish are pushing on us, but the scientists are adamant. They say they are literally just fish with big noses.",
             effectDesc:
-                "Billfish are four times more effective, and billfish pairs are available. I swear, our scientists must be losing it - these things are not fish, surely.",
+                "Billfish are four times more effective, and billfish pairs are available. I swear, our scientists must be losing it - these things are not fish, surely.", // says the also large fish
             cost: {
                 science: 4000,
                 fish: 20000,
@@ -4526,5 +4526,714 @@ SharkGame.Upgrades = {
                 upgrades: ["schematicSalvaging", "iterativeDesign"],
             },
         },
+    },
+    shore: {
+        /* template: {
+            name: "Upgrade Template",
+            desc: "This is the text in the lab button thingy...",
+            researchedMessage: "...and this is the one that appears in the log!",
+            effectDesc: "This one, however, is the text that goes next to the buttons.",
+            cost: { },
+            required: { },
+            effect: { },
+        }, */
+        murkAssessment: {
+            name: "Murk Assessment",
+            desc: "What is that sandy cloud around us? What does it do? We should check it out.",
+            researchedMessage: "It's a sandstorm. To say it's torture is an understatement.",
+            effectDesc: "If we ever escape this... this barrage, we'll never go near it again.",
+            cost: {
+                shark: 10,
+                ray: 10,
+                crab: 5,
+            },
+            required: {
+                upgrades: ["crystalContainer"],
+                seen: ["sand", "roughSand"],
+            },
+            effect: {
+                resourceBoost: {
+                    roughSand: 100,
+                },
+            },
+        },
+        fleeBarrage: {
+            name: "Flee Barrage",
+            desc: "We need to go back. This hurts.",
+            researchedMessage: "No. No, no, no, no, no. It's gone. It's covered.",
+            effectDesc: "Our previous location has been consumed by the sandstorm.",
+            cost: {
+                shark: 3,
+                ray: 3,
+                scientist: 3,
+            },
+            required: {
+                upgrades: ["murkAssessment"],
+            },
+            effect: {},
+        },
+        justPushFurtherLol: {
+            name: "Our Only Choice...",
+            desc: "...is to move outward.",
+            researchedMessage: "It worked. It worked. I can't believe it.",
+            effectDesc: "We burst into a clear space. It's wide, but disappointingly narrow.",
+            cost: {
+                scientist: 1,
+                shark: 1,
+                ray: 1,
+            },
+            required: {
+                upgrades: ["fleeBarrage"],
+            },
+            effect: {
+                resourceBoost: {
+                    roughSand: -100,
+                },
+                events: ["shoreGiveCoral", "shoreGiveSeagrass"],
+            },
+        },
+        crabDisappearance: {
+            name: "Crab Disappearance",
+            desc: "The crabs keep on disappearing from sight, only to seemingly come back safe with more crystals. What's going on?",
+            researchedMessage: "We… we, uh… what’s the ‘beyond’?",
+            effectDesc:
+                "Crabs are now twice as effective at finding crystals - and they retrieve lots anyway.",
+            cost: {
+                science: 115,
+                crab: 5,
+            },
+            required: {
+                upgrades: ["crystalContainer", "seabedGeology", "justPushFurtherLol"],
+                seen: ["crab", "crystal"],
+            },
+            effect: {
+                incomeMultiplier: {
+                    crab: 2,
+                },
+            },
+        },
+        driftwoodAnalysis: {
+            name: "Driftwood Analysis",
+            desc: "These brittle brown things keep floating in the water above us. What are they?",
+            researchedMessage: "Apparently this ‘driftwood’ comes from ABOVE THE OCEAN. Is that even a place?? Is that why it’s so flaky???",
+            effectDesc: "Crabs can now retrieve driftwood on their excursions to the beyond.",
+            cost: {
+                science: 25,
+            },
+            required: {
+                upgrades: ["crabDisappearance"],
+            },
+            effect: {
+                addDriftwoodIncome: {
+                    crab: 2,
+                },
+            },
+        },
+        mudskipperContact: {
+            name: "Mudskipper Contact",
+            desc: "So, they’re fish, but the one thing that stops us from eating them is that they can SURVIVE ABOVE WATER.",
+            researchedMessage: "After stating our business, the mudskippers hesitated for a while, before saying… we still don’t know what they mean.",
+            effectDesc:
+                "Mudskippers can now be recruited to retrieve objects from above the surface, as long as they stay moist.",
+            cost: {
+                science: 150,
+                driftwood: 10,
+            },
+            required: {
+                upgrades: ["driftwoodAnalysis"],
+            },
+        },
+        crystalBite: {
+            name: "Crystal Bite-Gear",
+            desc: "Bite the crystals we have into something to help biting!",
+            researchedMessage: "Weird teeth-wear has been developed, and sharks can now catch fish better as a result.",
+            effectDesc: "Sharks are twice as effective with their new biting gear. Turns out they work better outside the mouth!",
+            cost: {
+                science: 50,
+                fish: 100,
+                crystal: 5,
+            },
+            required: {},
+            effect: {
+                incomeMultiplier: {
+                    shark: 2,
+                },
+            },
+        },
+        crystalSpade: {
+            name: "Crystal Spades",
+            desc: "Fashion strange harness-tools for the rays.",
+            researchedMessage: "The rays can now bother the sand more effectively, and dig up more sand now!",
+            effectDesc: "Rays are twice as effective with their specially adapted digging tools.",
+            cost: {
+                science: 50,
+                sand: 500,
+                crystal: 5,
+            },
+            required: {},
+            effect: {
+                incomeMultiplier: {
+                    ray: 2,
+                },
+            },
+        },
+        crystalScoop: {
+            name: "Crystal Scoops",
+            desc: "Design funny looking holdy-things for the crabs!",
+            researchedMessage: "Our crabs used to brush aside the sand to look for crystals - now they can scoop it! Scoopy scoop.",
+            effectDesc:
+                "Crabs are twice as effective at digging for crystals. The crabs are overjoyed to hold these tiny tools with their tiny claws.",
+            cost: {
+                science: 50,
+                crystal: 10,
+            },
+            required: {},
+            effect: {
+                incomeMultiplier: {
+                    crab: 2,
+                },
+            },
+        },
+        crystalContainer: {
+            name: "Crystal Containers",
+            desc: "Make weird bottle things from the crystals we have. Maybe useful??",
+            researchedMessage: "Well, things can go into these containers that aren't water. This makes science easier!",
+            effectDesc: "Scientists are twice as effective at making with the science.",
+            cost: {
+                science: 100,
+                crystal: 50,
+            },
+            required: {},
+            effect: {
+                incomeMultiplier: {
+                    scientist: 2,
+                },
+            },
+        },
+        crystalArmour: {
+            name: "Crystal Armour",
+            desc: "Forge some armour for the useful fish.",
+            researchedMessage: "Mudskippers can work for us five times faster.",
+            effectDesc: "With the new moisture-retaining armour, mudskippers work five times faster.",
+            cost: {
+                science: 250,
+                crystal: 75,
+            },
+            required: {
+                upgrades: ["justPushFurtherLol", "mudskipperContact"],
+            },
+            effect: {
+                incomeMultiplier: {
+                    mudskipper: 5,
+                },
+            },
+        }, // gosh that's a lot of crystals eh --ThreeEels
+        statsDiscovery: {
+            name: "Storage Caverns",
+            desc: "It's about time we move our stores to a better place. We've found one, but it needs setting up.",
+            researchedMessage:
+                "All our goods are now being stored and itemised in a mostly flooded cavern system. We're organized! Sort of!",
+            effectDesc: "By storing things in a centralised location, we now finally have an idea of what we're doing... sort of.",
+            cost: {
+                science: 150,
+            },
+            required: {
+                upgrades: ["crystalContainer"],
+            },
+        },
+        underwaterChemistry: {
+            name: "Underwater Chemistry",
+            desc: "With the weird bottles, we can now put things and other things into them and see what happens.",
+            researchedMessage: "Well, nothing useful was determined, but if we keep on doing it we make tremendous leaps for science!",
+            effectDesc: "Scientists are twice as effective with their new chemical insights.",
+            cost: {
+                science: 200,
+                crystal: 50,
+            },
+            required: {
+                upgrades: ["crystalContainer"],
+            },
+            effect: {
+                incomeMultiplier: {
+                    scientist: 2,
+                },
+            },
+        },
+        seabedGeology: {
+            name: "Seabed Geology",
+            desc: "Study the bottom of the ocean to determine the rich, deep, juicy secrets it contains.",
+            researchedMessage: "Not only did we find a whole bunch of weird things, the rays found that there was more sand!",
+            effectDesc: "Rays are twice as effective with their understanding of the seabed and its varieties of sediment.",
+            cost: {
+                science: 250,
+                sand: 750,
+            },
+            required: {
+                upgrades: ["crystalContainer"],
+            },
+            effect: {
+                incomeMultiplier: {
+                    ray: 2,
+                },
+            },
+        },
+        thermalVents: {
+            name: "Thermal Vents",
+            desc: "Investigate the boiling vents that just seem to keep on heating things up.",
+            researchedMessage: "This is a wondrous, unending source of heat! Something good must come from this.",
+            effectDesc: "A power source for future technologies has been discovered.",
+            cost: {
+                science: 300,
+                sand: 1000,
+            },
+            required: {
+                upgrades: ["seabedGeology"],
+            },
+        },
+        laserRays: {
+            name: "Laser Rays",
+            desc: "Using arcane shark mystery science, capture the heat of the vents for use by rays.",
+            researchedMessage: "The rays can now be granted gear that will let them fuse sand into crystal! Future!",
+            effectDesc: "Laser rays can now be geared up to burn the very sand to glassy crystal!",
+            cost: {
+                science: 100,
+                sand: 5000,
+                crystal: 100,
+            },
+            required: {
+                upgrades: ["thermalVents"],
+            },
+        },
+        transmutation: {
+            name: "Transmutation",
+            desc: "By heating things up and doing science things to them, maybe new things can be made!",
+            researchedMessage: "A new form of material has been discovered! It has been named after its discoverer, Dr. Sharkonium.",
+            effectDesc: "Enables transmutation of some random junk we have lying around into sharkonium, material of the future.",
+            cost: {
+                science: 4000,
+                crystal: 1500,
+                sand: 15000,
+            },
+            required: {
+                upgrades: ["thermalVents", "underwaterChemistry"],
+            },
+        },
+        automation: {
+            name: "Automation",
+            desc: "Using sharkonium, we can make things to do things so we don't have to do the things!",
+            researchedMessage: "Now we don't have to do all the work, machines can do it for us! Future!!",
+            effectDesc: "Machines can be built to supplement population duties. This is efficient.",
+            cost: {
+                science: 3500,
+                sharkonium: 250,
+            },
+            required: {
+                upgrades: ["transmutation"],
+            },
+        },
+        engineering: {
+            name: "Engineering",
+            desc: "The machines sort of suck. Let's make them better by learning how!",
+            researchedMessage: "The machines are twice as good now! We've figured out new designs in the process, too!",
+            effectDesc: "Machines are twice as effective. Auto-transmuters are now possible to create.",
+            cost: {
+                science: 5000,
+                sharkonium: 1750,
+            },
+            required: {
+                upgrades: ["automation"],
+                seen: ["fishMachine", "crystalMiner", "sandDigger"],
+            },
+            effect: {
+                incomeMultiplier: {
+                    crystalMiner: 2,
+                    fishMachine: 2,
+                    sandDigger: 2,
+                },
+            },
+        },
+        recyclerDiscovery: {
+            name: "Recycler",
+            desc: "Check out the huge structure that consumed some of our fish and spat out some goo.",
+            researchedMessage:
+                "Well, this thing is frankly terrifying. I wouldn't swim anywhere near the input holes if I were you. Maybe it'll help though!",
+            effectDesc: "The machine allows recycling of materials by virtue of a horrifying mechanical maw that consumes all that ventures near it. Future?",
+            cost: {
+                science: 75000,
+                sharkonium: 25000,
+            },
+            required: {
+                upgrades: ["engineering", "farExploration"],
+            },
+        },
+        iterativeDesign: {
+            name: "Iterative Design",
+            desc: "The machines are useful, but they could be better. Let's build new ones, from scratch!",
+            researchedMessage: "As it turns out, science is about learning from mistakes, or so the scientists say. About their own mistakes.",
+            effectDesc: "All shark machines run twice as fast. Again! Scientists are 4 times faster as well.",
+            cost: {
+                science: 15000,
+                sharkonium: 17500,
+            },
+            required: {
+                upgrades: ["engineering", "recyclerDiscovery"],
+            },
+            effect: {
+                incomeMultiplier: {
+                    crystalMiner: 2,
+                    fishMachine: 2,
+                    sandDigger: 2,
+                    autoTransmuter: 2,
+                    scientist: 4,
+                },
+            },
+        },
+        superprocessing: {
+            name: "Superprocessing",
+            desc: "The recycler wasn't really meant for millions of fish at once. Seeing as that transaction is fairly common, we should probably do something about it.",
+            researchedMessage: "Eureka! If we make the big things bigger, and the grinders grindier, we can process way more material at once!",
+            effectDesc:
+                "The recycler's efficiency only starts dropping at 10 million material inserted at once, instead of 100 thousand. The base efficiency is now 100%.",
+            cost: {
+                science: 1e6,
+                sharkonium: 5e5,
+                junk: 1e6,
+            },
+            required: {
+                upgrades: ["iterativeDesign", "recyclerDiscovery"],
+            },
+        },
+        sunObservation: {
+            name: "Sun Observation",
+            desc: "We must determine what is with the weird glare on the surface of the water.",
+            researchedMessage: "Shark science has discovered the sun! It has also discovered that looking directly into the sun hurts.",
+            effectDesc:
+                "Stabilizer crabs are twice as effective. Is a suns worth many fish? We can see a sun, but where is it really? And what is it made of?",
+            cost: {
+                science: 7500,
+            },
+            required: {
+                upgrades: ["agriculture"],
+            },
+            effect: {
+                incomeMultiplier: {
+                    stabilizer: 2,
+                },
+            },
+        },
+        biology: {
+            name: "Biology",
+            desc: "What is a shark? What is inside a shark, except for large amounts of fish?",
+            researchedMessage: "With a new understanding of their own biology, sharks can now specialise in the manufacture of new sharks.",
+            effectDesc:
+                "Sharks are twice as effective, and nurse sharks can be bought. Did you know shark eggs don't actually form just because a shark wills them to exist?",
+            cost: {
+                science: 600,
+            },
+            required: {
+                upgrades: ["underwaterChemistry", "agriculture"],
+            },
+            effect: {
+                incomeMultiplier: {
+                    shark: 2,
+                },
+            },
+        },
+        crabBiology: {
+            name: "Crab Biology",
+            desc: "Crabs are a mystery. They keep to themselves and dig up crystals or tear up grass. What is even up with that? What ARE crabs??",
+            researchedMessage:
+                "Turns out crabs are friendly crustaceans that have revealed to the sharks the secrets of crab generation. It involves eggs, or something. Squirmy eggs.",
+            effectDesc:
+                "Crabs and stabilizer crabs are four and two times as effective, respectively, and crab broods are available. Crabs are alright but they're also kinda terrifying and weird. Good thing they're on our side!",
+            cost: {
+                science: 3500,
+                seagrass: 1750,
+            },
+            required: {
+                upgrades: ["biology"],
+            },
+            effect: {
+                incomeMultiplier: {
+                    crab: 4,
+                    stabilizer: 2,
+                },
+            },
+        },
+        rayBiology: {
+            name: "Ray Biology",
+            desc: "Though kindred to the sharks, we know so little about the rays. If only we could fix this. We need to bait a sand trap.",
+            researchedMessage:
+                "Apparently we could have just asked. We learned how rays make more rays. It's kinda similar to sharks, really, but rays.",
+            effectDesc:
+                "Rays are four times as effective, and ray makers are available. We may never repair the shark-ray relations to their former state after how awkward this whole affair was.",
+            cost: {
+                science: 8000,
+                sand: 25000,
+            },
+            required: {
+                upgrades: ["biology"],
+            },
+            effect: {
+                incomeMultiplier: {
+                    ray: 4,
+                },
+            },
+        },
+        agriculture: {
+            name: "Agriculture",
+            desc: "The rays and crabs have noticed something strange about the sand around these colourful growths...",
+            researchedMessage: "The mudskippers suggested something from their oral tales called a 'farm'. It's... surprisingly useful.",
+            effectDesc: "Seagrass farms and coral farms are now available.",
+            cost: {
+                sand: 5000,
+                seagrass: 15,
+                coral: 15,
+            },
+            required: {
+                upgrades: ["seabedGeology"],
+                seen: ["sand", "roughSand"],
+            },
+        }, // prev name: stabilization
+        xenobiology: {
+            name: "Xenobiology",
+            desc: "This seagrass stuff is mostly just green or whatever, but what are these THINGS growing on it?",
+            researchedMessage: "Flowers! What does that even mean!? Further research required. It could be such a benefit for science!",
+            effectDesc: "We can now dissect seagrass flowers to further the cause of science.",
+            cost: {
+                science: 1250,
+                seagrass: 500,
+            },
+            required: {
+                upgrades: ["agriculture"],
+                seen: ["seagrass"],
+            },
+        },
+        mudskipperBurrowing: {
+            name: "Mudskipper Burrowing",
+            desc: "The mudskippers want to tell us something. We will, of course, heed.",
+            researchedMessage: "Mudskipper burrows are now a thing. They do a lot of flailing in it. But they're happier now.",
+            effectDesc: "Mudskipper burrows can be dug. Now happier, mudskippers work twice as faster.",
+            cost: { fish: 5 },
+            required: {
+                upgrades: ["mudskipperContact", "seabedGeology"],
+            },
+            effect: {
+                incomeMultiplier: {
+                    mudskipper: 2,
+                },
+            },
+        },
+        hardbarkCoating: {
+            name: "Hardbark Coating",
+            desc: "The mudskippers say our sharkonium vaguely resembles something from their oral tales.",
+            researchedMessage: "Hardbark can now be made... it has a use, but the 'models' aren't 'ready'.",
+            effectDesc: "Hardbark coating is now possible. Their use... not yet.",
+            cost: {
+                science: 1500,
+                hardbark: 25,
+            },
+            required: {
+                upgrades: ["driftwoodAnalysis", "automation"],
+                seen: ["driftwood", "crystal"],
+            },
+        },
+        puppetAssembly: {
+            name: "Puppet Assembly",
+            desc: "The mudskippers say they've refined their models.",
+            researchedMessage: "Mudskipper machines can be piloted! They insist on calling them 'puppets', though...",
+            effectDesc: "Mudskipper puppets can be constructed and piloted.",
+            cost: {
+                science: 1500,
+                hardbark: 25,
+            },
+            required: {
+                upgrades: ["driftwoodAnalysis", "hardbarkCoating"],
+                seen: ["laser"],
+            },
+        },
+        fixModels: {
+            name: "Fix Models",
+            desc: "They're not done???",
+            researchedMessage: "Well... they've been 'refined'.",
+            effectDesc: "Mudskipper puppets are five times as effective.",
+            cost: {
+                hardbark: 500,
+                science: 15000,
+            },
+            required: {
+                upgrades: ["puppetAssembly"],
+            },
+            effect: {
+                incomeMultiplier: {
+                    coralCollector: 5,
+                    seagrassSnarer: 5,
+                    shoreQueller: 5,
+                    hardbarkSmith: 5,
+                },
+            },
+        },
+        puppetTeaching: {
+            name: "Puppet Teaching",
+            desc: "The mudskippers (again) have something from their tales that could help with the puppets.",
+            researchedMessage: "Mudskippers can now be trained (for some reason) and become 'mentors'. Seems like a waste of science to me.",
+            effectDesc: "Puppet mentors can be trained.",
+            cost: {
+                mudskipper: 500,
+                science: 15000,
+            },
+            required: {
+                upgrades: ["fixModels"],
+            },
+            effect: {
+                incomeMultiplier: {
+                    coralCollector: 5,
+                    seagrassSnarer: 5,
+                    shoreQueller: 5,
+                    hardbarkSmith: 5,
+                },
+            },
+        },
+        exploration: {
+            name: "Tunnel Expedition",
+            desc: "Some of the frenzy has noticed something strange in the eastern regions.",
+            researchedMessage: "It's a tunnel system in the sand wall. And its end bore a massive latch.",
+            effectDesc: "We've found a place where we can finally not get bombarded with rough sand. But what's beyond it?",
+            cost: { fish: 5 },
+            required: { upgrades: ["puppetTeaching"] },
+            effect: { },
+        }, // prev name: tunnelExpedition
+        farExploration: {
+            name: "Sentinel Repairing",
+            desc: "So, the thing above the latch. You know how its parts are scattered across the tunnel...?",
+            researchedMessage: "We managed to repair the sentinel. As soon as it started, it opened the latch for us.",
+            effectDesc: "The latch is open. We surged forth into the safehold, but a storm of claws came raining down, and...",
+            cost: { fish: 5 },
+            required: { upgrades: ["exploration"] },
+            effect: { },
+        }, // prev name: thingyRepairing
+        raiderTruce: {
+            name: "Raider Truce",
+            desc: "A mystery troupe of beyond bandits raided us from above!!!",
+            researchedMessage: "We held up some fish as an offering. They were snatched from us, and... they came.",
+            effectDesc: "The mudskippers (and crabs) told us the 'raiders' are named caracaras, and are apparently very prideful.",
+            cost: { fish: 5 },
+            required: { upgrades: ["farExploration"] },
+            effect: { },
+        },
+        discoveryRelay: {
+            name: "Discovery Relay",
+            desc: "We should get back to the frontline about our new science.",
+            researchedMessage: "Apparently they've done a lot as well back outside the safehold. Leaps in agriculture!",
+            effectDesc: "With our exchanged advances in research, scientists and stabilizers work 5 times as fast.",
+            cost: {
+                fish: 5,
+                science: 15,
+                seagrass: 15,
+                crystal: 10,
+            },
+            required: { upgrades: ["raiderTruce"] },
+            effect: {
+                incomeBoost: {
+                    scientist: 5,
+                    stabilizer: 5,
+                },
+            },
+        },
+        crystalTalons: {
+            name: "Crystal Talons",
+            desc: "The caracaras say that our 'seaborn' crystals are very good at breaking beyond crystals.",
+            researchedMessage: "With their crystal talons, caracaras work way more efficiently now.",
+            effectDesc: "Their faces seemed expressionless. But their eyes were the same the sharks' with their bite-gear.",
+            cost: { fish: 5 },
+            required: { upgrades: ["raiderTruce"] },
+            effect: {
+                incomeBoost: {
+                    caracara: 5,
+                },
+            },
+        },
+        biologyTrade: {
+            name: "Biology Trade",
+            desc: "Now they want sharks as... specimens. They did agree to give dead caracaras in exchange, though.",
+            researchedMessage: "It was... gruesome. They really got into it. But at least we understand each other...?",
+            effectDesc: "With our new 'inside knowledge' of caracaras and sharks, we work together fives times as fast.",
+            cost: { fish: 5 },
+            required: { upgrades: ["crystalTalons"] },
+            effect: {
+                incomeBoost: {
+                    caracara: 5,
+                    shark: 5,
+                },
+            },
+        },
+        beyondwalkerPairing: {
+            name: "Beyondwalker Pairing",
+            desc: "This is the text in the lab button thingy...",
+            researchedMessage: "...and this is the text that goes next to the buttons!",
+            effectDesc: "This one, however, appears in the log.",
+            cost: { fish: 5 },
+            required: { upgrades: ["biologyTrade"] },
+            effect: { },
+        },
+        platformExpansion: {
+            name: "Platform Expansion",
+            desc: "The frenzy that gathers around the retrieval teams' platforms do rather well...",
+            researchedMessage: "...and this is the text that goes next to the buttons!",
+            effectDesc: "This one, however, appears in the log.",
+            cost: { fish: 5 },
+            required: { upgrades: ["beyondwalkerPairing"] },
+            effect: { },
+        },
+        seagrassAttention: {
+            name: "Seagrass Attention",
+            desc: "This is the text in the lab button thingy...",
+            researchedMessage: "...and this is the text that goes next to the buttons!",
+            effectDesc: "This one, however, appears in the log.",
+            cost: { fish: 5, seagrass: 5 },
+            required: { upgrades: ["raiderTruce"] },
+            effect: { },
+        },
+        taleHeeding: {
+            name: "Tale Heeding",
+            desc: "This is the text in the lab button thingy...",
+            researchedMessage: "...and this is the text that goes next to the buttons!",
+            effectDesc: "This one, however, appears in the log.",
+            cost: { fish: 5 },
+            required: { upgrades: ["platformExpansion"] },
+            effect: { },
+        },
+        intelTowers: {
+            name: "Intel Towers",
+            desc: "This is the text in the lab button thingy...",
+            researchedMessage: "...and this is the text that goes next to the buttons!",
+            effectDesc: "This one, however, appears in the log.",
+            cost: { fish: 5 },
+            required: { upgrades: ["taleHeeding"] },
+            effect: { },
+        },
+        // firstLog: {},
+        // secondLog: {},
+        // thirdLog: {},
+        gateDiscovery: {
+            name: "The Gate?",
+            desc: "This is the text in the lab button thingy...",
+            researchedMessage: "...and this is the text that goes next to the buttons!",
+            effectDesc: "This one, however, appears in the log.",
+            cost: { fish: 5 },
+            required: { upgrades: ["intelTowers"] },
+            effect: { },
+        },
+        fullGatemaster: {
+            name: "Gatemaster Scavenging",
+            desc: "This is the text in the lab button thingy...",
+            researchedMessage: "...and this is the text that goes next to the buttons!",
+            effectDesc: "This one, however, appears in the log.",
+            cost: { fish: 5 },
+            required: { upgrades: ["gateDiscovery"] },
+            effect: { },
+        },
+
+        // fullStability: {},
     },
 };

@@ -71,10 +71,18 @@ SharkGame.Sprites = {
             h: 100,
         },
     },
-    "actions/catchFish": {
+    "actions/breakDownAncientPart": {
         frame: {
             x: 300,
             y: 0,
+            w: 50,
+            h: 50,
+        },
+    },
+    "actions/catchFish": {
+        frame: {
+            x: 300,
+            y: 50,
             w: 50,
             h: 50,
         },
@@ -82,7 +90,7 @@ SharkGame.Sprites = {
     "actions/forgeSpronge": {
         frame: {
             x: 300,
-            y: 50,
+            y: 100,
             w: 50,
             h: 50,
         },
@@ -90,7 +98,7 @@ SharkGame.Sprites = {
     "actions/fuseAncientPart": {
         frame: {
             x: 300,
-            y: 100,
+            y: 150,
             w: 50,
             h: 50,
         },
@@ -98,7 +106,7 @@ SharkGame.Sprites = {
     "actions/fuseCalcinium": {
         frame: {
             x: 300,
-            y: 150,
+            y: 200,
             w: 50,
             h: 50,
         },
@@ -106,22 +114,22 @@ SharkGame.Sprites = {
     "actions/fuseDelphinium": {
         frame: {
             x: 300,
-            y: 200,
+            y: 250,
             w: 50,
             h: 50,
         },
     },
     "actions/getAcolyte": {
         frame: {
-            x: 300,
-            y: 250,
+            x: 0,
+            y: 300,
             w: 50,
             h: 50,
         },
     },
     "actions/getAutoTransmuter": {
         frame: {
-            x: 0,
+            x: 50,
             y: 300,
             w: 50,
             h: 50,
@@ -129,7 +137,7 @@ SharkGame.Sprites = {
     },
     "actions/getBerrier": {
         frame: {
-            x: 50,
+            x: 100,
             y: 300,
             w: 50,
             h: 50,
@@ -137,7 +145,7 @@ SharkGame.Sprites = {
     },
     "actions/getBillfish": {
         frame: {
-            x: 100,
+            x: 150,
             y: 300,
             w: 50,
             h: 50,
@@ -145,7 +153,7 @@ SharkGame.Sprites = {
     },
     "actions/getBillfishExplorer": {
         frame: {
-            x: 150,
+            x: 200,
             y: 300,
             w: 50,
             h: 50,
@@ -153,7 +161,7 @@ SharkGame.Sprites = {
     },
     "actions/getBillfishMechanic": {
         frame: {
-            x: 200,
+            x: 250,
             y: 300,
             w: 50,
             h: 50,
@@ -161,7 +169,7 @@ SharkGame.Sprites = {
     },
     "actions/getBillfishPair": {
         frame: {
-            x: 250,
+            x: 300,
             y: 300,
             w: 50,
             h: 50,
@@ -169,8 +177,8 @@ SharkGame.Sprites = {
     },
     "actions/getBiologist": {
         frame: {
-            x: 300,
-            y: 300,
+            x: 350,
+            y: 0,
             w: 50,
             h: 50,
         },
@@ -178,7 +186,7 @@ SharkGame.Sprites = {
     "actions/getBrood": {
         frame: {
             x: 350,
-            y: 0,
+            y: 50,
             w: 50,
             h: 50,
         },
@@ -186,7 +194,7 @@ SharkGame.Sprites = {
     "actions/getCalciniumConverter": {
         frame: {
             x: 350,
-            y: 50,
+            y: 100,
             w: 50,
             h: 50,
         },
@@ -194,7 +202,7 @@ SharkGame.Sprites = {
     "actions/getChimaera": {
         frame: {
             x: 350,
-            y: 100,
+            y: 150,
             w: 50,
             h: 50,
         },
@@ -202,7 +210,7 @@ SharkGame.Sprites = {
     "actions/getChorus": {
         frame: {
             x: 350,
-            y: 150,
+            y: 200,
             w: 50,
             h: 50,
         },
@@ -210,7 +218,7 @@ SharkGame.Sprites = {
     "actions/getClam": {
         frame: {
             x: 350,
-            y: 200,
+            y: 250,
             w: 50,
             h: 50,
         },
@@ -218,22 +226,22 @@ SharkGame.Sprites = {
     "actions/getClamCollector": {
         frame: {
             x: 350,
-            y: 250,
+            y: 300,
             w: 50,
             h: 50,
         },
     },
     "actions/getClamScavenger": {
         frame: {
-            x: 350,
-            y: 300,
+            x: 0,
+            y: 350,
             w: 50,
             h: 50,
         },
     },
     "actions/getCollective": {
         frame: {
-            x: 0,
+            x: 50,
             y: 350,
             w: 50,
             h: 50,
@@ -241,7 +249,7 @@ SharkGame.Sprites = {
     },
     "actions/getCollector": {
         frame: {
-            x: 50,
+            x: 100,
             y: 350,
             w: 50,
             h: 50,
@@ -249,7 +257,7 @@ SharkGame.Sprites = {
     },
     "actions/getCoralFarm": {
         frame: {
-            x: 100,
+            x: 150,
             y: 350,
             w: 50,
             h: 50,
@@ -257,7 +265,7 @@ SharkGame.Sprites = {
     },
     "actions/getCrab": {
         frame: {
-            x: 150,
+            x: 200,
             y: 350,
             w: 50,
             h: 50,
@@ -265,7 +273,7 @@ SharkGame.Sprites = {
     },
     "actions/getCrimsonCombine": {
         frame: {
-            x: 200,
+            x: 250,
             y: 350,
             w: 50,
             h: 50,
@@ -273,7 +281,7 @@ SharkGame.Sprites = {
     },
     "actions/getCrystalMiner": {
         frame: {
-            x: 250,
+            x: 300,
             y: 350,
             w: 50,
             h: 50,
@@ -281,7 +289,7 @@ SharkGame.Sprites = {
     },
     "actions/getCuriousCrab": {
         frame: {
-            x: 300,
+            x: 350,
             y: 350,
             w: 50,
             h: 50,
@@ -289,8 +297,8 @@ SharkGame.Sprites = {
     },
     "actions/getDiver": {
         frame: {
-            x: 350,
-            y: 350,
+            x: 400,
+            y: 0,
             w: 50,
             h: 50,
         },
@@ -298,7 +306,7 @@ SharkGame.Sprites = {
     "actions/getDolphin": {
         frame: {
             x: 400,
-            y: 0,
+            y: 50,
             w: 50,
             h: 50,
         },
@@ -306,7 +314,7 @@ SharkGame.Sprites = {
     "actions/getEel": {
         frame: {
             x: 400,
-            y: 50,
+            y: 100,
             w: 50,
             h: 50,
         },
@@ -314,7 +322,7 @@ SharkGame.Sprites = {
     "actions/getEggBrooder": {
         frame: {
             x: 400,
-            y: 100,
+            y: 150,
             w: 50,
             h: 50,
         },
@@ -322,7 +330,7 @@ SharkGame.Sprites = {
     "actions/getExplorer": {
         frame: {
             x: 400,
-            y: 150,
+            y: 200,
             w: 50,
             h: 50,
         },
@@ -330,7 +338,7 @@ SharkGame.Sprites = {
     "actions/getExtractionTeam": {
         frame: {
             x: 400,
-            y: 200,
+            y: 250,
             w: 50,
             h: 50,
         },
@@ -338,7 +346,7 @@ SharkGame.Sprites = {
     "actions/getFarmer": {
         frame: {
             x: 400,
-            y: 250,
+            y: 300,
             w: 50,
             h: 50,
         },
@@ -346,22 +354,30 @@ SharkGame.Sprites = {
     "actions/getFishMachine": {
         frame: {
             x: 400,
-            y: 300,
+            y: 350,
             w: 50,
             h: 50,
         },
     },
     "actions/getHarvester": {
         frame: {
-            x: 400,
-            y: 350,
+            x: 0,
+            y: 400,
+            w: 50,
+            h: 50,
+        },
+    },
+    "actions/getHeater": {
+        frame: {
+            x: 50,
+            y: 400,
             w: 50,
             h: 50,
         },
     },
     "actions/getHistorian": {
         frame: {
-            x: 0,
+            x: 100,
             y: 400,
             w: 50,
             h: 50,
@@ -369,7 +385,7 @@ SharkGame.Sprites = {
     },
     "actions/getInvestigator": {
         frame: {
-            x: 50,
+            x: 150,
             y: 400,
             w: 50,
             h: 50,
@@ -377,7 +393,7 @@ SharkGame.Sprites = {
     },
     "actions/getJellyfish": {
         frame: {
-            x: 100,
+            x: 200,
             y: 400,
             w: 50,
             h: 50,
@@ -385,7 +401,7 @@ SharkGame.Sprites = {
     },
     "actions/getKelpCultivator": {
         frame: {
-            x: 150,
+            x: 250,
             y: 400,
             w: 50,
             h: 50,
@@ -393,7 +409,7 @@ SharkGame.Sprites = {
     },
     "actions/getLaser": {
         frame: {
-            x: 200,
+            x: 300,
             y: 400,
             w: 50,
             h: 50,
@@ -401,7 +417,7 @@ SharkGame.Sprites = {
     },
     "actions/getLobster": {
         frame: {
-            x: 250,
+            x: 350,
             y: 400,
             w: 50,
             h: 50,
@@ -409,7 +425,7 @@ SharkGame.Sprites = {
     },
     "actions/getLobter": {
         frame: {
-            x: 300,
+            x: 400,
             y: 400,
             w: 50,
             h: 50,
@@ -417,16 +433,16 @@ SharkGame.Sprites = {
     },
     "actions/getMaker": {
         frame: {
-            x: 350,
-            y: 400,
+            x: 450,
+            y: 0,
             w: 50,
             h: 50,
         },
     },
     "actions/getManta": {
         frame: {
-            x: 400,
-            y: 400,
+            x: 450,
+            y: 50,
             w: 50,
             h: 50,
         },
@@ -434,7 +450,7 @@ SharkGame.Sprites = {
     "actions/getNurse": {
         frame: {
             x: 450,
-            y: 0,
+            y: 100,
             w: 50,
             h: 50,
         },
@@ -442,7 +458,7 @@ SharkGame.Sprites = {
     "actions/getOctopus": {
         frame: {
             x: 450,
-            y: 50,
+            y: 150,
             w: 50,
             h: 50,
         },
@@ -450,7 +466,7 @@ SharkGame.Sprites = {
     "actions/getPhilosopher": {
         frame: {
             x: 450,
-            y: 100,
+            y: 200,
             w: 50,
             h: 50,
         },
@@ -458,7 +474,7 @@ SharkGame.Sprites = {
     "actions/getPit": {
         frame: {
             x: 450,
-            y: 150,
+            y: 250,
             w: 50,
             h: 50,
         },
@@ -466,7 +482,7 @@ SharkGame.Sprites = {
     "actions/getPlanter": {
         frame: {
             x: 450,
-            y: 200,
+            y: 300,
             w: 50,
             h: 50,
         },
@@ -474,7 +490,7 @@ SharkGame.Sprites = {
     "actions/getQueen": {
         frame: {
             x: 450,
-            y: 250,
+            y: 350,
             w: 50,
             h: 50,
         },
@@ -482,30 +498,30 @@ SharkGame.Sprites = {
     "actions/getResearcher": {
         frame: {
             x: 450,
-            y: 300,
+            y: 400,
             w: 50,
             h: 50,
         },
     },
     "actions/getSandDigger": {
         frame: {
-            x: 450,
-            y: 350,
+            x: 0,
+            y: 450,
             w: 50,
             h: 50,
         },
     },
     "actions/getScavenger": {
         frame: {
-            x: 450,
-            y: 400,
+            x: 50,
+            y: 450,
             w: 50,
             h: 50,
         },
     },
     "actions/getScholar": {
         frame: {
-            x: 0,
+            x: 100,
             y: 450,
             w: 50,
             h: 50,
@@ -513,7 +529,7 @@ SharkGame.Sprites = {
     },
     "actions/getScientist": {
         frame: {
-            x: 50,
+            x: 150,
             y: 450,
             w: 50,
             h: 50,
@@ -521,7 +537,7 @@ SharkGame.Sprites = {
     },
     "actions/getSeaApple": {
         frame: {
-            x: 100,
+            x: 200,
             y: 450,
             w: 50,
             h: 50,
@@ -529,7 +545,7 @@ SharkGame.Sprites = {
     },
     "actions/getShark": {
         frame: {
-            x: 150,
+            x: 250,
             y: 450,
             w: 50,
             h: 50,
@@ -537,7 +553,7 @@ SharkGame.Sprites = {
     },
     "actions/getShoveler": {
         frame: {
-            x: 200,
+            x: 300,
             y: 450,
             w: 50,
             h: 50,
@@ -545,7 +561,7 @@ SharkGame.Sprites = {
     },
     "actions/getShrimp": {
         frame: {
-            x: 250,
+            x: 350,
             y: 450,
             w: 50,
             h: 50,
@@ -553,7 +569,7 @@ SharkGame.Sprites = {
     },
     "actions/getSifter": {
         frame: {
-            x: 300,
+            x: 400,
             y: 450,
             w: 50,
             h: 50,
@@ -561,7 +577,7 @@ SharkGame.Sprites = {
     },
     "actions/getSkimmer": {
         frame: {
-            x: 350,
+            x: 450,
             y: 450,
             w: 50,
             h: 50,
@@ -569,16 +585,16 @@ SharkGame.Sprites = {
     },
     "actions/getSpawner": {
         frame: {
-            x: 400,
-            y: 450,
+            x: 500,
+            y: 0,
             w: 50,
             h: 50,
         },
     },
     "actions/getSpawnerHatted": {
         frame: {
-            x: 450,
-            y: 450,
+            x: 500,
+            y: 50,
             w: 50,
             h: 50,
         },
@@ -586,7 +602,7 @@ SharkGame.Sprites = {
     "actions/getSpongeFarm": {
         frame: {
             x: 500,
-            y: 0,
+            y: 100,
             w: 50,
             h: 50,
         },
@@ -594,7 +610,7 @@ SharkGame.Sprites = {
     "actions/getSprongeSmelter": {
         frame: {
             x: 500,
-            y: 50,
+            y: 150,
             w: 50,
             h: 50,
         },
@@ -602,7 +618,7 @@ SharkGame.Sprites = {
     "actions/getSquid": {
         frame: {
             x: 500,
-            y: 100,
+            y: 200,
             w: 50,
             h: 50,
         },
@@ -610,7 +626,7 @@ SharkGame.Sprites = {
     "actions/getStormgoer": {
         frame: {
             x: 500,
-            y: 150,
+            y: 250,
             w: 50,
             h: 50,
         },
@@ -618,7 +634,7 @@ SharkGame.Sprites = {
     "actions/getTechnician": {
         frame: {
             x: 500,
-            y: 200,
+            y: 300,
             w: 50,
             h: 50,
         },
@@ -626,7 +642,7 @@ SharkGame.Sprites = {
     "actions/getTirelessCrafter": {
         frame: {
             x: 500,
-            y: 250,
+            y: 350,
             w: 50,
             h: 50,
         },
@@ -634,7 +650,7 @@ SharkGame.Sprites = {
     "actions/getTreasurer": {
         frame: {
             x: 500,
-            y: 300,
+            y: 400,
             w: 50,
             h: 50,
         },
@@ -642,30 +658,30 @@ SharkGame.Sprites = {
     "actions/getUrchin": {
         frame: {
             x: 500,
-            y: 350,
+            y: 450,
             w: 50,
             h: 50,
         },
     },
     "actions/getWhale": {
         frame: {
-            x: 500,
-            y: 400,
+            x: 0,
+            y: 500,
             w: 50,
             h: 50,
         },
     },
     "actions/getWorker": {
         frame: {
-            x: 500,
-            y: 450,
+            x: 50,
+            y: 500,
             w: 50,
             h: 50,
         },
     },
     "actions/jellyfishToScience": {
         frame: {
-            x: 0,
+            x: 100,
             y: 500,
             w: 50,
             h: 50,
@@ -673,7 +689,7 @@ SharkGame.Sprites = {
     },
     "actions/makeSacrifice": {
         frame: {
-            x: 50,
+            x: 150,
             y: 500,
             w: 50,
             h: 50,
@@ -681,7 +697,7 @@ SharkGame.Sprites = {
     },
     "actions/pearlConversion": {
         frame: {
-            x: 100,
+            x: 200,
             y: 500,
             w: 50,
             h: 50,
@@ -689,7 +705,7 @@ SharkGame.Sprites = {
     },
     "actions/prySponge": {
         frame: {
-            x: 150,
+            x: 250,
             y: 500,
             w: 50,
             h: 50,
@@ -697,7 +713,7 @@ SharkGame.Sprites = {
     },
     "actions/seaApplesToScience": {
         frame: {
-            x: 200,
+            x: 300,
             y: 500,
             w: 50,
             h: 50,
@@ -705,7 +721,7 @@ SharkGame.Sprites = {
     },
     "actions/seagrassToScience": {
         frame: {
-            x: 250,
+            x: 350,
             y: 500,
             w: 50,
             h: 50,
@@ -713,7 +729,7 @@ SharkGame.Sprites = {
     },
     "actions/smeltCoralglass": {
         frame: {
-            x: 300,
+            x: 400,
             y: 500,
             w: 50,
             h: 50,
@@ -721,7 +737,7 @@ SharkGame.Sprites = {
     },
     "actions/smeltPorite": {
         frame: {
-            x: 350,
+            x: 450,
             y: 500,
             w: 50,
             h: 50,
@@ -729,7 +745,7 @@ SharkGame.Sprites = {
     },
     "actions/spongeFiltration": {
         frame: {
-            x: 400,
+            x: 500,
             y: 500,
             w: 50,
             h: 50,
@@ -737,16 +753,16 @@ SharkGame.Sprites = {
     },
     "actions/spongeToScience": {
         frame: {
-            x: 450,
-            y: 500,
+            x: 550,
+            y: 0,
             w: 50,
             h: 50,
         },
     },
     "actions/toggleAutoSmelt": {
         frame: {
-            x: 500,
-            y: 500,
+            x: 550,
+            y: 50,
             w: 50,
             h: 50,
         },
@@ -754,7 +770,7 @@ SharkGame.Sprites = {
     "actions/transmuteSharkonium": {
         frame: {
             x: 550,
-            y: 0,
+            y: 100,
             w: 50,
             h: 50,
         },
@@ -762,7 +778,7 @@ SharkGame.Sprites = {
     "general/missing-action-old": {
         frame: {
             x: 550,
-            y: 50,
+            y: 150,
             w: 50,
             h: 50,
         },
@@ -770,7 +786,7 @@ SharkGame.Sprites = {
     "general/missing-action": {
         frame: {
             x: 550,
-            y: 100,
+            y: 200,
             w: 50,
             h: 50,
         },
@@ -778,7 +794,7 @@ SharkGame.Sprites = {
     "general/missing-artifact": {
         frame: {
             x: 550,
-            y: 150,
+            y: 250,
             w: 50,
             h: 50,
         },
@@ -786,7 +802,7 @@ SharkGame.Sprites = {
     "general/missing-technology": {
         frame: {
             x: 550,
-            y: 200,
+            y: 300,
             w: 50,
             h: 50,
         },
@@ -794,7 +810,7 @@ SharkGame.Sprites = {
     "general/pieceofpaper": {
         frame: {
             x: 550,
-            y: 250,
+            y: 350,
             w: 50,
             h: 50,
         },
@@ -802,7 +818,7 @@ SharkGame.Sprites = {
     "technologies/abyssalEnigmas": {
         frame: {
             x: 550,
-            y: 300,
+            y: 400,
             w: 50,
             h: 50,
         },
@@ -810,7 +826,7 @@ SharkGame.Sprites = {
     "technologies/agriculture": {
         frame: {
             x: 550,
-            y: 350,
+            y: 450,
             w: 50,
             h: 50,
         },
@@ -818,30 +834,30 @@ SharkGame.Sprites = {
     "technologies/ancestralRecall": {
         frame: {
             x: 550,
-            y: 400,
+            y: 500,
             w: 50,
             h: 50,
         },
     },
     "technologies/ancientAgriculture": {
         frame: {
-            x: 550,
-            y: 450,
+            x: 0,
+            y: 550,
             w: 50,
             h: 50,
         },
     },
     "technologies/apologeticAmnesty": {
         frame: {
-            x: 550,
-            y: 500,
+            x: 50,
+            y: 550,
             w: 50,
             h: 50,
         },
     },
     "technologies/aquamarineFusion": {
         frame: {
-            x: 0,
+            x: 100,
             y: 550,
             w: 50,
             h: 50,
@@ -849,7 +865,7 @@ SharkGame.Sprites = {
     },
     "technologies/arcaneCompass": {
         frame: {
-            x: 50,
+            x: 150,
             y: 550,
             w: 50,
             h: 50,
@@ -857,7 +873,7 @@ SharkGame.Sprites = {
     },
     "technologies/arcaneSacrifice": {
         frame: {
-            x: 100,
+            x: 200,
             y: 550,
             w: 50,
             h: 50,
@@ -865,7 +881,7 @@ SharkGame.Sprites = {
     },
     "technologies/arcaneSifting": {
         frame: {
-            x: 150,
+            x: 250,
             y: 550,
             w: 50,
             h: 50,
@@ -873,7 +889,7 @@ SharkGame.Sprites = {
     },
     "technologies/assistedExtraction": {
         frame: {
-            x: 200,
+            x: 300,
             y: 550,
             w: 50,
             h: 50,
@@ -881,7 +897,7 @@ SharkGame.Sprites = {
     },
     "technologies/automation": {
         frame: {
-            x: 250,
+            x: 350,
             y: 550,
             w: 50,
             h: 50,
@@ -889,7 +905,7 @@ SharkGame.Sprites = {
     },
     "technologies/billfishBiology": {
         frame: {
-            x: 300,
+            x: 400,
             y: 550,
             w: 50,
             h: 50,
@@ -897,7 +913,7 @@ SharkGame.Sprites = {
     },
     "technologies/bioelectricity": {
         frame: {
-            x: 350,
+            x: 450,
             y: 550,
             w: 50,
             h: 50,
@@ -905,7 +921,7 @@ SharkGame.Sprites = {
     },
     "technologies/bioengineering": {
         frame: {
-            x: 400,
+            x: 500,
             y: 550,
             w: 50,
             h: 50,
@@ -913,24 +929,32 @@ SharkGame.Sprites = {
     },
     "technologies/biology": {
         frame: {
-            x: 450,
+            x: 550,
             y: 550,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/broodingBiology": {
+        frame: {
+            x: 600,
+            y: 0,
             w: 50,
             h: 50,
         },
     },
     "technologies/calciniumCybernetics": {
         frame: {
-            x: 500,
-            y: 550,
+            x: 600,
+            y: 50,
             w: 50,
             h: 50,
         },
     },
     "technologies/calciniumRobotics": {
         frame: {
-            x: 550,
-            y: 550,
+            x: 600,
+            y: 100,
             w: 50,
             h: 50,
         },
@@ -938,7 +962,7 @@ SharkGame.Sprites = {
     "technologies/calciniumStudies": {
         frame: {
             x: 600,
-            y: 0,
+            y: 150,
             w: 50,
             h: 50,
         },
@@ -946,7 +970,7 @@ SharkGame.Sprites = {
     "technologies/cavernousContact": {
         frame: {
             x: 600,
-            y: 50,
+            y: 200,
             w: 50,
             h: 50,
         },
@@ -954,7 +978,7 @@ SharkGame.Sprites = {
     "technologies/cetaceanAwareness": {
         frame: {
             x: 600,
-            y: 100,
+            y: 250,
             w: 50,
             h: 50,
         },
@@ -962,7 +986,7 @@ SharkGame.Sprites = {
     "technologies/chimaeraMysticism": {
         frame: {
             x: 600,
-            y: 150,
+            y: 300,
             w: 50,
             h: 50,
         },
@@ -970,7 +994,7 @@ SharkGame.Sprites = {
     "technologies/chimaeraReunification": {
         frame: {
             x: 600,
-            y: 200,
+            y: 350,
             w: 50,
             h: 50,
         },
@@ -978,7 +1002,7 @@ SharkGame.Sprites = {
     "technologies/civilContact": {
         frame: {
             x: 600,
-            y: 250,
+            y: 400,
             w: 50,
             h: 50,
         },
@@ -986,7 +1010,7 @@ SharkGame.Sprites = {
     "technologies/clamScooping": {
         frame: {
             x: 600,
-            y: 300,
+            y: 450,
             w: 50,
             h: 50,
         },
@@ -994,7 +1018,7 @@ SharkGame.Sprites = {
     "technologies/consistentCommunication": {
         frame: {
             x: 600,
-            y: 350,
+            y: 500,
             w: 50,
             h: 50,
         },
@@ -1002,38 +1026,38 @@ SharkGame.Sprites = {
     "technologies/coralCollection": {
         frame: {
             x: 600,
-            y: 400,
+            y: 550,
             w: 50,
             h: 50,
         },
     },
     "technologies/crabBiology": {
         frame: {
-            x: 600,
-            y: 450,
+            x: 0,
+            y: 600,
             w: 50,
             h: 50,
         },
     },
     "technologies/creviceContemplation": {
         frame: {
-            x: 600,
-            y: 500,
+            x: 50,
+            y: 600,
             w: 50,
             h: 50,
         },
     },
     "technologies/crustaceanBiology": {
         frame: {
-            x: 600,
-            y: 550,
+            x: 100,
+            y: 600,
             w: 50,
             h: 50,
         },
     },
     "technologies/crystalBite": {
         frame: {
-            x: 0,
+            x: 150,
             y: 600,
             w: 50,
             h: 50,
@@ -1041,7 +1065,7 @@ SharkGame.Sprites = {
     },
     "technologies/crystalContainer": {
         frame: {
-            x: 50,
+            x: 200,
             y: 600,
             w: 50,
             h: 50,
@@ -1049,7 +1073,7 @@ SharkGame.Sprites = {
     },
     "technologies/crystalScoop": {
         frame: {
-            x: 100,
+            x: 250,
             y: 600,
             w: 50,
             h: 50,
@@ -1057,7 +1081,7 @@ SharkGame.Sprites = {
     },
     "technologies/crystalSpade": {
         frame: {
-            x: 150,
+            x: 300,
             y: 600,
             w: 50,
             h: 50,
@@ -1065,7 +1089,7 @@ SharkGame.Sprites = {
     },
     "technologies/crystalSpear": {
         frame: {
-            x: 200,
+            x: 350,
             y: 600,
             w: 50,
             h: 50,
@@ -1073,7 +1097,7 @@ SharkGame.Sprites = {
     },
     "technologies/crystallineConstruction": {
         frame: {
-            x: 250,
+            x: 400,
             y: 600,
             w: 50,
             h: 50,
@@ -1081,7 +1105,7 @@ SharkGame.Sprites = {
     },
     "technologies/curiousCollection": {
         frame: {
-            x: 300,
+            x: 450,
             y: 600,
             w: 50,
             h: 50,
@@ -1089,7 +1113,7 @@ SharkGame.Sprites = {
     },
     "technologies/delphineHistory": {
         frame: {
-            x: 350,
+            x: 500,
             y: 600,
             w: 50,
             h: 50,
@@ -1097,7 +1121,7 @@ SharkGame.Sprites = {
     },
     "technologies/dolphinBiology": {
         frame: {
-            x: 400,
+            x: 550,
             y: 600,
             w: 50,
             h: 50,
@@ -1105,7 +1129,7 @@ SharkGame.Sprites = {
     },
     "technologies/dolphinTechnology": {
         frame: {
-            x: 450,
+            x: 600,
             y: 600,
             w: 50,
             h: 50,
@@ -1113,32 +1137,32 @@ SharkGame.Sprites = {
     },
     "technologies/eelHabitats": {
         frame: {
-            x: 500,
-            y: 600,
+            x: 650,
+            y: 0,
             w: 50,
             h: 50,
         },
     },
     "technologies/eightfoldOptimisation": {
         frame: {
-            x: 550,
-            y: 600,
+            x: 650,
+            y: 50,
             w: 50,
             h: 50,
         },
     },
     "technologies/engineering": {
         frame: {
-            x: 600,
-            y: 600,
+            x: 650,
+            y: 100,
             w: 50,
             h: 50,
         },
     },
-    "technologies/enviromentalism": {
+    "technologies/environmentalism": {
         frame: {
             x: 650,
-            y: 0,
+            y: 150,
             w: 50,
             h: 50,
         },
@@ -1146,7 +1170,7 @@ SharkGame.Sprites = {
     "technologies/eternalSong": {
         frame: {
             x: 650,
-            y: 50,
+            y: 200,
             w: 50,
             h: 50,
         },
@@ -1154,7 +1178,7 @@ SharkGame.Sprites = {
     "technologies/eusociality": {
         frame: {
             x: 650,
-            y: 100,
+            y: 250,
             w: 50,
             h: 50,
         },
@@ -1162,7 +1186,7 @@ SharkGame.Sprites = {
     "technologies/exploration": {
         frame: {
             x: 650,
-            y: 150,
+            y: 300,
             w: 50,
             h: 50,
         },
@@ -1170,7 +1194,7 @@ SharkGame.Sprites = {
     "technologies/farExploration": {
         frame: {
             x: 650,
-            y: 200,
+            y: 350,
             w: 50,
             h: 50,
         },
@@ -1178,7 +1202,7 @@ SharkGame.Sprites = {
     "technologies/feedingTechniques": {
         frame: {
             x: 650,
-            y: 250,
+            y: 400,
             w: 50,
             h: 50,
         },
@@ -1186,7 +1210,7 @@ SharkGame.Sprites = {
     "technologies/finalDraft": {
         frame: {
             x: 650,
-            y: 300,
+            y: 450,
             w: 50,
             h: 50,
         },
@@ -1194,7 +1218,7 @@ SharkGame.Sprites = {
     "technologies/gateDiscovery": {
         frame: {
             x: 650,
-            y: 350,
+            y: 500,
             w: 50,
             h: 50,
         },
@@ -1202,7 +1226,7 @@ SharkGame.Sprites = {
     "technologies/heavySifting": {
         frame: {
             x: 650,
-            y: 400,
+            y: 550,
             w: 50,
             h: 50,
         },
@@ -1210,38 +1234,38 @@ SharkGame.Sprites = {
     "technologies/highEnergyFusion": {
         frame: {
             x: 650,
-            y: 450,
+            y: 600,
             w: 50,
             h: 50,
         },
     },
     "technologies/imperialDesigns": {
         frame: {
-            x: 650,
-            y: 500,
+            x: 0,
+            y: 650,
             w: 50,
             h: 50,
         },
     },
     "technologies/industrialGradeSponge": {
         frame: {
-            x: 650,
-            y: 550,
+            x: 50,
+            y: 650,
             w: 50,
             h: 50,
         },
     },
-    "technologies/investigatetions": {
+    "technologies/investi-gate-tions": {
         frame: {
-            x: 650,
-            y: 600,
+            x: 100,
+            y: 650,
             w: 50,
             h: 50,
         },
     },
     "technologies/iterativeDesign": {
         frame: {
-            x: 0,
+            x: 150,
             y: 650,
             w: 50,
             h: 50,
@@ -1249,7 +1273,7 @@ SharkGame.Sprites = {
     },
     "technologies/jellyDiving": {
         frame: {
-            x: 50,
+            x: 200,
             y: 650,
             w: 50,
             h: 50,
@@ -1257,7 +1281,7 @@ SharkGame.Sprites = {
     },
     "technologies/kelpHorticulture": {
         frame: {
-            x: 100,
+            x: 250,
             y: 650,
             w: 50,
             h: 50,
@@ -1265,7 +1289,7 @@ SharkGame.Sprites = {
     },
     "technologies/laserLenses": {
         frame: {
-            x: 150,
+            x: 300,
             y: 650,
             w: 50,
             h: 50,
@@ -1273,7 +1297,7 @@ SharkGame.Sprites = {
     },
     "technologies/laserRays": {
         frame: {
-            x: 200,
+            x: 350,
             y: 650,
             w: 50,
             h: 50,
@@ -1281,7 +1305,7 @@ SharkGame.Sprites = {
     },
     "technologies/magicBottles": {
         frame: {
-            x: 250,
+            x: 400,
             y: 650,
             w: 50,
             h: 50,
@@ -1289,7 +1313,7 @@ SharkGame.Sprites = {
     },
     "technologies/mobiusShells": {
         frame: {
-            x: 300,
+            x: 450,
             y: 650,
             w: 50,
             h: 50,
@@ -1297,7 +1321,7 @@ SharkGame.Sprites = {
     },
     "technologies/octalEfficiency": {
         frame: {
-            x: 350,
+            x: 500,
             y: 650,
             w: 50,
             h: 50,
@@ -1305,7 +1329,7 @@ SharkGame.Sprites = {
     },
     "technologies/octopusMethodology": {
         frame: {
-            x: 400,
+            x: 550,
             y: 650,
             w: 50,
             h: 50,
@@ -1313,7 +1337,7 @@ SharkGame.Sprites = {
     },
     "technologies/packHunting": {
         frame: {
-            x: 450,
+            x: 600,
             y: 650,
             w: 50,
             h: 50,
@@ -1321,7 +1345,7 @@ SharkGame.Sprites = {
     },
     "technologies/pearlConversion": {
         frame: {
-            x: 500,
+            x: 650,
             y: 650,
             w: 50,
             h: 50,
@@ -1329,37 +1353,13 @@ SharkGame.Sprites = {
     },
     "technologies/powerfulPropulsion": {
         frame: {
-            x: 550,
-            y: 650,
-            w: 50,
-            h: 50,
-        },
-    },
-    "technologies/properPractices": {
-        frame: {
-            x: 600,
-            y: 650,
-            w: 50,
-            h: 50,
-        },
-    },
-    "technologies/rayBiology": {
-        frame: {
-            x: 650,
-            y: 650,
-            w: 50,
-            h: 50,
-        },
-    },
-    "technologies/recyclerDiscovery": {
-        frame: {
             x: 700,
             y: 0,
             w: 50,
             h: 50,
         },
     },
-    "technologies/retroactiveRecordkeeping": {
+    "technologies/properPractices": {
         frame: {
             x: 700,
             y: 50,
@@ -1367,7 +1367,7 @@ SharkGame.Sprites = {
             h: 50,
         },
     },
-    "technologies/reverseEngineering": {
+    "technologies/rayBiology": {
         frame: {
             x: 700,
             y: 100,
@@ -1375,7 +1375,7 @@ SharkGame.Sprites = {
             h: 50,
         },
     },
-    "technologies/sandbagging": {
+    "technologies/recyclerDiscovery": {
         frame: {
             x: 700,
             y: 150,
@@ -1383,7 +1383,7 @@ SharkGame.Sprites = {
             h: 50,
         },
     },
-    "technologies/seabedGeology": {
+    "technologies/retroactiveRecordkeeping": {
         frame: {
             x: 700,
             y: 200,
@@ -1391,7 +1391,7 @@ SharkGame.Sprites = {
             h: 50,
         },
     },
-    "technologies/secretSmithing": {
+    "technologies/reverseEngineering": {
         frame: {
             x: 700,
             y: 250,
@@ -1399,7 +1399,7 @@ SharkGame.Sprites = {
             h: 50,
         },
     },
-    "technologies/sociology": {
+    "technologies/sandbagging": {
         frame: {
             x: 700,
             y: 300,
@@ -1407,7 +1407,7 @@ SharkGame.Sprites = {
             h: 50,
         },
     },
-    "technologies/spongeCollection": {
+    "technologies/seabedGeology": {
         frame: {
             x: 700,
             y: 350,
@@ -1415,7 +1415,7 @@ SharkGame.Sprites = {
             h: 50,
         },
     },
-    "technologies/sprongeBiomimicry": {
+    "technologies/secretSmithing": {
         frame: {
             x: 700,
             y: 400,
@@ -1423,7 +1423,7 @@ SharkGame.Sprites = {
             h: 50,
         },
     },
-    "technologies/squidBiology": {
+    "technologies/sociology": {
         frame: {
             x: 700,
             y: 450,
@@ -1431,7 +1431,7 @@ SharkGame.Sprites = {
             h: 50,
         },
     },
-    "technologies/statsDiscovery": {
+    "technologies/spongeCollection": {
         frame: {
             x: 700,
             y: 500,
@@ -1439,7 +1439,7 @@ SharkGame.Sprites = {
             h: 50,
         },
     },
-    "technologies/sunObservation": {
+    "technologies/sprongeBiomimicry": {
         frame: {
             x: 700,
             y: 550,
@@ -1447,7 +1447,7 @@ SharkGame.Sprites = {
             h: 50,
         },
     },
-    "technologies/superShovels": {
+    "technologies/squidBiology": {
         frame: {
             x: 700,
             y: 600,
@@ -1455,7 +1455,7 @@ SharkGame.Sprites = {
             h: 50,
         },
     },
-    "technologies/superSmelting": {
+    "technologies/statsDiscovery": {
         frame: {
             x: 700,
             y: 650,
@@ -1463,7 +1463,7 @@ SharkGame.Sprites = {
             h: 50,
         },
     },
-    "technologies/superiorSearchAlgorithms": {
+    "technologies/sunObservation": {
         frame: {
             x: 0,
             y: 700,
@@ -1471,7 +1471,7 @@ SharkGame.Sprites = {
             h: 50,
         },
     },
-    "technologies/superprocessing": {
+    "technologies/superShovels": {
         frame: {
             x: 50,
             y: 700,
@@ -1479,7 +1479,7 @@ SharkGame.Sprites = {
             h: 50,
         },
     },
-    "technologies/sustainableSolutions": {
+    "technologies/superiorSearchAlgorithms": {
         frame: {
             x: 100,
             y: 700,
@@ -1487,7 +1487,7 @@ SharkGame.Sprites = {
             h: 50,
         },
     },
-    "technologies/teamSpirit": {
+    "technologies/superprocessing": {
         frame: {
             x: 150,
             y: 700,
@@ -1495,7 +1495,7 @@ SharkGame.Sprites = {
             h: 50,
         },
     },
-    "technologies/thermalConditioning": {
+    "technologies/sustainableSolutions": {
         frame: {
             x: 200,
             y: 700,
@@ -1503,7 +1503,7 @@ SharkGame.Sprites = {
             h: 50,
         },
     },
-    "technologies/thermalVents": {
+    "technologies/teamSpirit": {
         frame: {
             x: 250,
             y: 700,
@@ -1511,7 +1511,7 @@ SharkGame.Sprites = {
             h: 50,
         },
     },
-    "technologies/transmutation": {
+    "technologies/thermalConditioning": {
         frame: {
             x: 300,
             y: 700,
@@ -1519,7 +1519,7 @@ SharkGame.Sprites = {
             h: 50,
         },
     },
-    "technologies/underwaterChemistry": {
+    "technologies/thermalVents": {
         frame: {
             x: 350,
             y: 700,
@@ -1527,7 +1527,7 @@ SharkGame.Sprites = {
             h: 50,
         },
     },
-    "technologies/urchinAttraction": {
+    "technologies/transmutation": {
         frame: {
             x: 400,
             y: 700,
@@ -1535,7 +1535,7 @@ SharkGame.Sprites = {
             h: 50,
         },
     },
-    "technologies/urchinBiology": {
+    "technologies/underwaterChemistry": {
         frame: {
             x: 450,
             y: 700,
@@ -1543,7 +1543,7 @@ SharkGame.Sprites = {
             h: 50,
         },
     },
-    "technologies/whaleCommunication": {
+    "technologies/urchinAttraction": {
         frame: {
             x: 500,
             y: 700,
@@ -1551,7 +1551,7 @@ SharkGame.Sprites = {
             h: 50,
         },
     },
-    "technologies/wormWarriors": {
+    "technologies/urchinBiology": {
         frame: {
             x: 550,
             y: 700,
@@ -1559,7 +1559,7 @@ SharkGame.Sprites = {
             h: 50,
         },
     },
-    "technologies/xenobiology": {
+    "technologies/whaleCommunication": {
         frame: {
             x: 600,
             y: 700,
@@ -1567,18 +1567,34 @@ SharkGame.Sprites = {
             h: 50,
         },
     },
-    "technologies/jellyfishHunting": {
+    "technologies/wormWarriors": {
         frame: {
             x: 650,
             y: 700,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/xenobiology": {
+        frame: {
+            x: 700,
+            y: 700,
+            w: 50,
+            h: 50,
+        },
+    },
+    "technologies/jellyfishHunting": {
+        frame: {
+            x: 750,
+            y: 0,
             w: 49,
             h: 49,
         },
     },
     "actions/getSeabedStripper": {
         frame: {
-            x: 699,
-            y: 700,
+            x: 750,
+            y: 49,
             w: 48,
             h: 45,
         },
@@ -1586,7 +1602,7 @@ SharkGame.Sprites = {
     "technologies/sentientCircuitBoards": {
         frame: {
             x: 750,
-            y: 0,
+            y: 94,
             w: 46,
             h: 46,
         },
@@ -1594,7 +1610,7 @@ SharkGame.Sprites = {
     "aspects/amorphousAssembly": {
         frame: {
             x: 750,
-            y: 46,
+            y: 140,
             w: 32,
             h: 32,
         },
@@ -1602,7 +1618,7 @@ SharkGame.Sprites = {
     "aspects/apotheosis": {
         frame: {
             x: 750,
-            y: 78,
+            y: 172,
             w: 32,
             h: 32,
         },
@@ -1610,7 +1626,7 @@ SharkGame.Sprites = {
     "aspects/clawSharpening": {
         frame: {
             x: 750,
-            y: 110,
+            y: 204,
             w: 32,
             h: 32,
         },
@@ -1618,7 +1634,7 @@ SharkGame.Sprites = {
     "aspects/cleanSlate": {
         frame: {
             x: 750,
-            y: 142,
+            y: 236,
             w: 32,
             h: 32,
         },
@@ -1626,7 +1642,7 @@ SharkGame.Sprites = {
     "aspects/collectiveCooperation": {
         frame: {
             x: 750,
-            y: 174,
+            y: 268,
             w: 32,
             h: 32,
         },
@@ -1634,7 +1650,7 @@ SharkGame.Sprites = {
     "aspects/constructedConception": {
         frame: {
             x: 750,
-            y: 206,
+            y: 300,
             w: 32,
             h: 32,
         },
@@ -1642,7 +1658,7 @@ SharkGame.Sprites = {
     "aspects/coordinatedCooperation": {
         frame: {
             x: 750,
-            y: 238,
+            y: 332,
             w: 32,
             h: 32,
         },
@@ -1650,7 +1666,7 @@ SharkGame.Sprites = {
     "aspects/crustaceanAptitude": {
         frame: {
             x: 750,
-            y: 270,
+            y: 364,
             w: 32,
             h: 32,
         },
@@ -1658,7 +1674,7 @@ SharkGame.Sprites = {
     "aspects/crystallineSkin": {
         frame: {
             x: 750,
-            y: 302,
+            y: 396,
             w: 32,
             h: 32,
         },
@@ -1666,7 +1682,7 @@ SharkGame.Sprites = {
     "aspects/destinyGamble": {
         frame: {
             x: 750,
-            y: 334,
+            y: 428,
             w: 32,
             h: 32,
         },
@@ -1674,7 +1690,7 @@ SharkGame.Sprites = {
     "aspects/distantForesight": {
         frame: {
             x: 750,
-            y: 366,
+            y: 460,
             w: 32,
             h: 32,
         },
@@ -1682,7 +1698,7 @@ SharkGame.Sprites = {
     "aspects/doubleTime": {
         frame: {
             x: 750,
-            y: 398,
+            y: 492,
             w: 32,
             h: 32,
         },
@@ -1690,7 +1706,7 @@ SharkGame.Sprites = {
     "aspects/extensiveOrganization": {
         frame: {
             x: 750,
-            y: 430,
+            y: 524,
             w: 32,
             h: 32,
         },
@@ -1698,7 +1714,7 @@ SharkGame.Sprites = {
     "aspects/gumption": {
         frame: {
             x: 750,
-            y: 462,
+            y: 556,
             w: 32,
             h: 32,
         },
@@ -1706,7 +1722,7 @@ SharkGame.Sprites = {
     "aspects/infinityVision": {
         frame: {
             x: 750,
-            y: 494,
+            y: 588,
             w: 32,
             h: 32,
         },
@@ -1714,7 +1730,7 @@ SharkGame.Sprites = {
     "aspects/internalCalculator": {
         frame: {
             x: 750,
-            y: 526,
+            y: 620,
             w: 32,
             h: 32,
         },
@@ -1722,7 +1738,7 @@ SharkGame.Sprites = {
     "aspects/mechanicalManifestation": {
         frame: {
             x: 750,
-            y: 558,
+            y: 652,
             w: 32,
             h: 32,
         },
@@ -1730,7 +1746,7 @@ SharkGame.Sprites = {
     "aspects/meditation": {
         frame: {
             x: 750,
-            y: 590,
+            y: 684,
             w: 32,
             h: 32,
         },
@@ -1738,36 +1754,12 @@ SharkGame.Sprites = {
     "aspects/overtime": {
         frame: {
             x: 750,
-            y: 622,
+            y: 716,
             w: 32,
             h: 32,
         },
     },
     "aspects/pathOfEnlightenment": {
-        frame: {
-            x: 750,
-            y: 654,
-            w: 32,
-            h: 32,
-        },
-    },
-    "aspects/pathOfIndustry": {
-        frame: {
-            x: 750,
-            y: 686,
-            w: 32,
-            h: 32,
-        },
-    },
-    "aspects/pathOfTime": {
-        frame: {
-            x: 747,
-            y: 718,
-            w: 32,
-            h: 32,
-        },
-    },
-    "aspects/patience": {
         frame: {
             x: 0,
             y: 750,
@@ -1775,7 +1767,7 @@ SharkGame.Sprites = {
             h: 32,
         },
     },
-    "aspects/syntheticTransmutation": {
+    "aspects/pathOfIndustry": {
         frame: {
             x: 32,
             y: 750,
@@ -1783,7 +1775,7 @@ SharkGame.Sprites = {
             h: 32,
         },
     },
-    "aspects/theDial": {
+    "aspects/pathOfTime": {
         frame: {
             x: 64,
             y: 750,
@@ -1791,7 +1783,7 @@ SharkGame.Sprites = {
             h: 32,
         },
     },
-    "aspects/theHourHand": {
+    "aspects/patience": {
         frame: {
             x: 96,
             y: 750,
@@ -1799,7 +1791,7 @@ SharkGame.Sprites = {
             h: 32,
         },
     },
-    "aspects/theMinuteHand": {
+    "aspects/syntheticTransmutation": {
         frame: {
             x: 128,
             y: 750,
@@ -1807,7 +1799,7 @@ SharkGame.Sprites = {
             h: 32,
         },
     },
-    "aspects/theMinuteHandCentered": {
+    "aspects/theDial": {
         frame: {
             x: 160,
             y: 750,
@@ -1815,7 +1807,7 @@ SharkGame.Sprites = {
             h: 32,
         },
     },
-    "aspects/thePlan": {
+    "aspects/theHourHand": {
         frame: {
             x: 192,
             y: 750,
@@ -1823,7 +1815,7 @@ SharkGame.Sprites = {
             h: 32,
         },
     },
-    "aspects/theSecondHand": {
+    "aspects/theMinuteHand": {
         frame: {
             x: 224,
             y: 750,
@@ -1831,7 +1823,7 @@ SharkGame.Sprites = {
             h: 32,
         },
     },
-    "aspects/tokenOfIndustry": {
+    "aspects/theMinuteHandCentered": {
         frame: {
             x: 256,
             y: 750,
@@ -1839,9 +1831,33 @@ SharkGame.Sprites = {
             h: 32,
         },
     },
-    "aspects/static/respec": {
+    "aspects/thePlan": {
         frame: {
             x: 288,
+            y: 750,
+            w: 32,
+            h: 32,
+        },
+    },
+    "aspects/theSecondHand": {
+        frame: {
+            x: 320,
+            y: 750,
+            w: 32,
+            h: 32,
+        },
+    },
+    "aspects/tokenOfIndustry": {
+        frame: {
+            x: 352,
+            y: 750,
+            w: 32,
+            h: 32,
+        },
+    },
+    "aspects/static/respec": {
+        frame: {
+            x: 384,
             y: 750,
             w: 30,
             h: 30,
@@ -1849,7 +1865,7 @@ SharkGame.Sprites = {
     },
     "aspects/static/respecAll": {
         frame: {
-            x: 318,
+            x: 414,
             y: 750,
             w: 30,
             h: 30,
@@ -1857,7 +1873,7 @@ SharkGame.Sprites = {
     },
     "aspects/static/zoom": {
         frame: {
-            x: 348,
+            x: 444,
             y: 750,
             w: 30,
             h: 30,
@@ -1865,7 +1881,7 @@ SharkGame.Sprites = {
     },
     "general/hole": {
         frame: {
-            x: 378,
+            x: 474,
             y: 750,
             w: 28,
             h: 28,
@@ -1873,7 +1889,7 @@ SharkGame.Sprites = {
     },
     "general/slottedmarker": {
         frame: {
-            x: 406,
+            x: 502,
             y: 750,
             w: 28,
             h: 28,
@@ -1881,7 +1897,7 @@ SharkGame.Sprites = {
     },
     "general/theToken": {
         frame: {
-            x: 434,
+            x: 530,
             y: 750,
             w: 28,
             h: 21,
@@ -1889,7 +1905,7 @@ SharkGame.Sprites = {
     },
     "general/holeoverlay": {
         frame: {
-            x: 462,
+            x: 558,
             y: 750,
             w: 24,
             h: 24,
@@ -1897,7 +1913,7 @@ SharkGame.Sprites = {
     },
     "actions/prySponge2": {
         frame: {
-            x: 150,
+            x: 250,
             y: 500,
             w: 50,
             h: 50,

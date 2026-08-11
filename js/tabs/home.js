@@ -84,7 +84,7 @@ SharkGame.Home = {
         $.each(SharkGame.HomeActionCategories, (categoryName, category) => {
             const onThisTab = home.currentButtonTab === categoryName;
 
-            let categoryDiscovered = false;
+            let categoryDiscovered;
             if (categoryName === "all") {
                 categoryDiscovered = true;
             } else {
@@ -303,7 +303,7 @@ SharkGame.Home = {
         const messageData = homeMessages[SharkGame.Memories.messageLookup.get(requestedMessage)];
         const tabMessage = $("#tabMessage");
 
-        let sceneDiv = $("#tabSceneDiv");
+        let sceneDiv;
         let sceneImageDiv = $("#tabSceneImage");
 
         if (tabMessage[0].children.length === 0) {
@@ -597,19 +597,19 @@ SharkGame.Home = {
 
     shouldRemoveHomeButton(action) {
         let disable = false;
-        $.each(action.removedBy, (kind, when) => {
+        $.each(action.removedBy, (kind, whenCondition) => {
             switch (kind) {
                 case "totalResourceThreshold":
-                    disable = disable || _.some(when, (resourceObject) => res.getTotalResource(resourceObject.resource) >= resourceObject.threshold);
+                    disable = disable || _.some(whenCondition, (resourceObject) => res.getTotalResource(resourceObject.resource) >= resourceObject.threshold);
                     break;
                 case "otherActions":
-                    disable = disable || _.some(when, (otherAction) => home.areActionPrereqsMet(otherAction));
+                    disable = disable || _.some(whenCondition, (otherAction) => home.areActionPrereqsMet(otherAction));
                     break;
                 case "upgrades":
-                    disable = disable || _.some(when, (upgrade) => SharkGame.Upgrades.purchased.includes(upgrade));
+                    disable = disable || _.some(whenCondition, (upgrade) => SharkGame.Upgrades.purchased.includes(upgrade));
                     break;
                 case "custom":
-                    disable = disable || when();
+                    disable = disable || whenCondition();
             }
         });
         return disable;
@@ -695,8 +695,8 @@ SharkGame.Home = {
 
         if (button.hasClass("disabled")) return;
         const action = SharkGame.HomeActions.getActionData(SharkGame.HomeActions.getActionTable(), actionName);
-        let actionCost = {};
-        let amount = new Decimal(0);
+        let actionCost;
+        let amount;
         if (amountToBuy.lessThan(0)) {
             // unlimited mode, calculate the highest we can go
             const max = home.getMax(action);
@@ -1011,7 +1011,7 @@ SharkGame.Home = {
                 "MULTIPLICATIVELY DECREASE" +
                 (usePlural ? "" : "S") +
                 "</span><br/>";
-            addedAnyLabelsYet = true;
+            // addedAnyLabelsYet = true; // Redundant here because it's the last, keeping commented in case that changes, but eslint would complain otherwise
             $.each(condensedObject.genAffect.multdecrease, (affectedGenerator, degreePerPurchase) => {
                 degreePerPurchase = 1 - degreePerPurchase ** buyingHowMuch;
                 text +=

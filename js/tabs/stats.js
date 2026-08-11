@@ -916,7 +916,7 @@ SharkGame.Stats = {
 
             if (!$.isEmptyObject(generatedCondensedObject.resAffect.multdecrease)) {
                 text += "<span class='littleTooltipText'>" + (addedAnyLabelsYet ? "<br>then " : "") + "ARE MULTIPLICATIVELY DECREASED BY</span><br>";
-                addedAnyLabelsYet = true;
+                // addedAnyLabelsYet = true; // Redundant here because it's the last, keeping commented in case that changes, but eslint would complain otherwise
                 $.each(generatedCondensedObject.resAffect.multdecrease, (affector, degree) => {
                     const amount = SharkGame.Settings.current.alwaysSingularTooltip ? 1 : res.getResource(affector);
                     text +=

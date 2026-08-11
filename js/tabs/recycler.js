@@ -88,7 +88,7 @@ SharkGame.Recycler = {
         const junkAmount = res.getResource("junk");
         const junkDisplay = $("#junkDisplay");
 
-        let junkString = "";
+        let junkString;
         if (rec.expectedOutput !== "NA" && rec.expectedOutput !== 0) {
             junkString = "<span class='click-passthrough' style='color:#FFE436'>" + sharktext.beautify(junkAmount + rec.expectedOutput) + "</span> ";
         } else if (rec.expectedJunkSpent !== "NA" && rec.expectedJunkSpent !== 0) {
@@ -387,7 +387,7 @@ SharkGame.Recycler = {
             return "<br/><br/><br/><br/><br/><br/>";
         }
 
-        let amountstring = "";
+        let amountstring;
         if (sharkmath.getBuyAmount() > 0) {
             amountstring = sharktext.beautify(rec.efficiency * sharkmath.getBuyAmount());
         } else {

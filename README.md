@@ -10,7 +10,7 @@ The hub, alpha, and dev branches are deployed at https://shark.tobot.dev, https:
 
 ## Sprite Packing
 
-We use a free sprite packer at https://free-tex-packer.com/app/ for sprites.js, sprites.png, homemessagesprites.png, and homemessagesprites.js.
+We use a free sprite packer at https://tex.shark.tobot.dev/ for sprites.js, sprites.png, homemessagesprites.png, and homemessagesprites.js.
 
 To generate sprites.js and sprites.png, use the following custom Format:
 ```

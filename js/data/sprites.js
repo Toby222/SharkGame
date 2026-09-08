@@ -77,6 +77,14 @@ SharkGame.Sprites = {
             y: 0,
             w: 50,
             h: 50,
+            "actions/fakeCatchFish": {
+                frame: {
+                    x: 300,
+                    y: 0,
+                    w: 50,
+                    h: 50,
+                },
+            },
         },
     },
     "actions/catchFish": {
@@ -791,7 +799,7 @@ SharkGame.Sprites = {
             h: 50,
         },
     },
-    "actions/shiftEchoCrab": {
+    "actions/echoShiftCrab": {
         frame: {
             x: 550,
             y: 250,
@@ -799,7 +807,7 @@ SharkGame.Sprites = {
             h: 50,
         },
     },
-    "actions/shiftEchoRay": {
+    "actions/echoShiftRay": {
         frame: {
             x: 550,
             y: 300,
@@ -807,7 +815,7 @@ SharkGame.Sprites = {
             h: 50,
         },
     },
-    "actions/shiftEchoShark": {
+    "actions/echoShiftShark": {
         frame: {
             x: 550,
             y: 350,
@@ -2003,6 +2011,14 @@ SharkGame.Sprites = {
         frame: {
             x: 550,
             y: 100,
+            w: 50,
+            h: 50,
+        },
+    },
+    "actions/fakeCatchFish": {
+        frame: {
+            x: 300,
+            y: 50,
             w: 50,
             h: 50,
         },

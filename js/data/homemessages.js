@@ -515,6 +515,72 @@ SharkGame.HomeMessages = {
                 message: "A wave of heat washes over you, and the dingy complex comes back to life. The gate turns on.",
             },
         ],
+        chaotic: [
+            {
+                name: "chaotic-default",
+                message: "The fish here don’t even notice your presence. They appear to phase in and out of existence periodically.",
+            },
+            {
+                name: "chaotic-fishfail",
+                unlock: { totalResource: { fakeFish: 1 } },
+                message: "You attempt to catch a fish, but your jaws harmlessly phase through its body.",
+            },
+            {
+                name: "chaotic-findclam",
+                unlock: { totalResource: { fakeFish: 3 } },
+                message: "You spot some weird rock things moving in the distance. If you can’t catch any fish, maybe you can at least catch… those.",
+            },
+            {
+                name: "chaotic-snail",
+                unlock: { totalResource: { snail: 1 } },
+                message: "The snails are eager to please, but retreat into their shells at the slightest hint of danger. They do their best to smile.",
+            },
+            {
+                name: "chaotic-snailbotanist",
+                unlock: { totalResource: { snailBotanist: 1 } },
+                message: "The botanists eagerly chatter about all things kelp. They talk about sightings of non-snail creatures eating kelp.",
+            },
+            {
+                name: "chaotic-turtle",
+                unlock: { totalResource: { turtle: 1 } },
+                message: "The turtles drift wherever the current takes them. They seem surprised to see a shelless creature who hasn’t 'faded'. Their words, not ours.",
+            },
+            {
+                name: "chaotic-turtlehelpless",
+                unlock: { upgrade: ["hyperfixationCommunication"] },
+                message: "The turtles speak of a visitor who once gave them false hope. They say you're doing the same to the snails.",
+            },
+            {
+                name: "chaotic-ruins",
+                unlock: { upgrade: ["chaosTriangulation"] },
+                message: "Ruined machines lay half-buried in sand, in the distance swirls a massive storm of energy that the turtles say can fade even shelled creatures.",
+            },
+            {
+                name: "chaotic-turtlehope",
+                unlock: { upgrade: ["resurfacedHope"] },
+                message: "The snails remind the turtles of how they once were. They want to believe again, to not mindlessly drift towards oblivion.",
+            },
+            {
+                name: "chaotic-echo",
+                unlock: { totalResource: { echo: 1 } },
+                message: "The echos stare at you with many, everchanging faces. The turtles don't see this as the solution they've been looking for.",
+            },
+            {
+                name: "chaotic-needs-repair",
+                unlock: { upgrade: ["gateStudies"] },
+                message: "Once a transportation device, it was sabotaged and turned into a weapon. If it's to be stopped, several components need to be repaired.",
+            },
+            {
+                name: "chaotic-needs-repair",
+                unlock: { upgrade: ["gateRepairBiofuel", "gateRepairCrystalFocus", "gateRepairCoralCoils"] },
+                message: "Chaos energy no longer spills out from the gate, but it still flows thick through the ocean current. It needs somewhere to go.",
+            },
+            {
+                name: "chaotic-gate",
+                unlock: { upgrade: ["recontainChaos"] },
+                message: "The gate hums to life, slowly syphoning the lingering chaos energy from the water. A turtle swims up to you, thanking you and the snails for not giving up. You're unsure how to respond.",
+            },
+        ],
         /*
         {
             message:

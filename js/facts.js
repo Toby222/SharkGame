@@ -96,6 +96,7 @@ SharkGame.FunFacts = {
         shore: {
             messages: [
                 "Do you like the sandy-beige backgrounds? In case you didn't know, it was originally <i>very</i> yellow.<br>From lightest to darkest, its hex codes were ffdf80, ffd24d, #ffbf00, cc9900, and 997300.",
+                "This world was one of the first completely new worlds to be finished for New Frontiers.",
             ],
         },
     },
@@ -202,10 +203,10 @@ SharkGame.FunFacts = {
         ],
         caracara: [
             "Yes, I know they're birds. It was suggested that they could be replaced with starfish, but people didn't like that.",
-            "There are multiple species of caracara in real life, but the only one here is the striated caracara, because it's the smartest.",
-            "It's pronounced <i>KA-ruh-KAH-ruh</i>, not <i>KA-ruh-KA-ruh</i>.",
+            "There are multiple species of caracara in real life, but the ones here are striated caracaras.",
+            "The word 'caracara' is pronounced as <i>KA-ruh-KAH-ruh</i>.",
             "Striated caracaras are oppurtunistic feeders, which means they eat a lot - small/baby seabirds, entrails, eggs, and human trash.",
-            "Striated caracaras have been known to turn over rocks to look for food underneath them, which is very intelligent for a bird.",
+            "Striated caracaras have been known to turn over rocks to look for food underneath them.",
             "The striated caracara can fly up to 60 km per hour - in excess.",
             "Caracaras are a subspecies of falcon, although they don't look much like it.",
         ],
@@ -246,9 +247,11 @@ SharkGame.FunFacts = {
         hardbark: [
             "To a human, hardbark looks like a dark blue stick covered in a thick layer of light-blue-tinted resin or glass. To the frenzy, it looks like a shiny rod of wood.",
             "Hardbark is actually quite strong, courtesy of the crystal it's coated in. It clinks like glass.",
-            "No, hardbark does not taste like a blue raspberry lollipop, and NO, YOU CANNOT EAT IT--",
-            "You. Do. Not. Know. HOW MANY TYPOS. I have made. Trying to spell. <i>Hardbark.</i>",
-            "You might be wondering why the stick doesn't appear brown. That's because its developer couldn't find a mix between brown and light blue.",
+            "No, hardbark does not taste like blue raspberry, and you'd break your teeth on it. Don't eat it.",
+            // "You do not know HOW MANY TYPOS I have made trying to spell <i>hardbark.</i>",
+            // "You might be wondering why the stick doesn't appear brown. That's because its developer couldn't find a mix between brown and light blue.",
+            "The crafting process of hardbark is relatively simple, reflecting the simple lives of its crafters.",
+            "Hardbark puppets can sometimes act out of their own accord. It might be because of the crystals' magic powers."
         ],
         laser: [
             "Sharks with lasers were overdone, okay? 'Laser ray' is a pun, so it's obviously superior.",

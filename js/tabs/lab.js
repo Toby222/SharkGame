@@ -13,6 +13,11 @@ SharkGame.Lab = {
                     return "";
                 }
                 return "img/events/misc/scene-lab.png";
+            case "shore":
+                if (res.getTotalResource("scientist") < 1) {
+                    return "";
+                }
+                return "img/events/misc/scene-lab.png";
             case "volcanic":
                 return "img/events/misc/scene-volcanic-lab.png";
             default:
@@ -33,6 +38,8 @@ SharkGame.Lab = {
         switch (world.worldType) {
             case "tempestuous":
                 return { resource: { crab: 5 } };
+	        case "shore":
+		        return { resource: { crab: 5 } };
             default:
                 return { resource: { science: 10 } };
         }
@@ -45,6 +52,11 @@ SharkGame.Lab = {
             case "tempestuous":
                 if (res.getTotalResource("scientist") < 1) {
                     return "Sort of just off to the side, there's a cave.";
+                }
+                return "Sort of just off to the side, the science sharks congregate and discuss things with words you've never heard before.";
+            case "shore":
+                if (res.getTotalResource("scientist") < 1) {
+                    return "Sort of just off to the side, there's a clearing of sand and grass.";
                 }
                 return "Sort of just off to the side, the science sharks congregate and discuss things with words you've never heard before.";
             case "volcanic":

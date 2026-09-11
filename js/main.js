@@ -103,7 +103,7 @@ $.extend(SharkGame, {
         "On Sharker Tides",
         "Curse of the Shark",
         "Have I Played These Sharks Before?",
-        "Hollow Shark: Shark Song",
+        "Hollow Shark - Sharksong",
         "Last Shark Standing",
         "Sharkjago: Masters of Sharkjitsu",
         "Shark: Galactic Ad-fin-tures", // this was a bad spin on 'Spore: Galactic Adventures' --ThreeEels

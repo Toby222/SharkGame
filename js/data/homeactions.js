@@ -218,8 +218,8 @@ SharkGame.HomeActions = {
             },
             cost: {},
             prereq: {
-		        upgrade: ["seabedGeology"],
-	        },
+                upgrade: ["seabedGeology"],
+            },
             outcomes: [
                 "Caught seagrass!",
             ],
@@ -5849,7 +5849,7 @@ SharkGame.HomeActionCategories = {
 
     basic: {
         name: "Basic",
-        actions: ["catchFish", "debugbutton", "prySponge", "prySponge2", "getClam", "getJellyfish", "getDriftwood"],
+        actions: ["catchFish", "debugbutton", "prySponge", "prySponge2", "getClam", "getJellyfish", /* "getSeagrass", */"getDriftwood"],
     },
 
     frenzy: {

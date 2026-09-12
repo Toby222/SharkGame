@@ -4587,7 +4587,7 @@ SharkGame.Upgrades = {
             },
             effect: {/*
                 resourceBoost: { roughSand: -100 },
-                events: ["shoreGiveCoral", "shoreGiveSeagrass"],*/
+                events: ["shoreGiveCoral", "shoreGiveSeagrass"], */
             },
         },
         crabDisappearance: {

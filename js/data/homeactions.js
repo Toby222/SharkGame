@@ -218,8 +218,8 @@ SharkGame.HomeActions = {
             },
             cost: {},
             prereq: {
-		upgrade: ["seabedGeology"],
-	    },
+		        upgrade: ["seabedGeology"],
+	        },
             outcomes: [
                 "Caught seagrass!",
             ],
@@ -2647,8 +2647,8 @@ SharkGame.HomeActions = {
             },
             cost: {},
             prereq: {
-		upgrade: ["driftwoodAnalysis"],
-	    },
+                upgrade: ["driftwoodAnalysis"],
+            },
             outcomes: [
                 "Caught driftwood!",
             ],
@@ -3104,10 +3104,10 @@ SharkGame.HomeActions = {
                 "A common mudskipper joins you.",
                 "A Pearse’s mudskipper joins you.",
                 "A great blue spotted mudskipper joins you.",
-		"Wait, that's not a mudskipper, that's just a fish.",
-		"A mere PEASANT joins you.",
-		"A mere SERF joins you.",
-		"A mere SERVANT joins you.",
+                "Wait, that's not a mudskipper, that's just a fish.",
+                "A mere PEASANT joins you.",
+                "A mere SERF joins you.",
+                "A mere SERVANT joins you.",
             ],
             multiOutcomes: [
                 "WOOD! MORE WOOD! BRING US WOOD!",
@@ -3116,8 +3116,8 @@ SharkGame.HomeActions = {
                 "At all times, you must remember that you are repurposed food.",
                 "You are fortunate to serve us! To be spared!",
                 "We won't eat you - so long as you do your job...",
-		"Nervous little things skittering around.",
-		"Your tiny, toothless little mouths are the perfect tool to bring us wood.",
+                "Nervous little things skittering around.",
+                "Your tiny, toothless little mouths are the perfect tool to bring us wood.",
             ],
             helpText: "Liberate a mudskipper from its boring old life and command it to retrieve driftwood for you.",
         }, // end of creature code
@@ -3180,13 +3180,13 @@ SharkGame.HomeActions = {
                 "Stabilizer provided!",
                 "Provided stabilizer!",
                 "A stabilizer at work, saving the seabed!",
-		"Steadying the world one crab at a time!",
+                "Steadying the world one crab at a time!",
             ],
             multiOutcomes: [
                 "Consider your seabeds stabilized!",
                 "No more rough sand with these guys around!",
                 "Area One's status: on the job!",
-		"Be brave, crabs, and be proud!",
+                "Be brave, crabs, and be proud!",
             ],
             helpText: "Provide a crab with coral and seagrass to plant.",
         },
@@ -3285,14 +3285,14 @@ SharkGame.HomeActions = {
             outcomes: [
                 "The claw stick's connected to the - pincer stick!",
                 "And that is how you perform a full 360 in a Shore Queller.",
-		"Today you'll be learning how to fence in a Seagrass Picker.",
-		"Our lesson today will be how to dance in a Driftwood Snarer.",
-		"Andrew, I'm afraid you suck too much to pilot a Hardbark Smith.",
+                "Today you'll be learning how to fence in a Seagrass Picker.",
+                "Our lesson today will be how to dance in a Driftwood Snarer.",
+                "Andrew, I'm afraid you suck too much to pilot a Hardbark Smith.",
             ],
             multiOutcomes: [
                 "Brandon! Do NOT amputate your fellow shark- PATRICIA!!! DO NOT LASER THE CRABS-",
                 "Pop quiz! Name the four puppet models and their respective fields.",
-		"I need you all to focus. Your parents aren't paying for you to-- in fact, your parents aren't paying at all!",
+                "I need you all to focus. Your parents aren't paying for you to-- in fact, your parents aren't paying at all!",
             ],
             helpText: "Teach a mudskipper techniques on puppetwork, so that it may pass on its knowledge.",
         }, // end of job code
@@ -5849,7 +5849,7 @@ SharkGame.HomeActionCategories = {
 
     basic: {
         name: "Basic",
-        actions: ["catchFish", "debugbutton", "prySponge", "prySponge2", "getClam", "getJellyfish", "getDriftwood", /* "getSeagrass" */],
+        actions: ["catchFish", "debugbutton", "prySponge", "prySponge2", "getClam", "getJellyfish", "getDriftwood"],
     },
 
     frenzy: {
@@ -5993,13 +5993,13 @@ SharkGame.HomeActionCategories = {
     places: {
         name: "Places",
         actions: [
-	    "getSpongeFarm",
-	    "getCoralFarm",
-	    // "getShoreCoralFarm",
-	    "getSeagrassFarm",
-	    "getExchangeStation",
-	    // "getReceiverNode",
-	],
+            "getSpongeFarm",
+            "getCoralFarm",
+            // "getShoreCoralFarm",
+            "getSeagrassFarm",
+            "getExchangeStation",
+            // "getReceiverNode",
+        ],
     },
 
     unique: {

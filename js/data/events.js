@@ -103,7 +103,7 @@ SharkGame.Events = {
             }
         },
     },
-    /*shoreHandleSandstorm: {
+    /* shoreHandleSandstorm: {
         handlingTime: "beforeTick",
         priority: 0,
         getAction() {
@@ -623,4 +623,4 @@ SharkGame.Events = {
             res.buildIncomeNetwork();
         },
     },
- };
+};

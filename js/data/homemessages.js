@@ -521,17 +521,17 @@ SharkGame.HomeMessages = {
                 name: "shore-default",
                 message: "Rough, jagged sand pelts and rakes your skin, and the water's surface is painfully low.",
             },
-	    {
-		name: "shore-sand-one",
-		unlock: { totalResource: { roughSand: 25 } },
-		message: "Agony. Pain. There's so much, and it all hurts.",
-	    },
-	    {
-		name: "shore-sand-doom",
-		unlock: { totalResource: { roughSand: 250 } },
-		message: "A raging world's wrath. You feel it all.<br><span class='smallDesc'>...is that light...?</span>",
-		// it's calling...
-	    },
+            {
+                name: "shore-sand-one",
+                unlock: { totalResource: { roughSand: 25 } },
+                message: "Agony. Pain. There's so much, and it all hurts.",
+            },
+            {
+                name: "shore-sand-doom",
+                unlock: { totalResource: { roughSand: 250 } },
+                message: "A raging world's wrath. You feel it all.<br><span class='smallDesc'>...is that light...?</span>",
+                // it's calling...
+            },
             /* {
                 name: "shore-sandstorm-escape-attempt",
                 unlock: { upgrade: ["justPushFurtherLol"] }, // once upgrades are fixed, change it to "flee"
@@ -573,45 +573,45 @@ SharkGame.HomeMessages = {
                 message: "The frenzy move the puppets from within. It is nothing like our shark machines. It is lifelike. Glitchless. But primitive.",
             },
             {
-		name: "shore-tunnel",
-		unlock: { upgrade: ["fixModels"] },
-		message: "News of a long tunnel, hidden away in the eastern area, has been brought.<br>'Where does it lead?' whispers the frenzy.",
+                name: "shore-tunnel",
+                unlock: { upgrade: ["fixModels"] },
+                message: "News of a long tunnel, hidden away in the eastern area, has been brought.<br>'Where does it lead?' whispers the frenzy.",
             },
-	    {
-		name: "shore-dead-sentinel",
-		unlock: { upgrade: ["exploration"] },
-		message: "The tunnel is dark and cold, but safe. Above the gate looms a large, many-tendriled being in disrepair.",
+            {
+                name: "shore-dead-sentinel",
+                unlock: { upgrade: ["exploration"] },
+                message: "The tunnel is dark and cold, but safe. Above the gate looms a large, many-tendriled being in disrepair.",
             },
-	    {
-		name: "shore-alive-sentinel",
-		unlock: { totalResource: { safeholdSentinel: 1 } },
-		message: "The sentinel stirs. And it lashes out at the rough sand, nimbly snaring each grain in its tendrils.<br>It speaks of a safehold beyond the latch.",
-	    },
-	    {
-		name: "shore-safehold",
-		unlock: { upgrade: ["farExploration"] },
-		message: "The safehold is large, yet warm, and the ruins of a large town lie derelict.<br>The only danger is the raiders that dive from above.",
+            {
+                name: "shore-alive-sentinel",
+                unlock: { totalResource: { safeholdSentinel: 1 } },
+                message: "The sentinel stirs. And it lashes out at the rough sand, nimbly snaring each grain in its tendrils.<br>It speaks of a safehold beyond the latch.",
             },
-	    {
-		name: "shore-caracaras",
-		unlock: { upgrade: ["raiderTruce"], totalResource: { caracara: 5 } },
-		message: "The caracaras are cold and aloof. They act haughty to us, with no emotion in their eyes.",
+            {
+                name: "shore-safehold",
+                unlock: { upgrade: ["farExploration"] },
+                message: "The safehold is large, yet warm, and the ruins of a large town lie derelict.<br>The only danger is the raiders that dive from above.",
+            },
+            {
+                name: "shore-caracaras",
+                unlock: { upgrade: ["raiderTruce"], totalResource: { caracara: 5 } },
+                message: "The caracaras are cold and aloof. They act haughty to us, with no emotion in their eyes.",
             },
             {
                 name: "shore-puppets-taught",
                 unlock: { upgrade: ["puppetTeaching"] },
                 message: "So many tricks. So many techniques. The puppets have become versatile tools fast.",
             },
-	    {
-		name: "shore-exchange-platform",
-		unlock: { totalResource: { exchangeStation: 5 } },
-		message: "bustling hubs etc.",
+            {
+                name: "shore-exchange-platform",
+                unlock: { totalResource: { exchangeStation: 5 } },
+                message: "bustling hubs etc.",
             },
-	    {
-		name: "shore-gatemaster",
-		unlock: { totalResource: { gatemasterPuppet: 1 } },
-		message: "The faceless, silent Gatemaster pulses and throbs with energy. Raw, ethereal energy.<br>Is it looking at you?",
-	    },
+            {
+                name: "shore-gatemaster",
+                unlock: { totalResource: { gatemasterPuppet: 1 } },
+                message: "The faceless, silent Gatemaster pulses and throbs with energy. Raw, ethereal energy.<br>Is it looking at you?",
+            },
         ],
         /* stone: [
            {

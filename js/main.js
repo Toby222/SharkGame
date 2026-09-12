@@ -107,9 +107,9 @@ $.extend(SharkGame, {
         "Last Shark Standing",
         "Sharkjago: Masters of Sharkjitsu",
         "Shark: Galactic Ad-fin-tures", // this was a bad spin on 'Spore: Galactic Adventures' --ThreeEels
-	    "Ray World",
-	    "Ray World: Crabpour", // aggghhhh i can't find something good for The Watcher --ThreeEels
-	    "I Have No Trout And I Must Bream", // my personal favourite --ThreeEels
+        "Ray World",
+        "Ray World: Crabpour", // aggghhhh i can't find something good for The Watcher --ThreeEels
+        "I Have No Trout And I Must Bream", // my personal favourite --ThreeEels
     ],
     GAME_NAME: null,
     ACTUAL_GAME_NAME: "Shark Game",

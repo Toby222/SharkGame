@@ -38,8 +38,8 @@ SharkGame.Lab = {
         switch (world.worldType) {
             case "tempestuous":
                 return { resource: { crab: 5 } };
-	        case "shore":
-		        return { resource: { crab: 5 } };
+            case "shore":
+                return { resource: { crab: 5 } };
             default:
                 return { resource: { science: 10 } };
         }

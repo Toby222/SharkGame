@@ -127,7 +127,7 @@ body {
 }
 
 .gateway::-webkit-scrollbar-track {
-  background: rgb(55.6216216216, 164.8783783784, 129.1216216216);
+  background: rgb(21.8124006359%, 64.6581875994%, 50.6359300477%);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -135,7 +135,7 @@ body {
 }
 
 .gateway::-webkit-scrollbar-thumb {
-  background-color: rgb(95.7297297297, 201.2702702703, 166.7297297297);
+  background-color: rgb(37.5410704822%, 78.929517753%, 65.3842077371%);
 }
 
 div {
@@ -466,19 +466,19 @@ pre {
 }
 #contentMenu #tabList .newTab a:link {
   color: #ace3d1;
-  text-shadow: 0 0 0.8em rgb(95.7297297297, 201.2702702703, 166.7297297297);
+  text-shadow: 0 0 0.8em rgb(37.5410704822%, 78.929517753%, 65.3842077371%);
 }
 #contentMenu #tabList .newTab a:visited {
   color: #ace3d1;
-  text-shadow: 0 0 0.8em rgb(95.7297297297, 201.2702702703, 166.7297297297);
+  text-shadow: 0 0 0.8em rgb(37.5410704822%, 78.929517753%, 65.3842077371%);
 }
 #contentMenu #tabList .newTab a:hover {
-  color: rgb(210.1351351351, 239.8648648649, 230.1351351351);
-  text-shadow: 0 0 0.8em rgb(133.8648648649, 214.1351351351, 187.8648648649);
+  color: rgb(82.4059353471%, 94.0646528882%, 90.249072602%);
+  text-shadow: 0 0 0.8em rgb(52.4960254372%, 83.9745627981%, 73.6724960254%);
 }
 #contentMenu #tabList .newTab a:active {
-  color: rgb(210.1351351351, 239.8648648649, 230.1351351351);
-  text-shadow: 0 0 0.8em rgb(133.8648648649, 214.1351351351, 187.8648648649);
+  color: rgb(82.4059353471%, 94.0646528882%, 90.249072602%);
+  text-shadow: 0 0 0.8em rgb(52.4960254372%, 83.9745627981%, 73.6724960254%);
 }
 
 #buyButtons {
@@ -581,7 +581,7 @@ pre {
 }
 #log .discovery {
   color: #ace3d1;
-  text-shadow: 0 0 0.8em rgb(95.7297297297, 201.2702702703, 166.7297297297);
+  text-shadow: 0 0 0.8em rgb(37.5410704822%, 78.929517753%, 65.3842077371%);
 }
 #log #messageList {
   box-sizing: border-box;
@@ -721,19 +721,19 @@ button.newlyDiscovered {
 }
 #homeTabs .newItemAdded a:link {
   color: #ace3d1;
-  text-shadow: 0 0 0.8em rgb(95.7297297297, 201.2702702703, 166.7297297297);
+  text-shadow: 0 0 0.8em rgb(37.5410704822%, 78.929517753%, 65.3842077371%);
 }
 #homeTabs .newItemAdded a:visited {
   color: #ace3d1;
-  text-shadow: 0 0 0.8em rgb(95.7297297297, 201.2702702703, 166.7297297297);
+  text-shadow: 0 0 0.8em rgb(37.5410704822%, 78.929517753%, 65.3842077371%);
 }
 #homeTabs .newItemAdded a:hover {
-  color: rgb(210.1351351351, 239.8648648649, 230.1351351351);
-  text-shadow: 0 0 0.8em rgb(133.8648648649, 214.1351351351, 187.8648648649);
+  color: rgb(82.4059353471%, 94.0646528882%, 90.249072602%);
+  text-shadow: 0 0 0.8em rgb(52.4960254372%, 83.9745627981%, 73.6724960254%);
 }
 #homeTabs .newItemAdded a:active {
-  color: rgb(210.1351351351, 239.8648648649, 230.1351351351);
-  text-shadow: 0 0 0.8em rgb(133.8648648649, 214.1351351351, 187.8648648649);
+  color: rgb(82.4059353471%, 94.0646528882%, 90.249072602%);
+  text-shadow: 0 0 0.8em rgb(52.4960254372%, 83.9745627981%, 73.6724960254%);
 }
 
 #buttonLeftContainer {
@@ -838,7 +838,7 @@ button.newlyDiscovered {
   margin: auto;
   width: 25%;
   background: #450808 url("../img/recyclerbg.png") center;
-  color: rgb(212.1341463415, 186.8658536585, 186.8658536585);
+  color: rgb(83.1898613104%, 73.2807269249%, 73.2807269249%);
   border: 0.2em solid #975f5f;
   -webkit-box-shadow: 0 0 15px 15px #450808 inset;
   -moz-box-shadow: 0 0 15px 15px #450808 inset;
@@ -1022,9 +1022,9 @@ button.disabled div {
 }
 
 #tabSceneImageEssence {
-  -webkit-box-shadow: 0 0 5px 5px rgb(62.0540540541, 183.9459459459, 144.0540540541);
-  -moz-box-shadow: 0 0 5px 5px rgb(62.0540540541, 183.9459459459, 144.0540540541);
-  box-shadow: 0 0 5px 5px rgb(62.0540540541, 183.9459459459, 144.0540540541);
+  -webkit-box-shadow: 0 0 5px 5px rgb(24.3349231585%, 72.1356650768%, 56.4917859036%);
+  -moz-box-shadow: 0 0 5px 5px rgb(24.3349231585%, 72.1356650768%, 56.4917859036%);
+  box-shadow: 0 0 5px 5px rgb(24.3349231585%, 72.1356650768%, 56.4917859036%);
 }
 
 #sceneLeft,
@@ -1178,7 +1178,7 @@ button.disabled div {
 }
 .gateway h1 {
   text-align: center;
-  color: rgb(210.1351351351, 239.8648648649, 230.1351351351);
+  color: rgb(82.4059353471%, 94.0646528882%, 90.249072602%);
 }
 .gateway h2 {
   text-align: center;
@@ -1193,7 +1193,7 @@ button.disabled div {
   color: #ace3d1;
 }
 .gateway .medDesc {
-  color: rgb(152.9324324324, 220.5675675676, 198.4324324324);
+  color: rgb(59.9735029147%, 86.4970853206%, 77.8166401696%);
 }
 .gateway .smallDesc, .gateway .smallDescAllowClicks {
   color: #ace3d1;
@@ -1201,16 +1201,16 @@ button.disabled div {
 
 .gatewayButton, .gateway button,
 button.gateway, button.newlyDiscovered {
-  background-color: rgb(36.3243243243, 107.6756756757, 84.3243243243);
+  background-color: rgb(14.2448330684%, 42.2257551669%, 33.0683624801%);
   border-color: #ace3d1;
   max-width: 16em;
 }
 .gatewayButton div, .gateway button div,
 button.gateway div, button.newlyDiscovered div {
-  background-color: rgb(95.7297297297, 201.2702702703, 166.7297297297);
-  -webkit-box-shadow: 0 0 3px 3px rgb(95.7297297297, 201.2702702703, 166.7297297297);
-  -moz-box-shadow: 0 0 3px 3px rgb(95.7297297297, 201.2702702703, 166.7297297297);
-  box-shadow: 0 0 3px 3px rgb(95.7297297297, 201.2702702703, 166.7297297297);
+  background-color: rgb(37.5410704822%, 78.929517753%, 65.3842077371%);
+  -webkit-box-shadow: 0 0 3px 3px rgb(37.5410704822%, 78.929517753%, 65.3842077371%);
+  -moz-box-shadow: 0 0 3px 3px rgb(37.5410704822%, 78.929517753%, 65.3842077371%);
+  box-shadow: 0 0 3px 3px rgb(37.5410704822%, 78.929517753%, 65.3842077371%);
 }
 .gatewayButton:hover, .gateway button:hover,
 button.gateway:hover, button.newlyDiscovered:hover {
@@ -1220,54 +1220,54 @@ button.gateway:hover, button.newlyDiscovered:hover {
 }
 .gatewayButton:active, .gateway button:active,
 button.gateway:active, button.newlyDiscovered:active {
-  background-color: rgb(17.027027027, 50.472972973, 39.527027027);
-  color: rgb(95.7297297297, 201.2702702703, 166.7297297297);
-  -webkit-box-shadow: 0px 3px 7px 7px rgb(36.3243243243, 107.6756756757, 84.3243243243) inset;
-  -moz-box-shadow: 0px 3px 7px 7px rgb(36.3243243243, 107.6756756757, 84.3243243243) inset;
-  box-shadow: 0px 3px 7px 7px rgb(36.3243243243, 107.6756756757, 84.3243243243) inset;
+  background-color: rgb(6.6772655008%, 19.7933227345%, 15.5007949126%);
+  color: rgb(37.5410704822%, 78.929517753%, 65.3842077371%);
+  -webkit-box-shadow: 0px 3px 7px 7px rgb(14.2448330684%, 42.2257551669%, 33.0683624801%) inset;
+  -moz-box-shadow: 0px 3px 7px 7px rgb(14.2448330684%, 42.2257551669%, 33.0683624801%) inset;
+  box-shadow: 0px 3px 7px 7px rgb(14.2448330684%, 42.2257551669%, 33.0683624801%) inset;
 }
 .gatewayButton:active .medDesc, .gateway button:active .medDesc,
 button.gateway:active .medDesc, button.newlyDiscovered:active .medDesc {
-  color: rgb(133.8648648649, 214.1351351351, 187.8648648649);
+  color: rgb(52.4960254372%, 83.9745627981%, 73.6724960254%);
 }
 .gatewayButton:active div, .gateway button:active div,
 button.gateway:active div, button.newlyDiscovered:active div {
-  background-color: rgb(36.3243243243, 107.6756756757, 84.3243243243);
+  background-color: rgb(14.2448330684%, 42.2257551669%, 33.0683624801%);
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 }
 .gatewayButton.disabled, .gateway button.disabled,
 button.disabled.gateway, button.disabled.newlyDiscovered {
-  background-color: rgb(17.027027027, 50.472972973, 39.527027027);
-  color: rgb(49.1891891892, 145.8108108108, 114.1891891892);
-  border-color: rgb(49.1891891892, 145.8108108108, 114.1891891892);
+  background-color: rgb(6.6772655008%, 19.7933227345%, 15.5007949126%);
+  color: rgb(19.2898781134%, 57.1807101219%, 44.7800741918%);
+  border-color: rgb(19.2898781134%, 57.1807101219%, 44.7800741918%);
 }
 .gatewayButton.disabled .medDesc, .gateway button.disabled .medDesc,
 button.disabled.gateway .medDesc, button.disabled.newlyDiscovered .medDesc {
-  color: rgb(55.6216216216, 164.8783783784, 129.1216216216);
+  color: rgb(21.8124006359%, 64.6581875994%, 50.6359300477%);
 }
 .gatewayButton.disabled div, .gateway button.disabled div,
 button.disabled.gateway div, button.disabled.newlyDiscovered div {
-  background-color: rgb(17.027027027, 50.472972973, 39.527027027);
+  background-color: rgb(6.6772655008%, 19.7933227345%, 15.5007949126%);
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 }
 .gatewayButton.respecMode, .gateway button.respecMode,
 button.respecMode.gateway, button.respecMode.newlyDiscovered {
-  box-shadow: 0 0 6px rgb(229.2027027027, 246.2972972973, 240.7027027027) inset;
-  background-color: rgb(55.6216216216, 164.8783783784, 129.1216216216);
+  box-shadow: 0 0 6px rgb(89.8834128246%, 96.5871754107%, 94.3932167462%) inset;
+  background-color: rgb(21.8124006359%, 64.6581875994%, 50.6359300477%);
 }
 
 #pane.gateway {
   -webkit-border-radius: 3em;
   -moz-border-radius: 3em;
   border-radius: 3em;
-  background-color: rgb(36.3243243243, 107.6756756757, 84.3243243243);
-  -webkit-box-shadow: 0 0 2em 2em rgb(36.3243243243, 107.6756756757, 84.3243243243);
-  -moz-box-shadow: 0 0 2em 2em rgb(36.3243243243, 107.6756756757, 84.3243243243);
-  box-shadow: 0 0 2em 2em rgb(36.3243243243, 107.6756756757, 84.3243243243);
+  background-color: rgb(14.2448330684%, 42.2257551669%, 33.0683624801%);
+  -webkit-box-shadow: 0 0 2em 2em rgb(14.2448330684%, 42.2257551669%, 33.0683624801%);
+  -moz-box-shadow: 0 0 2em 2em rgb(14.2448330684%, 42.2257551669%, 33.0683624801%);
+  box-shadow: 0 0 2em 2em rgb(14.2448330684%, 42.2257551669%, 33.0683624801%);
   border: none;
 }
 #pane.gateway #paneHeaderEnd,
@@ -1291,17 +1291,17 @@ button.respecMode.gateway, button.respecMode.newlyDiscovered {
   -webkit-opacity: 1;
   -moz-opacity: 1;
   opacity: 1;
-  background-color: rgb(17.027027027, 50.472972973, 39.527027027);
+  background-color: rgb(6.6772655008%, 19.7933227345%, 15.5007949126%);
 }
 
 .gateway .essenceCount {
-  color: rgb(95.7297297297, 201.2702702703, 166.7297297297);
-  text-shadow: 0 0 0.6em rgb(95.7297297297, 201.2702702703, 166.7297297297);
+  color: rgb(37.5410704822%, 78.929517753%, 65.3842077371%);
+  text-shadow: 0 0 0.6em rgb(37.5410704822%, 78.929517753%, 65.3842077371%);
 }
 
 .gateway .essenceCountBrighter {
-  color: rgb(191.0675675676, 233.4324324324, 219.5675675676);
-  text-shadow: 0 0 0.6em rgb(191.0675675676, 233.4324324324, 219.5675675676);
+  color: rgb(74.9284578696%, 91.5421303657%, 86.1049284579%);
+  text-shadow: 0 0 0.6em rgb(74.9284578696%, 91.5421303657%, 86.1049284579%);
 }
 
 .gateway .numenCount {
@@ -1327,7 +1327,7 @@ button.respecMode.gateway, button.respecMode.newlyDiscovered {
 }
 
 .gateway input {
-  background-color: rgb(36.3243243243, 107.6756756757, 84.3243243243);
+  background-color: rgb(14.2448330684%, 42.2257551669%, 33.0683624801%);
   border-color: #ace3d1;
   color: white;
   text-align: right;
@@ -1345,11 +1345,11 @@ button.respecMode.gateway, button.respecMode.newlyDiscovered {
 }
 
 .gateway ::selection {
-  background-color: rgb(17.027027027, 50.472972973, 39.527027027);
+  background-color: rgb(6.6772655008%, 19.7933227345%, 15.5007949126%);
 }
 
 .gateway ::-moz-selection {
-  background-color: rgb(17.027027027, 50.472972973, 39.527027027);
+  background-color: rgb(6.6772655008%, 19.7933227345%, 15.5007949126%);
 }
 
 #aspectList {
@@ -1362,7 +1362,7 @@ button.respecMode.gateway, button.respecMode.newlyDiscovered {
 #aspectTable tr:nth-child(6n+1) td,
 #aspectTable tr:nth-child(6n+2) td,
 #aspectTable tr:nth-child(6n+3) td {
-  background-color: rgb(55.6216216216, 164.8783783784, 129.1216216216);
+  background-color: rgb(21.8124006359%, 64.6581875994%, 50.6359300477%);
 }
 
 .aspectDiv {
@@ -1371,19 +1371,19 @@ button.respecMode.gateway, button.respecMode.newlyDiscovered {
   -webkit-border-radius: 0.5em;
   -moz-border-radius: 0.5em;
   border-radius: 0.5em;
-  background-color: rgb(36.3243243243, 107.6756756757, 84.3243243243);
-  -webkit-box-shadow: 0 0 0.5em 0.5em rgb(36.3243243243, 107.6756756757, 84.3243243243);
-  -moz-box-shadow: 0 0 0.5em 0.5em rgb(36.3243243243, 107.6756756757, 84.3243243243);
-  box-shadow: 0 0 0.5em 0.5em rgb(36.3243243243, 107.6756756757, 84.3243243243);
+  background-color: rgb(14.2448330684%, 42.2257551669%, 33.0683624801%);
+  -webkit-box-shadow: 0 0 0.5em 0.5em rgb(14.2448330684%, 42.2257551669%, 33.0683624801%);
+  -moz-box-shadow: 0 0 0.5em 0.5em rgb(14.2448330684%, 42.2257551669%, 33.0683624801%);
+  box-shadow: 0 0 0.5em 0.5em rgb(14.2448330684%, 42.2257551669%, 33.0683624801%);
   padding: 0.2em;
   margin: 1.5em;
   max-width: 14em;
 }
 .aspectDiv .gatewayButton, .aspectDiv button.newlyDiscovered, .aspectDiv .gateway button, .gateway .aspectDiv button,
 .aspectDiv button.gateway {
-  -webkit-box-shadow: 0 0 3px 3px rgb(95.7297297297, 201.2702702703, 166.7297297297);
-  -moz-box-shadow: 0 0 3px 3px rgb(95.7297297297, 201.2702702703, 166.7297297297);
-  box-shadow: 0 0 3px 3px rgb(95.7297297297, 201.2702702703, 166.7297297297);
+  -webkit-box-shadow: 0 0 3px 3px rgb(37.5410704822%, 78.929517753%, 65.3842077371%);
+  -moz-box-shadow: 0 0 3px 3px rgb(37.5410704822%, 78.929517753%, 65.3842077371%);
+  box-shadow: 0 0 3px 3px rgb(37.5410704822%, 78.929517753%, 65.3842077371%);
 }
 
 .disabledAspectDiv {
@@ -1392,29 +1392,29 @@ button.respecMode.gateway, button.respecMode.newlyDiscovered {
   -webkit-border-radius: 0.5em;
   -moz-border-radius: 0.5em;
   border-radius: 0.5em;
-  background-color: rgb(17.027027027, 50.472972973, 39.527027027);
-  -webkit-box-shadow: 0 0 0.5em 0.5em rgb(17.027027027, 50.472972973, 39.527027027);
-  -moz-box-shadow: 0 0 0.5em 0.5em rgb(17.027027027, 50.472972973, 39.527027027);
-  box-shadow: 0 0 0.5em 0.5em rgb(17.027027027, 50.472972973, 39.527027027);
+  background-color: rgb(6.6772655008%, 19.7933227345%, 15.5007949126%);
+  -webkit-box-shadow: 0 0 0.5em 0.5em rgb(6.6772655008%, 19.7933227345%, 15.5007949126%);
+  -moz-box-shadow: 0 0 0.5em 0.5em rgb(6.6772655008%, 19.7933227345%, 15.5007949126%);
+  box-shadow: 0 0 0.5em 0.5em rgb(6.6772655008%, 19.7933227345%, 15.5007949126%);
   padding: 0.2em;
   margin: 1.5em;
   max-width: 14em;
 }
 .disabledAspectDiv .gatewayButton, .disabledAspectDiv button.newlyDiscovered, .disabledAspectDiv .gateway button, .gateway .disabledAspectDiv button,
 .disabledAspectDiv button.gateway {
-  -webkit-box-shadow: 0 0 3px 3px rgb(55.6216216216, 164.8783783784, 129.1216216216);
-  -moz-box-shadow: 0 0 3px 3px rgb(55.6216216216, 164.8783783784, 129.1216216216);
-  box-shadow: 0 0 3px 3px rgb(55.6216216216, 164.8783783784, 129.1216216216);
+  -webkit-box-shadow: 0 0 3px 3px rgb(21.8124006359%, 64.6581875994%, 50.6359300477%);
+  -moz-box-shadow: 0 0 3px 3px rgb(21.8124006359%, 64.6581875994%, 50.6359300477%);
+  box-shadow: 0 0 3px 3px rgb(21.8124006359%, 64.6581875994%, 50.6359300477%);
 }
 
 .planetDisplay {
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   border-radius: 50px;
-  background-color: rgb(95.7297297297, 201.2702702703, 166.7297297297);
-  -webkit-box-shadow: 0 0 3px 3px rgb(95.7297297297, 201.2702702703, 166.7297297297);
-  -moz-box-shadow: 0 0 3px 3px rgb(95.7297297297, 201.2702702703, 166.7297297297);
-  box-shadow: 0 0 3px 3px rgb(95.7297297297, 201.2702702703, 166.7297297297);
+  background-color: rgb(37.5410704822%, 78.929517753%, 65.3842077371%);
+  -webkit-box-shadow: 0 0 3px 3px rgb(37.5410704822%, 78.929517753%, 65.3842077371%);
+  -moz-box-shadow: 0 0 3px 3px rgb(37.5410704822%, 78.929517753%, 65.3842077371%);
+  box-shadow: 0 0 3px 3px rgb(37.5410704822%, 78.929517753%, 65.3842077371%);
   margin: 0 auto;
 }
 
@@ -1431,7 +1431,7 @@ button.planetButton div {
   border-radius: 50px;
 }
 button.planetButton:hover {
-  text-shadow: 0 0 0.3em rgb(191.0675675676, 233.4324324324, 219.5675675676), 0 0 0.6em rgb(210.1351351351, 239.8648648649, 230.1351351351), 0 0 0.9em rgb(229.2027027027, 246.2972972973, 240.7027027027);
+  text-shadow: 0 0 0.3em rgb(74.9284578696%, 91.5421303657%, 86.1049284579%), 0 0 0.6em rgb(82.4059353471%, 94.0646528882%, 90.249072602%), 0 0 0.9em rgb(89.8834128246%, 96.5871754107%, 94.3932167462%);
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -1493,16 +1493,16 @@ button.planetButton:active {
 
 .forAspectTree {
   width: 300px;
-  background-color: rgb(23.4594594595, 69.5405405405, 54.4594594595);
-  border-color: rgb(17.027027027, 50.472972973, 39.527027027);
+  background-color: rgb(9.1997880233%, 27.270800212%, 21.3566507684%);
+  border-color: rgb(6.6772655008%, 19.7933227345%, 15.5007949126%);
 }
 .forAspectTreeUnpurchased {
-  background-color: rgb(17.027027027, 50.472972973, 39.527027027);
-  border-color: rgb(10.5945945946, 31.4054054054, 24.5945945946);
+  background-color: rgb(6.6772655008%, 19.7933227345%, 15.5007949126%);
+  border-color: rgb(4.1547429783%, 12.315845257%, 9.6449390567%);
 }
 .forAspectTreeAffordable {
-  background-color: rgb(36.3243243243, 107.6756756757, 84.3243243243);
-  border-color: rgb(55.6216216216, 164.8783783784, 129.1216216216);
+  background-color: rgb(14.2448330684%, 42.2257551669%, 33.0683624801%);
+  border-color: rgb(21.8124006359%, 64.6581875994%, 50.6359300477%);
 }
 
 .hrForTooltipJuxtaposition {
@@ -1603,44 +1603,44 @@ button.planetButton:active {
 
 #minute-hand-toggle {
   color: #fff;
-  border-color: rgb(36.3243243243, 107.6756756757, 84.3243243243);
-  background: rgb(17.027027027, 50.472972973, 39.527027027);
+  border-color: rgb(14.2448330684%, 42.2257551669%, 33.0683624801%);
+  background: rgb(6.6772655008%, 19.7933227345%, 15.5007949126%);
 }
 #minute-hand-toggle.disabled {
   text-shadow: none;
 }
 #minute-hand-toggle.minuteOn {
   box-shadow: 0 0 4px #ace3d1;
-  border-color: rgb(55.6216216216, 164.8783783784, 129.1216216216);
-  background: rgb(36.3243243243, 107.6756756757, 84.3243243243);
+  border-color: rgb(21.8124006359%, 64.6581875994%, 50.6359300477%);
+  background: rgb(14.2448330684%, 42.2257551669%, 33.0683624801%);
 }
 #minute-hand-toggle.minuteOn.power1 {
-  box-shadow: 0 0 6px rgb(191.0675675676, 233.4324324324, 219.5675675676);
-  border-color: rgb(55.6216216216, 164.8783783784, 129.1216216216);
-  background: rgb(42.7567567568, 126.7432432432, 99.2567567568);
+  box-shadow: 0 0 6px rgb(74.9284578696%, 91.5421303657%, 86.1049284579%);
+  border-color: rgb(21.8124006359%, 64.6581875994%, 50.6359300477%);
+  background: rgb(16.7673555909%, 49.7032326444%, 38.924218336%);
 }
 #minute-hand-toggle.minuteOn.power2 {
-  box-shadow: 0 0 6px rgb(191.0675675676, 233.4324324324, 219.5675675676);
-  border-color: rgb(55.6216216216, 164.8783783784, 129.1216216216);
-  background: rgb(49.1891891892, 145.8108108108, 114.1891891892);
+  box-shadow: 0 0 6px rgb(74.9284578696%, 91.5421303657%, 86.1049284579%);
+  border-color: rgb(21.8124006359%, 64.6581875994%, 50.6359300477%);
+  background: rgb(19.2898781134%, 57.1807101219%, 44.7800741918%);
 }
 #minute-hand-toggle.minuteOn.power3 {
-  box-shadow: 0 0 7px rgb(210.1351351351, 239.8648648649, 230.1351351351);
-  border-color: rgb(95.7297297297, 201.2702702703, 166.7297297297);
-  background: rgb(55.6216216216, 164.8783783784, 129.1216216216);
+  box-shadow: 0 0 7px rgb(82.4059353471%, 94.0646528882%, 90.249072602%);
+  border-color: rgb(37.5410704822%, 78.929517753%, 65.3842077371%);
+  background: rgb(21.8124006359%, 64.6581875994%, 50.6359300477%);
 }
 #minute-hand-toggle.minuteOn.power4 {
-  box-shadow: 0 0 8px rgb(229.2027027027, 246.2972972973, 240.7027027027);
+  box-shadow: 0 0 8px rgb(89.8834128246%, 96.5871754107%, 94.3932167462%);
   border-color: #ace3d1;
-  background: rgb(62.0540540541, 183.9459459459, 144.0540540541);
+  background: rgb(24.3349231585%, 72.1356650768%, 56.4917859036%);
 }
 #minute-hand-toggle.minuteOn.power5 {
-  box-shadow: 0 0 9px rgb(248.2702702703, 252.7297297297, 251.2702702703);
-  border-color: rgb(229.2027027027, 246.2972972973, 240.7027027027);
-  background: rgb(95.7297297297, 201.2702702703, 166.7297297297);
+  box-shadow: 0 0 9px rgb(97.3608903021%, 99.1096979332%, 98.5373608903%);
+  border-color: rgb(89.8834128246%, 96.5871754107%, 94.3932167462%);
+  background: rgb(37.5410704822%, 78.929517753%, 65.3842077371%);
 }
 #minute-hand-toggle.disabled {
-  border-color: rgb(17.027027027, 50.472972973, 39.527027027);
+  border-color: rgb(6.6772655008%, 19.7933227345%, 15.5007949126%);
 }
 
 .minuteOn {
@@ -1693,43 +1693,43 @@ button.planetButton:active {
 #pause-toggle {
   margin-left: 1em;
   color: #fff;
-  border-color: rgb(36.3243243243, 107.6756756757, 84.3243243243);
-  background: rgb(17.027027027, 50.472972973, 39.527027027);
+  border-color: rgb(14.2448330684%, 42.2257551669%, 33.0683624801%);
+  background: rgb(6.6772655008%, 19.7933227345%, 15.5007949126%);
 }
 #pause-toggle.on {
-  box-shadow: 0 0 6px rgb(191.0675675676, 233.4324324324, 219.5675675676);
-  border-color: rgb(55.6216216216, 164.8783783784, 129.1216216216);
-  background: rgb(49.1891891892, 145.8108108108, 114.1891891892);
+  box-shadow: 0 0 6px rgb(74.9284578696%, 91.5421303657%, 86.1049284579%);
+  border-color: rgb(21.8124006359%, 64.6581875994%, 50.6359300477%);
+  background: rgb(19.2898781134%, 57.1807101219%, 44.7800741918%);
 }
 
 #minute-slider {
-  background: rgb(17.027027027, 50.472972973, 39.527027027);
+  background: rgb(6.6772655008%, 19.7933227345%, 15.5007949126%);
   border-style: dashed;
-  border-color: rgb(36.3243243243, 107.6756756757, 84.3243243243);
+  border-color: rgb(14.2448330684%, 42.2257551669%, 33.0683624801%);
 }
 #minute-slider.power1 {
-  background: rgb(23.4594594595, 69.5405405405, 54.4594594595);
-  border-color: rgb(42.7567567568, 126.7432432432, 99.2567567568);
-  box-shadow: 0 0 6px rgb(55.6216216216, 164.8783783784, 129.1216216216);
+  background: rgb(9.1997880233%, 27.270800212%, 21.3566507684%);
+  border-color: rgb(16.7673555909%, 49.7032326444%, 38.924218336%);
+  box-shadow: 0 0 6px rgb(21.8124006359%, 64.6581875994%, 50.6359300477%);
 }
 #minute-slider.power2 {
-  background: rgb(36.3243243243, 107.6756756757, 84.3243243243);
-  border-color: rgb(55.6216216216, 164.8783783784, 129.1216216216);
+  background: rgb(14.2448330684%, 42.2257551669%, 33.0683624801%);
+  border-color: rgb(21.8124006359%, 64.6581875994%, 50.6359300477%);
   box-shadow: 0 0 8px #ace3d1;
 }
 #minute-slider.power3 {
-  background: rgb(55.6216216216, 164.8783783784, 129.1216216216);
-  border-color: rgb(95.7297297297, 201.2702702703, 166.7297297297);
+  background: rgb(21.8124006359%, 64.6581875994%, 50.6359300477%);
+  border-color: rgb(37.5410704822%, 78.929517753%, 65.3842077371%);
   box-shadow: 0 0 10px #ace3d1;
 }
 #minute-slider.power4 {
-  background: rgb(95.7297297297, 201.2702702703, 166.7297297297);
+  background: rgb(37.5410704822%, 78.929517753%, 65.3842077371%);
   border-color: #ace3d1;
   box-shadow: 0 0 12px #ace3d1;
 }
 #minute-slider.power5 {
   background: #ace3d1;
-  border-color: rgb(229.2027027027, 246.2972972973, 240.7027027027);
+  border-color: rgb(89.8834128246%, 96.5871754107%, 94.3932167462%);
   box-shadow: 0 0 15px #ace3d1;
 }
 

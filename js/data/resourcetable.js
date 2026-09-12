@@ -905,8 +905,8 @@ SharkGame.ResourceTable = {
         desc: "Flowing puppets bringing stability and heat.",
         color: "#CCCC00",
         income: {
-	    sand: -12.5,
-	    roughSand: -0.02,
+            sand: -12.5,
+            roughSand: -0.02,
             seagrass: 3.5,
             crystal: 1.5,
         },
@@ -978,7 +978,7 @@ SharkGame.ResourceTable = {
         singleName: "rough sand",
         desc: "Jagged grains that dig into our flesh.",
         color: "#CC9900",
-	forceIncome: true,
+        forceIncome: true,
     },
 
     // SHROUDED
@@ -1422,11 +1422,11 @@ SharkGame.GeneratorIncomeAffectorsOriginal = {
             stabilizer: -0.005,
             burrow: -0.005,
             mentor: -0.005,
-        },/*
+        }, /*
         exponentiate: {
             coral: -0.05,
             seagrass: -0.05,
-        },*/
+        }, */
     },
     tar: {
         exponentiate: {
@@ -1474,13 +1474,13 @@ SharkGame.GeneratorIncomeAffectorsOriginal = {
         },
     },
     coral: {
-	multiply: {
-	    roughSand: -0.00005,
+        multiply: {
+            roughSand: -0.00005,
         },
     },
     seagrass: {
-	multiply: {
-	    roughSand: -0.00005,
+        multiply: {
+            roughSand: -0.00005,
         },
     },
     /* younglingSlayer: {
@@ -1801,12 +1801,12 @@ SharkGame.ResourceCategories = {
             "Alright everyone, pack it up! Get outta here!",
         ],
         resources: [
-	    "spongeFarm",
-	    "coralFarm",
-	    "seagrassFarm",
-	    "exchangeStation",
-	    // "receiverNode",
-	],
+            "spongeFarm",
+            "coralFarm",
+            "seagrassFarm",
+            "exchangeStation",
+            // "receiverNode",
+        ],
     },
     special: {
         name: "Special",

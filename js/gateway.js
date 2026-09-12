@@ -1351,8 +1351,8 @@ SharkGame.Gateway.Messages = {
             "The mudskippers were not as safe before you came.",
             "Who do you think appeared in caracara legends?",
             "You have proven your endurance by outlasting the torturous storm.",
-	        "To rescue those snared by death, to shelter them, give them hope... you are an incredible being.",
-	        "The Gatemaster recognised you for what you are.",
+            "To rescue those snared by death, to shelter them, give them hope... you are an incredible being.",
+            "The Gatemaster recognised you for what you are.",
         ],
     },
     loss: [

@@ -251,7 +251,7 @@ SharkGame.FunFacts = {
             // "You do not know HOW MANY TYPOS I have made trying to spell <i>hardbark.</i>",
             // "You might be wondering why the stick doesn't appear brown. That's because its developer couldn't find a mix between brown and light blue.",
             "The crafting process of hardbark is relatively simple, reflecting the simple lives of its crafters.",
-            "Hardbark puppets can sometimes act out of their own accord. It might be because of the crystals' magic powers."
+            "Hardbark puppets can sometimes act out of their own accord. It might be because of the crystals' magic powers.",
         ],
         laser: [
             "Sharks with lasers were overdone, okay? 'Laser ray' is a pun, so it's obviously superior.",

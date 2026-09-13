@@ -440,7 +440,6 @@ SharkGame.ModifierTypes = {
                 applyToInput(input, _genDegree, _outDegree, _gen, _out) {
                     return input;
                 },
-            
             },
         },
     },

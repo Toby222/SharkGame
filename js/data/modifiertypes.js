@@ -383,7 +383,7 @@ SharkGame.ModifierTypes = {
                     return input;
                 },
             },
-            addDriftwoodIncome: {
+            /* addDriftwoodIncome: {
                 defaultValue: 0,
                 apply(current, degree, resource) {
                     if (!SharkGame.ResourceMap.get(resource).baseIncome) {
@@ -411,6 +411,36 @@ SharkGame.ModifierTypes = {
                 applyToInput(input, _genDegree, _outDegree, _gen, _out) {
                     return input;
                 },
+            }, */
+            addIntelIncome: {
+                defaultValue: 0,
+                apply(current, degree, resource) {
+                    if (!SharkGame.ResourceMap.get(resource).baseIncome) {
+                        SharkGame.ResourceMap.get(resource).baseIncome = {};
+                    }
+                    if (!SharkGame.ResourceMap.get(resource).income) {
+                        SharkGame.ResourceMap.get(resource).income = {};
+                    }
+                    const baseIncomes = SharkGame.ResourceMap.get(resource).baseIncome;
+                    baseIncomes.intel = (baseIncomes.intel ? baseIncomes.intel : 0) + degree;
+                    res.reapplyModifiers(resource, "intel");
+                    return current + degree;
+                },
+                effectDescription(degree, resource, background) {
+                    return `Add ${degree} ${sharktext.getResourceName("intel", false, false, background)}/s to ${sharktext.getResourceName(
+                        resource,
+                        false,
+                        69,
+                        background,
+                    )}`;
+                },
+                getEffect(_genDegree, _outDegree, _gen, _out) {
+                    return 1;
+                },
+                applyToInput(input, _genDegree, _outDegree, _gen, _out) {
+                    return input;
+                },
+            
             },
         },
     },

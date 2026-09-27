@@ -189,6 +189,23 @@ SharkGame.Events = {
             }
         },
     },
+    shoreRefreshRoughSand: { // try to make sure rough sand income doesn't go into the positives
+        handlingTime: "afterTick",
+        priority: 0,
+        getAction() {
+            if (SharkGame.World.worldType !== "shore") {
+                return "remove";
+            }
+            if (SharkGame.Upgrades.purchased.includes("agriculture") && res.getResource("seagrass") > 99999) {
+                return "trigger";
+            }
+            return "pass";
+        },
+        trigger() {
+            res.changeResource("roughSand", 15);
+            return true;
+        },
+    },
     /* shoreGiveCoral: {
         handlingTime: "beforeTick",
         priority: 0,

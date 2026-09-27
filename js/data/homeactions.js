@@ -3661,8 +3661,8 @@ SharkGame.HomeActions = {
                 },
             },
             cost: [
-                { resource: "hardbark", costFunction: "unique", priceIncrease: 25000000 },
-                { resource: "seagrass", costFunction: "unique", priceIncrease: 1500000 },
+                { resource: "hardbark", costFunction: "unique", priceIncrease: 250000 },
+                { resource: "seagrass", costFunction: "unique", priceIncrease: 150000 },
                 { resource: "crystal", costFunction: "unique", priceIncrease: 500000 },
             ],
             max: "safeholdSentinel",

@@ -136,6 +136,12 @@ SharkGame.Log = {
         return messageItem;
     },
 
+    /* addEntry(message) {
+        const messageItem = log.addMessage(getWorldEntryMessage(message));
+        messageItem.addClass("entry");
+        return messageItem;
+    }, */
+
     correctLogLength() {
         const showAnims = SharkGame.Settings.current.showAnimations;
         const logMax = SharkGame.Settings.current.logMessageMax;

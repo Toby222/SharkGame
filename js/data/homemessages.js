@@ -174,7 +174,7 @@ SharkGame.HomeMessages = {
             },
             {
                 name: "haven-whales",
-                unlock: { totalResource: { whale: 1 }, homeAction: ["getWhale"] },
+                unlock: { totalResource: { whale: 2 }, homeAction: ["getWhale"] },
                 message: "The whales speak rarely to us, working in silence as they sing to the ocean. What do they sing for?",
             },
             {
@@ -227,7 +227,7 @@ SharkGame.HomeMessages = {
                 message:
                     "The billfish tell stories of life before the storm and an ancient visitor who brought them prosperity. They ask if you can bring them prosperity, too.",
             },
-            /*
+            /* {
                 name: "tempestuous-special",
                 unlock: { upgrade: ["cavernousContact"] },
                 message: "The billfish watch you with awe. Hope glimmers in their eyes.",
@@ -515,11 +515,139 @@ SharkGame.HomeMessages = {
                 message: "A wave of heat washes over you, and the dingy complex comes back to life. The gate turns on.",
             },
         ],
-        /*
-        {
+
+        shore: [
+            {
+                name: "shore-default",
+                message: "Rough, jagged sand pelts and rakes your skin, and the water's surface is painfully low.",
+            },
+            {
+                name: "shore-sand-one",
+                unlock: { totalResource: { roughSand: 50 } },
+                message: "Agony. Pain. There's so much, and it all hurts.",
+            },
+            {
+                name: "shore-sand-doom",
+                unlock: { totalResource: { roughSand: 250 } },
+                message: "A raging world's wrath. You feel it all.<br><span class='smallDesc'>...is that light...?</span>",
+                // it's calling...
+            },
+            {
+                name: "shore-sandstorm-escape-attempt",
+                unlock: { upgrade: ["flee"] }, // used to be "justPushFurtherLol"
+                message: "You and the ragged frenzy clear the gap. Your prize is a clear space of water.<br>It spans wide at the sides, but in front of you is an insurmountable wall of sand.",
+            },
+            {
+                name: "shore-stability-found",
+                unlock: { totalResource: { stabilizer: 5 } },
+                message: "The stabilizers work diligently, eager to support a loose-laid world. Perhaps there is hope.",
+            },
+            {
+                name: "shore-discover-driftwood",
+                unlock: { upgrade: ["sunObservation"] },
+                message: "You notice some long, branching brown things bobbing on the surface. Some sharks say it's flaky.",
+            },
+            {
+                name: "shore-mudskippers-spotted",
+                unlock: { totalResource: { driftwood: 10 } },
+                message: "The frenzy is talking about some unusual prey - fish that flee and survive beyond the water, they say...",
+            },
+            {
+                name: "shore-add-mudskipper",
+                unlock: { totalResource: { mudskipper: 5 } },
+                message: "These tiny fish aren't very remarkable - but what they (skittishly) bring back is another matter.",
+            },
+            {
+                name: "shore-flaily-flail",
+                unlock: { totalResource: { burrow: 5 } },
+                message: "The mudskippers flail in their newly-dug burrows. They say their dance is traditional, as are their oral tales.",
+            },
+            {
+                name: "shore-hardbark-coated",
+                unlock: { upgrade: ["hardbarkCoating"] },
+                message: "The wood of the simple (yet strong) hardbark looks a dark blue under the crystal. It's a wonder how it ended up with weird brown fish.",
+            },
+            {
+                name: "shore-puppets-piloted",
+                unlock: { upgrade: ["puppetAssembly"] },
+                message: "The frenzy move the puppets from within. They are nothing like our shark machines. It is lifelike. Glitchless. But primitive.",
+            },
+            {
+                name: "shore-tunnel",
+                unlock: { upgrade: ["fixModels"] },
+                message: "News of a long tunnel, hidden away in the eastern area, has been brought.<br>'Where does it lead?' whispers the frenzy.",
+            },
+            {
+                name: "shore-dead-sentinel",
+                unlock: { upgrade: ["exploration"] },
+                message: "The tunnel is dark and cold, but safe. Above the gate looms a large, many-tendriled being in disrepair.",
+            },
+            {
+                name: "shore-alive-sentinel",
+                unlock: { totalResource: { safeholdSentinel: 1 } },
+                message: "The sentinel stirs. And it lashes out at the rough sand, nimbly snaring each grain in its tendrils.<br>It speaks of a safehold beyond the latch.",
+            },
+            {
+                name: "shore-safehold",
+                unlock: { upgrade: ["farExploration"] },
+                message: "The safehold is large, yet warm, and the ruins of a large town lie derelict.<br>The only danger is the raiders that dive from above.",
+            },
+            {
+                name: "shore-caracaras",
+                unlock: { upgrade: ["raiderTruce"], totalResource: { caracara: 5 } },
+                message: "The caracaras are cold and aloof. They act haughty to us, with no emotion in their eyes.",
+            },
+            {
+                name: "shore-puppets-taught",
+                unlock: { upgrade: ["puppetTeaching"] },
+                message: "So many tricks. So many techniques. The puppets have become versatile tools fast.",
+            },
+            {
+                name: "shore-actually-safe-safehold",
+                unlock: { upgrade: ["crystalTalons"] },
+                message: "oooh oooh recylcer and gate woooh",
+            },
+            {
+                name: "shore-connoisseurs",
+                unlock: { totalResource: { connoisseur: 5 } },
+                message: "oooh connoisseurs oooooh",
+            },
+            {
+                name: "shore-exchange-platform",
+                unlock: { totalResource: { exchangeStation: 5 } },
+                message: "bustling hubs etc.",
+            },
+            {
+                name: "shore-barrage-braver",
+                unlock: { totalResource: { barrageBraver: 1 } },
+                message: "oooh oooh the braver is making its way out",
+            },
+            {
+                name: "shore-first-log",
+                unlock: { upgrade: ["firstLog"] },
+                message: "SINCE-TRAVEL-START-NO-ERROR-NOR-ABBERATION-SAW. SAND-HURT-SIGHT-OBSCURED. DIRECTION-MINE-THICKEST-PART-EYE-OF-STORM.",
+            },
+            {
+                name: "shore-second-log",
+                unlock: { upgrade: ["secondLog"] },
+                message: "FLURRY-SAND-MORE-POWER-THAN-BEFORE. HARD-TO-MOVE. CARAPACE-PROTECT-ME-WELL. VAGUE-OUTLINE-IN-EYE-OF-STORM-SEEN. OUTLINE-SILENT-BUT-MOVE. I-TALK-TO-IT.",
+            },
+            {
+                name: "shore-gatemaster",
+                unlock: { totalResource: { gatemasterPuppet: 1 } },
+                message: "The faceless, silent Gatemaster pulses and throbs with energy. Raw, ethereal energy.<br>Is it looking at you?",
+            },
+            {
+                name: "shore-third-log",
+                unlock: { upgrade: ["thirdLog"] },
+                message: "SIBLING-SORROW. SIBLING-NOT-WANT-STORM-MAKE. SIBLING-WANT-STOP-BUT-CANNOT. I-MAKE-SIBLING-SILENT. SIBLING-THANK-ME. I-ALONE-NOW. ALONE.",
+            },
+        ],
+        /* stone: [
+           {
             message:
                 "The jagged seafloor looks ancient, yet pristine.<br>Sponges thrive in great numbers on the rocks.",
-        },
-        */
+           },
+        ], */
     },
 };

@@ -68,6 +68,14 @@
   --color-darker: #001d2b;
   --color-title: rgba(29, 83, 114, 0.2);
 }
+:root :not(.no-theme).shore {
+  --color-lighter: #d0bc7d;
+  --color-light: #b59a4a;
+  --color-med: #7f6c34;
+  --color-dark: #5f532f;
+  --color-darker: #443a1a;
+  --color-title: rgba(127, 108, 52, 0.2);
+}
 :root :not(.no-theme).shrouded {
   --color-lighter: #22bec3;
   --color-light: #302d39;

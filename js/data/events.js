@@ -103,6 +103,148 @@ SharkGame.Events = {
             }
         },
     },
+    /* shoreHandleSandstorm: {
+        handlingTime: "beforeTick",
+        priority: 0,
+        getAction() {
+            if (SharkGame.World.worldType !== "shore") {
+                return "remove";
+            }
+            return "trigger";
+        },
+        trigger() {
+            if (!SharkGame.flags.sandstorm) {
+                SharkGame.flags.sandstorm = {
+                    roughSand: 0.03,
+                };
+            }
+
+            const sandstorm = SharkGame.ResourceMap.get("world");
+            const predictedTimeUntilNextTick = res.getGameSpeedModifier();
+            if (!sandstorm.baseIncome) {
+                sandstorm.baseIncome = {};
+                sandstorm.income = {};
+            }
+            $.each(SharkGame.flags.sandstorm, (resourceName, removalRatio) => {
+                if (world.doesResourceExist(resourceName)) {
+                    sandstorm.baseIncome[resourceName] =
+                        (predictedTimeUntilNextTick * res.getResource(resourceName) * removalRatio) / (1 - predictedTimeUntilNextTick * removalRatio);
+                }
+                res.reapplyModifiers("world", resourceName);
+            });
+            $.each(SharkGame.flags.sandstorm, (name, ratio) => {
+                if (ratio === 0) {
+                    delete SharkGame.flags.sandstorm[name];
+                }
+            });
+            return true;
+        },
+    }, */
+    shoreWhipUpTheSand: {
+        handlingTime: "beforeTick",
+        priority: 2,
+        getAction() {
+            if (SharkGame.World.worldType !== "shore") {
+                return "remove";
+            }
+            if (SharkGame.Upgrades.purchased.includes("murkAssessment")) {
+                return "trigger";
+            }
+            return "pass";
+        },
+        trigger() {
+            SharkGame.ResourceIncomeAffectors.roughSand.multiply.roughSand = -(1 / 666);
+            res.clearNetworks();
+            res.buildIncomeNetwork();
+        },
+    },
+    shoreNarrowSpace: {
+        handlingTime: "beforeTick",
+        priority: 3,
+        getAction() {
+            if (SharkGame.World.worldType !== "shore") {
+                return "remove";
+            }
+            if (SharkGame.Upgrades.purchased.indexOf("flee") > -1) {
+                return "trigger";
+            }
+            return "pass";
+        },
+        trigger() {
+            res.applyModifier("planetaryIncome", "roughSand", -0.5);
+            res.clearNetworks();
+            res.buildIncomeNetwork();
+        },
+    },
+    shoreWipeSandstormSand: { // once you get to the narrow place
+        handlingTime: "beforeTick",
+        priority: 0,
+        getAction() {
+            return "remove";
+        },
+        trigger() {
+            if (!SharkGame.flags.ridSand) {
+                SharkGame.flags.ridSand = true;
+                res.changeResource("roughSand", -1000);
+            }
+        },
+    },
+    shoreRefreshRoughSand: { // try to make sure rough sand income doesn't go into the positives
+        handlingTime: "afterTick",
+        priority: 0,
+        getAction() {
+            if (SharkGame.World.worldType !== "shore") {
+                return "remove";
+            }
+            if (SharkGame.Upgrades.purchased.includes("agriculture") && res.getResource("seagrass") > 99999) {
+                return "trigger";
+            }
+            return "pass";
+        },
+        trigger() {
+            res.changeResource("roughSand", 15);
+            return true;
+        },
+    },
+    /* shoreGiveCoral: {
+        handlingTime: "beforeTick",
+        priority: 0,
+        getAction() {
+            return "remove";
+        },
+        trigger() {
+            if (!SharkGame.flags.gaveCoral) {
+                SharkGame.flags.gaveCoral = true;
+                res.changeResource("coral", 50);
+            }
+        },
+    }, */
+    shoreGiveSeagrass: {
+        handlingTime: "beforeTick",
+        priority: 0,
+        getAction() {
+            return "remove";
+        },
+        trigger() {
+            if (!SharkGame.flags.gaveSeagrass) {
+                SharkGame.flags.gaveSeagrass = true;
+                res.changeResource("seagrass", 200);
+            }
+        },
+    },
+    shoreGiveDriftwood: {
+        handlingTime: "beforeTick",
+        priority: 0,
+        getAction() {
+            return "remove";
+        },
+        trigger() {
+            if (!SharkGame.flags.gaveDriftwood) {
+                SharkGame.flags.gaveDriftwood = true;
+                res.changeResource("driftwood", 10);
+            }
+        },
+    },
     volcanicEnsureSponge: {
         handlingTime: "afterTick",
         priority: 0,

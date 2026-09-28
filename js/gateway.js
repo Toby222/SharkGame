@@ -6,7 +6,7 @@ SharkGame.Gateway = {
     transitioning: false,
     selectedWorld: "",
 
-    allowedWorlds: ["abandoned", "haven", "frigid", "shrouded", "marine", "volcanic", "tempestuous"],
+    allowedWorlds: ["abandoned", "haven", "frigid", "shrouded", "marine", "volcanic", "tempestuous", "shore"],
 
     completedWorlds: [],
 
@@ -1228,6 +1228,10 @@ SharkGame.Gateway.PresenceFeelings = {
     algae: "something slimy?",
     seagrass: "some plants?",
     billfish: "resolute survivalists?",
+    roughSand: "something rough?",
+    driftwood: "floaty things?",
+    mudskipper: "unusual prey?",
+    caracara: "prideful soarers?",
 };
 
 SharkGame.Gateway.Messages = {
@@ -1250,7 +1254,7 @@ SharkGame.Gateway.Messages = {
                 "How quickly do you travel through worlds?",
                 "You are becoming familiar with this.",
                 "Back so soon?",
-                "Welcome back, to the space between spaces.",
+                "Welcome back, to the space between spaces.", // THE WORLD BETWEEN WORLDS FROM STAR WARS NO WAY --ThreeEels
             ],
         },
         {
@@ -1337,6 +1341,18 @@ SharkGame.Gateway.Messages = {
             "Tell me: Where do you see the line between friend and food? The urchins are as simple-minded as the fish.",
             "Do you wonder who the squid look up to?",
             "Do you wonder who built the great machine?",
+            "A common goal must be worked toward by all. You learned this. They learned this.",
+        ],
+        shore: [
+            "Who do you think the mudskippers told stories about?",
+            "Do you wonder who built the safehold?",
+            // "How did you find the birds? Strange? Prideful? Or...kindred?",
+            // "The puppets...do you see what they do when no-one is looking?",
+            "The mudskippers were not as safe before you came.",
+            "Who do you think appeared in caracara legends?",
+            "You have proven your endurance by outlasting the torturous storm.",
+            "To rescue those snared by death, to shelter them, give them hope... you are an incredible being.",
+            "The Gatemaster recognised you for what you are.",
         ],
     },
     loss: [
@@ -1352,6 +1368,7 @@ SharkGame.Gateway.Messages = {
         "You and everything you knew has died. Perhaps not you. Perhaps not.", */
         "One more try, perhaps?",
         "Excellence is pure habit. We are what we repeatedly do. Try again, and do better.",
+        "We learn, and as we learn, we change. We grow. You just have to make sure the world grows with you.",
     ],
     generic: [
         "There is no warmth or cold here. Only numbness.",

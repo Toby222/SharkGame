@@ -93,10 +93,21 @@ SharkGame.FunFacts = {
         tempestuous: {
             messages: ["'Tempestuous' does not mean stormy. It means emotionally turbulent. But it's close enough."],
         },
+        shore: {
+            messages: [
+                "Do you like the sandy-beige backgrounds? In case you didn't know, it was originally <i>very</i> yellow.<br>From lightest to darkest, its hex codes were ffdf80, ffd24d, #ffbf00, cc9900, and 997300.",
+                "This world was one of the first completely new worlds to be released for New Frontiers.",
+                "During early-to-middle-stage development, the Shore ocean was supposed to have coral alongside seagrass,<br>but it was cut to make things less complex.",
+            ],
+            areRequirementsMet() {
+                return SharkGame.Upgrades.purchased.includes("agriculture");
+            },
+        },
     },
 
     resourceBased: {
-        // add fish facts at some point
+        fish: ["To put on a burst of speed, fish curl their bodies into a C-shape and thrash their tails one or two times to thrust themselves forward."],
+        // i added a fish fact! -- Three Eels
         shark: [
             "There are many species of sharks that investigate things with their mouths. This can end badly for the subject of investigation.",
             "There have been social behaviours observed in lemon sharks, and evidence that suggests they prefer company to being alone.",
@@ -123,7 +134,7 @@ SharkGame.FunFacts = {
         ],
         octopus: [
             "It's octopuses, not octopi.",
-            "Octopuses are capable of extremely advanced camoflague. They can change color, pattern, and texture to match their surroundings, enough to easily fool anything, even humans.",
+            "Octopuses are capable of extremely advanced camoflauge. They can change color, pattern, and texture to match their surroundings, enough to easily fool anything, even humans.",
             "In novel circumstances, octopuses are capable of simple problem-solving. They show visible confusion when confronted with difficult problems, and take time to contemplate possible solutions.",
             "Octopuses can get bored in captivity. They may fiddle with toys or interact with humans for entertainment.",
             "Octopuses have great dexterity. They can use their tentacles in a surprising variety of ways to manipulate objects.",
@@ -185,6 +196,25 @@ SharkGame.FunFacts = {
             "Swordfish are not a group of fish, they are a single species: Xiphias gladius.",
             "Swordfish, spearfish, and marlins are part of a larger group of fish called billfish (the group featured in this game), of which there are only 12 species.",
         ],
+        mudskipper: [
+            "Unlike sharks and rays, mudskippers have bones.",
+            "The mudskipper species <i>Periophthalmus Modestus</i> takes care of their eggs in air pockets inside mud burrows, and floods the burrow to hatch them.",
+            "Some species of muskipper eat debris, making them detritivores, while other species are carnivores.",
+            "After a mudskipper lays their eggs, the mother normally leaves them to be guarded by the father.",
+            "Much like amphibians, mudskippers can breathe through their skin when wet.",
+            "Mudskipper eyes can move independently from each other, giving them an incredibly wide field of vision.",
+            "When a mudskipper seems to blink, they're actually retracting them into a fluid-filled dermal cup to keep them moist.",
+            "Mudskippers flail - or 'skip' - to attract mates or to show dominance.",
+        ],
+        caracara: [
+            "Yes, I know they're birds. It was suggested that they could be replaced with starfish, but people didn't like that.",
+            "There are multiple species of caracara in real life, but the ones here are striated caracaras.",
+            "The word 'caracara' is pronounced as <i>KA-ruh-KAH-ruh</i>.",
+            "Striated caracaras are oppurtunistic feeders, which means they eat a lot - small/baby seabirds, entrails, eggs, and human trash.",
+            "Striated caracaras have been known to turn over rocks to look for food underneath them.",
+            "The striated caracara can fly up to 60 km per hour - in excess.",
+            "Caracaras are a subspecies of falcon, although they don't look much like it.",
+        ],
         seaApple: [
             "Sea apples are a type of sea cucumber. They feed on debris and detritus.",
             "Sea apples are in no way actually attracted to kelp. The apples in this game are weird.",
@@ -218,6 +248,16 @@ SharkGame.FunFacts = {
             "It take a lot of heat to make, and once formed, calcinium doesn't melt easily. Every batch needs to be molded quickly, or it will go to waste.",
             "Calcinium is a very versatile material. Cooled quickly, it is a brittle ceramic - but cooled slowly, it's a rigid plastic. The lobsters make use of both methods.",
             "While calcinium looks like meringue, it most probably doesn't taste anything like.",
+        ],
+        hardbark: [
+            "To a human, hardbark looks like a dark blue stick covered in a thick layer of light-blue-tinted resin or glass. To the frenzy, it looks like a shiny rod of wood.",
+            "Hardbark is actually quite strong, courtesy of the crystal it's coated in. It clinks like glass.",
+            "No, hardbark does not taste like blue raspberry, and you'd break your teeth on it. Don't eat it.",
+            // "You do not know HOW MANY TYPOS I have made trying to spell <i>hardbark.</i>",
+            // "You might be wondering why the stick doesn't appear brown. That's because its developer couldn't find a mix between brown and light blue.",
+            "The crafting process of hardbark is relatively simple, reflecting the simple lives of its crafters.",
+            "Hardbark puppets can sometimes act out of their own accord. It might be because of the crystals' magic powers.",
+            "Hardbark puppets are held together with seagrass tied in tight knots.",
         ],
         laser: [
             "Sharks with lasers were overdone, okay? 'Laser ray' is a pun, so it's obviously superior.",
@@ -262,6 +302,12 @@ SharkGame.FunFacts = {
             "In the real world, the ocean floor is not always sand. The deep ocean usually has much finer sediment.",
             "Sand gets transported very long distances by ocean currents. The longer it takes to travel to its destination beach, the finer the sand will be.",
         ],
+        driftwood: [
+            "According to Norse mythology, the first two humans were made out of driftwood. Whatever Norse is. And humans.",
+            "The frenzy never burns driftwood as fuel, as the combustion releases toxic and long-lasting substances into the air.",
+            "Driftwood is often used by several animals, both aquatic and terrestrial, as shelter and food.",
+            "In the beyond, driftwood can be found in abundance as simple 'wood', but only driftwood has the right composition for hardbark.", // according to the caracaras.
+        ],
         ancientPart: [
             "What do they do? We still aren't sure.",
             "These parts would probably remind a person of train parts. To a shark, they just look like nothing.",
@@ -275,19 +321,28 @@ SharkGame.FunFacts = {
             "Don't touch the sponge on their backs. They're very protective about it.",
         ],
         delphinium: [
-            "To a person, delphinium is glitter on blue gold. To a shark, it's headache-inducing.",
+            "To a person, delphinium is glitter on turquoise gold. To a shark, it's headache-inducing.",
             "The dolphin recipe for delphinium is ancient. It took them many generations to perfect the process, or so they say.",
             "The dolphins are rather fond of delphinium. They appreciate the practicality of sharkonium, however.",
             "Delphinium is rather heavy, and doesn't do well under stress - but soft enough to be crafted into complex shapes.",
         ],
         ice: ["In the original shark game, ice used to eat away your resources instead of slowing their production."],
         tar: ["In the original shark game, tar was gained passively. Machines produced basically none of it."],
+        roughSand: ["During early development, rough sand slowed production rate rather than slowly consuming your resources."],
         calciniumConverter: [
             "Machine-brain interfaces, such as the ones used by lobsters, actually already exist.",
             "While the first machine-brain interface was created by the science shark team, in the real world, it was developed by brazilian scientist 'Miguel Niconelis'.",
             "Machine-brain interfaces are normally done without any surgery, but the lobsters thought it looked cooler to jam the wires in their skulls.",
         ],
-
+        hardbarkSmith: ["How does the molten crystal stay in the tray? We don't know."],
+        mentor: [
+            "The puppet mentors' glasses are smaller versions of the scientists' ones.",
+            "During extremely early development, there were these puppet training centres<br>that would've accompanied the puppet mentors. Since they're not here, they probably didn't catch on.",
+            "Real-life mudskippers absolutely do not know how to teach tricks to puppets.",
+        ],
+        connoisseur: ["Real-life caracaras do not collect seagrass. Maybe."],
+        exchangeStation: ["Some frenzy members set up trading stalls in the stations and present their wares."],
+        intel: ["During early development, there were these place resources called 'intel nodes', 'spires to catch the intel'.<br>They were eventually cut to declutter things."],
     },
 
     default: [

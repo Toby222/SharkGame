@@ -2702,13 +2702,13 @@ SharkGame.HomeActions = {
             },
             outcomes: [
                 "Subjugate the sand!",
-		        "Subject the sand to blinding light!",
-		        "Burn the sand from existence!",
-		        "Rain fiery light upon the grains!",
-		        "Crystal, I summon thee!",
-		        "Burn the sand, make the crystals!",
-		        "Hmmmm-MMMM-mmmm...", // the dark crystal reference -- Three Eels
-		        "Flow like waves, then harden like stone!",
+                "Subject the sand to blinding light!",
+                "Burn the sand from existence!",
+                "Rain fiery light upon the grains!",
+                "Crystal, I summon thee!",
+                "Burn the sand, make the crystals!",
+                "Hmmmm-MMMM-mmmm...", // the dark crystal reference -- Three Eels
+                "Flow like waves, then harden like stone!",
             ],
             helpText: "Use an energy-retaining laser to heat the sand into glassy crystal.",
         }, // end of processing code

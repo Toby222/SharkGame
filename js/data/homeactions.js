@@ -219,7 +219,7 @@ SharkGame.HomeActions = {
             cost: {},
             prereq: {
                 upgrade: ["seabedGeology"],
-            },
+        npm    },
             outcomes: [
                 "Caught seagrass!",
             ],

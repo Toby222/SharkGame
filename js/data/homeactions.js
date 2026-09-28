@@ -2683,6 +2683,35 @@ SharkGame.HomeActions = {
             ],
             helpText: "Dissect seagrass flowers to further the cause of science. This is research, probably!",
         }, // end of processing code
+        sandConversion: {
+            name: "Laser up sand",
+            effect: {
+                resource: {
+                    crystal: 1,
+                },
+            },
+            cost: [
+                { resource: "sand", costFunction: "constant", priceIncrease: 5 },
+            ],
+            max: "sand",
+            prereq: {
+                resource: {
+                    sand: 5,
+                },
+                upgrade: ["thermalVents"],
+            },
+            outcomes: [
+                "Subjugate the sand!",
+		        "Subject the sand to blinding light!",
+		        "Burn the sand from existence!",
+		        "Rain fiery light upon the grains!",
+		        "Crystal, I summon thee!",
+		        "Burn the sand, make the crystals!",
+		        "Hmmmm-MMMM-mmmm...", // the dark crystal reference -- Three Eels
+		        "Flow like waves, then harden like stone!",
+            ],
+            helpText: "Use an energy-retaining laser to heat the sand into glassy crystal.",
+        }, // end of processing code
 
         // MAKE ADVANCED RESOURCES ///////////////////////
         transmuteSharkonium: {
@@ -5966,6 +5995,7 @@ SharkGame.HomeActionCategories = {
             "smeltPorite",
             "seagrassToScience",
             "coatHardbark",
+            "sandConversion",
         ],
     },
 

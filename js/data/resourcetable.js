@@ -25,8 +25,8 @@ SharkGame.ResourceTable = {
                     return "vents";
                 case "tempestuous":
                     return "the storm";
-                case "shore":
-                    return "the sandstorm";
+		case "shore":
+		    return "the sandstorm";
                 default:
                     return "the world";
             }
@@ -37,8 +37,8 @@ SharkGame.ResourceTable = {
                     return "vents";
                 case "tempestuous":
                     return "the storm";
-                case "shore":
-                    return "the sandstorm";
+		case "shore":
+		    return "the sandstorm";
                 default:
                     return "the world";
             }
@@ -125,35 +125,35 @@ SharkGame.ResourceTable = {
         desc: "The cost of progress.",
         color: "#FFD6FC",
         value: 1,
-    },
+    }, 
     clamAspectSacrifice: {
         name: "sacrifices<br>",
         singleName: "sacrifice<br>",
         desc: "The cost of progress.",
         color: "#FFD6FC",
         value: 1,
-    },
+    }, 
     spongeAspectSacrifice: {
         name: "sacrifices<br>",
         singleName: "sacrifice<br>",
         desc: "The cost of progress.",
         color: "#FFD6FC",
         value: 1,
-    },
+    }, 
     volcanicAspectSacrifice: {
         name: "sacrifices<br>", // text in grotto was behaving weirdly
         singleName: "sacrifice<br>",
         desc: "The cost of progress.",
         color: "#FFD6FC",
         value: 1,
-    },
+    }, 
     seagrassAspectSacrifice: {
         name: "sacrifices<br>", // looks like they all need it
         singleName: "sacrifice<br>",
         desc: "The cost of progress.",
         color: "#FFD6FC",
         value: 1,
-    },
+    }, 
     coralAspectSacrifice: {
         name: "sacrifices<br>",
         singleName: "sacrifice<br>",
@@ -162,11 +162,11 @@ SharkGame.ResourceTable = {
         value: 1,
     },
     kelpAspectSacrifice: {
-        name: "sacrifices<br>",
-        singleName: "sacrifice<br>",
-        desc: "The cost of progress.",
-        color: "#FFD6FC",
-        value: 1,
+	name: "sacrifices<br>",
+	singleName: "sacrifice<br>",
+	desc: "The cost of progress.",
+	color: "#FFD6FC",
+	value: 1,
     },
 
     // SAVED FOR LATER
@@ -902,9 +902,9 @@ SharkGame.ResourceTable = {
         desc: "Supporting a loosely-strung world.",
         income: {
             // coral: 0.5,
-            seagrass: 0.1,
+            seagrass: 0.4,
         },
-        value: 4000,
+	value: 4000,
     },
 
     mudskipper: {
@@ -913,10 +913,10 @@ SharkGame.ResourceTable = {
         color: "#4E3900",
         desc: "The liberated prey.",
         income: {
-            driftwood: 0.001,
+            driftwood: 0.05,
         },
         jobs: ["burrow", "mentor"],
-        value: 1000,
+	value: 1000,
     },
 
     burrow: {
@@ -927,7 +927,7 @@ SharkGame.ResourceTable = {
         income: {
             mudskipper: 0.01,
         },
-        value: 2000,
+	value: 2000,
     },
 
     driftwood: { // this isn't with the materials above as it's not likely to be used for other oceans --ThreeEels
@@ -935,7 +935,7 @@ SharkGame.ResourceTable = {
         singleName: "driftwood",
         desc: "Buoyant detritus from the beyond.",
         color: "#342D19",
-        value: 15,
+	value: 15,
     },
 
     hardbark: {
@@ -943,7 +943,7 @@ SharkGame.ResourceTable = {
         singleName: "hardbark",
         desc: "Pistons and mechanisms for the puppets.",
         color: "#1F2F45",
-        value: 25,
+	value: 25,
     },
 
     intel: {
@@ -951,7 +951,7 @@ SharkGame.ResourceTable = {
         singleName: "intel",
         desc: "What the Braver knows.",
         color: "#FFFFFF",
-        value: 75,
+	value: 75,
     },
 
     mentor: {
@@ -959,7 +959,7 @@ SharkGame.ResourceTable = {
         singleName: "puppet mentor",
         desc: "Those who make adequates better.",
         color: "#CC6600",
-        value: 3000,
+	value: 3000,
     },
 
     caracara: {
@@ -969,10 +969,10 @@ SharkGame.ResourceTable = {
         color: "#363840", // previously #604020
         income: {
             crystal: 0.5,
-            fish: 0.5,
+	    fish: 0.5,
         },
         jobs: ["retrievalDuo", "connoisseur"],
-        value: 1000,
+	value: 1000,
     },
 
     retrievalDuo: {
@@ -980,7 +980,7 @@ SharkGame.ResourceTable = {
         singleName: "retrieval duo",
         desc: "A use and a boost.",
         color: "#cc9966",
-        value: 4000,
+	value: 4000,
     },
 
     connoisseur: {
@@ -992,7 +992,7 @@ SharkGame.ResourceTable = {
             seagrass: 0.5,
             // coral: 0.5,
         }, */
-        value: 4000,
+	value: 4000,
     },
 
     seagrassPicker: { // previously coralPicker
@@ -1003,7 +1003,7 @@ SharkGame.ResourceTable = {
         income: {
             seagrass: 3, // used to be coral
         },
-        value: 12500,
+	value: 12500,
     },
 
     driftwoodSnarer: {
@@ -1014,7 +1014,7 @@ SharkGame.ResourceTable = {
         income: {
             driftwood: 2,
         },
-        value: 18750,
+	value: 18750,
     },
 
     hardbarkSmith: {
@@ -1026,7 +1026,7 @@ SharkGame.ResourceTable = {
             hardbark: 2,
             crystal: -2,
         },
-        value: 12500,
+	value: 12500,
     },
 
     shoreQueller: {
@@ -1035,12 +1035,12 @@ SharkGame.ResourceTable = {
         desc: "Flowing puppets bringing heat.",
         color: "#CCCC00",
         income: {
-            sand: -12.5,
-            roughSand: -0.0002,
+	    sand: -12.5,
+	    roughSand: -0.0002,
             // seagrass: 1,
             crystal: 1.5,
         },
-        value: 62500,
+	value: 62500,
     },
 
     /* younglingSlayer: {
@@ -1048,18 +1048,18 @@ SharkGame.ResourceTable = {
         singleName: "youngling slayer",
         desc: "<strong>We underestimated its power.</strong>",
         color: "#DC143C",
-        value: 62500,
+	value: 62500,
     }, */
 
     safeholdSentinel: {
-        name: "Safehold Sentinel", // it's special. that's why it has caps. --ThreeEels
-        singleName: "the Safehold Sentinel", // you won't have any more than one without cheats, so this is just so the stuff in the lab looks good
+        name: "the Safehold Sentinel", // it's special. that's why it has caps. --ThreeEels
+        singleName: "the Safehold Sentinel",
         desc: "The warden of many arms.",
         color: "#664D80",
         income: {
             roughSand: -5.5,
         },
-        value: -1,
+	value: -1,
     },
 
     barrageBraver: {
@@ -1070,7 +1070,7 @@ SharkGame.ResourceTable = {
         income: {
             intel: 0.001,
         },
-        value: -1,
+	value: -1,
     },
 
     gatemasterPuppet: {
@@ -1078,7 +1078,7 @@ SharkGame.ResourceTable = {
         singleName: "the Gatemaster",
         desc: "It oversees its children and its home.",
         color: "#99FFCC",
-        value: -1,
+	value: -1,
     },
 
     seagrassFarm: {
@@ -1089,7 +1089,7 @@ SharkGame.ResourceTable = {
         income: {
             seagrass: 0.5,
         },
-        value: 755,
+	value: 755,
     },
 
     exchangeStation: {
@@ -1097,7 +1097,7 @@ SharkGame.ResourceTable = {
         singleName: "exchange station",
         desc: "A bustling hub of beyonderwalkers and seaborn.",
         color: "#4D2600",
-        value: 755,
+	value: 755,
     },
 
     /* receiverNode: {
@@ -1108,7 +1108,7 @@ SharkGame.ResourceTable = {
         income: {
             intel: 1.5,
         },
-        value: 750,
+	value: 750,
     }, */
 
     roughSand: {
@@ -1116,7 +1116,7 @@ SharkGame.ResourceTable = {
         singleName: "rough sand",
         desc: "Jagged grains that dig into our flesh.",
         color: "#CC9900",
-        income: {
+	income: {
             shark: -0.0001,
             ray: -0.0001,
             crab: -0.0001,
@@ -1130,8 +1130,8 @@ SharkGame.ResourceTable = {
             burrow: -0.0001,
             mentor: -0.0001,
         },
-        forceIncome: true,
-        value: -100,
+	forceIncome: true,
+	value: -100,
     },
 
     // SHROUDED
@@ -1655,15 +1655,15 @@ SharkGame.GeneratorIncomeAffectorsOriginal = {
         },
     },
     coral: {
-        multiply: {
-            roughSand: -0.00001,
+	multiply: {
+	    roughSand: -0.000001,
         },
     },
-    seagrass: {
-        multiply: {
-            roughSand: -0.00001,
+    /* seagrass: {
+	multiply: {
+	    roughSand: -0.000001,
         },
-    },
+    }, */
     /* younglingSlayer: {
         multiply: {
             nurse: -0.5,
@@ -1709,7 +1709,7 @@ SharkGame.ResourceIncomeAffectorsOriginal = {
             crystal: 0.001,
             clam: 0.001,
         },
-    },
+    }, 
     spongeAspectSacrifice: {
         multiply: {
             fish: 0.001,
@@ -1717,7 +1717,7 @@ SharkGame.ResourceIncomeAffectorsOriginal = {
             crystal: 0.001,
             sponge: 0.001,
         },
-    },
+    }, 
     volcanicAspectSacrifice: {
         multiply: {
             fish: 0.001,
@@ -1725,7 +1725,7 @@ SharkGame.ResourceIncomeAffectorsOriginal = {
             coral: 0.001,
             sponge: 0.001,
         },
-    },
+    }, 
     seagrassAspectSacrifice: {
         multiply: {
             fish: 0.001,
@@ -1733,7 +1733,7 @@ SharkGame.ResourceIncomeAffectorsOriginal = {
             crystal: 0.001,
             seagrass: 0.001,
         },
-    },
+    }, 
     coralAspectSacrifice: {
         multiply: {
             fish: 0.001,
@@ -1804,9 +1804,9 @@ SharkGame.ResourceIncomeAffectorsOriginal = {
         },
     },
     connoisseur: {
-        multiply: {
-            seagrass: 0.01,
-        },
+	multiply: {
+	    seagrass: 0.01,
+	},
     },
     /* shoveler: {
         multiply: {
@@ -1862,7 +1862,7 @@ SharkGame.ResourceCategories = {
             "chart",
             "map",
             // "knowledge",
-            "intel",
+	    "intel",
         ],
     },
     magical: {
@@ -1924,7 +1924,7 @@ SharkGame.ResourceCategories = {
             "seagrass",
             // "stone",
             // "gravel",
-            "driftwood",
+	    "driftwood",
         ],
     },
     processed: {
@@ -2042,12 +2042,12 @@ SharkGame.ResourceCategories = {
             "Alright everyone, pack it up! Get outta here!",
         ],
         resources: [
-            "spongeFarm",
-            "coralFarm",
-            "seagrassFarm",
-            "exchangeStation",
-            // "receiverNode",
-        ],
+	    "spongeFarm",
+	    "coralFarm",
+	    "seagrassFarm",
+	    "exchangeStation",
+	    // "receiverNode",
+	],
     },
     special: {
         name: "Special",
@@ -2156,6 +2156,6 @@ SharkGame.InternalCategories = {
         resources: ["essence", "world", "aspectAffect", "specialResourceOne", "specialResourceTwo"],
     },
     aspectSacrifices: {
-        resources: ["jellyAspectSacrifice", "clamAspectSacrifice", "spongeAspectSacrifice", "volcanicAspectSacrifice", "seagrassAspectSacrifice", "coralAspectSacrifice", "kelpAspectSacrifice"],
+	resources: ["jellyAspectSacrifice", "clamAspectSacrifice", "spongeAspectSacrifice", "volcanicAspectSacrifice", "seagrassAspectSacrifice", "coralAspectSacrifice", "kelpAspectSacrifice"],
     },
 };

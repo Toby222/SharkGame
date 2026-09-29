@@ -26,8 +26,8 @@
         "@types/pako": "^1.0.1",
         "eslint": "^9.0.0",
         "neostandard": "^0.13.0",
-        "sass": "^1.102.0",
-        "simple-git-hooks": "^2.13.1"
+        "sass": "^1.104.1",
+        "simple-git-hooks": "^2.14.0"
     },
     "simple-git-hooks": {
         "pre-commit": "npm test"

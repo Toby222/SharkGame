@@ -9,10 +9,10 @@
 "Squid"        The squid speak of an ancient visitor who saved their world. They ask if you too, have seen this visitor.,
 "Suspicion"        The squid describe the machine with fascination. They ask if we feel the same. They see something we do not.,
 ~~"Battery"        Buried deep within the complex lies a massive, dimly glowing battery. The squid say replacing it will get the machine running at full power.,~~ (courtesy of Glowkate)
-"Heat Returns"        A wave of heat washes over you, and the dingy complex comes back to life. The gate turns on.
+~~"Heat Returns"        A wave of heat washes over you, and the dingy complex comes back to life. The gate turns on.~~ (made by Glowkate)
 
 ### HAVEN
-"Done"        The great song booms across the open water, carrying itself to all corners of the ocean. The gate reacts.
+~~"Done"        The great song booms across the open water, carrying itself to all corners of the ocean. The gate reacts.~~
 
 ### MARINE
 "Sentience"        All of us have boards now. Children are born half-machine. The lobsters call it effective.
@@ -24,12 +24,12 @@
 "Truth"        A team of eels get your attention. They have something from the caverns: it's a book. You can't read a thing inside it, but...that looks like arcana...and that looks like...a warning.
 
 ### Tempestuous
-"Billfish"        "The so-called 'billfish' apologize for their behavior. They say no shark has entered this cave in a long, long time.",
-"Sandbags"        "Stormgoers tredge slowly across the seabed. They dig through the sand extracting buried seagrass, but are too heavy to bring back crystals.",
+~~"Billfish"        "The so-called 'billfish' apologize for their behavior. They say no shark has entered this cave in a long, long time.",~~
+~~"Sandbags"        "Stormgoers tredge slowly across the seabed. They dig through the sand extracting buried seagrass, but are too heavy to bring back crystals.",~~ (made by Glowkate)
 "Stories"        "The billfish tell stories of life before the storm and an ancient visitor who brought them prosperity. They ask if you can bring them prosperity, too.",
 "Expeditions"        "The billfish line up in droves to volunteer for expeditions, danger or otherwise. They don't need convincing, just equipment.",
-"Map"        "A grand map lays stretched out against the cavern wall. In the top right corner is a strange shape with a door.",
-"Machine"        "The hallways of the facility echo with sounds of turning cogs. Billfish swim rapidly up and down the halls.",
+~~"Map"        "A grand map lays stretched out against the cavern wall. In the top right corner is a strange shape with a door.",~~
+~~"Machine"        "The hallways of the facility echo with sounds of turning cogs. Billfish swim rapidly up and down the halls.",~~
 "Generator"        "The generator is completely disabled, yet the facility is still running. The wind howls outside as mechanics tinker excitedly with our machines.",
 "Legends"        "As the storm draws its final breath, you overhear two billfish talking. One asks the other why the visitor never returned."
 
@@ -37,7 +37,7 @@
 ~~"Shrimp Threat"        You are approached by an army of shrimp. They relay a very clear message to you: cooperate, or be destroyed. You decide to stop harvesting sponges.,~~
 "Shrimp Communication"         The homes (sponges) left behind by shrimp joining the frenzy may now be taken for ourselves.,
 ~~"Monarchy"        The shrimps follow a caste system with the king of shrimps on top. They ask who your king is.,~~
-"Smithing"        Porite: glassy hunks sealed on the outside but porous on the inside: it's lightweight, yet it stays strong.,
+~~"Smithing"        Porite: glassy hunks sealed on the outside but porous on the inside: it's lightweight, yet it stays strong.,~~
 "Acolytes"        The acolytes gather. They pray for their king. They pray for their world. They pray for you.,
 "Beauty"        The king is speechless. As he views the great industrial city, his subjects gather and cheer, celebrating his arrival.,
 ~~"Curious Crabs"        Sort of just off to the side, a group of curious crabs congregate and discuss stuff that we don't understand.,~~
@@ -67,7 +67,7 @@
 ~~Inudstrial-Grade Sponge        understand how to make spronge,~~
 ~~Environmentalism        unlock filters,~~
 ~~Octal Efficieny        increase octal productivity,~~
-Superior Search Algorithms        learn how to search better,
+~~Superior Search Algorithms        learn how to search better,~~
 High-Energy Fusion        learn to fuse ancient parts (somewhat shared with marine),
 ~~Investi-gate-tions        dedicate an investigation team to understanding the gate,~~
 Mechanised Alchemy         refine the machines,
@@ -84,12 +84,12 @@ Internal Investigation        uncover the inside of the great machine,
 Internal Expedition        explore the complex inside of the great machine,
 Internal Inquiry        explain to the squid why we went behind their backs,
 Creature Coalition        we have to work together to make progress...,
-Rapid Recharging        reverse-engineer an old battery to make a new one!
+~~Rapid Recharging        reverse-engineer an old battery to make a new one!~~
 
 ### HAVEN
 ~~Dolphin Technology        learn to build dolphin tech,~~
 ~~Retroactive Recordkeeping        organize the papyrus, unlock historians,~~ (courtesy of Glowkate)
-The Whale Song        piece together the whale's portion of the song,
+~~The Whale Song        piece together the whale's portion of the song,~~
 ~~Imperial Designs        employ the original designs for dolphin machines,~~
 ~~Ancient Agriculture        use our records to understand how the dolphins used to farm,~~
 ~~Crystalline Construction        learn even more about the dolphin machines or whatever~~
@@ -118,12 +118,12 @@ Crystal Spear        tool for billfish to catch fish,
 Sandbagging        unlock crab stormgoers,
 Billfish Biology        unlock billfish pairs,~~
 ~~Heavy Sifting        seperate light and heavier sand to make all uses of sand cheaper,~~ (courtesy of Glowkate)
-Sense of Direction        actually navigate the storm properly,
+~~Sense of Direction        actually navigate the storm properly,~~
 ~~Laser Lenses        use glass bottles to focus lasers to make laser rays cheaper,~~
-Crystal Clippers        tool for stormgoers,
+~~Crystal Clippers        tool for stormgoers,~~
 Routing        use charts we have to make efficient routes,
 Heat Harnesses        move heat using special crystal harnesses,
-Superclippers        BIG CLIPPER,
+~~Superclippers        BIG CLIPPER,~~
 Universal Navigation        use charts we have for even more efficient routing,
 Cartographic Completeness        make a map,
 The Expedition        plan an expedition to the weather machine,
@@ -148,19 +148,19 @@ Coral Cloning        discover coral farming,
 ~~Brooding Biology        make crab breeding more efficient,~~
 ~~Feeding Techniques        understand how sponge eat algae,~~
 Secret Smelting        unlock porite,
-Antipest Patrols        take care of coral pests,
+~~Antipest Patrols        take care of coral pests,~~
 Medically Assisted Reproduction        increase survival rate of children,
 Glass Tempering        improve the durability of porite tools,
 Super Smelting        smelt porite directly at the vents,
 First Draft        draft a letter to try to get the shrimp king not to kill us,
 ~~Super Shovels        big shovel,~~
-Mass Production        mass produce porite parts to cheapen their creation,
+~~Mass Production        mass produce porite parts to cheapen their creation,~~
 Second Draft        draft another letter,
 Algae Acolytes        cult of algae,
 Central Collection        cut out the middleman in sponge collection,
-Land Reform        use less sand while designating farms due to better land management,
+~~Land Reform        use less sand while designating farms due to better land management,~~
 Rumored Recollections        investigate rumors about the king,
 Sand Reform        organize sand collection patrols,
-Crab Reform        reform the crabs! i guess?,
+~~Crab Reform        reform the crabs! i guess?,~~
 ~~Final Draft        go see the king personally,~~
 ~~Apologetic Amnesty        repay the king for damages~~

@@ -95,7 +95,7 @@ SharkGame.FunFacts = {
         },
         shore: {
             messages: [
-                "Do you like the sandy-beige backgrounds? In case you didn't know, it was originally <i>very</i> yellow.<br>From lightest to darkest, its hex codes were ffdf80, ffd24d, #ffbf00, cc9900, and 997300.",
+                "Do you like the sandy-beige backgrounds? In case you didn't know, it was originally <i>very</i> yellow.<br>From lightest to darkest, its hex codes were ffdf80, ffd24d, ffbf00, cc9900, and 997300.",
                 "This world was one of the first completely new worlds to be released for New Frontiers.",
                 "During early-to-middle-stage development, the Shore ocean was supposed to have coral alongside seagrass,<br>but it was cut to make things less complex.",
             ],

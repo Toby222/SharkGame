@@ -397,8 +397,8 @@ SharkGame.WorldTypes = {
             present: ["mudskipper", "caracara", "driftwood", /* "coral", */"seagrass"],
             tip: "This world has rough sand, which will slowly devour the frenzy.<br>Be vigilant of how many resources you have left.",
         },
-        entry: "Rough sand pelts your skin and swirling clouds of sand obscure your vision. No time for pondering - not that you can remember much, anyway.",
-        style: "tempestuous",
+        entry: "Rough sand pelts your skin, and swirling clouds of sand obscure your vision. No time for pondering - not that you can remember much, anyway.",
+        style: "shore",
         includedResources: [
             // "coral",
             "driftwood",

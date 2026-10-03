@@ -5560,7 +5560,7 @@ SharkGame.Upgrades = {
                     hardbarkSmith: 7,
                     seagrassFarm: 7,
                     exchangeStation: 7,
-				},
+                },
             },
         },
         fullGatemaster: {

@@ -791,7 +791,7 @@ SharkGame.Sprites = {
             h: 50,
         },
     },
-    "actions/shiftEchoCrab": {
+    "actions/echoShiftCrab": {
         frame: {
             x: 550,
             y: 250,
@@ -799,7 +799,7 @@ SharkGame.Sprites = {
             h: 50,
         },
     },
-    "actions/shiftEchoRay": {
+    "actions/echoShiftRay": {
         frame: {
             x: 550,
             y: 300,
@@ -807,7 +807,7 @@ SharkGame.Sprites = {
             h: 50,
         },
     },
-    "actions/shiftEchoShark": {
+    "actions/echoShiftShark": {
         frame: {
             x: 550,
             y: 350,

@@ -272,6 +272,9 @@ SharkGame.Aspects = {
                     case "shrouded":
                         res.changeResource("diver", base * 0.5);
                         break;
+                    case "chaotic":
+                        res.changeResource("snailGeologist", base * 0.2);
+                        break;
                     default:
                         res.changeResource("crab", base);
                 }

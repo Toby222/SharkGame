@@ -908,6 +908,10 @@ SharkGame.Button = {
 };
 
 SharkGame.Changelog = {
+    "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20260929a": [
+        "Fix typos in various facts thanks to BlazingPhonex",
+        "Add some (as of yet unused) sprites",
+    ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20260623a": [
         "Fix some sprites having the wrong size and rotation",
     ],

@@ -113,6 +113,58 @@ SharkGame.ResourceTable = {
         },
     },
 
+    // ASPECT SACRIFICES (for Arcane Assistance aspect)
+
+    jellyAspectSacrifice: {
+        name: "sacrifices<br>",
+        singleName: "sacrifice<br>",
+        desc: "The cost of progress.",
+        color: "#FFD6FC",
+        value: 1,
+    }, 
+    clamAspectSacrifice: {
+        name: "sacrifices<br>",
+        singleName: "sacrifice<br>",
+        desc: "The cost of progress.",
+        color: "#FFD6FC",
+        value: 1,
+    }, 
+    spongeAspectSacrifice: {
+        name: "sacrifices<br>",
+        singleName: "sacrifice<br>",
+        desc: "The cost of progress.",
+        color: "#FFD6FC",
+        value: 1,
+    }, 
+    volcanicAspectSacrifice: {
+        name: "sacrifices<br>", // text in grotto was behaving weirdly
+        singleName: "sacrifice<br>",
+        desc: "The cost of progress.",
+        color: "#FFD6FC",
+        value: 1,
+    }, 
+    seagrassAspectSacrifice: {
+        name: "sacrifices<br>", // looks like they all need it
+        singleName: "sacrifice<br>",
+        desc: "The cost of progress.",
+        color: "#FFD6FC",
+        value: 1,
+    }, 
+    coralAspectSacrifice: {
+        name: "sacrifices<br>",
+        singleName: "sacrifice<br>",
+        desc: "The cost of progress.",
+        color: "#FFD6FC",
+        value: 1,
+    },
+    kelpAspectSacrifice: {
+	name: "sacrifices<br>",
+	singleName: "sacrifice<br>",
+	desc: "The cost of progress.",
+	color: "#FFD6FC",
+	value: 1,
+    },
+
     // MAGICAL
 
     sacrifice: {
@@ -1318,6 +1370,62 @@ SharkGame.GeneratorIncomeAffected = {
 };
 
 SharkGame.ResourceIncomeAffectorsOriginal = {
+    jellyAspectSacrifice: {
+        multiply: {
+            fish: 0.001,
+            sand: 0.001,
+            crystal: 0.001,
+            jellyfish: 0.001,
+        },
+    },
+    clamAspectSacrifice: {
+        multiply: {
+            fish: 0.001,
+            sand: 0.001,
+            crystal: 0.001,
+            clam: 0.001,
+        },
+    }, 
+    spongeAspectSacrifice: {
+        multiply: {
+            fish: 0.001,
+            sand: 0.001,
+            crystal: 0.001,
+            sponge: 0.001,
+        },
+    }, 
+    volcanicAspectSacrifice: {
+        multiply: {
+            fish: 0.001,
+            sand: 0.001,
+            coral: 0.001,
+            sponge: 0.001,
+        },
+    }, 
+    seagrassAspectSacrifice: {
+        multiply: {
+            fish: 0.001,
+            sand: 0.001,
+            crystal: 0.001,
+            seagrass: 0.001,
+        },
+    }, 
+    coralAspectSacrifice: {
+        multiply: {
+            fish: 0.001,
+            sand: 0.001,
+            crystal: 0.001,
+            coral: 0.001,
+        },
+    },
+    kelpAspectSacrifice: {
+        multiply: {
+            fish: 0.001,
+            sand: 0.001,
+            crystal: 0.001,
+            kelp: 0.001,
+        },
+    },
     ice: {
         multiply: {
             ice: -0.00125,
@@ -1590,7 +1698,20 @@ SharkGame.ResourceCategories = {
     hidden: {
         name: "Hidden",
         disposeMessage: ["Bad player! Stop it!"],
-        resources: ["world", "sacrifice", "aspectAffect", "specialResourceOne", "specialResourceTwo"],
+        resources: [
+            "world",
+            "sacrifice",
+            "aspectAffect",
+            "specialResourceOne",
+            "specialResourceTwo",
+            "jellyAspectSacrifice",
+            "clamAspectSacrifice",
+            "spongeAspectSacrifice",
+            "volcanicAspectSacrifice",
+            "seagrassAspectSacrifice",
+            "coralAspectSacrifice",
+            "kelpAspectSacrifice",
+        ],
     },
 };
 
@@ -1671,5 +1792,8 @@ SharkGame.InternalCategories = {
     },
     basics: {
         resources: ["essence", "world", "aspectAffect", "specialResourceOne", "specialResourceTwo"],
+    },
+    aspectSacrifices: {
+	    resources: ["jellyAspectSacrifice", "clamAspectSacrifice", "spongeAspectSacrifice", "volcanicAspectSacrifice", "seagrassAspectSacrifice", "coralAspectSacrifice", "kelpAspectSacrifice"],
     },
 };

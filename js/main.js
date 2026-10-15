@@ -103,7 +103,14 @@ $.extend(SharkGame, {
         "On Sharker Tides",
         "Curse of the Shark",
         "Have I Played These Sharks Before?",
-        "Hollow Shark: Shark Song",
+        "Hollow Shark - Shark Song",
+        "Last Shark Standing",
+        "Sharkjago: Masters of Sharkjitsu",
+        "Shark: Galactic Ad-fin-tures", // this was a bad spin on 'Spore: Galactic Adventures' --ThreeEels
+	    "Ray World",
+	    "Ray World: Crabpour", // aggghhhh i can't find something good for The Watcher --ThreeEels
+	    "I Have No Trout And I Must Bream", // my personal favourite --ThreeEels
+        "Nine Shoals",
     ],
     GAME_NAME: null,
     ACTUAL_GAME_NAME: "Shark Game",
@@ -908,6 +915,12 @@ SharkGame.Button = {
 };
 
 SharkGame.Changelog = {
+    /* "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 12345678a": [
+        "Added new aspects! Two boost the income of certain resources, one boosts the efficiency of a world's unique frenzy members, and the last one does something special.",
+        "Added a new gateway message for Frigid, and a new loss gateway message.",
+        "Added some new random tab names.",
+        "<i>All changes here have been brought to you by Three Eels in a Jellyfish Coat. Remember my name; something bigger is coming.</i>",
+    ], */
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20260929a": [
         "Fix typos in various facts thanks to BlazingPhonex",
         "Add some (as of yet unused) sprites",

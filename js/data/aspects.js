@@ -231,6 +231,115 @@ SharkGame.Aspects = {
             tree.handleClickedAspect(this);
         },
     },
+    pathOfLoyalty: { // old name: pathOfResearch
+        posX: 450,
+        posY: 450,
+        width: 40,
+        height: 40,
+
+        max: 10,
+        level: 0,
+        name: "Path of Loyalty",
+        description: "Good leadership attracts lasting effects, and undying loyalty.",
+	    // old desc: "Knowledge leads to curiosity, and curiosity leads to progress, and progress leads to ascension."
+        getCost(level) {
+            return 3 * level + 2;
+        },
+        getEffect(level) {
+            return (
+                "Multiply the income of " +
+                sharktext.getResourceName("sand", false, 69, sharkcolor.getElementColor("tooltipbox", "background-color")) +
+                " by <strong>" +
+                (level + 1) +
+                "×</strong>."
+            );
+        },
+        getUnlocked() {
+            if (!SharkGame.Aspects.pathOfEnlightenment.level) {
+                return "???";
+            }
+            if (gateway.completedWorlds.length < 3) {
+                return "Scout at least two worlds to unlock this aspect.";
+            }
+        },
+        prerequisites: ["apotheosis"],
+        clicked(_event) {
+            tree.handleClickedAspect(this);
+        },
+        apply(when) {
+            if (when === "init") {
+                res.applyModifier("aspectResourceIncomeBoost", "sand", this.level + 1);
+                // res.applyModifier("pathOfLoyalty", "ray", this.level + 0.5);
+                // res.applyModifier("pathOfLoyalty", "sandDigger", this.level + 1);
+                // res.applyModifier("pathOfLoyalty", "eel", this.level + 1);
+                // res.applyModifier("pathOfLoyalty", "sifter", this.level + 0.5);
+                // res.applyModifier("pathOfLoyalty", "urchin", this.level + 0.5);
+                // res.applyModifier("pathOfLoyalty", "miller", this.level + 1);
+                // res.applyModifier("pathOfLoyalty", "pulveriser", this.level + 1);
+            }
+        },
+    },
+    arcaneAssistance: {
+        posX: 500,
+        posY: 550,
+        width: 40,
+        height: 40,
+
+        max: 10,
+        level: 0,
+        name: "Arcane Assistance",
+        description: "Curiosity yields risk, but is the seed of lasting progress.",
+        getCost(level) {
+            return 3 * level + 2;
+        },
+        getEffect(level) {
+            return (
+                "Start with <strong>" +
+                1 * 2 ** level +
+                "</strong> " +
+                sharktext.getResourceName("sacrifice", false, 69, sharkcolor.getElementColor("tooltipbox", "background-color")) +
+                ". Each world will receive different resource boosts."
+            );
+        },
+        getUnlocked() {
+            return gateway.completedWorlds.includes("shrouded") ? "" : "Complete the Shrouded worldtype to unlock this aspect.";
+        },
+        prerequisites: ["pathOfLoyalty"],
+        clicked(_event) {
+            tree.handleClickedAspect(this);
+        },
+        apply(when) {
+            if (when === "init" && res.getResource("kelpAspectSacrifice") === 0 && !SharkGame.flags.arcaneAssistanceApplied) {
+                const base = 1 * 2 ** this.level;
+                switch (world.worldType) {
+                    case "shrouded":
+                        res.changeResource("jellyAspectSacrifice", base);
+                        break;
+                    case "haven":
+                        res.changeResource("coralAspectSacrifice", base);
+                        break;
+                    case "volcanic":
+                        res.changeResource("volcanicAspectSacrifice", base);
+                        break;
+                    case "tempestuous":
+                        res.changeResource("seagrassAspectSacrifice", base);
+                        break;
+                    case "marine":
+                        res.changeResource("clamAspectSacrifice", base);
+                        break;
+                    case "abandoned":
+                        res.changeResource("spongeAspectSacrifice", base);
+                        break;
+                    case "shore":
+                        res.changeResource("seagrassAspectSacrifice", base);
+                        break;
+		            default:
+                        res.changeResource("kelpAspectSacrifice", base);
+                }
+                SharkGame.flags.arcaneAssistanceApplied = true;
+            }
+        },
+    },
     pathOfTime: {
         posX: 450,
         posY: 250,
@@ -839,6 +948,99 @@ SharkGame.Aspects = {
         prerequisites: ["distantForesight"],
         clicked(_event) {
             tree.handleClickedAspect(this);
+        },
+    },
+    dancingLeaves: {
+        posX: 330,
+        posY: 440,
+        width: 40,
+        height: 40,
+
+        max: 10,
+        level: 0,
+        name: "Dancing Leaves",
+        description: "Faceless. Mindless. Boundless.",
+        getCost(level) {
+            return 3 * level + 2;
+        },
+        getEffect(level) {
+            return (
+                "Multiply the income of " +
+                sharktext.getResourceName("kelp", false, 69, sharkcolor.getElementColor("tooltipbox", "background-color")) +
+		        " or " +
+                sharktext.getResourceName("seagrass", false, 69, sharkcolor.getElementColor("tooltipbox", "background-color")) +
+                " by <strong>" +
+                (level + 1) +
+                "×</strong>."
+            );
+        },
+        getUnlocked() {},
+        prerequisites: ["apotheosis"],
+        clicked(_event) {
+            tree.handleClickedAspect(this);
+        },
+        apply(when) {
+            if (when === "init") {
+                res.applyModifier("aspectResourceIncomeBoost", "kelp", this.level + 1);
+                res.applyModifier("aspectResourceIncomeBoost", "seagrass", this.level + 1);
+                // res.applyModifier("dancingLeaves", "planter", this.level + 1);
+                // res.applyModifier("dancingLeaves", "stormgoer", this.level + 1);
+                // res.applyModifier("dancingLeaves", "stabilizer", this.level + 1);
+                // res.applyModifier("dancingLeaves", "seagrassFarm", this.level + 1);
+                // res.applyModifier("dancingLeaves", "urchin", this.level + 0.5);
+                // res.applyModifier("dancingLeaves", "connoisseur", this.level + 1);
+                // res.applyModifier("dancingLeaves", "seagrassPicker", this.level + 1);
+                // res.applyModifier("dancingLeaves", "shoreQueller", this.level + 0.25);
+            }
+        },
+    },
+    nativeKnowledge: {
+        posX: 444,
+        posY: 595,
+        width: 40,
+        height: 40,
+
+        max: 10,
+        level: 0,
+        name: "Native Knowledge",
+        description: "Those in their element are the best to learn from.",
+        getCost(level) {
+            return 2 * level + 2;
+        },
+        getEffect(level) {
+            return (
+                "Multiply the efficiency of a world's unique frenzy members by <strong>" +
+                (level + 1) +
+                "×</strong>."
+            );
+        },
+        getUnlocked() {
+            if (!SharkGame.Aspects.pathOfEnlightenment.level) {
+                return "???";
+            }
+            if (gateway.completedWorlds.length < 3) {
+                return "Scout at least two worlds to unlock this aspect.";
+            }
+        },
+        prerequisites: ["apotheosis"],
+        clicked(_event) {
+            tree.handleClickedAspect(this);
+        },
+        apply(when) {
+            if (when === "init") {
+                res.applyModifier("pathOfIndustry", "octopus", this.level + 1);
+                res.applyModifier("pathOfIndustry", "squid", this.level + 1);
+                res.applyModifier("pathOfIndustry", "urchin", this.level + 1);
+                res.applyModifier("pathOfIndustry", "dolphin", this.level + 1);
+                res.applyModifier("pathOfIndustry", "whale", this.level + 1);
+                res.applyModifier("pathOfIndustry", "billfish", this.level + 1);
+                res.applyModifier("pathOfIndustry", "chimaera", this.level + 1);
+                res.applyModifier("pathOfIndustry", "eel", this.level + 1);
+                res.applyModifier("pathOfIndustry", "lobster", this.level + 1);
+                res.applyModifier("pathOfIndustry", "shrimp", this.level + 1);
+                res.applyModifier("pathOfIndustry", "mudskipper", this.level + 1);
+                res.applyModifier("pathOfIndustry", "caracara", this.level + 1);
+            }
         },
     },
 

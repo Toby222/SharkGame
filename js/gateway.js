@@ -1337,6 +1337,7 @@ SharkGame.Gateway.Messages = {
             "Tell me: Where do you see the line between friend and food? The urchins are as simple-minded as the fish.",
             "Do you wonder who the squid look up to?",
             "Do you wonder who built the great machine?",
+	        "A common goal must be worked toward by all. You learned this. They learned this.",
         ],
     },
     loss: [
@@ -1352,6 +1353,7 @@ SharkGame.Gateway.Messages = {
         "You and everything you knew has died. Perhaps not you. Perhaps not.", */
         "One more try, perhaps?",
         "Excellence is pure habit. We are what we repeatedly do. Try again, and do better.",
+	    "We learn, and as we learn, we change. We grow. You just have to make sure the world grows with you.",
     ],
     generic: [
         "There is no warmth or cold here. Only numbness.",

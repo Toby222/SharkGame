@@ -1038,8 +1038,54 @@ SharkGame.Aspects = {
                 res.applyModifier("pathOfIndustry", "eel", this.level + 1);
                 res.applyModifier("pathOfIndustry", "lobster", this.level + 1);
                 res.applyModifier("pathOfIndustry", "shrimp", this.level + 1);
-                res.applyModifier("pathOfIndustry", "mudskipper", this.level + 1);
-                res.applyModifier("pathOfIndustry", "caracara", this.level + 1);
+                // res.applyModifier("pathOfIndustry", "mudskipper", this.level + 1);
+                // res.applyModifier("pathOfIndustry", "caracara", this.level + 1);
+            }
+        },
+    },
+    buriedBlueprints: {
+        posX: 555,
+        posY: 676,
+        width: 40,
+        height: 40,
+
+        max: 10,
+        level: 0,
+        name: "Buried Blueprints",
+        description: "Every world has its secrets, waiting to be uncovered.",
+        getCost(level) {
+            return 2 * level + 2;
+        },
+        getEffect(level) {
+            return (
+                "Multiply the efficiency of a world's unique machines by <strong>" +
+                (level + 1) +
+                "×</strong>."
+            );
+        },
+        getUnlocked() {},
+        prerequisites: ["nativeKnowledge"],
+        clicked(_event) {
+            tree.handleClickedAspect(this);
+        },
+        apply(when) {
+            if (when === "init") {
+                res.applyModifier("pathOfIndustry", "heater", this.level + 1);
+                res.applyModifier("pathOfIndustry", "tirelessCrafter", this.level + 1);
+                res.applyModifier("pathOfIndustry", "kelpCultivator", this.level + 1);
+                res.applyModifier("pathOfIndustry", "crimsonCombine", this.level + 1);
+                res.applyModifier("pathOfIndustry", "clamCollector", this.level + 1);
+                res.applyModifier("pathOfIndustry", "sprongeSmelter", this.level + 1);
+                res.applyModifier("pathOfIndustry", "eggBrooder", this.level + 1);
+                res.applyModifier("pathOfIndustry", "seabedStripper", this.level + 1);
+                res.applyModifier("pathOfIndustry", "calciniumConverter", this.level + 1);
+                res.applyModifier("pathOfIndustry", "clamScavenger", this.level + 1);
+                // res.applyModifier("pathOfIndustry", "shoreQueller", this.level + 1);
+                // res.applyModifier("pathOfIndustry", "driftwoodSnarer", this.level + 1);
+                // res.applyModifier("pathOfIndustry", "hardbarkSmith", this.level + 1);
+                res.applyModifier("pathOfIndustry", "shoveler", this.level + 1);
+                res.applyModifier("pathOfIndustry", "farmer", this.level + 1);
+                res.applyModifier("pathOfIndustry", "researcher", this.level + 1);
             }
         },
     },

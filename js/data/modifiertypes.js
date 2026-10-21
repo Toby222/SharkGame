@@ -383,6 +383,66 @@ SharkGame.ModifierTypes = {
                     return input;
                 },
             },
+            addSnailIncome: {
+                defaultValue: 0,
+                apply(current, degree, resource) {
+                    if (!SharkGame.ResourceMap.get(resource).baseIncome) {
+                        SharkGame.ResourceMap.get(resource).baseIncome = {};
+                    }
+                    if (!SharkGame.ResourceMap.get(resource).income) {
+                        SharkGame.ResourceMap.get(resource).income = {};
+                    }
+                    const baseIncomes = SharkGame.ResourceMap.get(resource).baseIncome;
+                    baseIncomes.snail = (baseIncomes.snail ? baseIncomes.snail : 0) + degree;
+                    res.reapplyModifiers(resource, "snail");
+                    return current + degree;
+                },
+                effectDescription(degree, resource, background) {
+                    return `Add ${degree} ${sharktext.getResourceName("snail", false, false, background)}/s to ${sharktext.getResourceName(
+                        resource,
+                        false,
+                        69,
+                        background,
+                    )}`;
+                },
+                getEffect(_genDegree, _outDegree, _gen, _out) {
+                    return 1;
+                },
+                applyToInput(input, _genDegree, _outDegree, _gen, _out) {
+                    // this applies to base income so it should never be reapplied
+                    return input;
+                },
+            },
+            addScienceIncome: {
+                defaultValue: 0,
+                apply(current, degree, resource) {
+                    if (!SharkGame.ResourceMap.get(resource).baseIncome) {
+                        SharkGame.ResourceMap.get(resource).baseIncome = {};
+                    }
+                    if (!SharkGame.ResourceMap.get(resource).income) {
+                        SharkGame.ResourceMap.get(resource).income = {};
+                    }
+                    const baseIncomes = SharkGame.ResourceMap.get(resource).baseIncome;
+                    baseIncomes.science = (baseIncomes.science ? baseIncomes.science : 0) + degree;
+                    res.reapplyModifiers(resource, "science");
+                    return current + degree;
+                },
+                effectDescription(degree, resource, background) {
+                    return `Add ${degree} ${sharktext.getResourceName("science", false, false, background)}/s to ${sharktext.getResourceName(
+                        resource,
+                        false,
+                        69,
+                        background,
+                    )}`;
+                },
+                getEffect(_genDegree, _outDegree, _gen, _out) {
+                    return 1;
+                },
+                applyToInput(input, _genDegree, _outDegree, _gen, _out) {
+                    // this applies to base income so it should never be reapplied
+                    return input;
+                },
+            },
         },
     },
 

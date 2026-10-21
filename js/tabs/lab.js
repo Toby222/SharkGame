@@ -15,6 +15,11 @@ SharkGame.Lab = {
                 return "img/events/misc/scene-lab.png";
             case "volcanic":
                 return "img/events/misc/scene-volcanic-lab.png";
+			case "chaotic":
+		        if (res.getTotalResource("snailBotanist") < 1 && res.getTotalResource("snailGeologist") < 1 && res.getTotalResource("snailMalacologist") < 1) {
+                    return "";
+                }
+				return "img/events/misc/scene-chaotic-lab.png";
             default:
                 return "img/events/misc/scene-lab.png";
         }
@@ -24,6 +29,8 @@ SharkGame.Lab = {
         switch (world.worldType) {
             case "volcanic":
                 return "img/events/misc/scene-volcanic-lab-done.png";
+            case "chaotic":
+                return "img/events/misc/scene-chaotic-lab-done.png";
             default:
                 return "img/events/misc/scene-lab-done.png";
         }
@@ -33,6 +40,8 @@ SharkGame.Lab = {
         switch (world.worldType) {
             case "tempestuous":
                 return { resource: { crab: 5 } };
+            case "chaotic":
+                return { resource: { clam: 10 } };
             default:
                 return { resource: { science: 10 } };
         }
@@ -49,6 +58,11 @@ SharkGame.Lab = {
                 return "Sort of just off to the side, the science sharks congregate and discuss things with words you've never heard before.";
             case "volcanic":
                 return "Sort of just off to the side, a group of curious crabs congregate and discuss stuff that we don't understand.";
+			case "chaotic":
+			    if (res.getTotalResource("snailBotanist") < 1 && res.getTotalResource("snailGeologist") < 1 && res.getTotalResource("snailMalacologist") < 1) {
+                    return "Sort of just off to the side, there's a cave.";
+                }
+                return "Sort of just off to the side, a group of passionate snails congregate and discuss stuff that we don't understand.";
             default:
                 return "Sort of just off to the side, the science sharks congregate and discuss things with words you've never heard before.";
         }
@@ -58,6 +72,11 @@ SharkGame.Lab = {
             case "volcanic":
                 return (
                     "Sort of just off to the side, the researchers are compiling their work and filing it away.<br/>" +
+                    "Looks like that's it! No more things to figure out."
+                );
+            case "chaotic":
+                return (
+                    "Sort of just off to the side, the scientists are eagerly chatting about their respective fields.<br/>" +
                     "Looks like that's it! No more things to figure out."
                 );
             default:

@@ -1,0 +1,2 @@
+[incrementaldb_verification: Toby]
+It was in an HTML comment before: https://github.com/Toby222/SharkGame/commit/98c77b2d21fef4ab2fcc044857653a64f24ea50c

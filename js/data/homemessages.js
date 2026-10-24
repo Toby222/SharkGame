@@ -644,10 +644,30 @@ SharkGame.HomeMessages = {
             },
         ],
         /* stone: [
-           {
-            message:
-                "The jagged seafloor looks ancient, yet pristine.<br>Sponges thrive in great numbers on the rocks.",
-           },
+            {
+                name: "stone-default",
+                message: "The jagged seafloor looks ancient, yet pristine.<br>Sponges thrive in great numbers on the rocks.",
+            },
+            {
+                name: "stone-mining",
+                unlock: { upgrade: ["whatever unlocks mining or smth"] },
+                message: "The clang of stone against crystal resonates from the mines. Prospectors swim in and out with their yields.",
+            },
+            {
+                name: "stone-pebbles",
+                unlock: { totalResource: { whateverMakesPebbles: 5 } },
+                message: "Huh. I actually don't know what to write. Never mind.",
+            },
+            {
+                name: "stone-gravel",
+                unlock: { totalResource: { pulverizersMaybe: 5 } },
+                message: "Gravel. It's smaller than pebbles, and slides over itself easily. But it's not what we're looking for.",
+            },
+            {
+                name: "stone-sand",
+                unlock: { totalResource: { sand: 15 } },
+                message: "At last. Sand. Yellow and fine, it swirls around as fluidly as water, and is wondrously soft. At last.",
+            },
         ], */
     },
 };

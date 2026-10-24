@@ -654,13 +654,13 @@ SharkGame.HomeMessages = {
                 message: "The clang of stone against crystal resonates from the mines. Prospectors swim in and out with their yields.",
             },
             {
-                name: "stone-pebbles",
-                unlock: { totalResource: { whateverMakesPebbles: 5 } },
+                name: "stone-stones-hehe",
+                unlock: { totalResource: { stone: 15 } },
                 message: "Huh. I actually don't know what to write. Never mind.",
             },
             {
                 name: "stone-gravel",
-                unlock: { totalResource: { pulverizersMaybe: 5 } },
+                unlock: { totalResource: { gravel: 15 } },
                 message: "Gravel. It's smaller than pebbles, and slides over itself easily. But it's not what we're looking for.",
             },
             {

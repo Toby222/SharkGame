@@ -1879,8 +1879,7 @@ SharkGame.HomeActions = {
             effect: {
                 resource: {
                     get science() {
-                        // return 4 + 4 * SharkGame.Aspects.beastAndBloom.level;
-                        return 4 * (1 + 0.01 * res.getResource("historian"));
+                        return (4 * SharkGame.Aspects.beastAndBloom.level) + 4 * (1 + 0.01 * res.getResource("historian"));
                     },
                 },
             },

@@ -300,7 +300,9 @@ SharkGame.HomeActions = {
             name: "Study sea apples",
             effect: {
                 resource: {
-                    science: 4,
+                    get science() {
+                        return 4 + 4 * SharkGame.Aspects.beastAndBloom.level;
+                    },
                 },
             },
             cost: [{ resource: "seaApple", costFunction: "constant", priceIncrease: 1 }],
@@ -1877,6 +1879,7 @@ SharkGame.HomeActions = {
             effect: {
                 resource: {
                     get science() {
+                        // return 4 + 4 * SharkGame.Aspects.beastAndBloom.level;
                         return 4 * (1 + 0.01 * res.getResource("historian"));
                     },
                 },
@@ -2618,7 +2621,9 @@ SharkGame.HomeActions = {
             name: "Dismantle jellyfish",
             effect: {
                 resource: {
-                    science: 4,
+                    get science() {
+                        return 4 + 4 * SharkGame.Aspects.beastAndBloom.level;
+                    },
                 },
             },
             cost: [{ resource: "jellyfish", costFunction: "constant", priceIncrease: 1 }],
@@ -3250,7 +3255,9 @@ SharkGame.HomeActions = {
             name: "Study sea apples",
             effect: {
                 resource: {
-                    science: 4,
+                    get science() {
+                        return 4 + 4 * SharkGame.Aspects.beastAndBloom.level;
+                    },
                 },
             },
             cost: [{ resource: "seaApple", costFunction: "constant", priceIncrease: 1 }],
@@ -4296,6 +4303,7 @@ SharkGame.HomeActions = {
             effect: {
                 resource: {
                     get science() {
+                        // return 4 + 4 * SharkGame.Aspects.beastAndBloom.level;
                         return SharkGame.Upgrades.purchased.includes("supernaturalSeagrass") ? 10 : 1;
                     },
                 },

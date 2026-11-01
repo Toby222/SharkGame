@@ -113,6 +113,38 @@ SharkGame.ResourceTable = {
         },
     },
 
+    // SAVED FOR LATER
+
+    coralglass: { // machine-making material; archived from original game -- ThreeEels
+        name: "coralglass",
+        singleName: "coralglass",
+        desc: "null",
+        color: "#FDD5B4",
+        value: 70,
+    },
+	filtrate: { // residue for the frenzy recycler
+		name: "filtrate",
+		singleName: "filtrate",
+		desc: "Eldritch alchemy.",
+		color: "1F1E1E",
+		value: 1,
+	},
+	knowledge: { // an idea base had
+		name: "knowledge",
+		singleName: "knowledge",
+		desc: "Fragments of thought.",
+		color: "#17BFD1",
+		value: 5,
+	},
+	joy: { // only accessible with the cheats
+		name: "joy",
+		singleName: "joy",
+		desc: "Distributed dopamine.",
+		color: "#FFDF22",
+		value: 5,
+	},
+
+
     // ASPECT SACRIFICES (for Arcane Assistance aspect)
 
     jellyAspectSacrifice: {
@@ -584,16 +616,6 @@ SharkGame.ResourceTable = {
             calcinium: 120,
         },
         value: 1500,
-    },
-
-    // SAVED FOR LATER
-
-    coralglass: {
-        name: "coralglass",
-        singleName: "coralglass",
-        desc: "null",
-        color: "#FDD5B4",
-        value: 70,
     },
 
     // volcanic
@@ -1355,6 +1377,13 @@ SharkGame.GeneratorIncomeAffectorsOriginal = {
             fishMachine: 0.01,
         },
     },
+	/* joy: {
+		multiply: {
+			shark: 0.01,
+			ray: 0.01,
+			crab: 0.01,
+		},
+	}, */
     // cool tooltip test crab
     /*     crab: {
         exponentiate: {
@@ -1436,6 +1465,11 @@ SharkGame.ResourceIncomeAffectorsOriginal = {
             science: 0.01,
         },
     },
+	/* knowledge: {
+		multiply: {
+			science: 0.01,
+		},
+	}, */
     scholar: {
         multiply: {
             arcana: 0.01,
@@ -1507,6 +1541,22 @@ SharkGame.ResourceCategories = {
         disposeMessage: ["Oh you'd like that, wouldn't you."],
         resources: ["tar", "ice"],
     },
+	mental: {
+		name: "Mental",
+		disposeMessage: [
+			"Ah, so you'll just forget about it, then.",
+			"Bury it in the back of your mind, will you?",
+			"Go on then. See if you care about it anymore.",
+			"Was it not good enough?",
+			"No-one else will forget it, you know?",
+			// "They still believe it's worth remembering.",
+			// "It's still precious to them.",
+			"It'll come back sooner or later.",
+			"You can't bury it forever.",
+			// "You'll remember. Even if I have to make you remember.",
+		],
+		resources: ["knowledge", "joy"],
+	},
     scientific: {
         name: "Science",
         disposeMessage: [
@@ -1596,7 +1646,7 @@ SharkGame.ResourceCategories = {
             "The foundation of a modern shark frenzy, perhaps, but also sort of taking up all the space.",
             "Let's hope we don't regret it.",
         ],
-        resources: ["sharkonium", "coralglass", "delphinium", "spronge", "calcinium", "porite", "ancientPart", "junk", "filter"],
+        resources: ["sharkonium", "coralglass", "delphinium", "spronge", "calcinium", "porite", "ancientPart", "junk", "filter", "filtrate"],
     },
     breeders: {
         name: "Breeders",

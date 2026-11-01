@@ -4302,8 +4302,7 @@ SharkGame.HomeActions = {
             effect: {
                 resource: {
                     get science() {
-                        // return 4 + 4 * SharkGame.Aspects.beastAndBloom.level;
-                        return SharkGame.Upgrades.purchased.includes("supernaturalSeagrass") ? 10 : 1;
+			            return SharkGame.Upgrades.purchased.includes("supernaturalSeagrass") ? 10 * SharkGame.Aspects.beastAndBloom.level + 10 : 1 * SharkGame.Aspects.beastAndBloom.level + 1;
                     },
                 },
             },

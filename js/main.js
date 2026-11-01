@@ -917,8 +917,18 @@ SharkGame.Button = {
 
 SharkGame.Changelog = {
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 12345678a": [
-        "Added five new aspects, courtesy of Three Eels in a Jellyfish Coat! More will be released soon enough.", // once i figure them out -- Three Eels
+        "Added six new aspects, courtesy of Three Eels in a Jellyfish Coat!",
+		"Added quite a few miscellaneous messages! Two new gateway messages and two new Minute Hand messages.",
+		"Added some new random tab names.",
+		"Fixed some typos.",
     ],
+	// below changelog entry was scrapped
+    /* "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 12345678a": [
+        "Added new aspects! Two boost the income of certain resources, one boosts the efficiency of a world's unique frenzy members, and the last one does something special.",
+        "Added a new gateway message for Frigid, and a new loss gateway message.",
+        "Added some new random tab names.",
+        "<i>All changes here have been brought to you by Three Eels in a Jellyfish Coat. Remember my name; something bigger is coming.</i>",
+    ], */
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20260929a": [
         "Fix typos in various facts thanks to BlazingPhonex",
         "Add some (as of yet unused) sprites",

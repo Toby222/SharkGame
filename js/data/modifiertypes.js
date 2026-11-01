@@ -609,27 +609,6 @@ SharkGame.ModifierTypes = {
                     return input > 0 ? input * outDegree : input;
                 },
             },
-            /* dancingLeaves: {
-                defaultValue: 1,
-                apply(current, degree, resource) {
-                    const incomes = SharkGame.ResourceMap.get(resource).income;
-                    $.each(incomes, (resouceId, income) => {
-                        if (income > 0 && resouceId !== "tar") {
-                            incomes[resouceId] = income * degree;
-                        }
-                    });
-                    return current * degree;
-                },
-                effectDescription(degree, resource, background) {
-                    return sharktext.getResourceName(resource, undefined, undefined, background) + " efficiency × " + degree;
-                },
-                getEffect(genDegree, _outDegree, gen, out) {
-                    return SharkGame.ResourceMap.get(gen).income[out] > 0 && out !== "tar" ? genDegree : 1;
-                },
-                applyToInput(input, genDegree, _outDegree, _gen, out) {
-                    return input * (input > 0 && out !== "tar" ? genDegree : 1);
-                },
-            }, */
             constructedConception: {
                 defaultValue: 1,
                 apply(current, degree, resource) {

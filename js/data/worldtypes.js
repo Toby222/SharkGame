@@ -395,7 +395,13 @@ SharkGame.WorldTypes = {
             longDesc: "A shifting ocean of coarse sand - a wall of it on one side and a storm of it on the other. It seems that to thrive here, one must venture beyond.",
             missing: ["kelp", "laser", "sandDigger"],
             present: ["mudskipper", "caracara", "driftwood", /* "coral", */"seagrass"],
-            tip: "This world has rough sand, which will slowly devour the frenzy.<br>Be vigilant of how many resources you have left.",
+            get tip() {
+                return (
+                    "This world has " +
+                    sharktext.getResourceName("roughSand", undefined, undefined, sharkcolor.getElementColor("pane")) +
+                    ", which will harm the frenzy, grind mechanisms to a halt, and ravage the seabed."
+                );
+            },
         },
         entry: "Rough sand pelts your skin, and swirling clouds of sand obscure your vision. No time for pondering - not that you can remember much, anyway.",
         style: "shore",

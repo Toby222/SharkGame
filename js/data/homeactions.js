@@ -4791,7 +4791,6 @@ SharkGame.HomeActions = {
                 "An olive ridley sea turtle joins you.",
                 "A kemp's ridley sea turtle joins you.",
                 "Recruited a sea turtle.",
-                "Recruited a tortoise.",
             ],
             multiOutcomes: [
                 "Some sea turtles join you.",

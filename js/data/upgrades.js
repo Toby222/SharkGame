@@ -511,7 +511,7 @@ SharkGame.Upgrades = {
         crystalContainer: {},
         statsDiscovery: { cost: { science: 75 } },
         underwaterChemistry: {},
-        seabedGeology: { effect: { incomeMultiplier: { ray: 2 } } },
+        seabedGeology: {},
         thermalVents: {
             cost: {
                 science: 500,
@@ -2637,7 +2637,7 @@ SharkGame.Upgrades = {
             name: "Calcinium Cybernetics",
             desc: "Robot tools are great and all, but they're pretty dumb on their own. We could do better if we learned to control them.",
             researchedMessage:
-                "A bundle of crumpled blueprints and a few moralely dubious experiments later, brains can now interface with calcinium machines. Future!",
+                "A bundle of crumpled blueprints and a few morally dubious experiments later, brains can now interface with calcinium machines. Future!",
             effectDesc:
                 "Clam scavengers are twice as effective and seabed strippers are four times as effective. Also, we can make calcinium converters??",
             cost: {

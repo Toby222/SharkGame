@@ -4536,7 +4536,7 @@ SharkGame.Upgrades = {
             cost: { },
             required: { },
             effect: { },
-	    events: [],
+        events: [],
         }, */
         /// ///// BASICS /////////////////////////////
         flee: {
@@ -4547,7 +4547,7 @@ SharkGame.Upgrades = {
             cost: {
                 fish: 250,
             },
-            events: ["shoreGiveSeagrass", "shoreNarrowSpace", "shoreWipeSandstormSand",],
+            events: ["shoreGiveSeagrass", "shoreNarrowSpace", "shoreWipeSandstormSand"],
         },
         crystalBite: {
             name: "Crystal Bite-Gear",
@@ -4625,7 +4625,7 @@ SharkGame.Upgrades = {
                 },
             },
         },
-    	fleeBarrage: {
+        fleeBarrage: {
             name: "Flee Barrage",
             desc: "Forget the tools, this sandstorm will kill us all. We need to leave.",
             researchedMessage: "No. No, no, no. There must be an exit. There must be!",
@@ -4636,11 +4636,11 @@ SharkGame.Upgrades = {
                 scientist: 3,
             },
             required: {
-        	upgrades: ["crystalContainer"],
+            upgrades: ["crystalContainer"],
             },
             effect: {},
         },
-    	justPushFurtherLol: {
+        justPushFurtherLol: {
             name: "Our Only Choice...",
             desc: "...is to push forward.",
             researchedMessage: "It worked. It worked. I can't believe it.",
@@ -4702,7 +4702,7 @@ SharkGame.Upgrades = {
             effect: {
                 incomeMultiplier: {
                     scientist: 2,
-		    crab: 2,
+                    crab: 2,
                 },
             },
         },
@@ -4730,7 +4730,7 @@ SharkGame.Upgrades = {
             },
             required: {
                 upgrades: ["sunObservation"],
-		seen: ["caracara"],
+                seen: ["caracara"],
             },
         },
 
@@ -4847,7 +4847,7 @@ SharkGame.Upgrades = {
             },
             required: {
                 upgrades: ["automation"],
-                seen: ["fishMachine", "crystalMiner"/* , "sandDigger"*/],
+                seen: ["fishMachine", "crystalMiner"/* , "sandDigger" */],
             },
             effect: {
                 incomeMultiplier: {
@@ -5017,7 +5017,7 @@ SharkGame.Upgrades = {
             required: {
                 upgrades: ["sunObservation"],
             },
-	    // events: ["shoreGiveDriftwood"],
+            // events: ["shoreGiveDriftwood"],
         },
         mudskipperContact: {
             name: "Mudskipper Capture",
@@ -5062,7 +5062,7 @@ SharkGame.Upgrades = {
                 fish: 2500,
             },
             required: {
-                upgrades: [/* "hardbarkCoating",*/"statsDiscovery", "agriculture"],
+                upgrades: [/* "hardbarkCoating", */"statsDiscovery", "agriculture"],
             },
         },
         crystalTalons: {
@@ -5096,14 +5096,14 @@ SharkGame.Upgrades = {
             required: {
                 upgrades: ["sunObservation"],
             },
-	    effect: {
-	        addSandIncome: {
-		    seagrass: 0.00001,
-		},
-	        addRoughSandIncome: {
-		    seagrass: -0.00001,
-		},
-	    },
+            effect: {
+                addSandIncome: {
+                    seagrass: 0.00001,
+                },
+                addRoughSandIncome: {
+                    seagrass: -0.00001,
+                },
+            },
         },
         sunObservation: {
             name: "Sun Observation",
@@ -5137,8 +5137,8 @@ SharkGame.Upgrades = {
                 upgrades: ["thermalVents"],
             },
         }, */ // maybe? 22/9/26: no, they make shore quellers redundant
-	memorization: {
-	    name: "Memorization",
+        memorization: {
+            name: "Memorization",
             desc: "The mudskippers yap a lot about their oral tales and don't seem to know how to shut up. But they do have better memories than ours.",
             researchedMessage: "If we drill our research into their brains, mudskippers can repeat the things we forget. Useful.",
             effectDesc: "Mudskippers can learn shark research, and regurgitate it upon command. Scientists are four times faster now.",
@@ -5155,41 +5155,41 @@ SharkGame.Upgrades = {
                 },
             },
         },
-	breedingBurrows: {
-	    name: "Birth Burrows", // hospital burrows, maybe?
+        breedingBurrows: {
+            name: "Birth Burrows", // hospital burrows, maybe?
             desc: "Mudskippers multiply like plants while our nurses and broods suffer. What's the deal?",
             researchedMessage: "Turns out these burrows of theirs shield them from rough sand. We've constructed some for our breeders already, and now they raise five times as many creatures as they used to.",
             effectDesc:
                 "Breeders now live in burrows, where they're shielded from the storm. They work five times as efficiently as a result. Safety!",
             cost: {
                 science: 7500,
-		sand: 25000,
+                sand: 25000,
             },
             required: {
                 upgrades: ["mudskipperBurrowing"],
-		seen: ["nurse", "maker", "brood", "burrow"],
+                seen: ["nurse", "maker", "brood", "burrow"],
             },
             effect: {
                 incomeMultiplier: {
                     nurse: 5,
-		    // maker: 5,
-		    brood: 5,
+                    // maker: 5,
+                    brood: 5,
                 },
             },
         },
-	sandSifting: {
-	    name: "Sand Sifting",
+        sandSifting: {
+            name: "Sand Sifting",
             desc: "Our farms don't produce as much seagrass as we'd like them to. The grass itself seems fine, so it's probably the sand.",
             researchedMessage: "If we separate the normal sand from the rough sand in a big holey bowl, we can grow twice as much seagrass!",
             effectDesc: "Sifting now separates ideal sand from unideal sand. The farms grow twice as much now.",
             cost: {
                 science: 7500,
-		sand: 35000,
-		seagrass: 350,
+                sand: 35000,
+                seagrass: 350,
             },
             required: {
                 upgrades: ["agriculture"],
-		seen: ["seagrassFarm"],
+                seen: ["seagrassFarm"],
             },
             effect: {
                 incomeMultiplier: {
@@ -5227,7 +5227,7 @@ SharkGame.Upgrades = {
             },
             required: {
                 upgrades: ["exploration"],
-		seen: ["safeholdSentinel", "caracara"],
+                seen: ["safeholdSentinel", "caracara"],
             },
             effect: {
                 incomeMultiplier: {
@@ -5263,13 +5263,13 @@ SharkGame.Upgrades = {
             },
             // effect: { }, // I just had a cool idea for a 'truce' resource that boosts income, but nah -- Three Eels
         }, */
-	documentation: {
-	    name: "Documentation",
+        documentation: {
+            name: "Documentation",
             desc: "The mudskippers love their oral tales, and now, their research, but they never write any of it down.",
             researchedMessage: "We introduced the concept of writing to them. They seem a little confused about it, but now they work six times faster.",
             effectDesc: "Mudskippers have been taught the art of the written language. We should've done this way earlier.",
             cost: {
-		seagrass: 15000,
+                seagrass: 15000,
                 science: 1e7,
             },
             required: {
@@ -5309,14 +5309,14 @@ SharkGame.Upgrades = {
                 },
             },
         },
-	/* betterGeology: {
+        /* betterGeology: {
             name: "Improved Geology",
             desc: "At the shorefront, the rays couldn't make learn as much about sand as they'd have liked to. Since the ground here is safer, we'll give it another shot.",
             researchedMessage: "There's a lot about sand we didn't know! Did you know that sand isn't normally rough?",
             effectDesc: "With their new and improved definition of geology, rays and ray makers work twice as efficiently.",
             cost: {
                 science: 2e7,
-		sand: 5e6,
+                sand: 5e6,
             },
             required: {
                 upgrades: ["farExploration"],
@@ -5324,7 +5324,7 @@ SharkGame.Upgrades = {
             effect: {
                 incomeMultiplier: {
                     ray: 2,
-		    maker: 2,
+                    maker: 2,
                 },
             },
         }, */
@@ -5339,7 +5339,7 @@ SharkGame.Upgrades = {
             },
             required: {
                 upgrade: ["farExploration"],
-		seen: ["caracara"],
+                seen: ["caracara"],
             },
             effect: {
                 incomeMultiplier: {
@@ -5378,7 +5378,7 @@ SharkGame.Upgrades = {
             },
             // effect: {},
         },
-	skySwimming: {
+        skySwimming: {
             name: "Sky Swimming",
             desc: "The caracaras move through the sky similarly to how we move through water. They're graceful enough, but they could use some tricks.",
             researchedMessage: "We had to adapt the tricks (sky is apparently very insubstantial), but it worked. Caracaras are four times as efficient now!",
@@ -5388,13 +5388,13 @@ SharkGame.Upgrades = {
             },
             required: {
                 upgrades: ["beyondwalkerPairing"],
-		seen: ["caracara"],
+                seen: ["caracara"],
             },
             effect: {
                 incomeMultiplier: {
                     caracara: 4,
-		    retrievalDuo: 4,
-		    connoisseur: 4,
+                    retrievalDuo: 4,
+                    connoisseur: 4,
                 },
             },
         },
@@ -5409,7 +5409,7 @@ SharkGame.Upgrades = {
             },
             required: {
                 upgrades: ["beyondwalkerPairing"],
-		seen: ["retrievalDuo"],
+                seen: ["retrievalDuo"],
             },
             // effect: {},
         },
@@ -5437,7 +5437,7 @@ SharkGame.Upgrades = {
             },
             required: {
                 upgrades: ["taleHeeding"],
-		seen: ["barrageBraver"],
+                seen: ["barrageBraver"],
             },
             effect: {
                 addIntelIncome: {
@@ -5466,7 +5466,7 @@ SharkGame.Upgrades = {
             },
             required: {
                 upgrades: ["taleHeeding"],
-		seen: ["barrageBraver"],
+                seen: ["barrageBraver"],
             },
             // effect: {},
             // events: [],
@@ -5549,7 +5549,7 @@ SharkGame.Upgrades = {
                     hardbarkSmith: 7,
                     seagrassFarm: 7,
                     exchangeStation: 7,
-		},
+                },
             },
         },
         fullGatemaster: {

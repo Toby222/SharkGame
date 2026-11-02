@@ -15,11 +15,11 @@ SharkGame.Lab = {
                 return "img/events/misc/scene-lab.png";
             case "volcanic":
                 return "img/events/misc/scene-volcanic-lab.png";
-			case "chaotic":
-		        if (res.getTotalResource("snailBotanist") < 1 && res.getTotalResource("snailGeologist") < 1 && res.getTotalResource("snailMalacologist") < 1) {
+            case "chaotic":
+                if (res.getTotalResource("snailBotanist") < 1 && res.getTotalResource("snailGeologist") < 1 && res.getTotalResource("snailMalacologist") < 1) {
                     return "";
                 }
-				return "img/events/misc/scene-chaotic-lab.png";
+                return "img/events/misc/scene-chaotic-lab.png";
             default:
                 return "img/events/misc/scene-lab.png";
         }
@@ -58,8 +58,8 @@ SharkGame.Lab = {
                 return "Sort of just off to the side, the science sharks congregate and discuss things with words you've never heard before.";
             case "volcanic":
                 return "Sort of just off to the side, a group of curious crabs congregate and discuss stuff that we don't understand.";
-			case "chaotic":
-			    if (res.getTotalResource("snailBotanist") < 1 && res.getTotalResource("snailGeologist") < 1 && res.getTotalResource("snailMalacologist") < 1) {
+            case "chaotic":
+                if (res.getTotalResource("snailBotanist") < 1 && res.getTotalResource("snailGeologist") < 1 && res.getTotalResource("snailMalacologist") < 1) {
                     return "Sort of just off to the side, there's a cave.";
                 }
                 return "Sort of just off to the side, a group of passionate snails congregate and discuss stuff that we don't understand.";

@@ -518,7 +518,7 @@ SharkGame.HomeMessages = {
         chaotic: [
             {
                 name: "chaotic-default",
-                message: "The fish here don’t even notice your presence. They appear to phase in and out of existence periodically.",
+                message: "The fish here don't even notice your presence. They appear to phase in and out of existence periodically.",
             },
             {
                 name: "chaotic-fishfail",
@@ -532,7 +532,7 @@ SharkGame.HomeMessages = {
                         return SharkGame.flags.chaoticGotClam;
                     },
                 },
-                message: "You spot some weird rock things moving in the distance. If you can’t catch any fish, maybe you can at least catch… those.",
+                message: "You spot some weird rock things moving in the distance. If you can't catch any fish, maybe you can at least catch… those.",
             },
             {
                 name: "chaotic-snail",
@@ -547,7 +547,7 @@ SharkGame.HomeMessages = {
             {
                 name: "chaotic-turtle",
                 unlock: { totalResource: { turtle: 1 } },
-                message: "The turtles drift wherever the current takes them. They seem surprised to see a shell-less creature who hasn’t 'faded'. Their words, not ours.",
+                message: "The turtles drift wherever the current takes them. They seem surprised to see a shell-less creature who hasn't 'faded'. Their words, not ours.",
             },
             {
                 name: "chaotic-turtlehelpless",
@@ -567,7 +567,7 @@ SharkGame.HomeMessages = {
             {
                 name: "chaotic-echo",
                 unlock: { totalResource: { echo: 1 } },
-                message: "The echos stare at you with many, everchanging faces. The turtles don't see this as the solution they've been looking for.",
+                message: "The echos stare at you with many everchanging faces. The turtles don't see this as the solution they've been looking for.",
             },
             {
                 name: "chaotic-needs-repair",

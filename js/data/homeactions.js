@@ -4711,7 +4711,7 @@ SharkGame.HomeActions = {
                 "Caught the catching of a fish.",
                 "Caught the hunger of a fish.",
                 "Caught the wisp of a fish.",
-                "Caught the         of a fish",
+                "Caught the &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; of a fish",
                 "Caught the mind of a fish.",
                 "Caught the soul of a fish.",
                 "Caught the body of a fis- nope nevermind.",

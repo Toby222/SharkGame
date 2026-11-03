@@ -379,7 +379,6 @@ SharkGame.WorldTypes = {
             "coral",
             "sharkmachines",
             "essence",
-            // "wispCumulator",
             "basicmaterials",
             "fakeFish",
             "world",

@@ -4711,7 +4711,7 @@ SharkGame.HomeActions = {
                 "Caught the catching of a fish.",
                 "Caught the hunger of a fish.",
                 "Caught the wisp of a fish.",
-                "Caught the         of a fish",
+                "Caught the &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; of a fish",
                 "Caught the mind of a fish.",
                 "Caught the soul of a fish.",
                 "Caught the body of a fis- nope nevermind.",
@@ -4791,7 +4791,6 @@ SharkGame.HomeActions = {
                 "An olive ridley sea turtle joins you.",
                 "A kemp's ridley sea turtle joins you.",
                 "Recruited a sea turtle.",
-                "Recruited a tortoise.",
             ],
             multiOutcomes: [
                 "Some sea turtles join you.",
@@ -5112,7 +5111,7 @@ SharkGame.HomeActionCategories = {
 
     basic: {
         name: "Basic",
-        actions: ["catchFish", "debugbutton", "prySponge", "prySponge2", "getClam", "getJellyfish", "fakeCatchFish", "catchWisp"],
+        actions: ["catchFish", "debugbutton", "prySponge", "prySponge2", "getClam", "getJellyfish", "catchWisp"],
     },
 
     frenzy: {
@@ -5231,7 +5230,6 @@ SharkGame.HomeActionCategories = {
             // "getCrusher",
             // "getPulverizer",
             "getHeater",
-            // "getWispCumulator", Depreicated
         ],
     },
 

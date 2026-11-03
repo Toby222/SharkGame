@@ -344,7 +344,7 @@ SharkGame.WorldTypes = {
         },
         par: 45,
     },
-    template: { // this version updated by Three Eels
+    template: {
         name: "template",
         vagueDesc: "feels ______", // before scouting
         desc: "description in gateway", // after you've scouted it

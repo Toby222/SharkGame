@@ -31,5 +31,8 @@
     },
     "simple-git-hooks": {
         "pre-commit": "npm test"
+    },
+    "allowScripts": {
+        "simple-git-hooks@2.14.0": true
     }
 }

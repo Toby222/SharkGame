@@ -6,7 +6,7 @@ SharkGame.Gateway = {
     transitioning: false,
     selectedWorld: "",
 
-    allowedWorlds: ["abandoned", "haven", "frigid", "shrouded", "marine", "volcanic", "tempestuous"],
+    allowedWorlds: ["abandoned", "haven", "frigid", "shrouded", "marine", "volcanic", "tempestuous", "chaotic"],
 
     completedWorlds: [],
 
@@ -1215,6 +1215,7 @@ SharkGame.Gateway.PresenceFeelings = {
     sponge: "porous things?",
     jellyfish: "squishy things?",
     coral: "colorful things?",
+    wisp: "incorporeal things?",
     dolphin: "annoying scholars?",
     whale: "wise scholars?",
     octopus: "logical entities?",
@@ -1228,6 +1229,8 @@ SharkGame.Gateway.PresenceFeelings = {
     algae: "something slimy?",
     seagrass: "some plants?",
     billfish: "resolute survivalists?",
+    snail: "withdrawn dreamers?",
+    turtle: "detached wanderers?",
 };
 
 SharkGame.Gateway.Messages = {
@@ -1337,6 +1340,13 @@ SharkGame.Gateway.Messages = {
             "Tell me: Where do you see the line between friend and food? The urchins are as simple-minded as the fish.",
             "Do you wonder who the squid look up to?",
             "Do you wonder who built the great machine?",
+        ],
+        chaotic: [
+            "Do you wonder why you remained corporeal?",
+            "Did you recognise any of the echos' many faces?",
+            "Will you one day surrender to the current, just as the turtles did?",
+            "The snails always had the potential, they just needed your support.",
+            "You too, are a creature of potential.",
         ],
     },
     loss: [

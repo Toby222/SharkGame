@@ -95,7 +95,7 @@ SharkGame.HomeMessageSprites = {
             h: 200,
         },
     },
-    "home/chaotic-ocean-fishfail": {
+    "home/chaotic-fishfail": {
         frame: {
             x: 0,
             y: 800,

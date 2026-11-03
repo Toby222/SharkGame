@@ -1377,13 +1377,13 @@ SharkGame.GeneratorIncomeAffectorsOriginal = {
             fishMachine: 0.01,
         },
     },
-	/* joy: {
+	joy: {
 		multiply: {
-			shark: 0.01,
-			ray: 0.01,
-			crab: 0.01,
+			shark: 0.001,
+			ray: 0.001,
+			crab: 0.001,
 		},
-	}, */
+	},
     // cool tooltip test crab
     /*     crab: {
         exponentiate: {
@@ -1465,11 +1465,11 @@ SharkGame.ResourceIncomeAffectorsOriginal = {
             science: 0.01,
         },
     },
-	/* knowledge: {
+	knowledge: {
 		multiply: {
-			science: 0.01,
+			science: 0.001,
 		},
-	}, */
+	},
     scholar: {
         multiply: {
             arcana: 0.01,

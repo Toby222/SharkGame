@@ -4542,8 +4542,8 @@ SharkGame.Upgrades = {
                 seen: ["clam"],
             },
         },
-        snailAquatences: {
-            name: "Snail Aquatences",
+        snailAcquaintances: {
+            name: "Snail Acquaintances",
             desc: "Our first meeting with the snails was a bit awkward… maybe we should try to reconcile?",
             researchedMessage: "We hardly said a word before the snails began relentlessly reassuring us that they were happy and didn’t mind what we did. At least it seems to have motivated them.",
             effectDesc: "The snails seem to want to prove themselves to us. They’ve been working twice as hard.",
@@ -4795,8 +4795,8 @@ SharkGame.Upgrades = {
         },
         turtleBiology: {
             name: "Turtle Biology",
-            desc: "Where do turtles come from anyways? It seems as if they just appear out of thin air!",
-            researchedMessage: "Apparently when turtles just abandon their eggs somewhere near the surface of the water! How can they be that carefree about their young?",
+            desc: "Where do turtles come from anyways? It seems as if they just spontaneously appear!",
+            researchedMessage: "Apparently turtles just abandon their eggs somewhere near the surface of the water! How can they be that carefree about their young?",
             effectDesc: "We can now assign turtles to go rally up any baby turtles that managed to make it into the ocean.",
             cost: {
                 science: 5000,
@@ -4876,6 +4876,7 @@ SharkGame.Upgrades = {
             },
         },
         engineering: {
+            effectDesc: "Machines are twice as effective. Auto-transmuters are now possible to create.",
             effect: {
                 incomeMultiplier: {
                     crystalMiner: 2,

@@ -231,7 +231,7 @@ SharkGame.Aspects = {
             tree.handleClickedAspect(this);
         },
     },
-    pathOfLoyalty: { // old name: pathOfResearch
+    pathOfLoyalty: { // old name concept: pathOfResearch
         posX: 450,
         posY: 450,
         width: 40,
@@ -241,7 +241,7 @@ SharkGame.Aspects = {
         level: 0,
         name: "Path of Loyalty",
         description: "Good leadership attracts lasting effects, and undying loyalty.",
-	    // old desc: "Knowledge leads to curiosity, and curiosity leads to progress, and progress leads to ascension."
+	    // old desc concept: "Knowledge leads to curiosity, and curiosity leads to progress, and progress leads to ascension."
         getCost(level) {
             return 3 * level + 2;
         },
@@ -269,13 +269,6 @@ SharkGame.Aspects = {
         apply(when) {
             if (when === "init") {
                 res.applyModifier("aspectResourceIncomeBoost", "sand", this.level + 1);
-                // res.applyModifier("pathOfLoyalty", "ray", this.level + 0.5);
-                // res.applyModifier("pathOfLoyalty", "sandDigger", this.level + 1);
-                // res.applyModifier("pathOfLoyalty", "eel", this.level + 1);
-                // res.applyModifier("pathOfLoyalty", "sifter", this.level + 0.5);
-                // res.applyModifier("pathOfLoyalty", "urchin", this.level + 0.5);
-                // res.applyModifier("pathOfLoyalty", "miller", this.level + 1);
-                // res.applyModifier("pathOfLoyalty", "pulveriser", this.level + 1);
             }
         },
     },
@@ -983,14 +976,6 @@ SharkGame.Aspects = {
             if (when === "init") {
                 res.applyModifier("aspectResourceIncomeBoost", "kelp", this.level + 1);
                 res.applyModifier("aspectResourceIncomeBoost", "seagrass", this.level + 1);
-                // res.applyModifier("dancingLeaves", "planter", this.level + 1);
-                // res.applyModifier("dancingLeaves", "stormgoer", this.level + 1);
-                // res.applyModifier("dancingLeaves", "stabilizer", this.level + 1);
-                // res.applyModifier("dancingLeaves", "seagrassFarm", this.level + 1);
-                // res.applyModifier("dancingLeaves", "urchin", this.level + 0.5);
-                // res.applyModifier("dancingLeaves", "connoisseur", this.level + 1);
-                // res.applyModifier("dancingLeaves", "seagrassPicker", this.level + 1);
-                // res.applyModifier("dancingLeaves", "shoreQueller", this.level + 0.25);
             }
         },
     },

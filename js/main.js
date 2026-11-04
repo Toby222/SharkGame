@@ -921,6 +921,9 @@ SharkGame.Changelog = {
 		"Added quite a few miscellaneous messages! Two new gateway messages and two new Minute Hand messages.",
 		"Added some new random tab names.",
 		"Fixed some typos.",
+    "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20261103a": [
+        "Add a reimagined Chaotic world back into the game, courtesy of <a href='https://github.com/glowkate'>Glowkate</a>",
+        "Fix several typos",
     ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20260929a": [
         "Fix typos in various facts thanks to BlazingPhonex",

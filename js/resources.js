@@ -813,7 +813,7 @@ SharkGame.Resources = {
             "Everything seems to get faster.",
             "Your vision warps as time bends.",
             "The hands of a nearby clock speed up.",
-            "Frenzy members acclerate around you.",
+            "Frenzy members accelerate around you.",
             "You feel strange. Everything feels wrong. It's so fast.",
             "A strange feeling washes over you, and everything around you speeds up.",
             "You feel your mind twisting. Churning. Everything seems so fast.",
@@ -845,6 +845,8 @@ SharkGame.Resources = {
             "You simply float right where you are, still coming to your senses.",
             "Your vision sharpens. Your senses are keen. You can feel everything again.",
             "You come back from the brink, exhaustion replaced by energy and enthusiasm.",
+            "The raging force that drove it all in circles is gone. The frenzy chats amicably as if nothing happened.",
+            "The storm of sights and sound dissipates. Serenity washes over your mind.",
         ],
 
         allowMinuteHand() {

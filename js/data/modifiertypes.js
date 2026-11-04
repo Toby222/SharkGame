@@ -647,6 +647,28 @@ SharkGame.ModifierTypes = {
                     return input * (input > 0 && out !== "tar" ? genDegree : 1);
                 },
             },
+            aspectResourceIncomeBoost: { // used for aspects which boost the generation of a base resource, e.g. sand or kelp
+                defaultValue: 1,
+                apply(current, degree, boostedResource) {
+                    SharkGame.ResourceMap.forEach((generatingResource) => {
+                        $.each(generatingResource.income, (generatedResource, amount) => {
+                            if (generatedResource === boostedResource && amount > 0) {
+                                generatingResource.income[generatedResource] = amount * degree;
+                            }
+                        });
+                    });
+                    return current * degree;
+                },
+                effectDescription(degree, resource, background) {
+                    return "All " + sharktext.getResourceName(resource, undefined, undefined, background) + " production × " + degree;
+                },
+                getEffect(_genDegree, outDegree, gen, out) {
+                    return SharkGame.ResourceMap.get(gen).income[out] > 0 && out !== "tar" ? outDegree : 1;
+                },
+                applyToInput(input, _genDegree, outDegree, _gen, _out) {
+                    return input > 0 ? input * outDegree : input;
+                },
+            },
             constructedConception: {
                 defaultValue: 1,
                 apply(current, degree, resource) {

@@ -1250,8 +1250,8 @@ SharkGame.ResourceTable = {
             stone: 0.5,
         },
         value: 2500,
-    }, */
-    /* shoveler: {
+    },
+    shoveler: {
         name: "shoveler rays",
         singleName: "shoveler ray",
         color: "#7792A3",
@@ -1259,8 +1259,8 @@ SharkGame.ResourceTable = {
             gravel: 1,
         },
         value: 3500,
-    }, */
-    /* miller: {
+    },
+    miller: {
         name: "miller crabs",
         singleName: "miller crab",
         color: "#473E3B",
@@ -1269,8 +1269,8 @@ SharkGame.ResourceTable = {
             sand: 0.2,
         },
         value: 2000,
-    }, */
-    /* rockLobster: {
+    },
+    rockLobster: {
         name: "rock lobsters",
         singleName: "rock lobster",
         color: "#9C706D",
@@ -1509,13 +1509,13 @@ SharkGame.GeneratorIncomeAffectorsOriginal = {
             fishMachine: 0.01,
         },
     },
-	  joy: {
-		    multiply: {
-			      shark: 0.001,
-			      ray: 0.001,
-			      crab: 0.001,
-		    },
-	  },
+	joy: {
+		multiply: {
+			shark: 0.001,
+			ray: 0.001,
+			crab: 0.001,
+		},
+	},
     turtleTransporter: {
         multiply: {
             snail: 0.01,
@@ -1901,7 +1901,7 @@ SharkGame.ResourceCategories = {
             "aspectAffect",
             "specialResourceOne",
             "specialResourceTwo",
-				    "fakeFish",
+			"fakeFish",
             "jellyAspectSacrifice",
             "clamAspectSacrifice",
             "spongeAspectSacrifice",

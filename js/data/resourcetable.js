@@ -1754,7 +1754,7 @@ SharkGame.ResourceCategories = {
             "aspectAffect",
             "specialResourceOne",
             "specialResourceTwo",
-			"fakeFish",
+				"fakeFish",
             "jellyAspectSacrifice",
             "clamAspectSacrifice",
             "spongeAspectSacrifice",

@@ -70,7 +70,7 @@ SharkGame.WorldTypes = {
             "sharkmachines",
             "clam",
             "lobstermachines",
-	    "clamAspectSacrifice",
+            "clamAspectSacrifice",
         ],
         absentResources: ["laser"],
         modifiers: [{ type: "multiplier", modifier: "planetaryResourceBoost", resource: "fish", amount: 2 }],
@@ -112,7 +112,7 @@ SharkGame.WorldTypes = {
             "dolphinmachines",
             "coral",
             "chorus",
-	    "coralAspectSacrifice",
+            "coralAspectSacrifice",
         ],
         absentResources: ["laser"],
         modifiers: [
@@ -148,7 +148,7 @@ SharkGame.WorldTypes = {
             "seagrass",
             "chart",
             "map",
-	    "seagrassAspectSacrifice",
+            "seagrassAspectSacrifice",
         ],
         absentResources: ["planter", "crystalMiner"],
         modifiers: [{ type: "multiplier", modifier: "planetaryIncomeMultiplier", resource: "sandDigger", amount: 24 }],
@@ -183,7 +183,7 @@ SharkGame.WorldTypes = {
             "sponge",
             "algae",
             "coral",
-	    "volcanicAspectSacrifice",
+            "volcanicAspectSacrifice",
         ],
         absentResources: ["crystal", "laser", "planter"],
         modifiers: [{ type: "multiplier", modifier: "planetaryFishMultiplier", resource: "ray", amount: 15 }],
@@ -237,7 +237,7 @@ SharkGame.WorldTypes = {
             "ancientPart",
             "world",
             "aspectAffect",
-            "spongeAspectSacrifice",		
+            "spongeAspectSacrifice",
         ],
         absentResources: ["kelp", "seaApple", "planter"],
         modifiers: [{ type: "multiplier", modifier: "planetaryIncome", resource: "tar", amount: -0.02 }],
@@ -278,7 +278,7 @@ SharkGame.WorldTypes = {
             "jellyfish",
             "sacrifice",
             "aspectAffect",
-	    "jellyAspectSacrifice",
+            "jellyAspectSacrifice",
         ],
         absentResources: ["laser"],
         modifiers: [{ type: "multiplier", modifier: "planetaryIncomeReciprocalMultiplier", resource: "scientist", amount: 1 }],
@@ -322,7 +322,7 @@ SharkGame.WorldTypes = {
             "essence",
             "world",
             "aspectAffect",
-	    "kelpAspectSacrifice",
+            "kelpAspectSacrifice",
         ],
         modifiers: [
             {
@@ -372,14 +372,14 @@ SharkGame.WorldTypes = {
         absentResources: ["knowledge", "tar", "ice", "heater", "chimaera"], // replace with resources that are essentially incapable of existing in the ocean
         modifiers: [{ type: "multiplier", modifier: "planetaryResourceBoost", resource: "fish", amount: 1.5 }], // for any world-applied multipliers/generation
         // gateType: "slots",
-	// the above field doesn't seem to do anything, nor is it present in the other worldtypes, so I removed it
+        // the above field doesn't seem to do anything, nor is it present in the other worldtypes, so I removed it
         gateRequirements: { // can also be an upgrade or the presence of a resource, e.g. the whale chorus
             slots: {
-		fish: 1,
+                fish: 1,
                 sand: 1,
                 crystal: 1,
                 kelp: 1,
-		seaApple: 1,
+                seaApple: 1,
                 sharkonium: 1,
             },
         },
@@ -421,13 +421,13 @@ SharkGame.WorldTypes = {
             "essence",
             "world",
             "aspectAffect",
-	    "seagrassAspectSacrifice",
+            "seagrassAspectSacrifice",
         ],
         absentResources: ["kelp", "seaApple", "laser", "planter", "sharkonium"],
         modifiers: [
             // { type: "multiplier", modifier: "planetaryIncomeMultiplier", resource: "crab", amount: 1 },
             // { type: "multiplier", modifier: "planetaryResourceBoost", resource: "sand", amount: 2.5 },
-	    // { type: "multiplier", modifier: "planetaryResourceBoost", resource: "crystal", amount: 2 },
+            // { type: "multiplier", modifier: "planetaryResourceBoost", resource: "crystal", amount: 2 },
             { type: "multiplier", modifier: "planetaryIncome", resource: "roughSand", amount: 1.75 },
         ],
         // gateType: "slots",

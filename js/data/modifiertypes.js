@@ -383,7 +383,7 @@ SharkGame.ModifierTypes = {
                     return input;
                 },
             },
-	        addIntelIncome: {
+            addIntelIncome: {
                 defaultValue: 0,
                 apply(current, degree, resource) {
                     if (!SharkGame.ResourceMap.get(resource).baseIncome) {
@@ -397,8 +397,8 @@ SharkGame.ModifierTypes = {
                     res.reapplyModifiers(resource, "intel");
                     return current + degree;
                 },
-                effectDescription(degree, resource, background) {
-                    return `Delve into the workings of the`;
+                effectDescription() {
+                    "Delve into the workings of the";
                 },
                 getEffect(_genDegree, _outDegree, _gen, _out) {
                     return 1;

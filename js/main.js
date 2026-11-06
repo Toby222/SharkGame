@@ -909,48 +909,48 @@ SharkGame.Button = {
 
 SharkGame.Changelog = {
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20261103a": [
-        "Add a reimagined Chaotic world back into the game, courtesy of <a href='https://github.com/glowkate'>Glowkate</a>",
-        "Fix several typos",
+        "Added a reimagined Chaotic world back into the game, courtesy of <a href='https://github.com/glowkate'>Glowkate</a>!",
+        "Fixed several typos.",
     ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20260929a": [
-        "Fix typos in various facts thanks to BlazingPhonex",
-        "Add some (as of yet unused) sprites",
+        "Fixed typos in various facts, thanks to BlazingPhonex.",
+        "Added some (as of yet unused) sprites.",
     ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20260623a": [
-        "Fix some sprites having the wrong size and rotation",
+        "Fixed some sprites having the wrong size and rotation.",
     ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20250630a": [
-        "Fix broken progression of Abandoned Ocean",
+        "Fixed broken progression of Abandoned Ocean.",
     ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20250629a": [
-        "Added a lot of missing sprites courtesy of <a href='https://github.com/glowkate'>Glowkate</a> and <a href='https://www.youtube.com/@biggestbrian'>BiggestBrian</a>",
+        "Added a lot of missing sprites, courtesy of <a href='https://github.com/glowkate'>Glowkate</a> and <a href='https://www.youtube.com/@biggestbrian'>BiggestBrian</a>.",
     ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20250127a": [
-        "Added a new home message sprite courtesy of <a href='https://github.com/glowkate'>Glowkate</a>.",
+        "Added a new home message sprite, courtesy of <a href='https://github.com/glowkate'>Glowkate</a>.",
     ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20241214a": [
-        "Added another 2 new sprites courtesy of <a href='https://github.com/glowkate'>Glowkate</a>.",
+        "Added another 2 new sprites, courtesy of <a href='https://github.com/glowkate'>Glowkate</a>.",
     ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20241128a": [
-        "Added another another new sprite courtesy of <a href='https://www.youtube.com/@WorkerDroneMainBattleTrain'>Main Battle Train</a>.",
-        "Added another 2 new sprites courtesy of <a href='https://github.com/glowkate'>Glowkate</a>.",
+        "Added another another new sprite, courtesy of <a href='https://www.youtube.com/@WorkerDroneMainBattleTrain'>Main Battle Train</a>.",
+        "Added another 2 new sprites, courtesy of <a href='https://github.com/glowkate'>Glowkate</a>.",
     ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20241119a": [
-        "Added another new sprite courtesy of <a href='https://www.youtube.com/@WorkerDroneMainBattleTrain'>Main Battle Train</a>.",
-        "Added another new sprite courtesy of <a href='https://github.com/glowkate'>Glowkate</a>.",
+        "Added another new sprite, courtesy of <a href='https://www.youtube.com/@WorkerDroneMainBattleTrain'>Main Battle Train</a>.",
+        "Added another new sprite, courtesy of <a href='https://github.com/glowkate'>Glowkate</a>.",
     ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20241106a": [
-        "Added a new sprite courtesy of <a href='https://www.youtube.com/@WorkerDroneMainBattleTrain'>Main Battle Train</a>.",
+        "Added a new sprite, courtesy of <a href='https://www.youtube.com/@WorkerDroneMainBattleTrain'>Main Battle Train</a>.",
     ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20240909a": [
-        "Added another one new sprite courtesy of <a href='https://github.com/glowkate'>Glowkate</a>!",
+        "Added another new sprite, courtesy of <a href='https://github.com/glowkate'>Glowkate</a>!",
         "Added a heap of new fun facts.",
     ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20240906a": [
-        "Added another 4 new sprites courtesy of <a href='https://github.com/glowkate'>Glowkate</a>!",
+        "Added another 4 new sprites, courtesy of <a href='https://github.com/glowkate'>Glowkate</a>!",
     ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20240819a": [
-        "Added another new sprite courtesy of <a href='https://github.com/glowkate'>Glowkate</a>.",
+        "Added another new sprite, courtesy of <a href='https://github.com/glowkate'>Glowkate</a>.",
     ],
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20240818a": [
         "Added another new home message image, courtesy of <a href='https://x.com/stormwalker124'>stormwalker</a>.",

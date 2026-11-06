@@ -207,24 +207,6 @@ SharkGame.HomeActions = {
             ],
             helpText: "Grab a sponge from the seabed for future use.",
         },
-        /* getSeagrass: {
-            name: "Tear seagrass",
-            effect: {
-                resource: {
-                    get seagrass() {
-                        return SharkGame.Aspects.apotheosis.level > 0 ? SharkGame.Aspects.apotheosis.level * 4 : 1;
-                    },
-                },
-            },
-            cost: {},
-            prereq: {
-                upgrade: ["seabedGeology"],
-        npm    },
-            outcomes: [
-                "Caught seagrass!",
-            ],
-            helpText: "Tear up a piece of seagrass from the sand below.",
-        }, */
 
         getClam: {
             name: "Get clam",
@@ -318,7 +300,9 @@ SharkGame.HomeActions = {
             name: "Study sea apples",
             effect: {
                 resource: {
-                    science: 4,
+                    get science() {
+                        return 4 + 4 * SharkGame.Aspects.beastAndBloom.level;
+                    },
                 },
             },
             cost: [{ resource: "seaApple", costFunction: "constant", priceIncrease: 1 }],
@@ -1899,7 +1883,7 @@ SharkGame.HomeActions = {
             effect: {
                 resource: {
                     get science() {
-                        return 4 * (1 + 0.01 * res.getResource("historian"));
+                        return (4 * SharkGame.Aspects.beastAndBloom.level) + 4 * (1 + 0.01 * res.getResource("historian"));
                     },
                 },
             },
@@ -2636,31 +2620,48 @@ SharkGame.HomeActions = {
         // FREEBIES //////////////////////////////////////
         catchFish: {},
         debugbutton: {},
-        /* getDriftwood: {
+        getDriftwood: {
             name: "Catch driftwood",
             effect: {
                 resource: {
                     get driftwood() {
-                        return SharkGame.Aspects.apotheosis.level > 0 ? SharkGame.Aspects.apotheosis.level * 4 : 0.25;
+                        return SharkGame.Aspects.apotheosis.level > 0 ? SharkGame.Aspects.apotheosis.level * 4 : 1
                     },
                 },
             },
             cost: {},
             prereq: {
-                upgrade: ["driftwoodAnalysis"],
-            },
+		upgrade: ["driftwoodAnalysis"],
+	    },
             outcomes: [
                 "Caught driftwood!",
+		"Driftwood caught!",
+		"No longer drifting!",
+		"Come down to the ocean, surface bobber!",
+		"Brought down a wide stick.",
+		"Brought down a long stick.",
+		"Brought down a short stick.",
+		"Brought down a sturdy stick.",
+		"Brought down a brittle stick.",
+		"Brought down a flaky stick.",
+		"Brought down a sticky stick.",
+		"Brought down a big stick.",
+		"Brought down a small stick.",
+		"Brought down what used to be a stick.",
+		"Broke a stick.",
+		"Stickman, stickman, beware of the shark!",
             ],
             helpText: "Snap up a piece of driftwood from the water's surface.",
-        }, */
+        },
 
         // PROCESSING ////////////////////////////////////
         seagrassToScience: {
             name: "Study seagrass flowers",
             effect: {
                 resource: {
-                    science: 5,
+                    get science() {
+                        return 4 + 4 * SharkGame.Aspects.beastAndBloom.level;
+                    },
                 },
             },
             cost: [{ resource: "seagrass", costFunction: "constant", priceIncrease: 2 }],
@@ -2698,19 +2699,24 @@ SharkGame.HomeActions = {
                 resource: {
                     sand: 5,
                 },
-                upgrade: ["thermalVents"],
+                upgrade: ["laserRays"],
             },
             outcomes: [
                 "Subjugate the sand!",
-                "Subject the sand to blinding light!",
-                "Burn the sand from existence!",
-                "Rain fiery light upon the grains!",
-                "Crystal, I summon thee!",
-                "Burn the sand, make the crystals!",
-                "Hmmmm-MMMM-mmmm...", // the dark crystal reference -- Three Eels
-                "Flow like waves, then harden like stone!",
+		"Subject the sand to blinding light!",
+		"Burn the sand from existence!",
+		"Rain fiery light upon the grains!",
+		"Crystal, I summon thee!",
+		"Burn the sand, make the crystals!",
+		"Hmmmm-MMMM-mmmm...", // the dark crystal reference -- Three Eels
+		"Flow like waves, then harden like stone!",
             ],
             helpText: "Use an energy-retaining laser to heat the sand into glassy crystal.",
+            removedBy: {
+                resource: {
+		    shoreQueller: 1,
+		},
+            },
         }, // end of processing code
 
         // MAKE ADVANCED RESOURCES ///////////////////////
@@ -2790,7 +2796,7 @@ SharkGame.HomeActions = {
                 "Yes, I suppose the crystal is really hard to coat with…",
                 "It’s… honestly a little impressive. For a fish, of course.",
                 // "Gah. I’ve made so many typos trying to spell hardbark.",
-                "help me I got some crystal stuck on me",
+                // "help me I got some crystal stuck on me",
                 "How did such a strong recipe end up with mudskippers...?",
             ],
             helpText: "Coat sturdy driftwood pieces with crystal to make hardbark.",
@@ -2858,76 +2864,6 @@ SharkGame.HomeActions = {
             ],
             helpText: "Recruit a shark to help catch more fish.",
         }, // end of creature code
-        getManta: {
-            name: "Hire ray",
-            effect: {
-                resource: {
-                    ray: 1,
-                },
-            },
-            cost: [{ resource: "fish", costFunction: "linear", priceIncrease: 15 }],
-            max: "ray",
-            prereq: {
-                resource: {
-                    shark: 5,
-                },
-            },
-            outcomes: [
-                "These guys seem to be kicking up a lot of sand!",
-                "A spotted eagle ray joins you.",
-                "A manta ray joins you.",
-                "A stingray joins you.",
-                "A clownnose ray joins you.",
-                "A bluespotted maskray joins you.",
-                "A bluntnose stingray joins you.",
-                "A oman masked ray joins you.",
-                "A bulls-eye electric ray joins you.",
-                "A shorttailed electric ray joins you.",
-                "A bentfin devil ray joins you.",
-                "A lesser electric ray joins you.",
-                "A cortez electric ray joins you.",
-                "A feathertail stingray joins you.",
-                "A thornback ray joins you.",
-                "A giant shovelnose ray joins you.",
-                "A pacific cownose ray joins you.",
-                "A bluespotted ribbontail ray joins you.",
-                "A marbled ribbontail ray joins you.",
-                "A blackspotted torpedo ray joins you.",
-                "A marbled torpedo ray joins you.",
-                "A atlantic torpedo ray joins you.",
-                "A panther torpedo ray joins you.",
-                "A spotted torpedo ray joins you.",
-                "A ocellated torpedo joins you.",
-                "A caribbean torpedo joins you.",
-                "A striped stingaree joins you.",
-                "A sparesly-spotted stingaree joins you.",
-                "A kapala stingaree joins you.",
-                "A common stingaree joins you.",
-                "A eastern fiddler ray joins you.",
-                "A bullseye stingray joins you.",
-                "A round stingray joins you.",
-                "A yellow stingray joins you.",
-                "A cortez round stingray joins you.",
-                "A porcupine ray joins you.",
-                "A sepia stingaree joins you.",
-                "A banded stingaree joins you.",
-                "A spotted stingaree joins you.",
-                "A sea pancake joins you.",
-            ],
-            multiOutcomes: [
-                "A whole bunch of rays join you.",
-                "That's a lot of rays.",
-                "The ray conspiracy grows!",
-                "I can't even deal with all of these rays.",
-                "More rays more rays more more more.",
-                "A school of rays!",
-                "A fever of rays! Yes, seriously. Look it up.",
-                "A whole lotta rays!",
-                "The sand is just flying everywhere!",
-                "So many rays.",
-            ],
-            helpText: "Hire a ray to help collect fish. They might kick up some sand from the seabed.",
-        }, // end of creature code
         getCrab: {
             name: "Acquire crab",
             effect: {
@@ -2940,7 +2876,6 @@ SharkGame.HomeActions = {
             prereq: {
                 resource: {
                     shark: 10,
-                    ray: 4,
                 },
             },
             outcomes: [
@@ -3006,10 +2941,13 @@ SharkGame.HomeActions = {
                 "A common mudskipper joins you.",
                 "A Pearse’s mudskipper joins you.",
                 "A great blue spotted mudskipper joins you.",
-                "Wait, that's not a mudskipper, that's just a fish.",
-                "A mere PEASANT joins you.",
-                "A mere SERF joins you.",
-                "A mere SERVANT joins you.",
+		"Wait, that's not a mudskipper, that's just a fish.",
+		// "A mere PEASANT joins you.",
+		// "A mere SERF joins you.",
+		// "A mere SERVANT joins you.",
+		"A mudhopper joins you.",
+		"A mudskipper joins you.",
+		"A mudjumper joins you.",
             ],
             multiOutcomes: [
                 "WOOD! MORE WOOD! BRING US WOOD!",
@@ -3018,12 +2956,12 @@ SharkGame.HomeActions = {
                 "At all times, you must remember that you are repurposed food.",
                 "You are fortunate to serve us! To be spared!",
                 "We won't eat you - so long as you do your job...",
-                "Nervous little things skittering around.",
-                "Your tiny, toothless little mouths are the perfect tool to bring us wood.",
-                "A school of mudskippers!",
-                "A shoal of mudskippers!",
-                "A swamp of mudskippers! No, that's made up.",
-                "A marsh of mudskippers! That one's made-up too.",
+		"Nervous little things, skittering around.",
+		"Your tiny, toothless little mouths are the perfect tool to bring us wood.",
+		"A school of mudskippers!",
+		"A shoal of mudskippers!",
+		"A swamp of mudskippers! No, that's made up.",
+		"A marsh of mudskippers! That one's made-up too.",
             ],
             helpText: "Liberate a mudskipper from its boring old life and command it to retrieve driftwood for you.",
         }, // end of creature code
@@ -3039,11 +2977,11 @@ SharkGame.HomeActions = {
             ],
             max: "caracara",
             prereq: {
-                upgrade: ["raiderTruce"],
+                upgrade: ["newRaiderTruce"],
             },
             outcomes: [
                 "A striated caracara joins you.",
-                "A caracara awaits your command. Haughtily.",
+                "A caracara awaits your command. Imperiously.",
                 "The caracara flies off with a task.",
                 "It gives you a strange look before it leaves.",
                 "The caracara sheds a feather as it lifts off.",
@@ -3051,15 +2989,16 @@ SharkGame.HomeActions = {
             ],
             multiOutcomes: [
                 "They await you in flocks.",
-                "They await you in packs.",
-                "They await you in phalanxes.",
+		"They await you in packs.",
+		"They await you in phalanxes.",
                 "They blot out the sun.",
                 "They cast a shadow upon all as they fly.",
-                "Their presence commands respect from all but us.",
-                "You know what, they're kinda like sharks when you think about it.",
+                // "Their presence commands respect from all but us.",
+                "Their presence commands respect from all. Or is it fear?",
+                // "You know what, they're kinda like sharks when you think about it.",
                 "The air is their water. Or is the water their air?",
             ],
-            helpText: "Convince a caracara from the surface to retrieve crystals.",
+            helpText: "Convince a caracara from the surface to retrieve crystals and fish.",
         }, // end of creature code
         getScientist: {
             name: "Train science shark",
@@ -3078,7 +3017,7 @@ SharkGame.HomeActions = {
                     crystal: 20,
                     shark: 1,
                 },
-                upgrade: ["flee"],
+		upgrade: ["flee"],
             },
             outcomes: [
                 "Doctor Shark, coming right up!",
@@ -3133,74 +3072,6 @@ SharkGame.HomeActions = {
             ],
             helpText: "Remove a shark from fish duty and set them to shark making duty.",
         }, // end of breeder code
-        /* getLaser: {
-            name: "Equip laser ray",
-            effect: {
-                resource: {
-                    laser: 1,
-                },
-            },
-            cost: [
-                { resource: "ray", costFunction: "constant", priceIncrease: 1 },
-                { resource: "crystal", costFunction: "linear", priceIncrease: 50 },
-            ],
-            max: "laser",
-            prereq: {
-                resource: {
-                    ray: 1,
-                },
-                upgrade: ["laserRays"],
-            },
-            outcomes: [
-                "Laser ray online!",
-                "Laser ray! With a laser ray! It's laser ray, with a laaaaaser raaaay!",
-                "Laser ray.",
-                "Ray suited up with a laaaaaaser!",
-                "Ray lasered. To use a laser. Not the subject of a laser.",
-            ],
-            multiOutcomes: [
-                "Boil the seabed!",
-                "Churn the sand to crystal!",
-                "Laser ray armada in position!",
-                "Ray crystal processing initiative is growing stronger every day!",
-                "Welcome to the future! The future is lasers!",
-            ],
-            helpText: "Remove a ray from sand detail and let them fuse sand into raw crystal.",
-        }, */ // end of job code
-        getMaker: {
-            name: "Instruct a ray maker",
-            effect: {
-                resource: {
-                    maker: 1,
-                },
-            },
-            cost: [
-                { resource: "ray", costFunction: "constant", priceIncrease: 1 },
-                { resource: "fish", costFunction: "linear", priceIncrease: 300 },
-            ],
-            max: "maker",
-            prereq: {
-                resource: {
-                    ray: 1,
-                },
-                upgrade: ["rayBiology"],
-            },
-            outcomes: [
-                "More rays lets you get more rays which you can then use to get more rays.",
-                "The ray singularity begins!",
-                "A ray maker is ready.",
-                "Looks like you gave them quite the ray maker blow! 'Them' being the intangible enemy that is lacking in resources.",
-                "The ray seems concerned, but obliges. The mission has been given.",
-            ],
-            multiOutcomes: [
-                "All these makers. What are they making? What is it for? Oh. It's rays, and it's probably for sand or something.",
-                "More ray makers means more rays. Do you understand what that means?! Do you?! It means more rays. Good. On the same page, then.",
-                "Rapidly breeding aquatic wildlife is probably a severe ecological hazard. Good thing this isn't Earth's oceans, probably!",
-                "Have you ever thought about what the rays wanted? Because this might have been what they wanted after all.",
-                "MORE LASER RAYS FOR THE LASER ARMY-- oh. Well, this is good too.",
-            ],
-            helpText: "Remove a ray from sand business and let them concentrate on making more rays.",
-        }, // end of breeder code
 
         // CRAB JOBS /////////////////////////////////
         getStabilizer: {
@@ -3228,13 +3099,13 @@ SharkGame.HomeActions = {
                 "Stabilizer provided!",
                 "Provided stabilizer!",
                 "A stabilizer at work, saving the seabed!",
-                "Steadying the world one crab at a time!",
+		"Steadying the world one crab at a time!",
             ],
             multiOutcomes: [
                 "Consider your seabeds stabilized!",
                 "No more rough sand with these guys around!",
                 "Area One's status: on the job!",
-                "Be brave, crabs, and be proud!",
+		"Be brave, crabs, and be proud!",
             ],
             helpText: "Provide a crab with seagrass to plant.",
         },
@@ -3276,7 +3147,7 @@ SharkGame.HomeActions = {
         }, // end of breeder code
 
         // MUDSKIPPER JOBS ///////////////////////////
-        getMentor: {
+	getMentor: {
             name: "Train mudskipper mentor",
             effect: {
                 resource: {
@@ -3297,15 +3168,15 @@ SharkGame.HomeActions = {
             },
             outcomes: [
                 "The claw stick's connected to the - pincer stick!",
-                "And that is how you perform a full 360 in a Shore Queller.",
-                "Today you'll be learning how to fence in a Seagrass Picker.",
-                "Our lesson today will be how to dance in a Driftwood Snarer.",
-                "Andrew, I'm afraid you suck too much to pilot a Hardbark Smith.",
+                "And that is how you fence in a Shore Queller.",
+		// "Today you'll be learning how to fence in a Seagrass Picker.",
+		"Our lesson today will be how to dance in a Driftwood Snarer.",
+		"Andrew, I'm afraid you suck too much to pilot a Hardbark Smith.",
             ],
             multiOutcomes: [
                 "Brandon! Do NOT amputate your fellow shark- PATRICIA!!! DO NOT LASER THE CRABS-",
                 "Pop quiz! Name the four puppet models and their respective fields.",
-                "I need you all to focus. Your parents aren't paying for you to-- in fact, your parents aren't paying at all!",
+		"I need you all to focus. Your parents aren't paying for you to-- in fact, your parents aren't paying at all!",
             ],
             helpText: "Teach a mudskipper techniques on puppetwork, so that it may pass on its knowledge.",
         }, // end of job code
@@ -3319,7 +3190,7 @@ SharkGame.HomeActions = {
             cost: [
                 { resource: "mudskipper", costFunction: "constant", priceIncrease: 1 },
                 { resource: "fish", costFunction: "linear", priceIncrease: 15 },
-                { resource: "sand", costFunction: "linear", priceIncrease: 12 },
+                { resource: "sand", costFunction: "linear", priceIncrease: 20 },
             ],
             max: "burrow",
             prereq: {
@@ -3329,8 +3200,8 @@ SharkGame.HomeActions = {
                 upgrade: ["mudskipperBurrowing"],
             },
             outcomes: [
-                "We never actually do this. The crabs dig it for us.",
-                "These burrows are L or J shaped - Loser or Joke!",
+                "We never actually dig the pits. The crabs do it for us.",
+                // "These burrows are L or J shaped - Loser or Joke!",
                 "That one flailed really high. Will it come back...?",
                 "Ha! That one failed to get a- never mind. That's a success.",
                 "Up it goes. Frontflip. Down again.",
@@ -3366,10 +3237,10 @@ SharkGame.HomeActions = {
                 upgrade: ["seagrassAttention"],
             },
             outcomes: [
-                "//*to be written in future*//",
+                "<i>More outcomes will be written soon enough.</i>",
             ],
             multiOutcomes: [
-                "//*to be written in future*//",
+                "<i>More outcomes will be written soon enough.</i>",
             ],
             helpText: "Get a caracara interested in seagrass to walk along shores laden with it.",
         }, // end of job code
@@ -3401,174 +3272,13 @@ SharkGame.HomeActions = {
             multiOutcomes: [
                 "Alright, everyone, pair up!",
                 "You're all delegated to the eastern quadrant today!",
-                "a",
+                "...and whatever you do, do NOT drop your mudskipper.",
             ],
             helpText: "Leave an armoured mudskipper on a platform for a caracara to take and search for driftwood.",
         }, // end of job code
 
-        // SHARK MACHINES //////////////////////////
-        getCrystalMiner: {
-            name: "Build crystal miner",
-            effect: {
-                resource: {
-                    crystalMiner: 1,
-                },
-            },
-            cost: [
-                {
-                    resource: "crystal",
-                    costFunction: "linear",
-                    get priceIncrease() {
-                        return 100 - 50 * SharkGame.Aspects.amorphousAssembly.level;
-                    },
-                },
-                {
-                    resource: "sand",
-                    costFunction: "linear",
-                    get priceIncrease() {
-                        return 200 - 100 * SharkGame.Aspects.amorphousAssembly.level;
-                    },
-                },
-                { resource: "sharkonium", costFunction: "linear", priceIncrease: 25 },
-            ],
-            max: "crystalMiner",
-            prereq: {
-                resource: {
-                    sharkonium: 25,
-                },
-                upgrade: ["automation"],
-            },
-            outcomes: [
-                "Crystal miner activated.",
-                "Crystal miner constructed.",
-                "Mining machine online.",
-                "Construction complete.",
-                "Carve rock. Remove sand. Retrieve target.",
-            ],
-            multiOutcomes: [
-                "The machines rise.",
-                "The miners dig.",
-                "The crystal shall be harvested.",
-                "Crystal miners are complete.",
-            ],
-            helpText: "Construct a machine to automatically harvest crystals efficiently.",
-        }, // end of machine code
-        /* getSandDigger: {
-            name: "Build sand digger",
-            effect: {
-                resource: {
-                    sandDigger: 1,
-                },
-            },
-            cost: [
-                {
-                    resource: "sand",
-                    costFunction: "linear",
-                    get priceIncrease() {
-                        return 500 - 250 * SharkGame.Aspects.amorphousAssembly.level;
-                    },
-                },
-                { resource: "sharkonium", costFunction: "linear", priceIncrease: 150 },
-            ],
-            max: "sandDigger",
-            prereq: {
-                resource: {
-                    sharkonium: 150,
-                },
-                upgrade: ["automation"],
-            },
-            outcomes: [
-                "Sand digger constructed.",
-                "Sand digger reaches into the seabed.",
-                "The digger begins to shuffle sand into its machine maw. Rays dart away.",
-                "The machine is online.",
-                "The machine acts immediately, shovelling sand.",
-            ],
-            multiOutcomes: [
-                "The machines increase in number.",
-                "The diggers devour.",
-                "All sand must be gathered.",
-                "The rays are concerned.",
-                "Devour the sands. Consume.",
-                "Giant machines blot out our sun.",
-            ],
-            helpText: "Construct a machine to automatically dig up sand efficiently.",
-        }, */ // end of machine code
-        getFishMachine: {
-            name: "Build fish machine",
-            effect: {
-                resource: {
-                    fishMachine: 1,
-                },
-            },
-            cost: [{ resource: "sharkonium", costFunction: "linear", priceIncrease: 100 }],
-            max: "fishMachine",
-            prereq: {
-                resource: {
-                    sharkonium: 100,
-                },
-                upgrade: ["automation"],
-            },
-            outcomes: [
-                "Fish machine activated.",
-                "Fish machine constructed.",
-                "Fishing machine online.",
-                "Construction complete.",
-                "The quarry moves. But the machine is faster.",
-            ],
-            multiOutcomes: [
-                "One day there will be no fish left. Only the machines.",
-                "Today the shark is flesh. Tomorrow, machine.",
-                "Your metal servants can sate the hunger. The hunger for fish.",
-                "The fishing machines are more efficient than the sharks. But they aren't very smart.",
-                "Automated fishing.",
-                "The power of many, many sharks, in many, many devices.",
-            ],
-            helpText: "Construct a machine to automatically gather fish efficiently.",
-        }, // end of machine code
-        getAutoTransmuter: {
-            name: "Build auto-transmuter",
-            effect: {
-                resource: {
-                    autoTransmuter: 1,
-                },
-            },
-            cost: [
-                {
-                    resource: "crystal",
-                    costFunction: "linear",
-                    get priceIncrease() {
-                        return 100 - 50 * SharkGame.Aspects.amorphousAssembly.level;
-                    },
-                },
-                { resource: "sharkonium", costFunction: "linear", priceIncrease: 100 },
-            ],
-            max: "autoTransmuter",
-            prereq: {
-                resource: {
-                    sharkonium: 100,
-                },
-                upgrade: ["engineering"],
-            },
-            outcomes: [
-                "Auto-transmuter activated.",
-                "Auto-transmuter constructed.",
-                "Transmutation machine online.",
-                "Construction complete.",
-                "Provide inputs. Only the output matters.",
-            ],
-            multiOutcomes: [
-                "Auto-transmuters are prepared.",
-                "The difference between science and magic is reliable application.",
-                "All is change.",
-                "Change is all.",
-                "The machines know many secrets, yet cannot speak of them.",
-            ],
-            helpText: "Construct a machine to automatically and efficiently transmute sand and crystal to sharkonium.",
-        }, // end of machine code
-
         // MUDSKIPPER PUPPETS //////////////////////
-        getSeagrassPicker: {
+        /* getSeagrassPicker: {
             name: "Assemble seagrass picker",
             effect: {
                 resource: {
@@ -3577,7 +3287,7 @@ SharkGame.HomeActions = {
             },
             cost: [
                 { resource: "hardbark", costFunction: "linear", priceIncrease: 50 },
-                { resource: "seagrass", costFunction: "linear", priceIncrease: 10 },
+                { resource: "seagrass", costFunction: "linear", priceIncrease: 100 },
                 { resource: "crab", costFunction: "constant", priceIncrease: 1 },
             ],
             max: "seagrassPicker",
@@ -3588,13 +3298,13 @@ SharkGame.HomeActions = {
                 upgrade: ["puppetAssembly"],
             },
             outcomes: [
-                "//*to be written in future*//",
+                "<i>More outcomes will be written soon enough.</i>",
             ],
             multiOutcomes: [
-                "//*to be written in future*//",
+                "<i>More outcomes will be written soon enough.</i>",
             ],
             helpText: "Put together a crablike puppet to harvest seagrass with serrated claws.",
-        }, // end of machine code
+        }, */ // end of machine code
         getShoreQueller: {
             name: "Assemble shore queller",
             effect: {
@@ -3605,7 +3315,7 @@ SharkGame.HomeActions = {
             cost: [
                 { resource: "hardbark", costFunction: "linear", priceIncrease: 75 },
                 { resource: "crystal", costFunction: "linear", priceIncrease: 50 },
-                { resource: "seagrass", costFunction: "linear", priceIncrease: 15 },
+                { resource: "seagrass", costFunction: "linear", priceIncrease: 100 },
                 { resource: "shark", costFunction: "constant", priceIncrease: 1 },
             ],
             max: "shoreQueller",
@@ -3616,12 +3326,13 @@ SharkGame.HomeActions = {
                 upgrade: ["puppetAssembly"],
             },
             outcomes: [
-                "//*to be written in future*//",
+                "<i>More outcomes will be written soon enough.</i>",
             ],
             multiOutcomes: [
-                "//*to be written in future*//",
+		"The sharks' forms are sleek; good for swathing the seabed in heat.",
+                "<i>More outcomes will be written soon enough.</i>",
             ],
-            helpText: "Put together a wormlike puppet and laser up rough sand using geothermal energy.",
+            helpText: "Put together a sharklike puppet to laser up sand using solar energy.",
         }, // end of machine code
         getDriftwoodSnarer: {
             name: "Assemble driftwood snarer",
@@ -3631,9 +3342,9 @@ SharkGame.HomeActions = {
                 },
             },
             cost: [
-                { resource: "hardbark", costFunction: "linear", priceIncrease: 25 },
-                { resource: "seagrass", costFunction: "linear", priceIncrease: 25 },
-                { resource: "ray", costFunction: "constant", priceIncrease: 1 },
+                { resource: "hardbark", costFunction: "linear", priceIncrease: 50 },
+                { resource: "seagrass", costFunction: "linear", priceIncrease: 150 },
+                { resource: "mudskipper", costFunction: "constant", priceIncrease: 1 },
             ],
             max: "driftwoodSnarer",
             prereq: {
@@ -3644,12 +3355,13 @@ SharkGame.HomeActions = {
                 upgrade: ["puppetAssembly"],
             },
             outcomes: [
-                "//*to be written in future*//",
+                "<i>More outcomes will be written soon enough.</i>",
             ],
             multiOutcomes: [
-                "//*to be written in future*//",
+		"The mudskippers' fins are wide; good for snaring.",
+                "<i>More outcomes will be written soon enough.</i>",
             ],
-            helpText: "Put together a raylike puppet to catch driftwood in a seagrass net.",
+            helpText: "Put together a drifting puppet to catch driftwood in a seagrass net.",
         }, // end of machine code
         getHardbarkSmith: {
             name: "Assemble hardbark smith",
@@ -3660,25 +3372,26 @@ SharkGame.HomeActions = {
             },
             cost: [
                 { resource: "hardbark", costFunction: "linear", priceIncrease: 50 },
-                // { resource: "sharkonium", costFunction: "linear", priceIncrease: 25 },
-                { resource: "seagrass", costFunction: "linear", priceIncrease: 15 },
-                { resource: "mudskipper", costFunction: "constant", priceIncrease: 1 },
+                { resource: "seagrass", costFunction: "linear", priceIncrease: 150 },
+		{ resource: "crystal", costFunction: "linear", priceIncrease: 50 },
+                { resource: "crab", costFunction: "constant", priceIncrease: 1 },
             ],
             max: "hardbarkSmith",
             prereq: {
                 resource: {
                     hardbark: 50,
-                    sharkonium: 25,
                 },
                 upgrade: ["fixModels"],
             },
             outcomes: [
-                "//*to be written in future*//",
+                "Fix the stick to the hardbark smith.",
+		"Grasp the driftwood, sift the crystal.",
             ],
             multiOutcomes: [
-                "//*to be written in future*//",
+		"The crabs have pincers; useful for dipping.",
+                "<i>More outcomes will be written soon enough.</i>",
             ],
-            helpText: "Put together a clawed, orblike puppet to coat hardbark in a dish.",
+            helpText: "Put together a clawed, crablike puppet to coat hardbark in a dish.",
         }, // end of machine code
 
         // UNIQUE //////////////////////
@@ -3705,8 +3418,8 @@ SharkGame.HomeActions = {
             },
             outcomes: [
                 "The Safehold Sentinel moves every tendril, as if it's shaking off numbness.",
-                "The Sentinel's tendrils slowly ripple from the tips to the great crystal crown on its head.",
-                "The Sentinel of the Safehold's tendrils snap taut, and dart around in the tunnel.",
+		"The Sentinel's tendrils slowly ripple from the tips to the great crystal crown on its head.",
+		"The Sentinel of the Safehold's tendrils snap taut, and dart around in the tunnel.",
             ],
             helpText: "Repair the many-tendriled thing looming above the big latch.",
         }, // end of unique code
@@ -3733,8 +3446,8 @@ SharkGame.HomeActions = {
             },
             outcomes: [
                 "The Barrage Braver is still, before slowly rising to its legs.",
-                "The frenzy holds its breath, then releases it as the Braver starts moving.",
-                "The Braver of the Barrage stands on its six legs, and stares at the safehold's entrance.",
+		"The frenzy holds its breath, then releases it as the Braver starts moving.",
+		"The Braver of the Barrage stands on its six legs, and stares at the safehold's entrance.",
             ],
             helpText: "Reconstruct the Barrage Braver of mudskipper tales.",
         }, // end of unique code
@@ -3761,8 +3474,8 @@ SharkGame.HomeActions = {
             },
             outcomes: [
                 "The world seems to strum as the Gatemaster awakens. In the blink of an eye, it looms behind the strange gate and prises it open.",
-                "The ocean feels like it's thrumming as the Gatemaster awakens. Bright light envelops your sight, and the strange gate is open.",
-                "A deep humming resonates across the safehold as the Gatemaster awakens. Wispy, ethereal energy branches off from it, and flows into the gate.",
+		"The ocean feels like it's thrumming as the Gatemaster awakens. Bright light envelops your sight, and the strange gate is open.",
+		"A deep humming resonates across the safehold as the Gatemaster awakens. Wispy, ethereal energy branches off from it, and flows into the gate.",
             ],
             helpText: "Collect the scattered pieces of... whatever this is...",
         }, // end of unique code
@@ -3776,7 +3489,7 @@ SharkGame.HomeActions = {
                 },
             },
             cost: [
-                { resource: "seagrass", costFunction: "constant", priceIncrease: 1 },
+                { resource: "seagrass", costFunction: "constant", priceIncrease: 25 },
                 { resource: "sand", costFunction: "linear", priceIncrease: 50 },
             ],
             max: "seagrassFarm",
@@ -3793,7 +3506,7 @@ SharkGame.HomeActions = {
             multiOutcomes: [
                 "Do we really need to till the sand to grow seagrass?",
                 "Grow, seagrass! Grow!",
-                "The connoisseurs are pleased.",
+                "The stabilizers are pleased.",
                 "Is anybody staffing these?",
                 "Farms are a-go.",
                 "Designated growing spots.",
@@ -3840,8 +3553,8 @@ SharkGame.HomeActions = {
                 },
             },
             cost: [
-                { resource: "driftwood", costFunction: "linear", priceIncrease: 50 },
-                { resource: "sharkonium", costFunction: "linear", priceIncrease: 25 },
+                { resource: "driftwood", costFunction: "linear", priceIncrease: 5000 },
+                { resource: "hardbark", costFunction: "linear", priceIncrease: 2500 },
                 // { resource: "coral", costFunction: "linear", priceIncrease: 15 },
             ],
             max: "exchangeStation",
@@ -3854,10 +3567,10 @@ SharkGame.HomeActions = {
                 upgrade: ["platformExpansion"],
             },
             outcomes: [
-                "//*to be written in future*//",
+                "<i>More outcomes will be written soon enough.</i>",
             ],
             multiOutcomes: [
-                "//*to be written in future*//",
+                "<i>More outcomes will be written soon enough.</i>",
             ],
             helpText: "Build an abovewater-extending station for the frenzy to use.",
         }, // end of place code
@@ -3883,10 +3596,10 @@ SharkGame.HomeActions = {
                 upgrade: ["intelTowers"],
             },
             outcomes: [
-                "//to be written in future//",
+                "<i>More outcomes will be written soon enough.</i>",
             ],
             multiOutcomes: [
-                "//to be written in future//",
+                "<i>More outcomes will be written soon enough.</i>",
             ],
             helpText: "Build a tall spire for extra collection of intel.",
         }, */
@@ -3906,7 +3619,10 @@ SharkGame.HomeActions = {
             name: "Dismantle jellyfish",
             effect: {
                 resource: {
-                    science: 4,
+		    // science: 4,
+                    get science() {
+                        return 4 + 4 * SharkGame.Aspects.beastAndBloom.level;
+                    },
                 },
             },
             cost: [{ resource: "jellyfish", costFunction: "constant", priceIncrease: 1 }],
@@ -3920,7 +3636,7 @@ SharkGame.HomeActions = {
             outcomes: [
                 "Eww eww gross it's so gloopy and fragile and OW IT STUNG ME",
                 "These things are like a bag of wonders. Weird, tasteless wonders.",
-                "Wow, sea apples seemed weird, but these things barely exist.",
+                "Wow, sea apples seemed weird, but these things barely exist.", // but sea apples don't exist here though
                 "Well, they turned out just as fragile as they looked.",
                 "So interesting!",
             ],
@@ -4027,7 +3743,7 @@ SharkGame.HomeActions = {
                     ray: 1,
                 },
             },
-            cost: [{ resource: "fish", costFunction: "linear", priceIncrease: 15 }],
+            cost: [{ resource: "fish", costFunction: "linear", priceIncrease: 15, }],
             max: "ray",
             prereq: {
                 resource: {
@@ -4540,9 +4256,11 @@ SharkGame.HomeActions = {
             name: "Study sea apples",
             effect: {
                 resource: {
-                    science: 4,
+                    get science() {
+                        return 4 + 4 * SharkGame.Aspects.beastAndBloom.level;
+                    },
                 },
-            },
+	    },
             cost: [{ resource: "seaApple", costFunction: "constant", priceIncrease: 1 }],
             max: "seaApple",
             prereq: {
@@ -5590,7 +5308,7 @@ SharkGame.HomeActions = {
             effect: {
                 resource: {
                     get science() {
-                        return SharkGame.Upgrades.purchased.includes("supernaturalSeagrass") ? 10 : 1;
+			return SharkGame.Upgrades.purchased.includes("supernaturalSeagrass") ? 10 * SharkGame.Aspects.beastAndBloom.level + 10 : 1 * SharkGame.Aspects.beastAndBloom.level + 1;
                     },
                 },
             },
@@ -5894,7 +5612,7 @@ SharkGame.HomeActionCategories = {
 
     basic: {
         name: "Basic",
-        actions: ["catchFish", "debugbutton", "prySponge", "prySponge2", "getClam", "getJellyfish"/* , "getDriftwood", "getSeagrass" */],
+        actions: ["catchFish", "debugbutton", "prySponge", "prySponge2", "getClam", "getJellyfish", "getDriftwood"/* , "getSeagrass" */],
     },
 
     frenzy: {
@@ -5995,7 +5713,7 @@ SharkGame.HomeActionCategories = {
             "smeltPorite",
             "seagrassToScience",
             "coatHardbark",
-            "sandConversion",
+	    "sandConversion",
         ],
     },
 
@@ -6029,7 +5747,7 @@ SharkGame.HomeActionCategories = {
             "getSeabedStripper",
             "getCalciniumConverter",
             "getClamScavenger",
-            "getSeagrassPicker",
+            // "getSeagrassPicker",
             "getShoreQueller",
             "getDriftwoodSnarer",
             "getHardbarkSmith",
@@ -6039,13 +5757,13 @@ SharkGame.HomeActionCategories = {
     places: {
         name: "Places",
         actions: [
-            "getSpongeFarm",
-            "getCoralFarm",
-            // "getShoreCoralFarm",
-            "getSeagrassFarm",
-            "getExchangeStation",
-            // "getReceiverNode",
-        ],
+	    "getSpongeFarm",
+	    "getCoralFarm",
+	    // "getShoreCoralFarm",
+	    "getSeagrassFarm",
+	    "getExchangeStation",
+	    // "getReceiverNode",
+	],
     },
 
     unique: {

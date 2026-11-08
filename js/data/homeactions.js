@@ -5061,7 +5061,21 @@ SharkGame.HomeActions = {
             outcomes: ["Echos shifted into sharks."],
             helpText: "Switch echo production to that of sharks.",
             getSpecialTooltip() {
-                const text = `CURRENT ECHO FORM: ${SharkGame.flags.echoShiftShark ? "SHARK" : SharkGame.flags.echoShiftRay ? "RAY" : "CRAB"}`;
+                let text = `CURRENT ECHO FORM: ${SharkGame.flags.echoShiftShark ? "SHARK" : SharkGame.flags.echoShiftRay ? "RAY" : "CRAB"}<br>`;
+                text += `SHARK ECHOS PRODUCE  ${sharktext.getResourceName(
+                    "wisp",
+                    false,
+                    false,
+                    sharkcolor.getElementColor("tooltipbox", "background-color"),
+                )}`;
+                if (SharkGame.flags.enhancedSharkShift) {
+                    text += `, AND ${sharktext.getResourceName(
+                        "clam",
+                        false,
+                        false,
+                        sharkcolor.getElementColor("tooltipbox", "background-color"),
+                    )}`;
+                }
                 return sharktext.boldString(text);
             },
         },
@@ -5078,7 +5092,33 @@ SharkGame.HomeActions = {
             outcomes: ["Echos shifted into rays."],
             helpText: "Switch echo production to that of rays.",
             getSpecialTooltip() {
-                const text = `CURRENT ECHO FORM: ${SharkGame.flags.echoShiftShark ? "SHARK" : SharkGame.flags.echoShiftRay ? "RAY" : "CRAB"}`;
+                let text = `CURRENT ECHO FORM: ${SharkGame.flags.echoShiftShark ? "SHARK" : SharkGame.flags.echoShiftRay ? "RAY" : "CRAB"}<br>`;
+                text += `RAY ECHOS PRODUCE  ${sharktext.getResourceName(
+                    "wisp",
+                    false,
+                    false,
+                    sharkcolor.getElementColor("tooltipbox", "background-color"),
+                )}`;
+                if (SharkGame.flags.enhancedRayShift) {
+                    text += `, ${sharktext.getResourceName(
+                        "sand",
+                        false,
+                        false,
+                        sharkcolor.getElementColor("tooltipbox", "background-color"),
+                    )}, AND ${sharktext.getResourceName(
+                        "coral",
+                        false,
+                        false,
+                        sharkcolor.getElementColor("tooltipbox", "background-color"),
+                    )}`;
+                } else {
+                    text += `, AND ${sharktext.getResourceName(
+                        "sand",
+                        false,
+                        false,
+                        sharkcolor.getElementColor("tooltipbox", "background-color"),
+                    )}`;
+                }
                 return sharktext.boldString(text);
             },
         },
@@ -5095,7 +5135,33 @@ SharkGame.HomeActions = {
             outcomes: ["Echos shifted into crabs."],
             helpText: "Switch echo production to that of crabs.",
             getSpecialTooltip() {
-                const text = `CURRENT ECHO FORM: ${SharkGame.flags.echoShiftShark ? "SHARK" : SharkGame.flags.echoShiftRay ? "RAY" : "CRAB"}`;
+                let text = `CURRENT ECHO FORM: ${SharkGame.flags.echoShiftShark ? "SHARK" : SharkGame.flags.echoShiftRay ? "RAY" : "CRAB"}<br>`;
+                text += `CRAB ECHOS PRODUCE  ${sharktext.getResourceName(
+                    "crystal",
+                    false,
+                    false,
+                    sharkcolor.getElementColor("tooltipbox", "background-color"),
+                )}`;
+                if (SharkGame.flags.enhancedCrabShift) {
+                    text += `, ${sharktext.getResourceName(
+                        "coral",
+                        false,
+                        false,
+                        sharkcolor.getElementColor("tooltipbox", "background-color"),
+                    )}, AND ${sharktext.getResourceName(
+                        "kelp",
+                        false,
+                        false,
+                        sharkcolor.getElementColor("tooltipbox", "background-color"),
+                    )}`;
+                } else {
+                    text += `, AND ${sharktext.getResourceName(
+                        "coral",
+                        false,
+                        false,
+                        sharkcolor.getElementColor("tooltipbox", "background-color"),
+                    )}`;
+                }
                 return sharktext.boldString(text);
             },
         },

@@ -5067,14 +5067,14 @@ SharkGame.HomeActions = {
                     false,
                     false,
                     sharkcolor.getElementColor("tooltipbox", "background-color"),
-                )}`
+                )}`;
                 if (SharkGame.flags.enhancedSharkShift) {
                     text += `, AND ${sharktext.getResourceName(
                         "clam",
                         false,
                         false,
                         sharkcolor.getElementColor("tooltipbox", "background-color"),
-                    )}`
+                    )}`;
                 }
                 return sharktext.boldString(text);
             },
@@ -5098,7 +5098,7 @@ SharkGame.HomeActions = {
                     false,
                     false,
                     sharkcolor.getElementColor("tooltipbox", "background-color"),
-                )}`
+                )}`;
                 if (SharkGame.flags.enhancedRayShift) {
                     text += `, ${sharktext.getResourceName(
                         "sand",
@@ -5110,15 +5110,14 @@ SharkGame.HomeActions = {
                         false,
                         false,
                         sharkcolor.getElementColor("tooltipbox", "background-color"),
-                    )}`
-                }
-                else{
+                    )}`;
+                } else {
                     text += `, AND ${sharktext.getResourceName(
                         "sand",
                         false,
                         false,
                         sharkcolor.getElementColor("tooltipbox", "background-color"),
-                    )}`
+                    )}`;
                 }
                 return sharktext.boldString(text);
             },
@@ -5142,7 +5141,7 @@ SharkGame.HomeActions = {
                     false,
                     false,
                     sharkcolor.getElementColor("tooltipbox", "background-color"),
-                )}`
+                )}`;
                 if (SharkGame.flags.enhancedCrabShift) {
                     text += `, ${sharktext.getResourceName(
                         "coral",
@@ -5154,15 +5153,14 @@ SharkGame.HomeActions = {
                         false,
                         false,
                         sharkcolor.getElementColor("tooltipbox", "background-color"),
-                    )}`
-                }
-                else{
+                    )}`;
+                } else {
                     text += `, AND ${sharktext.getResourceName(
                         "coral",
                         false,
                         false,
                         sharkcolor.getElementColor("tooltipbox", "background-color"),
-                    )}`
+                    )}`;
                 }
                 return sharktext.boldString(text);
             },

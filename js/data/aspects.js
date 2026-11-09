@@ -1022,7 +1022,7 @@ SharkGame.Aspects = {
         name: "Native Knowledge",
         description: "Those in their element are the best to learn from.",
         getCost(level) {
-            return 2 * level + 2;
+            return 2 * level + 4;
         },
         getEffect(level) {
             return (
@@ -1055,6 +1055,9 @@ SharkGame.Aspects = {
                 res.applyModifier("pathOfIndustry", "eel", this.level + 1);
                 res.applyModifier("pathOfIndustry", "lobster", this.level + 1);
                 res.applyModifier("pathOfIndustry", "shrimp", this.level + 1);
+				res.applyModifier("pathOfIndustry", "snail", this.level + 1);
+				res.applyModifier("pathOfIndustry", "turtle", this.level + 1);
+				res.applyModifier("pathOfIndustry", "echo", this.level + 1);
                 // res.applyModifier("pathOfIndustry", "mudskipper", this.level + 1);
                 // res.applyModifier("pathOfIndustry", "caracara", this.level + 1);
             }
@@ -1071,7 +1074,7 @@ SharkGame.Aspects = {
         name: "Buried Blueprints",
         description: "Every world has its secrets, waiting to be uncovered.",
         getCost(level) {
-            return 2 * level + 2;
+            return 2 * level + 5;
         },
         getEffect(level) {
             return (

@@ -35,10 +35,7 @@ SharkGame.TitleBar = {
         onClick() {
             if (main.isFirstTime()) {
                 // save people stranded on home world
-                if (confirm("Do you want to reset your game?")) {
-                    // just reset
-                    main.resetGame();
-                }
+                SharkGame.PaneHandler.showResetMenu();
             } else {
                 SharkGame.PaneHandler.showSkipMenu();
             }

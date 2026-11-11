@@ -650,6 +650,25 @@ SharkGame.PaneHandler = {
         SharkGame.PaneHandler.addPaneToStack("Skip World", skipDiv);
     },
 
+    showResetMenu() {
+        const resetDiv = $("<div>");
+        resetDiv.append(
+            $("<p>")
+                .html("Are you sure you would like to reset your game?<br>You will lose <strong>ALL</strong> your progress.")
+                .addClass("paneContentDiv"),
+        );
+
+        const resetButtons = $("<div>").addClass("gatewayButtonList");
+        SharkGame.Button.makeButton("doReset", "reset", resetButtons, () => {
+            SharkGame.PaneHandler.wipeStack();
+            main.resetGame();
+        });
+        SharkGame.Button.makeButton("dontReset", "do not reset", resetButtons, SharkGame.PaneHandler.nextPaneInStack);
+        resetDiv.append(resetButtons);
+
+        SharkGame.PaneHandler.addPaneToStack("Reset Game", resetDiv);
+    },
+
     showHelp() {
         const helpDiv = $("<div>");
         helpDiv.append($("<div>").append(SharkGame.Panes.help).addClass("paneContentDiv"));

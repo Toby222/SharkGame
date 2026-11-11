@@ -630,6 +630,26 @@ SharkGame.PaneHandler = {
         SharkGame.PaneHandler.addPaneToStack("Changelog", changelogContent);
     },
 
+    showSkipMenu() {
+        const skipDiv = $("<div>");
+        skipDiv.append(
+            $("<p>")
+                .html("If a world is causing you too much trouble, you can choose to go back to the gateway.<br>Want to go back to the gateway?")
+                .addClass("paneContentDiv"),
+        );
+
+        // stolen gateway menu hehe
+        const skipButtons = $("<div>").addClass("gatewayButtonList");
+        SharkGame.Button.makeButton("stayHere", "Stay here", skipButtons, SharkGame.PaneHandler.nextPaneInStack);
+        SharkGame.Button.makeButton("goToGateway", "Go to gateway", skipButtons, () => {
+            SharkGame.wonGame = false;
+            main.endGame();
+        });
+        skipDiv.append(skipButtons);
+
+        SharkGame.PaneHandler.addPaneToStack("Skip World", skipDiv);
+    },
+
     showHelp() {
         const helpDiv = $("<div>");
         helpDiv.append($("<div>").append(SharkGame.Panes.help).addClass("paneContentDiv"));

@@ -39,9 +39,8 @@ SharkGame.TitleBar = {
                     // just reset
                     main.resetGame();
                 }
-            } else if (confirm("Is this world causing you too much trouble? Want to go back to the gateway?")) {
-                SharkGame.wonGame = false;
-                main.endGame();
+            } else {
+                SharkGame.PaneHandler.showSkipMenu();
             }
         },
     },

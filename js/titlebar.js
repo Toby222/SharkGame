@@ -35,13 +35,9 @@ SharkGame.TitleBar = {
         onClick() {
             if (main.isFirstTime()) {
                 // save people stranded on home world
-                if (confirm("Do you want to reset your game?")) {
-                    // just reset
-                    main.resetGame();
-                }
-            } else if (confirm("Is this world causing you too much trouble? Want to go back to the gateway?")) {
-                SharkGame.wonGame = false;
-                main.endGame();
+                SharkGame.PaneHandler.showResetMenu();
+            } else {
+                SharkGame.PaneHandler.showSkipMenu();
             }
         },
     },

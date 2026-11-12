@@ -6,7 +6,7 @@ SharkGame.Gateway = {
     transitioning: false,
     selectedWorld: "",
 
-    allowedWorlds: ["abandoned", "haven", "frigid", "shrouded", "marine", "volcanic", "tempestuous", "shore"],
+    allowedWorlds: ["abandoned", "haven", "frigid", "shrouded", "marine", "volcanic", "tempestuous", "chaotic", "shore"],
 
     completedWorlds: [],
 
@@ -1215,6 +1215,7 @@ SharkGame.Gateway.PresenceFeelings = {
     sponge: "porous things?",
     jellyfish: "squishy things?",
     coral: "colorful things?",
+    wisp: "incorporeal things?",
     dolphin: "annoying scholars?",
     whale: "wise scholars?",
     octopus: "logical entities?",
@@ -1228,6 +1229,8 @@ SharkGame.Gateway.PresenceFeelings = {
     algae: "something slimy?",
     seagrass: "some plants?",
     billfish: "resolute survivalists?",
+    snail: "withdrawn dreamers?",
+    turtle: "detached wanderers?",
     roughSand: "something rough?",
     driftwood: "floaty things?",
     mudskipper: "unusual prey?",
@@ -1353,6 +1356,13 @@ SharkGame.Gateway.Messages = {
             "You have proven your endurance by outlasting the torturous storm.",
             "To rescue those snared by death, to shelter them, give them hope... you are an incredible being.",
             "The Gatemaster recognised you for what you are.",
+        ],
+        chaotic: [
+            "Do you wonder why you remained corporeal?",
+            "Did you recognise any of the echos' many faces?",
+            "Will you one day surrender to the current, just as the turtles did?",
+            "The snails always had the potential, they just needed your support.",
+            "You too, are a creature of potential.",
         ],
     },
     loss: [

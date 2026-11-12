@@ -1550,6 +1550,138 @@ SharkGame.ResourceTable = {
         },
         value: 180000, // 250 sharkonium, 250 gravel (18000)
     }, */
+
+    // chaotic
+
+    fakeFish: {
+        name: "fish",
+        singleName: "fish",
+        desc: "The hunted.",
+        color: "#E3D85B",
+        value: 2,
+    },
+
+    snail: {
+        name: "sea snails",
+        singleName: "sea snail",
+        color: "#F6E7A7",
+        desc: "Shy, yet full of potential.",
+        income: {
+            clam: 1,
+        },
+        jobs: [
+            "snailBotanist",
+            "snailGeologist",
+            "snailMalacologist",
+        ],
+        value: 1000,
+    },
+
+    snailBotanist: {
+        name: "snail botanists",
+        singleName: "snail botanist",
+        color: "#398262",
+        desc: "Dedicated to the science of plants.",
+        income: {
+            science: 0.02,
+            kelp: 0.2,
+        },
+        value: 5000,
+    },
+
+    snailGeologist: {
+        name: "snail geologists",
+        singleName: "snail geologist",
+        color: "#716D7A",
+        desc: "Endlessly fascinated by rocks.",
+        income: {
+            crystal: 0.5,
+        },
+        value: 5000,
+    },
+
+    snailMalacologist: {
+        name: "snail malacologists",
+        singleName: "snail malacologist",
+        color: "#E1B167",
+        desc: "The introspective sort.",
+        income: {
+            science: 0.02,
+        },
+        value: 5000,
+    },
+
+    turtle: {
+        name: "turtles",
+        singleName: "turtle",
+        color: "#B7C686",
+        desc: "Travelers along the flow.",
+        income: {
+            kelp: 1,
+            sand: 0.75,
+        },
+        jobs: [
+            "turtleLocator",
+            "turtleTransporter",
+            "turtleHarmonizer",
+        ],
+        value: 4000,
+    },
+
+    turtleLocator: {
+        name: "turtle locators",
+        singleName: "turtle locator",
+        color: "#82DB48",
+        desc: "Taking responsibility.",
+        income: {
+            turtle: 0.02,
+        },
+        value: 8000,
+    },
+
+    turtleTransporter: {
+        name: "turtle transporters",
+        singleName: "turtle transporter",
+        color: "#D3D671",
+        desc: "Letting the snails catch a ride.",
+        multiply: {
+            snail: 0.01,
+        },
+        value: 6000,
+    },
+
+    turtleHarmonizer: {
+        name: "turtle harmonizers",
+        singleName: "turtle harmonizer",
+        color: "#CA7DB2", // change when art's done
+        desc: "Attuning to the songs of infinity.",
+        multiply: {
+            echo: 0.01,
+        },
+        value: 8000,
+    },
+
+    echo: { // changes production from toggles
+        name: "echos",
+        singleName: "echo",
+        color: "#9CC6A5",
+        desc: "Many, yet one.",
+        value: 5000,
+        income: {
+            wisp: 0,
+            sand: 0,
+            crystal: 0,
+            coral: 0,
+        },
+    },
+
+    wisp: {
+        name: "wisps",
+        singleName: "wisp",
+        color: "#66DEAF",
+        desc: "A heavily diluted form of essence.",
+        value: 2,
+    },
 };
 
 SharkGame.GeneratorIncomeAffectorsOriginal = {
@@ -1609,6 +1741,16 @@ SharkGame.GeneratorIncomeAffectorsOriginal = {
         multiply: {
             sandDigger: 0.01,
             fishMachine: 0.01,
+        },
+    },
+    turtleTransporter: {
+        multiply: {
+            snail: 0.01,
+        },
+    },
+    turtleHarmonizer: {
+        multiply: {
+            echo: 0.01,
         },
     },
     /* roughSand: {
@@ -1890,7 +2032,7 @@ SharkGame.ResourceCategories = {
             "Was it something they said?",
             "Are you happy with what you've done?",
         ],
-        resources: ["shark", "ray", "crab", "shrimp", "lobster", "dolphin", "whale", "chimaera", "octopus", "eel", "squid", "urchin", "billfish", "mudskipper", "caracara"],
+        resources: ["shark", "ray", "crab", "shrimp", "lobster", "dolphin", "whale", "chimaera", "octopus", "eel", "squid", "urchin", "billfish", "echo", "snail", "turtle", "mudskipper", "caracara"],
     },
     animals: {
         name: "Animals",
@@ -1903,7 +2045,7 @@ SharkGame.ResourceCategories = {
             "Do you think the aim of the game is to make the numbers go DOWN?!",
             "Sure hope you know what you're doing here.",
         ],
-        resources: ["fish", "seaApple", "sponge", "jellyfish", "clam"],
+        resources: ["fish", "seaApple", "sponge", "jellyfish", "clam", "wisp"],
     },
     stuff: {
         name: "Materials",
@@ -1949,7 +2091,7 @@ SharkGame.ResourceCategories = {
             "You sure you want to disrupt this accelerated growth curve?",
             "Back to a simpler life, maybe.",
         ],
-        resources: ["nurse", "maker", "brood", "queen", "berrier", "biologist", "pit", "collective", "spawner", "billfishPair", "burrow"],
+        resources: ["nurse", "maker", "brood", "queen", "berrier", "biologist", "pit", "collective", "spawner", "billfishPair", "turtleLocator", "burrow"],
     },
     specialists: {
         name: "Specialists",
@@ -1985,6 +2127,11 @@ SharkGame.ResourceCategories = {
             "billfishExplorer",
             "billfishMechanic",
             "stormgoer",
+            "snailBotanist",
+            "snailGeologist",
+            "snailMalacologist",
+            "turtleTransporter",
+            "turtleHarmonizer",
             // "prospector",
             // "shoveler",
             // "miller",
@@ -2064,6 +2211,7 @@ SharkGame.ResourceCategories = {
             "aspectAffect",
             "specialResourceOne",
             "specialResourceTwo",
+            "fakeFish",
             "jellyAspectSacrifice",
             "clamAspectSacrifice",
             "spongeAspectSacrifice",
@@ -2165,6 +2313,12 @@ SharkGame.InternalCategories = {
     },
     kelpstuff: {
         resources: ["kelp", "seaApple"],
+    },
+    snails: {
+        resources: ["snail", "snailBotanist", "snailMalacologist", "snailGeologist"],
+    },
+    turtles: {
+        resources: ["turtle", "turtleLocator", "turtleTransporter", "turtleHarmonizer"],
     },
     basics: {
         resources: ["essence", "world", "aspectAffect", "specialResourceOne", "specialResourceTwo"],

@@ -70,7 +70,6 @@ SharkGame.WorldTypes = {
             "sharkmachines",
             "clam",
             "lobstermachines",
-            "clamAspectSacrifice",
         ],
         absentResources: ["laser"],
         modifiers: [{ type: "multiplier", modifier: "planetaryResourceBoost", resource: "fish", amount: 2 }],
@@ -96,7 +95,7 @@ SharkGame.WorldTypes = {
             longDesc: "The water is clear, the sand is clean, and the fish are plenty. A paradise in every way.",
             missing: ["laser", "sharkonium"],
             present: ["coral", "dolphin", "whale"],
-            tip: "The abundance of resources might make your stay here shorter than others.",
+            tip: "The abudance of resources might may your stay here shorter than others.",
         },
         entry: "Remembering nothing, you find yourself in a beautiful atoll. Life will be good here.",
         style: "haven",
@@ -112,7 +111,6 @@ SharkGame.WorldTypes = {
             "dolphinmachines",
             "coral",
             "chorus",
-            "coralAspectSacrifice",
         ],
         absentResources: ["laser"],
         modifiers: [
@@ -148,7 +146,6 @@ SharkGame.WorldTypes = {
             "seagrass",
             "chart",
             "map",
-            "seagrassAspectSacrifice",
         ],
         absentResources: ["planter", "crystalMiner"],
         modifiers: [{ type: "multiplier", modifier: "planetaryIncomeMultiplier", resource: "sandDigger", amount: 24 }],
@@ -183,7 +180,6 @@ SharkGame.WorldTypes = {
             "sponge",
             "algae",
             "coral",
-            "volcanicAspectSacrifice",
         ],
         absentResources: ["crystal", "laser", "planter"],
         modifiers: [{ type: "multiplier", modifier: "planetaryFishMultiplier", resource: "ray", amount: 15 }],
@@ -237,7 +233,6 @@ SharkGame.WorldTypes = {
             "ancientPart",
             "world",
             "aspectAffect",
-            "spongeAspectSacrifice",
         ],
         absentResources: ["kelp", "seaApple", "planter"],
         modifiers: [{ type: "multiplier", modifier: "planetaryIncome", resource: "tar", amount: -0.02 }],
@@ -278,7 +273,6 @@ SharkGame.WorldTypes = {
             "jellyfish",
             "sacrifice",
             "aspectAffect",
-            "jellyAspectSacrifice",
         ],
         absentResources: ["laser"],
         modifiers: [{ type: "multiplier", modifier: "planetaryIncomeReciprocalMultiplier", resource: "scientist", amount: 1 }],
@@ -322,7 +316,6 @@ SharkGame.WorldTypes = {
             "essence",
             "world",
             "aspectAffect",
-            "kelpAspectSacrifice",
         ],
         modifiers: [
             {
@@ -344,46 +337,59 @@ SharkGame.WorldTypes = {
         },
         par: 45,
     },
-    template: { // this version updated by Three Eels
-        name: "template",
-        vagueDesc: "feels ______", // before scouting
-        desc: "description in gateway", // after you've scouted it
-        shortDesc: "status", // you are a shark in a ____ ____ sea
-        foresight: { // field for the info the foresight aspect gives
-            vagueLongDesc: "", // more detailed description, before scouting
-            longDesc: "", // more detailed description, after scouting
-            missing: [], // states the absent resources
-            present: [], // states the world-specific resources included
-            tip: "", // give a tip for gameplay
+    template: {
+        name: "",
+        desc: "description in gateway",
+        shortDesc: "status",
+        entry: "enter world",
+        style: "default",
+        absentResources: ["knowledge", "tar", "ice", "heater", "chimaera"],
+        modifiers: [{ type: "multiplier", modifier: "planetaryResourceBoost", resource: "fish", amount: 1.5 }],
+        gateType: "slots",
+        gateCosts: {
+            fish: 1,
+            sand: 1,
+            crystal: 1,
+            kelp: 1,
+            seaApple: 1,
+            sharkonium: 1,
         },
-        entry: "enter world", // message put in the log upon entry. describe the setting, and emphasise a lack of memory of previous events.
-        style: "default", // change to the ocean's name
-        includedResources: [ // for every present resource, e.g. the normal things + the world's frenzy member, special resource, clams/jellyfish/sponge, machine-making material, and machines
+    },
+    chaotic: {
+        name: "Chaotic",
+        vagueDesc: "Feels overwhelming.",
+        desc: "A planet filled with ethereal, everchanging sealife.",
+        shortDesc: "swirling green",
+        foresight: {
+            vagueLongDesc: "Waves of bizzare energy radiate from this world.",
+            longDesc: "The currents make most sealife phase in and out of reality. Plants and shelled creatures appear to be immune to this effect.",
+            missing: ["fish", "shark", "ray", "crab"],
+            present: ["snail", "turtle", "wisp"],
+            tip: "Harnessing the energy plaguing this world could be the key to fixing it. Flexibility is your greatest asset.",
+        },
+        entry: "You awake in a bizzare place, the last traces of your memories washed away by an oddly familiar force.",
+        style: "chaotic",
+        includedResources: [
+            "wisp",
+            "echo",
+            "snails",
+            "turtles",
+            "clam",
+            "kelp",
+            "coral",
+            "sharkmachines",
             "essence",
+            "basicmaterials",
+            "fakeFish",
             "world",
             "aspectAffect",
-            "basicmaterials", // sand, fish, crystals, etc.
-            "sharks",
-            "rays",
-            "crabs",
-            "kelpstuff", // includes kelp and sea apples
-            "sharkmachines", // remove if sharks or their machines are absent from the narrative
         ],
-        absentResources: ["knowledge", "tar", "ice", "heater", "chimaera"], // replace with resources that are essentially incapable of existing in the ocean
-        modifiers: [{ type: "multiplier", modifier: "planetaryResourceBoost", resource: "fish", amount: 1.5 }], // for any world-applied multipliers/generation
-        // gateType: "slots",
-        // the above field doesn't seem to do anything, nor is it present in the other worldtypes, so I removed it
-        gateRequirements: { // can also be an upgrade or the presence of a resource, e.g. the whale chorus
-            slots: {
-                fish: 1,
-                sand: 1,
-                crystal: 1,
-                kelp: 1,
-                seaApple: 1,
-                sharkonium: 1,
-            },
+        absentResources: ["fish"],
+        modifiers: [{ type: "multiplier", modifier: "planetaryResourceBoost", resource: "science", amount: 0.5 }],
+        gateRequirements: {
+            upgrades: ["recontainChaos"],
         },
-        par: 45, // how long the par time is in minutes
+        par: 45,
     },
     shore: { // around 4/5ths done
         name: "Shore",

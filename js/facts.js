@@ -93,6 +93,9 @@ SharkGame.FunFacts = {
         tempestuous: {
             messages: ["'Tempestuous' does not mean stormy. It means emotionally turbulent. But it's close enough."],
         },
+        chaotic: {
+            messages: ["In the original game, the Chaotic ocean's gimmick was constant world-supplied income of frenzy members and deduction of other stuff.<br>It was weird."],
+        },
         shore: {
             messages: [
                 "Do you like the sandy-beige backgrounds? In case you didn't know, it was originally <i>very</i> yellow.<br>From lightest to darkest, its hex codes were ffdf80, ffd24d, ffbf00, cc9900, and 997300.",
@@ -341,8 +344,13 @@ SharkGame.FunFacts = {
             "Real-life mudskippers absolutely do not know how to teach tricks to puppets.",
         ],
         connoisseur: ["Real-life caracaras do not collect seagrass. Maybe."],
-        exchangeStation: ["Some frenzy members set up trading stalls in the stations and present their wares."],
+        exchangeStation: ["Some frenzy members set up trading stalls in the stations and present their wares to potential customers."],
         intel: ["During early development, there were these place resources called 'intel nodes', 'spires to catch the intel'.<br>They were eventually cut to declutter things."],
+        snail: ["The growth of a sea snail's shell depends on factors such as the water depth, temperature, and oxygen level, as well as how much there is to eat."],
+        turtle: [
+            "Turtles are evolutionarily very old. Their history spans back to the age of the dinosaurs.",
+            "A turtle's shell is actually part of its skeleton, made up of around 50 bones.",
+        ],
     },
 
     default: [

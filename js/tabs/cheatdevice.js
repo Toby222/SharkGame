@@ -768,6 +768,12 @@ SharkGame.CheatsAndDebug = {
                     world.worldResources.get("extractionTeam").exists = false;
                     res.setResource("extractionTeam", 0);
                     res.setTotalResource("extractionTeam", 0);
+                    world.worldResources.get("stormgoer").exists = false;
+                    res.setResource("stormgoer", 0);
+                    res.setTotalResource("stormgoer", 0);
+                    world.worldResources.get("stabilizer").exists = false;
+                    res.setResource("stabilizer", 0);
+                    res.setTotalResource("stabilizer", 0);
                     res.reconstructResourcesTable();
                     if (world.worldType === "start") {
                         delete SharkGame.HomeActions.generated.default.getCrab;
@@ -775,12 +781,16 @@ SharkGame.CheatsAndDebug = {
                         delete SharkGame.HomeActions.generated.default.getPlanter;
                         delete SharkGame.HomeActions.generated.default.getCollector;
                         delete SharkGame.HomeActions.generated.default.getExtractionTeam;
+                        delete SharkGame.HomeActions.generated.default.getStormgoer;
+                        delete SharkGame.HomeActions.generated.default.getStabilizer;
                     } else {
                         delete SharkGame.HomeActions.generated[world.worldType].getCrab;
                         delete SharkGame.HomeActions.generated[world.worldType].getBrood;
                         delete SharkGame.HomeActions.generated[world.worldType].getPlanter;
                         delete SharkGame.HomeActions.generated[world.worldType].getCollector;
                         delete SharkGame.HomeActions.generated[world.worldType].getExtractionTeam;
+                        delete SharkGame.HomeActions.generated[world.worldType].getStormgoer;
+                        delete SharkGame.HomeActions.generated[world.worldType].getStabilizer;
                     }
                     SharkGame.TabHandler.setUpTab();
                     return "Rolled a fourteen. What are you talking about? Crabs aren't real. There were never crabs to begin with.";

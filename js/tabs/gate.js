@@ -16,6 +16,7 @@ SharkGame.Gate = {
             "apologeticAmnesty",
             "internalExploration",
             "chaosStormGear",
+            "gateDiscovery",
         ],
     },
 

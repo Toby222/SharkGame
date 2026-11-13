@@ -50,6 +50,14 @@ SharkGame.TitleBar = {
         },
     },
 
+    punsLink: {
+        name: "pun",
+        main: false,
+        onClick() {
+            SharkGame.Puns.showPun();
+        },
+    },
+
     changelogLink: {
         name: "changelog",
         main: false,

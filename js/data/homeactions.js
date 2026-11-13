@@ -300,7 +300,9 @@ SharkGame.HomeActions = {
             name: "Study sea apples",
             effect: {
                 resource: {
-                    science: 4,
+                    get science() {
+                        return 4 + 4 * SharkGame.Aspects.beastAndBloom.level;
+                    },
                 },
             },
             cost: [{ resource: "seaApple", costFunction: "constant", priceIncrease: 1 }],
@@ -317,7 +319,7 @@ SharkGame.HomeActions = {
                 "This is perhaps maybe insightful!",
                 "Why are we even doing this? Who knows! Science!",
                 "What is even the point of these things? Why are they named for fruit? They're squirming!",
-                "Results still inconclusive! Unsurpsingly...",
+                "Results still inconclusive! Unsurprisingly...",
             ],
             helpText: "Dissect the sea apples our kelp attracts to gain additional science. Research!",
         },
@@ -1877,7 +1879,7 @@ SharkGame.HomeActions = {
             effect: {
                 resource: {
                     get science() {
-                        return 4 * (1 + 0.01 * res.getResource("historian"));
+                        return (4 * SharkGame.Aspects.beastAndBloom.level) + 4 * (1 + 0.01 * res.getResource("historian"));
                     },
                 },
             },
@@ -2618,7 +2620,9 @@ SharkGame.HomeActions = {
             name: "Dismantle jellyfish",
             effect: {
                 resource: {
-                    science: 4,
+                    get science() {
+                        return 4 + 4 * SharkGame.Aspects.beastAndBloom.level;
+                    },
                 },
             },
             cost: [{ resource: "jellyfish", costFunction: "constant", priceIncrease: 1 }],
@@ -3250,7 +3254,9 @@ SharkGame.HomeActions = {
             name: "Study sea apples",
             effect: {
                 resource: {
-                    science: 4,
+                    get science() {
+                        return 4 + 4 * SharkGame.Aspects.beastAndBloom.level;
+                    },
                 },
             },
             cost: [{ resource: "seaApple", costFunction: "constant", priceIncrease: 1 }],
@@ -4296,7 +4302,7 @@ SharkGame.HomeActions = {
             effect: {
                 resource: {
                     get science() {
-                        return SharkGame.Upgrades.purchased.includes("supernaturalSeagrass") ? 10 : 1;
+			            return SharkGame.Upgrades.purchased.includes("supernaturalSeagrass") ? 10 * SharkGame.Aspects.beastAndBloom.level + 10 : 1 * SharkGame.Aspects.beastAndBloom.level + 1;
                     },
                 },
             },
@@ -4313,7 +4319,7 @@ SharkGame.HomeActions = {
                 "The cause of science is advanced!",
                 "This is perhaps maybe insightful!",
                 "Why are we even doing this? Who knows! Science!",
-                "Results still inconclusive! Unsurpsingly...",
+                "Results still inconclusive! Unsurprisingly...",
                 "Quick question. What's a flower?",
                 "At least it's not gross.",
                 "We would learn a lot more from these if they weren't so absolutely tiny.",

@@ -113,6 +113,90 @@ SharkGame.ResourceTable = {
         },
     },
 
+    // SAVED FOR LATER
+
+    coralglass: { // machine-making material; archived from original game -- ThreeEels
+        name: "coralglass",
+        singleName: "coralglass",
+        desc: "null",
+        color: "#FDD5B4",
+        value: 70,
+    },
+	filtrate: { // residue for the frenzy recycler
+		name: "filtrate",
+		singleName: "filtrate",
+		desc: "Eldritch alchemy.",
+		color: "1F1E1E",
+		value: 1,
+	},
+	knowledge: { // an idea base had
+		name: "knowledge",
+		singleName: "knowledge",
+		desc: "Fragments of thought.",
+		color: "#17BFD1",
+		value: 5,
+	},
+	joy: { // only accessible with the cheats
+		name: "joy",
+		singleName: "joy",
+		desc: "Distributed dopamine.",
+		color: "#FFDF22",
+		value: 5,
+	},
+
+
+    // ASPECT SACRIFICES (for Arcane Assistance aspect)
+
+    jellyAspectSacrifice: {
+        name: "sacrifices<br>",
+        singleName: "sacrifice<br>",
+        desc: "The cost of progress.",
+        color: "#FFD6FC",
+        value: 1,
+    }, 
+    clamAspectSacrifice: {
+        name: "sacrifices<br>",
+        singleName: "sacrifice<br>",
+        desc: "The cost of progress.",
+        color: "#FFD6FC",
+        value: 1,
+    }, 
+    spongeAspectSacrifice: {
+        name: "sacrifices<br>",
+        singleName: "sacrifice<br>",
+        desc: "The cost of progress.",
+        color: "#FFD6FC",
+        value: 1,
+    }, 
+    volcanicAspectSacrifice: {
+        name: "sacrifices<br>", // text in grotto was behaving weirdly
+        singleName: "sacrifice<br>",
+        desc: "The cost of progress.",
+        color: "#FFD6FC",
+        value: 1,
+    }, 
+    seagrassAspectSacrifice: {
+        name: "sacrifices<br>", // looks like they all need it
+        singleName: "sacrifice<br>",
+        desc: "The cost of progress.",
+        color: "#FFD6FC",
+        value: 1,
+    }, 
+    coralAspectSacrifice: {
+        name: "sacrifices<br>",
+        singleName: "sacrifice<br>",
+        desc: "The cost of progress.",
+        color: "#FFD6FC",
+        value: 1,
+    },
+    kelpAspectSacrifice: {
+	name: "sacrifices<br>",
+	singleName: "sacrifice<br>",
+	desc: "The cost of progress.",
+	color: "#FFD6FC",
+	value: 1,
+    },
+
     // MAGICAL
 
     sacrifice: {
@@ -532,16 +616,6 @@ SharkGame.ResourceTable = {
             calcinium: 120,
         },
         value: 1500,
-    },
-
-    // SAVED FOR LATER
-
-    coralglass: {
-        name: "coralglass",
-        singleName: "coralglass",
-        desc: "null",
-        color: "#FDD5B4",
-        value: 70,
     },
 
     // volcanic
@@ -1176,8 +1250,8 @@ SharkGame.ResourceTable = {
             stone: 0.5,
         },
         value: 2500,
-    }, */
-    /* shoveler: {
+    },
+    shoveler: {
         name: "shoveler rays",
         singleName: "shoveler ray",
         color: "#7792A3",
@@ -1185,8 +1259,8 @@ SharkGame.ResourceTable = {
             gravel: 1,
         },
         value: 3500,
-    }, */
-    /* miller: {
+    },
+    miller: {
         name: "miller crabs",
         singleName: "miller crab",
         color: "#473E3B",
@@ -1195,8 +1269,8 @@ SharkGame.ResourceTable = {
             sand: 0.2,
         },
         value: 2000,
-    }, */
-    /* rockLobster: {
+    },
+    rockLobster: {
         name: "rock lobsters",
         singleName: "rock lobster",
         color: "#9C706D",
@@ -1435,6 +1509,13 @@ SharkGame.GeneratorIncomeAffectorsOriginal = {
             fishMachine: 0.01,
         },
     },
+	joy: {
+		multiply: {
+			shark: 0.001,
+			ray: 0.001,
+			crab: 0.001,
+		},
+	},
     turtleTransporter: {
         multiply: {
             snail: 0.01,
@@ -1460,6 +1541,62 @@ SharkGame.GeneratorIncomeAffected = {
 };
 
 SharkGame.ResourceIncomeAffectorsOriginal = {
+    jellyAspectSacrifice: {
+        multiply: {
+            fish: 0.001,
+            sand: 0.001,
+            crystal: 0.001,
+            jellyfish: 0.001,
+        },
+    },
+    clamAspectSacrifice: {
+        multiply: {
+            fish: 0.001,
+            sand: 0.001,
+            crystal: 0.001,
+            clam: 0.001,
+        },
+    }, 
+    spongeAspectSacrifice: {
+        multiply: {
+            fish: 0.001,
+            sand: 0.001,
+            crystal: 0.001,
+            sponge: 0.001,
+        },
+    }, 
+    volcanicAspectSacrifice: {
+        multiply: {
+            fish: 0.001,
+            sand: 0.001,
+            coral: 0.001,
+            sponge: 0.001,
+        },
+    }, 
+    seagrassAspectSacrifice: {
+        multiply: {
+            fish: 0.001,
+            sand: 0.001,
+            crystal: 0.001,
+            seagrass: 0.001,
+        },
+    }, 
+    coralAspectSacrifice: {
+        multiply: {
+            fish: 0.001,
+            sand: 0.001,
+            crystal: 0.001,
+            coral: 0.001,
+        },
+    },
+    kelpAspectSacrifice: {
+        multiply: {
+            fish: 0.001,
+            sand: 0.001,
+            crystal: 0.001,
+            kelp: 0.001,
+        },
+    },
     ice: {
         multiply: {
             ice: -0.00125,
@@ -1470,6 +1607,11 @@ SharkGame.ResourceIncomeAffectorsOriginal = {
             science: 0.01,
         },
     },
+	knowledge: {
+		multiply: {
+			science: 0.001,
+		},
+	},
     scholar: {
         multiply: {
             arcana: 0.01,
@@ -1541,6 +1683,23 @@ SharkGame.ResourceCategories = {
         disposeMessage: ["Oh you'd like that, wouldn't you."],
         resources: ["tar", "ice"],
     },
+	mental: {
+		name: "Mental",
+		disposeMessage: [
+			"The thought fades away in the back of your mind.",
+			"Poof! It's gone, faster than you thought about it.",
+			"What were you thinking about again?",
+			"Was it that bad, that you needed it gone?",
+			"How do you get rid of a mental concept, anyway?",
+			"How was that even <i>possible?</i>",
+			"The mind is a strange place. You'll never know why some people choose to forget.",
+			"Your mind is a thriving sea. Time for one less shark, I suppose!",
+			"Oh, well. There are plenty more thoughts in your brain.",
+			"Who knows? It might come back. Thoughts do that sometimes.",
+			"They're strange things, thoughts and emotions. But they drive us all the same.",
+		],
+		resources: ["knowledge", "joy"],
+	},
     scientific: {
         name: "Science",
         disposeMessage: [
@@ -1630,7 +1789,7 @@ SharkGame.ResourceCategories = {
             "The foundation of a modern shark frenzy, perhaps, but also sort of taking up all the space.",
             "Let's hope we don't regret it.",
         ],
-        resources: ["sharkonium", "coralglass", "delphinium", "spronge", "calcinium", "porite", "ancientPart", "junk", "filter"],
+        resources: ["sharkonium", "coralglass", "delphinium", "spronge", "calcinium", "porite", "ancientPart", "junk", "filter", "filtrate"],
     },
     breeders: {
         name: "Breeders",
@@ -1737,7 +1896,21 @@ SharkGame.ResourceCategories = {
     hidden: {
         name: "Hidden",
         disposeMessage: ["Bad player! Stop it!"],
-        resources: ["world", "sacrifice", "aspectAffect", "specialResourceOne", "specialResourceTwo", "fakeFish"],
+        resources: [
+            "world",
+            "sacrifice",
+            "aspectAffect",
+            "specialResourceOne",
+            "specialResourceTwo",
+			"fakeFish",
+            "jellyAspectSacrifice",
+            "clamAspectSacrifice",
+            "spongeAspectSacrifice",
+            "volcanicAspectSacrifice",
+            "seagrassAspectSacrifice",
+            "coralAspectSacrifice",
+            "kelpAspectSacrifice",
+        ],
     },
 };
 
@@ -1824,5 +1997,8 @@ SharkGame.InternalCategories = {
     },
     basics: {
         resources: ["essence", "world", "aspectAffect", "specialResourceOne", "specialResourceTwo"],
+    },
+    aspectSacrifices: {
+	    resources: ["jellyAspectSacrifice", "clamAspectSacrifice", "spongeAspectSacrifice", "volcanicAspectSacrifice", "seagrassAspectSacrifice", "coralAspectSacrifice", "kelpAspectSacrifice"],
     },
 };

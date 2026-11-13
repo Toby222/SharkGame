@@ -103,7 +103,15 @@ $.extend(SharkGame, {
         "On Sharker Tides",
         "Curse of the Shark",
         "Have I Played These Sharks Before?",
-        "Hollow Shark: Shark Song",
+        "Hollow Shark - SharkSong",
+        "Last Shark Standing",
+        "Sharkjago: Masters of Sharkjitsu",
+        "Shark: Galactic Ad-fin-tures", // this was a bad spin on 'Spore: Galactic Adventures' --ThreeEels
+	    "Ray World",
+	    "Ray World: Crabpour", // aggghhhh i can't find something good for The Watcher --ThreeEels
+	    "I Have No Trout And I Must Bream", // my personal favourite --ThreeEels
+        "Nine Shoals",
+		"A Shark Room",
     ],
     GAME_NAME: null,
     ACTUAL_GAME_NAME: "Shark Game",
@@ -908,6 +916,11 @@ SharkGame.Button = {
 };
 
 SharkGame.Changelog = {
+    "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 12345678a": [
+        "Added six new aspects, courtesy of Three Eels in a Jellyfish Coat!",
+		"Added quite a few miscellaneous messages! Two new gateway messages and two new Minute Hand messages.",
+		"Added some new random tab names.",
+		"Fixed some typos.",
     "<a href='https://github.com/Toby222/SharkGame'>New Frontiers</a> patch 20261103a": [
         "Added a reimagined Chaotic world back into the game, courtesy of <a href='https://github.com/glowkate'>Glowkate</a>!",
         "Fixed several typos.",

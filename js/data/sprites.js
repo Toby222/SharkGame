@@ -55,6 +55,14 @@ SharkGame.Sprites = {
             h: 100,
         },
     },
+    "planets/shore": {
+        frame: {
+            x: 0,
+            y: 800,
+            w: 100,
+            h: 100,
+        },
+    },
     "planets/tempestuous": {
         frame: {
             x: 100,
@@ -459,6 +467,14 @@ SharkGame.Sprites = {
         frame: {
             x: 450,
             y: 150,
+            w: 50,
+            h: 50,
+        },
+    },
+    "actions/getMudskipper": {
+        frame: {
+            x: 100,
+            y: 800,
             w: 50,
             h: 50,
         },
